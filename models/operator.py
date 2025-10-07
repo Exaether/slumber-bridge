@@ -13,9 +13,14 @@ class OperatorBase(BaseModel):
 
 
 class Operator(OperatorBase):
+    displayNumber: str
+    position: str
     tagList: list[str]
     skins: list[str]
     phases: list[int]
+    skills: list[str]
+    talents: list[int]
+    favorKeyFrames: list[int]
 
 
 class Phase(BaseModel):
@@ -29,4 +34,16 @@ class Phase(BaseModel):
 class AttributeKeyFrame(BaseModel):
     level: int
     maxHP: int
-    # ...
+    atk: int
+    defense: int  # yeah, "def" is not possible in python...
+    res: int
+    cost: int
+    aspd: int
+    baseAttackTime: float
+    respawnTime: int
+    hpRecovery: int
+    spRecovery: int
+    maxDeployCount: int
+    maxDeckStackCount: int
+    tauntLevel: int
+    baseForceLevel: int
