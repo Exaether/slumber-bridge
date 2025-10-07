@@ -1,4 +1,4 @@
-# Arknights HR Office
+# Slumber Bridge
 
 Provide simple access to Arknights game data through a REST API frontend.
 
