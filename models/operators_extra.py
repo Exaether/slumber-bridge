@@ -22,5 +22,6 @@ class PotentialRank(BaseModel):
 
 
 class Trait(BaseModel):
+    unlockPhase: int
     description: str
     blackboard: dict[str, float]

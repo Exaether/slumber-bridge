@@ -22,6 +22,11 @@ def get_trait(id: str):
     return
 
 
+@router.get("/{id}/trait/{phase}", response_model=Trait)
+def get_trait_upgrade(id: str, phase: int):
+    return
+
+
 @router.get("/{id}/talents/{number}", response_model=Talent)
 def get_talent(id: str, number: int):
     return
@@ -37,18 +42,18 @@ def get_potential(id: str, rank: int):
     return
 
 
-@router.get("/{id}/phases", response_model=list[Phase])
-def get_phase(id: str):
+@router.get("/{id}/phases/{number}", response_model=Phase)
+def get_phase(id: str, number: int):
     return
 
 
-@router.get("/{id}/phases/stats/{level}", response_model=AttributeKeyFrame)
-def get_stats(id: str, level: int):
+@router.get("/{id}/phases/{number}/stats/{level}", response_model=AttributeKeyFrame)
+def get_stats(id: str, number: int, level: int):
     return
 
 
-@router.get("/{id}/favor/{level}", response_model=AttributeKeyFrame)
-def get_favor_bonus(id: str, level: int):
+@router.get("/{id}/favor}", response_model=AttributeKeyFrame)
+def get_favor_bonus(id: str):
     return
 
 
