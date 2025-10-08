@@ -1,0 +1,212 @@
+{
+    "operator": {
+        "id": "char_1016_agoat2",
+        "name": "Eyjafjalla the Hv\u00edt Aska",
+        "rarity": 6,
+        "portait": "",
+        "profession": "MEDIC",
+        "subProfession": "wandermedic",
+        "nation": "leithanien",
+        "group": null,
+        "displayNumber": "LN10",
+        "position": "RANGED",
+        "tagList": [
+            "Healing"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_agoat2_1",
+            "skchr_agoat2_2",
+            "skchr_agoat2_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 789,
+                "atk": 148,
+                "def": 47,
+                "res": 10.0,
+                "cost": 14,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1039,
+                "atk": 244,
+                "def": 69,
+                "res": 10.0,
+                "cost": 14,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-17",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1039,
+                "atk": 244,
+                "def": 69,
+                "res": 10.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1237,
+                "atk": 339,
+                "def": 87,
+                "res": 10.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-17",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1237,
+                "atk": 339,
+                "def": 87,
+                "res": 10.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1439,
+                "atk": 424,
+                "def": 109,
+                "res": 10.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Replenishing Mist",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 8% of the original amount, lasting for 4 seconds (stacks up to 3 times)",
+                    "blackboard": {
+                        "heal_scale": 0.08,
+                        "duration": 4.0,
+                        "max_stack_cnt": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 10% of the original amount, lasting for 6 seconds (stacks up to 3 times)",
+                    "blackboard": {
+                        "heal_scale": 0.1,
+                        "duration": 6.0,
+                        "max_stack_cnt": 3.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Volcanic Ash Remedy",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Injury</> they take by 12%",
+                    "blackboard": {
+                        "max_hp": 0.06,
+                        "ep_damage_resistance": 0.12
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Injury</> they take by 12%",
+                    "blackboard": {
+                        "max_hp": 0.08,
+                        "ep_damage_resistance": 0.12
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +23",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 23.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Restores the HP of allied units and recovers <$ba.dt.element>Elemental Injury</> by <@ba.kw>{ep_heal_ratio:0%}</> of ATK (can recover <$ba.dt.element>Elemental Injury</> of unhurt allied units)",
+                "blackboard": {
+                    "ep_heal_ratio": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 200,
+        "atk": 45,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

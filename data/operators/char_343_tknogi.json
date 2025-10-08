@@ -1,0 +1,204 @@
+{
+    "operator": {
+        "id": "char_343_tknogi",
+        "name": "Tsukinogi",
+        "rarity": 5,
+        "portait": "",
+        "profession": "SUPPORT",
+        "subProfession": "blessing",
+        "nation": "higashi",
+        "group": null,
+        "displayNumber": "R129",
+        "position": "RANGED",
+        "tagList": [
+            "Support",
+            "Survival"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_tknogi_1",
+            "skchr_tknogi_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 674,
+                "atk": 200,
+                "def": 81,
+                "res": 15.0,
+                "cost": 10,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 992,
+                "atk": 287,
+                "def": 117,
+                "res": 15.0,
+                "cost": 10,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 992,
+                "atk": 287,
+                "def": 117,
+                "res": 20.0,
+                "cost": 12,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1341,
+                "atk": 369,
+                "def": 154,
+                "res": 20.0,
+                "cost": 12,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1341,
+                "atk": 369,
+                "def": 154,
+                "res": 25.0,
+                "cost": 12,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1720,
+                "atk": 445,
+                "def": 175,
+                "res": 25.0,
+                "cost": 12,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Blessing",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Apply 12% <$ba.protect>Sanctuary</> effect to allies within range with less than 40% HP",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "damage_resistance": 0.12
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Apply 14% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies within range with less than 40% HP",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "damage_resistance": 0.14
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Apply 18% <$ba.protect>Sanctuary</> effect to allies within range with less than 40% HP",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "damage_resistance": 0.18
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Apply 20% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies within range with less than 40% HP",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "damage_resistance": 0.2
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Max HP +160",
+            "attribute": "MAX_HP",
+            "formula": "ADDITION",
+            "value": 160.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <@ba.kw>{heal_scale:0%}</> of ATK)",
+                "blackboard": {
+                    "heal_scale": 0.75
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 300,
+        "atk": 40,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

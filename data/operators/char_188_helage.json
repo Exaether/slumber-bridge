@@ -1,0 +1,232 @@
+{
+    "operator": {
+        "id": "char_188_helage",
+        "name": "Hellagur",
+        "rarity": 6,
+        "portait": "",
+        "profession": "WARRIOR",
+        "subProfession": "musha",
+        "nation": "ursus",
+        "group": null,
+        "displayNumber": "AZ01",
+        "position": "MELEE",
+        "tagList": [
+            "DPS",
+            "Survival"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_helage_1",
+            "skchr_helage_2",
+            "skchr_helage_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1568,
+                "atk": 340,
+                "def": 160,
+                "res": 0.0,
+                "cost": 22,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2179,
+                "atk": 486,
+                "def": 220,
+                "res": 0.0,
+                "cost": 22,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 2179,
+                "atk": 486,
+                "def": 220,
+                "res": 0.0,
+                "cost": 24,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2868,
+                "atk": 632,
+                "def": 283,
+                "res": 0.0,
+                "cost": 24,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 2868,
+                "atk": 632,
+                "def": 283,
+                "res": 0.0,
+                "cost": 26,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 3825,
+                "atk": 762,
+                "def": 334,
+                "res": 0.0,
+                "cost": 26,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Waxing Moon",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains up to +50 ASPD <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 50% Max HP)",
+                    "blackboard": {
+                        "min_attack_speed": 50.0,
+                        "min_hp_ratio": 0.5
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains up to +75 ASPD <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 60% Max HP)",
+                    "blackboard": {
+                        "min_attack_speed": 75.0,
+                        "min_hp_ratio": 0.4
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains up to +100 ASPD <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 70% Max HP)",
+                    "blackboard": {
+                        "min_attack_speed": 100.0,
+                        "min_hp_ratio": 0.3
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ingenious Strategist",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Regenerate 60 HP per second when this unit is not blocking an enemy.",
+                    "blackboard": {
+                        "hp_recovery_per_sec": 60.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Regenerate 70 <@ba.talpu>(+10)</> HP per second when this unit is not blocking an enemy.",
+                    "blackboard": {
+                        "hp_recovery_per_sec": 70.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +26",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 26.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 1)",
+                "blackboard": {
+                    "value": 30.0
+                }
+            },
+            {
+                "UnlockPhase": 1,
+                "overrideDescription": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy (Upgraded after reaching Elite 2)",
+                "blackboard": {
+                    "value": 50.0
+                }
+            },
+            {
+                "UnlockPhase": 2,
+                "overrideDescription": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
+                "blackboard": {
+                    "value": 70.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 400,
+        "atk": 70,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

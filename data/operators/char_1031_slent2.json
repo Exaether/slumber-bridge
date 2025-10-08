@@ -1,0 +1,216 @@
+{
+    "operator": {
+        "id": "char_1031_slent2",
+        "name": "Silence the Paradigmatic",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SUPPORT",
+        "subProfession": "blessing",
+        "nation": "columbia",
+        "group": "rhine",
+        "displayNumber": "RL10",
+        "position": "RANGED",
+        "tagList": [
+            "Support",
+            "Survival",
+            "Healing"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_slent2_1",
+            "skchr_slent2_2",
+            "skchr_slent2_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 737,
+                "atk": 185,
+                "def": 73,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1054,
+                "atk": 290,
+                "def": 110,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1054,
+                "atk": 290,
+                "def": 110,
+                "res": 20.0,
+                "cost": 15,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1445,
+                "atk": 387,
+                "def": 147,
+                "res": 20.0,
+                "cost": 15,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1445,
+                "atk": 387,
+                "def": 147,
+                "res": 25.0,
+                "cost": 15,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1927,
+                "atk": 467,
+                "def": 184,
+                "res": 25.0,
+                "cost": 15,
+                "baseAttackTime": 1.6,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Silent Sentinel",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Applies 8% <$ba.protect>Sanctuary</> to allies within Attack Range; effect increases as ally's HP decreases (reaches maximum of 15% <$ba.protect>Sanctuary</> when below 30% HP)",
+                    "blackboard": {
+                        "damage_resistance_base": 0.08,
+                        "resistance_scale": 0.0125,
+                        "hp_ratio": 0.01,
+                        "min_hp_ratio": 0.3
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Applies 10% <$ba.protect>Sanctuary</> to allies within Attack Range; effect increases as ally's HP decreases (reaches maximum gain of 24% <$ba.protect>Sanctuary</> when below 30% HP)",
+                    "blackboard": {
+                        "damage_resistance_base": 0.1,
+                        "resistance_scale": 0.02,
+                        "hp_ratio": 0.01,
+                        "min_hp_ratio": 0.3
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Plumes of Plenty",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 5% of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
+                    "blackboard": {
+                        "hp_ratio": 0.5,
+                        "atk_to_hp_recovery_ratio": 0.05
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 6% <@ba.talpu>(+1%)</> of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
+                    "blackboard": {
+                        "hp_ratio": 0.5,
+                        "atk_to_hp_recovery_ratio": 0.06
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to <@ba.kw>{heal_scale:0%}</> of ATK)",
+                "blackboard": {
+                    "heal_scale": 0.75
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 350,
+        "atk": 55,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

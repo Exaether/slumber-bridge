@@ -1,0 +1,211 @@
+{
+    "operator": {
+        "id": "char_4013_kjera",
+        "name": "Kjera",
+        "rarity": 5,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "funnel",
+        "nation": "kjerag",
+        "group": "karlan",
+        "displayNumber": "JC00",
+        "position": "RANGED",
+        "tagList": [
+            "DPS",
+            "Crowd-Control"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_atk_up[3]",
+            "skchr_kjera_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 604,
+                "atk": 135,
+                "def": 48,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 863,
+                "atk": 191,
+                "def": 73,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 863,
+                "atk": 191,
+                "def": 73,
+                "res": 15.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1121,
+                "atk": 246,
+                "def": 101,
+                "res": 15.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1121,
+                "atk": 246,
+                "def": 101,
+                "res": 20.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1475,
+                "atk": 294,
+                "def": 121,
+                "res": 20.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Deference",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "ATK +5%, when there are two or more ground tiles within Attack Range, the effect becomes ATK +11%",
+                    "blackboard": {
+                        "atk": 0.05,
+                        "cnt": 2.0,
+                        "kjera_t_1[high].atk": 0.11
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "ATK +8% <@ba.talpu>(+3%)</>, when there are two or more ground tiles within Attack Range, the effect becomes ATK +14% <@ba.talpu>(+3%)</>",
+                    "blackboard": {
+                        "atk": 0.08,
+                        "cnt": 2.0,
+                        "kjera_t_1[high].atk": 0.14
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "ATK +10%, when there are two or more ground tiles within Attack Range, the effect becomes ATK +16%",
+                    "blackboard": {
+                        "atk": 0.1,
+                        "cnt": 2.0,
+                        "kjera_t_1[high].atk": 0.16
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "ATK +13% <@ba.talpu>(+3%)</>, when there are two or more ground tiles within Attack Range, the effect becomes ATK +19% <@ba.talpu>(+3%)</>",
+                    "blackboard": {
+                        "atk": 0.13,
+                        "cnt": 2.0,
+                        "kjera_t_1[high].atk": 0.19
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Controls a <@ba.kw>Drone</> that deals <@ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
+                "blackboard": {
+                    "init_atk_scale": 0.2,
+                    "delta_atk_scale": 0.15,
+                    "max_atk_scale": 1.1,
+                    "max_stack_cnt": 6.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 60,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

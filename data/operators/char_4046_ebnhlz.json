@@ -1,0 +1,212 @@
+{
+    "operator": {
+        "id": "char_4046_ebnhlz",
+        "name": "Ebenholz",
+        "rarity": 6,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "mystic",
+        "nation": "leithanien",
+        "group": null,
+        "displayNumber": "LN05",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_ebnhlz_1",
+            "skchr_ebnhlz_2",
+            "skchr_ebnhlz_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-13",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 732,
+                "atk": 611,
+                "def": 51,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1046,
+                "atk": 873,
+                "def": 87,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-14",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1046,
+                "atk": 873,
+                "def": 87,
+                "res": 15.0,
+                "cost": 25,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1359,
+                "atk": 1134,
+                "def": 120,
+                "res": 15.0,
+                "cost": 25,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-14",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1359,
+                "atk": 1134,
+                "def": 120,
+                "res": 20.0,
+                "cost": 25,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1678,
+                "atk": 1400,
+                "def": 135,
+                "res": 20.0,
+                "cost": 25,
+                "baseAttackTime": 3.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Dynamics",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Stored attacks deal 120% damage; Can store 1 extra charge that is only used when attacking elite or boss enemies",
+                    "blackboard": {
+                        "atk_scale": 1.2,
+                        "times_2": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Stored attacks deal 135% damage; Can store 1 extra charge that is only used when attacking elite or boss enemies",
+                    "blackboard": {
+                        "atk_scale": 1.35,
+                        "times_2": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Appoggiatura",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "If there are no other enemies near the target, attacks deal an additional 15% ATK as Arts damage",
+                    "blackboard": {
+                        "atk_scale": 0.15,
+                        "cnt": 0.0,
+                        "range_radius": 1.1
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "If there are no other enemies near the target, attacks deal an additional 17% <@ba.talpu>(+2%)</> ATK as Arts damage",
+                    "blackboard": {
+                        "atk_scale": 0.17,
+                        "cnt": 0.0,
+                        "range_radius": 1.1
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +52",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 52.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "times": 3.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 150,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

@@ -1,0 +1,215 @@
+{
+    "operator": {
+        "id": "char_206_gnosis",
+        "name": "Gnosis",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SUPPORT",
+        "subProfession": "underminer",
+        "nation": "kjerag",
+        "group": "karlan",
+        "displayNumber": "JC02",
+        "position": "RANGED",
+        "tagList": [
+            "Debuff"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_gnosis_1",
+            "skchr_gnosis_2",
+            "skchr_gnosis_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 798,
+                "atk": 205,
+                "def": 61,
+                "res": 15.0,
+                "cost": 11,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1174,
+                "atk": 294,
+                "def": 88,
+                "res": 15.0,
+                "cost": 11,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1174,
+                "atk": 294,
+                "def": 88,
+                "res": 20.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1587,
+                "atk": 377,
+                "def": 116,
+                "res": 20.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-6",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1587,
+                "atk": 377,
+                "def": 116,
+                "res": 25.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2035,
+                "atk": 455,
+                "def": 132,
+                "res": 25.0,
+                "cost": 13,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Rigid Ice",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 15% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                    "blackboard": {
+                        "cold": 1.0,
+                        "damage_scale_cold": 1.15,
+                        "damage_scale_freeze": 1.3
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 17% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                    "blackboard": {
+                        "cold": 1.0,
+                        "damage_scale_cold": 1.17,
+                        "damage_scale_freeze": 1.34
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                    "blackboard": {
+                        "cold": 1.0,
+                        "damage_scale_cold": 1.25,
+                        "damage_scale_freeze": 1.5
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 27% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                    "blackboard": {
+                        "cold": 1.0,
+                        "damage_scale_cold": 1.27,
+                        "damage_scale_freeze": 1.54
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Two Paths, One Goal",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
+                    "blackboard": {
+                        "interval": 10.0,
+                        "one_minus_status_resistance": -0.5
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +33",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 33.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals <@ba.kw>Arts damage</>",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 80,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

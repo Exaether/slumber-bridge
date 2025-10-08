@@ -1,0 +1,220 @@
+{
+    "operator": {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "phalanx",
+        "nation": "leithanien",
+        "group": null,
+        "displayNumber": "LN04",
+        "position": "RANGED",
+        "tagList": [
+            "AoE",
+            "Defense"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_billro_1",
+            "skchr_billro_2",
+            "skchr_billro_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "x-4",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1104,
+                "atk": 435,
+                "def": 146,
+                "res": 15.0,
+                "cost": 22,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1380,
+                "atk": 581,
+                "def": 170,
+                "res": 15.0,
+                "cost": 22,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "x-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1380,
+                "atk": 581,
+                "def": 170,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1726,
+                "atk": 727,
+                "def": 198,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "x-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1726,
+                "atk": 727,
+                "def": 198,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2106,
+                "atk": 846,
+                "def": 228,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.0,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Meal of Life",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Restores 30% Max HP when skill is activated; \nEffect is doubled when <$ba.charged>Charged</>",
+                    "blackboard": {
+                        "heal_scale": 0.3,
+                        "billro_t_1[enhance].heal_scale": 0.6
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Restores 35% <@ba.talpu>(+5%)</> Max HP when skill is activated; \nEffect is doubled when <$ba.charged>Charged</>",
+                    "blackboard": {
+                        "heal_scale": 0.35,
+                        "billro_t_1[enhance].heal_scale": 0.7
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Restores 40% Max HP when skill is activated; \nEffect is doubled when <$ba.charged>Charged</>",
+                    "blackboard": {
+                        "heal_scale": 0.4,
+                        "billro_t_1[enhance].heal_scale": 0.8
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Restores 45% <@ba.talpu>(+5%)</> Max HP when skill is activated; \nEffect is doubled when <$ba.charged>Charged</>",
+                    "blackboard": {
+                        "heal_scale": 0.45,
+                        "billro_t_1[enhance].heal_scale": 0.9
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Poised for Action",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Improves own SP recovery rate by +0.6/second when SP is above the limit",
+                    "blackboard": {
+                        "sp_recovery_per_sec": 0.6
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +34",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 34.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "def": 2.0,
+                    "magic_resistance": 20.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 80,
+        "def": 30,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

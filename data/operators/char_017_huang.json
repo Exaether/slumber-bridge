@@ -1,0 +1,226 @@
+{
+    "operator": {
+        "id": "char_017_huang",
+        "name": "Blaze",
+        "rarity": 6,
+        "portait": "",
+        "profession": "WARRIOR",
+        "subProfession": "centurion",
+        "nation": "rhodes",
+        "group": "elite",
+        "displayNumber": "RE41",
+        "position": "MELEE",
+        "tagList": [
+            "DPS",
+            "Survival"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_huang_1",
+            "skchr_huang_2",
+            "skchr_huang_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1286,
+                "atk": 308,
+                "def": 156,
+                "res": 0.0,
+                "cost": 20,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1649,
+                "atk": 429,
+                "def": 224,
+                "res": 0.0,
+                "cost": 20,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1649,
+                "atk": 429,
+                "def": 224,
+                "res": 0.0,
+                "cost": 22,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2115,
+                "atk": 581,
+                "def": 303,
+                "res": 0.0,
+                "cost": 22,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 2115,
+                "atk": 581,
+                "def": 303,
+                "res": 0.0,
+                "cost": 24,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2821,
+                "atk": 765,
+                "def": 370,
+                "res": 0.0,
+                "cost": 24,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Emergency Defibrillation",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 3 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "huang_t_1[heal].hp_ratio": 0.5,
+                        "huang_t_1[lock].min_hp_ratio": 0.5,
+                        "huang_t_1[lock].duration": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 2,
+                    "description": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 4<@ba.talpu>(+1)</> seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "huang_t_1[heal].hp_ratio": 0.5,
+                        "huang_t_1[lock].min_hp_ratio": 0.5,
+                        "huang_t_1[lock].duration": 4.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 6 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "huang_t_1[heal].hp_ratio": 0.5,
+                        "huang_t_1[lock].min_hp_ratio": 0.5,
+                        "huang_t_1[lock].duration": 6.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 2,
+                    "description": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 7<@ba.talpu>(+1)</> seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "huang_t_1[heal].hp_ratio": 0.5,
+                        "huang_t_1[lock].min_hp_ratio": 0.5,
+                        "huang_t_1[lock].duration": 7.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Harsh Training",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains <$ba.buffres>status resistance</> after being deployed for 15 seconds",
+                    "blackboard": {
+                        "one_minus_status_resistance": -0.5,
+                        "interval": 15.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Gains <$ba.buffres>status resistance</> after being deployed for 12 <@ba.talpu>(-3)</> seconds",
+                    "blackboard": {
+                        "one_minus_status_resistance": -0.5,
+                        "interval": 12.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +28",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 28.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks <@ba.kw>all blocked enemies</>",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 60,
+        "def": 45,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

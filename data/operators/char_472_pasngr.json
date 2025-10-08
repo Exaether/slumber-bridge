@@ -1,0 +1,236 @@
+{
+    "operator": {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "chain",
+        "nation": "sargon",
+        "group": null,
+        "displayNumber": "SG07",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_pasngr_1",
+            "skchr_pasngr_2",
+            "skchr_pasngr_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 654,
+                "atk": 311,
+                "def": 49,
+                "res": 10.0,
+                "cost": 30,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 935,
+                "atk": 433,
+                "def": 84,
+                "res": 10.0,
+                "cost": 30,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 935,
+                "atk": 433,
+                "def": 84,
+                "res": 15.0,
+                "cost": 33,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1215,
+                "atk": 571,
+                "def": 116,
+                "res": 15.0,
+                "cost": 33,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1215,
+                "atk": 571,
+                "def": 116,
+                "res": 20.0,
+                "cost": 33,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1558,
+                "atk": 689,
+                "def": 130,
+                "res": 20.0,
+                "cost": 33,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Mechanism Analysis",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking enemies with 80% or more HP, Passenger will deal 10% increased damage to them for 3 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.8,
+                        "pasngr_t_1[enhance].damage_scale": 1.1,
+                        "pasngr_t_1[enhance].duration": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 5,
+                    "description": "When attacking enemies with 80% or more HP, Passenger will deal 15% <@ba.talpu>(+5%)</> increased damage to them for 3 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.8,
+                        "pasngr_t_1[enhance].damage_scale": 1.15,
+                        "pasngr_t_1[enhance].duration": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking enemies with 80% or more HP, Passenger will deal 20% increased damage to them for 3 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.8,
+                        "pasngr_t_1[enhance].damage_scale": 1.2,
+                        "pasngr_t_1[enhance].duration": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 5,
+                    "description": "When attacking enemies with 80% or more HP, Passenger will deal 25% <@ba.talpu>(+5%)</> increased damage to them for 3 seconds",
+                    "blackboard": {
+                        "hp_ratio": 0.8,
+                        "pasngr_t_1[enhance].damage_scale": 1.25,
+                        "pasngr_t_1[enhance].duration": 3.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Lone Soldier",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When there are no enemies in the surrounding 4 tiles, ATK +8%",
+                    "blackboard": {
+                        "atk": 0.08
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 2,
+                    "description": "When there are no enemies in the surrounding 4 tiles, ATK +10% <@ba.talpu>(+2%)</>",
+                    "blackboard": {
+                        "atk": 0.1
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +32",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 32.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</> (Upgraded after reaching Elite 2)",
+                "blackboard": {
+                    "attack@max_target": 3.0,
+                    "attack@sluggish": 0.5
+                }
+            },
+            {
+                "UnlockPhase": 2,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+                "blackboard": {
+                    "attack@max_target": 4.0,
+                    "attack@sluggish": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 85,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

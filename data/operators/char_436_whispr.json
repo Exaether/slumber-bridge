@@ -1,0 +1,199 @@
+{
+    "operator": {
+        "id": "char_436_whispr",
+        "name": "Whisperain",
+        "rarity": 5,
+        "portait": "",
+        "profession": "MEDIC",
+        "subProfession": "healer",
+        "nation": "iberia",
+        "group": null,
+        "displayNumber": "R163",
+        "position": "RANGED",
+        "tagList": [
+            "Healing"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_whispr_1",
+            "skchr_whispr_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 785,
+                "atk": 172,
+                "def": 52,
+                "res": 10.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1034,
+                "atk": 282,
+                "def": 76,
+                "res": 10.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-4",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 1034,
+                "atk": 282,
+                "def": 76,
+                "res": 10.0,
+                "cost": 20,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1231,
+                "atk": 393,
+                "def": 95,
+                "res": 10.0,
+                "cost": 20,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-4",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1231,
+                "atk": 393,
+                "def": 95,
+                "res": 10.0,
+                "cost": 20,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1432,
+                "atk": 492,
+                "def": 119,
+                "res": 10.0,
+                "cost": 20,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Tower of Life",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Allied units with <$ba.buffres>status resistance</> within this unit's Attack Range will restore HP per second equal to 3% of Whisperain's ATK (Unaffected by this unit's Trait)",
+                    "blackboard": {
+                        "atk_to_hp_recovery_ratio": 0.03
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Allied units with <$ba.buffres>status resistance</> within this unit's Attack Range will restore HP per second equal to 4% <@ba.talpu>(+1%)</> of Whisperain's ATK (Unaffected by this unit's Trait)",
+                    "blackboard": {
+                        "atk_to_hp_recovery_ratio": 0.04
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Allied units with <$ba.buffres>status resistance</> within this unit's Attack Range will restore HP per second equal to 6% of Whisperain's ATK (Unaffected by this unit's Trait)",
+                    "blackboard": {
+                        "atk_to_hp_recovery_ratio": 0.06
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Allied units with <$ba.buffres>status resistance</> within this unit's Attack Range will restore HP per second equal to 7% <@ba.talpu>(+1%)</> of Whisperain's ATK (Unaffected by this unit's Trait)",
+                    "blackboard": {
+                        "atk_to_hp_recovery_ratio": 0.07
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +23",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 23.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
+                "blackboard": {
+                    "heal_scale": 0.8
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 200,
+        "atk": 40,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

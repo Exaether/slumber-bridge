@@ -1,0 +1,217 @@
+{
+    "operator": {
+        "id": "char_4042_lumen",
+        "name": "Lumen",
+        "rarity": 6,
+        "portait": "",
+        "profession": "MEDIC",
+        "subProfession": "healer",
+        "nation": "iberia",
+        "group": null,
+        "displayNumber": "II09",
+        "position": "RANGED",
+        "tagList": [
+            "Healing",
+            "Support"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_lumen_1",
+            "skchr_lumen_2",
+            "skchr_lumen_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1000,
+                "atk": 189,
+                "def": 48,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1317,
+                "atk": 311,
+                "def": 70,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-4",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1317,
+                "atk": 311,
+                "def": 70,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1569,
+                "atk": 432,
+                "def": 88,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-4",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1569,
+                "atk": 432,
+                "def": 88,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1825,
+                "atk": 540,
+                "def": 111,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.85,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "An Everyman's Wish",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Healing targets gain <$ba.buffres>status resistance</> for 2 seconds. If the target's HP is above 75%, they gain <$ba.buffres>status resistance</> for 4 seconds instead.",
+                    "blackboard": {
+                        "status_resistance[limit]": 2.0,
+                        "lumen_t_1[special].status_resistance[limit]": 4.0,
+                        "one_minus_status_resistance": -0.5,
+                        "lumen_t_1[special].one_minus_status_resistance": -0.5,
+                        "hp_ratio": 0.75
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Healing targets gain <$ba.buffres>status resistance</> for 4 seconds. If the target's HP is above 75%, they gain <$ba.buffres>status resistance</> for 6 seconds instead.",
+                    "blackboard": {
+                        "status_resistance[limit]": 4.0,
+                        "lumen_t_1[special].status_resistance[limit]": 6.0,
+                        "one_minus_status_resistance": -0.5,
+                        "lumen_t_1[special].one_minus_status_resistance": -0.5,
+                        "hp_ratio": 0.75
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Quick Fix",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When an ally within range receives a negative status, heal them for 80% of Lumen's ATK. 12 seconds cooldown.",
+                    "blackboard": {
+                        "heal_scale": 0.8,
+                        "duration": 12.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When an ally within range receives a negative status, heal them for 80% of Lumen's ATK. 10<@ba.talpu>(-2)</> seconds cooldown.",
+                    "blackboard": {
+                        "heal_scale": 0.8,
+                        "duration": 10.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
+                "blackboard": {
+                    "heal_scale": 0.8
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 45,
+        "def": 30,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

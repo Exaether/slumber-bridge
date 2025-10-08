@@ -1,0 +1,231 @@
+{
+    "operator": {
+        "id": "char_4132_ascln",
+        "name": "Ascalon",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SPECIAL",
+        "subProfession": "stalker",
+        "nation": "rhodes",
+        "group": "sweep",
+        "displayNumber": "SW00",
+        "position": "MELEE",
+        "tagList": [
+            "Slow",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_ascln_1",
+            "skchr_ascln_2",
+            "skchr_ascln_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 702,
+                "atk": 410,
+                "def": 146,
+                "res": 10.0,
+                "cost": 19,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 949,
+                "atk": 587,
+                "def": 215,
+                "res": 10.0,
+                "cost": 19,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        },
+        {
+            "range": "y-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 949,
+                "atk": 587,
+                "def": 215,
+                "res": 20.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 1233,
+                "atk": 763,
+                "def": 283,
+                "res": 20.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        },
+        {
+            "range": "y-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1233,
+                "atk": 763,
+                "def": 283,
+                "res": 30.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 1623,
+                "atk": 954,
+                "def": 333,
+                "res": 30.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Mortal Interrogation",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks inflict the following effect on enemies: Movement Speed reduced by 12% and take 6% of Ascalon's current ATK as Arts damage per second for 18s, stacking up to 3 times.",
+                    "blackboard": {
+                        "move_speed": -0.12,
+                        "atk_ratio": 0.06,
+                        "max_stack_cnt": 3.0,
+                        "debuff_duration": 18.0,
+                        "interval": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks inflict the following effect on enemies: Movement Speed reduced by 15% and take 8% of Ascalon's current ATK as Arts damage per second for 18s, stacking up to 3 times.",
+                    "blackboard": {
+                        "move_speed": -0.15,
+                        "atk_ratio": 0.08,
+                        "max_stack_cnt": 3.0,
+                        "debuff_duration": 18.0,
+                        "interval": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks inflict the following effect on enemies: Movement Speed reduced by 18% and take 10% of Ascalon's current ATK as Arts damage per second for 25s, stacking up to 3 times.",
+                    "blackboard": {
+                        "move_speed": -0.18,
+                        "atk_ratio": 0.1,
+                        "max_stack_cnt": 3.0,
+                        "debuff_duration": 25.0,
+                        "interval": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Penumbral Image",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "ASPD +8; gain an additional ASPD +6 if there is high ground in the 4 adjacent tiles.",
+                    "blackboard": {
+                        "attack_speed": 8.0,
+                        "attack_speed_add": 6.0,
+                        "cnt": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "ASPD +10 <@ba.talpu>(+2)</>; gain an additional ASPD +6 if there is high ground in the 4 adjacent tiles.",
+                    "blackboard": {
+                        "attack_speed": 10.0,
+                        "attack_speed_add": 6.0,
+                        "cnt": 1.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Max HP +160",
+            "attribute": "MAX_HP",
+            "formula": "ADDITION",
+            "value": 160.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "prob": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 200,
+        "atk": 0,
+        "def": 40,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

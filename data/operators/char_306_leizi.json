@@ -1,0 +1,208 @@
+{
+    "operator": {
+        "id": "char_306_leizi",
+        "name": "Leizi",
+        "rarity": 5,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "chain",
+        "nation": "yan",
+        "group": null,
+        "displayNumber": "YD05",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_atk_up[3]",
+            "skchr_leizi_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 590,
+                "atk": 295,
+                "def": 47,
+                "res": 10.0,
+                "cost": 29,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 843,
+                "atk": 411,
+                "def": 72,
+                "res": 10.0,
+                "cost": 29,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 843,
+                "atk": 411,
+                "def": 72,
+                "res": 15.0,
+                "cost": 32,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1096,
+                "atk": 527,
+                "def": 99,
+                "res": 15.0,
+                "cost": 32,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1096,
+                "atk": 527,
+                "def": 99,
+                "res": 20.0,
+                "cost": 32,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1443,
+                "atk": 635,
+                "def": 119,
+                "res": 20.0,
+                "cost": 32,
+                "baseAttackTime": 2.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Unobstructed Flow",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Increases ATK to 110% when attacking unblocked enemies",
+                    "blackboard": {
+                        "atk_scale": 1.1
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Increases ATK to 113% <@ba.talpu>(+3%)</> when attacking unblocked enemies",
+                    "blackboard": {
+                        "atk_scale": 1.13
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Increases ATK to 120% when attacking unblocked enemies",
+                    "blackboard": {
+                        "atk_scale": 1.2
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Increases ATK to 123% <@ba.talpu>(+3%)</> when attacking unblocked enemies",
+                    "blackboard": {
+                        "atk_scale": 1.23
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +28",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 28.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</> (Upgraded after reaching Elite 2)",
+                "blackboard": {
+                    "attack@max_target": 3.0,
+                    "attack@sluggish": 0.5
+                }
+            },
+            {
+                "UnlockPhase": 2,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+                "blackboard": {
+                    "attack@max_target": 4.0,
+                    "attack@sluggish": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 75,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

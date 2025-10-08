@@ -1,0 +1,210 @@
+{
+    "operator": {
+        "id": "char_358_lisa",
+        "name": "Suzuran",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SUPPORT",
+        "subProfession": "slower",
+        "nation": "siracusa",
+        "group": null,
+        "displayNumber": "R172",
+        "position": "RANGED",
+        "tagList": [
+            "Slow",
+            "Support",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_lisa_1",
+            "skchr_lisa_2",
+            "skchr_lisa_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 673,
+                "atk": 220,
+                "def": 57,
+                "res": 15.0,
+                "cost": 14,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 922,
+                "atk": 324,
+                "def": 83,
+                "res": 15.0,
+                "cost": 14,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-2",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 922,
+                "atk": 324,
+                "def": 83,
+                "res": 20.0,
+                "cost": 16,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1184,
+                "atk": 432,
+                "def": 107,
+                "res": 20.0,
+                "cost": 16,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-2",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1184,
+                "atk": 432,
+                "def": 107,
+                "res": 25.0,
+                "cost": 16,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1480,
+                "atk": 521,
+                "def": 128,
+                "res": 25.0,
+                "cost": 16,
+                "baseAttackTime": 1.9,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Skill Aura - Supporter",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When deployed, increases the SP recovery of Supporters by 0.2/second (only the highest effect of this type takes place)",
+                    "blackboard": {
+                        "sp_recovery_per_sec": 0.2
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When deployed, increases the SP recovery rate of all Supporters by +0.4/second (only the highest effect of this type takes place)",
+                    "blackboard": {
+                        "sp_recovery_per_sec": 0.4
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Binding Circle",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 20% <$ba.fragile>Fragile</> effect for an equivalent duration",
+                    "blackboard": {
+                        "damage_scale": 1.2,
+                        "atk": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 23% <@ba.talpu>(+3%)</> <$ba.fragile>Fragile</> effect for an equivalent duration",
+                    "blackboard": {
+                        "damage_scale": 1.23,
+                        "atk": 1.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +25",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 25.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "sluggish": 0.8
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 75,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

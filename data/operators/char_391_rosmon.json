@@ -1,0 +1,215 @@
+{
+    "operator": {
+        "id": "char_391_rosmon",
+        "name": "Rosmontis",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SNIPER",
+        "subProfession": "bombarder",
+        "nation": "rhodes",
+        "group": "elite",
+        "displayNumber": "RE45",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_rosmon_1",
+            "skchr_rosmon_2",
+            "skchr_rosmon_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 874,
+                "atk": 341,
+                "def": 123,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1166,
+                "atk": 461,
+                "def": 160,
+                "res": 10.0,
+                "cost": 23,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-9",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1166,
+                "atk": 461,
+                "def": 160,
+                "res": 10.0,
+                "cost": 25,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1477,
+                "atk": 584,
+                "def": 200,
+                "res": 10.0,
+                "cost": 25,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-9",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1477,
+                "atk": 584,
+                "def": 200,
+                "res": 15.0,
+                "cost": 25,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1944,
+                "atk": 688,
+                "def": 245,
+                "res": 15.0,
+                "cost": 25,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Armaments of Annihilation",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks ignore 90 DEF",
+                    "blackboard": {
+                        "def_penetrate_fixed": 90.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks ignore 105 <@ba.talpu>(+15)</> DEF",
+                    "blackboard": {
+                        "def_penetrate_fixed": 105.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks ignore 160 DEF",
+                    "blackboard": {
+                        "def_penetrate_fixed": 160.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks ignore 175 <@ba.talpu>(+15)</> DEF",
+                    "blackboard": {
+                        "def_penetrate_fixed": 175.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Stable Esthesia",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When deployed, grants +8% ATK to this unit and a random deployed Caster Operator",
+                    "blackboard": {
+                        "atk": 0.08
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +32",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 32.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "attack@append_atk_scale": 0.5,
+                    "attack@times": 2.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 60,
+        "def": 30,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

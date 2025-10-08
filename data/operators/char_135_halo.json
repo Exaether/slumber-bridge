@@ -1,0 +1,199 @@
+{
+    "operator": {
+        "id": "char_135_halo",
+        "name": "Astgenne",
+        "rarity": 5,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "chain",
+        "nation": "columbia",
+        "group": "rhine",
+        "displayNumber": "RL08",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_halo_1",
+            "skchr_halo_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 589,
+                "atk": 293,
+                "def": 48,
+                "res": 10.0,
+                "cost": 31,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 842,
+                "atk": 407,
+                "def": 74,
+                "res": 10.0,
+                "cost": 31,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 842,
+                "atk": 407,
+                "def": 74,
+                "res": 15.0,
+                "cost": 34,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1094,
+                "atk": 522,
+                "def": 102,
+                "res": 15.0,
+                "cost": 34,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1094,
+                "atk": 522,
+                "def": 102,
+                "res": 20.0,
+                "cost": 34,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1440,
+                "atk": 630,
+                "def": 122,
+                "res": 20.0,
+                "cost": 34,
+                "baseAttackTime": 2.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Passion for Research",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains +3 ASPD for every 15 seconds this unit remains on the battlefield, stacking up to 5 times",
+                    "blackboard": {
+                        "max_stack_cnt": 5.0,
+                        "interval": 15.0,
+                        "attack_speed": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains +4 ASPD for every 15 seconds this unit remains on the battlefield, stacking up to 5 times",
+                    "blackboard": {
+                        "max_stack_cnt": 5.0,
+                        "interval": 15.0,
+                        "attack_speed": 4.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +28",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 28.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@chain.max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</> (improved after Elite 2)",
+                "blackboard": {
+                    "attack@chain.max_target": 3.0,
+                    "attack@sluggish": 0.5
+                }
+            },
+            {
+                "UnlockPhase": 2,
+                "overrideDescription": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>{attack@chain.max_target}</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
+                "blackboard": {
+                    "attack@chain.max_target": 4.0,
+                    "attack@sluggish": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 75,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

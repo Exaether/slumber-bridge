@@ -1,0 +1,255 @@
+{
+    "operator": {
+        "id": "char_4010_etlchi",
+        "name": "Entelechia",
+        "rarity": 6,
+        "portait": "",
+        "profession": "WARRIOR",
+        "subProfession": "reaper",
+        "nation": "rhodes",
+        "group": null,
+        "displayNumber": "R169",
+        "position": "MELEE",
+        "tagList": [
+            "DPS",
+            "Survival"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_etlchi_1",
+            "skchr_etlchi_2",
+            "skchr_etlchi_3"
+        ],
+        "talents": [
+            1,
+            2,
+            3
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1115,
+                "atk": 295,
+                "def": 220,
+                "res": 0.0,
+                "cost": 20,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1528,
+                "atk": 435,
+                "def": 302,
+                "res": 0.0,
+                "cost": 20,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-3",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1528,
+                "atk": 435,
+                "def": 302,
+                "res": 0.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2038,
+                "atk": 581,
+                "def": 388,
+                "res": 0.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-3",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 2038,
+                "atk": 581,
+                "def": 388,
+                "res": 0.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2580,
+                "atk": 700,
+                "def": 452,
+                "res": 0.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Blood Bank",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks <$ba.steal>Steal</> 50 Max HP from the target (Caps at 900) and deal 100 Arts damage per second to the target for 5s",
+                    "blackboard": {
+                        "dot_duration": 5.0,
+                        "attack@steal_hp": 50.0,
+                        "attack@steal_hp_max": 900.0,
+                        "magic_value": 100.0,
+                        "interval": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks <$ba.steal>Steal</> 50 Max HP from the target (Caps at 900) and deal 150 <@ba.talpu>(+50)</> Arts damage per second to the target for 5s",
+                    "blackboard": {
+                        "dot_duration": 5.0,
+                        "attack@steal_hp": 50.0,
+                        "attack@steal_hp_max": 900.0,
+                        "magic_value": 150.0,
+                        "interval": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 200 Arts damage per second to the target for 5s",
+                    "blackboard": {
+                        "dot_duration": 5.0,
+                        "attack@steal_hp": 75.0,
+                        "attack@steal_hp_max": 1350.0,
+                        "magic_value": 200.0,
+                        "interval": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 250 <@ba.talpu>(+50)</> Arts damage per second to the target for 5s",
+                    "blackboard": {
+                        "dot_duration": 5.0,
+                        "attack@steal_hp": 75.0,
+                        "attack@steal_hp_max": 1350.0,
+                        "magic_value": 250.0,
+                        "interval": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Second Serving",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When HP drops below 25% for the first time, immediately recovers 50% of Max HP and reduces Physical damage taken by 10% from that point onwards",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "damage_resistance": 0.1,
+                        "etlchi_t_2[heal].hp_ratio": 0.5
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 2,
+                    "description": "When HP drops below 25% for the first time, immediately recovers 55% <@ba.talpu>(+5%)</> of Max HP and reduces Physical damage taken by 15% <@ba.talpu>(+5%)</> from that point onwards",
+                    "blackboard": {
+                        "hp_ratio": 0.25,
+                        "damage_resistance": 0.15,
+                        "etlchi_t_2[heal].hp_ratio": 0.55
+                    }
+                }
+            ]
+        },
+        {
+            "name": null,
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": null,
+                    "blackboard": {
+                        "take_extra_enemy_key": 0.0,
+                        "skill_index": 2.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +30",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 30.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Cannot be healed by allies; Attacks deal <@ba.kw>AoE damage</>; Recovers <@ba.kw>{value}</> HP for every enemy hit during attacks, up to Block count",
+                "blackboard": {
+                    "value": 50.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 50,
+        "def": 50,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

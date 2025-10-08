@@ -1,0 +1,206 @@
+{
+    "operator": {
+        "id": "char_4054_malist",
+        "name": "Minimalist",
+        "rarity": 5,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "funnel",
+        "nation": "sargon",
+        "group": null,
+        "displayNumber": "SG09",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_quickattack[3]",
+            "skchr_malist_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 573,
+                "atk": 148,
+                "def": 47,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 819,
+                "atk": 209,
+                "def": 72,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 819,
+                "atk": 209,
+                "def": 72,
+                "res": 15.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1064,
+                "atk": 268,
+                "def": 100,
+                "res": 15.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1064,
+                "atk": 268,
+                "def": 100,
+                "res": 20.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1400,
+                "atk": 320,
+                "def": 120,
+                "res": 20.0,
+                "cost": 23,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Flash of Insight",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking, has a 10% chance to increase that ATK to 150%",
+                    "blackboard": {
+                        "prob": 0.1,
+                        "atk_scale": 1.5
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "When attacking, has a 15% <@ba.talpu>(+5%)</> chance to increase that ATK to 150%",
+                    "blackboard": {
+                        "prob": 0.15,
+                        "atk_scale": 1.5
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking, has a 25% chance to increase that ATK to 150%",
+                    "blackboard": {
+                        "prob": 0.25,
+                        "atk_scale": 1.5
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When attacking, has a 30% <@ba.talpu>(+5%)</> chance to increase that ATK to 150%",
+                    "blackboard": {
+                        "prob": 0.3,
+                        "atk_scale": 1.5
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Controls a <@ba.kw>Drone</> that deals <@ba.kw>Arts damage</>; When the Drone attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
+                "blackboard": {
+                    "init_atk_scale": 0.2,
+                    "delta_atk_scale": 0.15,
+                    "max_atk_scale": 1.1,
+                    "max_stack_cnt": 6.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 100,
+        "atk": 40,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

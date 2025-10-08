@@ -1,0 +1,226 @@
+{
+    "operator": {
+        "id": "char_322_lmlee",
+        "name": "Lee",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SPECIAL",
+        "subProfession": "merchant",
+        "nation": "lungmen",
+        "group": null,
+        "displayNumber": "LM18",
+        "position": "MELEE",
+        "tagList": [
+            "Fast-Redeploy",
+            "Survival",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_lmlee_1",
+            "skchr_lmlee_2",
+            "skchr_lmlee_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1179,
+                "atk": 376,
+                "def": 240,
+                "res": 0.0,
+                "cost": 7,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1552,
+                "atk": 516,
+                "def": 308,
+                "res": 0.0,
+                "cost": 7,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1552,
+                "atk": 516,
+                "def": 308,
+                "res": 0.0,
+                "cost": 9,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1917,
+                "atk": 654,
+                "def": 395,
+                "res": 0.0,
+                "cost": 9,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1917,
+                "atk": 654,
+                "def": 395,
+                "res": 0.0,
+                "cost": 9,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2427,
+                "atk": 789,
+                "def": 465,
+                "res": 0.0,
+                "cost": 9,
+                "baseAttackTime": 1.0,
+                "respawnTime": 25,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Kindness Begets Prosperity",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When Lee is blocking an enemy, the enemy has ASPD -7 and Lee has ASPD +7; If there is only one enemy within the surrounding 8 tiles, this effect is doubled",
+                    "blackboard": {
+                        "lmlee_t_1[enemy].attack_speed": -7.0,
+                        "lmlee_t_1[self].attack_speed": 7.0,
+                        "cnt": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "When Lee is blocking an enemy, the enemy has ASPD -8 <@ba.talpu>(+1)</> and Lee has ASPD +8 <@ba.talpu>(+1)</>; If there is only one enemy within the surrounding 8 tiles, this effect is doubled",
+                    "blackboard": {
+                        "lmlee_t_1[enemy].attack_speed": -8.0,
+                        "lmlee_t_1[self].attack_speed": 8.0,
+                        "cnt": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When Lee is blocking an enemy, the enemy has ASPD -14 and Lee has ASPD +14; If there is only one enemy within the surrounding 8 tiles, this effect is doubled",
+                    "blackboard": {
+                        "lmlee_t_1[enemy].attack_speed": -14.0,
+                        "lmlee_t_1[self].attack_speed": 14.0,
+                        "cnt": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When Lee is blocking an enemy, the enemy has ASPD -15 <@ba.talpu>(+1)</> and Lee has ASPD +15 <@ba.talpu>(+1)</>; If there is only one enemy within the surrounding 8 tiles, this effect is doubled",
+                    "blackboard": {
+                        "lmlee_t_1[enemy].attack_speed": -15.0,
+                        "lmlee_t_1[self].attack_speed": 15.0,
+                        "cnt": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Preparedness Averts Peril",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When DP is consumed by this unit's Trait, if there is sufficient DP, consumes 5 DP instead to block the next <$ba.stun>Stun</>/<$ba.frozen>Freeze</> effect inflicted on this unit, and stuns the attacker for 3 seconds",
+                    "blackboard": {
+                        "extra_cost": -5.0,
+                        "stun": 3.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +30",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 30.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves First Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "interval": 3.0,
+                    "cost": -3.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 300,
+        "atk": 55,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

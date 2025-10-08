@@ -1,0 +1,218 @@
+{
+    "operator": {
+        "id": "char_4134_cetsyr",
+        "name": "Civilight Eterna",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SUPPORT",
+        "subProfession": "bard",
+        "nation": "rhodes",
+        "group": null,
+        "displayNumber": "DWDB",
+        "position": "RANGED",
+        "tagList": [
+            "Support",
+            "Survival",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_cetsyr_1",
+            "skchr_cetsyr_2",
+            "skchr_cetsyr_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "x-4",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 623,
+                "atk": 146,
+                "def": 94,
+                "res": 0.0,
+                "cost": 8,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 891,
+                "atk": 229,
+                "def": 141,
+                "res": 0.0,
+                "cost": 8,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "x-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 891,
+                "atk": 229,
+                "def": 141,
+                "res": 0.0,
+                "cost": 10,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1221,
+                "atk": 306,
+                "def": 188,
+                "res": 0.0,
+                "cost": 10,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "x-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1221,
+                "atk": 306,
+                "def": 188,
+                "res": 0.0,
+                "cost": 10,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1628,
+                "atk": 369,
+                "def": 236,
+                "res": 0.0,
+                "cost": 10,
+                "baseAttackTime": 1.3,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Dust of the Past",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator, it disappears and increases Civilight Eterna's Trait effect on that Operator to 1.2x for 6s. The disappeared Particle respawns after 6s.",
+                    "blackboard": {
+                        "cnt": 3.0,
+                        "range_radius": 1.15,
+                        "cooldown": 6.0,
+                        "dynamic_spd": 30.0,
+                        "talent_duration": 6.0,
+                        "attack@trait_mul": 1.2
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator, it disappears and increases Civilight Eterna's Trait effect on that Operator to 1.5x for 6s. The disappeared Particle respawns after 6s.",
+                    "blackboard": {
+                        "cnt": 3.0,
+                        "range_radius": 1.15,
+                        "cooldown": 6.0,
+                        "dynamic_spd": 30.0,
+                        "talent_duration": 6.0,
+                        "attack@trait_mul": 1.5
+                    }
+                }
+            ]
+        },
+        {
+            "name": "The Echo of Kings",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When deployed, all allied units take 10% less damage from [Sarkaz] enemies.",
+                    "blackboard": {
+                        "damage_resistance": 0.1
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When deployed, all allied units take 15%<@ba.talpu> (+5%)</> less damage from [Sarkaz] enemies.",
+                    "blackboard": {
+                        "damage_resistance": 0.15
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to <@ba.kw>{attack@atk_to_hp_recovery_ratio:0%}</> of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
+                "blackboard": {
+                    "attack@atk_to_hp_recovery_ratio": 0.1
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 300,
+        "atk": 30,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

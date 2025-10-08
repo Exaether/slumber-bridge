@@ -1,0 +1,220 @@
+{
+    "operator": {
+        "id": "char_437_mizuki",
+        "name": "Mizuki",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SPECIAL",
+        "subProfession": "stalker",
+        "nation": "higashi",
+        "group": null,
+        "displayNumber": "HK07",
+        "position": "MELEE",
+        "tagList": [
+            "DPS",
+            "Crowd-Control"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_mizuki_1",
+            "skchr_mizuki_2",
+            "skchr_mizuki_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 760,
+                "atk": 372,
+                "def": 155,
+                "res": 10.0,
+                "cost": 19,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 1028,
+                "atk": 532,
+                "def": 229,
+                "res": 10.0,
+                "cost": 19,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        },
+        {
+            "range": "y-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1028,
+                "atk": 532,
+                "def": 229,
+                "res": 20.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 1336,
+                "atk": 692,
+                "def": 302,
+                "res": 20.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        },
+        {
+            "range": "y-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1336,
+                "atk": 692,
+                "def": 302,
+                "res": 30.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            },
+            "maxStats": {
+                "maxHP": 1758,
+                "atk": 865,
+                "def": 356,
+                "res": 30.0,
+                "cost": 21,
+                "baseAttackTime": 3.5,
+                "respawnTime": 70,
+                "taunt": -1
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Traumatic Hysteria",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks deal an additional 20% of ATK as Arts damage to the target with the lowest HP",
+                    "blackboard": {
+                        "attack@mizuki_t_1.atk_scale": 0.2,
+                        "attack@max_target": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks deal an additional 30% of ATK as Arts damage to the target with the lowest HP",
+                    "blackboard": {
+                        "attack@mizuki_t_1.atk_scale": 0.3,
+                        "attack@max_target": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks deal an additional 50% of ATK as Arts damage to the target with the lowest HP",
+                    "blackboard": {
+                        "attack@mizuki_t_1.atk_scale": 0.5,
+                        "attack@max_target": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Countertransference",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When there are enemies with less than 50% HP within Attack Range, ATK +10%",
+                    "blackboard": {
+                        "hp_ratio": 0.5,
+                        "atk": 0.1
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When there are enemies with less than 50% HP within Attack Range, ATK +12% <@ba.talpu>(+2%)</>",
+                    "blackboard": {
+                        "hp_ratio": 0.5,
+                        "atk": 0.12
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +32",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 32.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "prob": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 110,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

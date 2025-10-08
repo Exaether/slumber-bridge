@@ -1,0 +1,201 @@
+{
+    "operator": {
+        "id": "char_486_takila",
+        "name": "Tequila",
+        "rarity": 5,
+        "portait": "",
+        "profession": "WARRIOR",
+        "subProfession": "librator",
+        "nation": "bolivar",
+        "group": null,
+        "displayNumber": "BV12",
+        "position": "MELEE",
+        "tagList": [
+            "Nuker"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_takila_1",
+            "skchr_takila_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1871,
+                "atk": 137,
+                "def": 238,
+                "res": 15.0,
+                "cost": 11,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2463,
+                "atk": 197,
+                "def": 331,
+                "res": 15.0,
+                "cost": 11,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-2",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 2463,
+                "atk": 197,
+                "def": 331,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 3118,
+                "atk": 256,
+                "def": 425,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-2",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 3118,
+                "atk": 256,
+                "def": 425,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 3757,
+                "atk": 302,
+                "def": 501,
+                "res": 15.0,
+                "cost": 13,
+                "baseAttackTime": 1.2,
+                "respawnTime": 80,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Waiting Game",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When skill is inactive, deals 10% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
+                    "blackboard": {
+                        "atk_scale": 0.1
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "When skill is inactive, deals 13% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
+                    "blackboard": {
+                        "atk_scale": 0.13
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When skill is inactive, deals 20% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
+                    "blackboard": {
+                        "atk_scale": 0.2
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When skill is inactive, deals 23% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
+                    "blackboard": {
+                        "atk_scale": 0.23
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -10 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -10.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
+                "blackboard": {
+                    "atk": 2.0,
+                    "mid_stack_cnt": 20.0,
+                    "max_stack_cnt": 40.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 230,
+        "atk": 50,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

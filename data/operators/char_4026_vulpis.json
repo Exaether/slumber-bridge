@@ -1,0 +1,205 @@
+{
+    "operator": {
+        "id": "char_4026_vulpis",
+        "name": "Vulpisfoglia",
+        "rarity": 6,
+        "portait": "",
+        "profession": "PIONEER",
+        "subProfession": "pioneer",
+        "nation": "siracusa",
+        "group": null,
+        "displayNumber": "SR40",
+        "position": "MELEE",
+        "tagList": [
+            "DP-Recovery",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_vulpis_1",
+            "skchr_vulpis_2",
+            "skchr_vulpis_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 821,
+                "atk": 231,
+                "def": 152,
+                "res": 0.0,
+                "cost": 12,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1081,
+                "atk": 335,
+                "def": 224,
+                "res": 0.0,
+                "cost": 12,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1081,
+                "atk": 335,
+                "def": 224,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1481,
+                "atk": 460,
+                "def": 304,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1481,
+                "atk": 460,
+                "def": 304,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2030,
+                "atk": 562,
+                "def": 380,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Fox Hunt",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "After dealing damage to an enemy for the first time, Vulpisfoglia deals an additional 20% ATK as Arts damage whenever she deals damage to this enemy during the next 10s",
+                    "blackboard": {
+                        "atk_scale": 0.2,
+                        "interval": 10.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "After dealing damage to an enemy for the first time, Vulpisfoglia deals an additional 30% ATK as Arts damage whenever she deals damage to this enemy during the next 10s",
+                    "blackboard": {
+                        "atk_scale": 0.3,
+                        "interval": 10.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Accelerando",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Natural DP regeneration rate +10% while on the field; if Vulpisfoglia does not take damage for 4s, recovers 4% of Max HP every second",
+                    "blackboard": {
+                        "delta_cost_increase_time": 1.1,
+                        "interval": 4.0,
+                        "vulpis_t_2[heal][interval].hp_recovery_per_sec_by_max_hp_ratio": 0.04
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Natural DP regeneration rate +10% while on the field; if Vulpisfoglia does not take damage for 4s, recovers 5% <@ba.talpu>(+1%)</> of Max HP every second",
+                    "blackboard": {
+                        "delta_cost_increase_time": 1.1,
+                        "interval": 4.0,
+                        "vulpis_t_2[heal][interval].hp_recovery_per_sec_by_max_hp_ratio": 0.05
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +25",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 25.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Blocks 2 enemies",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 150,
+        "atk": 60,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

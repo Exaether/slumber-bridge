@@ -1,0 +1,189 @@
+{
+    "operator": {
+        "id": "char_1027_greyy2",
+        "name": "Greyy the Lightningbearer",
+        "rarity": 5,
+        "portait": "",
+        "profession": "SNIPER",
+        "subProfession": "bombarder",
+        "nation": "rhodes",
+        "group": null,
+        "displayNumber": "RF23",
+        "position": "RANGED",
+        "tagList": [
+            "DPS",
+            "Slow"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_quickattack[3]",
+            "skchr_greyy2_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-3",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 778,
+                "atk": 311,
+                "def": 120,
+                "res": 10.0,
+                "cost": 22,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1038,
+                "atk": 421,
+                "def": 156,
+                "res": 10.0,
+                "cost": 22,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-9",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 1038,
+                "atk": 421,
+                "def": 156,
+                "res": 10.0,
+                "cost": 24,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1314,
+                "atk": 533,
+                "def": 196,
+                "res": 10.0,
+                "cost": 24,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-9",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1314,
+                "atk": 533,
+                "def": 196,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1730,
+                "atk": 628,
+                "def": 240,
+                "res": 15.0,
+                "cost": 24,
+                "baseAttackTime": 2.1,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Light-Stealing Chain",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks have 25% chance to <$ba.sluggish>Slow</> the target for 2 seconds",
+                    "blackboard": {
+                        "attack@prob": 0.25,
+                        "attack@sluggish": 2.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Attacks have 40% chance to <$ba.sluggish>Slow</> the target for 2 seconds",
+                    "blackboard": {
+                        "attack@prob": 0.4,
+                        "attack@sluggish": 2.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +32",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 32.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -6 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -6.0
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "attack@append_atk_scale": 0.5
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 150,
+        "atk": 60,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

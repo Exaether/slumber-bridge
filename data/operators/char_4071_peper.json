@@ -1,0 +1,204 @@
+{
+    "operator": {
+        "id": "char_4071_peper",
+        "name": "Paprika",
+        "rarity": 5,
+        "portait": "",
+        "profession": "MEDIC",
+        "subProfession": "chainhealer",
+        "nation": "rhodes",
+        "group": null,
+        "displayNumber": "R175",
+        "position": "RANGED",
+        "tagList": [
+            "Healing"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_heal_rage[3]",
+            "skchr_peper_2"
+        ],
+        "talents": [
+            1
+        ]
+    },
+    "phases": [
+        {
+            "range": "y-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 913,
+                "atk": 153,
+                "def": 74,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1202,
+                "atk": 252,
+                "def": 108,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-2",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 1202,
+                "atk": 252,
+                "def": 108,
+                "res": 0.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1432,
+                "atk": 351,
+                "def": 136,
+                "res": 0.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "y-2",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1432,
+                "atk": 351,
+                "def": 136,
+                "res": 0.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1666,
+                "atk": 439,
+                "def": 171,
+                "res": 0.0,
+                "cost": 18,
+                "baseAttackTime": 2.85,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Focused Attention",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When healing, heal an extra 80 HP if target HP is below 40%",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "value": 80.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "When healing, heal an extra 90<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "value": 90.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When healing, heal an extra 140 HP if target HP is below 40%",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "value": 140.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When healing, heal an extra 150<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "value": 150.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +24",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 24.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
+                "blackboard": {
+                    "attack@chain.max_target": 3.0,
+                    "attack@chain.atk_scale": 0.75
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 200,
+        "atk": 50,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

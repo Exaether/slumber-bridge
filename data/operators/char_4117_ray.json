@@ -1,0 +1,225 @@
+{
+    "operator": {
+        "id": "char_4117_ray",
+        "name": "Ray",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SNIPER",
+        "subProfession": "hunter",
+        "nation": "rim",
+        "group": null,
+        "displayNumber": "RB15",
+        "position": "RANGED",
+        "tagList": [
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_ray_1",
+            "skchr_ray_2",
+            "skchr_ray_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-12",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 904,
+                "atk": 547,
+                "def": 103,
+                "res": 0.0,
+                "cost": 17,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1190,
+                "atk": 720,
+                "def": 140,
+                "res": 0.0,
+                "cost": 17,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "4-9",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1190,
+                "atk": 720,
+                "def": 140,
+                "res": 0.0,
+                "cost": 19,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1507,
+                "atk": 900,
+                "def": 180,
+                "res": 0.0,
+                "cost": 19,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "4-9",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1507,
+                "atk": 900,
+                "def": 180,
+                "res": 0.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1933,
+                "atk": 1072,
+                "def": 228,
+                "res": 0.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Patrol Partner",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Can deploy a sandbeast within Attack Range to scout an area for 15s, extending Attack Range into that area. Prioritizes attacking targets within this area, and deals 10% more Physical damage to them",
+                    "blackboard": {
+                        "damage_scale": 0.1
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Can deploy a sandbeast within Attack Range to scout an area for 25s, extending Attack Range into that area. Prioritizes attacking targets within this area, and deals 15% more Physical damage to them",
+                    "blackboard": {
+                        "damage_scale": 0.15
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Extreme Focus",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking the same target, each attack increases ATK by 8%, stacking up to 3 times",
+                    "blackboard": {
+                        "atk": 0.08,
+                        "max_stack_cnt": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 3 times",
+                    "blackboard": {
+                        "atk": 0.09,
+                        "max_stack_cnt": 3.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +37",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 37.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Attacks consume Ammo to increase ATK to <@ba.kw>{atk_scale:0%}</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}, improved at Elite 1).",
+                "blackboard": {
+                    "value": 4.0,
+                    "atk_scale": 1.2
+                }
+            },
+            {
+                "UnlockPhase": 1,
+                "overrideDescription": "Attacks consume Ammo to increase ATK to <@ba.kw>{atk_scale:0%}</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}, improved at Elite 2).",
+                "blackboard": {
+                    "value": 6.0,
+                    "atk_scale": 1.2
+                }
+            },
+            {
+                "UnlockPhase": 2,
+                "overrideDescription": "Attacks consume Ammo to increase ATK to <@ba.kw>{atk_scale:0%}</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}).",
+                "blackboard": {
+                    "value": 8.0,
+                    "atk_scale": 1.2
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 120,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

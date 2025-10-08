@@ -1,0 +1,209 @@
+{
+    "operator": {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "portait": "",
+        "profession": "PIONEER",
+        "subProfession": "pioneer",
+        "nation": "higashi",
+        "group": null,
+        "displayNumber": "HK13",
+        "position": "MELEE",
+        "tagList": [
+            "DP-Recovery",
+            "DPS"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skcom_charge_cost[3]",
+            "skchr_saga_2",
+            "skchr_saga_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 892,
+                "atk": 218,
+                "def": 148,
+                "res": 0.0,
+                "cost": 12,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1174,
+                "atk": 316,
+                "def": 219,
+                "res": 0.0,
+                "cost": 12,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1174,
+                "atk": 316,
+                "def": 219,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1609,
+                "atk": 434,
+                "def": 297,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1609,
+                "atk": 434,
+                "def": 297,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2205,
+                "atk": 530,
+                "def": 372,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Preaching",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +1 SP to the attacker when killed); Saga will not attack <$ba.dying>Critically Wounded</> targets",
+                    "blackboard": {
+                        "move_speed": -0.8,
+                        "sp": 1.0,
+                        "interval": 10.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Saga will not attack <$ba.dying>Critically Wounded</> targets",
+                    "blackboard": {
+                        "move_speed": -0.8,
+                        "sp": 2.0,
+                        "interval": 10.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Clear Mind",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When HP falls below 40%, gain 70% Physical Dodge and restore 5% Max HP every second, lasting for 15 seconds. Can only activate once",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "hp_recovery_per_sec_by_max_hp_ratio": 0.05,
+                        "prob": 0.7,
+                        "duration": 15.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When HP falls below 40%, gain 70% Physical Dodge and restore 6% <@ba.talpu>(+1%)</> Max HP every second, lasting for 17 <@ba.talpu>(+2)</> seconds. Can only activate once",
+                    "blackboard": {
+                        "hp_ratio": 0.4,
+                        "hp_recovery_per_sec_by_max_hp_ratio": 0.06,
+                        "prob": 0.7,
+                        "duration": 17.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +25",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 25.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Blocks 2 enemies",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 85,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

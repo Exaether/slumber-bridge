@@ -1,0 +1,202 @@
+{
+    "operator": {
+        "id": "char_4146_nymph",
+        "name": "Nymph",
+        "rarity": 6,
+        "portait": "",
+        "profession": "CASTER",
+        "subProfession": "primcaster",
+        "nation": "rhodes",
+        "group": null,
+        "displayNumber": "R182",
+        "position": "RANGED",
+        "tagList": [
+            "Elemental",
+            "DPS",
+            "Crowd-Control"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_nymph_1",
+            "skchr_nymph_2",
+            "skchr_nymph_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "3-6",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 685,
+                "atk": 321,
+                "def": 52,
+                "res": 5.0,
+                "cost": 19,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 952,
+                "atk": 440,
+                "def": 79,
+                "res": 5.0,
+                "cost": 19,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 952,
+                "atk": 440,
+                "def": 79,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1237,
+                "atk": 550,
+                "def": 107,
+                "res": 10.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "3-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1237,
+                "atk": 550,
+                "def": 107,
+                "res": 15.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1650,
+                "atk": 655,
+                "def": 129,
+                "res": 15.0,
+                "cost": 21,
+                "baseAttackTime": 1.6,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Soul Stolen",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking enemies under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deals an additional 30% ATK as Elemental Damage per second, lasting until the end of the <$ba.dt.apoptosis2>Necrosis damage</> burst",
+                    "blackboard": {
+                        "element_atk_scale": 0.3
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When attacking enemies under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deals an additional 40% ATK as Elemental Damage per second, lasting until the end of the <$ba.dt.apoptosis2>Necrosis damage</> burst",
+                    "blackboard": {
+                        "element_atk_scale": 0.4
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Key to the Heart",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 10 times",
+                    "blackboard": {
+                        "atk": 0.02,
+                        "max_stack_cnt": 10.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 12 <@ba.talpu>(+2)</> times",
+                    "blackboard": {
+                        "atk": 0.02,
+                        "max_stack_cnt": 12.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +27",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 27.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 90,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

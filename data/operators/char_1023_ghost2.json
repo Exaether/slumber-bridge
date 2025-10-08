@@ -1,0 +1,223 @@
+{
+    "operator": {
+        "id": "char_1023_ghost2",
+        "name": "Specter the Unchained",
+        "rarity": 6,
+        "portait": "",
+        "profession": "SPECIAL",
+        "subProfession": "dollkeeper",
+        "nation": "egir",
+        "group": "abyssal",
+        "displayNumber": "CR02",
+        "position": "MELEE",
+        "tagList": [
+            "DPS",
+            "Fast-Redeploy"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_ghost2_1",
+            "skchr_ghost2_2",
+            "skchr_ghost2_3"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 1311,
+                "atk": 335,
+                "def": 133,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1749,
+                "atk": 459,
+                "def": 205,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1749,
+                "atk": 459,
+                "def": 205,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2214,
+                "atk": 604,
+                "def": 267,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 2214,
+                "atk": 604,
+                "def": 267,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2803,
+                "atk": 737,
+                "def": 322,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.2,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Embraced Self",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "<Substitute> reduces Movement Speed of nearby enemies by 20%, and deals 20% ATK as Arts damage to them per second",
+                    "blackboard": {
+                        "move_speed": -0.2,
+                        "atk_scale": 0.2,
+                        "talent_override_rangeid_flag": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "<Substitute> reduces Movement Speed of nearby enemies by 30%, and deals 30% ATK as Arts damage to them per second",
+                    "blackboard": {
+                        "move_speed": -0.3,
+                        "atk_scale": 0.3,
+                        "talent_override_rangeid_flag": 1.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "<Substitute> reduces Movement Speed of nearby enemies by 40%, and deals 40% ATK as Arts damage to them per second",
+                    "blackboard": {
+                        "move_speed": -0.4,
+                        "atk_scale": 0.4,
+                        "talent_override_rangeid_flag": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "\u00c6gir's Depths",
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When this unit is in the squad, all [Abyssal Hunter] Operators gain +20% Max HP",
+                    "blackboard": {
+                        "max_hp": 0.2
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "When this unit is in the squad, all [Abyssal Hunter] Operators gain +23% <@ba.talpu>(+3%)</> Max HP",
+                    "blackboard": {
+                        "max_hp": 0.23
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +33",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 33.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+                "blackboard": {
+                    "duration": 20.0,
+                    "atk": 0.0,
+                    "max_hp": 0.0
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 0,
+        "atk": 80,
+        "def": 0,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}

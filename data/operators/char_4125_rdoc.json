@@ -1,0 +1,246 @@
+{
+    "operator": {
+        "id": "char_4125_rdoc",
+        "name": "Doc",
+        "rarity": 5,
+        "portait": "",
+        "profession": "WARRIOR",
+        "subProfession": "instructor",
+        "nation": null,
+        "group": null,
+        "displayNumber": "RS06",
+        "position": "MELEE",
+        "tagList": [
+            "Healing",
+            "Support"
+        ],
+        "skins": [],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_rdoc_1",
+            "skchr_rdoc_2"
+        ],
+        "talents": [
+            1,
+            2
+        ]
+    },
+    "phases": [
+        {
+            "range": "2-2",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 896,
+                "atk": 289,
+                "def": 168,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1228,
+                "atk": 413,
+                "def": 238,
+                "res": 0.0,
+                "cost": 14,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "2-2",
+            "maxLevel": 70,
+            "minStats": {
+                "maxHP": 1228,
+                "atk": 413,
+                "def": 238,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1596,
+                "atk": 551,
+                "def": 302,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "2-2",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1596,
+                "atk": 551,
+                "def": 302,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2217,
+                "atk": 657,
+                "def": 360,
+                "res": 0.0,
+                "cost": 16,
+                "baseAttackTime": 1.05,
+                "respawnTime": 70,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Field Medic",
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "Max HP +3%, attacks ignore 30 DEF",
+                    "blackboard": {
+                        "max_hp": 0.03,
+                        "def_penetrate_fixed": 30.0
+                    }
+                },
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 4,
+                    "description": "Max HP +3%, attacks ignore 50 <@ba.talpu>(+20)</> DEF",
+                    "blackboard": {
+                        "max_hp": 0.03,
+                        "def_penetrate_fixed": 50.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Max HP +6%, attacks ignore 60 DEF",
+                    "blackboard": {
+                        "max_hp": 0.06,
+                        "def_penetrate_fixed": 60.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 4,
+                    "description": "Max HP +6%, attacks ignore 80 <@ba.talpu>(+20)</> DEF",
+                    "blackboard": {
+                        "max_hp": 0.06,
+                        "def_penetrate_fixed": 80.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Max HP +12%, attacks ignore 120 DEF",
+                    "blackboard": {
+                        "max_hp": 0.12,
+                        "def_penetrate_fixed": 120.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Max HP +12%, attacks ignore 140 <@ba.talpu>(+20)</> DEF",
+                    "blackboard": {
+                        "max_hp": 0.12,
+                        "def_penetrate_fixed": 140.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sympathicus Simulation",
+            "candidates": [
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "When healing an allied unit, any healing in excess of that unit's Max HP will be converted into a rapidly-decaying <$ba.barrier>Barrier</>",
+                    "blackboard": {
+                        "dec_rate": -0.2,
+                        "scale": 50.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "When healing an allied unit, any healing in excess of that unit's Max HP will be converted into a decaying <$ba.barrier>Barrier</>",
+                    "blackboard": {
+                        "dec_rate": -0.1,
+                        "scale": 50.0
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -4 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -4.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Max HP +200",
+            "attribute": "MAX_HP",
+            "formula": "ADDITION",
+            "value": 200.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Can attack enemies <@ba.kw>from range</>; When attacking enemies not blocked by self, increase ATK to 120%",
+        "candidates": [
+            {
+                "UnlockPhase": 0,
+                "overrideDescription": null,
+                "blackboard": {
+                    "atk_scale": 1.2
+                }
+            }
+        ]
+    },
+    "favor": {
+        "maxHP": 150,
+        "atk": 0,
+        "def": 40,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "taunt": 0
+    }
+}
