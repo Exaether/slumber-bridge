@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
 
-class range(BaseModel):
+class Range(BaseModel):
     direction: int
     grid: list[tuple[int]]

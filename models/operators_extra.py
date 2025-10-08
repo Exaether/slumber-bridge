@@ -19,3 +19,8 @@ class PotentialRank(BaseModel):
     attribute: str | None
     formula: str | None
     value: float | None
+
+
+class Trait(BaseModel):
+    description: str
+    blackboard: dict[str, float]

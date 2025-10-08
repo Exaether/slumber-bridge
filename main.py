@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from routers import operators, ranges, skills
 
 app = FastAPI()
 
@@ -8,11 +9,6 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/operators")
-def get_operators():
-    return
-
-
-@app.get("/operators/{id}")
-def get_operator(id: str):
-    return
+app.include_router(operators.router)
+app.include_router(ranges.router)
+app.include_router(skills.router)

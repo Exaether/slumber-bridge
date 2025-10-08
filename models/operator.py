@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class OperatorBase(BaseModel):
@@ -35,7 +35,7 @@ class AttributeKeyFrame(BaseModel):
     level: int
     maxHP: int
     atk: int
-    defense: int  # yeah, "def" is not possible in python...
+    defense: int = Field(..., alias="def")
     res: int
     cost: int
     aspd: int
