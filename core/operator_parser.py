@@ -138,8 +138,3 @@ def parse_trait(op):
 
 def parse_token(id, token):
     pass
-
-
-if __name__ == "__main__":
-
-    parse_operators()

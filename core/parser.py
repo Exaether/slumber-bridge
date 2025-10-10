@@ -1,3 +1,4 @@
+from pathlib import Path
 import urllib.request
 import json
 
@@ -7,7 +8,10 @@ from operator_parser import create_op_json, parse_token
 URL = {
     "character_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/character_table.json",
     "skill_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/skill_table.json",
+    "range_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/range_table.json",
 }
+
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 
 def get_operator_data():
@@ -45,6 +49,11 @@ def parse_skills():
         create_skill_json(id, sk)
 
 
+def retrieve_ranges():
+    urllib.request.urlretrieve(URL["range_table"], DATA_DIR / "ranges.json")
+
+
 if __name__ == "__main__":
     parse_operators()
     parse_skills()
+    retrieve_ranges()
