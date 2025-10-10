@@ -7,11 +7,13 @@ class Skill(BaseModel):
     skillType: str
     durationType: str
     spType: str
+    token: str | None
     levels: list[int]
 
 
 class SkillLevel(BaseModel):
     description: str
+    range: str | None
     maxCharge: int
     spCost: int
     initSp: int

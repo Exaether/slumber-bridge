@@ -10,6 +10,7 @@ class TalentCandidate(BaseModel):
 
 class Talent(BaseModel):
     name: str
+    token: str | None
     candidates: list[TalentCandidate]
 
 
