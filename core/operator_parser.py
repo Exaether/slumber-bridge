@@ -134,7 +134,3 @@ def parse_trait(op):
             candidates_data.append(candidate_data)
     trait_data["candidates"] = candidates_data
     return trait_data
-
-
-def parse_token(id, token):
-    pass

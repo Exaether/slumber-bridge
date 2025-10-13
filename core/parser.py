@@ -2,8 +2,9 @@ from pathlib import Path
 import urllib.request
 import json
 
+from token_parser import create_token_json
 from skill_parser import create_skill_json
-from operator_parser import create_op_json, parse_token
+from operator_parser import create_op_json
 
 URL = {
     "character_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/character_table.json",
@@ -30,7 +31,7 @@ def parse_operators():
             case "TRAP":  # stage mechanics
                 pass
             case "TOKEN":  # summons
-                parse_token(id, op)
+                create_token_json(id, op)
             case _:
                 create_op_json(id, op)
 
