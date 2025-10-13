@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from common_parser import parse_blackboard, skillsToken
+from common_parser import charEquip, parse_blackboard, skillsToken
 
 
 op_dir_path = Path(__file__).parent.parent / "data" / "operators"
@@ -52,6 +52,8 @@ def parse_operator(id, op):
         if s["overrideTokenKey"]:
             skillsToken[s["skillId"]] = s["overrideTokenKey"]
     op_data["talents"] = [i + 1 for i in range(len(op["talents"]))]
+    if charEquip[id]:
+        op_data["equips"] = charEquip[id]
 
     return op_data
 
