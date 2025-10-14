@@ -29,6 +29,10 @@
         "talents": [
             1,
             2
+        ],
+        "equips": [
+            "uniequip_001_skadi2",
+            "uniequip_002_skadi2"
         ]
     },
     "phases": [
@@ -114,6 +118,7 @@
                     "unlockPhase": 1,
                     "unlockPotentialRank": 0,
                     "description": "Can use a Seaborn that lasts for 15 seconds. The Seaborn's Attack Range is regarded as an extension of this unit's Attack Range",
+                    "range": null,
                     "blackboard": {
                         "cnt": 1.0
                     }
@@ -122,6 +127,7 @@
                     "unlockPhase": 2,
                     "unlockPotentialRank": 0,
                     "description": "Can use a Seaborn that lasts for 25 seconds. The Seaborn's Attack Range is regarded as an extension of this unit's Attack Range",
+                    "range": null,
                     "blackboard": {
                         "cnt": 1.0
                     }
@@ -135,6 +141,7 @@
                     "unlockPhase": 2,
                     "unlockPotentialRank": 0,
                     "description": "ATK +6% when there is an allied unit within range of self or the Seaborn; If the allied unit is an [Abyssal Hunter] Operator, gain ATK +15% instead",
+                    "range": null,
                     "blackboard": {
                         "skadi2_t_2[atk][1].atk": 0.06,
                         "skadi2_t_2[atk][2].atk": 0.15
@@ -144,6 +151,7 @@
                     "unlockPhase": 2,
                     "unlockPotentialRank": 4,
                     "description": "ATK +9% <@ba.talpu>(+3%)</> when there is an allied unit within range of self or the Seaborn; If the allied unit is an Abyssal Hunter operator, gain ATK +18% <@ba.talpu>(+3%)</> instead",
+                    "range": null,
                     "blackboard": {
                         "skadi2_t_2[atk][1].atk": 0.09,
                         "skadi2_t_2[atk][2].atk": 0.18
@@ -190,7 +198,7 @@
         "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
         "candidates": [
             {
-                "UnlockPhase": 0,
+                "unlockPhase": 0,
                 "overrideDescription": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to <@ba.kw>{attack@atk_to_hp_recovery_ratio:0%}</> of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
                 "blackboard": {
                     "attack@atk_to_hp_recovery_ratio": 0.1
