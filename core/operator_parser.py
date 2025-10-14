@@ -52,7 +52,7 @@ def parse_operator(id, op):
         if s["overrideTokenKey"]:
             skillsToken[s["skillId"]] = s["overrideTokenKey"]
     op_data["talents"] = [i + 1 for i in range(len(op["talents"]))]
-    if charEquip[id]:
+    if id in charEquip.keys():
         op_data["equips"] = charEquip[id]
 
     return op_data
@@ -103,6 +103,7 @@ def parse_talent_candidate(candidate):
     candidate_data["unlockPhase"] = int(candidate["unlockCondition"]["phase"][-1])
     candidate_data["unlockPotentialRank"] = candidate["requiredPotentialRank"]
     candidate_data["description"] = candidate["description"]
+    candidate_data["range"] = candidate["rangeId"]
     candidate_data["blackboard"] = parse_blackboard(candidate["blackboard"])
     return candidate_data
 
@@ -130,7 +131,7 @@ def parse_trait(op):
     if op["trait"]:
         for c in op["trait"]["candidates"]:
             candidate_data = {}
-            candidate_data["UnlockPhase"] = int(c["unlockCondition"]["phase"][-1])
+            candidate_data["unlockPhase"] = int(c["unlockCondition"]["phase"][-1])
             candidate_data["overrideDescription"] = c["overrideDescripton"]
             candidate_data["blackboard"] = parse_blackboard(c["blackboard"])
             candidates_data.append(candidate_data)

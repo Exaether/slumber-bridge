@@ -2,7 +2,8 @@ from pathlib import Path
 import urllib.request
 import json
 
-import common_parser
+from common_parser import charEquip, parse_subProfDict
+from module_parser import create_mod_json
 from token_parser import create_token_json
 from skill_parser import create_skill_json
 from operator_parser import create_op_json
@@ -12,13 +13,19 @@ URL = {
     "skill_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/skill_table.json",
     "range_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/range_table.json",
     "uniequip_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/uniequip_table.json",
+    "battle_equip_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/battle_equip_table.json",
 }
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 
 def get_data(table: str):
-    with urllib.request.urlopen(URL[table]) as url:
+    table_url = (
+        "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/"
+        + table
+        + ".json"
+    )
+    with urllib.request.urlopen(table_url) as url:
         data = json.load(url)
 
     return data
@@ -26,9 +33,10 @@ def get_data(table: str):
 
 def parse_uniequip():
     equips_data = get_data("uniequip_table")
-    common_parser.charEquip = equips_data["charEquip"]
+    for char, equip in equips_data["charEquip"].items():
+        charEquip[char] = equip
 
-    subProfDict = common_parser.parse_subProfDict(equips_data["subProfDict"])
+    subProfDict = parse_subProfDict(equips_data["subProfDict"])
     with open(DATA_DIR / "subProfNames.json", "w") as f:
         f.write(json.dumps(subProfDict, indent=4))
 
@@ -54,12 +62,20 @@ def parse_skills():
         create_skill_json(id, sk)
 
 
+def parse_modules():
+    data = get_data("battle_equip_table")
+
+    for id, mod in data.items():
+        create_mod_json(id, mod)
+
+
 def retrieve_ranges():
     urllib.request.urlretrieve(URL["range_table"], DATA_DIR / "ranges.json")
 
 
 if __name__ == "__main__":
     parse_uniequip()
-    # parse_operators()
-    # parse_skills()
-    # retrieve_ranges()
+    parse_modules()
+    parse_operators()
+    parse_skills()
+    retrieve_ranges()
