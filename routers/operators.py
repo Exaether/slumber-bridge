@@ -27,8 +27,10 @@ def get_operators():
         ops[id]["portrait"] = op["portrait"]
         ops[id]["profession"] = op["profession"]
         ops[id]["subProfession"] = op["subProfession"]
-        ops[id]["nation"] = op["nation"]
-        ops[id]["group"] = op["group"]
+        if "nation" in op:
+            ops[id]["nation"] = op["nation"]
+        if "group" in op:
+            ops[id]["group"] = op["group"]
     return ops
 
 

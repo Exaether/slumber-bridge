@@ -36,8 +36,9 @@ def parse_skill(id, sk):
 def parse_skill_level(level):
     level_data = {}
 
-    level_data["description"] = level["description"]
-    if level["rangeId"]:
+    if "description" in level:
+        level_data["description"] = level["description"]
+    if "rangeId" in level:
         level_data["range"] = level["rangeId"]
     level_data["maxCharge"] = level["spData"]["maxChargeTime"]
     level_data["spCost"] = level["spData"]["spCost"]

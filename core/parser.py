@@ -21,7 +21,7 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 
 def get_data(table: str):
     table_url = (
-        "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/"
+        "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/excel/"
         + table
         + ".json"
     )

@@ -9,7 +9,7 @@ token_dir_path = Path(__file__).parent.parent / "data" / "tokens"
 
 def create_token_json(id, token):
     # fixes
-    if not token["talents"]:
+    if "talents" not in token:
         token["talents"] = []
 
     data = {}
@@ -39,7 +39,7 @@ def parse_token(id, token):
     token_data["phases"] = [i for i in range(len(token["phases"]))]
     token_data["skills"] = []
     for s in token["skills"]:
-        if s["skillId"]:
+        if "skillId" in s:
             token_data["skills"].append(s["skillId"])
     token_data["talents"] = [i + 1 for i in range(len(token["talents"]))]
 

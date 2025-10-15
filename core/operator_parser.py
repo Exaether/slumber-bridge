@@ -9,7 +9,7 @@ op_dir_path = Path(__file__).parent.parent / "data" / "operators"
 
 def create_op_json(id, op):
     # fixes
-    if not op["talents"]:
+    if "talents" not in op:
         op["talents"] = []
 
     data = {}
@@ -37,11 +37,14 @@ def parse_operator(id, op):
     op_data["portrait"] = ""  # TODO
     op_data["profession"] = op["profession"]
     op_data["subProfession"] = op["subProfessionId"]
-    op_data["nation"] = op["nationId"]
-    op_data["group"] = op["groupId"]
+    if "nationId" in op:
+        op_data["nation"] = op["nationId"]
+    if "groupId" in op:
+        op_data["group"] = op["groupId"]
 
     # details
-    op_data["displayNumber"] = op["displayNumber"]
+    if "displayNumber" in op:
+        op_data["displayNumber"] = op["displayNumber"]
     op_data["position"] = op["position"]
     op_data["tagList"] = op["tagList"]
     op_data["skins"] = []  # TODO
@@ -49,7 +52,7 @@ def parse_operator(id, op):
     op_data["skills"] = []
     for s in op["skills"]:
         op_data["skills"].append(s["skillId"])
-        if s["overrideTokenKey"]:
+        if "overrideTokenKey" in s:
             skillsToken[s["skillId"]] = s["overrideTokenKey"]
     op_data["talents"] = [i + 1 for i in range(len(op["talents"]))]
     if id in charEquip.keys():
@@ -88,12 +91,15 @@ def parse_attributesKeyFrame(keyFrame):
 def parse_talents(talents):
     talents_data = []
     for t in talents:
-        talent_data = {}
-        talent_data["name"] = t["candidates"][0]["name"]
-        if t["candidates"][0]["tokenKey"]:
-            talent_data["token"] = t["candidates"][0]["tokenKey"]
-        talent_data["candidates"] = [parse_talent_candidate(c) for c in t["candidates"]]
-        talents_data.append(talent_data)
+        if not t["candidates"][0]["isHideTalent"]:
+            talent_data = {}
+            talent_data["name"] = t["candidates"][0]["name"]
+            if "tokenKey" in t["candidates"][0]:
+                talent_data["token"] = t["candidates"][0]["tokenKey"]
+            talent_data["candidates"] = [
+                parse_talent_candidate(c) for c in t["candidates"]
+            ]
+            talents_data.append(talent_data)
 
     return talents_data
 
@@ -103,7 +109,8 @@ def parse_talent_candidate(candidate):
     candidate_data["unlockPhase"] = int(candidate["unlockCondition"]["phase"][-1])
     candidate_data["unlockPotentialRank"] = candidate["requiredPotentialRank"]
     candidate_data["description"] = candidate["description"]
-    candidate_data["range"] = candidate["rangeId"]
+    if "rangeId" in candidate:
+        candidate_data["range"] = candidate["rangeId"]
     candidate_data["blackboard"] = parse_blackboard(candidate["blackboard"])
     return candidate_data
 
@@ -126,13 +133,15 @@ def parse_potential(potentialRanks):
 
 def parse_trait(op):
     trait_data = {}
-    trait_data["description"] = op["description"]
+    if "description" in op:
+        trait_data["description"] = op["description"]
     candidates_data = []
-    if op["trait"]:
+    if "trait" in op:
         for c in op["trait"]["candidates"]:
             candidate_data = {}
             candidate_data["unlockPhase"] = int(c["unlockCondition"]["phase"][-1])
-            candidate_data["overrideDescription"] = c["overrideDescripton"]
+            if "overrideDescriton" in c:
+                candidate_data["overrideDescription"] = c["overrideDescripton"]
             candidate_data["blackboard"] = parse_blackboard(c["blackboard"])
             candidates_data.append(candidate_data)
     trait_data["candidates"] = candidates_data

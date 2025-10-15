@@ -3,6 +3,8 @@ charEquip = {}
 
 
 def parse_blackboard(blackboard):
+    if type(blackboard) != list:
+        return blackboard
     blackboard_data = {}
     for e in blackboard:
         blackboard_data[e["key"]] = e["value"]

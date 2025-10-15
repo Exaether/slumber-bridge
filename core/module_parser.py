@@ -34,12 +34,18 @@ def parse_part(part):
     part_data = {}
     part_data["target"] = part["target"]
     part_data["isToken"] = part["isToken"]
-    if part["addOrOverrideTalentDataBundle"]["candidates"]:
+    if (
+        "candidates" in part["addOrOverrideTalentDataBundle"]
+        and part["addOrOverrideTalentDataBundle"]["candidates"]
+    ):
         part_data["talentCandidates"] = []
         for candidate in part["addOrOverrideTalentDataBundle"]["candidates"]:
             part_data["talentCandidates"].append(parse_mod_talent_candidate(candidate))
 
-    if part["overrideTraitDataBundle"]["candidates"]:
+    if (
+        "candidates" in part["overrideTraitDataBundle"]
+        and part["overrideTraitDataBundle"]["candidates"]
+    ):
         part_data["traitCandidates"] = []
         for candidate in part["overrideTraitDataBundle"]["candidates"]:
             part_data["traitCandidates"].append(parse_mod_trait_candidate(candidate))
@@ -49,8 +55,11 @@ def parse_part(part):
 def parse_mod_trait_candidate(candidate):
     candidate_data = {}
     candidate_data["unlockPhase"] = int(candidate["unlockCondition"]["phase"][-1])
-    candidate_data["additionalDescription"] = candidate["additionalDescription"]
-    candidate_data["overrideDescription"] = candidate["overrideDescripton"]
+
+    if "additionalDescripton" in candidate:
+        candidate_data["additionalDescription"] = candidate["additionalDescription"]
+    if "overrideDescripton" in candidate:
+        candidate_data["overrideDescription"] = candidate["overrideDescripton"]
     candidate_data["blackboard"] = parse_blackboard(candidate["blackboard"])
     return candidate_data
 
@@ -59,6 +68,7 @@ def parse_mod_talent_candidate(candidate):
     candidate_data = {}
     candidate_data["talentIndex"] = candidate["talentIndex"]
     candidate_data["description"] = candidate["upgradeDescription"]
-    candidate_data["range"] = candidate["rangeId"]
+    if "rangeId" in candidate:
+        candidate_data["range"] = candidate["rangeId"]
     candidate_data["blackboard"] = parse_blackboard(candidate["blackboard"])
     return candidate_data

@@ -24,7 +24,7 @@ class PotentialRank(BaseModel):
 
 class TraitCandidate(BaseModel):
     unlockPhase: int
-    overrideDescription: str
+    overrideDescription: str | None = None
     blackboard: dict[str, float]
 
 
