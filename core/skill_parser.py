@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from common_parser import parse_blackboard, skillsToken
+from core.common_parser import parse_blackboard, skillsToken
 
 sk_dir_path = Path(__file__).parent.parent / "data" / "skills"
 

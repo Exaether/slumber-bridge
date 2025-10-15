@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from common_parser import charEquip, parse_blackboard
+from core.common_parser import charEquip, parse_blackboard
 
 
 mod_dir_path = Path(__file__).parent.parent / "data" / "modules"

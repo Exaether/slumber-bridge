@@ -10,19 +10,24 @@ class TalentCandidate(BaseModel):
 
 class Talent(BaseModel):
     name: str
-    token: str | None
+    token: str | None = None
     candidates: list[TalentCandidate]
 
 
 class PotentialRank(BaseModel):
     type: str
     description: str
-    attribute: str | None
-    formula: str | None
-    value: float | None
+    attribute: str | None = None
+    formula: str | None = None
+    value: float | None = None
+
+
+class TraitCandidate(BaseModel):
+    unlockPhase: int
+    overrideDescription: str
+    blackboard: dict[str, float]
 
 
 class Trait(BaseModel):
-    unlockPhase: int
     description: str
-    blackboard: dict[str, float]
+    candidates: list[TraitCandidate]

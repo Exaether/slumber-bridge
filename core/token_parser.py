@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from operator_parser import parse_phases, parse_talents, parse_trait
+from core.operator_parser import parse_phases, parse_talents, parse_trait
 
 
 token_dir_path = Path(__file__).parent.parent / "data" / "tokens"

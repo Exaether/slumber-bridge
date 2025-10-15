@@ -2,11 +2,11 @@ from pathlib import Path
 import urllib.request
 import json
 
-from common_parser import charEquip, parse_subProfDict
-from module_parser import create_mod_json
-from token_parser import create_token_json
-from skill_parser import create_skill_json
-from operator_parser import create_op_json
+from core.common_parser import charEquip, parse_subProfDict
+from core.module_parser import create_mod_json
+from core.token_parser import create_token_json
+from core.skill_parser import create_skill_json
+from core.operator_parser import create_op_json
 
 URL = {
     "character_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/character_table.json",
@@ -73,9 +73,13 @@ def retrieve_ranges():
     urllib.request.urlretrieve(URL["range_table"], DATA_DIR / "ranges.json")
 
 
-if __name__ == "__main__":
+def parse_all():
     parse_uniequip()
     parse_modules()
     parse_operators()
     parse_skills()
     retrieve_ranges()
+
+
+if __name__ == "__main__":
+    parse_all()

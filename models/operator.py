@@ -8,8 +8,8 @@ class OperatorBase(BaseModel):
     portrait: str
     profession: str
     subProfession: str
-    nation: str
-    group: str
+    nation: str | None = None
+    group: str | None = None
 
 
 class Operator(OperatorBase):
@@ -20,6 +20,7 @@ class Operator(OperatorBase):
     phases: list[int]
     skills: list[str]
     talents: list[int]
+    equips: list[str] | None = None
 
 
 class AttributeKeyFrame(BaseModel):
