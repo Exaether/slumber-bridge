@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 
 class SkillLevel(BaseModel):
-    description: str
+    description: str | None = None
     range: str | None = None
     maxCharge: int
     spCost: int
