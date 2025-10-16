@@ -54,11 +54,17 @@ class DataStore:
     def getToken(self, name: str):
         return self._tokens[name]
 
+    def getRanges(self):
+        return self._ranges
+
     def getRange(self, id: str):
         return self._ranges[id]
 
     def getSubProfName(self, id: str):
         return self._subProfNames[id]
+
+    def getSubProfNames(self):
+        return self._subProfNames
 
 
 data_store = DataStore("data")

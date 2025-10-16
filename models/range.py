@@ -2,5 +2,6 @@ from pydantic import BaseModel
 
 
 class Range(BaseModel):
+    id: str
     direction: int
-    grid: list[tuple[int]]
+    grids: list[dict[str, int]]

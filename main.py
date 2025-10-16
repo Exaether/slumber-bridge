@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from core.data_store import data_store
 from core.parser import parse_all
-from routers import operators, ranges, skills
+from routers import misc, operators, skills
 
 app = FastAPI()
 
@@ -26,5 +26,5 @@ def read_root():
 
 
 app.include_router(operators.router)
-app.include_router(ranges.router)
+app.include_router(misc.router)
 app.include_router(skills.router)
