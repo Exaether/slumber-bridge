@@ -22,5 +22,5 @@ def get_subProfNames():
 
 
 @router.get("/subProfNames/{id}", response_model=str)
-def get_subProfNames(id: str):
+def get_subProfName(id: str):
     return data_store.getSubProfName(id)

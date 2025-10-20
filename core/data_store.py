@@ -5,6 +5,7 @@ from pathlib import Path
 class DataStore:
     def __init__(self, data_dir: str):
         self.data_dir = Path(__file__).parent.parent / "data"
+        self._endpoints = {}
         self._operators = {}
         self._skills = {}
         self._modules = {}
@@ -13,6 +14,8 @@ class DataStore:
         self._subProfNames = {}
 
     def load_all(self):
+        with open(self.data_dir / "routes.json") as f:
+            self._endpoints = json.load(f)
         for file in (self.data_dir / "operators").glob("*.json"):
             with open(file, "r", encoding="utf-8") as f:
                 self._operators[file.stem] = json.load(f)
@@ -65,6 +68,9 @@ class DataStore:
 
     def getSubProfNames(self):
         return self._subProfNames
+
+    def getEndpoints(self):
+        return self._endpoints
 
 
 data_store = DataStore("data")

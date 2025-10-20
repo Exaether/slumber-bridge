@@ -22,7 +22,7 @@ async def verify_api_key(api_key: str = Security(api_key_header)):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return data_store.getEndpoints()
 
 
 @app.post("/reload")

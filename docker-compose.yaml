@@ -1,5 +1,5 @@
 services:
-  api:
+  prod:
     build: .
     container_name: slumber_bridge
     ports:
@@ -9,7 +9,7 @@ services:
     env_file:
       - .env
     restart: always
-  api_dev:
+  dev:
     build: .
     container_name: slumber_bridge_dev
     ports:
