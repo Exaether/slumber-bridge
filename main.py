@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException, Security
+from fastapi.security.api_key import APIKeyHeader
+from routers import misc, modules, operators, skills
 from core.data_store import data_store
 from core.parser import parse_all
-from routers import misc, modules, operators, skills
-from fastapi.security.api_key import APIKeyHeader
 import os
 
 API_KEY = os.getenv("DATA_RELOAD_KEY")
