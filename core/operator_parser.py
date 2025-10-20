@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from core.common_parser import charEquip, parse_blackboard, skillsToken
+from core.common_parser import charEquip, charSkins, parse_blackboard, skillsToken
 
 
 op_dir_path = Path(__file__).parent.parent / "data" / "operators"
@@ -34,7 +34,6 @@ def parse_operator(id, op):
     op_data["id"] = id
     op_data["name"] = op["name"]
     op_data["rarity"] = int(op["rarity"][-1])
-    op_data["portrait"] = ""  # TODO
     op_data["profession"] = op["profession"]
     op_data["subProfession"] = op["subProfessionId"]
     if "nationId" in op:
@@ -47,7 +46,7 @@ def parse_operator(id, op):
         op_data["displayNumber"] = op["displayNumber"]
     op_data["position"] = op["position"]
     op_data["tagList"] = op["tagList"]
-    op_data["skins"] = []  # TODO
+    op_data["skins"] = charSkins[id]
     op_data["phases"] = [i for i in range(len(op["phases"]))]
     op_data["skills"] = []
     for s in op["skills"]:

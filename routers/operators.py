@@ -2,7 +2,12 @@ from fastapi import APIRouter, HTTPException
 
 from core.data_store import data_store
 from core.utils import calculate_level_keyFrame
-from models.operator import AttributeKeyFrame, Operator, OperatorBase, Phase
+from models.operator import (
+    AttributeKeyFrame,
+    Operator,
+    OperatorBase,
+    Phase,
+)
 from models.operators_extra import (
     PotentialRank,
     Talent,
@@ -24,7 +29,6 @@ def get_operators():
         ops[id]["id"] = id
         ops[id]["name"] = op["name"]
         ops[id]["rarity"] = op["rarity"]
-        ops[id]["portrait"] = op["portrait"]
         ops[id]["profession"] = op["profession"]
         ops[id]["subProfession"] = op["subProfession"]
         if "nation" in op:
@@ -166,5 +170,21 @@ def get_skill_level(id: str, number: int, level: int):
                 raise HTTPException(status_code=404, detail="Skill level not found")
         else:
             raise HTTPException(status_code=404, detail="Skill not found")
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Operator not found")
+
+
+@router.get("/{id}/skins", response_model=list[str])
+def get_skins(id: str):
+    try:
+        return data_store.getOperator(id)["operator"]["skins"]
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Operator not found")
+
+
+@router.get("/{id}/full")
+def get_full(id: str):
+    try:
+        return data_store.getOperator(id)
     except KeyError:
         raise HTTPException(status_code=404, detail="Operator not found")

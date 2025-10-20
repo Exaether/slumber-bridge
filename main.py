@@ -28,13 +28,14 @@ def read_root():
 @app.post("/reload")
 def load_files(api_key: str = Depends(verify_api_key)):
     data_store.load_all()
-    return "reloaded"
+    return "Reloaded data"
 
 
-@app.post("/fetch")
+@app.post("/update")
 def parse_data(api_key: str = Depends(verify_api_key)):
     parse_all()
-    return "fetched data from kengxxiao"
+    data_store.load_all()
+    return "Updated game data"
 
 
 app.include_router(operators.router)

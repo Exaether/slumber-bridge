@@ -5,7 +5,6 @@ class OperatorBase(BaseModel):
     id: str
     name: str
     rarity: int
-    portrait: str
     profession: str
     subProfession: str
     nation: str | None = None

@@ -2,7 +2,7 @@ from pathlib import Path
 import urllib.request
 import json
 
-from core.common_parser import charEquip, parse_subProfDict
+from core.common_parser import charEquip, charSkins, parse_subProfDict
 from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
 from core.skill_parser import create_skill_json
@@ -14,27 +14,35 @@ URL = {
     "range_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/range_table.json",
     "uniequip_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/uniequip_table.json",
     "battle_equip_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/battle_equip_table.json",
+    "skin_table": "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/refs/heads/main/en_US/gamedata/excel/skin_table.json",
 }
+
+SOURCE = "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/excel/"
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 
 def get_data(table: str):
-    table_url = (
-        "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/excel/"
-        + table
-        + ".json"
-    )
+    table_url = SOURCE + table + ".json"
     with urllib.request.urlopen(table_url) as url:
         data = json.load(url)
 
     return data
 
 
+def parse_skins():
+    skins_data = get_data("skin_table")
+    for id, skin in skins_data["charSkins"].items():
+        if skin["charId"] not in charSkins:
+            charSkins[skin["charId"]] = []
+        if "portraitId" in skin:
+            charSkins[skin["charId"]].append(skin["portraitId"])
+
+
 def parse_uniequip():
     equips_data = get_data("uniequip_table")
     for char, equip in equips_data["charEquip"].items():
-        charEquip[char] = equip
+        charEquip[char] = equip[1::]
 
     subProfDict = parse_subProfDict(equips_data["subProfDict"])
     with open(DATA_DIR / "subProfNames.json", "w") as f:
@@ -74,6 +82,7 @@ def retrieve_ranges():
 
 
 def parse_all():
+    parse_skins()
     parse_uniequip()
     parse_modules()
     parse_operators()

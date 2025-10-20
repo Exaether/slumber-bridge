@@ -1,5 +1,6 @@
 skillsToken = {}
 charEquip = {}
+charSkins = {}
 
 
 def parse_blackboard(blackboard):
