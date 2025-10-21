@@ -11,6 +11,7 @@ But it can still be expanded in the future to make it usable by other sites.
 # Credits
 Huge thanks to [Kengxxiao](https://github.com/Kengxxiao), [Yuanyan](https://github.com/yuanyan3060), [PuppiizSunniiz](https://github.com/PuppiizSunniiz), [fexli](https://github.com/fexli) and every other Arknights devs who provide the actual data.
 I'm only distributing the data, not extracting it, so this project wouldn't exist without them.
+And of course they don't own the data, and neither do I. All data you can find on this API belongs to Hypergryph Network Technology Co., Ltd.
 
 The API is made with [FastAPI](https://fastapi.tiangolo.com/)
 
@@ -31,8 +32,8 @@ This will be the key you'll need to use when updating the data.
 - that's it
 
 ## Running
-`docker-compose up dev` for the dev server, with live reload on file change
-`docker-compose up prod` for the prod server, no live reload
+`docker-compose up dev` for the dev server, with live reload on file change  
+`docker-compose up prod` for the prod server, no live reload  
 
 The API should now be accessible at [localhost:8000](http://127.0.0.1:8000) (on port [8001](http://127.0.0.1:8001) for the dev server)
 
@@ -80,6 +81,6 @@ There's two endpoints to reload the data:
 - `/reload`: reload the data from disk.
 - `/update`: Fetch data from a source repository ([ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata/tree/master), can be configured in `core/parser.py`) parse it into the `data` folder, and load it in the server.
 
-Both endpoints require authentification through an API key (the one you defined in [Setting up](#setting-up)) to use them, use:
+Both endpoints require authentification through an API key (the one you defined in [Setting up](#setting-up)) to use them, use:  
 `curl -X POST "http://127.0.0.1:8001/update" -H "API-Key: <your key>"`
 or anything that can write `"API-Key: <your key>"` in the request header
