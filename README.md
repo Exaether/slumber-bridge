@@ -54,7 +54,7 @@ The API should now be accessible at [localhost:8000](http://127.0.0.1:8000) (on 
 |`/subProfNames`|Sub classes id-to-name dict|
 |`/subProfNames/{id}`|Name of a given sub-class|
 
-## operators
+## Operators
 All endpoints here are under `/operators/{id}`
 
 |Endpoint|Description|
@@ -74,3 +74,12 @@ All endpoints here are under `/operators/{id}`
 
 *Note that the elite 0 avatar id is just the op id.
 
+## Maintenance
+
+There's two endpoints to reload the data:
+- `/reload`: reload the data from disk.
+- `/update`: Fetch data from a source repository ([ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata/tree/master), can be configured in `core/parser.py`) parse it into the `data` folder, and load it in the server.
+
+Both endpoints require authentification through an API key (the one you defined in [Setting up](#setting-up)) to use them, use:
+`curl -X POST "http://127.0.0.1:8001/update" -H "API-Key: <your key>"`
+or anything that can write `"API-Key: <your key>"` in the request header
