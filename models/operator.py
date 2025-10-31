@@ -12,7 +12,7 @@ class OperatorBase(BaseModel):
 
 
 class Operator(OperatorBase):
-    displayNumber: str
+    displayNumber: str | None = None
     position: str
     tagList: list[str]
     skins: list[str]

@@ -8,7 +8,6 @@ services:
       - .:/app
     env_file:
       - .env
-    restart: always
   dev:
     build: .
     container_name: slumber_bridge_dev
@@ -19,4 +18,3 @@ services:
     env_file:
       - .env
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-    restart: always
