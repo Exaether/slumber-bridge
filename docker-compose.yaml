@@ -1,5 +1,5 @@
 services:
-  prod:
+  slumber_bridge:
     build: .
     container_name: slumber_bridge
     ports:
@@ -8,13 +8,3 @@ services:
       - .:/app
     env_file:
       - .env
-  dev:
-    build: .
-    container_name: slumber_bridge_dev
-    ports:
-      - "8001:8000"
-    volumes:
-      - .:/app
-    env_file:
-      - .env
-    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload

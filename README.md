@@ -18,24 +18,40 @@ The API is made with [FastAPI](https://fastapi.tiangolo.com/)
 # Installation
 How to host the api yourself
 
-## requirements
+## Requirements
 - docker-compose (and docker)
 - that's it
 
 ## Setting up
-- create a `.env` file with the following content:
+- create a `.env` file with the following content:  
 ```
 DATA_RELOAD_KEY=<whatever you want>
 ```
-This will be the key you'll need to use when updating the data.
-- run `docker-compose build`
+This will be the key you'll need to use when updating the data.  
+- run `docker-compose build`  
 - that's it
 
 ## Running
-`docker-compose up dev` for the dev server, with live reload on file change  
-`docker-compose up prod` for the prod server, no live reload  
+`docker-compose up`
 
-The API should now be accessible at [localhost:8000](http://127.0.0.1:8000) (on port [8001](http://127.0.0.1:8001) for the dev server)
+The API should now be accessible at [localhost:8000](http://127.0.0.1:8000)
+
+# Developing
+How to run the dev server.
+
+## Requirements
+- python3
+- venv
+
+## setting up
+- create a venv  
+- install fastAPI in the venv: `pip install "fastapi[standard]"`  
+- create the same .env file as for prod
+
+## Running
+`fastapi dev main.py`
+
+The API should now be accessible at [localhost:8000](http://127.0.0.1:8000)
 
 # Endpoints
 
