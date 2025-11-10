@@ -30,6 +30,7 @@ class AttributeKeyFrame(BaseModel):
     cost: int
     baseAttackTime: float
     respawnTime: int
+    block: int
     taunt: int
 
 

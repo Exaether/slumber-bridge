@@ -15,8 +15,7 @@ def create_token_json(id, token):
     data = {}
     data["token"] = parse_token(id, token)
     data["phases"] = parse_phases(token["phases"])
-    if not token["talents"]:
-        data["talents"] = parse_talents(token["talents"])
+    data["talents"] = parse_talents(token["talents"])
     data["trait"] = parse_trait(token)
 
     json_str = json.dumps(data, indent=4)
@@ -41,6 +40,9 @@ def parse_token(id, token):
     for s in token["skills"]:
         if "skillId" in s:
             token_data["skills"].append(s["skillId"])
-    token_data["talents"] = [i + 1 for i in range(len(token["talents"]))]
+    if token["talents"]:
+        token_data["talents"] = [i + 1 for i in range(len(token["talents"]))]
+    else:
+        token_data["talents"] = []
 
     return token_data

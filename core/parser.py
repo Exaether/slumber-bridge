@@ -69,7 +69,7 @@ def parse_modules():
 
 
 def retrieve_ranges():
-    urllib.request.urlretrieve(URL["range_table"], DATA_DIR / "ranges.json")
+    urllib.request.urlretrieve(SOURCE + "range_table.json", DATA_DIR / "ranges.json")
 
 
 def parse_all():

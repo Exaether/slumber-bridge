@@ -53,7 +53,10 @@ def parse_operator(id, op):
         op_data["skills"].append(s["skillId"])
         if "overrideTokenKey" in s:
             skillsToken[s["skillId"]] = s["overrideTokenKey"]
-    op_data["talents"] = [i + 1 for i in range(len(op["talents"]))]
+    if op["talents"]:
+        op_data["talents"] = [i + 1 for i in range(len(op["talents"]))]
+    else:
+        op_data["talents"] = []
     if id in charEquip.keys():
         op_data["equips"] = charEquip[id]
 
@@ -83,14 +86,17 @@ def parse_attributesKeyFrame(keyFrame):
     keyFrame_data["cost"] = keyFrame["cost"]
     keyFrame_data["baseAttackTime"] = keyFrame["baseAttackTime"]
     keyFrame_data["respawnTime"] = keyFrame["respawnTime"]
+    keyFrame_data["block"] = keyFrame["blockCnt"]
     keyFrame_data["taunt"] = keyFrame["tauntLevel"]
     return keyFrame_data
 
 
 def parse_talents(talents):
     talents_data = []
+    if not talents:
+        return talents_data
     for t in talents:
-        if not t["candidates"][0]["isHideTalent"]:
+        if t["candidates"] and not t["candidates"][0]["isHideTalent"]:
             talent_data = {}
             talent_data["name"] = t["candidates"][0]["name"]
             if "tokenKey" in t["candidates"][0]:
@@ -135,7 +141,7 @@ def parse_trait(op):
     if "description" in op:
         trait_data["description"] = op["description"]
     candidates_data = []
-    if "trait" in op:
+    if op["trait"]:
         for c in op["trait"]["candidates"]:
             candidate_data = {}
             candidate_data["unlockPhase"] = int(c["unlockCondition"]["phase"][-1])
