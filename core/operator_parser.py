@@ -145,7 +145,7 @@ def parse_trait(op):
         for c in op["trait"]["candidates"]:
             candidate_data = {}
             candidate_data["unlockPhase"] = int(c["unlockCondition"]["phase"][-1])
-            if "overrideDescriton" in c:
+            if "overrideDescripton" in c:
                 candidate_data["overrideDescription"] = c["overrideDescripton"]
             candidate_data["blackboard"] = parse_blackboard(c["blackboard"])
             candidates_data.append(candidate_data)

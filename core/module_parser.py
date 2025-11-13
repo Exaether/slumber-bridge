@@ -56,7 +56,7 @@ def parse_mod_trait_candidate(candidate):
     candidate_data = {}
     candidate_data["unlockPhase"] = int(candidate["unlockCondition"]["phase"][-1])
 
-    if "additionalDescripton" in candidate:
+    if "additionalDescription" in candidate:
         candidate_data["additionalDescription"] = candidate["additionalDescription"]
     if "overrideDescripton" in candidate:
         candidate_data["overrideDescription"] = candidate["overrideDescripton"]

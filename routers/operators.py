@@ -111,7 +111,7 @@ def get_phase(id: str, number: int):
     try:
         op = data_store.getOperator(id)
         if number in op["operator"]["phases"]:
-            return op["phases"][number - 1]
+            return op["phases"][number]
         else:
             raise HTTPException(status_code=404, detail="phase not found")
     except KeyError:
@@ -124,7 +124,7 @@ def get_stats(id: str, number: int, level: int):
         op = data_store.getOperator(id)
         if number in op["operator"]["phases"]:
             phase = op["phases"][number]
-            if level == 0:
+            if level == 1:
                 return phase["minStats"]
             elif level == phase["maxLevel"]:
                 return phase["maxStats"]

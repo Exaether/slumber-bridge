@@ -13,6 +13,7 @@ def calculate_level_keyFrame(phase, level: int):
         "cost": minStats["cost"],
         "baseAttackTime": minStats["baseAttackTime"],
         "respawnTime": minStats["respawnTime"],
+        "block": minStats["block"],
         "taunt": minStats["taunt"],
     }
 
