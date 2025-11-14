@@ -1,0 +1,14 @@
+services:
+  slumber-bridge:
+    build: .
+    container_name: slumber-bridge
+    env_file:
+      - .env
+    volumes:
+      - slumber-bridge-data:/app/data
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+
+volumes:
+  slumber-bridge-data:

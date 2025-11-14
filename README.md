@@ -9,32 +9,11 @@ Note that for now, I make this API so i can use it in my own website, so it only
 But it can still be expanded in the future to make it usable by other sites.
 
 # Credits
-Huge thanks to [Kengxxiao](https://github.com/Kengxxiao), [Yuanyan](https://github.com/yuanyan3060), [PuppiizSunniiz](https://github.com/PuppiizSunniiz), [fexli](https://github.com/fexli) and every other Arknights devs who provide the actual data.
-I'm only distributing the data, not extracting it, so this project wouldn't exist without them.
-And of course they don't own the data, and neither do I. All data you can find on this API belongs to Hypergryph Network Technology Co., Ltd.
+Huge thanks to [Kengxxiao](https://github.com/Kengxxiao), [Yuanyan](https://github.com/yuanyan3060), [PuppiizSunniiz](https://github.com/PuppiizSunniiz), [fexli](https://github.com/fexli) and every other Arknights devs who provide the actual data.  
+I'm only distributing the data, not extracting it, so this project wouldn't exist without them.  
+And of course they don't own the data, and neither do I. All data you can find on this API belongs to Hypergryph Network Technology Co., Ltd.  
 
 The API is made with [FastAPI](https://fastapi.tiangolo.com/)
-
-# Installation
-How to host the api yourself
-
-## Requirements
-- docker-compose (and docker)
-- that's it
-
-## Setting up
-- create a `.env` file with the following content:  
-```
-DATA_RELOAD_KEY=<whatever you want>
-```
-This will be the key you'll need to use when updating the data.  
-- run `docker-compose build`  
-- that's it
-
-## Running
-`docker-compose up`
-
-The API should now be accessible at [localhost:8000](http://127.0.0.1:8000)
 
 # Developing
 How to run the dev server.
@@ -46,12 +25,17 @@ How to run the dev server.
 ## setting up
 - create a venv  
 - install fastAPI in the venv: `pip install "fastapi[standard]"`  
-- create the same .env file as for prod
+- set the `DATA_RELOAD_KEY` env variable to whatever password you want for the update endpoint
 
 ## Running
 `fastapi dev main.py`
 
 The API should now be accessible at [localhost:8000](http://127.0.0.1:8000)
+
+# Deploying
+If you want to host your own instance of slumber bridge, a docker container is configured.
+You just need to run `docker compose build` to build the image,
+then create a .env file with the `DATA_RELOAD_KEY` variable, and you can run the server with `docker compose up`
 
 # Endpoints
 
