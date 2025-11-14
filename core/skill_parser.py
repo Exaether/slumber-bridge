@@ -25,7 +25,7 @@ def parse_skill(id, sk):
     sk_data["name"] = skLevel["name"]
     sk_data["skillType"] = skLevel["skillType"]
     sk_data["durationType"] = skLevel["durationType"]
-    sk_data["spType"] = skLevel["spData"]["spType"]
+    sk_data["spType"] = str(skLevel["spData"]["spType"])
     if id in skillsToken.keys():
         sk_data["token"] = skillsToken[id]
     sk_data["levels"] = [parse_skill_level(l) for l in sk["levels"]]
