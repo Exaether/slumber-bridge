@@ -2,19 +2,27 @@ from pathlib import Path
 import urllib.request
 import json
 
-from core.common_parser import charEquip, charSkins, parse_subProfDict
+from core.common_parser import (
+    charEquip,
+    charSkins,
+    modsEN,
+    opsEN,
+    parse_subProfDict,
+    skillsEN,
+)
 from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
 from core.skill_parser import create_skill_json
 from core.operator_parser import create_op_json
 
-SOURCE = "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/excel/"
+SOURCE = "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/"
+REPO_PATH = "/gamedata/excel/"
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 
-def get_data(table: str):
-    table_url = SOURCE + table + ".json"
+def get_data(table: str, server: str):
+    table_url = SOURCE + server + REPO_PATH + table + ".json"
     with urllib.request.urlopen(table_url) as url:
         data = json.load(url)
 
@@ -22,7 +30,7 @@ def get_data(table: str):
 
 
 def parse_skins():
-    skins_data = get_data("skin_table")
+    skins_data = get_data("skin_table", "cn")
     for id, skin in skins_data["charSkins"].items():
         if skin["charId"] not in charSkins:
             charSkins[skin["charId"]] = []
@@ -31,7 +39,7 @@ def parse_skins():
 
 
 def parse_uniequip():
-    equips_data = get_data("uniequip_table")
+    equips_data = get_data("uniequip_table", "cn")
     for char, equip in equips_data["charEquip"].items():
         charEquip[char] = equip[1::]
 
@@ -41,9 +49,10 @@ def parse_uniequip():
 
 
 def parse_operators():
-    data = get_data("character_table")
+    data = get_data("character_table", "en")
 
     for id, op in data.items():
+        opsEN.append(id)
         pro = op["profession"]
         match pro:
             case "TRAP":  # stage mechanics
@@ -53,23 +62,52 @@ def parse_operators():
             case _:
                 create_op_json(id, op)
 
+    data = get_data("character_table", "cn")
+
+    for id, op in data.items():
+        if id not in opsEN:
+            pro = op["profession"]
+            match pro:
+                case "TRAP":  # stage mechanics
+                    pass
+                case "TOKEN":  # summons
+                    create_token_json(id, op)
+                case _:
+                    create_op_json(id, op)
+
 
 def parse_skills():
-    data = get_data("skill_table")
+    data = get_data("skill_table", "en")
 
     for id, sk in data.items():
+        skillsEN.append(id)
         create_skill_json(id, sk)
+
+    data = get_data("skill_table", "cn")
+
+    for id, sk in data.items():
+        if id not in skillsEN:
+            create_skill_json(id, sk)
 
 
 def parse_modules():
-    data = get_data("battle_equip_table")
+    data = get_data("battle_equip_table", "en")
 
     for id, mod in data.items():
+        modsEN.append(id)
         create_mod_json(id, mod)
+
+    data = get_data("battle_equip_table", "cn")
+
+    for id, mod in data.items():
+        if id not in modsEN:
+            create_mod_json(id, mod)
 
 
 def retrieve_ranges():
-    urllib.request.urlretrieve(SOURCE + "range_table.json", DATA_DIR / "ranges.json")
+    urllib.request.urlretrieve(
+        SOURCE + "cn" + REPO_PATH + "range_table.json", DATA_DIR / "ranges.json"
+    )
 
 
 def parse_all():
