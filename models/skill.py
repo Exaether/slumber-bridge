@@ -7,7 +7,7 @@ class SkillLevel(BaseModel):
     maxCharge: int
     spCost: int
     initSp: int
-    duration: int
+    duration: float
     blackboard: dict[str, float]
 
 
