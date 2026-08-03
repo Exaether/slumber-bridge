@@ -9,14 +9,21 @@ from core.common_parser import (
     opsEN,
     parse_subProfDict,
     skillsEN,
+    storiesEN,
+    downloadedENStories,
+    REPO_PATH,
+    SOURCE,
 )
 from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
 from core.skill_parser import create_skill_json
 from core.operator_parser import create_op_json
-
-SOURCE = "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/"
-REPO_PATH = "/gamedata/excel/"
+from core.story_parser import (
+    create_story_json,
+    create_records_names_json,
+    load_downloaded_stories_list,
+    write_downloaded_stories_list,
+)
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -110,6 +117,25 @@ def retrieve_ranges():
     )
 
 
+def parse_stories():
+    load_downloaded_stories_list()
+
+    data = get_data("story_review_table", "en")
+
+    for id, story in data.items():
+        storiesEN.append(id)
+        create_story_json(id, story, "en")
+
+    data = get_data("story_review_table", "cn")
+
+    for id, story in data.items():
+        if id not in storiesEN:
+            create_story_json(id, story, "cn")
+
+    create_records_names_json()
+    write_downloaded_stories_list()
+
+
 def parse_all():
     parse_skins()
     parse_uniequip()
@@ -117,6 +143,7 @@ def parse_all():
     parse_operators()
     parse_skills()
     retrieve_ranges()
+    parse_stories()
 
 
 if __name__ == "__main__":

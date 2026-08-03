@@ -1,10 +1,17 @@
+SOURCE = "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/"
+SOURCE_ALT = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/5ba509ad5a07f17b7e220a25f1ff66794dd79af1/en_US/gamedata"
+REPO_PATH = "/gamedata/excel/"
+
 opsEN: list[str] = []
 skillsEN: list[str] = []
 modsEN: list[str] = []
+storiesEN: list[str] = []
 
+downloadedENStories: list[str] = []
 skillsToken: dict[str, str] = {}
 charEquip: dict[str, str] = {}
 charSkins: dict[str, str] = {}
+recordsNames: dict[str, str] = {}
 
 
 def parse_blackboard(blackboard):
