@@ -1,0 +1,232 @@
+{
+    "operator": {
+        "id": "char_4212_nasti",
+        "name": "Nasti",
+        "rarity": 6,
+        "profession": "SUPPORT",
+        "subProfession": "craftsman",
+        "nation": "columbia",
+        "group": "rhine",
+        "displayNumber": "RL11",
+        "position": "MELEE",
+        "tagList": [
+            "Support",
+            "Defense"
+        ],
+        "skins": [
+            "char_4212_nasti_1",
+            "char_4212_nasti_2",
+            "char_4212_nasti_1",
+            "char_4212_nasti_2"
+        ],
+        "phases": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            "skchr_nasti_1",
+            "skchr_nasti_2",
+            "skchr_nasti_3"
+        ],
+        "talents": [
+            1,
+            2
+        ],
+        "equips": [
+            "uniequip_002_nasti"
+        ]
+    },
+    "phases": [
+        {
+            "range": "1-1",
+            "maxLevel": 50,
+            "minStats": {
+                "maxHP": 989,
+                "atk": 243,
+                "def": 202,
+                "res": 0.0,
+                "cost": 15,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1414,
+                "atk": 381,
+                "def": 291,
+                "res": 0.0,
+                "cost": 15,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 80,
+            "minStats": {
+                "maxHP": 1414,
+                "atk": 381,
+                "def": 291,
+                "res": 0.0,
+                "cost": 17,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 1938,
+                "atk": 509,
+                "def": 375,
+                "res": 0.0,
+                "cost": 17,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            }
+        },
+        {
+            "range": "1-1",
+            "maxLevel": 90,
+            "minStats": {
+                "maxHP": 1938,
+                "atk": 509,
+                "def": 375,
+                "res": 0.0,
+                "cost": 19,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            },
+            "maxStats": {
+                "maxHP": 2585,
+                "atk": 614,
+                "def": 446,
+                "res": 0.0,
+                "cost": 19,
+                "baseAttackTime": 1.5,
+                "respawnTime": 70,
+                "block": 2,
+                "taunt": 0
+            }
+        }
+    ],
+    "talents": [
+        {
+            "name": "Construction Ahead",
+            "token": null,
+            "candidates": [
+                {
+                    "unlockPhase": 0,
+                    "unlockPotentialRank": 0,
+                    "description": "Can carry 2 <Support Devices> (deploy up to 1), with different effects depending on Skill",
+                    "range": null,
+                    "blackboard": {
+                        "cnt": 2.0
+                    }
+                },
+                {
+                    "unlockPhase": 1,
+                    "unlockPotentialRank": 0,
+                    "description": "Can carry 2 <Support Devices> (deploy up to 2), with different effects depending on Skill",
+                    "range": null,
+                    "blackboard": {
+                        "cnt": 3.0
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill",
+                    "range": null,
+                    "blackboard": {
+                        "cnt": 3.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Safety First",
+            "token": null,
+            "candidates": [
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 0,
+                    "description": "Gains 10% <$ba.protect>Sanctuary</>; after a ranged enemy appears, instead grants herself and all High Ground Operators 15% <$ba.protect>Sanctuary</>, and also 1 SP every 6 seconds",
+                    "range": null,
+                    "blackboard": {
+                        "nasti_t2[add_sp].interval": 6.0,
+                        "nasti_t2[res_plus].damage_resistance": 0.15,
+                        "nasti_t2[res].damage_resistance": 0.1
+                    }
+                },
+                {
+                    "unlockPhase": 2,
+                    "unlockPotentialRank": 4,
+                    "description": "Gains 12% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</>; after a ranged enemy appears, instead grants herself and all High Ground Operators 18% <@ba.talpu>(+3%)</> <$ba.protect>Sanctuary</>, and also 1 SP every 6 seconds",
+                    "range": null,
+                    "blackboard": {
+                        "nasti_t2[add_sp].interval": 6.0,
+                        "nasti_t2[res_plus].damage_resistance": 0.18,
+                        "nasti_t2[res].damage_resistance": 0.12
+                    }
+                }
+            ]
+        }
+    ],
+    "potentialRanks": [
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        },
+        {
+            "type": "BUFF",
+            "description": "Redeployment Time -6 sec",
+            "attribute": "RESPAWN_TIME",
+            "formula": "ADDITION",
+            "value": -6.0
+        },
+        {
+            "type": "BUFF",
+            "description": "ATK +25",
+            "attribute": "ATK",
+            "formula": "ADDITION",
+            "value": 25.0
+        },
+        {
+            "type": "CUSTOM",
+            "description": "Improves Second Talent"
+        },
+        {
+            "type": "BUFF",
+            "description": "DP Cost -1",
+            "attribute": "COST",
+            "formula": "ADDITION",
+            "value": -1.0
+        }
+    ],
+    "trait": {
+        "description": "Blocks 2 enemies; Can use <Support Devices> in battles",
+        "candidates": []
+    },
+    "favor": {
+        "maxHP": 280,
+        "atk": 0,
+        "def": 30,
+        "res": 0.0,
+        "cost": 0,
+        "baseAttackTime": 0.0,
+        "respawnTime": 0,
+        "block": 0,
+        "taunt": 0
+    }
+}
