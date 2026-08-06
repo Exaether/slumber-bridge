@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, Security
 from fastapi.security.api_key import APIKeyHeader
 from fastapi.middleware.cors import CORSMiddleware
-from routers import misc, modules, operators, skills
+from routers import misc, modules, operators, skills, stories, records
 from core.data_store import data_store
 from core.parser import parse_all
 import os
@@ -25,7 +25,8 @@ data_store.load_all()
 
 async def verify_api_key(api_key: str = Security(api_key_header)):
     if api_key != API_KEY:
-        raise HTTPException(status_code=401, detail="Invalid or missing API key")
+        raise HTTPException(
+            status_code=401, detail="Invalid or missing API key")
     return api_key
 
 
@@ -51,3 +52,5 @@ app.include_router(operators.router)
 app.include_router(misc.router)
 app.include_router(skills.router)
 app.include_router(modules.router)
+app.include_router(stories.router)
+app.include_router(records.router)

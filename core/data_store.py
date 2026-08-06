@@ -12,6 +12,8 @@ class DataStore:
         self._tokens = {}
         self._ranges = {}
         self._subProfNames = {}
+        self._stories = {}
+        self._records = {}
 
     def load_all(self):
         with open(self.data_dir / "routes.json") as f:
@@ -28,6 +30,11 @@ class DataStore:
         for file in (self.data_dir / "tokens").glob("*.json"):
             with open(file, "r", encoding="utf-8") as f:
                 self._tokens[file.stem] = json.load(f)
+        for file in (self.data_dir / "stories").glob("*/*.json"):
+            with open(file, "r", encoding="utf-8") as f:
+                self._stories[file.stem] = json.load(f)
+        with open(self.data_dir / "records" / "recordsNames.json") as f:
+            self._records = json.load(f)
         with open(self.data_dir / "ranges.json") as f:
             self._ranges = json.load(f)
         with open(self.data_dir / "subProfNames.json") as f:
@@ -68,6 +75,18 @@ class DataStore:
 
     def getSubProfNames(self):
         return self._subProfNames
+
+    def getStories(self):
+        return self._stories
+
+    def getStory(self, id: str):
+        return self._stories[id]
+
+    def getRecords(self):
+        return self._records
+
+    def getRecordName(self, id: str):
+        return self._records[id]
 
     def getEndpoints(self):
         return self._endpoints

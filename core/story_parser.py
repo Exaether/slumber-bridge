@@ -12,6 +12,7 @@ def create_story_json(id, story, server):
     if story["actType"] == "NONE":
         retrieve_op_record(story, server)
         return
+    data["id"] = id
     data["title"] = story["name"]
     data["type"] = story["actType"]
     data["startTime"] = story["startTime"]
@@ -62,7 +63,7 @@ def retrieve_op_record(story, server):
     if id not in downloadedENStories:
         urllib.request.urlretrieve(
             SOURCE + server + "/gamedata/story/obt/memory/" + stage_filename,
-            story_dir_path / "records" / stage_filename,
+            story_dir_path.parent / "records" / stage_filename,
         )
         if server == "en":
             downloadedENStories.append(id)
@@ -72,7 +73,7 @@ def create_records_names_json():
     json_str = json.dumps(recordsNames, indent=4)
     filename = "recordsNames.json"
 
-    with open(story_dir_path / "records" / filename, "w") as f:
+    with open(story_dir_path.parent / "records" / filename, "w") as f:
         f.write(json_str)
 
 
