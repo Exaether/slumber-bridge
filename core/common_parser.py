@@ -7,7 +7,11 @@ skillsEN: list[str] = []
 modsEN: list[str] = []
 storiesEN: list[str] = []
 
-downloadedENStories: list[str] = []
+opsCN: list[str] = []
+skillsCN: list[str] = []
+modsCN: list[str] = []
+storiesCN: list[str] = []
+
 skillsToken: dict[str, str] = {}
 charEquip: dict[str, str] = {}
 charSkins: dict[str, str] = {}
@@ -15,7 +19,7 @@ recordsNames: dict[str, str] = {}
 
 
 def parse_blackboard(blackboard):
-    if type(blackboard) != list:
+    if blackboard is not list:
         return blackboard
     blackboard_data = {}
     for e in blackboard:

@@ -7,10 +7,13 @@ from core.common_parser import (
     charSkins,
     modsEN,
     opsEN,
-    parse_subProfDict,
     skillsEN,
     storiesEN,
-    downloadedENStories,
+    modsCN,
+    opsCN,
+    skillsCN,
+    storiesCN,
+    parse_subProfDict,
     REPO_PATH,
     SOURCE,
 )
@@ -21,8 +24,7 @@ from core.operator_parser import create_op_json
 from core.story_parser import (
     create_story_json,
     create_records_names_json,
-    load_downloaded_stories_list,
-    write_downloaded_stories_list,
+    param_types,
 )
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -59,19 +61,6 @@ def parse_operators():
     data = get_data("character_table", "en")
 
     for id, op in data.items():
-        opsEN.append(id)
-        pro = op["profession"]
-        match pro:
-            case "TRAP":  # stage mechanics
-                pass
-            case "TOKEN":  # summons
-                create_token_json(id, op)
-            case _:
-                create_op_json(id, op)
-
-    data = get_data("character_table", "cn")
-
-    for id, op in data.items():
         if id not in opsEN:
             pro = op["profession"]
             match pro:
@@ -81,34 +70,74 @@ def parse_operators():
                     create_token_json(id, op)
                 case _:
                     create_op_json(id, op)
+            opsEN.append(id)
+
+    with open(DATA_DIR / "opsEN.json", "w") as f:
+        f.write(json.dumps(opsEN, indent=4))
+
+    # CN ops
+    data = get_data("character_table", "cn")
+
+    for id, op in data.items():
+        if id not in opsEN and id not in opsCN:
+            pro = op["profession"]
+            match pro:
+                case "TRAP":  # stage mechanics
+                    pass
+                case "TOKEN":  # summons
+                    create_token_json(id, op)
+                case _:
+                    create_op_json(id, op)
+            opsCN.append(id)
+
+    with open(DATA_DIR / "opsCN.json", "w") as f:
+        f.write(json.dumps(opsCN, indent=4))
 
 
 def parse_skills():
     data = get_data("skill_table", "en")
 
     for id, sk in data.items():
-        skillsEN.append(id)
-        create_skill_json(id, sk)
+        if id not in skillsEN:
+            create_skill_json(id, sk)
+            skillsEN.append(id)
 
+    with open(DATA_DIR / "skillsEN.json", "w") as f:
+        f.write(json.dumps(skillsEN, indent=4))
+
+    # CN skills
     data = get_data("skill_table", "cn")
 
     for id, sk in data.items():
-        if id not in skillsEN:
+        if id not in skillsEN and id not in skillsCN:
             create_skill_json(id, sk)
+            skillsCN.append(id)
+
+    with open(DATA_DIR / "skillsCN.json", "w") as f:
+        f.write(json.dumps(skillsCN, indent=4))
 
 
 def parse_modules():
     data = get_data("battle_equip_table", "en")
 
     for id, mod in data.items():
-        modsEN.append(id)
-        create_mod_json(id, mod)
+        if id not in modsEN:
+            create_mod_json(id, mod)
+            modsEN.append(id)
 
+    with open(DATA_DIR / "modsEN.json", "w") as f:
+        f.write(json.dumps(modsEN, indent=4))
+
+    # CN mods
     data = get_data("battle_equip_table", "cn")
 
     for id, mod in data.items():
-        if id not in modsEN:
+        if id not in modsEN and id not in modsCN:
             create_mod_json(id, mod)
+            modsCN.append(id)
+
+    with open(DATA_DIR / "modsCN.json", "w") as f:
+        f.write(json.dumps(modsCN, indent=4))
 
 
 def retrieve_ranges():
@@ -118,26 +147,51 @@ def retrieve_ranges():
 
 
 def parse_stories():
-    load_downloaded_stories_list()
-
     data = get_data("story_review_table", "en")
 
     for id, story in data.items():
-        storiesEN.append(id)
-        create_story_json(id, story, "en")
+        if id not in storiesEN:
+            create_story_json(id, story, "en")
+            storiesEN.append(id)
+            with open(DATA_DIR / "storiesEN.json", "w") as f:
+                f.write(json.dumps(storiesEN, indent=4))
 
+    # CN stories
     data = get_data("story_review_table", "cn")
 
     for id, story in data.items():
-        if id not in storiesEN:
+        if id not in storiesEN and id not in storiesCN:
             create_story_json(id, story, "cn")
+            storiesCN.append(id)
+            with open(DATA_DIR / "storiesEN.json", "w") as f:
+                f.write(json.dumps(storiesEN, indent=4))
 
     create_records_names_json()
-    write_downloaded_stories_list()
+    print(param_types)
 
 
 def parse_all():
+    # load list of already parsed data
+    with open(DATA_DIR / "storiesEN.json", "r") as f:
+        storiesEN = json.load(f)
+    with open(DATA_DIR / "opsEN.json", "r") as f:
+        opsEN = json.load(f)
+    with open(DATA_DIR / "skillsEN.json", "r") as f:
+        skillsEN = json.load(f)
+    with open(DATA_DIR / "modsEN.json", "r") as f:
+        modsEN = json.load(f)
+
+    with open(DATA_DIR / "storiesCN.json", "r") as f:
+        storiesCN = json.load(f)
+    with open(DATA_DIR / "opsCN.json", "r") as f:
+        opsCN = json.load(f)
+    with open(DATA_DIR / "skillsCN.json", "r") as f:
+        skillsCN = json.load(f)
+    with open(DATA_DIR / "modsCN.json", "r") as f:
+        modsCN = json.load(f)
+
     parse_skins()
+    # links between ops and mods
     parse_uniequip()
     parse_modules()
     parse_operators()
