@@ -15,17 +15,8 @@ TAG_REGEX = re.compile(
     r'(\w+)(?:="([^"]+)")?(?:\(((?:[^"]|"[^"]*")*)\))?', re.IGNORECASE
 )
 
-param_types: list[type] = []
-
 
 def parse_value(string: str):
-    try:
-        obj = ast.literal_eval(string)
-        param_types.append(type(obj))
-    except Exception:
-        pass
-
-    # handle bools without caps
     if string.lower() == "true":
         return True
     if string.lower() == "false":
@@ -86,7 +77,6 @@ def parse_story_text(url) -> list[dict[str, Any]]:
 
 
 def create_story_json(id, story, server):
-    print(id)
     data = {}
     if story["actType"] == "NONE":
         retrieve_op_record(story, server)
@@ -99,8 +89,8 @@ def create_story_json(id, story, server):
     data["stages"] = []
 
     # create the story dir
-    if not os.path.exists(story_dir_path / id):
-        os.makedirs(story_dir_path / id)
+    if not os.path.exists(story_dir_path / id / "stages"):
+        os.makedirs(story_dir_path / id / "stages")
 
     for s in story["infoUnlockDatas"]:
         stage = {}
@@ -122,7 +112,6 @@ def create_story_json(id, story, server):
                 f.write(json_str)
 
         except urllib.error.HTTPError:
-            print(s["storyTxt"])
             # fix for 2 missing stories from ashleney repo
             url = SOURCE_ALT + "/story/" + s["storyTxt"] + ".txt"
             json_str = json.dumps(parse_story_text(url), indent=4)

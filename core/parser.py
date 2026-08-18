@@ -16,6 +16,7 @@ from core.common_parser import (
     parse_subProfDict,
     REPO_PATH,
     SOURCE,
+    load_downloaded_data,
 )
 from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
@@ -24,7 +25,6 @@ from core.operator_parser import create_op_json
 from core.story_parser import (
     create_story_json,
     create_records_names_json,
-    param_types,
 )
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -58,6 +58,12 @@ def parse_uniequip():
 
 
 def parse_operators():
+    # load already parsed ops
+    with open(DATA_DIR / "opsEN.json", "r") as f:
+        opsEN = json.load(f)
+    with open(DATA_DIR / "opsCN.json", "r") as f:
+        opsCN = json.load(f)
+
     data = get_data("character_table", "en")
 
     for id, op in data.items():
@@ -95,6 +101,12 @@ def parse_operators():
 
 
 def parse_skills():
+    # load already parsed skill
+    with open(DATA_DIR / "skillsEN.json", "r") as f:
+        skillsEN = json.load(f)
+    with open(DATA_DIR / "skillsCN.json", "r") as f:
+        skillsCN = json.load(f)
+
     data = get_data("skill_table", "en")
 
     for id, sk in data.items():
@@ -118,6 +130,12 @@ def parse_skills():
 
 
 def parse_modules():
+    # load already parsed mods
+    with open(DATA_DIR / "modsEN.json", "r") as f:
+        modsEN = json.load(f)
+    with open(DATA_DIR / "modsCN.json", "r") as f:
+        modsCN = json.load(f)
+
     data = get_data("battle_equip_table", "en")
 
     for id, mod in data.items():
@@ -147,6 +165,12 @@ def retrieve_ranges():
 
 
 def parse_stories():
+    # load already downloaded stories
+    with open(DATA_DIR / "storiesEN.json", "r") as f:
+        storiesEN = json.load(f)
+    with open(DATA_DIR / "storiesCN.json", "r") as f:
+        storiesCN = json.load(f)
+
     data = get_data("story_review_table", "en")
 
     for id, story in data.items():
@@ -163,33 +187,13 @@ def parse_stories():
         if id not in storiesEN and id not in storiesCN:
             create_story_json(id, story, "cn")
             storiesCN.append(id)
-            with open(DATA_DIR / "storiesEN.json", "w") as f:
-                f.write(json.dumps(storiesEN, indent=4))
+            with open(DATA_DIR / "storiesCN.json", "w") as f:
+                f.write(json.dumps(storiesCN, indent=4))
 
     create_records_names_json()
-    print(param_types)
 
 
 def parse_all():
-    # load list of already parsed data
-    with open(DATA_DIR / "storiesEN.json", "r") as f:
-        storiesEN = json.load(f)
-    with open(DATA_DIR / "opsEN.json", "r") as f:
-        opsEN = json.load(f)
-    with open(DATA_DIR / "skillsEN.json", "r") as f:
-        skillsEN = json.load(f)
-    with open(DATA_DIR / "modsEN.json", "r") as f:
-        modsEN = json.load(f)
-
-    with open(DATA_DIR / "storiesCN.json", "r") as f:
-        storiesCN = json.load(f)
-    with open(DATA_DIR / "opsCN.json", "r") as f:
-        opsCN = json.load(f)
-    with open(DATA_DIR / "skillsCN.json", "r") as f:
-        skillsCN = json.load(f)
-    with open(DATA_DIR / "modsCN.json", "r") as f:
-        modsCN = json.load(f)
-
     parse_skins()
     # links between ops and mods
     parse_uniequip()
