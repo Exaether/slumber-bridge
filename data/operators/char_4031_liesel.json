@@ -1,7 +1,7 @@
 {
     "operator": {
         "id": "char_4031_liesel",
-        "name": "\u590d\u594f",
+        "name": "Ripresa",
         "rarity": 5,
         "profession": "CASTER",
         "subProfession": "splashcaster",
@@ -10,8 +10,8 @@
         "displayNumber": "SR43",
         "position": "RANGED",
         "tagList": [
-            "\u7fa4\u653b",
-            "\u8f93\u51fa"
+            "AoE",
+            "DPS"
         ],
         "skins": [
             "char_4031_liesel_1",
@@ -115,48 +115,80 @@
     ],
     "talents": [
         {
-            "name": "\u6267\u68d2\u7d20\u517b",
+            "name": "Baton Mastery",
             "token": null,
             "candidates": [
                 {
                     "unlockPhase": 1,
                     "unlockPotentialRank": 0,
-                    "description": "\u653b\u51fb\u6e85\u5c04\u8303\u56f4\u5185\u6709\u5927\u4e8e\u6216\u7b49\u4e8e3\u4e2a\u654c\u4eba\u65f6\uff0c\u4f7f\u5f53\u6b21\u653b\u51fb\u9020\u6210\u7684\u4f24\u5bb3\u63d0\u5347\u81f3110%",
+                    "description": "When there are 3 or more enemies within an attack's splash area, that attack deals 110% damage",
                     "range": null,
-                    "blackboard": {
-                        "damage_scale": 1.1,
-                        "min_target_cnt": 3.0
-                    }
+                    "blackboard": [
+                        {
+                            "key": "damage_scale",
+                            "value": 1.1,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "min_target_cnt",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
                 },
                 {
                     "unlockPhase": 1,
                     "unlockPotentialRank": 4,
-                    "description": "\u653b\u51fb\u6e85\u5c04\u8303\u56f4\u5185\u6709\u5927\u4e8e\u6216\u7b49\u4e8e3\u4e2a\u654c\u4eba\u65f6\uff0c\u4f7f\u5f53\u6b21\u653b\u51fb\u9020\u6210\u7684\u4f24\u5bb3\u63d0\u5347\u81f3115%<@ba.talpu>\uff08+5%\uff09</>",
+                    "description": "When there are 3 or more enemies within an attack's splash area, that attack deals 115% <@ba.talpu>(+5%)</> damage",
                     "range": null,
-                    "blackboard": {
-                        "damage_scale": 1.15,
-                        "min_target_cnt": 3.0
-                    }
+                    "blackboard": [
+                        {
+                            "key": "damage_scale",
+                            "value": 1.15,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "min_target_cnt",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
                 },
                 {
                     "unlockPhase": 2,
                     "unlockPotentialRank": 0,
-                    "description": "\u653b\u51fb\u6e85\u5c04\u8303\u56f4\u5185\u6709\u5927\u4e8e\u6216\u7b49\u4e8e3\u4e2a\u654c\u4eba\u65f6\uff0c\u4f7f\u5f53\u6b21\u653b\u51fb\u9020\u6210\u7684\u4f24\u5bb3\u63d0\u5347\u81f3120%",
+                    "description": "When there are 3 or more enemies within an attack's splash area, that attack deals 120% damage",
                     "range": null,
-                    "blackboard": {
-                        "damage_scale": 1.2,
-                        "min_target_cnt": 3.0
-                    }
+                    "blackboard": [
+                        {
+                            "key": "damage_scale",
+                            "value": 1.2,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "min_target_cnt",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
                 },
                 {
                     "unlockPhase": 2,
                     "unlockPotentialRank": 4,
-                    "description": "\u653b\u51fb\u6e85\u5c04\u8303\u56f4\u5185\u6709\u5927\u4e8e\u6216\u7b49\u4e8e3\u4e2a\u654c\u4eba\u65f6\uff0c\u4f7f\u5f53\u6b21\u653b\u51fb\u9020\u6210\u7684\u4f24\u5bb3\u63d0\u5347\u81f3125%<@ba.talpu>\uff08+5%\uff09</>",
+                    "description": "When there are 3 or more enemies within an attack's splash area, that attack deals 125% <@ba.talpu>(+5%)</> damage",
                     "range": null,
-                    "blackboard": {
-                        "damage_scale": 1.25,
-                        "min_target_cnt": 3.0
-                    }
+                    "blackboard": [
+                        {
+                            "key": "damage_scale",
+                            "value": 1.25,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "min_target_cnt",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
                 }
             ]
         }
@@ -164,39 +196,39 @@
     "potentialRanks": [
         {
             "type": "BUFF",
-            "description": "\u90e8\u7f72\u8d39\u7528-1",
+            "description": "DP Cost -1",
             "attribute": "COST",
             "formula": "ADDITION",
             "value": -1.0
         },
         {
             "type": "BUFF",
-            "description": "\u518d\u90e8\u7f72\u65f6\u95f4-4\u79d2",
+            "description": "Redeployment Time -4 sec",
             "attribute": "RESPAWN_TIME",
             "formula": "ADDITION",
             "value": -4.0
         },
         {
             "type": "BUFF",
-            "description": "\u653b\u51fb\u529b+32",
+            "description": "ATK +32",
             "attribute": "ATK",
             "formula": "ADDITION",
             "value": 32.0
         },
         {
             "type": "CUSTOM",
-            "description": "\u5929\u8d4b\u6548\u679c\u589e\u5f3a"
+            "description": "Improves Talent"
         },
         {
             "type": "BUFF",
-            "description": "\u90e8\u7f72\u8d39\u7528-1",
+            "description": "DP Cost -1",
             "attribute": "COST",
             "formula": "ADDITION",
             "value": -1.0
         }
     ],
     "trait": {
-        "description": "\u653b\u51fb\u9020\u6210<@ba.kw>\u7fa4\u4f53\u6cd5\u672f\u4f24\u5bb3</>",
+        "description": "Deals <@ba.kw>AOE Arts damage</>",
         "candidates": []
     },
     "favor": {
