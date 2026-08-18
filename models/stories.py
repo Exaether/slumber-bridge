@@ -1,4 +1,5 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from typing import Any
 
 
 class StoryStageBase(BaseModel):
@@ -10,7 +11,7 @@ class StoryStageBase(BaseModel):
 
 
 class StoryStageText(StoryStageBase):
-    text: str
+    text: list[dict[str, Any]]
 
 
 class StoryBase(BaseModel):
@@ -31,4 +32,4 @@ class RecordBase(BaseModel):
 
 
 class RecordText(RecordBase):
-    text: str
+    text: list[dict[str, Any]]

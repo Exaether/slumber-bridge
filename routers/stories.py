@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pathlib import Path
+import json
 
 from core.data_store import data_store
 from models.stories import StoryStageText, StoryBase, StoryDetail
@@ -19,7 +20,6 @@ def get_stories():
         stories[id]["type"] = st["type"]
         stories[id]["startTime"] = st["startTime"]
         stories[id]["cover"] = st["cover"]
-    print(stories)
     return stories
 
 
@@ -36,8 +36,8 @@ def get_stage(id: str, index: int):
     try:
         stage = data_store.getStory(id)["stages"][index]
         stage_id = stage["id"]
-        with open(STORIES_BASE_PATH / id / (stage_id + ".txt"), "r") as f:
-            stage["text"] = f.read()
+        with open(STORIES_BASE_PATH / id / "stages" / (stage_id + ".json"), "r") as f:
+            stage["text"] = json.load(f)
         return stage
     except KeyError:
         raise HTTPException(status_code=404, detail="story or stage not found")

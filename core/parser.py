@@ -16,7 +16,6 @@ from core.common_parser import (
     parse_subProfDict,
     REPO_PATH,
     SOURCE,
-    load_downloaded_data,
 )
 from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
