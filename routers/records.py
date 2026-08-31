@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pathlib import Path
+import json
 
 from core.data_store import data_store
 from models.stories import RecordBase, RecordText
@@ -26,8 +27,8 @@ def get_record(id: str):
         rec["id"] = id
         rec["name"] = data_store.getRecordName(id)
 
-        with open(RECORDS_PATH / (id + ".txt"), "r") as f:
-            rec["text"] = f.read()
+        with open(RECORDS_PATH / (id + ".json"), "r") as f:
+            rec["text"] = json.load(f)
         return rec
     except KeyError:
         raise HTTPException(status_code=404, detail="story or stage not found")

@@ -14,6 +14,7 @@ from core.common_parser import (
     skillsCN,
     storiesCN,
     parse_subProfDict,
+    recordsNames,
     REPO_PATH,
     SOURCE,
 )
@@ -21,10 +22,7 @@ from core.module_parser import create_mod_json
 from core.token_parser import create_token_json
 from core.skill_parser import create_skill_json
 from core.operator_parser import create_op_json
-from core.story_parser import (
-    create_story_json,
-    create_records_names_json,
-)
+from core.story_parser import create_story_json
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -165,14 +163,21 @@ def retrieve_ranges():
 
 def parse_stories():
     # load already downloaded stories
+    global storiesEN
     with open(DATA_DIR / "storiesEN.json", "r") as f:
         storiesEN = json.load(f)
+    global storiesCN
     with open(DATA_DIR / "storiesCN.json", "r") as f:
         storiesCN = json.load(f)
+    global recordsNames
+    with open(DATA_DIR / "records" / "recordsNames.json", "r") as f:
+        recordsNames = json.load(f)
 
     data = get_data("story_review_table", "en")
 
     for id, story in data.items():
+        if story["actType"] == "NONE":
+            recordsNames[id] = story["name"]
         if id not in storiesEN:
             create_story_json(id, story, "en")
             storiesEN.append(id)
@@ -183,13 +188,19 @@ def parse_stories():
     data = get_data("story_review_table", "cn")
 
     for id, story in data.items():
+        if story["actType"] == "NONE" and id not in storiesEN:
+            recordsNames[id] = story["name"]
         if id not in storiesEN and id not in storiesCN:
             create_story_json(id, story, "cn")
             storiesCN.append(id)
             with open(DATA_DIR / "storiesCN.json", "w") as f:
                 f.write(json.dumps(storiesCN, indent=4))
 
-    create_records_names_json()
+    json_str = json.dumps(recordsNames, indent=4)
+    filename = "recordsNames.json"
+
+    with open(DATA_DIR / "records" / filename, "w") as f:
+        f.write(json_str)
 
 
 def parse_all():
