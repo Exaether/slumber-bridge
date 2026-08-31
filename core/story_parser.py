@@ -217,6 +217,9 @@ def fix_line(line: dict[str, Any]):
                     del line["params"]
                 else:
                     raise UselessCommandException()
+            case "largebgtween" | "backgroundtween" | "imagetween":
+                if "params" not in line or "duration" not in line["params"]:
+                    raise UselessCommandException()
             case "decision":
                 line["params"]["values"] = str(line["params"]["values"])
                 decision_state = line["params"]["values"]

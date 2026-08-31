@@ -19,6 +19,30 @@ useless_commands = [
     "gotopage",
 ]
 
+stripped_useless_commands = [
+    "spellsticker",
+    "spellstickerclear",
+    "timersticker",
+    "timerclear",
+    "interlude",
+    "imagetween",
+    "backgroundtween",
+    "largebgtween",
+    "characteraction",
+    "imagerotate",
+    "imgeffect",
+    "delay",
+    "theater",
+    "avgdisplay",
+    "camerashake",
+    "effect",
+    "soundvolume",
+    "musicvolume",
+    "focusparam",
+    "focusout",
+    "curtain",
+]
+
 param_map = {
     "blocker": {
         "a": ["a"],
