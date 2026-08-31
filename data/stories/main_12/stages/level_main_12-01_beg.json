@@ -1,65 +1,69 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "'We've confirmed that a high-speed warship belonging to the Duke of Windermere was attacked by an unknown Sarkaz weapon. There were no survivors.'"
@@ -77,35 +81,41 @@
         "text": "'However, until it has been proven that the Sarkaz possess the technological means to mass-produce such weapons, we would recommend against categorizing this target at the highest threat level for the time being, as countermeasures have already been deployed.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_devicebeep",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_devicebeep",
+            "volume": 1
+        }
     },
     {
-        "tag": "image",
-        "image": "37_i14",
-        "fadetime": 0.3,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "37_i14",
+            "fadetime": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "image": "37_i14",
-        "xScaleFrom": 1.3,
-        "yScaleFrom": 1.3,
-        "xScaleTo": 0.8,
-        "yScaleTo": 0.8,
-        "duration": 20
+        "command": "imagetween",
+        "params": {
+            "image": "37_i14",
+            "xscalefrom": 1.3,
+            "yscalefrom": 1.3,
+            "xscale": 0.8,
+            "yscale": 0.8,
+            "duration": 20
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "'It should also be noted that Norport Borough, Londinium's old logistics district, was separated from the main body of Londinium City yesterday.'"
@@ -129,51 +139,59 @@
         "text": "'The remote observation team has provided several photos taken on the scene.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_devicebeep",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_devicebeep",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_devicebeep",
-        "volume": 1,
-        "loop": false,
-        "channel": "phone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_devicebeep",
+            "volume": 1,
+            "loop": false,
+            "channel": "phone"
+        }
     },
     {
-        "tag": "image",
-        "image": "37_i02",
-        "screenadapt": "coverall",
-        "x": 0,
-        "fadetime": 0,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "37_i02",
+            "screenadapt": "coverall",
+            "x": 0,
+            "fadetime": 0,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "image": "37_i14",
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20
+        "command": "imagetween",
+        "params": {
+            "image": "37_i14",
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
         "text": "'At the moment, we are not planning any large-scale operations against this plate.'"
@@ -191,1637 +209,1897 @@
         "text": "'Awaiting further instructions.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_devicebeep",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_devicebeep",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "m",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "m",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "...'Technical reasons'.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "...'Technical reasons'."
     },
     {
-        "text": "How unsophisticated.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "How unsophisticated."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But, it gets the job done. They know full well... that we all care greatly about our own reputations. Especially in the face of Victoria's coming future.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "But, it gets the job done. They know full well... that we all care greatly about our own reputations. Especially in the face of Victoria's coming future."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So, they also decided to throw out a bit of bait... Hmph. A flying fortress, huh?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "So, they also decided to throw out a bit of bait... Hmph. A flying fortress, huh?"
     },
     {
-        "text": "It pains me to say this, but, as long as they're holding Norport Borough at gunpoint, things are going to get messy.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "It pains me to say this, but, as long as they're holding Norport Borough at gunpoint, things are going to get messy."
     },
     {
-        "text": "Now, even Wellington doesn't have the nerve to rush over with his high-speed warship, rain fire down on the old logistics area, and snatch away his new toy.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Now, even Wellington doesn't have the nerve to rush over with his high-speed warship, rain fire down on the old logistics area, and snatch away his new toy."
     },
     {
-        "text": "But he won't be able to resist the temptation.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "But he won't be able to resist the temptation."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Affirmative. The Duke of Wellington's troops have sped up their advance. We suspect he's already gained intel on the airship.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Affirmative. The Duke of Wellington's troops have sped up their advance. We suspect he's already gained intel on the airship."
     },
     {
-        "text": "This massive airship is indeed beyond our calculations, and it has the potential to reshape future wars. But, as the intelligence says, we're far from the point of things spiraling out of control.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "This massive airship is indeed beyond our calculations, and it has the potential to reshape future wars. But, as the intelligence says, we're far from the point of things spiraling out of control."
     },
     {
-        "text": "According to our estimates, even if the Sarkaz had a secret channel for transporting supplies, they wouldn't have had the time or resources to build multiple airships.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "According to our estimates, even if the Sarkaz had a secret channel for transporting supplies, they wouldn't have had the time or resources to build multiple airships."
     },
     {
-        "text": "Those damned devils can hardly bring out the value of this technology, but perhaps we can.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Those damned devils can hardly bring out the value of this technology, but perhaps we can."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That's right. Naturally, this is extremely important to me. Even if I don't give the order, I expect that you'll bring it to me.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "That's right. Naturally, this is extremely important to me. Even if I don't give the order, I expect that you'll bring it to me."
     },
     {
-        "text": "However, our gaze ought to be cast wider than just this singular piece of technology.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "However, our gaze ought to be cast wider than just this singular piece of technology."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "What really worries me is...",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "What really worries me is..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "We've let the Sarkaz run amok in the Shard for far too long. Even the most dim-witted fools will eventually figure out what lies behind those buttons and levers.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "We've let the Sarkaz run amok in the Shard for far too long. Even the most dim-witted fools will eventually figure out what lies behind those buttons and levers."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Allerdale... I don't blame her. She was never ambitious enough\u2013 that was her strong suit, and I allowed her to keep it. But, it doesn't look like there's any way to make use of our 'Stone of the Sword.'",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Allerdale... I don't blame her. She was never ambitious enough\u2013 that was her strong suit, and I allowed her to keep it. But, it doesn't look like there's any way to make use of our 'Stone of the Sword.'"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Rest assured, the dukes who supported you, along with their vassals, are still resolutely on your side.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Rest assured, the dukes who supported you, along with their vassals, are still resolutely on your side."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I promised them peace and safety, and I <i>will</i> deliver.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "I promised them peace and safety, and I <i>will</i> deliver."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Forever honor one's commitments\u2013 that has always been the motto of House Caster since ancient times.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Forever honor one's commitments\u2013 that has always been the motto of House Caster since ancient times."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "'Trilby Asher' is already being dealt with.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "'Trilby Asher' is already being dealt with."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Naturally. They always have a way.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Naturally. They always have a way."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Then, Your Grace, about the citizens of Norport...",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Then, Your Grace, about the citizens of Norport..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Lt. Colonel Lettou said that he was preparing a 'rescue plan.'",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Lt. Colonel Lettou said that he was preparing a 'rescue plan.'"
     },
     {
-        "text": "You won't go wrong putting your trust in that Gaulish commander. I've met him before\u2013 he's an interesting man.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "You won't go wrong putting your trust in that Gaulish commander. I've met him before\u2013 he's an interesting man."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The Sarkaz have never publicly claimed to 'occupy' Londinium, as it has nominally been under the control of the Defense Forces.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "The Sarkaz have never publicly claimed to 'occupy' Londinium, as it has nominally been under the control of the Defense Forces."
     },
     {
-        "text": "And this Lieutenant Colonel has managed to survive in his position for four years without getting caught up in any major trouble either...",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "And this Lieutenant Colonel has managed to survive in his position for four years without getting caught up in any major trouble either..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "We all know how what those devils are like, so that fact alone is respectable enough.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "We all know how what those devils are like, so that fact alone is respectable enough."
     },
     {
-        "text": "Who knows, maybe he's more keen on becoming a 'savior' than we are.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Who knows, maybe he's more keen on becoming a 'savior' than we are."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I see what you're saying.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "I see what you're saying."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Getting the right people into the right positions, and turning valued friends into truly loyal partners... is harder than we initially expected.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Getting the right people into the right positions, and turning valued friends into truly loyal partners... is harder than we initially expected."
     },
     {
-        "text": "Old Wellington knows what I want, and I know what he wants.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Old Wellington knows what I want, and I know what he wants."
     },
     {
-        "text": "Though we've never talked about these things openly, we naturally helped each other, all while keeping an extra knife sharpened for one another.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Though we've never talked about these things openly, we naturally helped each other, all while keeping an extra knife sharpened for one another."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Poor thing. Windermere's been playing with the Leithanians for so long, it might be a while until she remembers how Victoria works.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Poor thing. Windermere's been playing with the Leithanians for so long, it might be a while until she remembers how Victoria works."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Indeed, we still don't quite understand why the Duke of Windermere is so keenly interested in Norport's affairs. Does she also want that airship technology?",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Indeed, we still don't quite understand why the Duke of Windermere is so keenly interested in Norport's affairs. Does she also want that airship technology?"
     },
     {
-        "text": "Maybe she wants to add another card to her hand? She knows she's in for a rough time soon.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Maybe she wants to add another card to her hand? She knows she's in for a rough time soon."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "With opportunity comes desire. Both are as honey, equally effective at leading people into the abyss.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "With opportunity comes desire. Both are as honey, equally effective at leading people into the abyss."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That cousin of mine failed to understand this, which is why he's been dead for twenty-six years.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "That cousin of mine failed to understand this, which is why he's been dead for twenty-six years."
     },
     {
-        "text": "You know, he still appears in my dreams, from time to time.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "You know, he still appears in my dreams, from time to time."
     },
     {
-        "text": "Can't say I ever liked him. He was a bombastic, self-righteous boy.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Can't say I ever liked him. He was a bombastic, self-righteous boy."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "When we were young, he'd run up and down the corridors of the palace, spouting quotes from past kings he saw in some book.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "When we were young, he'd run up and down the corridors of the palace, spouting quotes from past kings he saw in some book."
     },
     {
-        "text": "And, he'd always spew the same trite platitudes.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "And, he'd always spew the same trite platitudes."
     },
     {
-        "text": "'A role model for the masses,' 'noblesse oblige,' what have you.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "'A role model for the masses,' 'noblesse oblige,' what have you."
     },
     {
-        "text": "He treated those words as his guiding compass, though they probably didn't even come from the kings they were attributed to. In all likelihood, they were flattering embellishments added by the royal archivists.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "He treated those words as his guiding compass, though they probably didn't even come from the kings they were attributed to. In all likelihood, they were flattering embellishments added by the royal archivists."
     },
     {
-        "text": "He actually believed those words, and paid the price for it.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "He actually believed those words, and paid the price for it."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But despite all that, I sometimes still miss him.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "But despite all that, I sometimes still miss him."
     },
     {
-        "text": "During those years he was still around, we could pretend that all was well.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "During those years he was still around, we could pretend that all was well."
     },
     {
-        "text": "But now, even the dullest of men must open their eyes.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "But now, even the dullest of men must open their eyes."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Open their eyes, and bear witness to all our ugliness, covetousness, and opportunism\u2013",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Open their eyes, and bear witness to all our ugliness, covetousness, and opportunism\u2013"
     },
     {
-        "text": "War has broken out, and its advent has fulfilled everyone's wishes at all.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "War has broken out, and its advent has fulfilled everyone's wishes at all."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Your Grace, this is also your chance to unite Victoria.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Your Grace, this is also your chance to unite Victoria."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Hah. Unity...",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Hah. Unity..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Victoria has been trodden upon and sullied for far too long. You have the right to restore her glory.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "Victoria has been trodden upon and sullied for far too long. You have the right to restore her glory."
     },
     {
-        "text": "This war is for Victoria.",
-        "tag": "name",
-        "value": "High-Ranking Officer"
+        "command": "name",
+        "value": "High-Ranking Officer",
+        "text": "This war is for Victoria."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No, no, my child. This war is not for Victoria alone.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "No, no, my child. This war is not for Victoria alone."
     },
     {
-        "text": "'Victoria.' How we love to speak the name of our country\u2013",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "'Victoria.' How we love to speak the name of our country\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No. It's nothing more than a rag to cover festering abscesses when the people are in need of morality, an empty husk to exploit hope when the people are in need of dignity.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "No. It's nothing more than a rag to cover festering abscesses when the people are in need of morality, an empty husk to exploit hope when the people are in need of dignity."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "All those farmers, laborers, soldiers, and nobles... All these who despise each other, who grope at each others' throats. Why does lumping all of them together make the great Victoria?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "All those farmers, laborers, soldiers, and nobles... All these who despise each other, who grope at each others' throats. Why does lumping all of them together make the great Victoria?"
     },
     {
-        "text": "When they speak of Victoria, what is it they refer to? The fields they've tilled for half a lifetime? The factories that've gorged on their blood and tears?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "When they speak of Victoria, what is it they refer to? The fields they've tilled for half a lifetime? The factories that've gorged on their blood and tears?"
     },
     {
-        "text": "Collections of looted artifacts? Great halls of imported carpets? A splotch of color with a line of text on an atlas? Or, a news headline and a set of economic figures on a television set?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Collections of looted artifacts? Great halls of imported carpets? A splotch of color with a line of text on an atlas? Or, a news headline and a set of economic figures on a television set?"
     },
     {
-        "text": "Or, is it the vast, glorious, and invincible empire built upon the foundations of each man's imagination?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Or, is it the vast, glorious, and invincible empire built upon the foundations of each man's imagination?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_726_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_726_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Let us prepare ourselves. Let us wait with bated breath.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Let us prepare ourselves. Let us wait with bated breath."
     },
     {
-        "text": "Take a good look. Witness where this war will take us.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Take a good look. Witness where this war will take us."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "37_g3_fogblockadestreet_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "37_g3_fogblockadestreet_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playmusic",
-        "intro": "$escape_intro",
-        "key": "$escape_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$escape_intro",
+            "key": "$escape_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "duration": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 2
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "Good day, sir\u2013",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "Good day, sir\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "Lemme guess. You wanna be strung up on that fence too, huh?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Lemme guess. You wanna be strung up on that fence too, huh?"
     },
     {
-        "text": "To be honest, I don't have a lot of fun with that job. I suggest you turn around and crawl back to where you belong.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "To be honest, I don't have a lot of fun with that job. I suggest you turn around and crawl back to where you belong."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "No, please wait, good sir! I just... The others just wanted me to come talk to you...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "No, please wait, good sir! I just... The others just wanted me to come talk to you..."
     },
     {
-        "text": "Err, that's not what I meant... We just have a few trivial issues, so if you could show us a bit of mercy...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "Err, that's not what I meant... We just have a few trivial issues, so if you could show us a bit of mercy..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "When did you Victorians start taking us devils for a bunch of bleeding hearts?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "When did you Victorians start taking us devils for a bunch of bleeding hearts?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "All we wanted... was to know what's going on in Norport Borough...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "All we wanted... was to know what's going on in Norport Borough..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "Nothing worth mentioning.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Nothing worth mentioning."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "What if... Look, we can still scrounge up some valuable trinkets. Surely, you've heard of Sargon's gems...? I have a number of them here...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "What if... Look, we can still scrounge up some valuable trinkets. Surely, you've heard of Sargon's gems...? I have a number of them here..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "Get lost.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Get lost."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "I get it, you're not interested, huh? I also have a collection of old Gaulish paintings that are said to be priceless\u2013 Oh, alright! M-Maybe I was out of line to say that. This is going to cost me my life, isn't it...?",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "I get it, you're not interested, huh? I also have a collection of old Gaulish paintings that are said to be priceless\u2013 Oh, alright! M-Maybe I was out of line to say that. This is going to cost me my life, isn't it...?"
     },
     {
-        "text": "How about a Sankta patron firearm? I just happen to have one stashed away back home...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "How about a Sankta patron firearm? I just happen to have one stashed away back home..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "Interesting... You got your hands on an angel's guardian gun huh?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Interesting... You got your hands on an angel's guardian gun huh?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_177",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_177",
+            "focus": "l"
+        }
     },
     {
-        "text": "Oh, um, it's not mine though! It's just for safekeeping... Heavens, those angels from the Notarial Hall are going to flay me alive if they find out, but if you're interested\u2013",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "Oh, um, it's not mine though! It's just for safekeeping... Heavens, those angels from the Notarial Hall are going to flay me alive if they find out, but if you're interested\u2013"
     },
     {
-        "text": "I just happened to hear, you\u2013 Err, the Sarkaz enjoy collecting them, so...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "I just happened to hear, you\u2013 Err, the Sarkaz enjoy collecting them, so..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_053",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_053",
+            "focus": "r"
+        }
     },
     {
-        "text": "Listen up. I prefer my angelic toys freshly looted from a pile of corpses. Now, piss off.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Listen up. I prefer my angelic toys freshly looted from a pile of corpses. Now, piss off."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sarkaz! We just want to know what's going on! This is a perfectly legitimate request!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "Sarkaz! We just want to know what's going on! This is a perfectly legitimate request!"
     },
     {
-        "text": "So many of us have been driven out of our homes and crammed into a little ghetto with no place to live, no food, and no freedom. Now, all we want is an explanation!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "So many of us have been driven out of our homes and crammed into a little ghetto with no place to live, no food, and no freedom. Now, all we want is an explanation!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_053",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_053",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are all these houses not good enough for you? Pick a door, any door\u2013 knock on one of them, and get your sorry ass inside. What more do you want? A bathtub with a built-in back massager?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Are all these houses not good enough for you? Pick a door, any door\u2013 knock on one of them, and get your sorry ass inside. What more do you want? A bathtub with a built-in back massager?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "m"
+        }
     },
     {
-        "text": "You can't treat us like this! Where are the Defense Forces? I personally know Lettou and want to speak with him! We haven't broken any rules!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "You can't treat us like this! Where are the Defense Forces? I personally know Lettou and want to speak with him! We haven't broken any rules!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "all"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_864_1#1$1",
-        "posfrom": "200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_864_1#1$1",
+            "posfrom": "200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_864_1#1$1",
-        "posfrom": "0,0",
-        "posto": "60,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_864_1#1$1",
+            "posfrom": "0,0",
+            "posto": "60,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "posfrom": "0,0",
-        "posto": "30,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "posfrom": "0,0",
+            "posto": "30,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_864_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_864_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "That's enough, mister. Be careful...",
-        "tag": "name",
-        "value": "Feline Woman"
+        "command": "name",
+        "value": "Feline Woman",
+        "text": "That's enough, mister. Be careful..."
     },
     {
-        "text": "They're armed!",
-        "tag": "name",
-        "value": "Feline Woman"
+        "command": "name",
+        "value": "Feline Woman",
+        "text": "They're armed!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "all"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "posfrom": "30,0",
-        "posto": "0,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "posfrom": "30,0",
+            "posto": "0,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "60,0",
-        "posto": "100,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "60,0",
+            "posto": "100,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_864_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_864_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "m"
+        }
     },
     {
-        "text": "Let go of me! What do I have to be careful for? Listen up, Sarkaz! I've lived here for thirty years! This is my city! This is my neighborhood!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "Let go of me! What do I have to be careful for? Listen up, Sarkaz! I've lived here for thirty years! This is my city! This is my neighborhood!"
     },
     {
-        "text": "I know you've taken over those factories. I know you lust after Londinium's wealth, so take it. Splitting off a few factories won't put a dent in Victoria's glory.",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "I know you've taken over those factories. I know you lust after Londinium's wealth, so take it. Splitting off a few factories won't put a dent in Victoria's glory."
     },
     {
-        "text": "But I am my own man! Not even the King can take my home!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "But I am my own man! Not even the King can take my home!"
     },
     {
-        "text": "Tell me, why did Norport Borough drive out of Londinium overnight? What's the meaning of all these walls outside the borough?!",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "Tell me, why did Norport Borough drive out of Londinium overnight? What's the meaning of all these walls outside the borough?!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_864_1#11$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_864_1#11$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hey... Are you trying to get yourself killed?",
-        "tag": "name",
-        "value": "Feline Woman"
+        "command": "name",
+        "value": "Feline Woman",
+        "text": "Hey... Are you trying to get yourself killed?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_053",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_053",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_unsheathe",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_unsheathe",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "What possessed you into thinking... that you could challenge my authority?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "What possessed you into thinking... that you could challenge my authority?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wait, please, good sir! He doesn't know what he's talking about!",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "Wait, please, good sir! He doesn't know what he's talking about!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tear",
-        "volume": 0.7,
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tear",
+            "volume": 0.7,
+            "delay": 0.3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "posfrom": "0,0",
-        "posto": "0,-50",
-        "duration": 1,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "posfrom": "0,0",
+            "posto": "0,-50",
+            "duration": 1,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_242",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_242",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "text": "Urk... Nngh...",
-        "tag": "name",
-        "value": "Angry Citizen"
+        "command": "name",
+        "value": "Angry Citizen",
+        "text": "Urk... Nngh..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playmusic",
-        "intro": "$calamity_intro",
-        "key": "$calamity_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$calamity_intro",
+            "key": "$calamity_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_053",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_053",
+            "focus": "m"
+        }
     },
     {
-        "text": "What a waste.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "What a waste."
     },
     {
-        "text": "Listen up, you sorry worms. To tell the truth, I'd like nothing more than to slaughter each and every one of you right now. Seeing your faces makes me sick. But the boss says you lot are still useful.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Listen up, you sorry worms. To tell the truth, I'd like nothing more than to slaughter each and every one of you right now. Seeing your faces makes me sick. But the boss says you lot are still useful."
     },
     {
-        "text": "So I promised him\u2013 I'd show a little restraint.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "So I promised him\u2013 I'd show a little restraint."
     },
     {
-        "text": "This is the grace I've afforded you, but know that I can take it back just as easily.",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "This is the grace I've afforded you, but know that I can take it back just as easily."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_864_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_864_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hurry! Run! Get away from here!",
-        "tag": "name",
-        "value": "Feline Woman"
+        "command": "name",
+        "value": "Feline Woman",
+        "text": "Hurry! Run! Get away from here!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_416_1#1$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_416_1#1$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_418_1#1$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_418_1#1$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_broadswordblood",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_broadswordblood",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_416_1#1$1",
-        "posfrom": "0,0",
-        "posto": "0,-70",
-        "duration": 0.7,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_416_1#1$1",
+            "posfrom": "0,0",
+            "posto": "0,-70",
+            "duration": 0.7,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_416_1#1$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_416_1#1$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_418_1#1$1",
-        "posfrom": "0,0",
-        "posto": "0,-50",
-        "duration": 1,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_418_1#1$1",
+            "posfrom": "0,0",
+            "posto": "0,-50",
+            "duration": 1,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_418_1#1$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_418_1#1$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "random": true,
-        "power": 5,
-        "times": 60,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.3
+        }
     },
     {
-        "text": "H-Help!",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "H-Help!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "posfrom": "0,0",
-        "posto": "300,0",
-        "duration": 1.2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "posfrom": "0,0",
+            "posto": "300,0",
+            "duration": 1.2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_053",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_053",
+            "focus": "m"
+        }
     },
     {
-        "text": "Run, run, as fast you can, pathetic Victorians! You've had your fun already! Now, it's your time to get a taste of the life once forced onto us!",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Run, run, as fast you can, pathetic Victorians! You've had your fun already! Now, it's your time to get a taste of the life once forced onto us!"
     },
     {
-        "text": "Hide in every nook and cranny, hide beneath every shadow. Rip up your morality and swallow your dignity! This is everything we Sarkaz have experienced! Now, rejoice, because it's yours too!",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Hide in every nook and cranny, hide beneath every shadow. Rip up your morality and swallow your dignity! This is everything we Sarkaz have experienced! Now, rejoice, because it's yours too!"
     },
     {
-        "text": "Call it equality. This is the kind of equality you've never known!",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Call it equality. This is the kind of equality you've never known!"
     },
     {
-        "text": "Explain myself? Answer your questions?",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Explain myself? Answer your questions?"
     },
     {
-        "text": "No, this is war, you dipshits!",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "No, this is war, you dipshits!"
     },
     {
-        "text": "Learn it! Embrace it! Just like we did for thousands of years!",
-        "tag": "name",
-        "value": "Sarkaz Soldier"
+        "command": "name",
+        "value": "Sarkaz Soldier",
+        "text": "Learn it! Embrace it! Just like we did for thousands of years!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "21_G7_decisivebattlealley_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "21_G7_decisivebattlealley_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_runstop",
-        "volume": 1,
-        "delay": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop",
+            "volume": 1,
+            "delay": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "posfrom": "300,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "posfrom": "300,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "*sob*... *sob*...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "*sob*... *sob*..."
     },
     {
-        "text": "I... *sob*... Where am I...?",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "I... *sob*... Where am I...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "bstart": 0.2,
-        "bend": 0.7,
-        "name": "avg_npc_863_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "bstart": 0.2,
+            "bend": 0.7,
+            "name": "avg_npc_863_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Stop your blubbering already.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Stop your blubbering already."
     },
     {
-        "text": "Did you think they invited you here for a picnic? You can guess where the people who weren't so willing to come ended up.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Did you think they invited you here for a picnic? You can guess where the people who weren't so willing to come ended up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_177",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_177",
+            "focus": "m"
+        }
     },
     {
-        "text": "You're...",
-        "tag": "name",
-        "value": "Timid Citizen"
+        "command": "name",
+        "value": "Timid Citizen",
+        "text": "You're..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_863_1#1$1",
-        "duration": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_863_1#1$1",
+            "duration": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Call me Baird. You're hurt, and need your wounds dressed.",
-        "tag": "name",
-        "value": "Baird"
+        "command": "name",
+        "value": "Baird",
+        "text": "Call me Baird. You're hurt, and need your wounds dressed."
     },
     {
-        "text": "Follow me.",
-        "tag": "name",
-        "value": "Baird"
+        "command": "name",
+        "value": "Baird",
+        "text": "Follow me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

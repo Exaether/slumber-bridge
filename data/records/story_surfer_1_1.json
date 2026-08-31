@@ -1,87 +1,93 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_m",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_wild_m",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u54ce\u5440\uff0c\u8fd9\u8d9f\u4efb\u52a1\u53ef\u7b97\u662f\u7ed3\u675f\u4e86\u3002"
     },
     {
-        "text": "\u54ce\u5440\uff0c\u8fd9\u8d9f\u4efb\u52a1\u53ef\u7b97\u662f\u7ed3\u675f\u4e86\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u8bad\u7ec3\u7684\u65f6\u5019\u867d\u7136\u9488\u5bf9\u957f\u8ddd\u79bb\u884c\u52a8\u4e13\u95e8\u7ec3\u8fc7\u4f53\u80fd\uff0c\u4f46\u548c\u5b9e\u9645\u51fa\u4efb\u52a1\u771f\u7684\u6ca1\u6cd5\u6bd4\u554a\u3002"
     },
     {
-        "text": "\u8bad\u7ec3\u7684\u65f6\u5019\u867d\u7136\u9488\u5bf9\u957f\u8ddd\u79bb\u884c\u52a8\u4e13\u95e8\u7ec3\u8fc7\u4f53\u80fd\uff0c\u4f46\u548c\u5b9e\u9645\u51fa\u4efb\u52a1\u771f\u7684\u6ca1\u6cd5\u6bd4\u554a\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u518d\u591a\u8dd1\u4e00\u5c0f\u65f6\u6211\u7684\u817f\u53ef\u80fd\u5c31\u8981\u62a5\u8b66\u54af\u3002\u4f60\u5462\uff0c\u8482\u62c9\uff0c\u4f60\u8fd8\u597d\u5417\uff1f"
     },
     {
-        "text": "\u518d\u591a\u8dd1\u4e00\u5c0f\u65f6\u6211\u7684\u817f\u53ef\u80fd\u5c31\u8981\u62a5\u8b66\u54af\u3002\u4f60\u5462\uff0c\u8482\u62c9\uff0c\u4f60\u8fd8\u597d\u5417\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
-    },
-    {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u4f63\u5175\u5728\u4e0b\u5348\u7684\u9633\u5149\u4e2d\u4f38\u4e86\u4e2a\u61d2\u8170\uff0c\u7136\u540e\u505c\u4e0b\u811a\u6b65\uff0c\u56de\u5934\u770b\u5411\u79bb\u81ea\u5df1\u53ea\u6709\u51e0\u6b65\u8def\u8fdc\u7684\u961f\u53cb\u3002"
@@ -90,577 +96,671 @@
         "text": "\u672d\u62c9\u514b\u5973\u5b69\u4f3c\u4e4e\u6709\u4e9b\u5fc3\u4e8b\uff0c\u4e00\u8fb9\u8d70\u4e00\u8fb9\u9891\u9891\u5411\u56db\u5468\u73af\u89c6\uff0c\u4f46\u5728\u542c\u5230\u540c\u4f34\u58f0\u97f3\u7684\u90a3\u4e00\u523b\uff0c\u5979\u9a6c\u4e0a\u6e29\u67d4\u5730\u7b11\u4e86\u8d77\u6765\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6211\u611f\u89c9\u633a\u597d\u7684\uff0c\u53ef\u80fd\u662f\u56e0\u4e3a\u5e73\u65f6\u6211\u4e5f\u4f1a\u81ea\u5df1\u53bb\u91ce\u5916\u8d70\u5f88\u8fdc\u5427\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u611f\u89c9\u633a\u597d\u7684\uff0c\u53ef\u80fd\u662f\u56e0\u4e3a\u5e73\u65f6\u6211\u4e5f\u4f1a\u81ea\u5df1\u53bb\u91ce\u5916\u8d70\u5f88\u8fdc\u5427\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u771f\u6709\u4f60\u7684\uff0c\u5c31\u7b97\u662f\u4f8b\u884c\u7684\u4fa6\u5bdf\u4efb\u52a1\uff0c\u5f3a\u5ea6\u4e5f\u4e0d\u662f\u95f9\u7740\u73a9\u7684\uff0c\u4f60\u8fd8\u80fd\u989d\u5916\u7559\u51fa\u7cbe\u529b\u6765\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u771f\u6709\u4f60\u7684\uff0c\u5c31\u7b97\u662f\u4f8b\u884c\u7684\u4fa6\u5bdf\u4efb\u52a1\uff0c\u5f3a\u5ea6\u4e5f\u4e0d\u662f\u95f9\u7740\u73a9\u7684\uff0c\u4f60\u8fd8\u80fd\u989d\u5916\u7559\u51fa\u7cbe\u529b\u6765\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u5012\u4e5f\u4e0d\u81f3\u4e8e\u5566\uff0c\u987a\u5229\u5b8c\u6210\u4efb\u52a1\u5c31\u597d\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5012\u4e5f\u4e0d\u81f3\u4e8e\u5566\uff0c\u987a\u5229\u5b8c\u6210\u4efb\u52a1\u5c31\u597d\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u5bf9\u4e86\uff0c\u5348\u95f4\u53e3\u7cae\u91cc\u7684\u90a3\u5757\u7cd6\u679c\u662f\u4f60\u653e\u7684\u5427\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u5bf9\u4e86\uff0c\u5348\u95f4\u53e3\u7cae\u91cc\u7684\u90a3\u5757\u7cd6\u679c\u662f\u4f60\u653e\u7684\u5427\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u55ef\uff0c\u4e4b\u524d\u6211\u542c\u4f60\u5728\u804a\u5929\u7684\u65f6\u5019\u63d0\u5230\u8fc7\uff0c\u4f60\u4e00\u76f4\u90fd\u5f88\u559c\u6b22\u5403\u751c\u98df\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u55ef\uff0c\u4e4b\u524d\u6211\u542c\u4f60\u5728\u804a\u5929\u7684\u65f6\u5019\u63d0\u5230\u8fc7\uff0c\u4f60\u4e00\u76f4\u90fd\u5f88\u559c\u6b22\u5403\u751c\u98df\u3002"
     },
     {
-        "text": "\u4e0a\u5348\u7684\u63a2\u5bdf\u7ed3\u675f\u4e4b\u540e\uff0c\u4f11\u606f\u65f6\u9002\u5f53\u8865\u5145\u7cd6\u5206\u80fd\u4e00\u5b9a\u7a0b\u5ea6\u7f13\u89e3\u75b2\u52b3\uff0c\u4e4b\u540e\u7684\u884c\u52a8\u4f1a\u66f4\u8f7b\u677e\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4e0a\u5348\u7684\u63a2\u5bdf\u7ed3\u675f\u4e4b\u540e\uff0c\u4f11\u606f\u65f6\u9002\u5f53\u8865\u5145\u7cd6\u5206\u80fd\u4e00\u5b9a\u7a0b\u5ea6\u7f13\u89e3\u75b2\u52b3\uff0c\u4e4b\u540e\u7684\u884c\u52a8\u4f1a\u66f4\u8f7b\u677e\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u6240\u4ee5\u6211\u5c31\u5e26\u4e86\u4e00\u5757\u7ed9\u4f60\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6240\u4ee5\u6211\u5c31\u5e26\u4e86\u4e00\u5757\u7ed9\u4f60\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u771f\u7684\u591a\u8c22\u4f60\u5566\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u771f\u7684\u591a\u8c22\u4f60\u5566\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u6ca1\u4e8b\u6ca1\u4e8b\uff0c\u5728\u5916\u6267\u884c\u4efb\u52a1\u5176\u5b9e\u4f1a\u9047\u5230\u5f88\u591a\u8bad\u7ec3\u91cc\u6ca1\u6709\u63a5\u89e6\u8fc7\u7684\u4e1c\u897f\uff0c\u4e00\u65e6\u906d\u9047\u7a81\u53d1\u60c5\u51b5\u53c8\u4f1a\u5f88\u5371\u9669\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6ca1\u4e8b\u6ca1\u4e8b\uff0c\u5728\u5916\u6267\u884c\u4efb\u52a1\u5176\u5b9e\u4f1a\u9047\u5230\u5f88\u591a\u8bad\u7ec3\u91cc\u6ca1\u6709\u63a5\u89e6\u8fc7\u7684\u4e1c\u897f\uff0c\u4e00\u65e6\u906d\u9047\u7a81\u53d1\u60c5\u51b5\u53c8\u4f1a\u5f88\u5371\u9669\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "\u5e2e\u52a9\u522b\u4eba\u662f\u6211\u5e94\u8be5\u505a\u7684\uff0c\u4e0d\u5982\u8bf4\u6211\u8fd8\u505a\u5f97\u4e0d\u591f\u591a\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5e2e\u52a9\u522b\u4eba\u662f\u6211\u5e94\u8be5\u505a\u7684\uff0c\u4e0d\u5982\u8bf4\u6211\u8fd8\u505a\u5f97\u4e0d\u591f\u591a\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u8fd8\u597d\u4eca\u5929\u7684\u6d3b\u63d0\u524d\u5e72\u5b8c\u5566\uff0c\u8482\u62c9\u4f60\u56de\u53bb\u540e\u51c6\u5907\u600e\u4e48\u653e\u677e\uff0c\u770b\u770b\u7535\u5f71\uff1f\u8fd8\u662f\u505a\u4e9b\u4ec0\u4e48\u522b\u7684\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u8fd8\u597d\u4eca\u5929\u7684\u6d3b\u63d0\u524d\u5e72\u5b8c\u5566\uff0c\u8482\u62c9\u4f60\u56de\u53bb\u540e\u51c6\u5907\u600e\u4e48\u653e\u677e\uff0c\u770b\u770b\u7535\u5f71\uff1f\u8fd8\u662f\u505a\u4e9b\u4ec0\u4e48\u522b\u7684\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u8482\u62c9\u5e76\u6ca1\u6709\u5f88\u5feb\u56de\u5e94\uff0c\u800c\u662f\u82e5\u6709\u6240\u601d\u5730\u770b\u5411\u9065\u8fdc\u7684\u5730\u5e73\u7ebf\uff0c\u50cf\u662f\u5728\u770b\u7740\u8352\u91ce\u8fb9\u7f18\u51e0\u680b\u9ad8\u5c42\u5efa\u7b51\u7684\u8f6e\u5ed3\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#9$1"
+        }
     },
     {
-        "text": "\u55ef......\u6211\u4e0d\u77e5\u9053......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u55ef......\u6211\u4e0d\u77e5\u9053......"
     },
     {
         "text": "\u5979\u8bf4\u8bdd\u7684\u58f0\u97f3\u5c0f\u4e86\u4e0b\u53bb\uff0c\u4f46\u4e0b\u4e00\u77ac\u95f4\u5979\u50cf\u662f\u5ffd\u7136\u60f3\u8d77\u4ec0\u4e48\u4e00\u6837\u7741\u5927\u4e86\u53cc\u773c\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#6$1"
+        }
     },
     {
-        "text": "\u5bf9\u4e86\uff01",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5bf9\u4e86\uff01"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u201c\u5bf9\u4e86\u201d\uff1f\u8fd8\u6709\u4ec0\u4e48\u4e8b\u5417\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u201c\u5bf9\u4e86\u201d\uff1f\u8fd8\u6709\u4ec0\u4e48\u4e8b\u5417\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u5979\u7684\u961f\u53cb\u6709\u4e9b\u6478\u4e0d\u7740\u5934\u8111\uff0c\u7591\u60d1\u5730\u6320\u7740\u5934\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u4e0d\u597d\u610f\u601d\uff0c\u4f60\u4e00\u4e2a\u4eba\u5148\u56de\u672c\u8230\u5427\uff0c\u62a5\u544a\u6211\u4e4b\u540e\u56de\u53bb\u505a\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4e0d\u597d\u610f\u601d\uff0c\u4f60\u4e00\u4e2a\u4eba\u5148\u56de\u672c\u8230\u5427\uff0c\u62a5\u544a\u6211\u4e4b\u540e\u56de\u53bb\u505a\u3002"
     },
     {
-        "text": "\u6211\u60f3\u5230\u4e00\u4e2a\u4e8b\u60c5\uff0c\u4e00\u5b9a\u8981\u5148\u53bb\u770b\u4e00\u770b\uff0c\u5f88\u5feb\u5c31\u80fd\u505a\u5b8c\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u60f3\u5230\u4e00\u4e2a\u4e8b\u60c5\uff0c\u4e00\u5b9a\u8981\u5148\u53bb\u770b\u4e00\u770b\uff0c\u5f88\u5feb\u5c31\u80fd\u505a\u5b8c\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u53ef\u662f\u6211\u4eec\u7684\u4efb\u52a1\u4e0d\u662f\u5df2\u7ecf\u2014\u2014",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u53ef\u662f\u6211\u4eec\u7684\u4efb\u52a1\u4e0d\u662f\u5df2\u7ecf\u2014\u2014"
     },
     {
-        "text": "\u54e6\uff01\u6211\u61c2\u4e86\uff01\u4e0d\u7528\u591a\u89e3\u91ca\uff0c\u4f60\u5feb\u53bb\u5427\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u54e6\uff01\u6211\u61c2\u4e86\uff01\u4e0d\u7528\u591a\u89e3\u91ca\uff0c\u4f60\u5feb\u53bb\u5427\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#3$1"
+        }
     },
     {
-        "text": "\u55ef\uff0c\u800c\u4e14\u6211\u5f97\u8d76\u65f6\u95f4\uff0c\u7b49\u4e00\u4f1a\u5c31\u6ca1\u673a\u4f1a\u4e86\uff0c\u4e4b\u540e\u56de\u672c\u8230\u518d\u89c1\uff01",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u55ef\uff0c\u800c\u4e14\u6211\u5f97\u8d76\u65f6\u95f4\uff0c\u7b49\u4e00\u4f1a\u5c31\u6ca1\u673a\u4f1a\u4e86\uff0c\u4e4b\u540e\u56de\u672c\u8230\u518d\u89c1\uff01"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "run1"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "run1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "run1",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "run1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1045_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1045_1#1$1"
+        }
     },
     {
-        "text": "\u5f53\u8001\u677f\u7684\u5f97\u529b\u52a9\u624b\u4e5f\u4e0d\u5bb9\u6613\u5440\uff0c\u9664\u4e86\u65e5\u5e38\u4efb\u52a1\u8fd8\u8981\u63a5\u989d\u5916\u7684\u6d3b\u3002",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u5f53\u8001\u677f\u7684\u5f97\u529b\u52a9\u624b\u4e5f\u4e0d\u5bb9\u6613\u5440\uff0c\u9664\u4e86\u65e5\u5e38\u4efb\u52a1\u8fd8\u8981\u63a5\u989d\u5916\u7684\u6d3b\u3002"
     },
     {
-        "text": "\u4e0d\u8fc7......\u6211\u6ca1\u8bb0\u9519\u7684\u8bdd\uff0c\u90a3\u8fb9\u4e0d\u662f\u90a3\u4e2a\u519b\u5de5\u4f01\u4e1a\u7684\u56ed\u533a\u5417\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u4e0d\u8fc7......\u6211\u6ca1\u8bb0\u9519\u7684\u8bdd\uff0c\u90a3\u8fb9\u4e0d\u662f\u90a3\u4e2a\u519b\u5de5\u4f01\u4e1a\u7684\u56ed\u533a\u5417\uff1f"
     },
     {
-        "text": "\u6211\u4eec\u548c\u90a3\u8fb9\u53c8\u626f\u4e0a\u4ec0\u4e48\u5173\u7cfb\u4e86\uff1f",
-        "tag": "name",
-        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458"
+        "command": "name",
+        "value": "\u9ed1\u94a2\u5148\u9063\u961f\u5458",
+        "text": "\u6211\u4eec\u548c\u90a3\u8fb9\u53c8\u626f\u4e0a\u4ec0\u4e48\u5173\u7cfb\u4e86\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u4f63\u5175\u7684\u89c6\u91ce\u91cc\u53ea\u5269\u4e0b\u4e86\u65e5\u843d\u524d\u7684\u7a7a\u65f7\u666f\u8272\uff0c\u4ed6\u671b\u5411\u8fdc\u65b9\u7684\u529e\u516c\u5927\u697c\uff0c\u4e0d\u89e3\u5730\u7728\u4e86\u7728\u773c\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_uptown_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_uptown_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "key": "$normal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$normal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "<p=2>\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u65d7\u4e0b\u67d0\u5de5\u4e1a\u56ed\u533a\uff0c\u4e3b\u529e\u516c\u697c\u5916</>",
-        "tag": "animtext",
-        "id": "at1",
-        "name": "group_location_stamp",
-        "style": "avg_only_medium",
-        "pos": "-400,-200",
-        "block": false
+        "command": "animtext",
+        "params": {
+            "id": "at1",
+            "name": "group_location_stamp",
+            "style": "avg_only_medium",
+            "pos": "-400,-200",
+            "block": false
+        },
+        "text": "<p=2>\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u65d7\u4e0b\u67d0\u5de5\u4e1a\u56ed\u533a\uff0c\u4e3b\u529e\u516c\u697c\u5916</>"
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "animtextclean"
+        "command": "animtextclean"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "\u505c\u4e0b\u3002",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u505c\u4e0b\u3002"
     },
     {
-        "text": "\u4f60\u6ca1\u6709\u8eab\u7a7f\u5e26\u6709\u6807\u8bc6\u7684\u6807\u51c6\u5236\u670d\uff0c\u662f\u8bbf\u5ba2\u7684\u8bdd\u5c31\u51fa\u793a\u9884\u7ea6\u8bc1\u660e\uff0c\u5426\u5219\u7981\u6b62\u8fdb\u5165\u3002",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u4f60\u6ca1\u6709\u8eab\u7a7f\u5e26\u6709\u6807\u8bc6\u7684\u6807\u51c6\u5236\u670d\uff0c\u662f\u8bbf\u5ba2\u7684\u8bdd\u5c31\u51fa\u793a\u9884\u7ea6\u8bc1\u660e\uff0c\u5426\u5219\u7981\u6b62\u8fdb\u5165\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u5927\u697c\u95e8\u53e3\uff0c\u5b89\u4fdd\u4eba\u5458\u62e6\u4f4f\u4e86\u4e00\u4f4d\u81ea\u987e\u81ea\u5730\u5f80\u91cc\u8d70\u7684\u672d\u62c9\u514b\u5c11\u5973\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u4f60\u597d\uff0c\u80fd\u4e0d\u80fd\u901a\u878d\u4e00\u4e0b\u5462\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4f60\u597d\uff0c\u80fd\u4e0d\u80fd\u901a\u878d\u4e00\u4e0b\u5462\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6211\u53ea\u662f\u6765\u770b\u770b\uff0c\u53bb\u4e00\u8d9f\u4e0a\u9762\u5c31\u79bb\u5f00\uff0c\u4e0d\u4f1a\u5728\u8fd9\u91cc\u4e45\u7559\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u53ea\u662f\u6765\u770b\u770b\uff0c\u53bb\u4e00\u8d9f\u4e0a\u9762\u5c31\u79bb\u5f00\uff0c\u4e0d\u4f1a\u5728\u8fd9\u91cc\u4e45\u7559\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "\u5916\u6765\u4eba\u5458\u6ca1\u6709\u9884\u7ea6\u8bc1\u660e\uff0c\u4e0d\u80fd\u8fdb\u5165\u529e\u516c\u697c\u3002",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u5916\u6765\u4eba\u5458\u6ca1\u6709\u9884\u7ea6\u8bc1\u660e\uff0c\u4e0d\u80fd\u8fdb\u5165\u529e\u516c\u697c\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#9$1"
+        }
     },
     {
-        "text": "\u55ef......\u6211\u4e0d\u80fd\u63d0\u4f9b\u4ec0\u4e48\u8bc1\u660e\uff0c\u4f46\u6211\u9700\u8981\u4e0a\u53bb\u4e00\u8d9f\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u55ef......\u6211\u4e0d\u80fd\u63d0\u4f9b\u4ec0\u4e48\u8bc1\u660e\uff0c\u4f46\u6211\u9700\u8981\u4e0a\u53bb\u4e00\u8d9f\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6709\u5fc5\u8981\u7684\u8bdd\uff0c\u6211\u7684\u6b66\u5668\u548c\u88c5\u5907\u90fd\u53ef\u4ee5\u7559\u5728\u8fd9\u91cc\u4f5c\u4e3a\u62c5\u4fdd\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6709\u5fc5\u8981\u7684\u8bdd\uff0c\u6211\u7684\u6b66\u5668\u548c\u88c5\u5907\u90fd\u53ef\u4ee5\u7559\u5728\u8fd9\u91cc\u4f5c\u4e3a\u62c5\u4fdd\u3002"
     },
     {
-        "text": "\u5bf9\u6211\u6765\u8bf4\u8fd9\u4ef6\u4e8b\u5f88\u91cd\u8981\uff0c\u80fd\u4e0d\u80fd\u9ebb\u70e6\u4f60\u8ba9\u6211\u4e0a\u53bb\u5462\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5bf9\u6211\u6765\u8bf4\u8fd9\u4ef6\u4e8b\u5f88\u91cd\u8981\uff0c\u80fd\u4e0d\u80fd\u9ebb\u70e6\u4f60\u8ba9\u6211\u4e0a\u53bb\u5462\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u5b89\u4fdd\u4eba\u5458\u4e0a\u4e0b\u6253\u91cf\u4e86\u4e00\u756a\u6765\u5ba2\uff0c\u539f\u672c\u7d27\u7ef7\u7740\u7684\u8eab\u4f53\u4f3c\u4e4e\u7a0d\u7a0d\u653e\u677e\u4e86\u4e00\u4e9b\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "......\u60c5\u62a5\u4eba\u5458\uff1f",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "......\u60c5\u62a5\u4eba\u5458\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u5bf9\uff0c\u9ed1\u94a2\u5148\u9063\u5c0f\u7ec4\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5bf9\uff0c\u9ed1\u94a2\u5148\u9063\u5c0f\u7ec4\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "\u8981\u53bb\u9ad8\u5c42\uff1f",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u8981\u53bb\u9ad8\u5c42\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6ca1\u9519\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6ca1\u9519\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u542c\u5230\u5c11\u5973\u7684\u56de\u7b54\uff0c\u5b89\u4fdd\u4eba\u5458\u660e\u663e\u8212\u4e86\u4e00\u53e3\u6c14\uff0c\u63a5\u7740\u4ed6\u5411\u4e00\u4fa7\u79fb\u5f00\u4e00\u6b65\uff0c\u8ba9\u51fa\u524d\u8fdb\u7684\u8def\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "\u4e0a\u53bb\u5427\u3002\u8bb0\u4f4f\u6b66\u5668\u4fdd\u6301\u6536\u8d77\uff0c\u8fdc\u79bb\u529e\u516c\u533a\u57df\uff0c\u6211\u4f1a\u77e5\u4f1a\u5185\u90e8\u4eba\u5458\u548c\u4f60\u4ea4\u63a5\u3002",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u4e0a\u53bb\u5427\u3002\u8bb0\u4f4f\u6b66\u5668\u4fdd\u6301\u6536\u8d77\uff0c\u8fdc\u79bb\u529e\u516c\u533a\u57df\uff0c\u6211\u4f1a\u77e5\u4f1a\u5185\u90e8\u4eba\u5458\u548c\u4f60\u4ea4\u63a5\u3002"
     },
     {
-        "text": "\u901a\u884c\u65f6\u95f4\u6700\u957f\u4e00\u4e2a\u5c0f\u65f6\uff0c\u4e25\u5b88\u89c4\u5b9a\u3002",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\u901a\u884c\u65f6\u95f4\u6700\u957f\u4e00\u4e2a\u5c0f\u65f6\uff0c\u4e25\u5b88\u89c4\u5b9a\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u8c22\u8c22\uff0c\u6211\u5f88\u5feb\u5c31\u4e0b\u6765\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8c22\u8c22\uff0c\u6211\u5f88\u5feb\u5c31\u4e0b\u6765\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "run2"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "run2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "run2",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "run2",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_207"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_207"
+        }
     },
     {
-        "text": "\uff08\u5c0f\u58f0\uff09\u9ad8\u5c42\u7684\u90a3\u7fa4\u4eba\u4e0d\u77e5\u9053\u53c8\u5728\u76d8\u7b97\u4ec0\u4e48\u602a\u4e8b\u60c5......",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\uff08\u5c0f\u58f0\uff09\u9ad8\u5c42\u7684\u90a3\u7fa4\u4eba\u4e0d\u77e5\u9053\u53c8\u5728\u76d8\u7b97\u4ec0\u4e48\u602a\u4e8b\u60c5......"
     },
     {
-        "text": "\uff08\u5c0f\u58f0\uff09\u6bcf\u6b21\u90fd\u641e\u5f97\u795e\u79d8\u516e\u516e\u7684\uff0c\u63a5\u5934\u7ebf\u4eba\u8fdb\u6765\u4e5f\u4e0d\u8ba9\u7559\u4e0b\u8bb0\u5f55......",
-        "tag": "name",
-        "value": "\u5b89\u4fdd\u4eba\u5458"
+        "command": "name",
+        "value": "\u5b89\u4fdd\u4eba\u5458",
+        "text": "\uff08\u5c0f\u58f0\uff09\u6bcf\u6b21\u90fd\u641e\u5f97\u795e\u79d8\u516e\u516e\u7684\uff0c\u63a5\u5934\u7ebf\u4eba\u8fdb\u6765\u4e5f\u4e0d\u8ba9\u7559\u4e0b\u8bb0\u5f55......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u5b89\u4fdd\u4eba\u5458\u7528\u4f59\u5149\u76ee\u9001\u672d\u62c9\u514b\u5c11\u5973\u8d70\u8fdb\u6b63\u95e8\uff0c\u81ea\u987e\u81ea\u5730\u6447\u4e86\u6447\u5934\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_motorroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_motorroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u529e\u516c\u5927\u697c\u5185\uff0c\u9664\u4e86\u6570\u636e\u5b58\u50a8\u673a\u7684\u4f4e\u58f0\u55e1\u9e23\uff0c\u8fd8\u6709\u5feb\u901f\u54cd\u8d77\u7684\u811a\u6b65\u58f0\u5728\u65e0\u4eba\u7684\u697c\u5c42\u95f4\u56de\u8361\u7740\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "run3"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "run3"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "run3",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "run3",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "\u672d\u62c9\u514b\u5c11\u5973\u5728\u8fd9\u4e9b\u697c\u5c42\u4e00\u523b\u90fd\u6ca1\u6709\u505c\u7559\uff0c\u53ea\u662f\u4e00\u5473\u5730\u8d70\u5411\u901a\u5f80\u66f4\u9ad8\u5c42\u7684\u697c\u68af\u3002"
@@ -672,196 +772,224 @@
         "text": "\u53ea\u8981\u80fd\u8d76\u5728\u7ed3\u675f\u4e4b\u524d\u8d70\u4e0a\u53bb\u7684\u8bdd\u2014\u2014"
     },
     {
-        "text": "\u5c0f\u59d0\uff01\u8bf7\u4f60......\u505c\u4e00\u4e0b\uff01",
-        "tag": "name",
-        "value": "\uff1f\uff1f\uff1f"
+        "command": "name",
+        "value": "\uff1f\uff1f\uff1f",
+        "text": "\u5c0f\u59d0\uff01\u8bf7\u4f60......\u505c\u4e00\u4e0b\uff01"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "\u4e00\u4e2a\u897f\u88c5\u9769\u5c65\u7684\u8eab\u5f71\u6c14\u5598\u5401\u5401\u5730\u6321\u5728\u5979\u9762\u524d\uff0c\u4ed6\u5f2f\u8170\u6491\u7740\u6276\u624b\uff0c\u8fde\u5598\u51e0\u53e3\u6c14\u540e\u624d\u76f4\u8d77\u8eab\u3002"
     },
     {
-        "text": "......\u542c\u6211\u8bf4\u4e24\u53e5\u597d\u5417\uff1f",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "......\u542c\u6211\u8bf4\u4e24\u53e5\u597d\u5417\uff1f"
     },
     {
-        "text": "\u4e0d\u7ba1\u4f60\u6765\u8fd9\u91cc\u7684\u76ee\u7684\u662f\u4ec0\u4e48\uff0c\u90fd\u4e0d\u80fd\u518d\u5f80\u4e0a\u8d70\u4e86\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4e0d\u7ba1\u4f60\u6765\u8fd9\u91cc\u7684\u76ee\u7684\u662f\u4ec0\u4e48\uff0c\u90fd\u4e0d\u80fd\u518d\u5f80\u4e0a\u8d70\u4e86\u3002"
     },
     {
-        "text": "\u4e0a\u9762\u662f\u4e25\u7981\u5916\u90e8\u4eba\u5458\u51fa\u5165\u7684\u533a\u57df\uff0c\u4f60\u5df2\u7ecf\u7834\u574f\u4e86\u8bbf\u5ba2\u89c4\u5b9a\u4e86\uff0c\u6211\u5f97\u8bf7\u4f60\u79bb\u5f00\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4e0a\u9762\u662f\u4e25\u7981\u5916\u90e8\u4eba\u5458\u51fa\u5165\u7684\u533a\u57df\uff0c\u4f60\u5df2\u7ecf\u7834\u574f\u4e86\u8bbf\u5ba2\u89c4\u5b9a\u4e86\uff0c\u6211\u5f97\u8bf7\u4f60\u79bb\u5f00\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#11$1"
+        }
     },
     {
-        "text": "\u53ef\u6211\u8fd8\u8981\u5230\u4e0a\u9762\u53bb\u770b\u4e00\u770b\uff0c\u53ea\u5230\u8fd9\u91cc\u662f\u770b\u4e0d\u5230\u60f3\u770b\u7684\u4e1c\u897f\u7684\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u53ef\u6211\u8fd8\u8981\u5230\u4e0a\u9762\u53bb\u770b\u4e00\u770b\uff0c\u53ea\u5230\u8fd9\u91cc\u662f\u770b\u4e0d\u5230\u60f3\u770b\u7684\u4e1c\u897f\u7684\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u653e\u5bbd\u5fc3\uff0c\u5bf9\u4f60\u4eec\u516c\u53f8\u7684\u4e8b\u52a1\u6211\u4e00\u70b9\u90fd\u4e0d\u5173\u5fc3\uff0c\u4f60\u4eec\u505a\u4e86\u4ec0\u4e48\u4e8b\u60c5\u6211\u4e5f\u4e0d\u5728\u4e4e\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u653e\u5bbd\u5fc3\uff0c\u5bf9\u4f60\u4eec\u516c\u53f8\u7684\u4e8b\u52a1\u6211\u4e00\u70b9\u90fd\u4e0d\u5173\u5fc3\uff0c\u4f60\u4eec\u505a\u4e86\u4ec0\u4e48\u4e8b\u60c5\u6211\u4e5f\u4e0d\u5728\u4e4e\u3002"
     },
     {
-        "text": "\u6211\u4e0a\u53bb\u4e4b\u540e\u9a6c\u4e0a\u5c31\u4f1a\u79bb\u5f00\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u4e0a\u53bb\u4e4b\u540e\u9a6c\u4e0a\u5c31\u4f1a\u79bb\u5f00\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u8bf4\u7740\u5979\u5c31\u51c6\u5907\u7ee7\u7eed\u5411\u4e0a\u8d70\uff0c\u773c\u524d\u8eab\u7740\u897f\u88c5\u7684\u4eba\u8d76\u5fd9\u4f38\u51fa\u4e00\u53ea\u624b\u81c2\u62e6\u4f4f\u5979\u7684\u53bb\u8def\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1"
+        }
     },
     {
-        "text": "\u5c0f\u59d0\uff0c\u6211\u77e5\u9053\u4f60\u662f\u5e26\u7740\u4efb\u52a1\u6765\u7684\uff0c\u4f46\u6211\u4e0d\u80fd\u653e\u4efb\u4f60\u7ee7\u7eed\u8c03\u67e5\u6211\u4eec\u516c\u53f8\u4e86\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5c0f\u59d0\uff0c\u6211\u77e5\u9053\u4f60\u662f\u5e26\u7740\u4efb\u52a1\u6765\u7684\uff0c\u4f46\u6211\u4e0d\u80fd\u653e\u4efb\u4f60\u7ee7\u7eed\u8c03\u67e5\u6211\u4eec\u516c\u53f8\u4e86\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#11$1"
+        }
     },
     {
-        "text": "\u8c03\u67e5\uff1f\u4f60\u5728\u8bf4\u4ec0\u4e48\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8c03\u67e5\uff1f\u4f60\u5728\u8bf4\u4ec0\u4e48\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6211\u8981\u53bb\u7684\u662f\u697c\u9876\uff0c\u90a3\u91cc\u4ec0\u4e48\u90fd\u6ca1\u6709\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u8981\u53bb\u7684\u662f\u697c\u9876\uff0c\u90a3\u91cc\u4ec0\u4e48\u90fd\u6ca1\u6709\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1"
+        }
     },
     {
-        "text": "\u4f60\u8fd8\u60f3\u53bb\u4e0a\u5c42\u7684\u6838\u5fc3\u533a\uff1f",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4f60\u8fd8\u60f3\u53bb\u4e0a\u5c42\u7684\u6838\u5fc3\u533a\uff1f"
     },
     {
-        "text": "\u4e0d\u53ef\u80fd\u7684\u5c0f\u59d0\uff0c\u4f60\u5728\u79bb\u5f00\u8bbf\u5ba2\u533a\u57df\u7684\u90a3\u4e00\u523b\u5c31\u89e6\u53d1\u8b66\u62a5\u4e86\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4e0d\u53ef\u80fd\u7684\u5c0f\u59d0\uff0c\u4f60\u5728\u79bb\u5f00\u8bbf\u5ba2\u533a\u57df\u7684\u90a3\u4e00\u523b\u5c31\u89e6\u53d1\u8b66\u62a5\u4e86\u3002"
     },
     {
-        "text": "\u5f53\u65f6\u6211\u4eec\u53ea\u80fd\u7d27\u6025\u505c\u6b62\u5ba2\u68af\u8fd0\u884c\uff0c\u6ca1\u60f3\u5230\u4f60\u8fd8\u4e00\u8def\u5f80\u6838\u5fc3\u533a\u8d70\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5f53\u65f6\u6211\u4eec\u53ea\u80fd\u7d27\u6025\u505c\u6b62\u5ba2\u68af\u8fd0\u884c\uff0c\u6ca1\u60f3\u5230\u4f60\u8fd8\u4e00\u8def\u5f80\u6838\u5fc3\u533a\u8d70\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "\u5148\u751f\uff0c\u91cd\u7533\u4e00\u6b21\uff0c\u6211\u6ca1\u6709\u4efb\u4f55\u4e1c\u897f\u8981\u8c03\u67e5\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5148\u751f\uff0c\u91cd\u7533\u4e00\u6b21\uff0c\u6211\u6ca1\u6709\u4efb\u4f55\u4e1c\u897f\u8981\u8c03\u67e5\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
         "text": "\u6025\u7740\u4e0a\u697c\u7684\u5c11\u5973\u518d\u4e00\u6b21\u8fc8\u51fa\u811a\u6b65\uff0c\u4f46\u8fd9\u4e00\u6b21\u5bf9\u65b9\u4e0d\u662f\u4f38\u51fa\u4e00\u53ea\u624b\u4e86\uff0c\u800c\u662f\u7528\u6574\u4e2a\u8eab\u5b50\u5835\u4f4f\u697c\u68af\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1"
+        }
     },
     {
-        "text": "\u518d\u8d70\u4e00\u6b65\uff0c\u6211\u5c31\u901a\u77e5\u6574\u680b\u5927\u697c\u7684\u8b66\u5907\uff0c\u4f60\u5c31\u522b\u60f3\u4ece\u8fd9\u91cc\u5168\u8eab\u800c\u9000\u4e86\u3002",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u518d\u8d70\u4e00\u6b65\uff0c\u6211\u5c31\u901a\u77e5\u6574\u680b\u5927\u697c\u7684\u8b66\u5907\uff0c\u4f60\u5c31\u522b\u60f3\u4ece\u8fd9\u91cc\u5168\u8eab\u800c\u9000\u4e86\u3002"
     },
     {
-        "text": "\u5927\u5bb6\u90fd\u4e0d\u60f3\u628a\u4e8b\u60c5\u95f9\u5f97\u592a\u96be\u770b\uff0c\u5728\u4e8b\u6001\u5347\u7ea7\u4e4b\u524d\u8bf7\u4f60\u5feb\u70b9\u79bb\u5f00\u8fd9\u91cc\u2014\u2014",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5927\u5bb6\u90fd\u4e0d\u60f3\u628a\u4e8b\u60c5\u95f9\u5f97\u592a\u96be\u770b\uff0c\u5728\u4e8b\u6001\u5347\u7ea7\u4e4b\u524d\u8bf7\u4f60\u5feb\u70b9\u79bb\u5f00\u8fd9\u91cc\u2014\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "run4"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "run4"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "run4",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "run4",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u7ad9\u5728\u53f0\u9636\u4e0a\u65b9\u7684\u7537\u4eba\u8fd8\u6ca1\u6709\u6765\u5f97\u53ca\u8bf4\u5b8c\u8bdd\uff0c\u672d\u62c9\u514b\u5c11\u5973\u5c31\u5df2\u7ecf\u654f\u6377\u5730\u7ffb\u8fc7\u4e86\u697c\u68af\u6276\u624b\u3002"
@@ -870,115 +998,137 @@
         "text": "\u4e00\u7728\u773c\u4e4b\u95f4\uff0c\u5979\u5c31\u5df2\u7ecf\u5927\u8de8\u6b65\u5411\u9ad8\u5c42\u8d70\u53bb\uff0c\u697c\u68af\u95f4\u91cc\u7559\u4e0b\u4e00\u53e5\u5e26\u7740\u56de\u58f0\u7684\u56de\u5e94\u3002"
     },
     {
-        "text": "\u4e0d\u597d\u610f\u601d\uff0c\u518d\u62d6\u4e0b\u53bb\u5c31\u771f\u7684\u770b\u4e0d\u5230\u4e86\uff0c\u6709\u4ec0\u4e48\u8bdd\u7559\u5230\u4e4b\u540e\u518d\u8bf4\uff01",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4e0d\u597d\u610f\u601d\uff0c\u518d\u62d6\u4e0b\u53bb\u5c31\u771f\u7684\u770b\u4e0d\u5230\u4e86\uff0c\u6709\u4ec0\u4e48\u8bdd\u7559\u5230\u4e4b\u540e\u518d\u8bf4\uff01"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1"
+        }
     },
     {
-        "text": "......\u770b\u4e0d\u5230\uff1f\u4ec0\u4e48\u770b\u4e0d\u5230\uff1f",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "......\u770b\u4e0d\u5230\uff1f\u4ec0\u4e48\u770b\u4e0d\u5230\uff1f"
     },
     {
         "text": "\u7ba1\u7406\u4eba\u5458\u5446\u5446\u5730\u770b\u7740\u5c11\u5973\u6d88\u5931\u7684\u65b9\u5411\uff0c\u6570\u79d2\u540e\u4ed6\u624d\u53cd\u5e94\u8fc7\u6765\uff0c\u800c\u540e\u4e3e\u8d77\u4e86\u624b\u4e2d\u7684\u901a\u8baf\u5668\u3002"
     },
     {
-        "tag": "playmusic",
-        "intro": "$suspenseful_intro",
-        "key": "$suspenseful_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$suspenseful_intro",
+            "key": "$suspenseful_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1259_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1259_1#1$1"
+        }
     },
     {
-        "text": "\u8001\u677f\uff0c\u7d27\u6025\u60c5\u51b5\uff0c\u9ebb\u70e6\u60a8\u6765\u5904\u7406\u4e00\u4e0b\uff01",
-        "tag": "name",
-        "value": "\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u7ba1\u7406\u4eba\u5458",
+        "text": "\u8001\u677f\uff0c\u7d27\u6025\u60c5\u51b5\uff0c\u9ebb\u70e6\u60a8\u6765\u5904\u7406\u4e00\u4e0b\uff01"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_indoor_3",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_indoor_3",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "run5"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "run5"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "run5",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "run5",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1",
+            "focus": "n"
+        }
     },
     {
         "text": "\u8482\u62c9\u51e0\u4e4e\u662f\u4e00\u6b65\u4e09\u7ea7\u5730\u671d\u66f4\u9ad8\u697c\u5c42\u8d70\u53bb\u3002"
@@ -990,244 +1140,282 @@
         "text": "\u53c8\u4e0a\u4e86\u4e00\u5c42\u697c\u540e\uff0c\u5979\u770b\u5230\u4e86\u697c\u68af\u7684\u7ec8\u70b9\uff0c\u548c\u90a3\u6247\u901a\u5411\u697c\u9876\u7684\u95e8\u3002\u4f46\u540c\u65f6\u5979\u4e5f\u770b\u5230\uff0c\u53e6\u4e00\u4e2a\u4eba\u5df2\u5728\u95e8\u53e3\u7b49\u5f85\u7740\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "\u5c0f\u59d0\uff0c\u6211\u662f\u8fd9\u91cc\u7684\u8d1f\u8d23\u4eba\u4e4b\u4e00\u3002",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5c0f\u59d0\uff0c\u6211\u662f\u8fd9\u91cc\u7684\u8d1f\u8d23\u4eba\u4e4b\u4e00\u3002"
     },
     {
-        "text": "\u60a8\u7684\u8c03\u67e5\u884c\u52a8\u5728\u516c\u53f8\u5185\u90e8\u9020\u6210\u4e86\u4e0d\u5c0f\u7684\u6df7\u4e71\uff0c\u4e5f\u9020\u6210\u4e86\u5f88\u591a\u8bef\u4f1a\u3002\u60a8\u548c\u6211\u505a\u4e00\u6b21\u6700\u7ec8\u8c08\u5224\uff0c\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\u600e\u4e48\u6837\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u60a8\u7684\u8c03\u67e5\u884c\u52a8\u5728\u516c\u53f8\u5185\u90e8\u9020\u6210\u4e86\u4e0d\u5c0f\u7684\u6df7\u4e71\uff0c\u4e5f\u9020\u6210\u4e86\u5f88\u591a\u8bef\u4f1a\u3002\u60a8\u548c\u6211\u505a\u4e00\u6b21\u6700\u7ec8\u8c08\u5224\uff0c\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\u600e\u4e48\u6837\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u8482\u62c9\u653e\u6162\u811a\u6b65\u8d70\u5230\u9ad8\u7ba1\u9762\u524d\uff0c\u5979\u80fd\u770b\u5230\u90a3\u53ea\u6491\u7740\u624b\u6756\u7684\u624b\u5728\u4e0d\u65ad\u98a4\u6296\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u60a8\u597d\uff0c\u5148\u751f\u3002\u8bef\u4f1a\u5c31\u662f\uff0c\u6211\u4e0d\u662f\u6765\u8c03\u67e5\u7684\uff0c\u4e5f\u6ca1\u6709\u4efb\u4f55\u4efb\u52a1\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u60a8\u597d\uff0c\u5148\u751f\u3002\u8bef\u4f1a\u5c31\u662f\uff0c\u6211\u4e0d\u662f\u6765\u8c03\u67e5\u7684\uff0c\u4e5f\u6ca1\u6709\u4efb\u4f55\u4efb\u52a1\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u4e8b\u5230\u5982\u4eca\uff0c\u4f55\u5fc5\u906e\u906e\u63a9\u63a9\u5462\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4e8b\u5230\u5982\u4eca\uff0c\u4f55\u5fc5\u906e\u906e\u63a9\u63a9\u5462\uff1f"
     },
     {
-        "text": "\u6211\u77e5\u9053\u4f60\u662f\u514b\u91cc\u592b\u7684\u4eb2\u4fe1\uff0c\u6211\u8fd9\u91cc\u867d\u7136\u53ea\u662f\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u7684\u4e00\u5bb6\u5206\u516c\u53f8\uff0c\u4e0d\u8fc7\uff0c\u4e00\u70b9\u70b9\u8bdd\u8bed\u6743\u4e5f\u8fd8\u662f\u6709\u7684\u3002",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u6211\u77e5\u9053\u4f60\u662f\u514b\u91cc\u592b\u7684\u4eb2\u4fe1\uff0c\u6211\u8fd9\u91cc\u867d\u7136\u53ea\u662f\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u7684\u4e00\u5bb6\u5206\u516c\u53f8\uff0c\u4e0d\u8fc7\uff0c\u4e00\u70b9\u70b9\u8bdd\u8bed\u6743\u4e5f\u8fd8\u662f\u6709\u7684\u3002"
     },
     {
-        "text": "\u76f8\u4fe1\u4e0d\u7ba1\u662f\u6211\u4eec\u8fd8\u662f\u9ed1\u94a2\uff0c\u90fd\u5e0c\u671b\u4e8b\u6001\u5e73\u606f\u5427\u3002",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u76f8\u4fe1\u4e0d\u7ba1\u662f\u6211\u4eec\u8fd8\u662f\u9ed1\u94a2\uff0c\u90fd\u5e0c\u671b\u4e8b\u6001\u5e73\u606f\u5427\u3002"
     },
     {
         "text": "\u8bf4\u7740\uff0c\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u7684\u4ee3\u8868\u4eba\u4f38\u51fa\u53f3\u624b\u505a\u51fa\u4e00\u4e2a\u624b\u52bf\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u544a\u8bc9\u6211\u514b\u91cc\u592b\u5bf9\u4f60\u5429\u5490\u4e86\u4ec0\u4e48\uff0c\u6211\u4eec\u53ef\u4ee5\u4e3a\u4f60\u63d0\u4f9b\u2014\u2014",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u544a\u8bc9\u6211\u514b\u91cc\u592b\u5bf9\u4f60\u5429\u5490\u4e86\u4ec0\u4e48\uff0c\u6211\u4eec\u53ef\u4ee5\u4e3a\u4f60\u63d0\u4f9b\u2014\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "\u6211\u7684\u884c\u52a8\u4e0e\u514b\u91cc\u592b\u5148\u751f\u65e0\u5173\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u7684\u884c\u52a8\u4e0e\u514b\u91cc\u592b\u5148\u751f\u65e0\u5173\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "......\u54c8\uff0c\u662f\u6211\u60f3\u7b80\u5355\u4e86\u3002",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "......\u54c8\uff0c\u662f\u6211\u60f3\u7b80\u5355\u4e86\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "\u5148\u751f\uff0c\u4e8b\u60c5\u5c31\u662f\u5f88\u5355\u7eaf\u3002\u6211\u5c31\u53ea\u662f\u53bb\u4f60\u4eec\u7684\u697c\u9876\u4e00\u8d9f\uff0c\u6211\u4e0d\u4f1a\u505a\u4efb\u4f55\u6709\u635f\u4f60\u4eec\u5229\u76ca\u7684\u4e8b\u60c5\uff0c\u4e4b\u540e\u6211\u4f1a\u7acb\u523b\u79bb\u5f00\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5148\u751f\uff0c\u4e8b\u60c5\u5c31\u662f\u5f88\u5355\u7eaf\u3002\u6211\u5c31\u53ea\u662f\u53bb\u4f60\u4eec\u7684\u697c\u9876\u4e00\u8d9f\uff0c\u6211\u4e0d\u4f1a\u505a\u4efb\u4f55\u6709\u635f\u4f60\u4eec\u5229\u76ca\u7684\u4e8b\u60c5\uff0c\u4e4b\u540e\u6211\u4f1a\u7acb\u523b\u79bb\u5f00\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "\u4e0d\u7136\uff0c\u60a8\u53ef\u4ee5\u81ea\u5df1\u60f3\u4e00\u60f3\uff0c\u6211\u80fd\u5728\u697c\u9876\u770b\u5230\u4ec0\u4e48\u673a\u5bc6\u4fe1\u606f\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4e0d\u7136\uff0c\u60a8\u53ef\u4ee5\u81ea\u5df1\u60f3\u4e00\u60f3\uff0c\u6211\u80fd\u5728\u697c\u9876\u770b\u5230\u4ec0\u4e48\u673a\u5bc6\u4fe1\u606f\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u5e26\u7740\u4e0d\u53ef\u544a\u4eba\u7684\u76ee\u7684\u8dd1\u5230\u8fd9\u513f\u6765\u7684\u662f\u4f60\uff01\u6211\u8981\u662f\u80fd\u731c\u5230\u514b\u91cc\u592b\u8981\u4ec0\u4e48\uff0c\u76f4\u63a5\u8ddf\u4ed6\u6253\u7535\u8bdd\u4e0d\u5c31\u7ed3\u4e86\uff01",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5e26\u7740\u4e0d\u53ef\u544a\u4eba\u7684\u76ee\u7684\u8dd1\u5230\u8fd9\u513f\u6765\u7684\u662f\u4f60\uff01\u6211\u8981\u662f\u80fd\u731c\u5230\u514b\u91cc\u592b\u8981\u4ec0\u4e48\uff0c\u76f4\u63a5\u8ddf\u4ed6\u6253\u7535\u8bdd\u4e0d\u5c31\u7ed3\u4e86\uff01"
     },
     {
-        "text": "\u4f60\u5f53\u6211\u662f\u7b2c\u4e00\u5929\u9762\u5bf9\u4f60\u4eec\u8fd9\u79cd\u60c5\u62a5\u4eba\u5458\u5417\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u4f60\u5f53\u6211\u662f\u7b2c\u4e00\u5929\u9762\u5bf9\u4f60\u4eec\u8fd9\u79cd\u60c5\u62a5\u4eba\u5458\u5417\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "......\u4e0d\u5982\u60a8\u73b0\u5728\u5c31\u7ed9\u4ed6\u6253\u4e2a\u7535\u8bdd\u5982\u4f55\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "......\u4e0d\u5982\u60a8\u73b0\u5728\u5c31\u7ed9\u4ed6\u6253\u4e2a\u7535\u8bdd\u5982\u4f55\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u522b\u800d\u82b1\u62db\u4e86\u2014\u2014",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u522b\u800d\u82b1\u62db\u4e86\u2014\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "\u6211\u6ca1\u65f6\u95f4\u548c\u60a8\u89e3\u91ca\u4e86\uff0c\u5148\u751f\u3002\u518d\u62d6\u4e0b\u53bb\uff0c\u6211\u60f3\u770b\u7684\u7f8e\u666f\u5c31\u5f7b\u5e95\u770b\u4e0d\u5230\u4e86\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u6ca1\u65f6\u95f4\u548c\u60a8\u89e3\u91ca\u4e86\uff0c\u5148\u751f\u3002\u518d\u62d6\u4e0b\u53bb\uff0c\u6211\u60f3\u770b\u7684\u7f8e\u666f\u5c31\u5f7b\u5e95\u770b\u4e0d\u5230\u4e86\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u60a8\u8981\u662f\u6267\u610f\u4e0d\u76f8\u4fe1\uff0c\u4e0d\u5982\u548c\u6211\u4e00\u8d77\u8d70\u4e0a\u697c\u9876\u770b\u770b\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u60a8\u8981\u662f\u6267\u610f\u4e0d\u76f8\u4fe1\uff0c\u4e0d\u5982\u548c\u6211\u4e00\u8d77\u8d70\u4e0a\u697c\u9876\u770b\u770b\u3002"
     },
     {
-        "text": "\u6211\u4f1a\u8ba9\u60a8\u4eb2\u81ea\u89c1\u8bc1\uff0c\u6211\u4eec\u4e4b\u95f4\u7684\u8bef\u4f1a\u5230\u5e95\u6709\u591a\u5927\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6211\u4f1a\u8ba9\u60a8\u4eb2\u81ea\u89c1\u8bc1\uff0c\u6211\u4eec\u4e4b\u95f4\u7684\u8bef\u4f1a\u5230\u5e95\u6709\u591a\u5927\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u201c\u7f8e\u666f\u201d\uff1f\u54fc\uff0c\u770b\u6765\u8fd9\u662f\u4ec0\u4e48\u9ed1\u94a2\u5185\u90e8\u7684\u6697\u8bed\u4e86\uff1f\u8fd9\u6b21\u884c\u52a8\u7684\u540d\u5b57\u53eb\u4ec0\u4e48\uff1f\u201c\u7f8e\u666f\u884c\u52a8\u201d\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u201c\u7f8e\u666f\u201d\uff1f\u54fc\uff0c\u770b\u6765\u8fd9\u662f\u4ec0\u4e48\u9ed1\u94a2\u5185\u90e8\u7684\u6697\u8bed\u4e86\uff1f\u8fd9\u6b21\u884c\u52a8\u7684\u540d\u5b57\u53eb\u4ec0\u4e48\uff1f\u201c\u7f8e\u666f\u884c\u52a8\u201d\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "......\u770b\u6765\u662f\u5f7b\u5f7b\u5e95\u5e95\u8bf4\u4e0d\u901a\u554a\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "......\u770b\u6765\u662f\u5f7b\u5f7b\u5e95\u5e95\u8bf4\u4e0d\u901a\u554a\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "\u867d\u7136\u8ba9\u60a8\u8fd9\u6837\u4e00\u4e2a\u6ee1\u8111\u5b50\u5546\u6218\u7684\u4eba\u8ddf\u5728\u8eab\u8fb9\u591a\u5c11\u6709\u70b9\u715e\u98ce\u666f\uff0c\u4f46\u60a8\u770b\u8fd9\u6837\u5982\u4f55\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u867d\u7136\u8ba9\u60a8\u8fd9\u6837\u4e00\u4e2a\u6ee1\u8111\u5b50\u5546\u6218\u7684\u4eba\u8ddf\u5728\u8eab\u8fb9\u591a\u5c11\u6709\u70b9\u715e\u98ce\u666f\uff0c\u4f46\u60a8\u770b\u8fd9\u6837\u5982\u4f55\uff1f"
     },
     {
-        "text": "\u60a8\u628a\u8def\u8ba9\u5f00\uff0c\u8ba9\u6211\u4e0a\u53bb\uff0c\u5728\u6b64\u671f\u95f4\uff0c\u60a8\u53ef\u4ee5\u4e00\u76f4\u76d1\u89c6\u6211\uff0c\u5982\u679c\u6211\u6709\u4ec0\u4e48\u51fa\u683c\u7684\u4e3e\u52a8\uff0c\u53ef\u4ee5\u7acb\u523b\u5c06\u6211\u9a71\u9010\u51fa\u53bb\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u60a8\u628a\u8def\u8ba9\u5f00\uff0c\u8ba9\u6211\u4e0a\u53bb\uff0c\u5728\u6b64\u671f\u95f4\uff0c\u60a8\u53ef\u4ee5\u4e00\u76f4\u76d1\u89c6\u6211\uff0c\u5982\u679c\u6211\u6709\u4ec0\u4e48\u51fa\u683c\u7684\u4e3e\u52a8\uff0c\u53ef\u4ee5\u7acb\u523b\u5c06\u6211\u9a71\u9010\u51fa\u53bb\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u90a3\u6211\u8981\u4f60\u73b0\u5728\u5c31\u2014\u2014",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u90a3\u6211\u8981\u4f60\u73b0\u5728\u5c31\u2014\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#8$1"
+        }
     },
     {
-        "text": "......\u8fd9\u573a\u4ea4\u6613\u53ef\u8fd8\u6ca1\u6210\u7acb\u5462\uff0c\u5148\u751f\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "......\u8fd9\u573a\u4ea4\u6613\u53ef\u8fd8\u6ca1\u6210\u7acb\u5462\uff0c\u5148\u751f\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u9ad8\u7ba1\u7d27\u76ef\u7740\u8482\u62c9\u7684\u773c\u775b\uff0c\u8bd5\u56fe\u6743\u8861\u653e\u773c\u524d\u8fd9\u4e2a\u4eba\u4e0a\u5929\u53f0\u548c\u5f97\u7f6a\u514b\u91cc\u592b\u7a76\u7adf\u54ea\u4e2a\u66f4\u52a0\u7cdf\u7cd5\u3002"
@@ -1236,102 +1424,122 @@
         "text": "\u6700\u7ec8\uff0c\u4ed6\u7a0d\u7a0d\u8ba9\u51fa\u4e86\u534a\u4e2a\u8eab\u4f4d\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u6211\u7b54\u5e94\u4f60\u7684\u6761\u4ef6\uff0c\u4f46\u6211\u4f1a\u76ef\u7d27\u4f60\uff0c\u522b\u60f3\u4ece\u8fd9\u91cc\u5e26\u8d70\u4efb\u4f55\u4e00\u70b9\u4e1c\u897f\uff01",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u6211\u7b54\u5e94\u4f60\u7684\u6761\u4ef6\uff0c\u4f46\u6211\u4f1a\u76ef\u7d27\u4f60\uff0c\u522b\u60f3\u4ece\u8fd9\u91cc\u5e26\u8d70\u4efb\u4f55\u4e00\u70b9\u4e1c\u897f\uff01"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u653e\u5fc3\u597d\u4e86\uff0c\u5148\u751f\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u653e\u5fc3\u597d\u4e86\uff0c\u5148\u751f\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u90a3\u5c31\u770b\u597d\u4e86\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u90a3\u5c31\u770b\u597d\u4e86\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
         "text": "\u8482\u62c9\u8d70\u5411\u901a\u5f80\u697c\u9876\u7684\u95e8\uff0c\u4f38\u624b\u5c06\u5b83\u63a8\u5f00\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_open_door"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_open_door"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "gridbg",
-        "imagegroup": "47_g15_eveningglow_L1/47_g15_eveningglow_R1/47_g15_eveningglow_L2/47_g15_eveningglow_R2",
-        "solidwidth": "1280/1280/1280/1280",
-        "solidheight": "720/720/720/720",
-        "x": -640,
-        "fadetime": 0
+        "command": "gridbg",
+        "params": {
+            "imagegroup": "47_g15_eveningglow_L1/47_g15_eveningglow_R1/47_g15_eveningglow_L2/47_g15_eveningglow_R2",
+            "solidwidth": "1280/1280/1280/1280",
+            "solidheight": "720/720/720/720",
+            "x": -640,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 60,
-        "yFrom": 360,
-        "yTo": 720,
-        "block": false
+        "command": "largebgtween",
+        "params": {
+            "duration": 60,
+            "yfrom": 360,
+            "y": 720,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "\u9ec4\u660f\u65f6\u5206\uff0c\u7a7a\u65f7\u7684\u697c\u9876\u4e0a\u6d41\u52a8\u7684\u6e05\u98ce\u5439\u8fc7\u8482\u62c9\u7684\u9762\u988a\u3002"
@@ -1346,139 +1554,153 @@
         "text": "\u8482\u62c9\u7ad9\u5728\u95e8\u53e3\u770b\u5411\u5929\u5730\u4ea4\u754c\u7ebf\u4e0a\u7684\u5149\u8292\uff0c\u7136\u540e\u5982\u91ca\u91cd\u8d1f\u822c\u5730\u53f9\u4e86\u53e3\u6c14\u3002"
     },
     {
-        "text": "\u771f\u597d......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u771f\u597d......"
     },
     {
-        "text": "\u8fd9\u662f......\u4ec0\u4e48\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u8fd9\u662f......\u4ec0\u4e48\uff1f"
     },
     {
-        "text": "\u5915\u9633\uff0c\u4f46\u4e0d\u662f\u666e\u901a\u7684\u5915\u9633\uff0c\u4e5f\u8bb8\u5f88\u591a\u5e74\u90fd\u53ea\u80fd\u770b\u5230\u4e00\u6b21\u8fd9\u6837\u7684\u666f\u8c61\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5915\u9633\uff0c\u4f46\u4e0d\u662f\u666e\u901a\u7684\u5915\u9633\uff0c\u4e5f\u8bb8\u5f88\u591a\u5e74\u90fd\u53ea\u80fd\u770b\u5230\u4e00\u6b21\u8fd9\u6837\u7684\u666f\u8c61\u3002"
     },
     {
-        "text": "\u53ea\u6709\u5728\u6c99\u5c18\u5929\u6c14\u7ed3\u675f\u540e\u653e\u6674\u7684\u4e0b\u5348\uff0c\u52a0\u4e0a\u5b8c\u7f8e\u7684\u80fd\u89c1\u5ea6\uff0c\u518d\u914d\u5408\u5929\u8fb9\u5408\u9002\u7684\u4e91\u5f62......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u53ea\u6709\u5728\u6c99\u5c18\u5929\u6c14\u7ed3\u675f\u540e\u653e\u6674\u7684\u4e0b\u5348\uff0c\u52a0\u4e0a\u5b8c\u7f8e\u7684\u80fd\u89c1\u5ea6\uff0c\u518d\u914d\u5408\u5929\u8fb9\u5408\u9002\u7684\u4e91\u5f62......"
     },
     {
-        "text": "\u6240\u6709\u6761\u4ef6\u90fd\u5f97\u5230\u6ee1\u8db3\uff0c\u624d\u80fd\u8ba9\u9633\u5149\u5728\u7a7a\u4e2d\u6563\u5c04\u6210\u5982\u6b64\u7f8e\u5999\u7684\u6837\u5b50\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6240\u6709\u6761\u4ef6\u90fd\u5f97\u5230\u6ee1\u8db3\uff0c\u624d\u80fd\u8ba9\u9633\u5149\u5728\u7a7a\u4e2d\u6563\u5c04\u6210\u5982\u6b64\u7f8e\u5999\u7684\u6837\u5b50\u3002"
     },
     {
-        "text": "\u867d\u7136\u4e0a\u6765\u7684\u8def\u5e76\u4e0d\u987a\u5229\uff0c\u4f46\u80fd\u770b\u5230\u8fd9\u6837\u7a00\u5c11\u7684\u666f\u8272\uff0c\u4e00\u5207\u90fd\u662f\u503c\u5f97\u7684\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u867d\u7136\u4e0a\u6765\u7684\u8def\u5e76\u4e0d\u987a\u5229\uff0c\u4f46\u80fd\u770b\u5230\u8fd9\u6837\u7a00\u5c11\u7684\u666f\u8272\uff0c\u4e00\u5207\u90fd\u662f\u503c\u5f97\u7684\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u9ad8\u7ba1\u671b\u7740\u5929\u8fb9\u95ea\u8000\u593a\u76ee\u7684\u9633\u5149\u675f\uff0c\u4ed6\u96be\u4ee5\u63a9\u9970\u8138\u4e0a\u7684\u590d\u6742\u8868\u60c5\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "gridbg"
+        "command": "gridbg"
     },
     {
-        "tag": "background",
-        "image": "64_g13_rooftop",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "64_g13_rooftop",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u5c31\u8fd9\u4e9b\uff1f\u4f60\u4e0d\u53bb\u627e\u627e\u522b\u7684\u4e1c\u897f\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5c31\u8fd9\u4e9b\uff1f\u4f60\u4e0d\u53bb\u627e\u627e\u522b\u7684\u4e1c\u897f\uff1f"
     },
     {
-        "text": "\u5c31\u770b\u770b\u5929\u5c31\u5b8c\u4e8b\u4e86\uff1f",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u5c31\u770b\u770b\u5929\u5c31\u5b8c\u4e8b\u4e86\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u4e3a\u4ec0\u4e48\u8981\u505a\u522b\u7684\u4e8b\u60c5\u5462\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4e3a\u4ec0\u4e48\u8981\u505a\u522b\u7684\u4e8b\u60c5\u5462\uff1f"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u5979\u6162\u6b65\u8d70\u5411\u91d1\u5c5e\u9632\u62a4\u7f51\uff0c\u9ad8\u7ba1\u5728\u5979\u8eab\u540e\u6014\u6014\u7acb\u7740\uff0c\u4e00\u6b65\u90fd\u8de8\u4e0d\u51fa\u53bb\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u6bd4\u8d77\u8fd9\u680b\u5927\u697c\u91cc\u7684\u4eba\u548c\u4e8b\uff0c\u73b0\u5728\u8fd9\u7247\u7f8e\u666f\u5bf9\u6211\u6765\u8bf4\u624d\u662f\u6709\u610f\u4e49\u7684\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6bd4\u8d77\u8fd9\u680b\u5927\u697c\u91cc\u7684\u4eba\u548c\u4e8b\uff0c\u73b0\u5728\u8fd9\u7247\u7f8e\u666f\u5bf9\u6211\u6765\u8bf4\u624d\u662f\u6709\u610f\u4e49\u7684\u3002"
     },
     {
-        "text": "\u89c2\u8d4f\u5b83\u7684\u5730\u70b9\u548c\u65f6\u95f4\u90fd\u5fc5\u987b\u521a\u521a\u597d\uff0c\u800c\u6211\u627e\u5230\u4e86\u5bf9\u7684\u5730\u70b9\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u89c2\u8d4f\u5b83\u7684\u5730\u70b9\u548c\u65f6\u95f4\u90fd\u5fc5\u987b\u521a\u521a\u597d\uff0c\u800c\u6211\u627e\u5230\u4e86\u5bf9\u7684\u5730\u70b9\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#3$1"
+        }
     },
     {
-        "text": "\u60a8\u770b\uff0c\u5728\u4f60\u4eec\u6025\u7740\u627e\u4e0d\u5b58\u5728\u7684\u95ee\u9898\u548c\u7b54\u6848\u7684\u65f6\u5019\uff0c\u666f\u8272\u53c8\u53d8\u4e86\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u60a8\u770b\uff0c\u5728\u4f60\u4eec\u6025\u7740\u627e\u4e0d\u5b58\u5728\u7684\u95ee\u9898\u548c\u7b54\u6848\u7684\u65f6\u5019\uff0c\u666f\u8272\u53c8\u53d8\u4e86\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u8482\u62c9\u4f38\u51fa\u624b\uff0c\u6307\u5411\u897f\u65b9\u7684\u5730\u5e73\u7ebf\uff0c\u9ad8\u7ba1\u4e5f\u4e0d\u7531\u81ea\u4e3b\u5730\u987a\u7740\u5979\u7684\u6307\u5f15\u770b\u5411\u5929\u8fb9\u3002"
@@ -1487,110 +1709,128 @@
         "text": "\u592a\u9633\u5df2\u7ecf\u843d\u4e0b\uff0c\u4f46\u4f59\u6656\u4f9d\u7136\u5728\u4e91\u95f4\u7559\u4e0b\u7f8e\u5999\u800c\u593a\u76ee\u7684\u5149\u8292\uff0c\u50cf\u662f\u660e\u4eae\u7684\u706b\u7130\u4ece\u5730\u5e73\u7ebf\u4e0b\u5347\u817e\u800c\u8d77\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u65f6\u95f4\u6b63\u597d\uff0c\u4f4d\u7f6e\u4e5f\u548c\u6211\u60f3\u8c61\u4e2d\u7684\u4e00\u6837\uff0c\u8fd9\u91cc\u771f\u7684\u662f\u9644\u8fd1\u6700\u597d\u7684\u89c2\u666f\u5730\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u65f6\u95f4\u6b63\u597d\uff0c\u4f4d\u7f6e\u4e5f\u548c\u6211\u60f3\u8c61\u4e2d\u7684\u4e00\u6837\uff0c\u8fd9\u91cc\u771f\u7684\u662f\u9644\u8fd1\u6700\u597d\u7684\u89c2\u666f\u5730\u3002"
     },
     {
-        "text": "\u770b\u5230\u8fd9\u680b\u697c\u7684\u90a3\u4e00\u773c\u6211\u5c31\u611f\u89c9\u5230\u4e86\uff0c\u53ea\u6709\u4ece\u697c\u9876\u7684\u89d2\u5ea6\u624d\u80fd\u770b\u5230\uff0c\u8fd9\u96be\u5f97\u4e00\u89c1\u7684\u666f\u8272\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u770b\u5230\u8fd9\u680b\u697c\u7684\u90a3\u4e00\u773c\u6211\u5c31\u611f\u89c9\u5230\u4e86\uff0c\u53ea\u6709\u4ece\u697c\u9876\u7684\u89d2\u5ea6\u624d\u80fd\u770b\u5230\uff0c\u8fd9\u96be\u5f97\u4e00\u89c1\u7684\u666f\u8272\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "\u65e0\u8bba\u4f60\u4eec\u8bef\u89e3\u6211\u60f3\u505a\u4ec0\u4e48\uff0c\u6211\u552f\u4e00\u7684\u60f3\u6cd5\uff0c\u81ea\u59cb\u81f3\u7ec8\u5c31\u53ea\u6709\u770b\u5230\u8fd9\u7247\u7f8e\u666f\u800c\u5df2\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u65e0\u8bba\u4f60\u4eec\u8bef\u89e3\u6211\u60f3\u505a\u4ec0\u4e48\uff0c\u6211\u552f\u4e00\u7684\u60f3\u6cd5\uff0c\u81ea\u59cb\u81f3\u7ec8\u5c31\u53ea\u6709\u770b\u5230\u8fd9\u7247\u7f8e\u666f\u800c\u5df2\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u597d\u4e86\uff0c\u6211\u5728\u8fd9\u91cc\u8981\u505a\u7684\u4e8b\u60c5\u90fd\u505a\u5b8c\u4e86\uff0c\u60a8\u73b0\u5728\u660e\u767d\u6211\u7684\u76ee\u7684\u4e86\u5417\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u597d\u4e86\uff0c\u6211\u5728\u8fd9\u91cc\u8981\u505a\u7684\u4e8b\u60c5\u90fd\u505a\u5b8c\u4e86\uff0c\u60a8\u73b0\u5728\u660e\u767d\u6211\u7684\u76ee\u7684\u4e86\u5417\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "\u8fd9......\u53ef\u662f......",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "\u8fd9......\u53ef\u662f......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u8482\u62c9\u770b\u4e86\u770b\u4f9d\u7136\u65e0\u6cd5\u63a5\u53d7\u73b0\u72b6\u7684\u9ad8\u7ba1\uff0c\u8038\u4e86\u8038\u80a9\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u5982\u679c\u60a8\u540c\u610f\u7684\u8bdd\uff0c\u6211\u73b0\u5728\u53ef\u4ee5\u79bb\u5f00\u8fd9\u91cc\u4e86\u5417\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5982\u679c\u60a8\u540c\u610f\u7684\u8bdd\uff0c\u6211\u73b0\u5728\u53ef\u4ee5\u79bb\u5f00\u8fd9\u91cc\u4e86\u5417\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1257_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1257_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458"
+        "command": "name",
+        "value": "\u9ad8\u7ea7\u7ba1\u7406\u4eba\u5458",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#10$1"
+        }
     },
     {
-        "text": "\u8c22\u8c22\u60a8\u7684\u7406\u89e3\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8c22\u8c22\u60a8\u7684\u7406\u89e3\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u672c\u8230\uff0c\u5148\u9063\u5c0f\u7ec4\u8482\u62c9\u547c\u53eb\uff0c\u8bf7\u6c42\u4eba\u5458\u652f\u63f4\u4ee5\u4fbf\u8fd4\u56de\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u672c\u8230\uff0c\u5148\u9063\u5c0f\u7ec4\u8482\u62c9\u547c\u53eb\uff0c\u8bf7\u6c42\u4eba\u5458\u652f\u63f4\u4ee5\u4fbf\u8fd4\u56de\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u9ad8\u7ba1\u5728\u9010\u6e10\u6697\u4e0b\u7684\u5929\u8272\u4e2d\u770b\u7740\u8482\u62c9\u5b8c\u6210\u901a\u8bdd\uff0c\u7136\u540e\u4efb\u51ed\u5979\u4ece\u81ea\u5df1\u7684\u8eab\u8fb9\u8d70\u5411\u95e8\u53e3\u3002"
@@ -1599,320 +1839,376 @@
         "text": "\u5f88\u5feb\uff0c\u521a\u624d\u52a8\u4eba\u5fc3\u5f26\u7684\u666f\u8272\u5c31\u6d88\u5931\u4e0d\u89c1\uff0c\u697c\u9876\u4e0a\u53ea\u5269\u4e0b\u5b51\u7136\u7ad9\u7acb\u7684\u4e00\u4e2a\u4eba\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "42_g9_modernoffice",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "42_g9_modernoffice",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "key": "$normal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$normal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#1$1"
+        }
     },
     {
-        "text": "\u8482\u62c9\uff0c\u8bf4\u660e\u60c5\u51b5\u3002",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "\u8482\u62c9\uff0c\u8bf4\u660e\u60c5\u51b5\u3002"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u9ed1\u94a2\u7684\u8001\u677f\u62c9\u5f00\u6905\u5b50\u5750\u4e86\u4e0b\u6765\uff0c\u4ed6\u770b\u5411\u7ad9\u5728\u684c\u8fb9\u7684\u8482\u62c9\uff0c\u5c11\u5973\u7684\u8868\u60c5\u5f88\u662f\u5e73\u9759\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u5728\u56de\u672c\u8230\u7684\u8def\u4e0a\uff0c\u6211\u770b\u5230\u90a3\u680b\u697c\u7684\u65f6\u5019\uff0c\u5c31\u7a81\u7136\u60f3\u5230\u90a3\u91cc\u7684\u697c\u9876\u5e94\u8be5\u6709\u7edd\u4f73\u7684\u89c2\u666f\u89d2\u5ea6\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5728\u56de\u672c\u8230\u7684\u8def\u4e0a\uff0c\u6211\u770b\u5230\u90a3\u680b\u697c\u7684\u65f6\u5019\uff0c\u5c31\u7a81\u7136\u60f3\u5230\u90a3\u91cc\u7684\u697c\u9876\u5e94\u8be5\u6709\u7edd\u4f73\u7684\u89c2\u666f\u89d2\u5ea6\u3002"
     },
     {
-        "text": "\u4eca\u5929\u6070\u597d\u4efb\u52a1\u5b8c\u6210\u5f97\u6bd4\u8f83\u987a\u5229\uff0c\u5728\u65e5\u843d\u4e4b\u524d\u5c31\u7ed3\u675f\u4e86\uff0c\u52a0\u4e0a\u5929\u6c14\u4e5f\u5f88\u5b8c\u7f8e\u2014\u2014",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u4eca\u5929\u6070\u597d\u4efb\u52a1\u5b8c\u6210\u5f97\u6bd4\u8f83\u987a\u5229\uff0c\u5728\u65e5\u843d\u4e4b\u524d\u5c31\u7ed3\u675f\u4e86\uff0c\u52a0\u4e0a\u5929\u6c14\u4e5f\u5f88\u5b8c\u7f8e\u2014\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#5$1"
+        }
     },
     {
-        "text": "\u6240\u4ee5\u5c31\u60f3\u4e0a\u53bb\u770b\u770b\uff0c\u6bd5\u7adf\u89c1\u5230\u90a3\u79cd\u7a00\u5c11\u666f\u8272\u7684\u673a\u4f1a\u5b9e\u5728\u592a\u96be\u5f97\u4e86\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u6240\u4ee5\u5c31\u60f3\u4e0a\u53bb\u770b\u770b\uff0c\u6bd5\u7adf\u89c1\u5230\u90a3\u79cd\u7a00\u5c11\u666f\u8272\u7684\u673a\u4f1a\u5b9e\u5728\u592a\u96be\u5f97\u4e86\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#2$1"
+        }
     },
     {
-        "text": "\u6211\u4e0d\u662f\u5728\u95ee\u4f60\u8fd9\u4e2a\u3002",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "\u6211\u4e0d\u662f\u5728\u95ee\u4f60\u8fd9\u4e2a\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#6$1"
+        }
     },
     {
-        "text": "\u4eca\u5929\u4e0b\u5348\u4f60\u9020\u6210\u7684\u6df7\u4e71\u4f60\u81ea\u5df1\u4e5f\u77e5\u9053\u3002\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u4ece\u5206\u516c\u53f8\u5230\u603b\u516c\u53f8\u4e0d\u65ad\u7ed9\u6211\u6253\u7535\u8bdd\u3002",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "\u4eca\u5929\u4e0b\u5348\u4f60\u9020\u6210\u7684\u6df7\u4e71\u4f60\u81ea\u5df1\u4e5f\u77e5\u9053\u3002\u6c83\u5c14\u6c83\u7279\u79d1\u94a6\u65af\u57fa\u4ece\u5206\u516c\u53f8\u5230\u603b\u516c\u53f8\u4e0d\u65ad\u7ed9\u6211\u6253\u7535\u8bdd\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#5$1"
+        }
     },
     {
-        "text": "\u975e\u5e38\u62b1\u6b49\uff01",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u975e\u5e38\u62b1\u6b49\uff01"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#7$1"
+        }
     },
     {
-        "text": "\u53ef\u662f......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u53ef\u662f......"
     },
     {
-        "text": "\u90a3\u79cd\u5915\u7167\u6563\u5c04\u7684\u6837\u5b50\u53ea\u8981\u6761\u4ef6\u7a0d\u6709\u53d8\u5316\u5c31\u4f1a\u6d88\u5931\uff0c\u53ea\u6709\u5728\u7279\u5b9a\u7684\u65f6\u95f4\u767b\u4e0a\u697c\u9876\u624d\u6709\u673a\u4f1a\u770b\u5230\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u90a3\u79cd\u5915\u7167\u6563\u5c04\u7684\u6837\u5b50\u53ea\u8981\u6761\u4ef6\u7a0d\u6709\u53d8\u5316\u5c31\u4f1a\u6d88\u5931\uff0c\u53ea\u6709\u5728\u7279\u5b9a\u7684\u65f6\u95f4\u767b\u4e0a\u697c\u9876\u624d\u6709\u673a\u4f1a\u770b\u5230\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "\u90a3\u6837\u7684\u5915\u666f\uff0c\u5373\u4fbf\u60f3\u8981\u5bfb\u627e\u4e5f\u5f88\u96be\u9047\u5230\u7b2c\u4e8c\u6b21\u4e86......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u90a3\u6837\u7684\u5915\u666f\uff0c\u5373\u4fbf\u60f3\u8981\u5bfb\u627e\u4e5f\u5f88\u96be\u9047\u5230\u7b2c\u4e8c\u6b21\u4e86......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u514b\u91cc\u592b\u76b1\u8d77\u7709\u5934\u770b\u7740\u81ea\u5df1\u7684\u52a9\u624b\uff0c\u4f46\u5f88\u5feb\u4ed6\u8138\u4e0a\u51dd\u91cd\u7684\u8868\u60c5\u5c31\u7f13\u548c\u4e86\u4e0b\u6765\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#5$1"
+        }
     },
     {
-        "text": "\u8001\u677f\uff0c\u8981\u662f\u6ca1\u522b\u7684\u4e8b\u7684\u8bdd\uff0c\u6211\u5c31......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8001\u677f\uff0c\u8981\u662f\u6ca1\u522b\u7684\u4e8b\u7684\u8bdd\uff0c\u6211\u5c31......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#2$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#9$1"
+        }
     },
     {
-        "text": "\u514b\u91cc\u592b\u5148\u751f\uff0c\u90a3\u4e2a\u2014\u2014",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u514b\u91cc\u592b\u5148\u751f\uff0c\u90a3\u4e2a\u2014\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#1$1"
+        }
     },
     {
-        "text": "\u65e2\u7136\u4f60\u5df2\u7ecf\u653e\u677e\u8fc7\u4e86\uff0c\u6b63\u5de7\u73b0\u5728\u6709\u4e2a\u5f88\u68d8\u624b\u7684\u4efb\u52a1\uff0c\u9700\u8981\u4e00\u4e2a\u5f97\u529b\u7684\u4eba\u624b\u3002\u4efb\u52a1\u6982\u8981\u5728\u8fd9\u513f\uff0c\u4f60\u53ef\u4ee5\u81ea\u5df1\u770b\u3002",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "\u65e2\u7136\u4f60\u5df2\u7ecf\u653e\u677e\u8fc7\u4e86\uff0c\u6b63\u5de7\u73b0\u5728\u6709\u4e2a\u5f88\u68d8\u624b\u7684\u4efb\u52a1\uff0c\u9700\u8981\u4e00\u4e2a\u5f97\u529b\u7684\u4eba\u624b\u3002\u4efb\u52a1\u6982\u8981\u5728\u8fd9\u513f\uff0c\u4f60\u53ef\u4ee5\u81ea\u5df1\u770b\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#6$1"
+        }
     },
     {
-        "text": "\u5355\u4eba\u6f5c\u5165\u4efb\u52a1\uff0c\u57fa\u672c\u4e0a\u5168\u7a0b\u5728\u5730\u4e0b\u901a\u9053\u91cc\u5b8c\u6210\u3002\u6ca1\u6709\u5915\u9633\uff0c\u6ca1\u6709\u68ee\u6797\uff0c\u751a\u81f3\u6ca1\u6709\u5929\u7136\u6d1e\u7a74......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u5355\u4eba\u6f5c\u5165\u4efb\u52a1\uff0c\u57fa\u672c\u4e0a\u5168\u7a0b\u5728\u5730\u4e0b\u901a\u9053\u91cc\u5b8c\u6210\u3002\u6ca1\u6709\u5915\u9633\uff0c\u6ca1\u6709\u68ee\u6797\uff0c\u751a\u81f3\u6ca1\u6709\u5929\u7136\u6d1e\u7a74......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#5$1"
+        }
     },
     {
-        "text": "\u8001\u677f\uff0c\u8fd9\u7b97\u662f\u5bf9\u6211\u7684\u62a5\u590d\u5417\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8001\u677f\uff0c\u8fd9\u7b97\u662f\u5bf9\u6211\u7684\u62a5\u590d\u5417\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1036_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1036_1#1$1"
+        }
     },
     {
-        "text": "\u5176\u4ed6\u80fd\u5b8c\u6210\u4efb\u52a1\u7684\u4eba\u78b0\u5de7\u90fd\u4e0d\u5728\uff0c\u4ec5\u6b64\u800c\u5df2\u3002",
-        "tag": "name",
-        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b"
+        "command": "name",
+        "value": "\u201c\u6865\u5939\u201d\u514b\u91cc\u592b",
+        "text": "\u5176\u4ed6\u80fd\u5b8c\u6210\u4efb\u52a1\u7684\u4eba\u78b0\u5de7\u90fd\u4e0d\u5728\uff0c\u4ec5\u6b64\u800c\u5df2\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "\u54c8\u54c8......",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u54c8\u54c8......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u89c1\u672d\u62c9\u514b\u6ca1\u6709\u63a8\u8131\u7684\u610f\u601d\uff0c\u514b\u91cc\u592b\u51b2\u5979\u70b9\u4e86\u70b9\u5934\uff0c\u5f84\u81ea\u79bb\u5f00\u4e86\u529e\u516c\u5ba4\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#2$1"
+        }
     },
     {
-        "text": "\u96be\u5f97\u4e00\u89c1\u7684\u5915\u9633\u666f\u8272\uff0c\u6362\u4e00\u6b21\u65e2\u65e0\u804a\u53c8\u5371\u9669\u7684\u6f5c\u5165\u4efb\u52a1......\u52c9\u52c9\u5f3a\u5f3a\u8bf4\u5f97\u8fc7\u53bb\u5427\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u96be\u5f97\u4e00\u89c1\u7684\u5915\u9633\u666f\u8272\uff0c\u6362\u4e00\u6b21\u65e2\u65e0\u804a\u53c8\u5371\u9669\u7684\u6f5c\u5165\u4efb\u52a1......\u52c9\u52c9\u5f3a\u5f3a\u8bf4\u5f97\u8fc7\u53bb\u5427\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#3$1"
+        }
     },
     {
-        "text": "\u800c\u4e14\u514b\u91cc\u592b\u5148\u751f\u8fd9\u6b21\u5c45\u7136\u6ca1\u6263\u6211\u7684\u5047\u671f\uff0c\u96be\u9053\u4ed6\u4eca\u5929\u5fc3\u60c5\u5176\u5b9e\u4e0d\u9519\uff1f",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u800c\u4e14\u514b\u91cc\u592b\u5148\u751f\u8fd9\u6b21\u5c45\u7136\u6ca1\u6263\u6211\u7684\u5047\u671f\uff0c\u96be\u9053\u4ed6\u4eca\u5929\u5fc3\u60c5\u5176\u5b9e\u4e0d\u9519\uff1f"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#1$1"
+        }
     },
     {
-        "text": "......\u7b97\u4e86\uff0c\u4e0e\u5176\u53bb\u731c\u514b\u91cc\u592b\u5148\u751f\u9ad8\u5174\u8fd8\u662f\u4e0d\u9ad8\u5174\uff0c\u8fd8\u4e0d\u5982\u8001\u8001\u5b9e\u5b9e\u7167\u4ed6\u8bf4\u7684\u505a\u5462\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "......\u7b97\u4e86\uff0c\u4e0e\u5176\u53bb\u731c\u514b\u91cc\u592b\u5148\u751f\u9ad8\u5174\u8fd8\u662f\u4e0d\u9ad8\u5174\uff0c\u8fd8\u4e0d\u5982\u8001\u8001\u5b9e\u5b9e\u7167\u4ed6\u8bf4\u7684\u505a\u5462\u3002"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1040_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1040_1#3$1"
+        }
     },
     {
-        "text": "\u8d70\u5566\u3002",
-        "tag": "name",
-        "value": "\u5bfb\u6f9c"
+        "command": "name",
+        "value": "\u5bfb\u6f9c",
+        "text": "\u8d70\u5566\u3002"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

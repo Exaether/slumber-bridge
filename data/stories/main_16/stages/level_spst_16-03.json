@@ -1,62 +1,66 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "50_g13_warshipcommandroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g13_warshipcommandroom",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_telegraph_loop",
+            "loop": true,
+            "channel": "bgs"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_telegraph_loop",
-        "loop": true,
-        "channel": "bgs"
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "'All units, this is Dispatch.'"
@@ -71,74 +75,86 @@
         "text": "'Please acknowledge.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "(Exhales)",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "(Exhales)"
     },
     {
-        "text": "Scope of the ceasefire?",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Scope of the ceasefire?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "All active units.",
-        "tag": "name",
-        "value": "Radioman"
+        "command": "name",
+        "value": "Radioman",
+        "text": "All active units."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "(Nods)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "'Acknowledged.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "Inform Lieutenant Yelchin and ensure that all units in the 2nd Division observe the ceasefire.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Inform Lieutenant Yelchin and ensure that all units in the 2nd Division observe the ceasefire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "'All units remain on standby. Maintain battle stations.'"
@@ -147,496 +163,566 @@
         "text": "'Until the threat is completely eliminated, we shall continue to serve our duty to protect Deity Grypherburg and the people.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$p_imp_funnel_end_h"
+        "command": "playsound",
+        "params": {
+            "key": "$p_imp_funnel_end_h"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "...Summon the quartermaster.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "...Summon the quartermaster."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "Sir, we do not have a quartermaster for this operation.",
-        "tag": "name",
-        "value": "Soldier"
+        "command": "name",
+        "value": "Soldier",
+        "text": "Sir, we do not have a quartermaster for this operation."
     },
     {
-        "text": "You expected this to be only a quick response, and that it would not take much time to eliminate the rebellious Infected.",
-        "tag": "name",
-        "value": "Soldier"
+        "command": "name",
+        "value": "Soldier",
+        "text": "You expected this to be only a quick response, and that it would not take much time to eliminate the rebellious Infected."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "......"
     },
     {
-        "text": "Respond to Dispatch as usual.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Respond to Dispatch as usual."
     },
     {
-        "text": "And what is your name, soldier?",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "And what is your name, soldier?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "Private Vyacheslav Kinov, sir.",
-        "tag": "name",
-        "value": "Soldier"
+        "command": "name",
+        "value": "Soldier",
+        "text": "Private Vyacheslav Kinov, sir."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "Very well. Inform the Lieutenant, Private Kinov. Your services are not needed here for now.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Very well. Inform the Lieutenant, Private Kinov. Your services are not needed here for now."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_warehouse_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_warehouse_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1978_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1978_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "...You had me leave my post to come to you for this little thing?",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "...You had me leave my post to come to you for this little thing?"
     },
     {
-        "text": "You're out of your mind.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "You're out of your mind."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Oh, look at you, Patya, all high and mighty in that Shieldguard armor...",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "Oh, look at you, Patya, all high and mighty in that Shieldguard armor..."
     },
     {
-        "text": "Does that pretty helmet of yours block your sight?",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "Does that pretty helmet of yours block your sight?"
     },
     {
-        "text": "The maggots in the rations, bolts that snap like twigs, even duds!",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "The maggots in the rations, bolts that snap like twigs, even duds!"
     },
     {
-        "text": "Is this what they send us out to die with?!",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "Is this what they send us out to die with?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1978_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1978_1#1$1"
+        }
     },
     {
-        "text": "If there are maggots in your rations, you eat them with the rations. If the weapons are hard to use, use your bare hands.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "If there are maggots in your rations, you eat them with the rations. If the weapons are hard to use, use your bare hands."
     },
     {
-        "text": "We're soldiers. We fight and win. There are only two ends: Keep fighting, or die.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "We're soldiers. We fight and win. There are only two ends: Keep fighting, or die."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "You're the one who's out of his mind!",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "You're the one who's out of his mind!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1978_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1978_1#1$1"
+        }
     },
     {
-        "text": "If you find that someone hasn't been doing his job, you report to your superior, not complain to me here.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "If you find that someone hasn't been doing his job, you report to your superior, not complain to me here."
     },
     {
-        "text": "I'm not the quartermaster\u2014",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "I'm not the quartermaster\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_armyboots_walk",
-        "loop": true,
-        "channel": "bgs"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_armyboots_walk",
+            "loop": true,
+            "channel": "bgs"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 0.3
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "I thought the Defender Regiments were supposed to be on the top deck.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "I thought the Defender Regiments were supposed to be on the top deck."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1978_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1978_1#1$1"
+        }
     },
     {
-        "text": "...Sorry, sir. I was away from my post.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "...Sorry, sir. I was away from my post."
     },
     {
-        "text": "I will report this to the commissar myself.",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "I will report this to the commissar myself."
     },
     {
-        "text": "(Salutes)",
-        "tag": "name",
-        "value": "Cold Soldier"
+        "command": "name",
+        "value": "Cold Soldier",
+        "text": "(Salutes)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_armour"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_armour"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "S-Sir!",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "S-Sir!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "What did you find out, soldier?",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "What did you find out, soldier?"
     },
     {
-        "text": "Tell me the reason for your anger.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Tell me the reason for your anger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "...The quality of our supplies and equipment on this operation is exceedingly poor.",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "...The quality of our supplies and equipment on this operation is exceedingly poor."
     },
     {
-        "text": "The rations are insufficient, the cans damaged and filled with maggots...",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "The rations are insufficient, the cans damaged and filled with maggots..."
     },
     {
-        "text": "Many of the bolts were not made of steel, but crude iron.",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "Many of the bolts were not made of steel, but crude iron."
     },
     {
-        "text": "And the reserve Originium bombs are so weak that they're little more than glorified duds.",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "And the reserve Originium bombs are so weak that they're little more than glorified duds."
     },
     {
-        "text": "How are we supposed to proceed the operation with these?",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "How are we supposed to proceed the operation with these?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "Why did you enlist, soldier?",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Why did you enlist, soldier?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "To...",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "To..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "Speak up.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Speak up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "To\u2014to prove myself! I want people to know my name\u2014",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "To\u2014to prove myself! I want people to know my name\u2014"
     },
     {
-        "text": "Like they know yours!",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "Like they know yours!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "They'll know your name when the Army sends your tags back to your mother, and she etches them on a white birch tree.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "They'll know your name when the Army sends your tags back to your mother, and she etches them on a white birch tree."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1976_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1976_1#1$1"
+        }
     },
     {
-        "text": "No, not like that...",
-        "tag": "name",
-        "value": "Angry Soldier"
+        "command": "name",
+        "value": "Angry Soldier",
+        "text": "No, not like that..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1977_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1977_1#1$1"
+        }
     },
     {
-        "text": "There is little room for the individual to choose, when the collective is at war.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "There is little room for the individual to choose, when the collective is at war."
     },
     {
-        "text": "But...",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "But..."
     },
     {
-        "text": "Keep this hope in your heart, boy, and your 'discovery' too.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Keep this hope in your heart, boy, and your 'discovery' too."
     },
     {
-        "text": "For the survival of Ursus and her people, there is only one option...",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "For the survival of Ursus and her people, there is only one option..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Set this land on fire.",
-        "tag": "name",
-        "value": "Officer"
+        "command": "name",
+        "value": "Officer",
+        "text": "Set this land on fire."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "hidecgitem"
+        "command": "hidecgitem"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

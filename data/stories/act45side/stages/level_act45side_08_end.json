@@ -1,136 +1,142 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "interlude",
+        "params": {
+            "channel": 2,
+            "clear": true
+        }
     },
     {
-        "tag": "skipnode",
-        "mode": "nofirstskip"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 2,
-        "clear": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "theater",
+        "value": true
     },
     {
-        "tag": "character"
+        "command": "video",
+        "value": "video/act45side/SS01.mp4"
     },
     {
-        "tag": "theater",
-        "mode": true
+        "command": "dialog"
     },
     {
-        "tag": "video",
-        "res": "video/act45side/SS01.mp4"
+        "command": "theater",
+        "value": false
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "theater",
-        "mode": false
+        "command": "charslot"
     },
     {
-        "tag": "skipnode",
-        "mode": "skip"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "image",
+        "params": {
+            "image": "65_i12",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
-    },
-    {
-        "tag": "image",
-        "image": "65_i12",
-        "screenadapt": "coverall"
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "playmusic",
-        "key": "$m_sys3_avemujica_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$m_sys3_avemujica_loop",
+            "volume": 0.6
+        }
     },
     {
         "text": "The ending note settles. Sakiko's hand lingers on the keyboard."
@@ -139,62 +145,64 @@
         "text": "Faint echoes of music reverberate on through the empty castle halls."
     },
     {
-        "text": "Saki... chan...?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Saki... chan...?"
     },
     {
         "text": "From beside comes a voice long unheard, yet one she could not know any more intimately. She slowly lifts her head."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "text": "We finally... finally...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "We finally... finally..."
     },
     {
-        "text": "...We finally got to meet, Saki-chan.",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "...We finally got to meet, Saki-chan."
     },
     {
-        "text": "It feels like I had this long, long dream... and I was this close to never waking up.",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "It feels like I had this long, long dream... and I was this close to never waking up."
     },
     {
-        "text": "Saki-chan, we've been going in circles for so long. We almost missed each other again.",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "Saki-chan, we've been going in circles for so long. We almost missed each other again."
     },
     {
         "text": "And before Sakiko stands not just Uika, but her entire band."
     },
     {
-        "text": "It was like someone gave me a pull, and then I just showed up here.",
-        "tag": "name",
-        "value": "Umiri Yahata"
+        "command": "name",
+        "value": "Umiri Yahata",
+        "text": "It was like someone gave me a pull, and then I just showed up here."
     },
     {
-        "text": "Blehhh! Why are we being so serious?",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "Blehhh! Why are we being so serious?"
     },
     {
-        "text": "But Saki, you're smiling so happily.",
-        "tag": "name",
-        "value": "Mutsumi Wakaba"
+        "command": "name",
+        "value": "Mutsumi Wakaba",
+        "text": "But Saki, you're smiling so happily."
     },
     {
         "text": "Sakiko has to squint beneath the bright spotlight hanging above. Everything before her feels so unreal, so dreamlike."
@@ -209,350 +217,402 @@
         "text": "The girls of Ave{@nbs}Mujica have finally come back."
     },
     {
-        "text": "Yes! Of course I am, I'm so happy...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Yes! Of course I am, I'm so happy..."
     },
     {
-        "text": "Uika... Mutsumi.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Uika... Mutsumi."
     },
     {
-        "text": "Nyamu... Umiri.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Nyamu... Umiri."
     },
     {
-        "text": "I missed you... I missed you so badly.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "I missed you... I missed you so badly."
     },
     {
-        "text": "All of you\u2014welcome back.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "All of you\u2014welcome back."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "65_g2_dreamcastlehall",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "65_g2_dreamcastlehall",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_2",
+            "volume": 1
+        }
     },
     {
-        "text": "(Struggling chirping)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Struggling chirping)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magicchange",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magicchange",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": false
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4182_oblvns_1#13$1",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4182_oblvns_1#13$1",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4184_dolris_1#7$1",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4184_dolris_1#7$1",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4185_amoris_1#4$2",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4185_amoris_1#4$2",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4183_mortis_1#1$1",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4183_mortis_1#1$1",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4186_tmoris_1#1$1",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4186_tmoris_1#1$1",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "I'm guessing these things put us to sleep?",
-        "tag": "name",
-        "value": "Umiri Yahata"
+        "command": "name",
+        "value": "Umiri Yahata",
+        "text": "I'm guessing these things put us to sleep?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#5$1",
-        "focus": "m",
-        "duration": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#5$1",
+            "focus": "m",
+            "duration": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "The dreams... they're not working...",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "The dreams... they're not working..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No... no...",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "No... no..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You can't leave... you have to... stay here!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "You can't leave... you have to... stay here!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#2$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#2$1",
+            "focus": "all"
+        }
     },
     {
-        "text": "(Piercing screech)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Piercing screech)"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2014Watch out!",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "\u2014Watch out!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#3$1",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#3$1",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wolff!!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Wolff!!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Morpheus, cut your losses!",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "Morpheus, cut your losses!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't you lecture me with words you cribbed from a storybook!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Don't you lecture me with words you cribbed from a storybook!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sakiko, take them and\u2014argh!",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "Sakiko, take them and\u2014argh!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Before Wolff can finish, an army of threads skewers through its arms, expelling the cotton within."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, crap! Up there\u2014",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "Oh, crap! Up there\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Countless Corettons circle above, weaving a massive dreamcatcher."
@@ -561,298 +621,352 @@
         "text": "It begins to press in towards the girls, growing ever larger and larger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Morpheus... see the error of your ways!",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "Morpheus... see the error of your ways!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 0.5,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 5,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 5,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 90,
+            "block": true
+        }
     },
     {
         "text": "A huge pair of scissors falls from the sky, shredding the dream web into naught but tiny wisps of silk that drift in the air."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_2",
+            "volume": 1
+        }
     },
     {
-        "text": "(Panicked screech)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Panicked screech)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Who was that?!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Who was that?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_5"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_5"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Nngh\u2014!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Nngh\u2014!"
     },
     {
         "text": "The girl gives a few twitches in midair before plummeting to the ground, faster and faster\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#1$1",
-        "posfrom": "0,0",
-        "posto": "300,0",
-        "afrom": 1,
-        "ato": 0,
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#1$1",
+            "posfrom": "0,0",
+            "posto": "300,0",
+            "afrom": 1,
+            "ato": 0,
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1938_1#1$1",
-        "posfrom": "-300,0",
-        "posto": "150,0",
-        "afrom": 0,
-        "ato": 1,
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1938_1#1$1",
+            "posfrom": "-300,0",
+            "posto": "150,0",
+            "afrom": 0,
+            "ato": 1,
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1942_1#5$1",
-        "posfrom": "0,300",
-        "posto": "0,30",
-        "afrom": 0,
-        "ato": 1,
-        "focus": "all",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1942_1#5$1",
+            "posfrom": "0,300",
+            "posto": "0,30",
+            "afrom": 0,
+            "ato": 1,
+            "focus": "all",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 5,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 5,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 90,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$punch_n1"
+        "command": "playsound",
+        "params": {
+            "key": "$punch_n1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown2",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are... are we safe now?",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "Are... are we safe now?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4186_tmoris_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4186_tmoris_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What in the world is happening...?",
-        "tag": "name",
-        "value": "Umiri Yahata"
+        "command": "name",
+        "value": "Umiri Yahata",
+        "text": "What in the world is happening...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_338_iris_1#8$1",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_338_iris_1#8$1",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_369_bena_1#11$1",
-        "focus": "all",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_369_bena_1#11$1",
+            "focus": "all",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Apologies for our lateness.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Apologies for our lateness."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#13$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "M-Miss Iris! We owe a debt to you for your aid... Thank you.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "M-Miss Iris! We owe a debt to you for your aid... Thank you."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "Sakiko is overcome with relief at seeing the familiar fairy. Her exhaustion swiftly catches up, and she feels the strength drain from her as she collapses."
@@ -861,89 +975,101 @@
         "text": "A dull thud echoes through the hall."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4184_dolris_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4184_dolris_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Saki-chaaaan!",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "Saki-chaaaan!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "27_g11_lentinobleroom_indoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "27_g11_lentinobleroom_indoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "key": "$calm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$calm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "text": "Sakiko... Sakiko...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Sakiko... Sakiko..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "(Who is it... now...)",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "(Who is it... now...)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Bit by bit, Sakiko regains consciousness, and is greeted by a faint fragrance."
@@ -952,1533 +1078,1793 @@
         "text": "Her eyes flutter open, and she finds herself lying on a soft velvet sofa, a brown-haired girl sitting by her side."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ah. Have you come to?",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Ah. Have you come to?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You fainted. Going through dreamland after dreamland like that takes a toll on the body.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "You fainted. Going through dreamland after dreamland like that takes a toll on the body."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Though I'd say it's quite incredible you lasted that long despite never encountering such Originium Arts before.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Though I'd say it's quite incredible you lasted that long despite never encountering such Originium Arts before."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are the others...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Are the others..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You needn't fret, I've arranged rooms for them. Bena is with them right now.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "You needn't fret, I've arranged rooms for them. Bena is with them right now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, I don't believe I've introduced myself\u2014I am Iris, the present Master of the Castle of Dreams.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Oh, I don't believe I've introduced myself\u2014I am Iris, the present Master of the Castle of Dreams."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We've seen plenty of each other in my dreams... If this is our first time meeting, then who were you before?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "We've seen plenty of each other in my dreams... If this is our first time meeting, then who were you before?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Well, as Morpheus demonstrated for you\u2014some fairies of the Castle of Dreams possess the rare Arts to spin dreams.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Well, as Morpheus demonstrated for you\u2014some fairies of the Castle of Dreams possess the rare Arts to spin dreams."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That said, it's no omnipotent thing. What dreams a caster spins are ultimately limited by their own knowledge of the target.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "That said, it's no omnipotent thing. What dreams a caster spins are ultimately limited by their own knowledge of the target."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Morpheus didn't understand you, nor did she regard you as an equal adversary. That is why the dream she spun was so flawed.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Morpheus didn't understand you, nor did she regard you as an equal adversary. That is why the dream she spun was so flawed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As for why you met me, I would suppose... that was Grandmother's work.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "As for why you met me, I would suppose... that was Grandmother's work."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Grandmother?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Grandmother?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes. The Castle of Dreams's previous Master. She spends all her time in a secluded room to convalesce now, owing to her frail health.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Yes. The Castle of Dreams's previous Master. She spends all her time in a secluded room to convalesce now, owing to her frail health."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She gave me this necklace, you see, and over the last few days, it had been terribly temperamental with its energies. Bena and I scrambled to return just in case something was amiss... What a terrible turn of affairs we found.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "She gave me this necklace, you see, and over the last few days, it had been terribly temperamental with its energies. Bena and I scrambled to return just in case something was amiss... What a terrible turn of affairs we found."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I see...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "I see..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0.5,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0.5,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "cg_rainsplash",
-        "screenadapt": "coverall",
-        "fadetime": 0,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "cg_rainsplash",
+            "screenadapt": "coverall",
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Something just started up over there. You're not safe alone. Go the long way round, quick.",
-        "tag": "name",
-        "value": "Kind Old Lady"
+        "command": "name",
+        "value": "Kind Old Lady",
+        "text": "Something just started up over there. You're not safe alone. Go the long way round, quick."
     },
     {
-        "text": "...Thank you for the warning.",
-        "tag": "name",
-        "value": "Behatted Girl"
+        "command": "name",
+        "value": "Behatted Girl",
+        "text": "...Thank you for the warning."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image",
-        "fadetime": 1
+        "command": "image",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "41_g5_siestaunbuiltland_d",
-        "screenadapt": "coverall",
-        "block": true,
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "image": "41_g5_siestaunbuiltland_d",
+            "screenadapt": "coverall",
+            "block": true,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I heard from an old woman nearby...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "I heard from an old woman nearby..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "34_g1_victoriavillage",
-        "screenadapt": "coverall",
-        "block": true,
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "image": "34_g1_victoriavillage",
+            "screenadapt": "coverall",
+            "block": true,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_243",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_243",
+            "focus": "m"
+        }
     },
     {
-        "text": "You should hurry home.",
-        "tag": "name",
-        "value": "Kind Townsperson"
+        "command": "name",
+        "value": "Kind Townsperson",
+        "text": "You should hurry home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "25_mini02_victoria_street_n",
-        "screenadapt": "coverall",
-        "block": true,
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "image": "25_mini02_victoria_street_n",
+            "screenadapt": "coverall",
+            "block": true,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1255_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1255_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The nights are dark here. Now don't you get lost again.",
-        "tag": "name",
-        "value": "Florist Lady"
+        "command": "name",
+        "value": "Florist Lady",
+        "text": "The nights are dark here. Now don't you get lost again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "27_g11_lentinobleroom_indoor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "27_g11_lentinobleroom_indoor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Miss Sakiko. As the Master of the Castle of Dreams, I beg your forgiveness for all that's transpired.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Miss Sakiko. As the Master of the Castle of Dreams, I beg your forgiveness for all that's transpired."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I suppose you could hardly pardon Morpheus, after all she's done...?",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "I suppose you could hardly pardon Morpheus, after all she's done...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Actually... By all rights I should hate her, but I don't feel that way at all.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Actually... By all rights I should hate her, but I don't feel that way at all."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...What?",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "...What?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She was quite right, actually. Ave{@nbs}Mujica as a group was never very tightly-knit.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "She was quite right, actually. Ave{@nbs}Mujica as a group was never very tightly-knit."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "When I made that initial bet with her, it was solely because I wanted the band members back. It was an act of rash judgment.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "When I made that initial bet with her, it was solely because I wanted the band members back. It was an act of rash judgment."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But after entering their dreams only to be rejected by each of them in turn, it finally dawned on me that I hadn't a clue how they felt inside.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "But after entering their dreams only to be rejected by each of them in turn, it finally dawned on me that I hadn't a clue how they felt inside."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Within the dreams she'd spun, we tried to hide our weakest, most fragile parts beneath a beautiful facade.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Within the dreams she'd spun, we tried to hide our weakest, most fragile parts beneath a beautiful facade."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yet did I ever attempt to <i>know</i> my companions, with whom I'd spent so many days and nights?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Yet did I ever attempt to <i>know</i> my companions, with whom I'd spent so many days and nights?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Had I truly resolved to bear the weight of their lives?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Had I truly resolved to bear the weight of their lives?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As I fell through the abyss of Limbo, these were the questions I asked myself in infinitude.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "As I fell through the abyss of Limbo, these were the questions I asked myself in infinitude."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Miss Sakiko...",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Miss Sakiko..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But when I finally straightened out my heart, awakened my companions, and stood once again before Morpheus, it wasn't just anger I felt...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "But when I finally straightened out my heart, awakened my companions, and stood once again before Morpheus, it wasn't just anger I felt..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It was also a deep, deep sorrow.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "It was also a deep, deep sorrow."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "In that moment, we looked each other in the eyes. It hit me. My power was frail no longer; I had my friends by my side.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "In that moment, we looked each other in the eyes. It hit me. My power was frail no longer; I had my friends by my side."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "While she stood by herself, alone as ever, with naught but creations that bent to her will and whim.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "While she stood by herself, alone as ever, with naught but creations that bent to her will and whim."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She was the dreamspinner. She knew better than all of us how nothing in the land of dreams was real.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "She was the dreamspinner. She knew better than all of us how nothing in the land of dreams was real."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And yet she still chose to lose herself in such dreams. Surely, she must have had her reasons?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "And yet she still chose to lose herself in such dreams. Surely, she must have had her reasons?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "25_mini02_victoria_street_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "25_mini02_victoria_street_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0.5,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0.5,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Hah-hahahahah-hah! You're a heartless monster!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hah-hahahahah-hah! You're a heartless monster!"
     },
     {
-        "text": "No wonder your parents don't want you!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No wonder your parents don't want you!"
     },
     {
-        "text": "You'll never live through the winter!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You'll never live through the winter!"
     },
     {
-        "text": "No! You're lying!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "No! You're lying!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Get lost, all of you!!",
-        "tag": "name",
-        "value": "Bena"
+        "command": "name",
+        "value": "Bena",
+        "text": "Get lost, all of you!!"
     },
     {
-        "text": "Uh-oh\u2014run!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Uh-oh\u2014run!"
     },
     {
-        "text": "Morpheus, are you alright?!",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Morpheus, are you alright?!"
     },
     {
-        "text": "Oh, Iris, is it\u2014is it true what they said?",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Oh, Iris, is it\u2014is it true what they said?"
     },
     {
-        "text": "They're naughty children, right? The fairies won't bring sweet dreams to them, right?",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "They're naughty children, right? The fairies won't bring sweet dreams to them, right?"
     },
     {
-        "text": "I'm not a heartless monster, and my parents didn't abandon me, and I can live through the winter, right?!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "I'm not a heartless monster, and my parents didn't abandon me, and I can live through the winter, right?!"
     },
     {
-        "text": "Morpheus...",
-        "tag": "name",
-        "value": "Bena"
+        "command": "name",
+        "value": "Bena",
+        "text": "Morpheus..."
     },
     {
-        "text": "Oh, Iris, answer me!!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Oh, Iris, answer me!!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "27_g11_lentinobleroom_indoor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "27_g11_lentinobleroom_indoor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There are reasons that Morpheus cannot live outside the Castle of Dreams.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "There are reasons that Morpheus cannot live outside the Castle of Dreams."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There is no storybook beauty in these lands. What Morpheus had to endure left her unable to place her trust in the sweet dreams of fairytales.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "There is no storybook beauty in these lands. What Morpheus had to endure left her unable to place her trust in the sweet dreams of fairytales."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And I know full well that the Castle's sweet dreams hardly solve every problem...",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "And I know full well that the Castle's sweet dreams hardly solve every problem..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "'In the face of reality, what we can accomplish is so very limited.'",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "'In the face of reality, what we can accomplish is so very limited.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "'It is but one thing. We nestle a seed deep in the depths of a child's heart.'",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "'It is but one thing. We nestle a seed deep in the depths of a child's heart.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "'Likely, it is what they considered the most important event, or thing, to them as children.'",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "'Likely, it is what they considered the most important event, or thing, to them as children.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "'It usually lies quietly deep within. But at crucial moments\u2014when people are at their weakest\u2014it gives them strength.'",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "'It usually lies quietly deep within. But at crucial moments\u2014when people are at their weakest\u2014it gives them strength.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "These words...",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "These words..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are the very words you spoke to me in my dream, Miss Iris. Now, I offer these same words back to you.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Are the very words you spoke to me in my dream, Miss Iris. Now, I offer these same words back to you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I venture that perhaps, Morpheus is awaiting a dream that lets her become 'grown-up', once and for all.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "I venture that perhaps, Morpheus is awaiting a dream that lets her become 'grown-up', once and for all."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As the moon rises, the doll takes on life\u2014see, have the moons not risen?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "As the moon rises, the doll takes on life\u2014see, have the moons not risen?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Iris looks outside. Pale and gentle moonlight shines down on the two of them through the castle window."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes. You're right.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Yes. You're right."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Furthermore, Miss Iris, I do have a request...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Furthermore, Miss Iris, I do have a request..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Pray tell. I'll do what's in my power.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Pray tell. I'll do what's in my power."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The five of us have awakened from our dreams, but we don't seem to have returned to our own world...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "The five of us have awakened from our dreams, but we don't seem to have returned to our own world..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Being the Master of the Castle of Dreams, I was wondering if you might know a method by which we can go back?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Being the Master of the Castle of Dreams, I was wondering if you might know a method by which we can go back?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I happened to hear them describe this 'world' of yours while you were unconscious. From what I could gather, it certainly doesn't sound like any city on Terra.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "I happened to hear them describe this 'world' of yours while you were unconscious. From what I could gather, it certainly doesn't sound like any city on Terra."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But I've never happened across a case like yours before, and a full trawl of the Castle's archives turned up nothing either.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "But I've never happened across a case like yours before, and a full trawl of the Castle's archives turned up nothing either."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I intend to contact Rhodes Island\u2014the Doctor there is quite learned, and should know a way to send you back.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "I intend to contact Rhodes Island\u2014the Doctor there is quite learned, and should know a way to send you back."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Rhodes Island... the pharmaceutical company?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Rhodes Island... the pharmaceutical company?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Indeed. You dreamt of it?",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Indeed. You dreamt of it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes. I'd be keen on visiting again, and I have some 'old friends' I'd like to meet while I'm... um...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Yes. I'd be keen on visiting again, and I have some 'old friends' I'd like to meet while I'm... um..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is something the matter?",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Is something the matter?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I... I'm starting to forget what they looked like.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "I... I'm starting to forget what they looked like."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Iris gently takes Sakiko's hand, as though anticipating her confusion."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Miss Sakiko. You've been through so many people's dreams. I'm sure you know the Castle's rules through and through by now.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Miss Sakiko. You've been through so many people's dreams. I'm sure you know the Castle's rules through and through by now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As with all dreams, the memories will begin to blur and fade from the moment you wake up.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "As with all dreams, the memories will begin to blur and fade from the moment you wake up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Someday or other, you'll return to your 'world', and when you do, you'll forget about me, about the Castle's sweet dreams, about Terra itself.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Someday or other, you'll return to your 'world', and when you do, you'll forget about me, about the Castle's sweet dreams, about Terra itself."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How could I...!",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "How could I...!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But what happens here will not simply be for naught.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "But what happens here will not simply be for naught."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Perhaps you and your friends will have to confront those recurring problems when you go back... but I trust you'll prevail.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Perhaps you and your friends will have to confront those recurring problems when you go back... but I trust you'll prevail."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Even if you forget everything that happened here, you'll remember the courage you showed in times of hardship.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Even if you forget everything that happened here, you'll remember the courage you showed in times of hardship."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes. I trust we will too...",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Yes. I trust we will too..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And when we return to our own world, Ave{@nbs}Mujica will remain together as Ave{@nbs}Mujica.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "And when we return to our own world, Ave{@nbs}Mujica will remain together as Ave{@nbs}Mujica."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And I, Master of the Castle of Dreams, will forever remember you as you are now, as 'children'.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "And I, Master of the Castle of Dreams, will forever remember you as you are now, as 'children'."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Perhaps I'll show up again one day, when you're all grown up\u2014and when I do, I hope you and your friends will still be writing the story of your lives through music.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "Perhaps I'll show up again one day, when you're all grown up\u2014and when I do, I hope you and your friends will still be writing the story of your lives through music."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We have a promise!",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "We have a promise!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_equipment_collapse",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_equipment_collapse",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What is that noise outside the door...?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "What is that noise outside the door...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We don't have another troublemaker, do we?!",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "We don't have another troublemaker, do we?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "65_g2_dreamcastlehall",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "65_g2_dreamcastlehall",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Sakiko hurries to open the door."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4184_dolris_1#13$1",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4184_dolris_1#13$1",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Saki-chan\u2014you're awake! Are you feeling okay?",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "Saki-chan\u2014you're awake! Are you feeling okay?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_1",
+            "volume": 1
+        }
     },
     {
-        "text": "(Half-conscious chirping)",
-        "tag": "name",
-        "value": "Bumbling Corettons"
+        "command": "name",
+        "value": "Bumbling Corettons",
+        "text": "(Half-conscious chirping)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Erm, I'm fine... Can you explain what all the noise out here is about?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Erm, I'm fine... Can you explain what all the noise out here is about?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4184_dolris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4184_dolris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We're setting up a new stage, and Miss Bena's making Morpheus use these little creatures to carry stuff around...",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "We're setting up a new stage, and Miss Bena's making Morpheus use these little creatures to carry stuff around..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A new stage?",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "A new stage?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#3$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#3$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah. Who knows how long we'll be here for. Might as well rehearse while we've got the chance.",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "Yeah. Who knows how long we'll be here for. Might as well rehearse while we've got the chance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4183_mortis_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4183_mortis_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There are so many songs I still want to work on.",
-        "tag": "name",
-        "value": "Mutsumi Wakaba"
+        "command": "name",
+        "value": "Mutsumi Wakaba",
+        "text": "There are so many songs I still want to work on."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4186_tmoris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4186_tmoris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Morpheus wanted to build the stage in a dream, but we and Miss Bena unanimously shot that down.",
-        "tag": "name",
-        "value": "Umiri Yahata"
+        "command": "name",
+        "value": "Umiri Yahata",
+        "text": "Morpheus wanted to build the stage in a dream, but we and Miss Bena unanimously shot that down."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#3$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#3$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah, I'll pass on dreams for the next while...",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "Yeah, I'll pass on dreams for the next while..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4184_dolris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4184_dolris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Agreed...",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "Agreed..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Won't somebody show me a smidge of concern? Why am I being given hard labor?!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Won't somebody show me a smidge of concern? Why am I being given hard labor?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_2",
+            "volume": 1
+        }
     },
     {
-        "text": "(Angry chirping)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Angry chirping)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_369_bena_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_369_bena_1#3$1",
+            "focus": "m"
+        }
     },
     {
         "text": "Bena, accompanying Morpheus, offers no words, instead simply giving one of Morpheus' fluffy ears a nice hard flick."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ahkh\u2014ow-ow-ow!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Ahkh\u2014ow-ow-ow!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_2",
+            "volume": 1
+        }
     },
     {
-        "text": "(Pained chirping)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Pained chirping)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You did the crime, now you do the time, Morpheus...",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "You did the crime, now you do the time, Morpheus..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, you're in this with me, Wolff! Go fit that last light!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Oh, you're in this with me, Wolff! Go fit that last light!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I... alright.",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "I... alright."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Wolff places its hands on the ground, and in a snap, transforms before everyone's eyes into a bestial shape."
@@ -2487,229 +2873,265 @@
         "text": "With the light's power cord held gently in its jaws, it leaps up to the top shelf, and effortlessly drapes it over."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_369_bena_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_369_bena_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Well? How's that for a new stage?",
-        "tag": "name",
-        "value": "Bena"
+        "command": "name",
+        "value": "Bena",
+        "text": "Well? How's that for a new stage?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's so pretty\u2014!",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "It's so pretty\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Nyamu giddily leaps onstage and darts around set after elaborate set."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Humph. Hardly a challenge for me.",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Humph. Hardly a challenge for me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_369_bena_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_369_bena_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are you forgetting the most important part? <i>The instruments!</i>",
-        "tag": "name",
-        "value": "Bena"
+        "command": "name",
+        "value": "Bena",
+        "text": "Are you forgetting the most important part? <i>The instruments!</i>"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ighk\u2014stop\u2014flicking my ears, I'll bring them out now!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Ighk\u2014stop\u2014flicking my ears, I'll bring them out now!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Each instrument appears on stage while Morpheus is still shielding her ears, and the band takes their places."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4183_mortis_1#9$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4183_mortis_1#9$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mm. Still feels good in the hands.",
-        "tag": "name",
-        "value": "Mutsumi Wakaba"
+        "command": "name",
+        "value": "Mutsumi Wakaba",
+        "text": "Mm. Still feels good in the hands."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4185_amoris_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4185_amoris_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Here's hoping that dream-long blank I had didn't screw up my muscle memory\u2014)",
-        "tag": "name",
-        "value": "Nyamu Y\u016btenji"
+        "command": "name",
+        "value": "Nyamu Y\u016btenji",
+        "text": "(Here's hoping that dream-long blank I had didn't screw up my muscle memory\u2014)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4184_dolris_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4184_dolris_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sakiko, we're all ready. Come on.",
-        "tag": "name",
-        "value": "Uika Misumi"
+        "command": "name",
+        "value": "Uika Misumi",
+        "text": "Sakiko, we're all ready. Come on."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Sakiko looks up to see her companions on stage, the spotlight shining on each one of them, as well as a familiar keyboard that seems to call for her return."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_338_iris_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_338_iris_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I look forward to your performance, Miss Sakiko.",
-        "tag": "name",
-        "value": "Iris"
+        "command": "name",
+        "value": "Iris",
+        "text": "I look forward to your performance, Miss Sakiko."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_369_bena_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_369_bena_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We missed out on seeing the whole thing last time! Now we can make up for that.",
-        "tag": "name",
-        "value": "Bena"
+        "command": "name",
+        "value": "Bena",
+        "text": "We missed out on seeing the whole thing last time! Now we can make up for that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1937_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1937_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_yingying_ked_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_yingying_ked_1",
+            "volume": 1
+        }
     },
     {
-        "text": "(Joyful chirping)",
-        "tag": "name",
-        "value": "Corettons"
+        "command": "name",
+        "value": "Corettons",
+        "text": "(Joyful chirping)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1938_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1938_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Getting to attend your performance, not as an enemy, but as a friend, makes me happier than anything.",
-        "tag": "name",
-        "value": "Wolff"
+        "command": "name",
+        "value": "Wolff",
+        "text": "Getting to attend your performance, not as an enemy, but as a friend, makes me happier than anything."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, you people are such goody-two-shoes!",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Oh, you people are such goody-two-shoes!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A\u2014Anyhow... I'll be listening closely.",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "A\u2014Anyhow... I'll be listening closely."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Pft... hahahaha...!",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Pft... hahahaha...!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1942_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1942_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wh-What are you laughing at? Don't think you can walk all over me just because Iris and Bena are here...",
-        "tag": "name",
-        "value": "Morpheus"
+        "command": "name",
+        "value": "Morpheus",
+        "text": "Wh-What are you laughing at? Don't think you can walk all over me just because Iris and Bena are here..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No, nothing... haha! I'm coming now.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "No, nothing... haha! I'm coming now."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Sakiko takes her bandmates' hands, and steps onto the stage of Ave{@nbs}Mujica."
@@ -2718,55 +3140,65 @@
         "text": "Much as when the last piece of a puzzle falls in place, the picture comes as no particular surprise, but it is the very moment when everything becomes whole again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4182_oblvns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4182_oblvns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Everyone! Upon this land, we shall leave our sound!",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Everyone! Upon this land, we shall leave our sound!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "65_i13",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "65_i13",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
         "text": "In the moonlight, the doll takes on a temporal life."
@@ -2787,46 +3219,50 @@
         "text": "Here, a new fairytale is born."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "This is the wondrous adventure story of us, the dolls.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "This is the wondrous adventure story of us, the dolls."
     },
     {
-        "text": "Welcome... to the world of Ave{@nbs}Mujica.",
-        "tag": "name",
-        "value": "Sakiko Togawa"
+        "command": "name",
+        "value": "Sakiko Togawa",
+        "text": "Welcome... to the world of Ave{@nbs}Mujica."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

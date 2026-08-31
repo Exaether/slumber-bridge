@@ -1,1783 +1,2058 @@
 [
     {
-        "text": "\u521d\u59cb\u5f15\u5bfc",
-        "tag": "header",
-        "is_tutorial": true,
-        "is_skippable": true,
-        "is_autoable": true,
-        "fit_mode": "BLACK_MASK",
-        "deny_auto_switch_scene": true
+        "command": "playmusic",
+        "params": {
+            "key": "$babel_loop",
+            "volume": 0.8,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$babel_loop",
-        "volume": 0.8,
-        "delay": 0.2
+        "text": "Ah, it's you."
     },
     {
-        "text": "Ah, it's you.",
-        "tag": "name"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "image",
+        "params": {
+            "image": "bg_0_babel",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "bg_0_babel",
-        "fadetime": 1,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "image": "bg_0_babel",
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "duration": 3,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "image": "bg_0_babel",
-        "tiled": true,
-        "xScaleTo": 1.05,
-        "yScaleTo": 1.05,
-        "duration": 3,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "image": "bg_0_babel",
+            "xscale": 1.5,
+            "yscale": 1.5,
+            "duration": 75,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "image": "bg_0_babel",
-        "tiled": true,
-        "xScaleTo": 1.5,
-        "yScaleTo": 1.5,
-        "duration": 75,
-        "block": false
+        "text": "It's been a long time since we've last seen each other."
     },
     {
-        "text": "It's been a long time since we've last seen each other.",
-        "tag": "name"
+        "text": "During this time... you've been teetering on the edge of a cliff."
     },
     {
-        "text": "During this time... you've been teetering on the edge of a cliff.",
-        "tag": "name"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1.3
     },
     {
-        "tag": "delay",
-        "time": 1.3
+        "text": "You may have forgotten who you are, but just remembering your name is enough."
     },
     {
-        "text": "You may have forgotten who you are, but just remembering your name is enough.",
-        "tag": "name"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "text": "...It's time. Don't linger here for too long."
     },
     {
-        "text": "...It's time. Don't linger here for too long.",
-        "tag": "name"
+        "text": "After all, you aren't my guest yet, nor should you even be here."
     },
     {
-        "text": "After all, you aren't my guest yet, nor should you even be here.",
-        "tag": "name"
+        "text": "She still needs you."
     },
     {
-        "text": "She still needs you.",
-        "tag": "name"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "text": "December 23rd."
     },
     {
-        "text": "December 23rd.",
-        "tag": "name"
+        "text": "You may not remember what this date means to you."
     },
     {
-        "text": "You may not remember what this date means to you.",
-        "tag": "name"
+        "text": "And this will thrust you into peril."
     },
     {
-        "text": "And this will thrust you into peril.",
-        "tag": "name"
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "image"
     },
     {
-        "tag": "image"
+        "text": "No..."
     },
     {
-        "text": "No...",
-        "tag": "name"
+        "text": "You must try to remember."
     },
     {
-        "text": "You must try to remember.",
-        "tag": "name"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playmusic",
+        "params": {
+            "intro": "$ekg_loop",
+            "key": "$ekg_loop",
+            "volume": 0.8,
+            "delay": 0
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$ekg_loop",
-        "key": "$ekg_loop",
-        "volume": 0.8,
-        "delay": 0
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 1
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 1
+        "command": "image",
+        "params": {
+            "image": "bg_0_am",
+            "fadetime": 0,
+            "block": false
+        }
     },
     {
-        "tag": "image",
-        "image": "bg_0_am",
-        "tiled": true,
-        "fadetime": 0,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 18,
+            "amount": 0,
+            "block": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 18,
-        "amount": 0,
-        "block": false
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "...consciousness..."
     },
     {
-        "text": "...consciousness...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "Circulation resumed... vitals stabilized... cardioplegia solution injected..."
     },
     {
-        "text": "Circulation resumed... vitals stabilized... cardioplegia solution injected...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 8,
+            "amount": 1,
+            "block": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 8,
-        "amount": 1,
-        "block": false
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "Body temperature low... administering Hexamethasone 20 c.c., now..."
     },
     {
-        "text": "Body temperature low... administering Hexamethasone 20 c.c., now...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 8,
+            "amount": 0,
+            "block": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 8,
-        "amount": 0,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "Get the hemostat!"
     },
     {
-        "text": "Get the hemostat!",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "...Conditions stable... beginning resection... be careful of VFib..."
     },
     {
-        "text": "...Conditions stable... beginning resection... be careful of VFib...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "...Sorry..."
     },
     {
-        "text": "...Sorry...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "For making you suffer again..."
     },
     {
-        "text": "For making you suffer again...",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "fadetime": 1,
+            "block": false
+        }
     },
     {
-        "tag": "background",
-        "fadetime": 1,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_arrow_h",
+            "volume": 0.2,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_arrow_h",
-        "volume": 0.2,
-        "Delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.1,
+            "delay": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.1,
-        "Delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 159,
+            "g": 254,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 159,
-        "g": 254,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 255,
+            "g": 96,
+            "b": 15,
+            "afrom": 1,
+            "rfrom": 14,
+            "gfrom": 0,
+            "bfrom": 15,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 255,
-        "g": 96,
-        "b": 15,
-        "afrom": 1,
-        "rfrom": 14,
-        "gfrom": 0,
-        "bfrom": 15,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 0.8,
+            "rfrom": 255,
+            "gfrom": 96,
+            "bfrom": 15,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 0.8,
-        "rfrom": 255,
-        "gfrom": 96,
-        "bfrom": 15,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "delay"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 225,
+            "g": 225,
+            "b": 225,
+            "afrom": 1,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay"
+        "command": "image",
+        "params": {
+            "image": "avg_0_2",
+            "x": -100,
+            "y": -50,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 225,
-        "g": 225,
-        "b": 225,
-        "afrom": 1,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "name",
+        "value": "???",
+        "text": "Doctor..."
     },
     {
-        "tag": "image",
-        "image": "avg_0_2",
-        "x": -100,
-        "y": -50,
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "fadetime": 0
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 10,
+            "block": false
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "...hand!"
     },
     {
-        "text": "Doctor...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Take my..."
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 10,
-        "block": false
+        "command": "name",
+        "value": "???",
+        "text": "Take my hand!!"
     },
     {
-        "text": "...hand!",
-        "tag": "name",
-        "value": "???"
+        "command": "dialog"
     },
     {
-        "text": "Take my...",
-        "tag": "name",
-        "value": "???"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Take my hand!!",
-        "tag": "name",
-        "value": "???"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "dialog",
-        "time": 1
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.8,
+            "crossfade": 1,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "avg_0_1",
+            "x": -100,
+            "y": -50,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "imagetween",
+        "params": {
+            "xfrom": -100,
+            "yfrom": -50,
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 1.3,
+            "yscalefrom": 1.3,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 35,
+            "block": false
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.8,
-        "crossfade": 1,
-        "delay": 0.5
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "tag": "image",
-        "image": "avg_0_1",
-        "x": -100,
-        "y": -50,
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "fadetime": 2
+        "command": "name",
+        "value": "???",
+        "text": "Emergency..."
     },
     {
-        "tag": "imagetween",
-        "xFrom": -100,
-        "yFrom": -50,
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 1.3,
-        "yScaleFrom": 1.3,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 35,
-        "block": false
+        "command": "name",
+        "value": "???",
+        "text": "...Help..."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "...It's done...!"
     },
     {
-        "text": "Emergency...",
-        "tag": "name",
-        "value": "???"
+        "command": "dialog"
     },
     {
-        "text": "...Help...",
-        "tag": "name",
-        "value": "???"
+        "command": "image",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "text": "...It's done...!",
-        "tag": "name",
-        "value": "???"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "image",
-        "fadetime": 2
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "???",
+        "text": "Doctor, Doctor!"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#1"
+        "command": "dialog"
     },
     {
-        "text": "Doctor, Doctor!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Medic, how's Doctor doing?"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "???",
+        "text": "But, just a moment ago... we were holding hands..."
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "???",
+        "text": "So why... why is Doctor still not waking up...?"
     },
     {
-        "text": "Medic, how's Doctor doing?",
-        "tag": "name",
-        "value": "???"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "text": "But, just a moment ago... we were holding hands...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "Medic",
+        "text": "Amiya! Don't panic, just calm down first!"
     },
     {
-        "text": "So why... why is Doctor still not waking up...?",
-        "tag": "name",
-        "value": "???"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Ah... S-sorry."
     },
     {
-        "text": "Amiya! Don't panic, just calm down first!",
-        "tag": "name",
-        "value": "Medic"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 2
+        "command": "name",
+        "value": "Medic",
+        "text": "You always get so flustered when it comes to the doctor."
     },
     {
-        "text": "Ah... S-sorry.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Medic",
+        "text": "But, Amiya, if the worst came to pass... what would you do then?"
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 2
+        }
     },
     {
-        "text": "You always get so flustered when it comes to the doctor.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...I'm already mentally prepared for that. We would continue to follow the plan."
     },
     {
-        "text": "But, Amiya, if the worst came to pass... what would you do then?",
-        "tag": "name",
-        "value": "Medic"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 2
+        "command": "name",
+        "value": "Medic",
+        "text": "...I understand. Anyway, I'll do what you requested."
     },
     {
-        "text": "...I'm already mentally prepared for that. We would continue to follow the plan.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "All right... I appreciate it."
     },
     {
-        "text": "...I understand. Anyway, I'll do what you requested.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#1",
-        "focus": 2
+        "command": "name",
+        "value": "Amiya",
+        "text": "About the Doctor..."
     },
     {
-        "text": "All right... I appreciate it.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 2
+        "command": "name",
+        "value": "Medic",
+        "text": "Don't worry, Amiya. All the vital signs are stable now."
     },
     {
-        "text": "About the Doctor...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Medic",
+        "text": "I'll do one more inspection, just for you."
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Don't worry, Amiya. All the vital signs are stable now.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Thank you... Thank you very much!"
     },
     {
-        "text": "I'll do one more inspection, just for you.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1#4",
-        "focus": 2
+        "command": "dialog"
     },
     {
-        "text": "Thank you... Thank you very much!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Medic",
+        "text": "Mhm. Breathing is slightly shallow, but blood pressure is normal. There should be no cause for concern."
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 255,
+            "g": 150,
+            "b": 13,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_blunt_n"
+        }
     },
     {
-        "text": "Mhm. Breathing is slightly shallow, but blood pressure is normal. There should be no cause for concern.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 3,
+            "ystrength": 4,
+            "vibration": 30,
+            "randomness": 90,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 255,
-        "g": 150,
-        "b": 13,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_blunt_n"
+        "command": "background",
+        "params": {
+            "image": "bg_indoor_1",
+            "width": 1,
+            "height": 1,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 3,
-        "ystrength": 4,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "name",
+        "value": "Amiya",
+        "text": "...!"
     },
     {
-        "tag": "background",
-        "image": "bg_indoor_1",
-        "width": 1,
-        "height": 1,
-        "fadetime": 0.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6"
+        "command": "name",
+        "value": "Medic",
+        "text": "..."
     },
     {
-        "text": "...!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Medic",
+        "text": "Are you awake?"
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "name",
+        "value": "Medic",
+        "text": "Amiya, it's a success! The Doctor has woken up!"
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Medic"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#3"
+        }
     },
     {
-        "text": "Are you awake?",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor...?"
     },
     {
-        "text": "Amiya, it's a success! The Doctor has woken up!",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm so happy... Doctor..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "text": "Doctor...?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Medic",
+        "text": "Ah, careful! You mustn't do that..."
     },
     {
-        "text": "I'm so happy... Doctor...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 1,
+            "g": 0.5,
+            "b": 0.5,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "text": "Ah, careful! You mustn't do that...",
-        "tag": "name",
-        "value": "Medic"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 15,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 1,
-        "g": 0.5,
-        "b": 0.5,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "name",
+        "value": "Medic",
+        "text": "Don't try to move yet. Your body still hasn't fully adapted to this."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 15,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor...?"
     },
     {
-        "text": "Don't try to move yet. Your body still hasn't fully adapted to this.",
-        "tag": "name",
-        "value": "Medic"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "dialog"
     },
     {
-        "text": "Doctor...?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#3",
+            "focus": -1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "decision",
+        "params": {
+            "options": "Who... are you?",
+            "values": "1"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#3",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Who... are you?",
-        "values": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "Ah, Doctor... It's me..."
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6"
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "text": "Ah, Doctor... It's me...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's me, Amiya."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We've come to rescue you."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "decision",
+        "params": {
+            "options": "...Who... am I...?",
+            "values": "1"
+        }
     },
     {
-        "text": "It's me, Amiya.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "We've come to rescue you.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...Who... am I...?",
-        "values": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "You..."
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "You're a member of Rhodes Island, just like us..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...as well as my partner."
     },
     {
-        "text": "You...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...Dr. {@nickname}."
     },
     {
-        "text": "You're a member of Rhodes Island, just like us...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "You're the most important person to me."
     },
     {
-        "text": "...as well as my partner.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor... you don't remember?"
     },
     {
-        "text": "...Dr. {@nickname}.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "...Can I trust you?;...;I see... Pleased to meet you, Amiya.",
+            "values": "1;2;3"
+        }
     },
     {
-        "text": "You're the most important person to me.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Doctor... you don't remember?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...Can I trust you?;...;I see... Pleased to meet you, Amiya.",
-        "values": "1;2;3"
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "I understand. I know this is a bit much to take in right now."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I don't expect you to remember everything right away, and I'm not asking you to trust me right now."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "text": "I understand. I know this is a bit much to take in right now.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "text": "I don't expect you to remember everything right away, and I'm not asking you to trust me right now.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Dr. {@nickname}, do you really not remember me at all...?"
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Even if that's the case... I won't give up."
     },
     {
-        "text": "Dr. {@nickname}, do you really not remember me at all...?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We've already sacrificed so much, just to find you..."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "text": "Even if that's the case... I won't give up.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6"
+        }
     },
     {
-        "text": "We've already sacrificed so much, just to find you...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Ah, um, hello."
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "text": "Ah, um, hello.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I, I don't know how to put this, but so many things have changed from before."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "That includes me as well."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "text": "I, I don't know how to put this, but so many things have changed from before.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#1"
+        }
     },
     {
-        "text": "That includes me as well.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "However, you'll always be the most important person to me, Doctor. No matter what happens, this will never change."
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "name",
+        "value": "Amiya",
+        "text": "So that's why, please... give me a little more time."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "However little it might be..."
     },
     {
-        "text": "However, you'll always be the most important person to me, Doctor. No matter what happens, this will never change.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "......",
+            "values": "1"
+        }
     },
     {
-        "text": "So that's why, please... give me a little more time.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "However little it might be...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#1",
+            "name2": "char_016_medic",
+            "focus": 2
+        }
     },
     {
-        "tag": "decision",
-        "options": "......",
-        "values": 1
+        "command": "name",
+        "value": "Medic",
+        "text": "Does the doctor... really have amnesia?"
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#1",
+            "name2": "char_016_medic",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#1",
-        "name2": "char_016_medic",
-        "focus": 2
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "text": "Does the doctor... really have amnesia?",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm sure everything will be fine if we give Doctor some space..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#1",
-        "name2": "char_016_medic",
-        "focus": 1
+        "command": "decision",
+        "params": {
+            "options": "Where is this...",
+            "values": "1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "I'm sure everything will be fine if we give Doctor some space...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's safe here\u2014"
     },
     {
-        "tag": "decision",
-        "options": "Where is this...",
-        "values": 1
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 8,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "text": "It's safe here\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_rockexplo"
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 0.8
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 8,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_rockexplo"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Huh? What's happening\u2014"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 0.8
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6",
+            "name2": "char_013_riop",
+            "focus": 2
+        }
     },
     {
-        "tag": "delay"
+        "command": "name",
+        "value": "Heavily-Armed Man",
+        "text": "Amiya, we've got a problem!"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6",
+            "name2": "char_013_riop",
+            "focus": 2
+        }
     },
     {
-        "text": "Huh? What's happening\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Heavily-Armed Man",
+        "text": "Someone broke into the facility!"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6",
-        "name2": "char_013_riop",
-        "focus": 2
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "text": "Amiya, we've got a problem!",
-        "tag": "name",
-        "value": "Heavily-Armed Man"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6",
-        "name2": "char_013_riop",
-        "focus": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$escape_intro",
+            "key": "$escape_loop",
+            "volume": 0.8,
+            "crossfade": 1.5,
+            "delay": 0.5
+        }
     },
     {
-        "text": "Someone broke into the facility!",
-        "tag": "name",
-        "value": "Heavily-Armed Man"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 8,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.6,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_1002_nsabr_1"
+        }
     },
     {
-        "tag": "delay"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_rockexplo"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$escape_intro",
-        "key": "$escape_loop",
-        "volume": 0.8,
-        "crossfade": 1.5,
-        "delay": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 8,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": false
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "character",
-        "name": "char_1002_nsabr_1"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#6",
+            "name2": "char_013_riop",
+            "focus": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "name",
+        "value": "Heavily-Armed Man",
+        "text": "The way they're dressed... they don't look like Ursus soldiers!"
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_rockexplo"
+        "command": "character",
+        "params": {
+            "name": "char_1002_nsabr_1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 30,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#6",
-        "name2": "char_013_riop",
-        "focus": 2
+        "command": "name",
+        "value": "Reunion Member",
+        "text": "..."
     },
     {
-        "text": "The way they're dressed... they don't look like Ursus soldiers!",
-        "tag": "name",
-        "value": "Heavily-Armed Man"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "char_1002_nsabr_1"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": false
+        "command": "name",
+        "value": "Heavily-Armed Man",
+        "text": "What's the meaning of this?!"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun"
+        "command": "dialog"
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Reunion Member"
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "text": "What's the meaning of this?!",
-        "tag": "name",
-        "value": "Heavily-Armed Man"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 5,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 90,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "name",
+        "value": "Heavily-Armed Man",
+        "text": "They're attacking! Amiya, they're heavily equipped with weapons!"
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.25,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_arrow_h"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 5,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_arrow_h"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "text": "They're attacking! Amiya, they're heavily equipped with weapons!",
-        "tag": "name",
-        "value": "Heavily-Armed Man"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 5,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 90,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_016_medic"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_arrow_h"
+        "command": "name",
+        "value": "Medic",
+        "text": "Aaaahh!"
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_arrow_h"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.25,
-        "block": true
+        "command": "name",
+        "value": "Amiya",
+        "text": "Be careful, everyone! Take cover, and protect Doctor!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 5,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": true
+        "command": "name",
+        "value": "Amiya",
+        "text": "These outfits... are they from the Reunion Movement? But how is that possible..."
     },
     {
-        "tag": "character",
-        "name": "char_016_medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Guards, prepare for battle!"
     },
     {
-        "text": "Aaaahh!",
-        "tag": "name",
-        "value": "Medic"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "name",
+        "value": "Guard",
+        "text": "Roger!"
     },
     {
-        "text": "Be careful, everyone! Take cover, and protect Doctor!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character"
     },
     {
-        "text": "These outfits... are they from the Reunion Movement? But how is that possible...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 8,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "text": "Guards, prepare for battle!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "text": "Roger!",
-        "tag": "name",
-        "value": "Guard"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 8,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": false
+        "command": "name",
+        "value": "Guard",
+        "text": "Curses... Are they after the Doctor?!"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1",
+            "name2": "char_013_riop",
+            "focus": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No... Nobody else should know about the Doctor being here."
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_013_riop",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Are you able to reach Kal'tsit?"
     },
     {
-        "text": "Curses... Are they after the Doctor?!",
-        "tag": "name",
-        "value": "Guard"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1",
+            "name2": "char_013_riop",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1",
-        "name2": "char_013_riop",
-        "focus": 1
+        "command": "name",
+        "value": "Guard",
+        "text": "I'm not sure why, but the equipment isn't working!"
     },
     {
-        "text": "No... Nobody else should know about the Doctor being here.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_013_riop",
-        "focus": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "...Someone has cut off our communications."
     },
     {
-        "text": "Are you able to reach Kal'tsit?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Have we been discovered by the Ursus government?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1",
-        "name2": "char_013_riop",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1",
+            "name2": "char_013_riop",
+            "focus": 2
+        }
     },
     {
-        "text": "I'm not sure why, but the equipment isn't working!",
-        "tag": "name",
-        "value": "Guard"
+        "command": "name",
+        "value": "Guard",
+        "text": "What do we do now?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "text": "...Someone has cut off our communications.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Kal'tsit won't be able to command the battle as we had originally planned."
     },
     {
-        "text": "Have we been discovered by the Ursus government?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1",
-        "name2": "char_013_riop",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "What do we do now?",
-        "tag": "name",
-        "value": "Guard"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...Dr. {@nickname}."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I hope that... you'll be able to take command."
     },
     {
-        "text": "Kal'tsit won't be able to command the battle as we had originally planned.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1",
+            "focus": 1
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Medic",
+        "text": "Isn't that a bit too risky? The Doctor only just came to..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_016_medic",
+            "name2": "char_002_amiya_1",
+            "focus": 2
+        }
     },
     {
-        "text": "...Dr. {@nickname}.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'd like... to give it a try."
     },
     {
-        "text": "I hope that... you'll be able to take command.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1",
-        "focus": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "Even without memories, Doctor has..."
     },
     {
-        "text": "Isn't that a bit too risky? The Doctor only just came to...",
-        "tag": "name",
-        "value": "Medic"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...fought alongside us before."
     },
     {
-        "tag": "character",
-        "name": "char_016_medic",
-        "name2": "char_002_amiya_1",
-        "focus": 2
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "text": "I'd like... to give it a try.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a"
+        }
     },
     {
-        "text": "Even without memories, Doctor has...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "text": "...fought alongside us before.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#8"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.4
+        "command": "name",
+        "value": "???",
+        "text": "Thank you for all of your guidance..."
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#8"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_indoor_1"
+        }
     },
     {
-        "text": "Thank you for all of your guidance...",
-        "tag": "name",
-        "value": "???"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.1
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_indoor_1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We've been through so much together..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor... I just know that you'll be able to do it."
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a"
+        }
     },
     {
-        "text": "We've been through so much together...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "text": "Doctor... I just know that you'll be able to do it.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#8"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.4
+        "command": "name",
+        "value": "???",
+        "text": "I know that you'll lead us to victory."
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#8"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_indoor_1"
+        }
     },
     {
-        "text": "I know that you'll lead us to victory.",
-        "tag": "name",
-        "value": "???"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.1
+        "command": "name",
+        "value": "Amiya",
+        "text": "I understand that asking you to do this is very sudden and inconsiderate."
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0
+        "command": "name",
+        "value": "Amiya",
+        "text": "But... Please, lend us your aid."
     },
     {
-        "tag": "background",
-        "image": "bg_indoor_1"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We'll be supporting you!"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "decision",
+        "params": {
+            "options": "Let's push them back first!;...;We have no choice but to fight back, right?",
+            "values": "1;2;3"
+        }
     },
     {
-        "text": "I understand that asking you to do this is very sudden and inconsiderate.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "text": "But... Please, lend us your aid.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#2"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Mm... I don't want to drag you into this."
     },
     {
-        "text": "We'll be supporting you!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But right now, we need your wisdom more than ever, Dr. {@nickname}."
     },
     {
-        "tag": "decision",
-        "options": "Let's push them back first!;...;We have no choice but to fight back, right?",
-        "values": "1;2;3"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I hope that a part of you will reawaken during combat."
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Even though you might have doubts about yourself..."
     },
     {
-        "text": "Mm... I don't want to drag you into this.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character"
     },
     {
-        "text": "But right now, we need your wisdom more than ever, Dr. {@nickname}.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "background"
     },
     {
-        "text": "I hope that a part of you will reawaken during combat.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But I believe in you."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "image",
+        "params": {
+            "image": "avg_0_3",
+            "fadetime": 0.8
+        }
     },
     {
-        "text": "Even though you might have doubts about yourself...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I know you can do this."
     },
     {
-        "tag": "character"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Please take command... of Rhodes Island!"
     },
     {
-        "tag": "background"
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "text": "But I believe in you.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "dialog"
     },
     {
-        "tag": "image",
-        "image": "avg_0_3",
-        "fadetime": 0.8
+        "command": "blocker",
+        "params": {
+            "block": true
+        }
     },
     {
-        "text": "I know you can do this.",
-        "tag": "name",
-        "value": "Amiya"
-    },
-    {
-        "text": "Please take command... of Rhodes Island!",
-        "tag": "name",
-        "value": "Amiya"
-    },
-    {
-        "tag": "delay",
-        "time": 0.6
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "blocker",
-        "block": true
-    },
-    {
-        "tag": "image"
-    },
-    {
-        "tag": "skiptothis"
-    },
-    {
-        "tag": "startbattle",
-        "stageId": "guide_01"
-    },
-    {
-        "tag": "tutorial",
-        "waitForSignal": "battle_start"
+        "command": "image"
     }
 ]

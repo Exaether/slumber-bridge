@@ -1,597 +1,711 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "58_g10_restaurantkitchen",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "58_g10_restaurantkitchen",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_bat_kjerag_h_intro",
+            "key": "$m_bat_kjerag_h_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_bat_kjerag_h_intro",
-        "key": "$m_bat_kjerag_h_loop",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firemagic"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firemagic"
+        "command": "camerashake",
+        "params": {
+            "duration": 1.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 35,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 35,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 1,
+            "rfrom": 1,
+            "gfrom": 1,
+            "bfrom": 1,
+            "fadetime": 1,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 1,
-        "rfrom": 1,
-        "gfrom": 1,
-        "bfrom": 1,
-        "fadetime": 1,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Watch out!"
     },
     {
-        "text": "Watch out!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#7$1"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "What even\u2014"
     },
     {
-        "text": "What even\u2014",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst"
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0.5,
+            "g": 0.2,
+            "b": 0.1,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0.5,
-        "g": 0.2,
-        "b": 0.1,
-        "fadetime": 0.5,
-        "block": true
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_burn",
+            "layer": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_burn",
-        "layer": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "bgs",
-        "fadetime": 2
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 1,
-        "rfrom": 1,
-        "gfrom": 1,
-        "bfrom": 1,
-        "fadetime": 1,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 1,
+            "rfrom": 1,
+            "gfrom": 1,
+            "bfrom": 1,
+            "fadetime": 1,
+            "block": false
+        }
     },
     {
         "text": "Flames burst forth above their heads, raining cinders down from the ceiling, igniting the flour and oil atop the stove. In an instant, the kitchen is a sea of fire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#4$1"
+        }
     },
     {
-        "text": "*cough* *cough* *cough*!",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "*cough* *cough* *cough*!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#5$1"
+        }
     },
     {
-        "text": "You... go... I'll be fine!",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "You... go... I'll be fine!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "text": "Cover your mouth and nose! Don't talk!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Cover your mouth and nose! Don't talk!"
     },
     {
-        "text": "I'm not too good with this move yet... let's give it a try.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I'm not too good with this move yet... let's give it a try."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#2$1"
+        }
     },
     {
-        "text": "'Scuse me, just duck.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "'Scuse me, just duck."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "duration": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_windmagic"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_windmagic"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "background",
-        "image": "58_g10_restaurantkitchen",
-        "x": 0,
-        "y": 0,
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "image": "58_g10_restaurantkitchen",
+            "x": 0,
+            "y": 0,
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "fadetime": 1
+        }
     },
     {
         "text": "Blaze grabs a knife, then slices her palm open. Gradually a whirlwind forms in Blaze's hand, then expands straight outward into a blast wave."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_strongwind"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_strongwind"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_steam_sw",
-        "layer": 2
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_steam_sw",
+            "layer": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "backgroundtween",
-        "xFrom": 0,
-        "yFrom": 0,
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 0.5,
-        "block": false
+        "command": "backgroundtween",
+        "params": {
+            "xfrom": 0,
+            "yfrom": 0,
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 5
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_knockoverdish"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_knockoverdish"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sundries",
-        "channel": 2,
-        "volum": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sundries",
+            "channel": 2,
+            "volume": 0.5
+        }
     },
     {
-        "tag": "bgeffect",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "layer": 1
+        }
     },
     {
         "text": "The violent surge of air sweeps the whole room. In a blink, she's put the fires out, and strewn the cookware about in shambles."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "What a skill you have... Could you be...",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "What a skill you have... Could you be..."
     },
     {
-        "text": "...Duoxie.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "...Duoxie."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#1$1"
+        }
     },
     {
+        "command": "name",
         "text": "You're welcome\u2014",
-        "tag": "multiline",
-        "name": "Blaze"
+        "value": "Blaze"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#2$1"
+        }
     },
     {
+        "command": "name",
         "text": "Hm?",
-        "tag": "multiline",
-        "name": "Blaze"
+        "value": "Blaze"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 20,
-        "ystrength": 2,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 20,
+            "ystrength": 2,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_drawbridge",
-        "loop": true,
-        "channel": "bgs"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_drawbridge",
+            "loop": true,
+            "channel": "bgs"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
         "text": "Looking up again, Blaze sees the lamp's frame is charred black, red-hot metal peeking through the burnt coating. It's on the verge of falling."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "text": "Mo Bufu, move!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Mo Bufu, move!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1619_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1619_1#7$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "style": "slider",
-        "inverse": false,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "style": "slider",
+            "inverse": false,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_1040_blaze2_1#9$1",
-        "posfrom": "-150,0",
-        "posto": "50,0",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_1040_blaze2_1#9$1",
+            "posfrom": "-150,0",
+            "posto": "50,0",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Blaze grabs the old man's arm, trying to pull him to one side, but the lamp's already falling\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "afrom": 0.6,
-        "rfrom": 1,
-        "gfrom": 1,
-        "bfrom": 0.5,
-        "fadetime": 1.5,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "afrom": 0.6,
+            "rfrom": 1,
+            "gfrom": 1,
+            "bfrom": 0.5,
+            "fadetime": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lightningmagic"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lightningmagic"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "duration": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smashcello",
-        "delay": 1,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smashcello",
+            "delay": 1,
+            "channel": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_windowbreak",
-        "delay": 1,
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_windowbreak",
+            "delay": 1,
+            "channel": 3
+        }
     },
     {
         "text": "With a stifled crack of thunder, the remains of the fixture are abruptly flung to one side, and smashed hard against the wall."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Are you alright there?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Are you alright there?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#11$1"
+        }
     },
     {
-        "text": "Leizi?! What are YOU doing here?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Leizi?! What are YOU doing here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#2$1"
+        }
     },
     {
-        "text": "...Maybe I should ask, what are <i>you</i> doing here?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "...Maybe I should ask, what are <i>you</i> doing here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#8$1"
+        }
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "But we can talk about you later...",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "But we can talk about you later..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#3$1"
+        }
     },
     {
-        "text": "Could this be a repeat of the Ding Feng Lou fire last month...?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Could this be a repeat of the Ding Feng Lou fire last month...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Lin Qingyan scans her surroundings. The kitchen chefs are in a frenzied jumble, but her gaze quickly locks onto a masked figure among them."
@@ -600,119 +714,139 @@
         "text": "...Who seems to meet her gaze, then turns and vanishes into the crowd."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "...!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "...!"
     },
     {
-        "text": "Blaze, stay here! Keep Mo Bufu safe!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Blaze, stay here! Keep Mo Bufu safe!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "250,0",
-        "duration": 0.5,
-        "afrom": 1,
-        "ato": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "250,0",
+            "duration": 0.5,
+            "afrom": 1,
+            "ato": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#11$1"
+        }
     },
     {
-        "text": "Hey! Where are you going?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Hey! Where are you going?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "text": "*cough* *cough*... Jeez, this smoke is killing me.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "*cough* *cough*... Jeez, this smoke is killing me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#4$1"
+        }
     },
     {
-        "text": "*cough* *hack*... On that pillar there, there's a breaker...",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "*cough* *hack*... On that pillar there, there's a breaker..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#8$1"
+        }
     },
     {
-        "text": "There's, uh... a lot of them here... Which one do I pull...?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "There's, uh... a lot of them here... Which one do I pull...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "58_g15_restaurantlobby",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "58_g15_restaurantlobby",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp"
+        }
     },
     {
         "text": "Flitting like a fowl, Lin Qingyan has her target cornered in just a few spry leaps."
@@ -721,200 +855,236 @@
         "text": "Mere meters separate them, but so smoky is the air that she can't quite make out their silhouette."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 5,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 5,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lightningmagic"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lightningmagic"
+        }
     },
     {
         "text": "Just as he makes to run again, a thunderclap strikes next to his feet."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Hold it!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Hold it!"
     },
     {
-        "text": "Move another inch, and the next bolt is hitting your head.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Move another inch, and the next bolt is hitting your head."
     },
     {
-        "text": "Answer my questions.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Answer my questions."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Why set fire to Ding Feng Lou? Is your target Mo Bufu, or someone else?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Why set fire to Ding Feng Lou? Is your target Mo Bufu, or someone else?"
     },
     {
-        "text": "All the previous incidents, they were your doing too, weren't they?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "All the previous incidents, they were your doing too, weren't they?"
     },
     {
-        "text": "Also... the scrollery?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Also... the scrollery?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "You... and your accomplices, must have some aim in all these actions\u2014what is it?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "You... and your accomplices, must have some aim in all these actions\u2014what is it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Not talking? Then I'll take you back to the Judicial Review Office, for a nice long questioning\u2014",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Not talking? Then I'll take you back to the Judicial Review Office, for a nice long questioning\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Deputy Minister Lin, surely you wouldn't ask if you didn't know the answer already?",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "Deputy Minister Lin, surely you wouldn't ask if you didn't know the answer already?"
     },
     {
-        "text": "Can you not see the truth, or do you simply pretend you can't because you don't dare to?",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "Can you not see the truth, or do you simply pretend you can't because you don't dare to?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#10$1"
+        }
     },
     {
-        "text": "What\u2014",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "What\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "The Office is a good place, but I don't plan on visiting it for now.",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "The Office is a good place, but I don't plan on visiting it for now."
     },
     {
-        "text": "Besides, when your will wavers, the thunder you throw isn't so frightening.",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "Besides, when your will wavers, the thunder you throw isn't so frightening."
     },
     {
-        "text": "It's time you opened your eyes.",
-        "tag": "name",
-        "value": "Masked Individual"
+        "command": "name",
+        "value": "Masked Individual",
+        "text": "It's time you opened your eyes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Wait\u2014",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Wait\u2014"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#10$1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carwash",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carwash",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "And with that, the masked figure is on the move. Just as Lin Qingyan would give chase, the ceiling sprinklers start up out of nowhere."
@@ -923,845 +1093,991 @@
         "text": "Ice-cold water pours down, soaking her head to foot."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#10$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#10$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Leizi\u2014",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Leizi\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "text": "You alright?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "You alright?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Dammit.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Dammit."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "25_g11_yanroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "25_g11_yanroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$ponder_intro",
-        "key": "$ponder_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$ponder_intro",
+            "key": "$ponder_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1635_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1635_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "The customers are all safely out of the way, there's just a few in shock. Thank goodness no one was injured...",
-        "tag": "name",
-        "value": "Flustered Chef"
+        "command": "name",
+        "value": "Flustered Chef",
+        "text": "The customers are all safely out of the way, there's just a few in shock. Thank goodness no one was injured..."
     },
     {
-        "text": "We've reported it to the authorities. The mandarins should be here any moment...",
-        "tag": "name",
-        "value": "Flustered Chef"
+        "command": "name",
+        "value": "Flustered Chef",
+        "text": "We've reported it to the authorities. The mandarins should be here any moment..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Don't we have a mandarin here already?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Don't we have a mandarin here already?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#3$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1635_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1635_1#1$1"
+        }
     },
     {
-        "text": "Head Chef... you're...",
-        "tag": "name",
-        "value": "Flustered Chef"
+        "command": "name",
+        "value": "Flustered Chef",
+        "text": "Head Chef... you're..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "I'm fine... I owe it to this girl.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "I'm fine... I owe it to this girl."
     },
     {
-        "text": "There's nothing left for you to do here. Go on, go home.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "There's nothing left for you to do here. Go on, go home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1635_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1635_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
         "text": "Once the chefs leave, Lin Qingyan locks the door to the room."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "Mr. Mo, if I could have a word or two with you.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Mr. Mo, if I could have a word or two with you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "You know this girl, madam?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "You know this girl, madam?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#2$1"
+        }
     },
     {
-        "text": "She's a friend of mine.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "She's a friend of mine."
     },
     {
-        "text": "Chef Mo, she's on the trail of a really important case. Would it be alright if you, uh, tried to answer her questions...?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Chef Mo, she's on the trail of a really important case. Would it be alright if you, uh, tried to answer her questions...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#2$1"
+        }
     },
     {
-        "text": "Hmph... I don't like what the mandarins get up to, but I don't like to spurn a favor either. You saved my life today, and that's more favor than I'll ever repay.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Hmph... I don't like what the mandarins get up to, but I don't like to spurn a favor either. You saved my life today, and that's more favor than I'll ever repay."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Go ahead, then. Ask away.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Go ahead, then. Ask away."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "I'm looking for one of your restaurant's chefs. He's a witness in a case.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I'm looking for one of your restaurant's chefs. He's a witness in a case."
     },
     {
-        "text": "I believe ten years ago, he was working in the Ministry of Justice death row prison, making last meals for convicts.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I believe ten years ago, he was working in the Ministry of Justice death row prison, making last meals for convicts."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#2$1"
+        }
     },
     {
-        "text": "A chef who only makes last meals... How exactly did he pass the Ding Feng Lou exams?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "A chef who only makes last meals... How exactly did he pass the Ding Feng Lou exams?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "Ding Feng Lou serves all manner of mandarins every year at the Feast of a Hundred Delicacies. That means every chef's background must be clear as day for the record.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Ding Feng Lou serves all manner of mandarins every year at the Feast of a Hundred Delicacies. That means every chef's background must be clear as day for the record."
     },
     {
-        "text": "I imagine he shouldn't be hard to find.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I imagine he shouldn't be hard to find."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "What exactly do you want me to say, madam?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "What exactly do you want me to say, madam?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#5$1"
+        }
     },
     {
-        "text": "First my restaurant catches fire for no reason. Now you say we have a chef who made meals for dead men. Should I even bother to open Ding Feng Lou again?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "First my restaurant catches fire for no reason. Now you say we have a chef who made meals for dead men. Should I even bother to open Ding Feng Lou again?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#2$1"
+        }
     },
     {
-        "text": "I understand your situation, sir. That's why I'm choosing to ask you these things in private.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I understand your situation, sir. That's why I'm choosing to ask you these things in private."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Whatever. It's not like I can't admit to my own past.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Whatever. It's not like I can't admit to my own past."
     },
     {
-        "text": "The chef you're looking for, the death row caterer Mo Xiaoliu, that was me.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "The chef you're looking for, the death row caterer Mo Xiaoliu, that was me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#11$1"
+        }
     },
     {
-        "text": "What?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "What?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "I thought so...",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I thought so..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "And making last meals is nothing shameful. The powerful need to eat, and so do the powerless.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "And making last meals is nothing shameful. The powerful need to eat, and so do the powerless."
     },
     {
-        "text": "My cooking skills come from that prison, making last meals for death row convicts from all corners of the country.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "My cooking skills come from that prison, making last meals for death row convicts from all corners of the country."
     },
     {
-        "text": "As for changing my name and hiding my identity, I just didn't want to make any trouble for this restaurant.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "As for changing my name and hiding my identity, I just didn't want to make any trouble for this restaurant."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#2$1"
+        }
     },
     {
-        "text": "I'm beginning to... sort of admire you.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I'm beginning to... sort of admire you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "Do you remember, ten years ago, a convict admitted to the prison by the name of Gu Quan?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Do you remember, ten years ago, a convict admitted to the prison by the name of Gu Quan?"
     },
     {
-        "text": "If you don't remember the name, you should at least remember that some decades ago, he was the one and only person to be released from death row.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "If you don't remember the name, you should at least remember that some decades ago, he was the one and only person to be released from death row."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#11$1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "What?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "What?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#10$1"
+        }
     },
     {
-        "text": "Wait! You mean my dad? Why'd my dad get the death penalty?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Wait! You mean my dad? Why'd my dad get the death penalty?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Blaze!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Blaze!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#7$1"
+        }
     },
     {
-        "text": "You mean Gu Quan? He was your father?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "You mean Gu Quan? He was your father?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#12$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#12$1"
+        }
     },
     {
-        "text": "Yeah...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Yeah..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "So you remember him...",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "So you remember him..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#3$1"
+        }
     },
     {
-        "text": "I do... all too well.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "I do... all too well."
     },
     {
-        "text": "I spent so many years in there making last meals. I met countless horrific scoundrels, endless connivers. As each one of them ate before they left, the look in their eyes, it was always more or less the same.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "I spent so many years in there making last meals. I met countless horrific scoundrels, endless connivers. As each one of them ate before they left, the look in their eyes, it was always more or less the same."
     },
     {
-        "text": "But I'd never seen someone whose eyes were so clear, so clean, so free of anything.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "But I'd never seen someone whose eyes were so clear, so clean, so free of anything."
     },
     {
-        "text": "He wasn't like the other convicts. In his time, he never wept, never howled, and never screamed injustice, not even on the day he was imprisoned.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "He wasn't like the other convicts. In his time, he never wept, never howled, and never screamed injustice, not even on the day he was imprisoned."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Even I found it strange how a man like him could end up on death row.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Even I found it strange how a man like him could end up on death row."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#12$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#12$1"
+        }
     },
     {
-        "text": "Why would... my dad...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Why would... my dad..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "Then do you know, at the time, what charges Gu Quan was sentenced to death on?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Then do you know, at the time, what charges Gu Quan was sentenced to death on?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Not at the time...",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Not at the time..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#2$1"
+        }
     },
     {
-        "text": "Not at the time?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Not at the time?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "But one year later, when I joined Ding Feng Lou and began taking part in the Feast of a Hundred Delicacies, I came across a menu for a Feast from a few years before\u2014",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "But one year later, when I joined Ding Feng Lou and began taking part in the Feast of a Hundred Delicacies, I came across a menu for a Feast from a few years before\u2014"
     },
     {
-        "text": "That was when I learned that at that Feast, Gu Quan served a dish to the True Lung. It just so happens, that was the same dish this girl pulled down earlier. 'Medley of Whites'.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "That was when I learned that at that Feast, Gu Quan served a dish to the True Lung. It just so happens, that was the same dish this girl pulled down earlier. 'Medley of Whites'."
     },
     {
-        "text": "But next to that dish, he placed a steamed flour bun, and in it... was a filling of red pickled tofu.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "But next to that dish, he placed a steamed flour bun, and in it... was a filling of red pickled tofu."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#11$1"
+        }
     },
     {
-        "text": "So... what does it mean? Why would he get locked up just for serving that?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "So... what does it mean? Why would he get locked up just for serving that?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#3$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#8$1"
+        }
     },
     {
-        "text": "Lin Qingyan, aren't you gonna say anything?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Lin Qingyan, aren't you gonna say anything?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "Your relative told you the story of the Grand Preceptor, but never told you her eventual fate?",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "Your relative told you the story of the Grand Preceptor, but never told you her eventual fate?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#13$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#13$1"
+        }
     },
     {
-        "text": "Her... fate?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Her... fate?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#4$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "Forty years ago, the Grand Preceptor plotted to assassinate the True Lung. She committed suicide after it failed. Every single one of her underlings was arrested and trialed, and their numbers were over a thousand...",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Forty years ago, the Grand Preceptor plotted to assassinate the True Lung. She committed suicide after it failed. Every single one of her underlings was arrested and trialed, and their numbers were over a thousand..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "When Gu Quan served that dish at the Feast, it signified redressing her for her treason. It made the True Lung furious.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "When Gu Quan served that dish at the Feast, it signified redressing her for her treason. It made the True Lung furious."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#10$1"
+        }
     },
     {
-        "text": "No way... my dad told me so many times, the Grand Preceptor was loyal to the country, the people, the whole realm! How the hell could she be a traitor?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "No way... my dad told me so many times, the Grand Preceptor was loyal to the country, the people, the whole realm! How the hell could she be a traitor?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "The history books have it that way, yes.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "The history books have it that way, yes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#10$1"
+        }
     },
     {
-        "text": "And they're right?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "And they're right?!"
     },
     {
-        "text": "Lin Qingyan, if everything written in them is true, what the hell are you investigating?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Lin Qingyan, if everything written in them is true, what the hell are you investigating?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1040_blaze2_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1040_blaze2_1#9$1"
+        }
     },
     {
-        "text": "And... and besides, my dad didn't actually get killed, right? Doesn't that prove, like, at least <i>some</i> people from the court believed the Grand Preceptor and my dad were both innocent?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "And... and besides, my dad didn't actually get killed, right? Doesn't that prove, like, at least <i>some</i> people from the court believed the Grand Preceptor and my dad were both innocent?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#13$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#13$1"
+        }
     },
     {
-        "text": "That's a sticking point, yes. If Gu Quan was imprisoned as part of the Grand Preceptor case, why would they free him afterwards?",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "That's a sticking point, yes. If Gu Quan was imprisoned as part of the Grand Preceptor case, why would they free him afterwards?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#3$1"
+        }
     },
     {
-        "text": "It stuck with me too... You see, after entering prison, Gu Quan had two visitors, and both were people I happened to know...",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "It stuck with me too... You see, after entering prison, Gu Quan had two visitors, and both were people I happened to know..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1619_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1619_1#1$1"
+        }
     },
     {
-        "text": "One was the person delivering his meal. Yu Cheng, deputy minister of the Office at the time.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "One was the person delivering his meal. Yu Cheng, deputy minister of the Office at the time."
     },
     {
-        "text": "And the other was the one who brought him out... former Minister of Rites, Ning Shu.",
-        "tag": "name",
-        "value": "Mo Bufu"
+        "command": "name",
+        "value": "Mo Bufu",
+        "text": "And the other was the one who brought him out... former Minister of Rites, Ning Shu."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#10$1"
+        }
     },
     {
-        "text": "What...?!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "What...?!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Quick! This way! Surround the place immediately!",
-        "tag": "name",
-        "value": "Voice Outside the Door"
+        "command": "name",
+        "value": "Voice Outside the Door",
+        "text": "Quick! This way! Surround the place immediately!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1637_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1637_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1637_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1637_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#16$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#16$1"
+        }
     },
     {
-        "text": "Dammit... why now...?!",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "Dammit... why now...?!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1613_1#7$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1613_1#7$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "What a coincidence. One step ahead of me, Deputy Minister Lin.",
-        "tag": "name",
-        "value": "Chen Che"
+        "command": "name",
+        "value": "Chen Che",
+        "text": "What a coincidence. One step ahead of me, Deputy Minister Lin."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1612_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1612_1#1$1"
+        }
     },
     {
-        "text": "I'd just arrived. A coincidence, indeed.",
-        "tag": "name",
-        "value": "Lin Qingyan"
+        "command": "name",
+        "value": "Lin Qingyan",
+        "text": "I'd just arrived. A coincidence, indeed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1613_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1613_1#1$1"
+        }
     },
     {
-        "text": "The Judicial Review Office is investigating the Ding Feng Lou fire. I ask all of you to be cooperative.",
-        "tag": "name",
-        "value": "Chen Che"
+        "command": "name",
+        "value": "Chen Che",
+        "text": "The Judicial Review Office is investigating the Ding Feng Lou fire. I ask all of you to be cooperative."
     },
     {
-        "text": "Lin Qingyan, and the girl next to you, come with me.",
-        "tag": "name",
-        "value": "Chen Che"
+        "command": "name",
+        "value": "Chen Che",
+        "text": "Lin Qingyan, and the girl next to you, come with me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

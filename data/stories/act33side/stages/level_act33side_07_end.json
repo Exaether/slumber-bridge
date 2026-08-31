@@ -1,60 +1,64 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "background",
+        "params": {
+            "image": "49_g3_kazdelstreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "49_g3_kazdelstreet_n",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Early 1094"
@@ -63,627 +67,735 @@
         "text": "The nomadic city of Kazdel, Kazdel"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "posfrom": "-300,0",
-        "posto": "0,0",
-        "duration": 2
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "posfrom": "-300,0",
+            "posto": "0,0",
+            "duration": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "b"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "b"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "b",
-        "fadetime": 2.5
+        "command": "stopsound",
+        "params": {
+            "channel": "b",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#1$1",
-        "posfrom": "-300,0",
-        "posto": "0,0",
-        "duration": 0.8,
-        "focus": "l",
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#1$1",
+            "posfrom": "-300,0",
+            "posto": "0,0",
+            "duration": 0.8,
+            "focus": "l",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Please wait, General!",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Please wait, General!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You are too impatient.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "You are too impatient."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But General! The Duke's envoy was almost ready to spit on\u2014",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "But General! The Duke's envoy was almost ready to spit on\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Did we get what we wanted?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Did we get what we wanted?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "We got partial usage rights for the industrial area and the right to cross the border... but did it have to be so humiliating?",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "We got partial usage rights for the industrial area and the right to cross the border... but did it have to be so humiliating?"
     },
     {
-        "text": "The Victorian dukes have you at their beck and call, treating us Sarkaz like tamed beasts. This is not what our soldiers redeployed from the civil war were promised, General!",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "The Victorian dukes have you at their beck and call, treating us Sarkaz like tamed beasts. This is not what our soldiers redeployed from the civil war were promised, General!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Is this not all that we desired?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Is this not all that we desired?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Perhaps you would prefer the Victorians treat the Sarkaz as their greatest enemy from the beginning, banding together to face us?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Perhaps you would prefer the Victorians treat the Sarkaz as their greatest enemy from the beginning, banding together to face us?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I understand. I know it's necessary for our enemies to think us weak, but this...",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I understand. I know it's necessary for our enemies to think us weak, but this..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Many within our ranks feel this is terribly dishonorable\u2014",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Many within our ranks feel this is terribly dishonorable\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Did I promise them honor?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Did I promise them honor?"
     },
     {
-        "text": "Do the Sarkaz have honor in the eyes of the Victorians?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Do the Sarkaz have honor in the eyes of the Victorians?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You have been far too impetuous lately, Manfred.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "You have been far too impetuous lately, Manfred."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Dignity is of high import.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Dignity is of high import."
     },
     {
-        "text": "You fight for the rights of your men, and thus do people respect you. Were these ordinary times, perhaps I too would commend you.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "You fight for the rights of your men, and thus do people respect you. Were these ordinary times, perhaps I too would commend you."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But do you remember what we are here to do? We are preparing to steal the heart of a nation.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "But do you remember what we are here to do? We are preparing to steal the heart of a nation."
     },
     {
-        "text": "To bring the greatest empire on this great land to its knees.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "To bring the greatest empire on this great land to its knees."
     },
     {
-        "text": "Their prejudices have left them weak, and the Sarkaz are in hunger.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Their prejudices have left them weak, and the Sarkaz are in hunger."
     },
     {
-        "text": "What we truly need is neither honor nor respect.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "What we truly need is neither honor nor respect."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...I understand.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "...I understand."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Are our men prepared?",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Are our men prepared?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Ready to depart at a moment's notice. Our people sent in advance to Londinium will support us.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Ready to depart at a moment's notice. Our people sent in advance to Londinium will support us."
     },
     {
-        "text": "The final deadline for our arrival as dictated by the Duke of Cavendish's request is fast approaching. We can set out at any time.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "The final deadline for our arrival as dictated by the Duke of Cavendish's request is fast approaching. We can set out at any time."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1297_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1297_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Good.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Good."
     },
     {
-        "text": "Then we march to destroy Victoria.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Then we march to destroy Victoria."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "49_g7_councilchamber",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "49_g7_councilchamber",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_419_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_419_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_419_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_419_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "Have you been on duty this entire time?",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Have you been on duty this entire time?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_419_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_419_1#1$1"
+        }
     },
     {
-        "text": "Yes, sir.",
-        "tag": "name",
-        "value": "Military Commission Guard"
+        "command": "name",
+        "value": "Military Commission Guard",
+        "text": "Yes, sir."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "......"
     },
     {
-        "text": "Stand down for now. I wish to be alone for a while.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Stand down for now. I wish to be alone for a while."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_419_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_419_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_419_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_419_1#1$1"
+        }
     },
     {
-        "text": "Of course, sir.",
-        "tag": "name",
-        "value": "Military Commission Guard"
+        "command": "name",
+        "value": "Military Commission Guard",
+        "text": "Of course, sir."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_opencabinet",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_opencabinet",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Once the guards leave, Manfred takes out a wine glass he had placed to the side."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_openwindow",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_openwindow",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 1,
-        "loop": true,
-        "channel": "sn"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 1,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#6$1",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#6$1",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Care for a drink?",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Care for a drink?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopsound",
-        "channel": "sn",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "sn",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.7,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.7,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "You never drank before.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You never drank before."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "I still don't.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I still don't."
     },
     {
-        "text": "But the General has ordered me to learn Victorian 'etiquette', all preparation for our upcoming duty.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "But the General has ordered me to learn Victorian 'etiquette', all preparation for our upcoming duty."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#3$1"
+        }
     },
     {
-        "text": "I have learnt rather recently that those nobles pair every meal with multiple kinds of wine, each requiring its own unique glass.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I have learnt rather recently that those nobles pair every meal with multiple kinds of wine, each requiring its own unique glass."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#4$1"
+        }
     },
     {
-        "text": "Remember when we were young and the General led us to an ancient battlefield for swordplay? The night was cold, and only after the General made some soup did we realize we had nothing to hold it in.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Remember when we were young and the General led us to an ancient battlefield for swordplay? The night was cold, and only after the General made some soup did we realize we had nothing to hold it in."
     },
     {
-        "text": "Thankfully, the battlefield was nothing short of spent shells, and you used those to fashion four cups.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Thankfully, the battlefield was nothing short of spent shells, and you used those to fashion four cups."
     },
     {
-        "text": "You, me, the General, and Her Highness, carrying cups made out of shell casings while sitting in front of the fire.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "You, me, the General, and Her Highness, carrying cups made out of shell casings while sitting in front of the fire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.7
+        }
     },
     {
-        "text": "I remember. It was a peaceful night.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I remember. It was a peaceful night."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "Just like this one.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Just like this one."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The frigid moonlight of late winter falls through the window. Manfred rests his hand upon his sword hilt that was equally as cold."
@@ -692,253 +804,299 @@
         "text": "The air is still, and the two of them can hear the other's heartbeat."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "You're going to Londinium tomorrow.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You're going to Londinium tomorrow."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "I know you wished to see the General.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I know you wished to see the General."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#7$1"
+        }
     },
     {
-        "text": "And you couldn't. Otherwise, you wouldn't have come to see me.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "And you couldn't. Otherwise, you wouldn't have come to see me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "I gave up.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I gave up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#4$1"
+        }
     },
     {
-        "text": "I found that when I caught a glimpse of him from a distance, the first thought that came to my mind was that I should kill him, there and then.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I found that when I caught a glimpse of him from a distance, the first thought that came to my mind was that I should kill him, there and then."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "Then you should applaud yourself for maintaining some reason.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "Then you should applaud yourself for maintaining some reason."
     },
     {
-        "text": "And so you decided to come to me?",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "And so you decided to come to me?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#10$1"
+        }
     },
     {
-        "text": "I heard you've improved your swordsmanship. Why don't we see for ourselves?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I heard you've improved your swordsmanship. Why don't we see for ourselves?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "I've never been able to best you.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I've never been able to best you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Don't beg for mercy before you've even fallen.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Don't beg for mercy before you've even fallen."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "......"
     },
     {
-        "text": "There was the one time we fought in Her Highness's study.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "There was the one time we fought in Her Highness's study."
     },
     {
-        "text": "We knocked down an entire bookshelf, and the General took our weapons away and made us tidy up the room within thirty minutes.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "We knocked down an entire bookshelf, and the General took our weapons away and made us tidy up the room within thirty minutes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#6$1"
+        }
     },
     {
-        "text": "I knew that you did it on purpose, wanting attention from Their Highnesses.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "I knew that you did it on purpose, wanting attention from Their Highnesses."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#4$1"
+        }
     },
     {
-        "text": "Is that so?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Is that so?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#4$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_flashpowerful",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_flashpowerful",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-300,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-300,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4132_ascln_1#4$1",
-        "afrom": 0,
-        "ato": 0.5,
-        "duration": 0.1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4132_ascln_1#4$1",
+            "afrom": 0,
+            "ato": 0.5,
+            "duration": 0.1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Ascalon hides herself away into the shadows in the blink of an eye."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_daggerexsheath",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_daggerexsheath",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#4$1",
-        "focus": "none",
-        "posfrom": "300,0",
-        "posto": "-100,0",
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#4$1",
+            "focus": "none",
+            "posfrom": "300,0",
+            "posto": "-100,0",
+            "duration": 0.4
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Another blink, and Manfred feels a chill running across the side of his neck."
@@ -950,237 +1108,275 @@
         "text": "Perhaps he was too tired?"
     },
     {
-        "text": "If I cut your neck here, at least there will be no need for you to die in Londinium. I can just throw your corpse into the furnace.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "If I cut your neck here, at least there will be no need for you to die in Londinium. I can just throw your corpse into the furnace."
     },
     {
-        "text": "It would spare many from dying on a distant battlefield in a foreign land.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "It would spare many from dying on a distant battlefield in a foreign land."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If you've made your decision, then kill me here. It will be your final chance.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "If you've made your decision, then kill me here. It will be your final chance."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "......"
     },
     {
-        "text": "You've made yours, I see.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You've made yours, I see."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The General says you lack conviction, but I don't think he is entirely correct.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "The General says you lack conviction, but I don't think he is entirely correct."
     },
     {
-        "text": "You shouldn't speak so much when someone has your life in her hands.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You shouldn't speak so much when someone has your life in her hands."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It is only recently that I've realized I'm not as resolute as you.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "It is only recently that I've realized I'm not as resolute as you."
     },
     {
-        "text": "We have been brought to where we are by the invisible tides of fate, but ever since the day this war started... There is no going back for us.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "We have been brought to where we are by the invisible tides of fate, but ever since the day this war started... There is no going back for us."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "......"
     },
     {
-        "text": "Then do your best to survive.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Then do your best to survive."
     },
     {
-        "text": "I won't hold back next time.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I won't hold back next time."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_wind",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_wind",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_darkmagic",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_darkmagic",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 0.95,
-        "focus": "none",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 0.95,
+            "focus": "none",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "none",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "none",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The silent assassin stows her blade up her sleeve, then slowly steps back into the shadows."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_404_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_404_1#1$1"
+        }
     },
     {
-        "text": "...Neither will I.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "...Neither will I."
     },
     {
-        "text": "If only this was our last meeting.",
-        "tag": "name",
-        "value": "Manfred"
+        "command": "name",
+        "value": "Manfred",
+        "text": "If only this was our last meeting."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "49_g14_rhodesdeck_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "49_g14_rhodesdeck_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0,
-        "loop": true,
-        "channel": "s"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0,
+            "loop": true,
+            "channel": "s"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "s",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "s",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Rhodes Island of Babel, Kazdel"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#2$1",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#2$1",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
         "text": "A cold wind scatters the thick clouds of late winter, allowing sunlight to peek through the gaps and spread out across the bridge of the ship."
@@ -1192,26 +1388,32 @@
         "text": "She shuts her eyes tight, enjoying the fleeting warmth of the sunshine."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothtrailground",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothtrailground",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
         "text": "Above the stairs, there is a clear rustling of cloth dragging against the ground."
@@ -1220,518 +1422,604 @@
         "text": "A shadow flit across the assassin's face, blocking out the rays of sunlight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "s",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "s",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$wasteland_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$wasteland_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "posfrom": "-200,-20",
-        "posto": "0,-20",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "posfrom": "-200,-20",
+            "posto": "0,-20",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Sorry Ascalon, did I disturb your rest?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Sorry Ascalon, did I disturb your rest?"
     },
     {
-        "text": "I thought I wouldn't make any sound, if I took off my shoes.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I thought I wouldn't make any sound, if I took off my shoes."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#10$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#10$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "No. You are welcome at any time.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "No. You are welcome at any time."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The ground's cold. You should put your shoes back on, Your Highness.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "The ground's cold. You should put your shoes back on, Your Highness."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "posfrom": "0,-20",
-        "posto": "0,-28",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "posfrom": "0,-20",
+            "posto": "0,-28",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 1,
-        "loop": true,
-        "channel": "c"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 1,
+            "loop": true,
+            "channel": "c"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "c",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "c",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "posfrom": "0,-28",
-        "posto": "0,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "posfrom": "0,-28",
+            "posto": "0,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Nothing you wish to tell me, Ascalon?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Nothing you wish to tell me, Ascalon?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You mean...?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You mean...?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The reason you returned to Kazdel.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "The reason you returned to Kazdel."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...It was my own decision.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "...It was my own decision."
     },
     {
-        "text": "I thought you wouldn't agree, and I didn't know how to bring it up with Your Highness...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I thought you wouldn't agree, and I didn't know how to bring it up with Your Highness..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Why would I not agree, Ascalon? Since it was your decision, I would trust your judgement.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Why would I not agree, Ascalon? Since it was your decision, I would trust your judgement."
     },
     {
-        "text": "Did you manage to see them?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Did you manage to see them?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...Manfred and Theresis are both well.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "...Manfred and Theresis are both well."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I can believe that. They're strong men.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I can believe that. They're strong men."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "We should finish our preparations soon as well. The operation to retake Kazdel isn't too far off now.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "We should finish our preparations soon as well. The operation to retake Kazdel isn't too far off now."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Why does your brow seem even more furrowed than before?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Why does your brow seem even more furrowed than before?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Our recent combat plans have been radical, and they've won us some battles too.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Our recent combat plans have been radical, and they've won us some battles too."
     },
     {
-        "text": "Still, I've been feeling uneasy.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Still, I've been feeling uneasy."
     },
     {
-        "text": "Babel has changed a lot, especially...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Babel has changed a lot, especially..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Yes?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Yes?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The Doctor.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "The Doctor."
     },
     {
-        "text": "The Doctor has changed a lot too... become more efficient, more clinical. It's like... the Doctor's now a machine that never makes mistakes.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "The Doctor has changed a lot too... become more efficient, more clinical. It's like... the Doctor's now a machine that never makes mistakes."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That's just what a commander should be, no? Why would that make you worry?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "That's just what a commander should be, no? Why would that make you worry?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "We've got an incredible commander now, sure... But I think I trust the weirdo who kept falling off a burdenbeast more.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "We've got an incredible commander now, sure... But I think I trust the weirdo who kept falling off a burdenbeast more."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Is now really the best time to attack Kazdel, Your Highness?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Is now really the best time to attack Kazdel, Your Highness?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Your intuition has always been on the mark.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Your intuition has always been on the mark."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You've had your worries too?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "You've had your worries too?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Do you remember?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Do you remember?"
     },
     {
-        "text": "We've faced countless insurmountable odds over the years, but we've overcome them all.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "We've faced countless insurmountable odds over the years, but we've overcome them all."
     },
     {
-        "text": "I believe that we can go through what comes next as well.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I believe that we can go through what comes next as well."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "We've always been in danger, yes...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "We've always been in danger, yes..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Babel carries the hopes of many, Ascalon. Faith has gotten us this far, and we cannot stop now.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Babel carries the hopes of many, Ascalon. Faith has gotten us this far, and we cannot stop now."
     },
     {
-        "text": "We have always been at a disadvantage against the Military Commission. Now, most of their forces have redeployed to Londinium. It is a one-of-a-kind opportunity. We have no choice.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "We have always been at a disadvantage against the Military Commission. Now, most of their forces have redeployed to Londinium. It is a one-of-a-kind opportunity. We have no choice."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "......"
     },
     {
-        "text": "I will be at your side, keeping you safe.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I will be at your side, keeping you safe."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No, Ascalon.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "No, Ascalon."
     },
     {
-        "text": "In the future, you must go further afield, to protect others.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "In the future, you must go further afield, to protect others."
     },
     {
-        "text": "Relax for now, and bask in the sunlight for a moment.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Relax for now, and bask in the sunlight for a moment."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Your Highness...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Your Highness..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Oh, right, remember to not always rest on your feet. If you're tired, you should go and enjoy a nice nap in your room.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Oh, right, remember to not always rest on your feet. If you're tired, you should go and enjoy a nice nap in your room."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#10$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#10$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'll remember.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "I'll remember."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1296_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1296_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Hm...",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Hm..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 2,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4132_ascln_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4132_ascln_1#2$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopsound",
-        "channel": "s",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "s",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
         "text": "The sunlight shines upon Ascalon's face once more."
@@ -1746,176 +2034,204 @@
         "text": "It was an unwillingness to part ways."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "27_g4_giantwall",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "27_g4_giantwall",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$plot_intro",
-        "key": "$plot_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$plot_intro",
+            "key": "$plot_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Londinium, Victoria"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_248"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_248"
+        }
     },
     {
-        "text": "Mercenaries!",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Mercenaries!"
     },
     {
-        "text": "Message from His Grace the Duke: Storming Londinium like this was well done.",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Message from His Grace the Duke: Storming Londinium like this was well done."
     },
     {
-        "text": "Assemble in Central in an hour. You'll be reviewed there, then you'll receive your bounty.",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Assemble in Central in an hour. You'll be reviewed there, then you'll receive your bounty."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Hey! Did you get all that?",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Hey! Did you get all that?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1297_1#1$1",
-        "duration": 2,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1297_1#1$1",
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "text": "Yes. Your orders have been received.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Yes. Your orders have been received."
     },
     {
-        "text": "Do let the Duke know on my behalf that we will be there on time.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "Do let the Duke know on my behalf that we will be there on time."
     },
     {
-        "text": "The Sarkaz thank him for his generosity.",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "The Sarkaz thank him for his generosity."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_248"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_248"
+        }
     },
     {
-        "text": "Hmph.",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Hmph."
     },
     {
-        "text": "Uppity devils...",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Uppity devils..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1297_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1297_1#4$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Theresis"
+        "command": "name",
+        "value": "Theresis",
+        "text": "......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "It could well be a rare fine day in Londinium, if it were not for the gun smoke filling the air. From atop the towering city walls, one can see the entire lay of this ancient city."
@@ -1927,37 +2243,43 @@
         "text": "In the skies above Londinium, a dark cloud floats by."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

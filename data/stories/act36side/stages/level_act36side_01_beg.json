@@ -1,2606 +1,3079 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Falin",
+        "text": "Laios... Run!"
     },
     {
-        "text": "Laios... Run!",
-        "tag": "name",
-        "value": "Falin"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magicreverse",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magicreverse",
-        "volume": 1
+        "command": "background",
+        "params": {
+            "image": "bg_white",
+            "fadetime": 1.5,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_white",
-        "fadetime": 1.5,
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.5,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.5,
-        "fadetime": 0.1,
-        "a": 1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.5,
+            "fadetime": 0.1
+        }
     },
-    {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.5,
-        "fadetime": 0.1,
-        "a": 1
-    },
-    {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$m_sys_act01_intro",
-        "key": "$m_sys_act01_loop",
-        "volume": 0.6
+    {
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
+    },
+    {
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_sys_act01_intro",
+            "key": "$m_sys_act01_loop",
+            "volume": 0.6
+        }
     },
-    {
-        "tag": "backgroundtween",
-        "xScaleFrom": 1.15,
-        "yScaleFrom": 1.15,
-        "xScaleTo": 1.15,
-        "yScaleTo": 1.15,
-        "duration": 35,
-        "xFrom": 50,
-        "yFrom": 0,
-        "xTo": 0,
-        "yTo": 0,
-        "block": false,
-        "screenadapt": "coverall"
+    {
+        "command": "backgroundtween",
+        "params": {
+            "xscalefrom": 1.15,
+            "yscalefrom": 1.15,
+            "xscale": 1.15,
+            "yscale": 1.15,
+            "duration": 35,
+            "xfrom": 50,
+            "yfrom": 0,
+            "x": 0,
+            "y": 0,
+            "block": false,
+            "screenadapt": "coverall"
+        }
     },
-    {
-        "tag": "background",
-        "image": "bg_white",
-        "screenadapt": "coverall"
+    {
+        "command": "background",
+        "params": {
+            "image": "bg_white",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "r": 5,
-        "g": 5,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "r": 5,
+            "g": 5,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.5,
-        "fillto": 0.25,
-        "fadetime": 1,
-        "a": 1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.5,
+            "fillto": 0.25,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.5,
-        "fillto": 0.25,
-        "fadetime": 1,
-        "a": 1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.5,
+            "fillto": 0.25,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#3$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#3$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.35,0.65",
-        "scale": 1.5,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.35,0.65",
+            "scale": 1.5,
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "subtitle",
-        "text": "The moment she was swallowed whole by the Red Dragon, my sister Falin teleported the rest of us out of the dungeon with her magic.",
-        "x": 300,
-        "y": 550,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 750
+        "command": "subtitle",
+        "params": {
+            "text": "The moment she was swallowed whole by the Red Dragon, my sister Falin teleported the rest of us out of the dungeon with her magic.",
+            "x": 300,
+            "y": 550,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 750
+        },
+        "text": "The moment she was swallowed whole by the Red Dragon, my sister Falin teleported the rest of us out of the dungeon with her magic."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#7$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#7$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.65,0.49",
-        "scale": 1.5,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.65,0.49",
+            "scale": 1.5,
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "subtitle",
-        "text": "Our belongings and travel funds were all left behind. However, we had no choice but to venture into the dungeon again to rescue Falin before she's digested.",
-        "x": 300,
-        "y": 550,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "Our belongings and travel funds were all left behind. However, we had no choice but to venture into the dungeon again to rescue Falin before she's digested.",
+            "x": 300,
+            "y": 550,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "Our belongings and travel funds were all left behind. However, we had no choice but to venture into the dungeon again to rescue Falin before she's digested."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#8$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.35,0.59",
-        "scale": 1.5,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.35,0.59",
+            "scale": 1.5,
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "subtitle",
-        "text": "On our way, we tried eating the monsters we killed to feed ourselves.",
-        "x": 300,
-        "y": 550,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "On our way, we tried eating the monsters we killed to feed ourselves.",
+            "x": 300,
+            "y": 550,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "On our way, we tried eating the monsters we killed to feed ourselves."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.65,0.47",
-        "scale": 1.5,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.65,0.47",
+            "scale": 1.5,
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "subtitle",
-        "text": "It's been tough, but thanks to that, we met new friends, solved all kinds of problems, and learned many new things about the dungeon.",
-        "x": 300,
-        "y": 550,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "It's been tough, but thanks to that, we met new friends, solved all kinds of problems, and learned many new things about the dungeon.",
+            "x": 300,
+            "y": 550,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "It's been tough, but thanks to that, we met new friends, solved all kinds of problems, and learned many new things about the dungeon."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "subtitle",
-        "text": "But just as we were venturing deeper, thinking all was going well, we seem to have found ourselves in a new predicament...",
-        "x": 300,
-        "y": 550,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 750
+        "command": "subtitle",
+        "params": {
+            "text": "But just as we were venturing deeper, thinking all was going well, we seem to have found ourselves in a new predicament...",
+            "x": 300,
+            "y": 550,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 750
+        },
+        "text": "But just as we were venturing deeper, thinking all was going well, we seem to have found ourselves in a new predicament..."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.25,
-        "fillto": 0.5,
-        "fadetime": 1.5,
-        "a": 1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.25,
+            "fillto": 0.5,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.25,
-        "fillto": 0.5,
-        "fadetime": 1.5,
-        "a": 1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.25,
+            "fillto": 0.5,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playmusic",
-        "key": "$normal_loop",
-        "volume": 0.6,
-        "fadetime": 2
+        "command": "playmusic",
+        "params": {
+            "key": "$normal_loop",
+            "volume": 0.6,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0,
+            "keep": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#3$1",
-        "posfrom": "0,-20",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "isblock": true,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#3$1",
+            "posfrom": "0,-20",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Falin!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "Falin!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#13$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh... just a dream.",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "Oh... just a dream."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "You're finally awake, Laios!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "You're finally awake, Laios!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How are you feeling? Still dizzy?",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "How are you feeling? Still dizzy?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#13$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Not really... but now that you mention it, I am feeling a little hungry.",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "Not really... but now that you mention it, I am feeling a little hungry."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Where are we...?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "Where are we...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_amb_forestnight_loop",
-        "volume": 0.5,
-        "channel": 1,
-        "loop": true,
-        "fadetime": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_amb_forestnight_loop",
+            "volume": 0.5,
+            "channel": 1,
+            "loop": true,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "background",
-        "image": "38_g20_skyblue_R2",
-        "screenadapt": "showall",
-        "fadetime": 2.5
+        "command": "background",
+        "params": {
+            "image": "38_g20_skyblue_R2",
+            "screenadapt": "showall",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 6
+        "command": "delay",
+        "value": 6
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "showall",
-        "fadetime": 2.5
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "showall",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "The sky, the sun, the woods... and...",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "The sky, the sun, the woods... and..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Looks like somewhere outside the dungeon, right? But no, it's not. None of us recognize this place at all. Not me, not Senshi, not even Chilchuck.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Looks like somewhere outside the dungeon, right? But no, it's not. None of us recognize this place at all. Not me, not Senshi, not even Chilchuck."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_1",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_1",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And look. I've been getting no response at all... I've tried several times, but the microscopic spirits aren't responding to me.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "And look. I've been getting no response at all... I've tried several times, but the microscopic spirits aren't responding to me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "That's strange...",
-        "tag": "multiline",
-        "name": "Laios"
+        "value": "Laios"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#16$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#16$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "Senshi? What are you doing?",
-        "tag": "multiline",
-        "name": "Laios",
-        "end": true
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.5
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,-20",
-        "posto": "0,0",
-        "duration": 2
-    },
-    {
-        "tag": "delay",
-        "time": 2.5
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
-    },
-    {
-        "text": "Been examining the soil here.",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
-    },
-    {
-        "text": "Look, the soil's moist, deep in color, and starts to smell when ya rub it in your palms. Which means it's got a lot of organic matter packed in there.",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#5$1",
-        "focus": "m"
-    },
-    {
-        "text": "Meaning?",
-        "tag": "name",
-        "value": "Marcille"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#2$1",
-        "focus": "m"
-    },
-    {
-        "tag": "delay",
-        "time": 2.5
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
-    },
-    {
-        "tag": "delay",
-        "time": 2.5
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
-    },
-    {
-        "text": "Meaning it's just perfect for planting! Aye, just like the soil on the back of a golem!",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#22$1",
-        "focus": "m"
-    },
-    {
-        "text": "Who cares?!",
-        "tag": "name",
-        "value": "Marcille"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_wing",
-        "channel": 3
-    },
-    {
-        "tag": "delay",
-        "time": 0.2
-    },
-    {
-        "tag": "playsound",
-        "key": "$leaveshake",
-        "channel": 1
-    },
-    {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "channel": 2
-    },
-    {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1.5
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#15$1",
-        "posfrom": "0,-20",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "isblock": true,
-        "duration": 1.5
-    },
-    {
-        "text": "Pipe down, Marcille! You spooked the birds and I almost fell from the tree.",
-        "tag": "name",
-        "value": "Chilchuck"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#12$1",
-        "focus": "m"
-    },
-    {
-        "text": "Well, I have good news and bad news. First, we've checked our surroundings, and haven't come across any monsters. This place should be safe.",
-        "tag": "name",
-        "value": "Chilchuck"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
-    },
-    {
-        "text": "What about the good news?",
-        "tag": "name",
         "value": "Laios"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#13$1",
-        "focus": "m"
+        "command": "dialog"
     },
     {
-        "text": "That <i>was</i> the good news!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#1$1",
-        "focus": "m"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "text": "So what's the bad news?",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,-20",
+            "posto": "0,0",
+            "duration": 2
+        }
     },
     {
-        "text": "The bad news is this place is huge, and nothing like any environment I'm familiar with.",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "From a high vantage point, I could tell we're on the edge of a forest.",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Been examining the soil here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've never seen anywhere like this in the first five floors, and haven't heard about anything like it, either.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Look, the soil's moist, deep in color, and starts to smell when ya rub it in your palms. Which means it's got a lot of organic matter packed in there."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Which means...",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Meaning?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#7$1",
-        "focus": "m"
+        "command": "dialog"
     },
     {
-        "text": "Which means...?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4144_chilc_1#7$1",
-        "focus": "all"
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Senshi",
+        "text": "Meaning it's just perfect for planting! Aye, just like the soil on the back of a golem!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "all"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#6$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#22$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Marcille",
+        "text": "Who cares?!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "dialog"
     },
     {
-        "text": "Did we stumble into a brand new, unknown area of the dungeon?!",
-        "tag": "name",
-        "value": "Laios's Party"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_wing",
+            "channel": 3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "text": "Never seen any of those birds before. Strange. An area of the dungeon? Hmm. Looks more like a whole different place to me.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "playsound",
+        "params": {
+            "key": "$leaveshake",
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#9$1",
-        "focus": "m"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "channel": 2
+        }
     },
     {
-        "text": "Could this be similar to... being inside one of those paintings? Were we brought to another world?",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#9$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Does that mean we'll get to see monsters no one's ever seen before?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#15$1",
+            "posfrom": "0,-20",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "And, if we're lucky, to taste them too?!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Pipe down, Marcille! You spooked the birds and I almost fell from the tree."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Do you even realize what you're saying?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Well, I have good news and bad news. First, we've checked our surroundings, and haven't come across any monsters. This place should be safe."
     },
     {
-        "text": "Our top priority is saving Falin, not wasting our time in whatever this place is!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#11$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Laios",
+        "text": "What about the good news?"
     },
     {
-        "text": "And there's one other thing I should mention. I've tried several times now, but I'm only able to use simple magic here.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#16$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "That <i>was</i> the good news!"
     },
     {
-        "text": "That... could be an issue.",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "So what's the bad news?"
     },
     {
-        "text": "What's more...",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "The bad news is this place is huge, and nothing like any environment I'm familiar with."
     },
     {
-        "text": "There's more?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "From a high vantage point, I could tell we're on the edge of a forest."
     },
     {
-        "text": "Something's off about the forest and this clearing here. As if someone opened up the soil for planting things. I'm quite familiar with methods like that.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#22$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Senshi",
+        "text": "I've never seen anywhere like this in the first five floors, and haven't heard about anything like it, either."
     },
     {
-        "text": "You don't care about my magic getting weaker at all, do you?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Which means..."
     },
     {
-        "text": "Come to think of it, I did spot some strange wooden huts outside the forest. Maybe there are people living there?",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Let's head there and ask around, see if we can learn anything.",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "name",
+        "value": "Laios",
+        "text": "Which means...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#9$1",
-        "focus": "m"
+        "command": "dialog"
     },
     {
-        "text": "Don't change the subject!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4144_chilc_1#7$1",
+            "focus": "all"
+        }
     },
     {
-        "text": "Strange wooden huts?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#18$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Let's go check them out!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#6$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Laios's Party",
+        "text": "Did we stumble into a brand new, unknown area of the dungeon?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "charslot"
     },
     {
-        "text": "Hey!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Never seen any of those birds before. Strange. An area of the dungeon? Hmm. Looks more like a whole different place to me."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "name",
+        "value": "Marcille",
+        "text": "Could this be similar to... being inside one of those paintings? Were we brought to another world?"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "name",
+        "value": "Laios",
+        "text": "Does that mean we'll get to see monsters no one's ever seen before?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "background",
-        "image": "54_g1_bobfarm",
-        "screenadapt": "showall"
+        "command": "name",
+        "value": "Laios",
+        "text": "And, if we're lucky, to taste them too?!"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$darkness_03_loop",
-        "volume": 0.6,
-        "fadetime": 2
+        "command": "name",
+        "value": "Marcille",
+        "text": "Do you even realize what you're saying?!"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "name",
+        "value": "Marcille",
+        "text": "Our top priority is saving Falin, not wasting our time in whatever this place is!"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "name",
+        "value": "Marcille",
+        "text": "And there's one other thing I should mention. I've tried several times now, but I'm only able to use simple magic here."
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#16$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#13$1",
-        "duration": 1.5
+        "command": "name",
+        "value": "Laios",
+        "text": "That... could be an issue."
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We need to be more cautious. We know nothing about this place.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Senshi",
+        "text": "What's more..."
     },
     {
-        "text": "Who knows what's inside? We might even encounter hostile demi-humans.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Laios",
+        "text": "There's more?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Something's off about the forest and this clearing here. As if someone opened up the soil for planting things. I'm quite familiar with methods like that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#22$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "You don't care about my magic getting weaker at all, do you?!"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#11$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Come to think of it, I did spot some strange wooden huts outside the forest. Maybe there are people living there?"
     },
     {
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Let's head there and ask around, see if we can learn anything."
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#9$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Marcille",
+        "text": "Don't change the subject!"
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Laios",
+        "text": "Strange wooden huts?"
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#18$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Laios",
+        "text": "Let's go check them out!"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
+    },
+    {
+        "command": "delay",
+        "value": 2
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Marcille",
+        "text": "Hey!"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
+    {
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "background",
+        "params": {
+            "image": "54_g1_bobfarm",
+            "screenadapt": "showall"
+        }
+    },
+    {
+        "command": "delay",
+        "value": 2
+    },
+    {
+        "command": "playmusic",
+        "params": {
+            "key": "$darkness_03_loop",
+            "volume": 0.6,
+            "fadetime": 2
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
+    {
+        "command": "delay",
+        "value": 2
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
+    },
+    {
+        "command": "delay",
+        "value": 2
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#13$1",
+            "duration": 1.5
+        }
+    },
+    {
+        "command": "delay",
+        "value": 2
+    },
+    {
+        "command": "name",
+        "value": "Marcille",
+        "text": "We need to be more cautious. We know nothing about this place."
+    },
+    {
+        "command": "name",
+        "value": "Marcille",
+        "text": "Who knows what's inside? We might even encounter hostile demi-humans."
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#11$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#11$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
         "text": "I suggest you let me go first to...",
-        "tag": "multiline",
-        "name": "Chilchuck"
+        "value": "Chilchuck"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$runsand",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$runsand",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "posfrom": "0,0",
-        "posto": "100,0",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "posfrom": "0,0",
+            "posto": "100,0",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "0,0",
-        "posto": "100,0",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "0,0",
+            "posto": "100,0",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#7$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "Hey!",
-        "tag": "multiline",
-        "name": "Chilchuck",
-        "end": true
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "stopmusic",
-        "fadetime": 1
-    },
-    {
-        "tag": "charslot"
-    },
-    {
-        "tag": "background",
-        "image": "54_g1_bobfarm",
-        "screenadapt": "showall"
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.6
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 2
-    },
-    {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4143_sensi_1#1$1",
-        "duration": 1.5
-    },
-    {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#1$1",
-        "duration": 1.5
-    },
-    {
-        "tag": "delay",
-        "time": 2
-    },
-    {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "l"
-    },
-    {
-        "text": "The huts aren't big, but they've got plenty of fencing. The stakes're all planted firmly into the ground, too. Nice and steady.",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "text": "The part above the ground are obviously short. Most folks could climb over 'em, no problem. I guess they go deep, to keep animals inside from digging their way out.",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "text": "I'm also seeing some black rocks scattered all over. Some kind of marker, maybe?",
-        "tag": "name",
-        "value": "Senshi"
-    },
-    {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "none"
-    },
-    {
-        "text": "Hey! Stop running around like that! What if it's dangerous?",
-        "tag": "name",
         "value": "Chilchuck"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "r"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_swordquake",
-        "volume": 0.7
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "action": "shake",
-        "random": true,
-        "power": 5,
-        "times": 10,
-        "duration": 0.3,
-        "isblock": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "r"
+        "command": "background",
+        "params": {
+            "image": "54_g1_bobfarm",
+            "screenadapt": "showall"
+        }
     },
     {
-        "text": "(Whispers) Kensuke?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4142_laios_1#16$1",
-        "focus": "r"
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.6
+        }
     },
     {
-        "text": "(Kensuke reacts to monsters nearby. Does that mean...)",
-        "tag": "name",
-        "value": "Laios"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4143_sensi_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$runsand",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#1$1",
-        "duration": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "name",
+        "value": "Senshi",
+        "text": "The huts aren't big, but they've got plenty of fencing. The stakes're all planted firmly into the ground, too. Nice and steady."
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Senshi",
+        "text": "The part above the ground are obviously short. Most folks could climb over 'em, no problem. I guess they go deep, to keep animals inside from digging their way out."
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Senshi",
+        "text": "I'm also seeing some black rocks scattered all over. Some kind of marker, maybe?"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Hey! Stop running around like that! What if it's dangerous?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1430_1#1$1",
-        "duration": 1
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#7$1",
-        "focus": "m"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_swordquake",
+            "volume": 0.7
+        }
     },
     {
-        "text": "I told you to stop running off already!",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "\u2014Ahhhh!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Laios",
+        "text": "(Whispers) Kensuke?"
     },
     {
-        "text": "I-It moves! Th-There's something squishy under the rock!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4142_laios_1#16$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Laios",
+        "text": "(Kensuke reacts to monsters nearby. Does that mean...)"
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1430_1#1$1",
-        "focus": "m"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "25,0",
-        "isblock": true,
-        "duration": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$runsand",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "25,0",
-        "posto": "0,0",
-        "isblock": true,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Eeeeek!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#3$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Huh?"
     },
     {
-        "text": "I-Is it some kind of insect monster that uses rocks as its shell? So the shell is used for both protection and offense?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "charslot"
     },
     {
-        "text": "Hey, don't just stand around and watch! Take care of it already!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1430_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#3$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Its hard outer shell is more than enough protection for its abdomen. It covers the neck too, which usually has a lot of nerves.",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It wouldn't be easy to kill it with just our weapons.",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "I told you to stop running off already!"
     },
     {
-        "text": "Marcille, use your magic!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#4$1",
-        "focus": "m"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Keep it as weak as you can. We don't want to harm the environment here!",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Marcille",
+        "text": "\u2014Ahhhh!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#10$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "I-It moves! Th-There's something squishy under the rock!"
     },
     {
-        "text": "Don't worry, I can't cast anything stronger than this right now anyway!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1430_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1430_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "25,0",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_magic_n",
-        "volume": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "25,0",
+            "posto": "0,0",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "name",
+        "value": "Marcille",
+        "text": "Eeeeek!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hmph, they're as weak as walking mushrooms.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Laios",
+        "text": "I-Is it some kind of insect monster that uses rocks as its shell? So the shell is used for both protection and offense?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So it <i>is</i> a new type of monster! Are you alright, Marcille? How did its attacks feel?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Hey, don't just stand around and watch! Take care of it already!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#22$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm fine. Thanks for worrying about <i>me</i>.",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Laios",
+        "text": "Its hard outer shell is more than enough protection for its abdomen. It covers the neck too, which usually has a lot of nerves."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Laios",
+        "text": "It wouldn't be easy to kill it with just our weapons."
     },
     {
-        "text": "Hm... What a hard shell. You don't often see shells made of minerals.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Laios",
+        "text": "Marcille, use your magic!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wh-What about the rest of it?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Keep it as weak as you can. We don't want to harm the environment here!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Flips the Originium slug around with his axe)",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Don't worry, I can't cast anything stronger than this right now anyway!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4144_chilc_1#7$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1430_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "all"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_magic_n",
+            "volume": 0.5
+        }
     },
     {
-        "text": "Wha\u2014?!",
-        "tag": "name",
-        "value": "Chilchuck & Marcille"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What? What is it like?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Hmph, they're as weak as walking mushrooms."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Stay back!",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Laios",
+        "text": "So it <i>is</i> a new type of monster! Are you alright, Marcille? How did its attacks feel?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#22$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't lay a finger on it when we don't even know the first thing about it.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Marcille",
+        "text": "I'm fine. Thanks for worrying about <i>me</i>."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Critters that crawl on the ground usually live off of decomposing organic matter. So they're likely to be full of bacteria and parasites. You could get infected just by touching it.",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Hm... What a hard shell. You don't often see shells made of minerals."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That's true...",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Laios",
+        "text": "Wh-What about the rest of it?"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "random": true,
-        "power": 5,
-        "times": 10,
-        "duration": 0.3,
-        "isblock": true
+        "command": "name",
+        "value": "Senshi",
+        "text": "(Flips the Originium slug around with his axe)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "dialog"
     },
     {
-        "text": "(Hm? Kensuke? We found the slug already... Is there something else?)",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4144_chilc_1#7$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "name",
+        "value": "Chilchuck & Marcille",
+        "text": "Wha\u2014?!"
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.5
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1430_1#1$1",
-        "duration": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1430_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 4.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "name",
+        "value": "Laios",
+        "text": "What? What is it like?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "name",
+        "value": "Senshi",
+        "text": "Stay back!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hold on... The rocks around us have all come to life!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Don't lay a finger on it when we don't even know the first thing about it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "In that case, we'll just have to take them all down!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Critters that crawl on the ground usually live off of decomposing organic matter. So they're likely to be full of bacteria and parasites. You could get infected just by touching it."
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Laios",
+        "text": "That's true..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1430_1#1$1"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1430_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magicreverse",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 1.0
+        "command": "name",
+        "value": "Laios",
+        "text": "(Hm? Kensuke? We found the slug already... Is there something else?)"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.05,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1430_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#13$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1430_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "text": "Haa... Haah... How's this?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "camerashake",
+        "params": {
+            "duration": 4.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#4$1",
-        "focus": "m"
+        "command": "charslot"
     },
     {
-        "text": "Watch out!",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "text": "Seems like they come in all kinds! Some can spew some sort of fluid! Careful... It seems to be corrosive!",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4142_laios_1#8$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Laios",
+        "text": "Hold on... The rocks around us have all come to life!"
     },
     {
-        "text": "W-Wow, they can spit corrosive fluids?!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#12$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Marcille",
+        "text": "In that case, we'll just have to take them all down!"
     },
     {
-        "text": "You're excited about <i>that</i> right now?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#15$1",
-        "focus": "m"
+        "command": "charslot"
     },
     {
-        "text": "I don't think I can do much damage to these guys. They're all yours!",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1430_1#1$1"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1430_1#1$1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$runsand",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magicreverse",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 1.0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#4$1",
-        "focus": "m"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "text": "Quick! We'll hide inside this hut!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.5
+        "command": "name",
+        "value": "Marcille",
+        "text": "Haa... Haah... How's this?!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_010",
-        "posfrom": "-100,0",
-        "posto": "-50,0",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Senshi",
+        "text": "Watch out!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#7$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Seems like they come in all kinds! Some can spew some sort of fluid! Careful... It seems to be corrosive!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "200,0",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4142_laios_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Laios",
+        "text": "W-Wow, they can spit corrosive fluids?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What...?",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Marcille",
+        "text": "You're excited about <i>that</i> right now?!"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#15$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_010",
-        "focus": "l"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "I don't think I can do much damage to these guys. They're all yours!"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$runsand",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_1",
-        "volume": 0.7,
-        "channel": 3
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_1",
-        "volume": 0.7,
-        "channel": 4
+        "command": "name",
+        "value": "Marcille",
+        "text": "Quick! We'll hide inside this hut!"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$dontmaketrouble_intro",
-        "key": "$dontmaketrouble_loop",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.5
+        }
     },
     {
-        "text": "Ahhhhhhhh! What the heck?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_010",
+            "posfrom": "-100,0",
+            "posto": "-50,0",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$runsand",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "200,0",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "200,0",
-        "posto": "300,0",
-        "duration": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Marcille",
+        "text": "What...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4144_chilc_1#7$1",
-        "focus": "m"
+        "command": "dialog"
     },
     {
-        "text": "Senshi, do you know this orc all decked out in armor?",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_010",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4143_sensi_1#4$1",
-        "focus": "m"
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "text": "Hm, all the orcs I know tend to dress pretty lightly. He must be the owner of the hut. Should I ask?",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4141_marcil_1#2$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_1",
+            "volume": 0.7,
+            "channel": 3
+        }
     },
     {
-        "text": "Ask? Ask what? Let's run for it!!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_1",
+            "volume": 0.7,
+            "channel": 4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "playmusic",
+        "params": {
+            "intro": "$dontmaketrouble_intro",
+            "key": "$dontmaketrouble_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "channel": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Ahhhhhhhh! What the heck?!"
     },
     {
-        "tag": "image",
-        "image": "54_i1",
-        "screenadapt": "coverall",
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "fadetime": 0
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xFrom": 30,
-        "xTo": 0,
-        "duration": 30,
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$runsand",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "200,0",
+            "posto": "300,0",
+            "duration": 1.5
+        }
     },
     {
-        "text": "Senshi, put me down already!",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "I-Is he chasing us?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot"
     },
     {
-        "text": "What is he, anyway? Is he really an orc?",
-        "tag": "name",
-        "value": "Laios"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4144_chilc_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You sure you don't need me to go and ask?",
-        "tag": "name",
-        "value": "Senshi"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Senshi, do you know this orc all decked out in armor?"
     },
     {
-        "text": "Why are you people so curious about that? He was obviously hell-bent on slaughtering us with that strange massive blade! We definitely pissed him off!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4143_sensi_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah, probably with your explosion magic! Why don't you try apologizing?",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "name",
+        "value": "Senshi",
+        "text": "Hm, all the orcs I know tend to dress pretty lightly. He must be the owner of the hut. Should I ask?"
     },
     {
-        "text": "I'm not apologizing to an orc! And how were we supposed to chase off the rock slugs without magic?!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4141_marcil_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So this <i>is</i> a new place we've never been to! There are so many things to do here!",
-        "tag": "name",
-        "value": "Laios"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "For the last time Senshi, I know how to run! Put me down already! Hey\u2014",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "name",
+        "value": "Marcille",
+        "text": "Ask? Ask what? Let's run for it!!"
     },
     {
-        "text": "I've never read anything about this in books either. This is so cool...",
-        "tag": "name",
-        "value": "Laios"
+        "command": "dialog"
     },
     {
-        "text": "Laios!!",
-        "tag": "name",
-        "value": "Chilchuck"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_2",
-        "volume": 0.7,
-        "channel": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_2",
-        "volume": 0.7,
-        "channel": 2
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "image",
+        "params": {
+            "image": "54_i1",
+            "screenadapt": "coverall",
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_2",
-        "volume": 0.7,
-        "channel": 3
+        "command": "imagetween",
+        "params": {
+            "xfrom": 30,
+            "x": 0,
+            "duration": 30,
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_saw_n_2",
-        "volume": 0.7,
-        "channel": 4
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Senshi, put me down already!"
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "name",
+        "value": "Marcille",
+        "text": "I-Is he chasing us?!"
     },
     {
-        "text": "Ahhhhhhhh!!!",
-        "tag": "name",
-        "value": "Marcille"
+        "command": "name",
+        "value": "Laios",
+        "text": "What is he, anyway? Is he really an orc?"
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Senshi",
+        "text": "You sure you don't need me to go and ask?"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "name",
+        "value": "Marcille",
+        "text": "Why are you people so curious about that? He was obviously hell-bent on slaughtering us with that strange massive blade! We definitely pissed him off!"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Yeah, probably with your explosion magic! Why don't you try apologizing?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "name",
+        "value": "Marcille",
+        "text": "I'm not apologizing to an orc! And how were we supposed to chase off the rock slugs without magic?!"
     },
     {
-        "tag": "character"
+        "command": "name",
+        "value": "Laios",
+        "text": "So this <i>is</i> a new place we've never been to! There are so many things to do here!"
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "For the last time Senshi, I know how to run! Put me down already! Hey\u2014"
     },
     {
-        "tag": "image"
+        "command": "name",
+        "value": "Laios",
+        "text": "I've never read anything about this in books either. This is so cool..."
+    },
+    {
+        "command": "name",
+        "value": "Chilchuck",
+        "text": "Laios!!"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_2",
+            "volume": 0.7,
+            "channel": 1
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_2",
+            "volume": 0.7,
+            "channel": 2
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_2",
+            "volume": 0.7,
+            "channel": 3
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_saw_n_2",
+            "volume": 0.7,
+            "channel": 4
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
+    },
+    {
+        "command": "name",
+        "value": "Marcille",
+        "text": "Ahhhhhhhh!!!"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
+    {
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
+    },
+    {
+        "command": "character"
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "image"
     }
 ]

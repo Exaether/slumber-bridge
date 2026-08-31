@@ -1,72 +1,78 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "42_g6_sonwydowntown_d",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "42_g6_sonwydowntown_d",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0.8,
+            "loop": true,
+            "channel": "wind"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0.8,
-        "loop": true,
-        "channel": "wind"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 1
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "'Hello. Yes, it's still me. I may not have made it absolutely clear just now. I ordered a single-layer shortcake. Single. On the receipt I got, it says...'"
@@ -75,258 +81,300 @@
         "text": "'Single costs seventy gold certificates, too? Okay, fine. No, no need to make it double. Keep Mosby as the recipient. No, not Mosley. Mos... Hold on.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "wind",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "wind",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carwindow",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carwindow",
+            "volume": 1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.08,
-        "fadetime": 1.5
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.08,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.08,
-        "fadetime": 1.5
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.08,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Alright, I rolled up the window. Can you hear me now? It's Detective MOSBY. Hugh Mosby.",
-        "tag": "name",
-        "value": "Impatient Man"
+        "command": "name",
+        "value": "Impatient Man",
+        "text": "Alright, I rolled up the window. Can you hear me now? It's Detective MOSBY. Hugh Mosby."
     },
     {
-        "text": "Please get it to the station by six. Other requests? No, nothing. Just a retirement party. Can't have a party without cake, don't you agree? Okay, good bye.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Please get it to the station by six. Other requests? No, nothing. Just a retirement party. Can't have a party without cake, don't you agree? Okay, good bye."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "text": "Have you made up your mind yet? If you have, go ahead and sign your confession.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Have you made up your mind yet? If you have, go ahead and sign your confession."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why did you drag me out of the interrogation room? I've never heard of cops doing this in a car...",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "Why did you drag me out of the interrogation room? I've never heard of cops doing this in a car..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Shut your face hole. I'm asking the questions here. Goddamned murderer.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Shut your face hole. I'm asking the questions here. Goddamned murderer."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I told you, I never even thought about killing him. I was just... defending myself! He's the one who attacked first!",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "I told you, I never even thought about killing him. I was just... defending myself! He's the one who attacked first!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Save your breath. This is the switchblade used to kill the victim, see? And it's covered with your fingerprints. This is what we call evidence. If we were on the frontier, it'd be enough for me to put a bullet in your head.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Save your breath. This is the switchblade used to kill the victim, see? And it's covered with your fingerprints. This is what we call evidence. If we were on the frontier, it'd be enough for me to put a bullet in your head."
     },
     {
-        "text": "I've caught plenty of kids like you. All of you skip school, steal, get all tattooed up, keep talking shit that you don't even know what it means, thinking you are better than everybody else.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I've caught plenty of kids like you. All of you skip school, steal, get all tattooed up, keep talking shit that you don't even know what it means, thinking you are better than everybody else."
     },
     {
-        "text": "And you know what happened to all of them in the end?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "And you know what happened to all of them in the end?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You'll be no different.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You'll be no different."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "curtain",
-        "fadetime": 1.5
+        "command": "curtain",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Having lost his patience, the old detective grabs his files and pen and pushes open the door. Immediately, a cold breeze gushes into the car from the harbor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wait up! You're retiring, right? This is your last case!",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "Wait up! You're retiring, right? This is your last case!"
     },
     {
-        "text": "Do you really want your career to end with a false conviction? You must have a really glorious past, huh? Is this really how you want it to end?!",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "Do you really want your career to end with a false conviction? You must have a really glorious past, huh? Is this really how you want it to end?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The old detective turns around and glances at the <i>Columbian Police Handbook</i> on the dashboard."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cardoorc",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cardoorc",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Then, he sets down the confession on the roof of the car and quickly signs it himself."
@@ -335,1010 +383,1170 @@
         "text": "The impatient breeze folds the pages up for him before the ink can even dry."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g8_governmentoffice_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g8_governmentoffice_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Detective Mosby. Not wearing your uniform, huh?",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "Detective Mosby. Not wearing your uniform, huh?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "<i>Morning</i>, Trevor. I handed my uniform back in already. It's my last day anyway. If somebody wants to write me up for this, well, he might as well fire me.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "<i>Morning</i>, Trevor. I handed my uniform back in already. It's my last day anyway. If somebody wants to write me up for this, well, he might as well fire me."
     },
     {
-        "text": "The suspect signed his confession. Have two of our stronger guys go to the parking lot and drag him into solitary. Then, take this file to the superintendent and get it signed.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "The suspect signed his confession. Have two of our stronger guys go to the parking lot and drag him into solitary. Then, take this file to the superintendent and get it signed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "Maybe later? The commissioner and the superintendent are in the morning meeting... Alright, fine. I know that's not going to stop you.",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "Maybe later? The commissioner and the superintendent are in the morning meeting... Alright, fine. I know that's not going to stop you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You know I don't want any part in that stuff they're obsessed with. Those bank fundraisers, intercity nets, and whatever.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You know I don't want any part in that stuff they're obsessed with. Those bank fundraisers, intercity nets, and whatever."
     },
     {
-        "text": "All I want to do now is grab the superintendent by his collar and have him sign this off to wrap up my last case. After that, I'll buy my first cup of coffee, and enjoy my last day as a policeman.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "All I want to do now is grab the superintendent by his collar and have him sign this off to wrap up my last case. After that, I'll buy my first cup of coffee, and enjoy my last day as a policeman."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "Are you gonna have a retirement party today, per tradition?",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "Are you gonna have a retirement party today, per tradition?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mm-hm. You coming?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Mm-hm. You coming?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "Uh... Let's see. Tonight, I still gotta...",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "Uh... Let's see. Tonight, I still gotta..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Forget it, then. Haha.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Forget it, then. Haha."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g8_governmentoffice_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g8_governmentoffice_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1044_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1044_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Let go! Let me go! I'm innocent!",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "Let go! Let me go! I'm innocent!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cakebgflgrnd",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cakebgflgrnd",
+            "volume": 1
+        }
     },
     {
-        "text": "Mur... Murderers! I'm innocent, and you're sending an innocent man to his death!",
-        "tag": "name",
-        "value": "Young Man With Bruised Face"
+        "command": "name",
+        "value": "Young Man With Bruised Face",
+        "text": "Mur... Murderers! I'm innocent, and you're sending an innocent man to his death!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The young man thrashes around, like a wild fin got caught in a net, but all he can do is knock a few documents out of the hands of a passing clerk."
     },
     {
-        "text": "Hey! Watch it! This is for the commissioner's signature!",
-        "tag": "name",
-        "value": "Unhappy Police Station Clerk"
+        "command": "name",
+        "value": "Unhappy Police Station Clerk",
+        "text": "Hey! Watch it! This is for the commissioner's signature!"
     },
     {
-        "text": "Dammit! All of you, watch where you're going! Don't step on any of them!",
-        "tag": "name",
-        "value": "Unhappy Police Station Clerk"
+        "command": "name",
+        "value": "Unhappy Police Station Clerk",
+        "text": "Dammit! All of you, watch where you're going! Don't step on any of them!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Slow down, son. This is no big deal. Here in San Sophie, the last thing we'd ever run short of is loan contract printouts.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Slow down, son. This is no big deal. Here in San Sophie, the last thing we'd ever run short of is loan contract printouts."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The clerk recognizes the man in front of him as the VIP that the commissioner introduced to everyone during the morning meeting. Immediately, he tries to stop the man from bending down to pick up the paperwork."
     },
     {
-        "text": "Please, I can take care of this myself... Mr. Tin Man... or should I call you Mr. Criminology Consultant?",
-        "tag": "name",
-        "value": "Unhappy Police Station Clerk"
+        "command": "name",
+        "value": "Unhappy Police Station Clerk",
+        "text": "Please, I can take care of this myself... Mr. Tin Man... or should I call you Mr. Criminology Consultant?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please, call me Tin Man.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Please, call me Tin Man."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What is it with the young man screaming his lungs out there? Does that happen often here?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "What is it with the young man screaming his lungs out there? Does that happen often here?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g8_governmentoffice_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g8_governmentoffice_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The superintendent's office is still empty? Just how long is he going to keep chumming it up with those bankers and their obnoxious cologne? I need someone to sign my case off!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "The superintendent's office is still empty? Just how long is he going to keep chumming it up with those bankers and their obnoxious cologne? I need someone to sign my case off!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "The bankers are gone. He should be in a meeting with the guys from the government...",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "The bankers are gone. He should be in a meeting with the guys from the government..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Another meeting? What's that about?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Another meeting? What's that about?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "The intercity web and whatnot. Nothing you ever cared about.",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "The intercity web and whatnot. Nothing you ever cared about."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Well, I care now! This is going to affect whether I get a retirement party tonight! You can't have cake past midnight. You know that, right?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Well, I care now! This is going to affect whether I get a retirement party tonight! You can't have cake past midnight. You know that, right?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Real sorry, Detective Mosby, but I have a few questions for you.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Real sorry, Detective Mosby, but I have a few questions for you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You\u2014Good lord, what the hell is wrong with your body?!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You\u2014Good lord, what the hell is wrong with your body?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sorry, an old man like me tends to get spooked at the sight of new things. You're from one of those big cities, right? D.C.? Trimounts? Or Wrankwood?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Sorry, an old man like me tends to get spooked at the sight of new things. You're from one of those big cities, right? D.C.? Trimounts? Or Wrankwood?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Something like that. San Sophie Police Special Criminology Consultant, Tin Man. Thank you for your concern. My body is in excellent condition. You can think of the metal as a sort of assistive medical device.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Something like that. San Sophie Police Special Criminology Consultant, Tin Man. Thank you for your concern. My body is in excellent condition. You can think of the metal as a sort of assistive medical device."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Detective Hugh Mosby. What was the question again? Oh, right. The hotheaded prick? Yeah, that's my case.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Detective Hugh Mosby. What was the question again? Oh, right. The hotheaded prick? Yeah, that's my case."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "And it's the old man's last case ever. Hey, don't look at me like that. I'm leaving now. Happy retirement, Old Hugh!",
-        "tag": "name",
-        "value": "Trainee Police Officer"
+        "command": "name",
+        "value": "Trainee Police Officer",
+        "text": "And it's the old man's last case ever. Hey, don't look at me like that. I'm leaving now. Happy retirement, Old Hugh!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I had a look at the case's records. A typical mugging that turned deadly. The victim is a local, unemployed man.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I had a look at the case's records. A typical mugging that turned deadly. The victim is a local, unemployed man."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hm, looks like you've done your homework. You said you had a question. What is it, 'criminology consultant'?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Hm, looks like you've done your homework. You said you had a question. What is it, 'criminology consultant'?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please, call me Tin Man. I noticed you're well-versed in cases like these. The chain of evidence you put together is always impeccable, too.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Please, call me Tin Man. I noticed you're well-versed in cases like these. The chain of evidence you put together is always impeccable, too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Sighs) And your question?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "(Sighs) And your question?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My question is in regards to the robbery itself, Detective. An unemployed stevedore, thrown out of the bar because he couldn't pay his tab. I'm curious\u2014",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "My question is in regards to the robbery itself, Detective. An unemployed stevedore, thrown out of the bar because he couldn't pay his tab. I'm curious\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What exactly is there to rob from a man like him?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "What exactly is there to rob from a man like him?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've handled these hoodlums for decades. I know their type...",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I've handled these hoodlums for decades. I know their type..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please, let me finish. My curiosity got the better of me, so I asked my friends in financial crimes to look into this for me. Check here... The victim's bank account was emptied out just the day before he was killed.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Please, let me finish. My curiosity got the better of me, so I asked my friends in financial crimes to look into this for me. Check here... The victim's bank account was emptied out just the day before he was killed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Emptied out? Well... Even if that's true, that's a whole separate case.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Emptied out? Well... Even if that's true, that's a whole separate case."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, but is there really no connection between these two cases? Detective Mosby, I'm afraid you can't go set up your retirement party just yet.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Yes, but is there really no connection between these two cases? Detective Mosby, I'm afraid you can't go set up your retirement party just yet."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So I'm supposed to just follow your every word?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "So I'm supposed to just follow your every word?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Haha, of course not. Naturally, I can't do this without your cooperation. I can't just sign the documents with your signature and pretend you've agreed to everything now, can I?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Haha, of course not. Naturally, I can't do this without your cooperation. I can't just sign the documents with your signature and pretend you've agreed to everything now, can I?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please, there is no need to be alarmed. All I want to do is help you out while I get to know this place and this city.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Please, there is no need to be alarmed. All I want to do is help you out while I get to know this place and this city."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "29_g3_cottage",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "29_g3_cottage",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "All the evidence's here. Every single one of them has been labeled and categorized. Look all you want.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "All the evidence's here. Every single one of them has been labeled and categorized. Look all you want."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is the label printer broken?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Is the label printer broken?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What the hell is a label printer?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "What the hell is a label printer?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Never mind. Why isn't the victim's financial details included in his background check?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Never mind. Why isn't the victim's financial details included in his background check?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "His bank account is with one of those... what do you call them... Those intercity net virtual banks. They don't have any branches, so I couldn't get in touch with them.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "His bank account is with one of those... what do you call them... Those intercity net virtual banks. They don't have any branches, so I couldn't get in touch with them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Not even the IT department could help you?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Not even the IT department could help you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I didn't bother asking them. They wouldn't care even if I did.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I didn't bother asking them. They wouldn't care even if I did."
     },
     {
-        "text": "This is too small of a case. You get dozens of these every month. Don't think it's a problem, if you asked me.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "This is too small of a case. You get dozens of these every month. Don't think it's a problem, if you asked me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Dozens a month? This is a huge issue, Detective.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Dozens a month? This is a huge issue, Detective."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is this terminal the victim's?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Is this terminal the victim's?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah. I hauled it all the way here from his place. Pretty darn heavy.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Yeah. I hauled it all the way here from his place. Pretty darn heavy."
     },
     {
-        "text": "To bring in new customers, that bank didn't just open bank accounts for free. They even handed out these terminals for connecting to the intercity net. No idea what's in this for them, really. Government subsidies?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "To bring in new customers, that bank didn't just open bank accounts for free. They even handed out these terminals for connecting to the intercity net. No idea what's in this for them, really. Government subsidies?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No need to be so cynical. San Sophie's embrace of the intercity net and its many financial precautions have made it the leading example of city reinvigoration in Columbia.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "No need to be so cynical. San Sophie's embrace of the intercity net and its many financial precautions have made it the leading example of city reinvigoration in Columbia."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Cynical? Haha. They have workers fork over their hard-earned life savings to some manager they've never met. Just the perfect effing example for a civilized society.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Cynical? Haha. They have workers fork over their hard-earned life savings to some manager they've never met. Just the perfect effing example for a civilized society."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Have you tried turning on this terminal?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Have you tried turning on this terminal?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "No."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There should be some relevant transaction records stored on it... Hold on, where is its storage module? The CPU isn't here, either?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "There should be some relevant transaction records stored on it... Hold on, where is its storage module? The CPU isn't here, either?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Detective Mosby... You didn't bring back only the monitor, did you?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Detective Mosby... You didn't bring back only the monitor, did you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Shuts eyes) Damn it\u2014",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "(Shuts eyes) Damn it\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "42_g6_sonwydowntown_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "42_g6_sonwydowntown_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$wasteland_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$wasteland_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$drift",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$drift",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Wait for me here. I need to buy myself a goddamn cup of coffee to scrape together enough sanity for this last goddamned case. You want one?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Wait for me here. I need to buy myself a goddamn cup of coffee to scrape together enough sanity for this last goddamned case. You want one?"
     },
     {
-        "text": "Thanks, but no need. I have a few phone calls to make.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Thanks, but no need. I have a few phone calls to make."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What a freaking headache. I need at least a double shot.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "What a freaking headache. I need at least a double shot."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The detective turns the corner to the traditional, pioneer-style coffee shop that he has patronized for decades."
@@ -1350,508 +1558,584 @@
         "text": "He stops in his tracks. The shop in front of him is not the familiar coffee shop he visited just yesterday."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What the crap is this? Why is there only a freaking kiosk here? Where did the coffee shop go?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "What the crap is this? Why is there only a freaking kiosk here? Where did the coffee shop go?"
     },
     {
-        "text": "Hey, what gives?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Hey, what gives?"
     },
     {
         "text": "Not a single passerby stops to answer his question, leaving him standing there to be deafened by the noise of the bank's flag repeatedly slapping the construction warning sign."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "42_g6_sonwydowntown_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "42_g6_sonwydowntown_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.08,
-        "fadetime": 0.01
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.08,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.08,
-        "fadetime": 0.01
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.08,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_driveincar",
-        "loop": true,
-        "channel": "a",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_driveincar",
+            "loop": true,
+            "channel": "a",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#7$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "Please slow down a little. This is not a race\u2014",
-        "tag": "multiline",
-        "name": "Tin Man"
+        "value": "Tin Man"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "Hello! Yes, I just called you earlier. It's still about that case. The victim's name is\u2014",
-        "tag": "multiline",
-        "name": "Tin Man"
-    },
-    {
-        "text": "(Covers phone) What's his name again?",
-        "tag": "name",
         "value": "Tin Man"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "(Covers phone) What's his name again?"
     },
     {
-        "text": "Granger.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Granger."
     },
     {
-        "text": "Joseph Granger. I need all of his account's transaction records for the past month... You can't give them to me? My apologies. Perhaps I'm not making myself clear enough...",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please look for the copy of <i>San Sophie City Intercity Net Establishment Act</i> that has likely been sitting on your desk untouched since it was distributed two days ago. Read the very first line at the very top.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Joseph Granger. I need all of his account's transaction records for the past month... You can't give them to me? My apologies. Perhaps I'm not making myself clear enough..."
     },
     {
-        "text": "This document was signed by the mayor himself. And please don't tell me you don't have it, Mr. Bank Manager. Otherwise, either you or the mayor... or both might have to look forward to a court date.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Please look for the copy of <i>San Sophie City Intercity Net Establishment Act</i> that has likely been sitting on your desk untouched since it was distributed two days ago. Read the very first line at the very top."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "This document was signed by the mayor himself. And please don't tell me you don't have it, Mr. Bank Manager. Otherwise, either you or the mayor... or both might have to look forward to a court date."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "text": "That's right. 'Under the supervision of the city government and all its citizens.' Now, take a look at the second page regarding the repercussions for refusal to cooperate with law enforcement.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "That's right. 'Under the supervision of the city government and all its citizens.' Now, take a look at the second page regarding the repercussions for refusal to cooperate with law enforcement."
     },
     {
-        "text": "Haha, of course I have that authority. My name? Call me Tin Man.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Smart guy. Yes, I am listening. Bankruptcy? His savings were transferred in one single transaction? Is the recipient a business account? Personal. Okay.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Haha, of course I have that authority. My name? Call me Tin Man."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#5$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Smart guy. Yes, I am listening. Bankruptcy? His savings were transferred in one single transaction? Is the recipient a business account? Personal. Okay."
     },
     {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#5$1",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
         "text": "A mortgage? How much?",
-        "tag": "multiline",
-        "name": "Tin Man"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
-    },
-    {
-        "text": "I am surprised you approved a loan to that amount so quickly. Whew, how shockingly efficient.",
-        "tag": "multiline",
-        "name": "Tin Man"
-    },
-    {
-        "text": "I will need you to fax all the documents to the San Sophie Police. Detective Hugh Mosby for the recipient. Good bye.",
-        "tag": "name",
         "value": "Tin Man"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hey...",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "text": "I am surprised you approved a loan to that amount so quickly. Whew, how shockingly efficient.",
+        "value": "Tin Man"
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I will need you to fax all the documents to the San Sophie Police. Detective Hugh Mosby for the recipient. Good bye."
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Hey..."
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "dialog"
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The communicator in the Tin Man's hand rings once again to interrupt the detective."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, hello. Mr. Nixon of the Nixon Cargo Handling Company, am I correct? Thank you for calling back. I just wanted to make sure. Was there a Joseph Granger under your employ?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Yes, hello. Mr. Nixon of the Nixon Cargo Handling Company, am I correct? Thank you for calling back. I just wanted to make sure. Was there a Joseph Granger under your employ?"
     },
     {
-        "text": "Yes, that's right. There will be an investigation into the legality of your company's layoffs, but I actually want to know a little more about Mr. Granger's workman's compensation insurance.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Yes, that's right. There will be an investigation into the legality of your company's layoffs, but I actually want to know a little more about Mr. Granger's workman's compensation insurance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Accident insurance? To the amount of... 1.7 million gold certificates. Very good. Is he still being compensated? He hasn't been paid for that since he left? Did he know about it?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Accident insurance? To the amount of... 1.7 million gold certificates. Very good. Is he still being compensated? He hasn't been paid for that since he left? Did he know about it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You should've told him much sooner. Rest assured, I'll be in touch, Mr. Nixon.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "You should've told him much sooner. Rest assured, I'll be in touch, Mr. Nixon."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Almost as soon as the Tin Man hangs up, the detective starts to speak."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Heh, you're not so bad at this.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Heh, you're not so bad at this."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm good enough. I'm actually surprised that these basic communication techniques can impress an old veteran like you.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I'm good enough. I'm actually surprised that these basic communication techniques can impress an old veteran like you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You think you're so damn cool chewing them out on the communicator, huh?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You think you're so damn cool chewing them out on the communicator, huh?"
     },
     {
-        "text": "'Of course I have that authority,' 'Rest assured, I'll be in touch...' What, you think you're in a Wrankwood courtroom flick?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "'Of course I have that authority,' 'Rest assured, I'll be in touch...' What, you think you're in a Wrankwood courtroom flick?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Tell you the truth, I actually considered starring in one of those.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Tell you the truth, I actually considered starring in one of those."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So that's how you figured everything out just by making a couple phone calls. Bravo!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "So that's how you figured everything out just by making a couple phone calls. Bravo!"
     },
     {
-        "text": "A bankrupt, unemployed man, provoking a hoodlum on purpose to try to make enough money off his accident insurance\u2014one that expired long ago\u2014to pay off his debt. Is that the story you're going to tell the brass?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "A bankrupt, unemployed man, provoking a hoodlum on purpose to try to make enough money off his accident insurance\u2014one that expired long ago\u2014to pay off his debt. Is that the story you're going to tell the brass?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carhorn",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carhorn",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Detective Mosby slams the horn, then suddenly turns, before switching lanes to overtake a slow truck."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Easy, Detective. Drive safe.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Easy, Detective. Drive safe."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You know what this city used to look like forty years ago? It was nothing but a swath of barrenlands! It was us pioneers who carried each rock here one-by-one to build this city from the ground up!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You know what this city used to look like forty years ago? It was nothing but a swath of barrenlands! It was us pioneers who carried each rock here one-by-one to build this city from the ground up!"
     },
     {
-        "text": "You young'uns from the big cities with all your jargon and those communicators. You think you can crack every case just by calling every goddamn number out there on Terra and blabbering into the phone!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You young'uns from the big cities with all your jargon and those communicators. You think you can crack every case just by calling every goddamn number out there on Terra and blabbering into the phone!"
     },
     {
-        "text": "You know what I had when I first became a cop? I had the shirt on my back, and this shitty little police handbook!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You know what I had when I first became a cop? I had the shirt on my back, and this shitty little police handbook!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bookdrop",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bookdrop",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The detective grabs the <i>Columbian Police Handbook</i> sitting on his dashboard and tosses it toward the backseat."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It tells us why murders murder and why burglars burglarize, but it doesn't talk about any goddamn intercity net, bank accounts, or frickin' insurance agents!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "It tells us why murders murder and why burglars burglarize, but it doesn't talk about any goddamn intercity net, bank accounts, or frickin' insurance agents!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The times are changing, Detective. I don't understand where your anger is coming from.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "The times are changing, Detective. I don't understand where your anger is coming from."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You don't understand? I don't understand, either!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You don't understand? I don't understand, either!"
     },
     {
-        "text": "It's because of you dipshits chasing trends and grabbing the newest gizmos! You people are why our perfectly fine city turned into this shitheap! To the point that a simple coffee shop couldn't stay in business!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "It's because of you dipshits chasing trends and grabbing the newest gizmos! You people are why our perfectly fine city turned into this shitheap! To the point that a simple coffee shop couldn't stay in business!"
     },
     {
-        "text": "Listen up, Tin Fucking Man. This is my case and nobody else's. I've been a cop for thirty years, and I don't need a steel-plated guy from a movie to come teach me how to solve it!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Listen up, Tin Fucking Man. This is my case and nobody else's. I've been a cop for thirty years, and I don't need a steel-plated guy from a movie to come teach me how to solve it!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Someone's communicator starts ringing. Immediately, the detective glares at the Tin Man, leaving him no choice but to lift his device up to show that he hasn't received any call."
@@ -1860,61 +2144,65 @@
         "text": "With a grumpy look, Detective Mosby pulls out his own communicator and answers the call."
     },
     {
-        "text": "Hello, Mr. Mosley. I'm very sorry to tell you that I've made a mistake with your order. There are actually seven other customers ahead of you today, so we may not be able to finish your cake in time...",
-        "tag": "name",
-        "value": "Cake Shop Apprentice"
+        "command": "name",
+        "value": "Cake Shop Apprentice",
+        "text": "Hello, Mr. Mosley. I'm very sorry to tell you that I've made a mistake with your order. There are actually seven other customers ahead of you today, so we may not be able to finish your cake in time..."
     },
     {
-        "text": "We can give you a full refund! And a couple gift coupons...",
-        "tag": "name",
-        "value": "Cake Shop Apprentice"
+        "command": "name",
+        "value": "Cake Shop Apprentice",
+        "text": "We can give you a full refund! And a couple gift coupons..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I don't need your dogshit coupons! I ordered a freakin' cake! I want a freakin' cake! For my retirement party!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I don't need your dogshit coupons! I ordered a freakin' cake! I want a freakin' cake! For my retirement party!"
     },
     {
-        "text": "Are you saying I should cancel my party?! Is that what you're telling me?!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Are you saying I should cancel my party?! Is that what you're telling me?!"
     },
     {
-        "text": "You want me to walk into the frigging office tomorrow with my head hung low, so the greenhorns can laugh at me?!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You want me to walk into the frigging office tomorrow with my head hung low, so the greenhorns can laugh at me?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I-I'm sorry...",
-        "tag": "name",
-        "value": "Cake Shop Apprentice"
+        "command": "name",
+        "value": "Cake Shop Apprentice",
+        "text": "I-I'm sorry..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The detective hangs up."
@@ -1926,315 +2214,373 @@
         "text": "He looks outside. What was once a bustling port is now deserted. Over at the docks, a massive, abandoned cargo landship is being taken apart and sold for scrap."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 3
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "42_g6_sonwydowntown_d",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "42_g6_sonwydowntown_d",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carstop",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carstop",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 3.5
+        "command": "delay",
+        "value": 3.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here we are. Remember, this is my case. I don't need your help.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Here we are. Remember, this is my case. I don't need your help."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "curtain",
-        "fadetime": 1
+        "command": "curtain",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cardoorc",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cardoorc",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$saferoom_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$saferoom_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_outside",
-        "volume": 0,
-        "loop": true,
-        "channel": "c"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_outside",
+            "volume": 0,
+            "loop": true,
+            "channel": "c"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "c",
-        "fadetime": 1.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "c",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "A group of workers with metal tools have surrounded the shabby two-story attic. Inside, a girl hides behind the curtains, trembling from head to toe."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Do you know the people who live here?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Do you know the people who live here?"
     },
     {
-        "tag": "stopsound",
-        "channel": "c",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "c",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_659_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_659_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We're just doing the job we're paid to do, boss.",
-        "tag": "name",
-        "value": "Hired Hand"
+        "command": "name",
+        "value": "Hired Hand",
+        "text": "We're just doing the job we're paid to do, boss."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here, have a smoke. Tell me, man, why are you making things so hard for this young lady here?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Here, have a smoke. Tell me, man, why are you making things so hard for this young lady here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_659_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_659_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Please don't make this hard for <i>us</i>, boss. This house's been foreclosed, and we're just here to clean up the place. The money comes down from on high, and we depend on the money to live, that's all.",
-        "tag": "name",
-        "value": "Hired Hand"
+        "command": "name",
+        "value": "Hired Hand",
+        "text": "Please don't make this hard for <i>us</i>, boss. This house's been foreclosed, and we're just here to clean up the place. The money comes down from on high, and we depend on the money to live, that's all."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Who hired you?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Who hired you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_659_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_659_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We have no clue either. We just go where the job tells us to go, and once everything's taken care of, they transfer the money to our accounts. If we don't finish, we'll be six feet under.",
-        "tag": "name",
-        "value": "Hired Hand"
+        "command": "name",
+        "value": "Hired Hand",
+        "text": "We have no clue either. We just go where the job tells us to go, and once everything's taken care of, they transfer the money to our accounts. If we don't finish, we'll be six feet under."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The workers take the cigarettes, but no one starts to smoke. The hammers, shovels, and crowbars in their hands are all printed with the stevedores' union's logo."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Sighs) So you boys used to be dockworkers? The owner of this place was a guy called Joseph Granger. He used to work at the dock too.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "(Sighs) So you boys used to be dockworkers? The owner of this place was a guy called Joseph Granger. He used to work at the dock too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_659_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_659_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "People die, boss. It ain't easy to survive.",
-        "tag": "name",
-        "value": "Hired Hand"
+        "command": "name",
+        "value": "Hired Hand",
+        "text": "People die, boss. It ain't easy to survive."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm not your boss. Here's my badge.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I'm not your boss. Here's my badge."
     },
     {
-        "text": "Per the <i>Columbian Police Handbook</i>, I hereby announce this property was involved in criminal activity and is being sealed off by the San Sophie Police. This whole area is off limits.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Per the <i>Columbian Police Handbook</i>, I hereby announce this property was involved in criminal activity and is being sealed off by the San Sophie Police. This whole area is off limits."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_659_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_659_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's no use, boss. We leave, and they'll just send more guys over.",
-        "tag": "name",
-        "value": "Hired Hand"
+        "command": "name",
+        "value": "Hired Hand",
+        "text": "It's no use, boss. We leave, and they'll just send more guys over."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Scram! Now!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Scram! Now!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Without protesting, the workers all turn around expressionless and leave."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That's not in the handbook.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "That's not in the handbook."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What, you've read every single clause?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "What, you've read every single clause?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "The detective sneers, and picks up the monitor from the trunk of the car."
@@ -2243,121 +2589,139 @@
         "text": "He forces his way past the Tin Man and walks straight into the house."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_indoor_u",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_indoor_u",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's heavy, isn't it?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "It's heavy, isn't it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I told you. I don't need\u2014",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I told you. I don't need\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I am just asking.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I am just asking."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Tin Man walks toward the soggy-looking plywood cabinet, and finds the lost storage module among the pile of household goods that CSI rummaged through."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The old detective crouches in front of a pile of electronic components, contemplates for a while, before hesitantly grabbing what seems to be a power cord to plug into the monitor."
@@ -2366,21 +2730,23 @@
         "text": "The Tin Man clears his throat. The old detective immediately stops what he's doing, turns around, and glares."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've said not a thing.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I've said not a thing."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The old detective turns his attention back to the components and frowns. After a brief moment, as though he has figured out something, he grabs one of he cables and connects two crystal chips with it."
@@ -2392,31 +2758,35 @@
         "text": "But just as he's about to connect the storage module to the monitor, he notices that the two-prong plug in his hand cannot be plugged into the three-hole socket."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Gah... shit!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Gah... shit!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Maybe it's because he's been crouching for quite some time, but his face turns red, and drops of sweat start to drip down from his forehead."
@@ -2428,36 +2798,40 @@
         "text": "But, under the intense force, the metal prongs slip and the rugged outer shell slides down, leaving a long, bloody cut on the detective's finger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Son of a bitch!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Son of a bitch!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Damn your coffee shop! Damn your kiosks!",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Damn your coffee shop! Damn your kiosks!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The old detective angrily swings his injured finger around, lashing out at the cup of espresso that he was unable to have for the first time in decades, and the neighbors who post warning letters on his apartment's door."
@@ -2478,31 +2852,37 @@
         "text": "The Tin Man stands idly by. Per the old detective's request, he offers no help until the detective has calmed down."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Put this thing back together, will you? I'm begging you.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Put this thing back together, will you? I'm begging you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown2",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The old detective sits listlessly on the floor."
@@ -2514,175 +2894,197 @@
         "text": "The instructions come with simple illustrations that are easy to understand. The Tin Man flips through the book page by page, and in no time, he has finished putting the terminal back together."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's locked behind a password.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "It's locked behind a password."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "His daughter's birthday.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "His daughter's birthday."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_kalimbapizz",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_kalimbapizz",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "The detective says a string of numbers, and a pleasant boot-up sound effect can be heard. The Tin Man has opened the only program on the terminal\u2014an online banking software."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...This is all a scam.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "...This is all a scam."
     },
     {
-        "text": "The scammers lured Granger in with a small amount that could buy him a pack of beer. Then, they started forcing him send more and more money.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "The scammers lured Granger in with a small amount that could buy him a pack of beer. Then, they started forcing him send more and more money."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Tin Man downloads all the conversations and transaction records."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A scam... This kind of scam has never been seen before in San Sophie.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "A scam... This kind of scam has never been seen before in San Sophie."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "At the current stage, you could even say this is all legal. These records are practically the same as normal investments.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "At the current stage, you could even say this is all legal. These records are practically the same as normal investments."
     },
     {
-        "text": "But from the very beginning, their goal had always been to bleed Granger dry.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "But from the very beginning, their goal had always been to bleed Granger dry."
     },
     {
-        "text": "They even sent him the details on how he could take out a loan with his house as collateral. Wait... they also mentioned... accident insurance.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "They even sent him the details on how he could take out a loan with his house as collateral. Wait... they also mentioned... accident insurance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Okay, that's more than enough. That's abetting suicide. They aren't getting away.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Okay, that's more than enough. That's abetting suicide. They aren't getting away."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No, this is far from enough. You have no way of finding out who is behind this. It's very likely that it's not just one person on the other side.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "No, this is far from enough. You have no way of finding out who is behind this. It's very likely that it's not just one person on the other side."
     },
     {
-        "text": "They didn't leave him so much as a single gold certificate.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "They didn't leave him so much as a single gold certificate."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "text": "When did people start acting like this? Back on the frontier, not even the worst of thieves would steal the last piece of bread from a poor family. What happened to our humanity?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "When did people start acting like this? Back on the frontier, not even the worst of thieves would steal the last piece of bread from a poor family. What happened to our humanity?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Back then, everyone still dueled in broad daylight... Come, let's head back to the station. We have all the evidence we needed.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Back then, everyone still dueled in broad daylight... Come, let's head back to the station. We have all the evidence we needed."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Tin Man puts the evidence into his pocket and leaves the room."
@@ -2691,689 +3093,797 @@
         "text": "The old detective, however, is still staring at the monitor that has been off for some time. The man reflected on the screen seems unrecognizable."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "42_g7_sonwydowntown_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "42_g7_sonwydowntown_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "By the time he's finally made it out of the building, he finds the Tin Man discussing something on his communicator again. A surge of rage out of nowhere starts to boil within the old detective."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Okay, it's settled, then. Goodbye.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "...Okay, it's settled, then. Goodbye."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And what are you doing now?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "And what are you doing now?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've contacted the Maylander Child Rights Protection Foundation. Their specialists will be here soon to find Granger's daughter a suitable place to live.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I've contacted the Maylander Child Rights Protection Foundation. Their specialists will be here soon to find Granger's daughter a suitable place to live."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is this not the humanity that you wanted, Detective?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Is this not the humanity that you wanted, Detective?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "This is supposed to be my job, and I didn't do my job.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "This is supposed to be my job, and I didn't do my job."
     },
     {
-        "text": "You did the right thing.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You did the right thing."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "The old detective laughs at himself mockingly, as though a weight has been lifted off his shoulders."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm too old, alright. I'm not cut out for this job anymore.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I'm too old, alright. I'm not cut out for this job anymore."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The old detective's communicator rings."
     },
     {
-        "text": "Mr. Mosley, I'm so sorry for the experience you had earlier. Our manager has reprimanded me, and I've learned my lesson.",
-        "tag": "name",
-        "value": "Cake Shop Apprentice"
+        "command": "name",
+        "value": "Cake Shop Apprentice",
+        "text": "Mr. Mosley, I'm so sorry for the experience you had earlier. Our manager has reprimanded me, and I've learned my lesson."
     },
     {
-        "text": "We made some adjustments on our end. We'll have your retirement cake delivered to you at exactly the time you requested.",
-        "tag": "name",
-        "value": "Cake Shop Apprentice"
+        "command": "name",
+        "value": "Cake Shop Apprentice",
+        "text": "We made some adjustments on our end. We'll have your retirement cake delivered to you at exactly the time you requested."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No, son, I'm the one who owes you an apology. I shouldn't have acted like that. I don't need the cake anymore... No, I don't need a refund. What I'm saying is, leave this chance for somebody who needs it more.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "No, son, I'm the one who owes you an apology. I shouldn't have acted like that. I don't need the cake anymore... No, I don't need a refund. What I'm saying is, leave this chance for somebody who needs it more."
     },
     {
-        "text": "Party? Forget it, son. No one was gonna come anyway.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Party? Forget it, son. No one was gonna come anyway."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You should head back to the station. I'll wait here for my coworkers to come pick the girl up.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "You should head back to the station. I'll wait here for my coworkers to come pick the girl up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "The old detective bandages his injured finger and squeezes himself into the car. Just then, the Tin Man calls out to him."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You made that regulation up, didn't you?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "You made that regulation up, didn't you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ha. Believe it or not, all these years, whenever I come across something that I don't want to deal with or want no part in, I make up some kind of regulation and say it's in the handbook.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Ha. Believe it or not, all these years, whenever I come across something that I don't want to deal with or want no part in, I make up some kind of regulation and say it's in the handbook."
     },
     {
-        "text": "It's been so many years, and you're the first one to call me on it.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "It's been so many years, and you're the first one to call me on it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "At the very least, you've actually studied the handbook.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "At the very least, you've actually studied the handbook."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What else would I study? The Lateran folks got their prayers and hymns, while all I have is an old book. A rookie like you wouldn't understand.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "What else would I study? The Lateran folks got their prayers and hymns, while all I have is an old book. A rookie like you wouldn't understand."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Goodbye.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "...Goodbye."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "background",
-        "image": "29_g3_cottage",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "29_g3_cottage",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$normal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$normal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Later that night at the police station, the old detective keeps rewriting the report over and over."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1,
-        "delay": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1,
+            "delay": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is the party over?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Is the party over?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah, you missed the cake.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Yeah, you missed the cake."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
         "text": "The old detective rolls his eyes, and takes a cup of hot coffee from the Tin Man's hand."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'll pay you back tomorrow.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I'll pay you back tomorrow."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You let that hooligan go the moment you got back to the station. Are you still coming in for work tomorrow?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "You let that hooligan go the moment you got back to the station. Are you still coming in for work tomorrow?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I still need to turn in my badge. Haven't had the time to see the commissioner all day.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I still need to turn in my badge. Haven't had the time to see the commissioner all day."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Perhaps I can hand it in for you? In a few hours, I'll be locking them in the conference room for some time.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Perhaps I can hand it in for you? In a few hours, I'll be locking them in the conference room for some time."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No... There are a few things I need to tell him myself.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "No... There are a few things I need to tell him myself."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Tin Man nods, then pulls out a thick book and hands it over to the old detective."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here's a retirement gift for you. It hasn't been published yet, so keep it to yourself.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Here's a retirement gift for you. It hasn't been published yet, so keep it to yourself."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "<i>Columbian Police Handbook</i>... Second Edition?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "<i>Columbian Police Handbook</i>... Second Edition?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Third, actually. The one you've been reading is the second. When I wrote that one, San Sophie was indeed a completely different place.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Third, actually. The one you've been reading is the second. When I wrote that one, San Sophie was indeed a completely different place."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You... You?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "You... You?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is that so surprising? You're not the only old man who walks these lands.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Is that so surprising? You're not the only old man who walks these lands."
     },
     {
-        "text": "My original plan was to stay in the city for three days, and after a few rounds of important meetings, proceed to other cities to conduct on-site observations there.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "My original plan was to stay in the city for three days, and after a few rounds of important meetings, proceed to other cities to conduct on-site observations there."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But thanks to your case today, I'm planning to stay here for a few more days.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "But thanks to your case today, I'm planning to stay here for a few more days."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Observe what? Cops?",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Observe what? Cops?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Policemen, criminals, the unemployed, power brokers, broken electric fans... I'll observe everything that urgently awaits change. I'll observe and learn from it.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Policemen, criminals, the unemployed, power brokers, broken electric fans... I'll observe everything that urgently awaits change. I'll observe and learn from it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "......"
     },
     {
-        "text": "Alright.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Alright."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You accepted that quickly. Why?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "You accepted that quickly. Why?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "All I've accepted is the reality that I'm old. Columbia these days, you wake up to all kinds of new things every morning. I'm getting used to it.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "All I've accepted is the reality that I'm old. Columbia these days, you wake up to all kinds of new things every morning. I'm getting used to it."
     },
     {
-        "text": "If I can't bring myself to accept the changes the city is going through, I can still move to the frontier and live my life the way I want.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "If I can't bring myself to accept the changes the city is going through, I can still move to the frontier and live my life the way I want."
     },
     {
-        "text": "I'll bake cookies for my neighbors, chit-chat with the barkeep, instead of worrying about having my life ruined by some strangers.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "I'll bake cookies for my neighbors, chit-chat with the barkeep, instead of worrying about having my life ruined by some strangers."
     },
     {
-        "text": "And even the bandits there would at least leave me a bloody handprint at the crime scenes.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "And even the bandits there would at least leave me a bloody handprint at the crime scenes."
     },
     {
-        "text": "Every second I lived is pulling me back. I don't have the strength to change myself anymore.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Every second I lived is pulling me back. I don't have the strength to change myself anymore."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No one will blame a man for wanting to stay in the past, for being a pioneer of his own life.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "No one will blame a man for wanting to stay in the past, for being a pioneer of his own life."
     },
     {
-        "text": "That said, someone has got to look at what's ahead, isn't that right?",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "That said, someone has got to look at what's ahead, isn't that right?"
     },
     {
-        "text": "I am the poor man who must keep chasing tomorrow, as the place I must go is much farther away than tomorrow.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I am the poor man who must keep chasing tomorrow, as the place I must go is much farther away than tomorrow."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_523_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_523_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Thanks for talking all this over with me, Tin Man. It's a good thing you screwed up my last case today.",
-        "tag": "name",
-        "value": "Detective Mosby"
+        "command": "name",
+        "value": "Detective Mosby",
+        "text": "Thanks for talking all this over with me, Tin Man. It's a good thing you screwed up my last case today."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And it's a good thing that I gave myself half a day of free time before my meetings. Otherwise, I would never have met the detective with the worst driving skills I've ever seen, witnessed the most realistic incident in this country, or revealed this well-hidden corner to the public.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "And it's a good thing that I gave myself half a day of free time before my meetings. Otherwise, I would never have met the detective with the worst driving skills I've ever seen, witnessed the most realistic incident in this country, or revealed this well-hidden corner to the public."
     },
     {
-        "text": "I believe my work will unmask those who are currently evading justice. And to get there, I need the help of many more people like you.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "I believe my work will unmask those who are currently evading justice. And to get there, I need the help of many more people like you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4151_tinman_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4151_tinman_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't worry about tomorrow, Detective. Tomorrow always comes. Happy retirement.",
-        "tag": "name",
-        "value": "Tin Man"
+        "command": "name",
+        "value": "Tin Man",
+        "text": "Don't worry about tomorrow, Detective. Tomorrow always comes. Happy retirement."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
         "text": "The detective holds the unpublished book in one hand and the cup of coffee in the other, as though he is saluting someone."
@@ -3382,25 +3892,29 @@
         "text": "Until the first ray of light spills through the window blinds and bathes him in a soft glow."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

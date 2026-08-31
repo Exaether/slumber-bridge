@@ -1,1060 +1,1233 @@
 [
     {
-        "text": "\u7b2c\u4e09\u5173\uff08\u524d\uff09",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.8,
+            "crossfade": 1.5
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.8,
-        "crossfade": 1.5
+        "command": "largebg",
+        "params": {
+            "imagegroup": "bg_beach_1/bg_beach_2",
+            "solidwidth": "920/920",
+            "solidheight": 720,
+            "x": -720
+        }
     },
     {
-        "tag": "largebg",
-        "imagegroup": "bg_beach_1/bg_beach_2",
-        "solidwidth": "920/920",
-        "solidheight": 720,
-        "x": -720
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$beach",
+            "volume": 0.7,
+            "channel": "B",
+            "loop": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$beach",
-        "volume": 0.7,
-        "channel": "B",
-        "loop": true
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#1",
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, I have to blame you for what happened this time."
     },
     {
-        "text": "Doctor, I have to blame you for what happened this time.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Everyone has been injured to some degree. As the leader, you're responsible for that!"
     },
     {
-        "text": "Everyone has been injured to some degree. As the leader, you're responsible for that!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Gummy has already finished treating them, but it's going to sting if they get in the water."
     },
     {
-        "text": "Gummy has already finished treating them, but it's going to sting if they get in the water.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Jeez, you need to show some more reservation when leading your teams."
     },
     {
-        "text": "Jeez, you need to show some more reservation when leading your teams.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "Sorry...;That swimsuit looks good on you, Amiya.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Sorry...;That swimsuit looks good on you, Amiya.",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Um, it's not like I'm trying to trample on your good will..."
     },
     {
-        "text": "Um, it's not like I'm trying to trample on your good will...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#2"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Is, is that so? Miss Savage picked it out for me... I was so worried that you wouldn't like it--"
     },
     {
-        "text": "Is, is that so? Miss Savage picked it out for me... I was so worried that you wouldn't like it--",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "W-wait! Don't you try to play that trick on me, Dr. {@nickname}!"
     },
     {
-        "text": "W-wait! Don't you try to play that trick on me, Dr. {@nickname}!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "We did go a bit overboard this time...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "We did go a bit overboard this time...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Good grief... And I have a word for Mister Hellagur as well!"
     },
     {
-        "text": "Good grief... And I have a word for Mister Hellagur as well!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I explicitly told him to keep an eye on you, so why did he turn a blind eye..."
     },
     {
-        "text": "I explicitly told him to keep an eye on you, so why did he turn a blind eye...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Until a contract is signed, Rhodes Island is not allowed to intervene in the internal affairs of an independent city-state."
     },
     {
-        "text": "Until a contract is signed, Rhodes Island is not allowed to intervene in the internal affairs of an independent city-state.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "If we get caught up in legal repercussions, Rhodes Island will be in a very tight spot."
     },
     {
-        "text": "If we get caught up in legal repercussions, Rhodes Island will be in a very tight spot.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "Actually, I already...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Actually, I already...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Yes, I know."
     },
     {
-        "text": "Yes, I know.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, you really did something very dangerous."
     },
     {
-        "text": "Doctor, you really did something very dangerous.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#2"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...Why were you fighting with crazed fans anyway! If you're an adult, you should act like one."
     },
     {
-        "text": "...Why were you fighting with crazed fans anyway! If you're an adult, you should act like one.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No matter how much you like a band, you need to be nice to the other audience members, and you certainly can't pick fights with them!"
     },
     {
-        "text": "No matter how much you like a band, you need to be nice to the other audience members, and you certainly can't pick fights with them!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "...? But we were...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...? But we were...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#2"
+        "command": "name",
+        "value": "Amiya",
+        "text": "(Shush!)"
     },
     {
-        "text": "(Shush!)",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No more questions! That wraps up this incident! Okay!"
     },
     {
-        "text": "No more questions! That wraps up this incident! Okay!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Be more careful next time, okay?"
     },
     {
-        "text": "Be more careful next time, okay?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "I know.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "I know.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_summer_2#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_summer_2#2"
+        "command": "name",
+        "value": "Amiya",
+        "text": "All right!"
     },
     {
-        "text": "All right!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, come with me. I found lots of beautiful seashells on the other side of this reef. Beaches are absolutely fascinating!"
     },
     {
-        "text": "Doctor, come with me. I found lots of beautiful seashells on the other side of this reef. Beaches are absolutely fascinating!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The water isn't cold... Hmm..."
     },
     {
-        "text": "The water isn't cold... Hmm...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "decision",
+        "params": {
+            "options": "(Follow Amiya);(Splash Amiya with water);(Take Amiya's hand)",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "(Follow Amiya);(Splash Amiya with water);(Take Amiya's hand)",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Amiya",
+        "text": "Come, Doctor, it's over here!"
     },
     {
-        "text": "Come, Doctor, it's over here!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "name",
+        "value": "Amiya",
+        "text": "Eek! Doctor! Please don't do that!"
     },
     {
-        "text": "Eek! Doctor! Please don't do that!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Darn it! Take this! Ahaha..."
     },
     {
-        "text": "Darn it! Take this! Ahaha...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "name",
+        "value": "Amiya",
+        "text": "Ehehe..."
     },
     {
-        "text": "Ehehe...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_024"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_024"
+        "command": "name",
+        "value": "Herman",
+        "text": "Dr. {@nickname}, nice to see you."
     },
     {
-        "text": "Dr. {@nickname}, nice to see you.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Ceylon told me many things about Rhodes Island, so I've been very keen on speaking with you."
     },
     {
-        "text": "Ceylon told me many things about Rhodes Island, so I've been very keen on speaking with you.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "How about taking a walk with me?"
     },
     {
-        "text": "How about taking a walk with me?",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "...That's fine.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...That's fine.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "largebg",
+        "params": {
+            "imagegroup": "bg_beach_1/bg_beach_2",
+            "solidwidth": "920/920",
+            "solidheight": 720,
+            "x": -180
+        }
     },
     {
-        "tag": "largebg",
-        "imagegroup": "bg_beach_1/bg_beach_2",
-        "solidwidth": "920/920",
-        "solidheight": 720,
-        "x": -180
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_024"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_024"
+        "command": "name",
+        "value": "Herman",
+        "text": "Thank you, Doctor of Rhodes Island."
     },
     {
-        "text": "Thank you, Doctor of Rhodes Island.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Had you not helped my daughter, her recklessness would have ended dismally."
     },
     {
-        "text": "Had you not helped my daughter, her recklessness would have ended dismally.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "That wasn't recklessness.;I actually didn't do very much.;The one you should be thanking is Ceylon.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "That wasn't recklessness.;I actually didn't do very much.;The one you should be thanking is Ceylon.",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "name",
+        "value": "Herman",
+        "text": "I trained Cronin myself. His instincts may be base, but he's also very capable. That's why I turned a blind eye on him all these years."
     },
     {
-        "text": "I trained Cronin myself. His instincts may be base, but he's also very capable. That's why I turned a blind eye on him all these years.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "However, as of the last few years, he's gone down a dangerous road, and I can no longer trust him."
     },
     {
-        "text": "However, as of the last few years, he's gone down a dangerous road, and I can no longer trust him.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "This time, I left Schwarz here on purpose just to see if he's still trustworthy."
     },
     {
-        "text": "This time, I left Schwarz here on purpose just to see if he's still trustworthy.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "The results were disappointing."
     },
     {
-        "text": "The results were disappointing.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "Why are you telling me all this?",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Why are you telling me all this?",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Herman",
+        "text": "...I enjoy walking along this part of the beach."
     },
     {
-        "text": "...I enjoy walking along this part of the beach.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "That's because my wife, Barbara, sleeps deep beneath these waves."
     },
     {
-        "text": "That's because my wife, Barbara, sleeps deep beneath these waves.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "I still remember that day; the weather was a bit warm, and the sunset was splendid. She turned to me here and said, 'If only we could stay here forever.'"
     },
     {
-        "text": "I still remember that day; the weather was a bit warm, and the sunset was splendid. She turned to me here and said, 'If only we could stay here forever.'",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "In the blink of an eye, I was left behind."
     },
     {
-        "text": "In the blink of an eye, I was left behind.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Doctor, turn around and take a look."
     },
     {
-        "text": "Doctor, turn around and take a look.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Do you understand now? This city is a paradise I built for her."
     },
     {
-        "text": "Do you understand now? This city is a paradise I built for her.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "As for why I'm telling you this..."
     },
     {
-        "text": "As for why I'm telling you this...",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Because I can tell that you and I are the same type of person."
     },
     {
-        "text": "Because I can tell that you and I are the same type of person.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "In this world, not everything can be resolved with good. Sometimes, we must get our hands dirty."
     },
     {
-        "text": "In this world, not everything can be resolved with good. Sometimes, we must get our hands dirty.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "I agree.;I disagree.;Who knows...",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "I agree.;I disagree.;Who knows...",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "name",
+        "value": "Herman",
+        "text": "For me, good and bad lost their meaning a long time ago. The only things that matter to me are results, and this city."
     },
     {
-        "text": "For me, good and bad lost their meaning a long time ago. The only things that matter to me are results, and this city.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "Why not tell Ceylon?",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Why not tell Ceylon?",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Herman",
+        "text": "I'm not looking for understanding, Doctor."
     },
     {
-        "text": "I'm not looking for understanding, Doctor.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "If I needed my daughter's understanding, we would not have become like we are now."
     },
     {
-        "text": "If I needed my daughter's understanding, we would not have become like we are now.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Besides, do you think she'd really understand if I told her?"
     },
     {
-        "text": "Besides, do you think she'd really understand if I told her?",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "No. She still needs a long time to understand that the world isn't as black and white as she thinks."
     },
     {
-        "text": "No. She still needs a long time to understand that the world isn't as black and white as she thinks.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Schwarz hopes that she will never understand, but I... Unfortunately, I lost the ability to make that choice."
     },
     {
-        "text": "Schwarz hopes that she will never understand, but I... Unfortunately, I lost the ability to make that choice.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Doctor, Ceylon would like to join you, so I asked Schwarz to accompany her. I'm fine with it."
     },
     {
-        "text": "Doctor, Ceylon would like to join you, so I asked Schwarz to accompany her. I'm fine with it.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "After all, this Siesta is no longer her paradise."
     },
     {
-        "text": "After all, this Siesta is no longer her paradise.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "I've seen the new geological report. Sooner or later, Siesta will be consumed by the magma."
     },
     {
-        "text": "I've seen the new geological report. Sooner or later, Siesta will be consumed by the magma.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "We've managed to postpone that day's coming. I am grateful for the effort that you've all put forth today."
     },
     {
-        "text": "We've managed to postpone that day's coming. I am grateful for the effort that you've all put forth today.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Over the years, I've been looking for a solution to this matter. I have found it, but the price is almost as great."
     },
     {
-        "text": "Over the years, I've been looking for a solution to this matter. I have found it, but the price is almost as great.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "The new development zone I've been working on will become a brand new nomadic city. By the looks of things, it will become the next Siesta."
     },
     {
-        "text": "The new development zone I've been working on will become a brand new nomadic city. By the looks of things, it will become the next Siesta.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "I'm deeply attached to this place, but that doesn't mean that I can ignore the volcano that slumbers fitfully beside me."
     },
     {
-        "text": "I'm deeply attached to this place, but that doesn't mean that I can ignore the volcano that slumbers fitfully beside me.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "After the end of this Obsidian Festival, we will begin moving into the new nomadic city. As for Siesta, we will let her rest until the magma reclaims her."
     },
     {
-        "text": "After the end of this Obsidian Festival, we will begin moving into the new nomadic city. As for Siesta, we will let her rest until the magma reclaims her.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "decision",
+        "params": {
+            "options": "The Obsidian Festival...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "The Obsidian Festival...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Herman",
+        "text": "I heard that this ocean is bounded by land. Some have told me that this isn't a real ocean. It may be wide, but it's not boundless."
     },
     {
-        "text": "I heard that this ocean is bounded by land. Some have told me that this isn't a real ocean. It may be wide, but it's not boundless.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "In that case, we will continue to follow the coast. Perhaps one day, we will finally return to our starting point, the real starting point."
     },
     {
-        "text": "In that case, we will continue to follow the coast. Perhaps one day, we will finally return to our starting point, the real starting point.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "However, by that time, this beautiful beach, the great Obsidian Festival, and this coastal city with its volcanic smell..."
     },
     {
-        "text": "However, by that time, this beautiful beach, the great Obsidian Festival, and this coastal city with its volcanic smell...",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "The Siesta that holds the memory of countless people, will be gone forever."
     },
     {
-        "text": "The Siesta that holds the memory of countless people, will be gone forever.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Perhaps one day, you'll be able to tell her what I've told you here today."
     },
     {
-        "text": "Perhaps one day, you'll be able to tell her what I've told you here today.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Perhaps that day will never come."
     },
     {
-        "text": "Perhaps that day will never come.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "And one day, should she perhaps need my help, you can come find me."
     },
     {
-        "text": "And one day, should she perhaps need my help, you can come find me.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "No matter where Siesta is or what it looks like, this city will forever support her."
     },
     {
-        "text": "No matter where Siesta is or what it looks like, this city will forever support her.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Or rather, I should say... As long as Siestans exist, Siesta also exists. Within the hearts of young people like her are where Siesta really is."
     },
     {
-        "text": "Or rather, I should say... As long as Siestans exist, Siesta also exists. Within the hearts of young people like her are where Siesta really is.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_024"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_024"
+        "command": "name",
+        "value": "Herman",
+        "text": "Now, seize the day, and enjoy the Obsidian Festival."
     },
     {
-        "text": "Now, seize the day, and enjoy the Obsidian Festival.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "At least until we find another suitable location, we'll have to suspend our collaboration with Siren Records. I have a lot of things to discuss with them."
     },
     {
-        "text": "At least until we find another suitable location, we'll have to suspend our collaboration with Siren Records. I have a lot of things to discuss with them.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "Schwarz seems to have something to tell you. She's over there."
     },
     {
-        "text": "Schwarz seems to have something to tell you. She's over there.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "name",
+        "value": "Herman",
+        "text": "If I keep talking for much longer, she won't have anything to say. You should hear it from her."
     },
     {
-        "text": "If I keep talking for much longer, she won't have anything to say. You should hear it from her.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "character",
+        "params": {
+            "name": "char_340_shwaz_2#3",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_340_shwaz_2#3",
-        "fadetime": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Sir."
     },
     {
-        "text": "...Sir.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_024"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_024"
+        "command": "name",
+        "value": "Herman",
+        "text": "Don't mind me. This is between you youngsters."
     },
     {
-        "text": "Don't mind me. This is between you youngsters.",
-        "tag": "name",
-        "value": "Herman"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_340_shwaz_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_340_shwaz_2#1"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Hello."
     },
     {
-        "text": "Hello.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "decision",
+        "params": {
+            "options": "What are you after?;Hello, stranger?;Can I buy you a drink?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "What are you after?;Hello, stranger?;Can I buy you a drink?",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Don't worry, I'm not your enemy anymore."
     },
     {
-        "text": "Don't worry, I'm not your enemy anymore.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "character",
+        "params": {
+            "name": "char_340_shwaz_2#1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_340_shwaz_2#1"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Oh, hello to you too, stranger."
     },
     {
-        "text": "Oh, hello to you too, stranger.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "name",
+        "value": "Schwarz",
+        "text": "I'll pass for now."
     },
     {
-        "text": "I'll pass for now.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Actually, I wasn't really going to say anything special."
     },
     {
-        "text": "Actually, I wasn't really going to say anything special.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "At first, I was going to give you a good beating. Miss Ceylon never have been subjected to such danger."
     },
     {
-        "text": "At first, I was going to give you a good beating. Miss Ceylon never have been subjected to such danger.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "But, I have to thank you as well. Without your help, we might never have been able to clear up our misunderstanding."
     },
     {
-        "text": "But, I have to thank you as well. Without your help, we might never have been able to clear up our misunderstanding.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Truthfully, I did not want her getting involved with these things, but perhaps you were right. She has her own ideas, and her own responsibilities."
     },
     {
-        "text": "Truthfully, I did not want her getting involved with these things, but perhaps you were right. She has her own ideas, and her own responsibilities.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "decision",
+        "params": {
+            "options": "You should let her make her own decisions.;Time doesn't flow backwards. This is who she is now.;That's a pity, isn't it?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "You should let her make her own decisions.;Time doesn't flow backwards. This is who she is now.;That's a pity, isn't it?",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Thank you. Were it not for you, everything I loved would have been destroyed by the volcano."
     },
     {
-        "text": "...Thank you. Were it not for you, everything I loved would have been destroyed by the volcano.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "I am in your debt."
     },
     {
-        "text": "I am in your debt.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Doctor!"
     },
     {
-        "text": "Doctor!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#8"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#8"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Hey, Schwarz, what are you doing here?"
     },
     {
-        "text": "Hey, Schwarz, what are you doing here?",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#8",
+            "name2": "char_340_shwaz_2#1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#8",
-        "name2": "char_340_shwaz_2#1",
-        "focus": 2
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Milady?"
     },
     {
-        "text": "...Milady?",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6",
+            "name2": "char_340_shwaz_2#1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6",
-        "name2": "char_340_shwaz_2#1",
-        "focus": 1
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Perfect timing. I have something important to announce!"
     },
     {
-        "text": "Perfect timing. I have something important to announce!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "I am going to submit my resume to Rhodes Island."
     },
     {
-        "text": "I am going to submit my resume to Rhodes Island.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "decision",
+        "params": {
+            "options": "?!",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "?!",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "As I said, I'm interested in joining your company."
     },
     {
-        "text": "As I said, I'm interested in joining your company.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "decision",
+        "params": {
+            "options": "It's not easy to get in.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "It's not easy to get in.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#4"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#4"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Heheh~ I already asked Miss Eyjafjalla and Miss Skyfire about it. They said I have their recommendations."
     },
     {
-        "text": "Heheh~ I already asked Miss Eyjafjalla and Miss Skyfire about it. They said I have their recommendations.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "After seeing your abilities throughout this whole situation, I've come to this decision after careful deliberation."
     },
     {
-        "text": "After seeing your abilities throughout this whole situation, I've come to this decision after careful deliberation.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#4",
+            "name2": "char_340_shwaz_2#1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#4",
-        "name2": "char_340_shwaz_2#1",
-        "focus": 2
+        "command": "name",
+        "value": "Schwarz",
+        "text": "But Rhodes Island is not a simple drug company..."
     },
     {
-        "text": "But Rhodes Island is not a simple drug company...",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6",
+            "name2": "char_340_shwaz_2#1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6",
-        "name2": "char_340_shwaz_2#1",
-        "focus": 1
+        "command": "name",
+        "value": "Ceylon",
+        "text": "That's why I want you to come with me."
     },
     {
-        "text": "That's why I want you to come with me.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "By the way, my father already approved of it."
     },
     {
-        "text": "By the way, my father already approved of it.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6",
+            "name2": "char_340_shwaz_2#5",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6",
-        "name2": "char_340_shwaz_2#5",
-        "focus": 2
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...I know. If that is what you desire, milady."
     },
     {
-        "text": "...I know. If that is what you desire, milady.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#6"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#6"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "So, Doctor, we're going to be colleagues from now on!"
     },
     {
-        "text": "So, Doctor, we're going to be colleagues from now on!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "stopsound",
+        "params": {
+            "channel": "B",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "B",
-        "fadetime": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "largebg"
     },
     {
-        "tag": "largebg"
+        "command": "background",
+        "params": {
+            "image": "bg_bridge",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_bridge",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Come on, Doctor! The experiment is about to start!"
     },
     {
-        "text": "Come on, Doctor! The experiment is about to start!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Ah fine, forget it. Schwarz, go drag Doctor over here!"
     },
     {
-        "text": "Ah fine, forget it. Schwarz, go drag Doctor over here!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Your voice is loud enough to crack the ceiling, milady. I'm sure the Doctor has heard it."
     },
     {
-        "text": "...Your voice is loud enough to crack the ceiling, milady. I'm sure the Doctor has heard it.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Doctor, I don't know what you're waiting for, but in times like these, Miss Ceylon won't care what we're thinking."
     },
     {
-        "text": "...Doctor, I don't know what you're waiting for, but in times like these, Miss Ceylon won't care what we're thinking.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "It would behoove you to walk over there yourself. It'd be a bit unsightly if you really wanted me to carry you over."
     },
     {
-        "text": "It would behoove you to walk over there yourself. It'd be a bit unsightly if you really wanted me to carry you over.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "decision",
+        "params": {
+            "options": "Come and get me!;...;Don't worry. I'll keep an eye on her.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Come and get me!;...;Don't worry. I'll keep an eye on her.",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "background"
     },
     {
-        "tag": "background"
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "ac3_kv",
+            "x": 0,
+            "y": 0,
+            "xscale": 1,
+            "yscale": 1,
+            "fadetime": 0,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "image",
-        "image": "ac3_kv",
-        "x": 0,
-        "y": 0,
-        "xScale": 1,
-        "yScale": 1,
-        "fadetime": 0,
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 3,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 3,
-        "block": false
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Very well."
     },
     {
-        "text": "Very well.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Please wait a moment, milady. We'll be there shortly."
     },
     {
-        "text": "Please wait a moment, milady. We'll be there shortly.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "Let's go, Doctor."
     },
     {
-        "text": "Let's go, Doctor.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "image",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 2
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "block": true
-    },
-    {
-        "tag": "image"
+        "command": "image"
     }
 ]

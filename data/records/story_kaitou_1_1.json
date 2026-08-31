@@ -1,52 +1,54 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$suspenseful_intro",
+            "key": "$suspenseful_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$suspenseful_intro",
-        "key": "$suspenseful_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "1098"
@@ -55,1335 +57,1553 @@
         "text": "Grinden, Kreis Eingeweide, Leithanien"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "*Sigh*...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "*Sigh*..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Finally, my eyes don't ache so much anymore. Finally, I can sleep...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Finally, my eyes don't ache so much anymore. Finally, I can sleep..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_doorbreak"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_doorbreak"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Search everywhere! Check the equipment on his table especially carefully!",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Search everywhere! Check the equipment on his table especially carefully!"
     },
     {
-        "text": "Locked box? Just blast it open! Rip the shelves apart! Take apart the gramophone!",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Locked box? Just blast it open! Rip the shelves apart! Take apart the gramophone!"
     },
     {
-        "text": "And you\u2014",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "And you\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Spit it out, now.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Spit it out, now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "What would you like me to say, meine Herr? All I know is that the box you just destroyed was placed in my care by a client, and that it's very valuable...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "What would you like me to say, meine Herr? All I know is that the box you just destroyed was placed in my care by a client, and that it's very valuable..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Are you accusing Graf Saxon of causing your loss?",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Are you accusing Graf Saxon of causing your loss?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Of course not.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Of course not."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "You look too sly to be playing dumb, kid.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "You look too sly to be playing dumb, kid."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "...Well, what business brings his lordship the Graf down from his spire to this humble abode in its shadow?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "...Well, what business brings his lordship the Graf down from his spire to this humble abode in its shadow?"
     },
     {
-        "text": "It would be my pleasure to be of service.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "It would be my pleasure to be of service."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "No traps over here.",
-        "tag": "name",
-        "value": "Graf's Guard"
+        "command": "name",
+        "value": "Graf's Guard",
+        "text": "No traps over here."
     },
     {
-        "text": "Nothing here either.",
-        "tag": "name",
-        "value": "Graf's Guard"
+        "command": "name",
+        "value": "Graf's Guard",
+        "text": "Nothing here either."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "...You have good eyes, I'll give you that.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "...You have good eyes, I'll give you that."
     },
     {
-        "text": "Everyone, outside.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Everyone, outside."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun",
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "stopsound",
-        "channel": 1
+        "command": "stopsound",
+        "params": {
+            "channel": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "I regret that we must meet in the middle of this mess. I hope you don't mind.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I regret that we must meet in the middle of this mess. I hope you don't mind."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "50,0",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "50,0",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$doorclosequite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorclosequite"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "50,0",
-        "posto": "0,0",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "50,0",
+            "posto": "0,0",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "Of course not, meine Herr. The shop is closed for the day. Please, go ahead.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Of course not, meine Herr. The shop is closed for the day. Please, go ahead."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "You're smart, Heinz. Good.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You're smart, Heinz. Good."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "background",
-        "image": "44_g6_towerterrace",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "44_g6_towerterrace",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Y-Your Excellency...",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Y-Your Excellency..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "Ewigegnade wants a unique crystal for this year's Empress' Celebration. The whole country's been looking for one, ever since the edict was issued.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Ewigegnade wants a unique crystal for this year's Empress' Celebration. The whole country's been looking for one, ever since the edict was issued."
     },
     {
-        "text": "I had promised Her Majesty that Grinden would fulfill her wish.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I had promised Her Majesty that Grinden would fulfill her wish."
     },
     {
-        "text": "But have you any idea how much effort it took to find that one bicolor crystal?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "But have you any idea how much effort it took to find that one bicolor crystal?"
     },
     {
-        "text": "Deep, rich blacks and bright, shining golds in equal balance, neither overwhelming the other, not one speck of impurity in either.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Deep, rich blacks and bright, shining golds in equal balance, neither overwhelming the other, not one speck of impurity in either."
     },
     {
-        "text": "Perfect proportions, perfect colors, like Leithanien's Eternal Grace and Austere Authority themselves.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Perfect proportions, perfect colors, like Leithanien's Eternal Grace and Austere Authority themselves."
     },
     {
-        "text": "I called it Zwillingst\u00fcrmetr\u00e4ume. There could be no more fitting gift for Their Majesties!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I called it Zwillingst\u00fcrmetr\u00e4ume. There could be no more fitting gift for Their Majesties!"
     },
     {
-        "text": "The Empresses' Voice will be here in seven days to retrieve the gem, yet someone managed to get through all my guards and steal it?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "The Empresses' Voice will be here in seven days to retrieve the gem, yet someone managed to get through all my guards and steal it?"
     },
     {
-        "text": "Did the thief's Arts let him pilfer from a mile away, or turn himself into thin air?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Did the thief's Arts let him pilfer from a mile away, or turn himself into thin air?"
     },
     {
-        "text": "Or have I simply hired a bunch of useless trash?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Or have I simply hired a bunch of useless trash?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "We will begin the search immediately. Leave no stone in Grinden unturned...",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "We will begin the search immediately. Leave no stone in Grinden unturned..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "Search? You don't even know who did it, or how?!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Search? You don't even know who did it, or how?!"
     },
     {
-        "text": "...Find Heinz.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "...Find Heinz."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "You're asking me to\u2014",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "You're asking me to\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "I'm not asking. I'm giving you an order.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I'm not asking. I'm giving you an order."
     },
     {
-        "text": "You appraised the Zwillingst\u00fcrmetr\u00e4ume. You must remember its fantastic color, and the starlight within. No one who's seen it could ever forget.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You appraised the Zwillingst\u00fcrmetr\u00e4ume. You must remember its fantastic color, and the starlight within. No one who's seen it could ever forget."
     },
     {
-        "text": "Recreate it, Heinz, in all its glory!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Recreate it, Heinz, in all its glory!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "B-But I'm just a humble apprentice appraiser. The cutting equipment here is only fit for private research, perhaps embedding ornamental gems in instruments and wands, at best.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "B-But I'm just a humble apprentice appraiser. The cutting equipment here is only fit for private research, perhaps embedding ornamental gems in instruments and wands, at best."
     },
     {
-        "text": "It's really too much to ask me to do the work of a master cutter and replicate such a treasure.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "It's really too much to ask me to do the work of a master cutter and replicate such a treasure."
     },
     {
-        "text": "It's unlikely that Their Majesties' gemologists would be fooled by an ordinary replica. If this is found out, I\u2014",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "It's unlikely that Their Majesties' gemologists would be fooled by an ordinary replica. If this is found out, I\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "Enough.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Enough."
     },
     {
-        "text": "I sponsored you because of your talents in appraisal and cutting.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I sponsored you because of your talents in appraisal and cutting."
     },
     {
-        "text": "I was even considering you for whatever the equivalent of concertmaster is in your field, here in Grinden.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I was even considering you for whatever the equivalent of concertmaster is in your field, here in Grinden."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "...It would be an honor to receive that title from you.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "...It would be an honor to receive that title from you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "But do not forget how you made your name as an appraiser.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "But do not forget how you made your name as an appraiser."
     },
     {
-        "text": "Don't fool yourself. This isn't the first time you've made a counterfeit. I can live with losing you. Can you say the same?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Don't fool yourself. This isn't the first time you've made a counterfeit. I can live with losing you. Can you say the same?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "I've never forgotten.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I've never forgotten."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "I never forget, Your Excellency.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I never forget, Your Excellency."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "background",
-        "image": "28_g2_slumstreets",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "28_g2_slumstreets",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Hm...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Hm..."
     },
     {
-        "text": "Excuse my impudence, but the reflection on your buttons changed quite significantly when the sun came out from behind the clouds just now.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Excuse my impudence, but the reflection on your buttons changed quite significantly when the sun came out from behind the clouds just now."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "So you can scan the surrounding environment through the refraction of light, even in a dark valley like this... Aren't you being a little <i>too</i> wary?",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "So you can scan the surrounding environment through the refraction of light, even in a dark valley like this... Aren't you being a little <i>too</i> wary?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "Naturally, I would never complain about His Excellency's guards.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Naturally, I would never complain about His Excellency's guards."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "However, I'm carrying materials that can be used to create gem replicas. You must understand that I must be more cautious than usual when walking through places like this, where the glory of the spire is distant.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "However, I'm carrying materials that can be used to create gem replicas. You must understand that I must be more cautious than usual when walking through places like this, where the glory of the spire is distant."
     },
     {
-        "text": "And... I'm made even more uneasy when I think of who I must deceive.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "And... I'm made even more uneasy when I think of who I must deceive."
     },
     {
-        "text": "Speaking of which, would you take a look at these materials, and tell me if any are similar to the texture of the Zwillingst\u00fcrmetr\u00e4ume?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Speaking of which, would you take a look at these materials, and tell me if any are similar to the texture of the Zwillingst\u00fcrmetr\u00e4ume?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Hm...",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Hm..."
     },
     {
-        "text": "Looks like the Graf's faith in you was not misplaced.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Looks like the Graf's faith in you was not misplaced."
     },
     {
-        "text": "Seize this opportunity, kid, and you'll be rewarded when the Graf earns the favor of the Twin Empresses.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Seize this opportunity, kid, and you'll be rewarded when the Graf earns the favor of the Twin Empresses."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "Opportunity...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Opportunity..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "Danke. It's just that this... opportunity... is rather daunting.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Danke. It's just that this... opportunity... is rather daunting."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "I'm just a normal guy who fell in love with gems. I didn't know the first thing about cutting or counterfeiting.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I'm just a normal guy who fell in love with gems. I didn't know the first thing about cutting or counterfeiting."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "You know very well what the Graf sees in you.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "You know very well what the Graf sees in you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "To me, it was just a series of coincidences.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "To me, it was just a series of coincidences."
     },
     {
-        "text": "I still remember the first gem I ever faked. It was lousy, even for a forgery.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I still remember the first gem I ever faked. It was lousy, even for a forgery."
     },
     {
-        "text": "I didn't have the guts to use good materials, or the skills to mend cracks with leaded glass and resin.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I didn't have the guts to use good materials, or the skills to mend cracks with leaded glass and resin."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "But as an apprentice of the jewelry store, I could get it into the display with implicit, even explicit permission, skipping the appraisal.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "But as an apprentice of the jewelry store, I could get it into the display with implicit, even explicit permission, skipping the appraisal."
     },
     {
-        "text": "I was even more afraid than I am now, ready to flee at a moment's notice. I even spent many sleepless nights contemplating if I should turn myself in to the police.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I was even more afraid than I am now, ready to flee at a moment's notice. I even spent many sleepless nights contemplating if I should turn myself in to the police."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "But you were never found out, or we wouldn't be talking about this now.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "But you were never found out, or we wouldn't be talking about this now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "A baron bought the fake gem at a grand price, and I left the jewelry store.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "A baron bought the fake gem at a grand price, and I left the jewelry store."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "I learned later that he wasn't particularly wealthy, and that buying the gem was a gamble for him, trying to restore his status in high society.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I learned later that he wasn't particularly wealthy, and that buying the gem was a gamble for him, trying to restore his status in high society."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "Better-trained eyes saw through my lousy counterfeit immediately. The baron went mad, and he was never heard from again.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Better-trained eyes saw through my lousy counterfeit immediately. The baron went mad, and he was never heard from again."
     },
     {
-        "text": "I was lucky. Somehow, no one cared about the death of petty noble like that, so no one ever came after me.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I was lucky. Somehow, no one cared about the death of petty noble like that, so no one ever came after me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Ha, a lowly baron clinging to whatever meager status he had by licking the boots of the truly great. Of course nobody cared.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Ha, a lowly baron clinging to whatever meager status he had by licking the boots of the truly great. Of course nobody cared."
     },
     {
-        "text": "You also helped a scholar make a fool of his rival, didn't you?",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "You also helped a scholar make a fool of his rival, didn't you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "I had even less to do with that. Or should I say, I merely made a mistake.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I had even less to do with that. Or should I say, I merely made a mistake."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "As you know, my wand is powered by leftover gemstone roughs, which I acquire at a very reasonable price.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "As you know, my wand is powered by leftover gemstone roughs, which I acquire at a very reasonable price."
     },
     {
-        "text": "For some reason, though, there was a complete gem in that one shipment of roughs.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "For some reason, though, there was a complete gem in that one shipment of roughs."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Do you really not know how it happened?",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Do you really not know how it happened?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "I didn't dare think too much about it.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I didn't dare think too much about it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Even if a magician knows that his trick has malfunctioned, and that the saw really will cut his assistant in half, what choice does he have but to close his eyes and make the cut?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Even if a magician knows that his trick has malfunctioned, and that the saw really will cut his assistant in half, what choice does he have but to close his eyes and make the cut?"
     },
     {
-        "text": "Later, I learned that a secretary had been punished for selling a gem he had been entrusted to guard.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Later, I learned that a secretary had been punished for selling a gem he had been entrusted to guard."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "But by that time, it had been reduced to dust in my test tube.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "But by that time, it had been reduced to dust in my test tube."
     },
     {
-        "text": "And...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "And..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "And the fake appraisal that caught the Graf's attention.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "And the fake appraisal that caught the Graf's attention."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "I thought Graf Saxon had come to make me pay for ruining his nephew's reputation, who held the honorable title of Vizegraf.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I thought Graf Saxon had come to make me pay for ruining his nephew's reputation, who held the honorable title of Vizegraf."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "You simply did as you were told, and appraised a second-rate gem like it was an exceptional treasure.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "You simply did as you were told, and appraised a second-rate gem like it was an exceptional treasure."
     },
     {
-        "text": "Then the foolish Vizegraf Saxon showed off that fake appraisal along with the gem at every opportunity, and became a laughingstock.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Then the foolish Vizegraf Saxon showed off that fake appraisal along with the gem at every opportunity, and became a laughingstock."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "Ja... I simply did as I was told.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Ja... I simply did as I was told."
     },
     {
-        "text": "Not only was His Excellency not angry, he regarded my skills highly. I don't know how I can ever repay his kindness.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Not only was His Excellency not angry, he regarded my skills highly. I don't know how I can ever repay his kindness."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "All you need to do is follow your orders faithfully.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "All you need to do is follow your orders faithfully."
     },
     {
-        "text": "Your humility is one of the reasons the Graf appreciates you, Heinz. Don't try to be too cunning.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Your humility is one of the reasons the Graf appreciates you, Heinz. Don't try to be too cunning."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Ja, meine Herr.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Ja, meine Herr."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1"
+        }
     },
     {
-        "text": "Enough small talk.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Enough small talk."
     },
     {
-        "text": "The Empresses' Voice will arrive at Grinden in three days. Any flaw in our tribute, and there will be a smoldering ruin where the Graf's spire once stood.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "The Empresses' Voice will arrive at Grinden in three days. Any flaw in our tribute, and there will be a smoldering ruin where the Graf's spire once stood."
     },
     {
-        "text": "Time to get back to your worktable.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "Time to get back to your worktable."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "..."
     },
     {
-        "text": "There's another story about gems that led me to where I am today.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "There's another story about gems that led me to where I am today."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "A story about a mine that exploded and collapsed for no apparent reason.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "A story about a mine that exploded and collapsed for no apparent reason."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "But if no one cared about the fate of one lowly noble, why would anyone care about this story of poor, unfortunate commoners?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "But if no one cared about the fate of one lowly noble, why would anyone care about this story of poor, unfortunate commoners?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "background",
-        "image": "44_g6_towerterrace",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "44_g6_towerterrace",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "(Whistle)\u266a",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "(Whistle)\u266a"
     },
     {
-        "text": "(Whistle)\u266a\u266a",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "(Whistle)\u266a\u266a"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Do not let me hear that vulgar whistling again, Heinz. At the very least, I forbid it in my spire.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Do not let me hear that vulgar whistling again, Heinz. At the very least, I forbid it in my spire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "Sorry, Your Excellency. I got carried away.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Sorry, Your Excellency. I got carried away."
     },
     {
-        "text": "It's the first time I've ever set foot atop the spire of a Graf. From up here, all the buildings of Grinden look like hunchbacks who couldn't straighten their postures.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "It's the first time I've ever set foot atop the spire of a Graf. From up here, all the buildings of Grinden look like hunchbacks who couldn't straighten their postures."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "..."
     },
     {
-        "text": "I'm not here to listen to your philosophical insights, Heinz. The Empresses' Voice arrives today. Where is the Zwillingst\u00fcrmetr\u00e4ume?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I'm not here to listen to your philosophical insights, Heinz. The Empresses' Voice arrives today. Where is the Zwillingst\u00fcrmetr\u00e4ume?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "On the table, Your Excellency.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "On the table, Your Excellency."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_open_box"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_open_box"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "When I was little, I liked to strain my neck looking up from the dirty shacks.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "When I was little, I liked to strain my neck looking up from the dirty shacks."
     },
     {
-        "text": "I often imagined feeling the wind atop the spire, like it must feel so clean and fresh up there...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I often imagined feeling the wind atop the spire, like it must feel so clean and fresh up there..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "text": "Silence, Heinz!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Silence, Heinz!"
     },
     {
-        "text": "Is this the gem you counterfeited for me? This is the Zwillingst\u00fcrmetr\u00e4ume?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Is this the gem you counterfeited for me? This is the Zwillingst\u00fcrmetr\u00e4ume?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
         "text": "The wooden box holding the gem strikes the ground. The Graf holds a bicolor crystal between his thumb and forefinger."
@@ -1392,100 +1612,110 @@
         "text": "His voice has gone coarse from screaming at Heinz at the top of his lungs, his self-restraint faltering before his anger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Careful. You don't want to drop it.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Careful. You don't want to drop it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "I gave you seven days, gave you all the supplies and support you needed, all so that you could make full use of your talents in cutting and crafting. And THIS is your answer?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I gave you seven days, gave you all the supplies and support you needed, all so that you could make full use of your talents in cutting and crafting. And THIS is your answer?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "J-Ja, Your Excellency.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "J-Ja, Your Excellency."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "'Ja'? Do you take me for a fool?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "'Ja'? Do you take me for a fool?"
     },
     {
-        "text": "You're the best appraiser in Grinden. Can you not tell that this... thing... is not even the equal of the glass beads one can buy by the bagful at the marketplace for a pittance?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You're the best appraiser in Grinden. Can you not tell that this... thing... is not even the equal of the glass beads one can buy by the bagful at the marketplace for a pittance?"
     },
     {
-        "text": "This dirty shade of gold! The interior is uneven, causing the light to refract as though in a maze.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "This dirty shade of gold! The interior is uneven, causing the light to refract as though in a maze."
     },
     {
-        "text": "And this black! Rough like a mundane rock in the barrens, cheap like the curtains in a backwater bar.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "And this black! Rough like a mundane rock in the barrens, cheap like the curtains in a backwater bar."
     },
     {
-        "text": "And the combination of the two is disorganized and stilted.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "And the combination of the two is disorganized and stilted."
     },
     {
-        "text": "Where is the fantastic color? The starlight within? The unique beauty of the colors blending?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Where is the fantastic color? The starlight within? The unique beauty of the colors blending?"
     },
     {
-        "text": "You expect me to offer this contemptible rock to the Kaiserin?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You expect me to offer this contemptible rock to the Kaiserin?"
     },
     {
-        "text": "Are you <i>trying</i> to get my skull crushed under Their Majesties' boots? My spire leveled to the ground?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Are you <i>trying</i> to get my skull crushed under Their Majesties' boots? My spire leveled to the ground?"
     },
     {
-        "text": "How dare you take me for a fool, Heinz!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "How dare you take me for a fool, Heinz!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "Clack."
@@ -1494,30 +1724,34 @@
         "text": "With a crack, the Zwillingst\u00fcrmetr\u00e4ume is no longer whole, the bicolor crystal reduced to fragments by the fingers of Graf Saxon."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "I'll have your head for this, Heinz.",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I'll have your head for this, Heinz."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "Please, Your Excellency, I can explain!",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Please, Your Excellency, I can explain!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Heinz opens the valve on his wand. He bends down to retrieve a few fragments and inserts them into it."
@@ -1526,313 +1760,361 @@
         "text": "Taking a few steps back, Heinz finds the right angle, then snaps his fingers. The tip of the wand lights up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_magic_m"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_magic_m"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Beneath the light, the deep black and dignified gold shine like a lake at sunset."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "This...",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "This..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "You could have submitted it to the Kaiserin. That was the original Zwillingst\u00fcrmetr\u00e4ume.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "You could have submitted it to the Kaiserin. That was the original Zwillingst\u00fcrmetr\u00e4ume."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "How could this be?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "How could this be?"
     },
     {
-        "text": "I examined it so closely...",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "I examined it so closely..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Simple, Your Excellency. The Zwillingst\u00fcrmetr\u00e4ume was an ordinary crystal.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Simple, Your Excellency. The Zwillingst\u00fcrmetr\u00e4ume was an ordinary crystal."
     },
     {
-        "text": "Did you forget? I was the one who appraised it. It was placed in an ornate box, and illuminated by the light of my wand. Find just the right angle, and just the right brightness...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Did you forget? I was the one who appraised it. It was placed in an ornate box, and illuminated by the light of my wand. Find just the right angle, and just the right brightness..."
     },
     {
-        "text": "And there. The fantastic color, and the starlight within.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "And there. The fantastic color, and the starlight within."
     },
     {
-        "text": "I might be so bold as to call refraction one of my special talents.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I might be so bold as to call refraction one of my special talents."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "You?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "You, a layman, should not doubt the skill of a professional.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "You, a layman, should not doubt the skill of a professional."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "You made me promise Her Majesty, then stole the gem, then tricked me into destroying it with my own hands?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You made me promise Her Majesty, then stole the gem, then tricked me into destroying it with my own hands?"
     },
     {
-        "text": "You've brought ruin to the spire of Graf Saxon! And for what?!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "You've brought ruin to the spire of Graf Saxon! And for what?!"
     },
     {
-        "text": "Do not forget that I was the one who took you in, who gave you a living working with gems at my spire!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Do not forget that I was the one who took you in, who gave you a living working with gems at my spire!"
     },
     {
-        "text": "With your laughable resume and all the people you've fallen afoul of... did you really think you had a future in Grinden?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "With your laughable resume and all the people you've fallen afoul of... did you really think you had a future in Grinden?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "Of course I remember your kindness, Your Excellency.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Of course I remember your kindness, Your Excellency."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#2$1"
+        }
     },
     {
-        "text": "I was just an ordinary man ready to give up.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I was just an ordinary man ready to give up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "I couldn't sleep the night I ground that stolen gem into dust, worried that the secretary who sold it would use his connections within the city council to find me.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I couldn't sleep the night I ground that stolen gem into dust, worried that the secretary who sold it would use his connections within the city council to find me."
     },
     {
-        "text": "And when I made the fake appraisal and ruined Vizegraf Saxon's reputation...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "And when I made the fake appraisal and ruined Vizegraf Saxon's reputation..."
     },
     {
-        "text": "I was worried my plan was so rough around the edges that an accomplished schemer like yourself would see through it in an instant.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I was worried my plan was so rough around the edges that an accomplished schemer like yourself would see through it in an instant."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "I <i>did</i> catch your attention, but fortunately you were only interested in how you could use me.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I <i>did</i> catch your attention, but fortunately you were only interested in how you could use me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#5$1"
+        }
     },
     {
-        "text": "You didn't even bother to do a background check on the ruined baron and the jailed secretary.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "You didn't even bother to do a background check on the ruined baron and the jailed secretary."
     },
     {
-        "text": "And why <i>would</i> you remember? It's been twenty years, and they were just some insignificant, lowly commoners.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "And why <i>would</i> you remember? It's been twenty years, and they were just some insignificant, lowly commoners."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "What... what do you mean?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "What... what do you mean?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#5$1"
+        }
     },
     {
-        "text": "I mean I was after you from the very beginning.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I mean I was after you from the very beginning."
     },
     {
-        "text": "I've been after you, Graf Saxon, ever since I returned to Grinden a year and a half ago and sold a poorly forged gem to that baron.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I've been after you, Graf Saxon, ever since I returned to Grinden a year and a half ago and sold a poorly forged gem to that baron."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "...But why?",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "...But why?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "Like I said, you wouldn't remember.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Like I said, you wouldn't remember."
     },
     {
-        "text": "The Empresses' Voice should be at the spire now. You boasted to the Golden Empress that you would submit a unique gem as your tribute for the Empresses' Celebration...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "The Empresses' Voice should be at the spire now. You boasted to the Golden Empress that you would submit a unique gem as your tribute for the Empresses' Celebration..."
     },
     {
-        "text": "So what will you do now?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "So what will you do now?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Guards!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Guards!"
     },
     {
-        "text": "Catch that bastard!",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "Catch that bastard!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_magic_n"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_magic_n"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Another snap of the fingers."
@@ -1841,42 +2123,52 @@
         "text": "The balcony becomes a cacophony of light, with the wand as the starting point. Only then does the Graf realize that there are countless mirrors, hidden in every corner."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_magic_n"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_magic_n"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "The light obscures his vision, then converges on Heinz, and then\u2014"
@@ -1894,462 +2186,542 @@
         "text": "With such scorn, hatred."
     },
     {
-        "text": "Good luck, Graf.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Good luck, Graf."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_492_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_492_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Graf Saxon"
+        "command": "name",
+        "value": "Graf Saxon",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "M-Meine Herr, the Empresses' Voice is here.",
-        "tag": "name",
-        "value": "Graf's Attendant"
+        "command": "name",
+        "value": "Graf's Attendant",
+        "text": "M-Meine Herr, the Empresses' Voice is here."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "This isn't an instrument shop, kid. I can't repair that for you.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "This isn't an instrument shop, kid. I can't repair that for you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "You thought you'd get away that easily, after making a fool of the Graf of Grinden?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You thought you'd get away that easily, after making a fool of the Graf of Grinden?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "Herr Heinz, am I right?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Herr Heinz, am I right?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#2$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#2$2"
+        }
     },
     {
-        "text": "Michael, of Zwillingst\u00fcrme.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Michael, of Zwillingst\u00fcrme."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "You're awfully young for an Empresses' Voice.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "You're awfully young for an Empresses' Voice."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "Because I'm not, just a messenger of her will.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "Because I'm not, just a messenger of her will."
     },
     {
-        "text": "The spire of Graf Saxon has been impounded. He will be escorted to Zwillingst\u00fcrme, where he will face the judgment of the Kaiserin. As for you...",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "The spire of Graf Saxon has been impounded. He will be escorted to Zwillingst\u00fcrme, where he will face the judgment of the Kaiserin. As for you..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "Uh-huh.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Uh-huh."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#10$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#10$2"
+        }
     },
     {
-        "text": "Er, put down your wand. Take it easy.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "Er, put down your wand. Take it easy."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "I just wanted to confirm a few things.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "I just wanted to confirm a few things."
     },
     {
-        "text": "There's something in common between the clients of your gem business who've had misfortune befall them over the past year and a half.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "There's something in common between the clients of your gem business who've had misfortune befall them over the past year and a half."
     },
     {
-        "text": "The baron who lost his entire fortune was the overseer of a mine. The secretary who went to prison for embezzling the gem drafted the report of a certain mine disaster.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "The baron who lost his entire fortune was the overseer of a mine. The secretary who went to prison for embezzling the gem drafted the report of a certain mine disaster."
     },
     {
-        "text": "...And the mine was jointly owned by Vizegraf and Graf Saxon.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "...And the mine was jointly owned by Vizegraf and Graf Saxon."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "I thought I'd be rotting in the spire dungeons by now. Looks like you've been busy since yesterday.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I thought I'd be rotting in the spire dungeons by now. Looks like you've been busy since yesterday."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#10$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#10$2"
+        }
     },
     {
-        "text": "You were after revenge, weren't you?",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "You were after revenge, weren't you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "Twenty years ago, Graf Saxon ran a secret mine in Grinden, supplying Originium to the Witch King's contraptions.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "Twenty years ago, Graf Saxon ran a secret mine in Grinden, supplying Originium to the Witch King's contraptions."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#7$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#7$2"
+        }
     },
     {
-        "text": "The Twin Empresses' coup turned Leithanien upside down. Two new spires rose from the capital.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "The Twin Empresses' coup turned Leithanien upside down. Two new spires rose from the capital."
     },
     {
-        "text": "To facilitate his change in loyalties, Graf Saxon ordered the Originium mine blown up, with all the workers inside.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "To facilitate his change in loyalties, Graf Saxon ordered the Originium mine blown up, with all the workers inside."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "In his report to Zwillingst\u00fcrme, he wrote that a collapse had occurred at a mine for exotic crystals.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "In his report to Zwillingst\u00fcrme, he wrote that a collapse had occurred at a mine for exotic crystals."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "...Ja. My parents worked in that mine.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "...Ja. My parents worked in that mine."
     },
     {
-        "text": "My life was never the same afterwards.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "My life was never the same afterwards."
     },
     {
-        "text": "I left Grinden, met a lot of people, saw a lot of things, caught Oripathy, acquired this staff, and had no choice but to go back to dealing in shining rocks.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I left Grinden, met a lot of people, saw a lot of things, caught Oripathy, acquired this staff, and had no choice but to go back to dealing in shining rocks."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "I suppose you're too young to understand all this.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I suppose you're too young to understand all this."
     },
     {
-        "text": "If you came to corroborate my crimes, I can tell you that I was planning to cause an explosion and bury Graf Saxon in the dirt along with the crystal fragments.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "If you came to corroborate my crimes, I can tell you that I was planning to cause an explosion and bury Graf Saxon in the dirt along with the crystal fragments."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "I never expected to get away with destroying the gem meant for the Golden Empress. Just tell me the punishment I'll receive.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "I never expected to get away with destroying the gem meant for the Golden Empress. Just tell me the punishment I'll receive."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "I see no need to prosecute you, Herr Heinz. For me, the incident with the gem is merely an interlude.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "I see no need to prosecute you, Herr Heinz. For me, the incident with the gem is merely an interlude."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#4$1"
+        }
     },
     {
-        "text": "Oh?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Oh?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "For some time now, Graf Saxon has attempted to ingratiate himself with the Kaiserinnen, all while secretly funding the remnants of the Witch King. He's been linked to several insurrections in recent years.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "For some time now, Graf Saxon has attempted to ingratiate himself with the Kaiserinnen, all while secretly funding the remnants of the Witch King. He's been linked to several insurrections in recent years."
     },
     {
-        "text": "As Grimmacht's envoy, I'm here to bring that avaricious, subversive worm back to Zwillingst\u00fcrme.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "As Grimmacht's envoy, I'm here to bring that avaricious, subversive worm back to Zwillingst\u00fcrme."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#7$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#7$2"
+        }
     },
     {
-        "text": "As for destroying the gem Ewigegnade sought for the Empresses' Celebration... I doubt Grimmacht has much interest in such frivolous things.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "As for destroying the gem Ewigegnade sought for the Empresses' Celebration... I doubt Grimmacht has much interest in such frivolous things."
     },
     {
-        "text": "I'm just curious... what are your plans, now that your revenge is complete?",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "I'm just curious... what are your plans, now that your revenge is complete?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#1$2"
+        }
     },
     {
-        "text": "You've become a household name these days. I found an invitation in the mailbox at the door and took the liberty of bringing it in.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "You've become a household name these days. I found an invitation in the mailbox at the door and took the liberty of bringing it in."
     },
     {
-        "text": "I've also examined the devices you planted in the Graf's spire. Your skills as a thief are no less impressive than your talents as a gemologist.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "I've also examined the devices you planted in the Graf's spire. Your skills as a thief are no less impressive than your talents as a gemologist."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4109_baslin_1#2$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4109_baslin_1#2$2"
+        }
     },
     {
-        "text": "Perhaps you can start a gem appraising business or something. I'm sure you'll never be short on 'business' in Leithanien.",
-        "tag": "name",
-        "value": "Michael"
+        "command": "name",
+        "value": "Michael",
+        "text": "Perhaps you can start a gem appraising business or something. I'm sure you'll never be short on 'business' in Leithanien."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Heinz opens the invitation that Michael had left on the worktable."
@@ -2358,74 +2730,86 @@
         "text": "He recognizes the seal. It bears the mark of another spire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#1$1"
+        }
     },
     {
-        "text": "'Graf Myers is touring Leithanien with 'Tr\u00e4neperle des Himmel,' the crown jewel from his gem mines. Grinden will be his next stop.'",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "'Graf Myers is touring Leithanien with 'Tr\u00e4neperle des Himmel,' the crown jewel from his gem mines. Grinden will be his next stop.'"
     },
     {
-        "text": "'Your appraisal will be much appreciated.'",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "'Your appraisal will be much appreciated.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#6$1"
+        }
     },
     {
-        "text": "If memory serves, Graf Myers's mines were shut down last year after a series of infections revealed serious safety violations.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "If memory serves, Graf Myers's mines were shut down last year after a series of infections revealed serious safety violations."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_499_kaitou_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_499_kaitou_1#7$1"
+        }
     },
     {
-        "text": "Another 'Saxon,' eh?",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Another 'Saxon,' eh?"
     },
     {
-        "text": "Maybe there's something to his suggestion, after all.",
-        "tag": "name",
-        "value": "Heinz"
+        "command": "name",
+        "value": "Heinz",
+        "text": "Maybe there's something to his suggestion, after all."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

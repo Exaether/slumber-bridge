@@ -1,2897 +1,3465 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness02_intro",
+            "key": "$darkness02_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness02_intro",
-        "key": "$darkness02_loop",
-        "volume": 0.6
+        "command": "animtext",
+        "params": {
+            "id": "at1",
+            "name": "group_location_stamp",
+            "style": "avg_only_medium",
+            "pos": "-400,-200",
+            "block": false
+        },
+        "text": "<p=2>November 5th, 1100    10:17 P.M.</>"
     },
     {
-        "text": "<p=2>November 5th, 1100    10:17 P.M.</>",
-        "tag": "animtext",
-        "id": "at1",
-        "name": "group_location_stamp",
-        "style": "avg_only_medium",
-        "pos": "-400,-200",
-        "block": false
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "animtextclean"
     },
     {
-        "tag": "animtextclean"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_driveincar",
+            "volume": 0,
+            "loop": true,
+            "channel": "car"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_driveincar",
-        "volume": 0,
-        "loop": true,
-        "channel": "car"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "car",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "car",
-        "fadetime": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 5,
+            "xstrength": 2,
+            "ystrength": 2,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 5,
-        "xstrength": 2,
-        "ystrength": 2,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.1,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.1,
-        "fadetime": 0.5
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.1,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.1,
-        "fadetime": 0.5,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#4$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#4$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "duration": 1
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "...That's the gist of it, Lyudmila. Told you everything I know."
     },
     {
-        "text": "...That's the gist of it, Lyudmila. Told you everything I know.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "What're you delivering for the Venezias?"
     },
     {
-        "text": "What're you delivering for the Venezias?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "It's a batch of tires tonight."
     },
     {
-        "text": "It's a batch of tires tonight.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "It's usually stuff for making vehicles. Originium engines, steel, alloys, things like that. At times there's also frozen fins, frozen meat, booze, meds..."
     },
     {
-        "text": "It's usually stuff for making vehicles. Originium engines, steel, alloys, things like that. At times there's also frozen fins, frozen meat, booze, meds...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "It's pretty common in other Siracusan cities. Goods the famiglie buy don't have to go through normal customs, so they save a lot on taxes. But here in Nuova Volsinii\u2014"
     },
     {
-        "text": "It's pretty common in other Siracusan cities. Goods the famiglie buy don't have to go through normal customs, so they save a lot on taxes. But here in Nuova Volsinii\u2014",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "I get it. No need to go into detail."
     },
     {
-        "text": "I get it. No need to go into detail.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Alright, alright."
     },
     {
-        "text": "Alright, alright.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "This isn't your first time, is it?"
     },
     {
-        "text": "This isn't your first time, is it?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#6$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Err... Lyudmila, did you hang back from joining tonight's film shoot because of me?"
     },
     {
-        "text": "Err... Lyudmila, did you hang back from joining tonight's film shoot because of me?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "What do you think?"
     },
     {
-        "text": "What do you think?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#7$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "When did you figure me out?"
     },
     {
-        "text": "When did you figure me out?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "stopsound",
+        "params": {
+            "channel": "car",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "car",
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "curtain"
     },
     {
-        "tag": "curtain"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 0.7,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g4_newvolsiniialley_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g4_newvolsiniialley_n",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkalley_intro",
+            "key": "$darkalley_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkalley_intro",
-        "key": "$darkalley_loop",
-        "volume": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1550_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1550_1#1$1",
-        "duration": 0.5
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "focus": "r"
+        "command": "name",
+        "value": "Truck Driver",
+        "text": "Why the hell d'you keep following us?"
     },
     {
-        "text": "Why the hell d'you keep following us?",
-        "tag": "name",
-        "value": "Truck Driver"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#8$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Look, sorry, but Ruggiero and I are really busy here! Would you mind leaving?"
     },
     {
-        "text": "Look, sorry, but Ruggiero and I are really busy here! Would you mind leaving?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1555_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1555_1#1$1"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "So busy you can't even stop for a cup of coffee?"
     },
     {
-        "text": "So busy you can't even stop for a cup of coffee?",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "C'mon, Sommer, Ruggiero, lighten up!"
     },
     {
-        "text": "C'mon, Sommer, Ruggiero, lighten up!",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "This is Nuova Volsinii! We're all citizens here, and we're going to be rubbing shoulders for quite a while longer. Gotta talk to one another, y'know?"
     },
     {
-        "text": "This is Nuova Volsinii! We're all citizens here, and we're going to be rubbing shoulders for quite a while longer. Gotta talk to one another, y'know?",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1555_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1555_1#1$1"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "How about we set up a caff\u00e8 across from your camp? With that many drivers, business would be booming, and it'd be easy for us to meet up\u2014"
     },
     {
-        "text": "How about we set up a caff\u00e8 across from your camp? With that many drivers, business would be booming, and it'd be easy for us to meet up\u2014",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smoke_grenade",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smoke_grenade",
-        "volume": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_smog",
+            "layer": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_smog",
-        "layer": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0.7,
+            "g": 0.7,
+            "b": 0.7,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0.7,
-        "g": 0.7,
-        "b": 0.7,
-        "fadetime": 0.5,
-        "block": true
+        "command": "name",
+        "value": "Mafioso",
+        "text": "The hell's going on *cough* *cough* Where's all this smoke coming from? My eyes, gah\u2014"
     },
     {
-        "text": "The hell's going on *cough* *cough* Where's all this smoke coming from? My eyes, gah\u2014",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$punch_n1",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$punch_n1",
-        "volume": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "name",
+        "value": "Mafioso",
+        "text": "Merda! Which of you stronzi hit me?!"
     },
     {
-        "text": "Merda! Which of you stronzi hit me?!",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch",
-        "volume": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "delay",
+        "value": 0.21
     },
     {
-        "tag": "delay",
-        "time": 0.21
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "name",
+        "value": "Mafioso",
+        "text": "Ouch\u2014"
     },
     {
-        "text": "Ouch\u2014",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.7,
+            "g": 0.7,
+            "b": 0.7,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.7,
-        "g": 0.7,
-        "b": 0.7,
-        "fadetime": 0.5,
-        "block": true
+        "command": "bgeffect"
     },
     {
-        "tag": "bgeffect"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1555_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1555_1#1$1"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Truck Driver",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Truck Driver"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#7$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1555_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1555_1#1$1"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "Sommer! Ruggiero!"
     },
     {
-        "text": "Sommer! Ruggiero!",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#8$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "W-We don't know who did it either! We're all the way over here, and we haven't moved an inch..."
     },
     {
-        "text": "W-We don't know who did it either! We're all the way over here, and we haven't moved an inch...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#4$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "And you know we can't do Arts..."
     },
     {
-        "text": "And you know we can't do Arts...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Truck Driver",
+        "text": "I heard the reason why this plate was put out on the border of the city, and why City Hall didn't do anything with it until they let us set up our camp, is 'cause it used to\u2014"
     },
     {
-        "text": "I heard the reason why this plate was put out on the border of the city, and why City Hall didn't do anything with it until they let us set up our camp, is 'cause it used to\u2014",
-        "tag": "name",
-        "value": "Truck Driver"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1555_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1555_1#1$1"
+        "command": "name",
+        "value": "Mafioso",
+        "text": "S-Stop talking crap already. I'll let you two off this time."
     },
     {
-        "text": "S-Stop talking crap already. I'll let you two off this time.",
-        "tag": "name",
-        "value": "Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.7
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#7$1"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1"
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_truckengine",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_truckengine",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$newhope01_intro",
+            "key": "$newhope01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$newhope01_intro",
-        "key": "$newhope01_loop",
-        "volume": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#7$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "...Now I remember."
     },
     {
-        "text": "...Now I remember.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "We never had a chance to know you better until you helped us out of that bind that time. Everyone started to talk to you, asking you about what the hell your mysterious Arts are, and your experiences in Ursus..."
     },
     {
-        "text": "We never had a chance to know you better until you helped us out of that bind that time. Everyone started to talk to you, asking you about what the hell your mysterious Arts are, and your experiences in Ursus...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#3$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "A famiglia associate's not going to come looking for you just because they 'don't like the look of your face'."
     },
     {
-        "text": "A famiglia associate's not going to come looking for you just because they 'don't like the look of your face'.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "They kept pestering you after that. Why didn't you tell me, Sommer?"
     },
     {
-        "text": "They kept pestering you after that. Why didn't you tell me, Sommer?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#4$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Does Eirene know?"
     },
     {
-        "text": "Does Eirene know?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "(Shakes head)"
     },
     {
-        "text": "(Shakes head)",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#4$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Sommer",
+        "text": "I need to get Guri her treatment and bring her over to Nuova Volsinii. I <i>need</i> this money, Lyudmila."
     },
     {
-        "text": "I need to get Guri her treatment and bring her over to Nuova Volsinii. I <i>need</i> this money, Lyudmila.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "And what use would telling you have been? They're a pack of rabid wolves who won't give up until they catch their prey. I'm not going to bring that sort of trouble onto the association."
     },
     {
-        "text": "And what use would telling you have been? They're a pack of rabid wolves who won't give up until they catch their prey. I'm not going to bring that sort of trouble onto the association.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "We're a band of brothers and sisters living together. But we're just ordinary people, nothing more."
     },
     {
-        "text": "We're a band of brothers and sisters living together. But we're just ordinary people, nothing more.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#3$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "The faces of the drivers flash through Lyudmila's mind one after another. She doesn't say anything."
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 3
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 0.7,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g9_truckcamp",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g9_truckcamp",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1550_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1550_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1561_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1561_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.2
+        "command": "delay",
+        "value": 1.2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "Hey, you didn't tell Lyudmila, did you?",
-        "tag": "name",
-        "value": "Truck Driver A"
+        "command": "name",
+        "value": "Truck Driver A",
+        "text": "Hey, you didn't tell Lyudmila, did you?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "r"
+        }
     },
     {
-        "text": "Don't worry, she's in her tent right now!",
-        "tag": "name",
-        "value": "Truck Driver B"
+        "command": "name",
+        "value": "Truck Driver B",
+        "text": "Don't worry, she's in her tent right now!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "She's never taken off that mask since she arrived here, and she sometimes frowns when... Breaks my heart, it does.",
-        "tag": "name",
-        "value": "Truck Driver A"
+        "command": "name",
+        "value": "Truck Driver A",
+        "text": "She's never taken off that mask since she arrived here, and she sometimes frowns when... Breaks my heart, it does."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "r"
+        }
     },
     {
-        "text": "You're telling me. I've been holding back from smoking these past few days she's been around. It's killing me.",
-        "tag": "name",
-        "value": "Truck Driver B"
+        "command": "name",
+        "value": "Truck Driver B",
+        "text": "You're telling me. I've been holding back from smoking these past few days she's been around. It's killing me."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "Quick, light up already\u2014",
-        "tag": "name",
-        "value": "Truck Driver A"
+        "command": "name",
+        "value": "Truck Driver A",
+        "text": "Quick, light up already\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lighter"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lighter"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.2
+        "command": "delay",
+        "value": 1.2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "L-Lyudmila...",
-        "tag": "name",
-        "value": "Truck Driver A"
+        "command": "name",
+        "value": "Truck Driver A",
+        "text": "L-Lyudmila..."
     },
     {
-        "text": "Scusa, scusa! We're about to do a night delivery, so we were just gonna have a pre-drive smoke to pick ourselves up\u2014or not! No smoking is fine! We'll put them out right away!",
-        "tag": "name",
-        "value": "Truck Driver A"
+        "command": "name",
+        "value": "Truck Driver A",
+        "text": "Scusa, scusa! We're about to do a night delivery, so we were just gonna have a pre-drive smoke to pick ourselves up\u2014or not! No smoking is fine! We'll put them out right away!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#1$1"
+        }
     },
     {
-        "text": "Err... If you want to smoke, go ahead. No need to hide it from me.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Err... If you want to smoke, go ahead. No need to hide it from me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Truck Driver B"
+        "command": "name",
+        "value": "Truck Driver B",
+        "text": "Huh?"
     },
     {
-        "text": "Well, everyone thought you wore the mask because you've got a weak throat or something... Your crystals are in a pretty peculiar place, you know. Us drivers smoke a lot, so we thought...",
-        "tag": "name",
-        "value": "Truck Driver B"
+        "command": "name",
+        "value": "Truck Driver B",
+        "text": "Well, everyone thought you wore the mask because you've got a weak throat or something... Your crystals are in a pretty peculiar place, you know. Us drivers smoke a lot, so we thought..."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#1$1"
+        }
     },
     {
-        "text": "You're overthinking things.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "You're overthinking things."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Well, we just hope you like it here, Lyudmila.",
-        "tag": "name",
-        "value": "Truck Driver B"
+        "command": "name",
+        "value": "Truck Driver B",
+        "text": "Well, we just hope you like it here, Lyudmila."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 3
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1"
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_truckengine",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_truckengine",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You'd better get off and wait at that intersection coming up. We're about to arrive, and there'll be trouble with the Venezias if I show up with a rando in tow.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "You'd better get off and wait at that intersection coming up. We're about to arrive, and there'll be trouble with the Venezias if I show up with a rando in tow."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Lyudmila...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Lyudmila..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Enough. I got on your truck, so I'll stick with you all the way.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Enough. I got on your truck, so I'll stick with you all the way."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Thanks, Lyudmila.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Thanks, Lyudmila."
     },
     {
-        "text": "No matter what happens, I'm lucky to have you with me.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "No matter what happens, I'm lucky to have you with me."
     },
     {
-        "text": "Hmmhmm\u266a Hmmhmmhmm\u266a Hmm\u266a",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Hmmhmm\u266a Hmmhmmhmm\u266a Hmm\u266a"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You've been listening to this song on loop for a while now. Not tired of it?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "You've been listening to this song on loop for a while now. Not tired of it?"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Of course not!",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Of course not!"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "'A Chance Encounter' is an amazing song, and Sora's got one hell of a singing voice!",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "'A Chance Encounter' is an amazing song, and Sora's got one hell of a singing voice!"
     },
     {
-        "text": "It's the hottest new single this week. There was an interview saying she recorded it just for Carnevale.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "It's the hottest new single this week. There was an interview saying she recorded it just for Carnevale."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "'A chance encounter'... Now I'm not a cultured man, but these words... Don't you think they're about people like us?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "'A chance encounter'... Now I'm not a cultured man, but these words... Don't you think they're about people like us?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You're going to leave, aren't you, Lyudmila?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "You're going to leave, aren't you, Lyudmila?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Eh? What?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Eh? What?"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You said you didn't have any family or friends left in Siracusa, and no place to go. Everyone at camp will be happy to have someone as interesting as you stick around.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "You said you didn't have any family or friends left in Siracusa, and no place to go. Everyone at camp will be happy to have someone as interesting as you stick around."
     },
     {
-        "text": "Eirene and I have talked it over before, but I feel like you're not going to stay with us at the Union forever...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Eirene and I have talked it over before, but I feel like you're not going to stay with us at the Union forever..."
     },
     {
-        "text": "There's doubt in your eyes, and hate, but I don't know who they're for.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "There's doubt in your eyes, and hate, but I don't know who they're for."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Do you still remember what you were like when you first saw Eirene?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Do you still remember what you were like when you first saw Eirene?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I don't remember anything worth mentioning.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "I don't remember anything worth mentioning."
     },
     {
-        "text": "I woke up in the camp, and you and Eirene were standing in front of me...",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "I woke up in the camp, and you and Eirene were standing in front of me..."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The moment you saw her, your expression changed in an instant... Though it went back real quick.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "The moment you saw her, your expression changed in an instant... Though it went back real quick."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You thought she was someone else, didn't you?",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "You thought she was someone else, didn't you?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1"
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I might have been a bit light-headed when I woke up.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "I might have been a bit light-headed when I woke up."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "A Lupo woman wearing a red hoodie, protective gear around her neck... Eirene really does remind me of someone I hate.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "A Lupo woman wearing a red hoodie, protective gear around her neck... Eirene really does remind me of someone I hate."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#3$1"
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Doesn't matter if it's in Yan or Siracusa, every time I run into that girl, I get struck by a bout of bad luck.",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Doesn't matter if it's in Yan or Siracusa, every time I run into that girl, I get struck by a bout of bad luck."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "So that's how it is.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "So that's how it is."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I'm not going to ask you if those stories of Ursus are ones you heard from elsewhere or ones you experienced yourself, Lyudmila. No need for us to argue over who's more unlucky in life, either...",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "I'm not going to ask you if those stories of Ursus are ones you heard from elsewhere or ones you experienced yourself, Lyudmila. No need for us to argue over who's more unlucky in life, either..."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "This really is a chance encounter between two sfortunati, haha.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "This really is a chance encounter between two sfortunati, haha."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Lyudmila says nothing in response. As the truck turns past the intersection, she turns her head to look out the window on a whim\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#4$1"
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "That's\u2014",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "That's\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowshot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowshot"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$knifegore"
+        "command": "playsound",
+        "params": {
+            "key": "$knifegore"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.11
+        "command": "delay",
+        "value": 0.11
     },
     {
-        "tag": "playmusic",
-        "intro": "$tense_intro",
-        "key": "$tense_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$tense_intro",
+            "key": "$tense_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.12,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.12,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tyrexplosion"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tyrexplosion"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$drift"
+        "command": "playsound",
+        "params": {
+            "key": "$drift"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": -1,
-        "xstrength": 2,
-        "ystrength": 2,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": -1,
+            "xstrength": 2,
+            "ystrength": 2,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1547_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1547_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Cazzo! The steering wheel's not working all of a sudden\u2014",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Cazzo! The steering wheel's not working all of a sudden\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Sommer, look out! There's a car over there\u2014",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Sommer, look out! There's a car over there\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$drift"
+        "command": "playsound",
+        "params": {
+            "key": "$drift"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 50,
-        "ystrength": 50,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 50,
+            "ystrength": 50,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$grenade_explosion",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$grenade_explosion",
+            "channel": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$glass",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$glass",
+            "channel": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_planeshake",
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_planeshake",
+            "channel": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "True wolf. Finally found you.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "True wolf. Finally found you."
     },
     {
-        "text": "You will not get away.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You will not get away."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Hey! Can't you see there's people in there? Your knife and my arrow blew out their tires. Shouldn't we save them?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hey! Can't you see there's people in there? Your knife and my arrow blew out their tires. Shouldn't we save them?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowshot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowshot"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$knifegore"
+        "command": "playsound",
+        "params": {
+            "key": "$knifegore"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing4"
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing4"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Oh.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh."
     },
     {
-        "text": "You're right, Agnese. We shouldn't get distracted during a hunt.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You're right, Agnese. We shouldn't get distracted during a hunt."
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "focusout",
-        "duration": 6,
-        "type": "bg",
-        "from": 1,
-        "to": 0.3
+        "command": "focusout",
+        "params": {
+            "duration": 6,
+            "type": "bg",
+            "from": 1,
+            "to": 0.3
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall",
-        "xScale": 1.1,
-        "yScale": 1.1
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall",
+            "xscale": 1.1,
+            "yscale": 1.1
+        }
     },
     {
-        "tag": "backgroundtween",
-        "xFrom": -30,
-        "yFrom": -30,
-        "xTo": 0,
-        "yTo": 0,
-        "duration": 3
+        "command": "backgroundtween",
+        "params": {
+            "xfrom": -30,
+            "yfrom": -30,
+            "x": 0,
+            "y": 0,
+            "duration": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tinnitus",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tinnitus",
+            "channel": 2
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall",
-        "fadetime": 2,
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "x": 10,
-        "y": 10
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall",
+            "fadetime": 2,
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "x": 10,
+            "y": 10
+        }
     },
     {
-        "tag": "backgroundtween",
-        "xTo": 15,
-        "yTo": 5,
-        "duration": 3
+        "command": "backgroundtween",
+        "params": {
+            "x": 15,
+            "y": 5,
+            "duration": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "backgroundtween",
-        "xTo": 0,
-        "yTo": 0,
-        "duration": 2,
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1
+        "command": "backgroundtween",
+        "params": {
+            "x": 0,
+            "y": 0,
+            "duration": 2,
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall",
-        "fadetime": 2
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "focusout",
-        "duration": 2,
-        "type": "char",
-        "from": 0.5,
-        "to": 0.3
+        "command": "focusout",
+        "params": {
+            "duration": 2,
+            "type": "char",
+            "from": 0.5,
+            "to": 0.3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1,
-        "posfrom": "0,0",
-        "posto": "300,0"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1,
+            "posfrom": "0,0",
+            "posto": "300,0"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "A splitting headache pounds against the inside of Lyudmila's skull."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 0,
-        "ystrength": 20,
-        "vibrato": 15,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 0,
+            "ystrength": 20,
+            "vibration": 15,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3"
+        }
     },
     {
         "text": "She yanks off her seat belt and pushes open the truck door, falling from her seat as she does. As her face plants into the ground, she sees a familiar red silhouette fade down the intersection."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "focusout",
-        "duration": 1,
-        "type": "char",
-        "from": 0.3,
-        "to": 0
+        "command": "focusout",
+        "params": {
+            "duration": 1,
+            "type": "char",
+            "from": 0.3,
+            "to": 0
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 1,
-        "type": "bg",
-        "from": 0.5,
-        "to": 0
+        "command": "focusout",
+        "params": {
+            "duration": 1,
+            "type": "bg",
+            "from": 0.5,
+            "to": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#6$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#6$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "*cough* *cough*...",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "*cough* *cough*..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Before the dizziness disperses, before she can take stock of the situation, before she can check on Sommer... Rage. An unending rage washes over her like the tide."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#7$1"
+        }
     },
     {
-        "text": "What the hell's with this bad luck?! How come it's you again?!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "What the hell's with this bad luck?! How come it's you again?!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 35,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 35,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#8$1"
+        }
     },
     {
-        "text": "You goddamn lupetta!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "You goddamn lupetta!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1,
-        "posfrom": "0,0",
-        "posto": "350,0"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1,
+            "posfrom": "0,0",
+            "posto": "350,0"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "background",
-        "image": "56_g4_newvolsiniialley_n",
-        "screenadapt": "coverall"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "focusout",
-        "duration": 3,
-        "type": "char",
-        "from": 0,
-        "to": 0
-    },
-    {
-        "tag": "focusout",
-        "duration": 3,
-        "type": "bg",
-        "from": 0,
-        "to": 0
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": false
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_arrowshot",
-        "channel": 1,
-        "volume": 0.7
-    },
-    {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_arrowshot",
-        "channel": 2,
-        "volume": 1
-    },
-    {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": false
+    {
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g4_newvolsiniialley_n",
+            "screenadapt": "coverall"
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowshot",
-        "channel": 3
+        "command": "focusout",
+        "params": {
+            "duration": 3,
+            "type": "char",
+            "from": 0,
+            "to": 0
+        }
+    },
+    {
+        "command": "focusout",
+        "params": {
+            "duration": 3,
+            "type": "bg",
+            "from": 0,
+            "to": 0
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": false
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowshot",
+            "channel": 1,
+            "volume": 0.7
+        }
+    },
+    {
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowshot",
+            "channel": 2,
+            "volume": 1
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": false
+        }
+    },
+    {
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowshot",
+            "channel": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_spark_01_mid",
-        "layer": 1,
-        "x": 100,
-        "y": 150
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_01_mid",
+            "layer": 1,
+            "x": 100,
+            "y": 150
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing5",
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing5",
+            "channel": 3
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.1,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.1,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_spark_01_mid",
-        "layer": 1,
-        "x": 200,
-        "y": 50
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_01_mid",
+            "layer": 1,
+            "x": 200,
+            "y": 50
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing6",
-        "channel": 4
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing6",
+            "channel": 4
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4026_vulpis_1#2$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4026_vulpis_1#2$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "I've handled tougher fights in the Siracusa of old with many more people on the other end.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "I've handled tougher fights in the Siracusa of old with many more people on the other end."
     },
     {
-        "text": "But I'm always the last one standing. No exceptions.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "But I'm always the last one standing. No exceptions."
     },
     {
-        "text": "Don't treat humans like beasts. Your hunting skills won't work on me.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "Don't treat humans like beasts. Your hunting skills won't work on me."
     },
     {
-        "text": "You can certainly continue to try. Same goes for you, 'Projekt Red'.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "You can certainly continue to try. Same goes for you, 'Projekt Red'."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4014_lunacu_1#1$2",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4014_lunacu_1#1$2",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.51
+        "command": "delay",
+        "value": 1.51
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lunacub"
+        "command": "name",
+        "value": "Lunacub",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "char_144_red_7#1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "char_144_red_7#1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.51
+        "command": "delay",
+        "value": 1.51
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4014_lunacu_1#8$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4014_lunacu_1#8$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'll find you.",
-        "tag": "name",
-        "value": "Lunacub"
+        "command": "name",
+        "value": "Lunacub",
+        "text": "I'll find you."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "char_144_red_7#5",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "char_144_red_7#5",
+            "focus": "l"
+        }
     },
     {
-        "text": "My blade... not sharp enough...",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "My blade... not sharp enough..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4026_vulpis_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4026_vulpis_1#8$1"
+        }
     },
     {
-        "text": "Come.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "Come."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4014_lunacu_1#8$2"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4014_lunacu_1#8$2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "char_144_red_7#1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "char_144_red_7#1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "0,0",
-        "posto": "150,300",
-        "duration": 0.51
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "0,0",
+            "posto": "150,300",
+            "duration": 0.51
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "posfrom": "0,0",
-        "posto": "-150,300",
-        "duration": 0.51
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "posfrom": "0,0",
+            "posto": "-150,300",
+            "duration": 0.51
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4026_vulpis_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4026_vulpis_1#7$1"
+        }
     },
     {
-        "text": ".....?",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": ".....?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4026_vulpis_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4026_vulpis_1#2$1"
+        }
     },
     {
-        "text": "You can't hide from me forever. I won't wait any longer for Vargo's answers.",
-        "tag": "name",
-        "value": "Ingrid"
+        "command": "name",
+        "value": "Ingrid",
+        "text": "You can't hide from me forever. I won't wait any longer for Vargo's answers."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "......"
     },
     {
-        "text": "I lost. To the Vulpo out of nowhere.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "I lost. To the Vulpo out of nowhere."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_exsheath"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_exsheath"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.4,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.4,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#5"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#5"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-250,0",
-        "duration": 0.3,
-        "afrom": 1,
-        "ato": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-250,0",
+            "duration": 0.3,
+            "afrom": 1,
+            "ato": 0
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_ftrub"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_ftrub"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#7$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#7$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Damned pup!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Damned pup!"
     },
     {
-        "text": "Think you can just walk away after I finally found you?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Think you can just walk away after I finally found you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_144_red_7#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_144_red_7#1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "......"
     },
     {
-        "text": "You again?!",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "You again?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.2,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.1,
-        "xstrength": 15,
-        "ystrength": 2,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.1,
+            "xstrength": 15,
+            "ystrength": 2,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spear"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spear"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp",
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp",
+            "delay": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_metalcollar",
-        "volume": 0.6,
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_metalcollar",
+            "volume": 0.6,
+            "delay": 0.3
+        }
     },
     {
         "text": "Lyudmila brandishes her knife once again, but Projekt Red nimbly dodges it. A heavy kick immediately slams into her back. Her arm is pinned down, and her knife clatters onto the ground."
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 5,
-        "ystrength": 20,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 5,
+            "ystrength": 20,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true
+        }
     },
     {
         "text": "By the time she can react, she is already being pressed down into the dirt."
     },
     {
-        "text": "Ugh\u2014Agh\u2014",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Ugh\u2014Agh\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_6_18",
-        "screenadapt": "coverall",
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "x": 150,
-        "y": -100
+        "command": "image",
+        "params": {
+            "image": "avg_6_18",
+            "screenadapt": "coverall",
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "x": 150,
+            "y": -100
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "The rough scraping of her face against the ground bring a memory to the forefront of her mind\u2014"
@@ -2903,147 +3471,163 @@
         "text": "The same sorry figure pressed against the ground, the same pain shooting through her body."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 90
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 90
+        }
     },
     {
-        "text": "Gah! My arm! Let go of me! Pizdets! Vaffanculo!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Gah! My arm! Let go of me! Pizdets! Vaffanculo!"
     },
     {
-        "text": "You stronza! I nearly had my revenge in Lungmen. Why'd you have to get between me and Kal'tsit?!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "You stronza! I nearly had my revenge in Lungmen. Why'd you have to get between me and Kal'tsit?!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90
+        }
     },
     {
-        "text": "Maestro couldn't fight any more, so why'd you kill her?!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Maestro couldn't fight any more, so why'd you kill her?!"
     },
     {
-        "text": "Why the hell do you keep showing up over and over again?!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Why the hell do you keep showing up over and over again?!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90
+        }
     },
     {
-        "text": "Why can't I kill you?! Why?!",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Why can't I kill you?! Why?!"
     },
     {
-        "text": "(Bares teeth in irritation)",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "(Bares teeth in irritation)"
     },
     {
-        "text": "...I remember you.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "...I remember you."
     },
     {
-        "text": "I hunt wolves. You're not a true wolf. No need to kill you.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "I hunt wolves. You're not a true wolf. No need to kill you."
     },
     {
-        "text": "Kal'tsit said we shouldn't kill a homeless hyena. You're in pain. Kal'tsit doesn't want me to kill you.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "Kal'tsit said we shouldn't kill a homeless hyena. You're in pain. Kal'tsit doesn't want me to kill you."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "......"
     },
     {
-        "text": "Grandma's waiting for me.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "Grandma's waiting for me."
     },
     {
-        "text": "I don't have time to waste. I need to find the last true wolf.",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "I don't have time to waste. I need to find the last true wolf."
     },
     {
-        "text": "Don't get in my way again. I've left Rhodes Island. I'm not listening to Kal'tsit any more...",
-        "tag": "name",
-        "value": "Projekt Red"
+        "command": "name",
+        "value": "Projekt Red",
+        "text": "Don't get in my way again. I've left Rhodes Island. I'm not listening to Kal'tsit any more..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 1
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "56_g4_newvolsiniialley_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g4_newvolsiniialley_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "The Lupo clad in a red hoodie stays for not a moment longer, disappearing down the depths of the alley."
@@ -3055,208 +3639,247 @@
         "text": "She suddenly remembers Sommer's words."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1502_crosly_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1502_crosly_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.1,
-        "fillto": 0.1,
-        "fadetime": 0.1
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.1,
+            "fillto": 0.1,
+            "fadetime": 0.1
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 0.7,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "This really is a chance encounter between two sfortunati, haha.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "This really is a chance encounter between two sfortunati, haha."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1547_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1547_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all.",
-        "tag": "name",
-        "value": "Sommer"
+        "command": "name",
+        "value": "Sommer",
+        "text": "Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g4_newvolsiniialley_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "56_g4_newvolsiniialley_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "You sure about that, Sommer?",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "You sure about that, Sommer?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "text": "Sommer... Oh right, Sommer...",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Sommer... Oh right, Sommer..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#6$1",
-        "duration": 1.5,
-        "posfrom": "0,-100",
-        "posto": "0,0"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#6$1",
+            "duration": 1.5,
+            "posfrom": "0,-100",
+            "posto": "0,0"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "power": 6,
-        "times": 40,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 6,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1502_crosly_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1502_crosly_1#7$1"
+        }
     },
     {
-        "text": "Dammit, I got so caught up in chasing that stupid wolf pup... I forgot Sommer's still in the truck...",
-        "tag": "name",
-        "value": "Lyudmila"
+        "command": "name",
+        "value": "Lyudmila",
+        "text": "Dammit, I got so caught up in chasing that stupid wolf pup... I forgot Sommer's still in the truck..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

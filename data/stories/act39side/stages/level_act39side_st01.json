@@ -1,83 +1,92 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "49_g12_diving",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "49_g12_diving",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jump_water"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jump_water"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_underwateramb",
+            "volume": 0.3,
+            "channel": 1,
+            "loop": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_underwateramb",
-        "volume": 0.3,
-        "channel": 1,
-        "loop": true
+        "command": "subtitle",
+        "params": {
+            "text": "'Salt is sacred. It is within the tides, within our tears.'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Salt is sacred. It is within the tides, within our tears.'"
     },
     {
-        "tag": "subtitle",
-        "text": "'Salt is sacred. It is within the tides, within our tears.'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
-    },
-    {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
         "text": "He strains his eyes in the dark waters, searching the lake bed for the faint glint of metal."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_swiminwater",
-        "volume": 0.5,
-        "channel": 2,
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_swiminwater",
+            "volume": 0.5,
+            "channel": 2,
+            "loop": true
+        }
     },
     {
         "text": "He slowly paddles forward, inch by inch, fingers outstretched in the silt, but all they find are strands of waterweeds."
@@ -86,20 +95,23 @@
         "text": "The frigid waters flow past his skin and hair. Confusion sets in. He does not know how he will find that golden coin."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "subtitle",
-        "text": "'Don't look with your eyes. Let the water's flow tell you where to go.'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'Don't look with your eyes. Let the water's flow tell you where to go.'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Don't look with your eyes. Let the water's flow tell you where to go.'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
         "text": "A voice from ashore cuts through the water. He cannot see the person's face clearly, but that gentle, friendly tone sounds reassuring."
@@ -114,327 +126,387 @@
         "text": "He strokes its face before grasping it in his hand. He swims away, the stranger's face getting ever clearer as he gets closer to shore."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "subtitle",
-        "text": "'Did you find the coin, my boy?'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'Did you find the coin, my boy?'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Did you find the coin, my boy?'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
         "text": "He unfurls his fingers, the gold coin resting on his palm. The circle on its face is bisected by a straight line. Somehow it resembles some distant horizon, one he has yet to reach."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": 2,
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 2,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_piratepet_vo01"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_piratepet_vo01"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Urgh...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Urgh..."
     },
     {
-        "text": "What's that smell... Finny... Salty...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "What's that smell... Finny... Salty..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_towerinside",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_towerinside",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$comedy_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$comedy_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_piratepet_vo01"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_piratepet_vo01"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#1$1",
-        "focus": "m",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#1$1",
+            "focus": "m",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Mm... hmph...",
-        "tag": "name",
-        "value": "Strange Creature"
+        "command": "name",
+        "value": "Strange Creature",
+        "text": "Mm... hmph..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#2$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#2$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "*Sigh*...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "*Sigh*..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Sticks out tongue) Bleh...",
-        "tag": "name",
-        "value": "Strange Creature"
+        "command": "name",
+        "value": "Strange Creature",
+        "text": "(Sticks out tongue) Bleh..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't lick my face, little guy, or I'll hit you.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Don't lick my face, little guy, or I'll hit you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_piratepet_vo02"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_piratepet_vo02"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "jump",
-        "power": 50,
-        "times": 1,
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "jump",
+            "power": 50,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Mmph...",
-        "tag": "name",
-        "value": "Strange Creature"
+        "command": "name",
+        "value": "Strange Creature",
+        "text": "Mmph..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Forget it. I won't have to deal with you much longer.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Forget it. I won't have to deal with you much longer."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite"
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#3$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#3$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "Hey, chaval, your food. Eat up quick! Boss wants to see you!",
-        "tag": "name",
-        "value": "Coarse Male Voice"
+        "command": "name",
+        "value": "Coarse Male Voice",
+        "text": "Hey, chaval, your food. Eat up quick! Boss wants to see you!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$doorclosequite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorclosequite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She won't be seeing me today.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "She won't be seeing me today."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Isidro pulls down the canvas hammock hung up in the room, wrapping it around the hard bread and half-full canister of water on the tray."
@@ -449,844 +521,992 @@
         "text": "The strange-looking animal crawls up and nips onto his pants. Isidro watches its saliva soak into the fabric and sighs."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm definitely not coming back here.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "I'm definitely not coming back here."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g9_community_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g9_community_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_broadsword_polish",
-        "channel": 1,
-        "volume": 1,
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_broadsword_polish",
+            "channel": 1,
+            "volume": 1,
+            "loop": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_outside",
-        "channel": 2,
-        "volume": 0.3,
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_outside",
+            "channel": 2,
+            "volume": 0.3,
+            "loop": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "none"
+        }
     },
     {
-        "text": "(Whistle) Javier, can I get that blade I left here last month?",
-        "tag": "name",
-        "value": "Fiery Woman"
+        "command": "name",
+        "value": "Fiery Woman",
+        "text": "(Whistle) Javier, can I get that blade I left here last month?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#2$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#2$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Javier!",
-        "tag": "name",
-        "value": "Fiery Woman"
+        "command": "name",
+        "value": "Fiery Woman",
+        "text": "Javier!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "duration": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": 2,
-        "duration": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 2,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#8$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#8$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Eh? Oh... Sorry, Teach, wasn't listening. You here for the blade?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Eh? Oh... Sorry, Teach, wasn't listening. You here for the blade?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What else? Not your sweat-stained pecs, I'll tell you that much.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "What else? Not your sweat-stained pecs, I'll tell you that much."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "You all need to stop it with the jokes, Teach.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "You all need to stop it with the jokes, Teach."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, don't be like that. Seeing you sharpening knives in the early morn is pretty much part of the landscape by now.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Oh, don't be like that. Seeing you sharpening knives in the early morn is pretty much part of the landscape by now."
     },
     {
-        "text": "Look, you've drawn in a crowd... Though I don't think they're here to get their knives polished.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Look, you've drawn in a crowd... Though I don't think they're here to get their knives polished."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "(Leers) Hey there, Javier!",
-        "tag": "name",
-        "value": "Spectating Man"
+        "command": "name",
+        "value": "Spectating Man",
+        "text": "(Leers) Hey there, Javier!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#9$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#9$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "What a pain in the\u2014 Here. Your blade.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "What a pain in the\u2014 Here. Your blade."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "We don't have much metal left for repairs, so I used other things to fix it up. You'll have to make do with it for a while.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "We don't have much metal left for repairs, so I used other things to fix it up. You'll have to make do with it for a while."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Shell and bone? You're a real dab hand.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Shell and bone? You're a real dab hand."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wanna test it?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Wanna test it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Got anything tough I can chop up?",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Got anything tough I can chop up?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I did have a hunk of dry bread... but I just gave it to the kid locked in the shack.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I did have a hunk of dry bread... but I just gave it to the kid locked in the shack."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Waste of a perfectly good loaf.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Waste of a perfectly good loaf."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1590_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1590_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Hey, hey, move it already! Don't you lot have anything better to do in the morning? Stop blocking the damn way!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hey, hey, move it already! Don't you lot have anything better to do in the morning? Stop blocking the damn way!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Rus?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Rus?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, it's you. And here I was, thinking it was the harsh glare of dawn in my eyes.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Oh, it's you. And here I was, thinking it was the harsh glare of dawn in my eyes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1590_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1590_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I don't have time for you and your nonsense. Quick, Javier, let's head inside and talk!",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "I don't have time for you and your nonsense. Quick, Javier, let's head inside and talk!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sounds like it's not for my ears. I'll be off then, Javier.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Sounds like it's not for my ears. I'll be off then, Javier."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Seems like the fun has ended... See you tomorrow, Javier!",
-        "tag": "name",
-        "value": "Spectating Man"
+        "command": "name",
+        "value": "Spectating Man",
+        "text": "Seems like the fun has ended... See you tomorrow, Javier!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Quietly) Hmph...",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "(Quietly) Hmph..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g5_newcabin",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g5_newcabin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness02_intro",
-        "key": "$darkness02_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness02_intro",
+            "key": "$darkness02_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$doorclosequite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorclosequite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "You need to talk to Juana. She's gone mad! She's going to send us all to our deaths, and you're the only one in her crew who can keep a cool head!",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "You need to talk to Juana. She's gone mad! She's going to send us all to our deaths, and you're the only one in her crew who can keep a cool head!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#2$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#2$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "And how is that new?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "And how is that new?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Over all these years, <i>every single one</i> of her decisions looked crazy at first, but turned out to be exactly what we needed, right?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Over all these years, <i>every single one</i> of her decisions looked crazy at first, but turned out to be exactly what we needed, right?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#7$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#7$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Getting in touch with that caravan a decade ago was a huge gamble too, but here we are, making a good living selling antiques we dig out of the salt flat.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Getting in touch with that caravan a decade ago was a huge gamble too, but here we are, making a good living selling antiques we dig out of the salt flat."
     },
     {
-        "text": "Nobody took her side back then. Everyone was too scared of those money-grubbing merchants leaking the location of our fleet to the Inquisition.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Nobody took her side back then. Everyone was too scared of those money-grubbing merchants leaking the location of our fleet to the Inquisition."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "But Juana got them to see what the real value of the deal was, and made them an offer they couldn't refuse.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "But Juana got them to see what the real value of the deal was, and made them an offer they couldn't refuse."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "This is different, Javier. Totally different.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "This is different, Javier. Totally different."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#2$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#2$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Doesn't matter, Rus. She's our boss, and I'd say she's earned our trust.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Doesn't matter, Rus. She's our boss, and I'd say she's earned our trust."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "......"
     },
     {
-        "text": "She wants us to go back out to sea. You really going to back her on this? You <i>really</i> think this is a way forward?",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "She wants us to go back out to sea. You really going to back her on this? You <i>really</i> think this is a way forward?"
     },
     {
-        "text": "'Cause it's not. We're all just gonna end up in a watery grave.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "'Cause it's not. We're all just gonna end up in a watery grave."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#8$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#8$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Show a little faith. She found the compass, and a caster to fix it up. Everything's going to plan, no?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Show a little faith. She found the compass, and a caster to fix it up. Everything's going to plan, no?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Even if you don't give a damn what happens outside your kitchen, you must've noticed the finshit you've been getting to cook with lately, yeah?",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Even if you don't give a damn what happens outside your kitchen, you must've noticed the finshit you've been getting to cook with lately, yeah?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Look, here are the bills for the wood she's been buying up. All to fix those rotten old ships, all to head back out to that sea of hers.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Look, here are the bills for the wood she's been buying up. All to fix those rotten old ships, all to head back out to that sea of hers."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "You <i>know</i> how expensive wood is. All that coin could've made our lives much cozier. You wouldn't be slaving away every day pickling saltfin livers for garum, I can say that much.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "You <i>know</i> how expensive wood is. All that coin could've made our lives much cozier. You wouldn't be slaving away every day pickling saltfin livers for garum, I can say that much."
     },
     {
-        "text": "Just go talk to her, afore she's done too much damage.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Just go talk to her, afore she's done too much damage."
     },
     {
-        "text": "Been hearing some real nasty talk around town. Folks're getting restless.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Been hearing some real nasty talk around town. Folks're getting restless."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "......"
     },
     {
-        "text": "Fine, I'll have a chat with her.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Fine, I'll have a chat with her."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#10$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#10$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "But don't forget, Rus. Without that 'loca' Juana, our grandparents, our parents, us...",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "But don't forget, Rus. Without that 'loca' Juana, our grandparents, our parents, us..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#2$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#2$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "None of us would've been able to live out here in the Salt Flat.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "None of us would've been able to live out here in the Salt Flat."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g9_community_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g9_community_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#10$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#10$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Strange...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Strange..."
     },
     {
-        "text": "Where did that cook go? The one always sitting outside.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Where did that cook go? The one always sitting outside."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1"
+        }
     },
     {
-        "text": "Mierda...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Mierda..."
     },
     {
-        "text": "Are they trying to take me back?",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Are they trying to take me back?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-50,0",
-        "duration": 1,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-50,0",
+            "duration": 1,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "A man turns the corner, aggression apparent in his footsteps. Isidro quickly hides himself in a shadowy corner."
@@ -1295,226 +1515,258 @@
         "text": "But the man walks right by him, swearing up a storm as he goes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Idiots! You blasted idiots!",
-        "tag": "name",
-        "value": "Aggressive Man"
+        "command": "name",
+        "value": "Aggressive Man",
+        "text": "Idiots! You blasted idiots!"
     },
     {
-        "text": "Just you wait and see, that puta's going to get us all killed!",
-        "tag": "name",
-        "value": "Aggressive Man"
+        "command": "name",
+        "value": "Aggressive Man",
+        "text": "Just you wait and see, that puta's going to get us all killed!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Clear your head, Cesc. You've been eating that girl's herbs on the sly again.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Clear your head, Cesc. You've been eating that girl's herbs on the sly again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My head's clear as day, it's yours I'm worried about!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "My head's clear as day, it's yours I'm worried about!"
     },
     {
-        "text": "I can't be the only one with a problem with how she's leading us, can I?",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "I can't be the only one with a problem with how she's leading us, can I?"
     },
     {
-        "text": "You're all just too yellow to say it. Cowards, the lot of you!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "You're all just too yellow to say it. Cowards, the lot of you!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Vete a la mierda. If you're going to spew shit, do it at home.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Vete a la mierda. If you're going to spew shit, do it at home."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But am I wrong, Teach?!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "But am I wrong, Teach?!"
     },
     {
-        "text": "Don't tell me you trust that loca too?!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "Don't tell me you trust that loca too?!"
     },
     {
-        "text": "Have you been taken in by her saltdamned lies too, like Javier?!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "Have you been taken in by her saltdamned lies too, like Javier?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite"
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#6$2",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#6$2",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#6$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#6$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Cesc...",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Cesc..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1590_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1590_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Hey, cool it! He's just a little upset!",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Hey, cool it! He's just a little upset!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#6$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#6$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Say that again.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Say that again."
     },
     {
-        "text": "Say. That. Again.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Say. That. Again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You know I'm right, Javier.",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "You know I'm right, Javier."
     },
     {
-        "text": "All those years of licking her boots. Shouting 'aye aye, Captain!' at all her shit.",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "All those years of licking her boots. Shouting 'aye aye, Captain!' at all her shit."
     },
     {
-        "text": "We all know you're a loyal beckbeast.",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "We all know you're a loyal beckbeast."
     },
     {
-        "text": "So put down that knife of yours and go crying to Mam\u00e1 like always.",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "So put down that knife of yours and go crying to Mam\u00e1 like always."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#6$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#6$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "You\u2014!",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "You\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch",
+            "channel": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "Javier grabs Cesc by the collar and lifts him up, slamming his back into the wall."
@@ -1523,65 +1775,73 @@
         "text": "Javier's face is calm, but the fire in his eyes burns bright, nearly bright enough to sear holes into the target of his ire."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "text": "Are they going to start a fight...?",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Are they going to start a fight...?"
     },
     {
-        "text": "If they do, I may as well make a break for it.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "If they do, I may as well make a break for it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Urk...",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "Urk..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#6$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#6$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't you ever spew that sort of finshit again. Not even in your sleep.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Don't you ever spew that sort of finshit again. Not even in your sleep."
     },
     {
-        "text": "You hear me, Cesc?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "You hear me, Cesc?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cnstrctnck",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cnstrctnck",
+            "channel": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "Cesc can barely breathe as Javier presses into his neck. Nobody dares approach the two, only silently passing them with their heads lowered."
@@ -1590,254 +1850,304 @@
         "text": "The people in the sheds lining the street shut their windows tight one after the other. In a flash, the street is empty."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ugh...",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "Ugh..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1590_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1590_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Let him go, Javier! He's learned his lesson!",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Let him go, Javier! He's learned his lesson!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Whispers) Not here, Javier...",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "(Whispers) Not here, Javier..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#3$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#3$2",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "ANSWER ME!",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "ANSWER ME!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Nods furiously)",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "(Nods furiously)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "channel": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3",
+            "channel": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*cough*... *cough* *cough* *cough*\u2014!",
-        "tag": "name",
-        "value": "Cesc"
+        "command": "name",
+        "value": "Cesc",
+        "text": "*cough*... *cough* *cough* *cough*\u2014!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#6$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#6$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Now run along home, chaval. Remember what you learned today. Remember it well.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Now run along home, chaval. Remember what you learned today. Remember it well."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1591_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1591_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*Sigh* The hell was that, Javier? You've never been that reckless.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "*Sigh* The hell was that, Javier? You've never been that reckless."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1590_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1590_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Reckless? No. He was just making it clear to everyone where he stands.",
-        "tag": "name",
-        "value": "Rus"
+        "command": "name",
+        "value": "Rus",
+        "text": "Reckless? No. He was just making it clear to everyone where he stands."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#9$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#9$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Rus, I...",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Rus, I..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Relax, just bring him a little something tonight. He'll accept your apology.",
-        "tag": "name",
-        "value": "Teach"
+        "command": "name",
+        "value": "Teach",
+        "text": "Relax, just bring him a little something tonight. He'll accept your apology."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#5$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#5$2",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Yeah. Thanks, Teach.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Yeah. Thanks, Teach."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1580_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1580_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$2",
+            "focus": "m"
+        }
     },
     {
         "text": "Javier watches the woman walk away as he stands in the middle of the street."
@@ -1846,417 +2156,491 @@
         "text": "A stray headscarf lies at his feet, having fallen off Cesc's head as he ran."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Javier picks it up, pats off the dust, and walks back to his shed, closing the door lightly behind him."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$doorclosequite"
+        "command": "playsound",
+        "params": {
+            "key": "$doorclosequite"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Good, everyone's gone.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Good, everyone's gone."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I was afraid I'd have to wait for them all to take an afternoon siesta.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "I was afraid I'd have to wait for them all to take an afternoon siesta."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Tch...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Tch..."
     },
     {
-        "text": "Why did I even <i>try</i> escaping at night last time? That's when these guys are most active.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Why did I even <i>try</i> escaping at night last time? That's when these guys are most active."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g6_olddeck_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g6_olddeck_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(There. That's my way out. Just need to head down.)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(There. That's my way out. Just need to head down.)"
     },
     {
-        "text": "(Only two guards. Gotta knock them out.)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(Only two guards. Gotta knock them out.)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Ahem...",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "Ahem..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(Hmm...?)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(Hmm...?)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Say, Anna... Ever thought about going someplace else?",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "Say, Anna... Ever thought about going someplace else?"
     },
     {
-        "text": "I kept some of those old coins we've been digging up. File off the king's face, and you can barely tell the difference from the new ones!",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "I kept some of those old coins we've been digging up. File off the king's face, and you can barely tell the difference from the new ones!"
     },
     {
-        "text": "We could leave the Flat behind. Go to Rim Billiton, Columbia... Anywhere you'd like.",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "We could leave the Flat behind. Go to Rim Billiton, Columbia... Anywhere you'd like."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No, Jos\u00e9. I was born and raised here. Never even thought of leaving.",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "No, Jos\u00e9. I was born and raised here. Never even thought of leaving."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You really want to stay and follow the boss out to sea?",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "You really want to stay and follow the boss out to sea?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "She's the boss.",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "She's the boss."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The sea'll swallow you up...",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "The sea'll swallow you up..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I ain't afraid. She promised us.",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "I ain't afraid. She promised us."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Well, what scares <i>me</i> is that that promise might turn out to be a fleeting dream.",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "Well, what scares <i>me</i> is that that promise might turn out to be a fleeting dream."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "If you're that scared, then go. I ain't gonna stop you.",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "If you're that scared, then go. I ain't gonna stop you."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...I was kinda hoping you would.",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "...I was kinda hoping you would."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(Are they done yet?)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(Are they done yet?)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "If you don't wanna leave with me, then at least...",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "If you don't wanna leave with me, then at least..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "At least what?",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "At least what?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(Can't this guy take a hint?)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(Can't this guy take a hint?)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Could you, uh, give me a...",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "Could you, uh, give me a..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(Stop mumbling and spit it out alr\u2014)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(Stop mumbling and spit it out alr\u2014)"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Stop mumbling and spit it out already!",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "Stop mumbling and spit it out already!"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1589_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1589_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "(...?)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(...?)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "posfrom": "0,0",
-        "posto": "100,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "posfrom": "0,0",
+            "posto": "100,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "0,0",
-        "posto": "50,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "0,0",
+            "posto": "50,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "channel": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
         "text": "Unable to bear watching the man stumble over his words any longer, the woman knocks him flat before sandwiching his face between her hands, kissing him hard."
@@ -2265,307 +2649,359 @@
         "text": "Isidro furrows his brows before looking away politely."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "channel": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Mmmf... Anna...",
-        "tag": "name",
-        "value": "Inattentive Guard"
+        "command": "name",
+        "value": "Inattentive Guard",
+        "text": "Mmmf... Anna..."
     },
     {
-        "text": "Oh, just shut it!",
-        "tag": "name",
-        "value": "Diligent Guard"
+        "command": "name",
+        "value": "Diligent Guard",
+        "text": "Oh, just shut it!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#10$1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#10$1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "text": "(At least they didn't notice me.)",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "(At least they didn't notice me.)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "200,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 2.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "200,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 2.5,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g1_saltdesert_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g1_saltdesert_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$runsand"
+        "command": "playsound",
+        "params": {
+            "key": "$runsand"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#1$1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#1$1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "Phew...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Phew..."
     },
     {
-        "text": "Need to run faster... If I'm not out of here before dark...",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Need to run faster... If I'm not out of here before dark..."
     },
     {
-        "text": "Based on the last few times, I'm definitely going to be\u2014",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Based on the last few times, I'm definitely going to be\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-50,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-50,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "A giant helm wheel rolls past his face before coming to a halt, stopping just short of crushing his feet."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "You shouldn't keep a lady waiting, you know.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You shouldn't keep a lady waiting, you know."
     },
     {
-        "text": "Now be a good boy and come back with me.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Now be a good boy and come back with me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You shouldn't be here.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "You shouldn't be here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Still not given up after all these attempts? We might not have enough spare medicine to patch you up if you end up wounded again, you know.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Still not given up after all these attempts? We might not have enough spare medicine to patch you up if you end up wounded again, you know."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How did you know I was gone, Se\u00f1ora Juana?",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "How did you know I was gone, Se\u00f1ora Juana?"
     },
     {
-        "text": "I made sure nobody was following me.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "I made sure nobody was following me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's my job to be aware of what's happening in my fleet. You can't hide from my little eyes and ears.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "It's my job to be aware of what's happening in my fleet. You can't hide from my little eyes and ears."
     },
     {
-        "text": "Besides, did no one ever teach you not to ask a lady a question she'd rather not answer?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Besides, did no one ever teach you not to ask a lady a question she'd rather not answer?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#7$1",
+            "focus": "m"
+        }
     },
     {
         "text": "The young man does not reply, silently thinking of the sword that had been faithfully at his side for years. If he still had it, perhaps it would even the odds."
@@ -2580,147 +3016,175 @@
         "text": "The lady lightly draws her sword, her stance relaxed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_293_thorns_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_293_thorns_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Out of my way!",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Out of my way!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$runsand"
+        "command": "playsound",
+        "params": {
+            "key": "$runsand"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-200,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-200,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch02",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch02",
+            "channel": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punchsp3",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punchsp3",
+            "channel": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch",
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch",
+            "channel": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "channel": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Ngh\u2014",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Ngh\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_throwrope",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_throwrope",
+            "channel": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cnstrctnck",
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cnstrctnck",
+            "channel": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "After a few sword strokes, the unarmed man falls defeated, face in the salty sand. He could not protect even the last of his belongings."
@@ -2729,1532 +3193,1792 @@
         "text": "As Juana ties him up and heaves him over her shoulder, he feels something in his heart silently shatter."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ah, youth. Never knowing when to give up. No matter how many times you're beaten down, you're already dreaming of the next attempt.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Ah, youth. Never knowing when to give up. No matter how many times you're beaten down, you're already dreaming of the next attempt."
     },
     {
-        "text": "If you're that desperate to leave, then fix that compass for me.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "If you're that desperate to leave, then fix that compass for me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "How many times I have to say it? Only an alchemist can fix it, and I'm no alchemist!",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "How many times I have to say it? Only an alchemist can fix it, and I'm no alchemist!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh? Then care to explain where that gold coin of yours came from?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Oh? Then care to explain where that gold coin of yours came from?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "...I stole it.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "...I stole it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You are a terrible liar, joven.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "You are a terrible liar, joven."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "On its face is a mark only a few know of: the mark of the long-lost school of alchemy. The knowledge they passed down helped countless fleets find treasure in the seas.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "On its face is a mark only a few know of: the mark of the long-lost school of alchemy. The knowledge they passed down helped countless fleets find treasure in the seas."
     },
     {
-        "text": "But after the Profound Silence, their disciples were imprisoned, and their works destroyed.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "But after the Profound Silence, their disciples were imprisoned, and their works destroyed."
     },
     {
-        "text": "So tell me, why are you holding onto that coin, despite all that happened to them?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "So tell me, why are you holding onto that coin, despite all that happened to them?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "text": "I don't know anything about any of that.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "I don't know anything about any of that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, what a stubborn young man. How about we change the question, then?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Oh, what a stubborn young man. How about we change the question, then?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How did you dig that tunnel of yours?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "How did you dig that tunnel of yours?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "...The bread you gave me was really hard.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "...The bread you gave me was really hard."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What a clever boy.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "What a clever boy."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g5_newcabin",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g5_newcabin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "key": "$comedy_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$comedy_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My oh my, I really must thank you!",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "My oh my, I really must thank you!"
     },
     {
-        "text": "You've worked so hard keeping watch over him. Why, if you hadn't informed me right away, he might have actually gotten away.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "You've worked so hard keeping watch over him. Why, if you hadn't informed me right away, he might have actually gotten away."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, I know, he's not the best-behaved prisoner, but that's why we have you, isn't it?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Yes, I know, he's not the best-behaved prisoner, but that's why we have you, isn't it?"
     },
     {
-        "text": "You really are our cleverest, sharpest-witted, most amazing little...",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "You really are our cleverest, sharpest-witted, most amazing little..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Nene.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Nene."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Mm-ph!",
-        "tag": "name",
-        "value": "Nene"
+        "command": "name",
+        "value": "Nene",
+        "text": "Mm-ph!"
     },
     {
-        "text": "(Spins excitedly)",
-        "tag": "name",
-        "value": "Nene"
+        "command": "name",
+        "value": "Nene",
+        "text": "(Spins excitedly)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't get too excited now. There are still many difficult duties ahead of you, and you mustn't take them lightly.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Don't get too excited now. There are still many difficult duties ahead of you, and you mustn't take them lightly."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Quickly falls flat on the ground)",
-        "tag": "name",
-        "value": "Nene"
+        "command": "name",
+        "value": "Nene",
+        "text": "(Quickly falls flat on the ground)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I have faith in you, of course. Alright, off you go now. Don't let that boy learn who you are.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "I have faith in you, of course. Alright, off you go now. Don't let that boy learn who you are."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mmph!",
-        "tag": "name",
-        "value": "Nene"
+        "command": "name",
+        "value": "Nene",
+        "text": "Mmph!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite",
+            "channel": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Come in, Javi.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Come in, Javi."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite"
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Pardon me, Se\u00f1ora Juana. I hope I'm not interrupting your time with Nene.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Pardon me, Se\u00f1ora Juana. I hope I'm not interrupting your time with Nene."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1586_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1586_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mmph...",
-        "tag": "name",
-        "value": "Nene"
+        "command": "name",
+        "value": "Nene",
+        "text": "Mmph..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't give me that look. I've got a little something for you too.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Don't give me that look. I've got a little something for you too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My, what a fine little ball of bone... Did you carve it?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "My, what a fine little ball of bone... Did you carve it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "S\u00ed. Out of bone shards that broke off some of our older weapons. Else they'd have gone to waste.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "S\u00ed. Out of bone shards that broke off some of our older weapons. Else they'd have gone to waste."
     },
     {
-        "text": "I wanted to give it to Rus as an apology, but he won't open his door for me.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I wanted to give it to Rus as an apology, but he won't open his door for me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh... I did hear about that. You shouldn't be so hasty, Javier. As our fleet's bosun, Rus has every right to question my plan to go out to sea.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Oh... I did hear about that. You shouldn't be so hasty, Javier. As our fleet's bosun, Rus has every right to question my plan to go out to sea."
     },
     {
-        "text": "And you attacking one of his men right in front of him can be seen as a rather harsh warning.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "And you attacking one of his men right in front of him can be seen as a rather harsh warning."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Considering your recent promotion to main chef, best keep a low profile. Some things are better left unsaid.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Considering your recent promotion to main chef, best keep a low profile. Some things are better left unsaid."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I think <i>he's</i> the one who needed that advice.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I think <i>he's</i> the one who needed that advice."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Just let him be, Javi. I don't pay it any mind, so why should you?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Just let him be, Javi. I don't pay it any mind, so why should you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Because I know our boss isn't a madwoman playing around with other people's lives.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Because I know our boss isn't a madwoman playing around with other people's lives."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Well, aren't you sweet?",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Well, aren't you sweet?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If we do get that compass fixed, can it really tell us how to avoid the sea monsters and find what we need?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "If we do get that compass fixed, can it really tell us how to avoid the sea monsters and find what we need?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course. I would never lie to you, Javi.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Of course. I would never lie to you, Javi."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Salt Flat won't be able to support us for generations to come. While the sea is a nigh inexhaustible font of resources.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "The Salt Flat won't be able to support us for generations to come. While the sea is a nigh inexhaustible font of resources."
     },
     {
-        "text": "Now that we have both the 'compass' and an alchemist to fix it, this is a chance for us to turn our lives around. We can't afford to miss it.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Now that we have both the 'compass' and an alchemist to fix it, this is a chance for us to turn our lives around. We can't afford to miss it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But aside from you, none of us have even seen the sea, or experienced that age of gold and plenty.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "But aside from you, none of us have even seen the sea, or experienced that age of gold and plenty."
     },
     {
-        "text": "I've been living in the Flat for as long as I can remember, but the old cook said that only a century ago, this was fertile soil.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I've been living in the Flat for as long as I can remember, but the old cook said that only a century ago, this was fertile soil."
     },
     {
-        "text": "What if that bountiful sea of yours has already become just as barren as the Flat after the Profound Silence?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "What if that bountiful sea of yours has already become just as barren as the Flat after the Profound Silence?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "And this magic compass of yours... can't guide us back to the past.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "And this magic compass of yours... can't guide us back to the past."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "'The tides will wash away my footprints, and the wind will scrub away the foam from the waves.'",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "'The tides will wash away my footprints, and the wind will scrub away the foam from the waves.'"
     },
     {
-        "text": "'But the sea and the shore will stand, forevermore.'",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "'But the sea and the shore will stand, forevermore.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What...?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "What...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Just an old poem, Javi. Unlike the land, the sea is tenacious. Though it may be infested with strangely fleshed beasts, it is still abundant with precious lifelines, waiting for us to find them.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Just an old poem, Javi. Unlike the land, the sea is tenacious. Though it may be infested with strangely fleshed beasts, it is still abundant with precious lifelines, waiting for us to find them."
     },
     {
-        "text": "It was once ours, and it can be ours once again.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "It was once ours, and it can be ours once again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I want to believe you, I do.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I want to believe you, I do."
     },
     {
-        "text": "But these rumors... You have to prove yourself in front of everyone, show them you're not talking nonsense.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "But these rumors... You have to prove yourself in front of everyone, show them you're not talking nonsense."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I will.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "I will."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "......"
     },
     {
-        "text": "Oh, right. I did as you asked and went by the shed. There really is a hole in there. I'll fill it up tonight.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Oh, right. I did as you asked and went by the shed. There really is a hole in there. I'll fill it up tonight."
     },
     {
-        "text": "What should we do about the boy? He can't stay there anymore.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "What should we do about the boy? He can't stay there anymore."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't worry, I've already found a place for him.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Don't worry, I've already found a place for him."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But where? If you mean my place, then no.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "But where? If you mean my place, then no."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1581_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1581_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't you worry your little head over it. You'll see on your way home.",
-        "tag": "name",
-        "value": "Juana"
+        "command": "name",
+        "value": "Juana",
+        "text": "Don't you worry your little head over it. You'll see on your way home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "57_g9_community_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "57_g9_community_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_outside",
-        "channel": 2,
-        "volume": 0.3,
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_outside",
+            "channel": 2,
+            "volume": 0.3,
+            "loop": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Damned little brat, this peg-leg you sold me is pure garbage! Two days and it's already split in twain!",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "Damned little brat, this peg-leg you sold me is pure garbage! Two days and it's already split in twain!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4163_rosesa_1#5$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4163_rosesa_1#5$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Eh, it just needs a bit of spit, polish, and glue and it'll be good as new.",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Eh, it just needs a bit of spit, polish, and glue and it'll be good as new."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You sack of finshit, how about I rip <i>your</i> leg off and use that instead?!",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "You sack of finshit, how about I rip <i>your</i> leg off and use that instead?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4163_rosesa_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4163_rosesa_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "H-Hey, settle down now! I'll take the leg back, no need to get violent!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "H-Hey, settle down now! I'll take the leg back, no need to get violent!"
     },
     {
-        "text": "I-I-I've got a knife! Don't come any closer!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "I-I-I've got a knife! Don't come any closer!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Javier! Right on time! Help me catch the little wench!",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "Javier! Right on time! Help me catch the little wench!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4163_rosesa_1#16$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4163_rosesa_1#16$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Out of my way, idiot!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Out of my way, idiot!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Tch... Troublemaker.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Tch... Troublemaker."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-50,0",
-        "duration": 1.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-50,0",
+            "duration": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopsound",
-        "channel": 2,
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": 2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#19$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#19$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#19$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#19$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Ow! That hurts!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Ow! That hurts!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Give him back his money.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Give him back his money."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#15$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#15$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Let me go! I'll tell Juana you've been bullying me!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Let me go! I'll tell Juana you've been bullying me!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Use your head, chica. This isn't somewhere you can run your mouth. We're not like those cowards in other towns.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Use your head, chica. This isn't somewhere you can run your mouth. We're not like those cowards in other towns."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "If you mess with us, we won't bother locking you up or putting you on trial. Left hand or right hand? Choose the one you want to keep.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "If you mess with us, we won't bother locking you up or putting you on trial. Left hand or right hand? Choose the one you want to keep."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#14$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#14$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "H-How dare you! If it weren't for me, your boss would never have gotten ahold of that compass!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "H-How dare you! If it weren't for me, your boss would never have gotten ahold of that compass!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Care to try your luck?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Care to try your luck?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#19$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#19$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Err... Fine, I'll return the money! But you gotta give me back that peg-leg!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Err... Fine, I'll return the money! But you gotta give me back that peg-leg!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Not on my life. If it's stuck to my leg, it's mine.",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "Not on my life. If it's stuck to my leg, it's mine."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#19$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#19$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Y-You're no better than a pack of bandits!",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Y-You're no better than a pack of bandits!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'm glad you've finally come to an accurate assessment of us, se\u00f1orita.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "I'm glad you've finally come to an accurate assessment of us, se\u00f1orita."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4163_rosesa_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4163_rosesa_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Haha... Slip of the tongue is all... Here, the money. And, uh, adios.",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Haha... Slip of the tongue is all... Here, the money. And, uh, adios."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "posfrom": "0,0",
-        "posto": "-200,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "posfrom": "0,0",
+            "posto": "-200,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What was the boss thinking, letting a dastardly little girl like that aboard our crew?",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "What was the boss thinking, letting a dastardly little girl like that aboard our crew?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She's got her reasons.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "She's got her reasons."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I heard that kid ran off again. Why not just break his legs and be done with it?",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "I heard that kid ran off again. Why not just break his legs and be done with it?"
     },
     {
-        "text": "And now she's gone and strung him up here, ordering us not to touch a hair on his head. Seeing that grumpy face of his pisses me right off. You don't know how much I wanna give it a good punch.",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "And now she's gone and strung him up here, ordering us not to touch a hair on his head. Seeing that grumpy face of his pisses me right off. You don't know how much I wanna give it a good punch."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1592_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1592_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hey, don't go, Javier! I was just thinking out loud!",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "Hey, don't go, Javier! I was just thinking out loud!"
     },
     {
-        "text": "Hey!",
-        "tag": "name",
-        "value": "Angry Man"
+        "command": "name",
+        "value": "Angry Man",
+        "text": "Hey!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_outside",
-        "channel": 1,
-        "loop": true,
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_outside",
+            "channel": 1,
+            "loop": true,
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You've been running around all day. Want some water?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "You've been running around all day. Want some water?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#10$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#10$1",
+            "focus": "none"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1579_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1579_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Cloudbeast got your tongue?",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Cloudbeast got your tongue?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "57_i01",
-        "xScale": 2.5,
-        "yScale": 2.5,
-        "y": -130,
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "57_i01",
+            "xscale": 2.5,
+            "yscale": 2.5,
+            "y": -130,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "imagerotate",
-        "angle": 180,
-        "fadetime": 0,
-        "block": false
+        "command": "imagerotate",
+        "params": {
+            "angle": 180,
+            "fadetime": 0,
+            "block": false
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$comedy_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$comedy_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "text": "I won't surrender to you lot.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "I won't surrender to you lot."
     },
     {
-        "text": "If that's how you want it, chaval.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "If that's how you want it, chaval."
     },
     {
-        "text": "Just here to give you the bad news. I'm afraid you're going to be out here like this all night.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Just here to give you the bad news. I'm afraid you're going to be out here like this all night."
     },
     {
-        "text": "...Whatever. I don't care.",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "...Whatever. I don't care."
     },
     {
-        "text": "Good to hear.",
-        "tag": "name",
-        "value": "Javier"
+        "command": "name",
+        "value": "Javier",
+        "text": "Good to hear."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3.5,
+            "block": true
+        }
     },
     {
-        "tag": "imagerotate",
-        "angle": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "imagerotate",
+        "params": {
+            "angle": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "yFrom": -130,
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 2,
-        "yScaleFrom": 2,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 35,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "yfrom": -130,
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 2,
+            "yscalefrom": 2,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 35,
+            "block": false
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "......"
     },
     {
-        "text": ".........",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "........."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "The dawn light falls upon the coin, and a stray ray reflects onto Isidro's eyelid, causing him to blink. The light wanders, and the circular marking on the coin begins to ripple."
@@ -4266,39 +4990,47 @@
         "text": "The boy struggles, and the man ashore begins to speak:"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "subtitle",
-        "text": "'If you have nowhere to go, my young friend, you can come with me.'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'If you have nowhere to go, my young friend, you can come with me.'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'If you have nowhere to go, my young friend, you can come with me.'"
     },
     {
-        "tag": "subtitle",
-        "text": "'They call me Aulus, and you have my thanks for finding my coin.'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'They call me Aulus, and you have my thanks for finding my coin.'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'They call me Aulus, and you have my thanks for finding my coin.'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "The rays of the setting sun seep through the cracks of the salt ship's frame, shining onto Isidro's eyelid. He blinks in discomfort."
@@ -4325,73 +5057,81 @@
         "text": "And in the quieter corners, some are pulling their lovers in close for an intimate kiss."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "These guys really are a bunch of barbarians.",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "These guys really are a bunch of barbarians."
     },
     {
-        "text": "Why'd I'd even come to such a lousy place?",
-        "tag": "name",
-        "value": "Conniving Vendor"
+        "command": "name",
+        "value": "Conniving Vendor",
+        "text": "Why'd I'd even come to such a lousy place?"
     },
     {
-        "text": "Good question, Pascuala. How did <i>I</i> end up in this den of thieves?",
-        "tag": "name",
-        "value": "Isidro"
+        "command": "name",
+        "value": "Isidro",
+        "text": "Good question, Pascuala. How did <i>I</i> end up in this den of thieves?"
     },
     {
-        "text": "*Cough* *Cough*",
-        "tag": "name",
-        "value": "Pascuala"
+        "command": "name",
+        "value": "Pascuala",
+        "text": "*Cough* *Cough*"
     },
     {
-        "text": "Not too sure myself...",
-        "tag": "name",
-        "value": "Pascuala"
+        "command": "name",
+        "value": "Pascuala",
+        "text": "Not too sure myself..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

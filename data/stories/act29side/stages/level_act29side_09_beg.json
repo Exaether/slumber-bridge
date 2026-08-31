@@ -1,115 +1,135 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "44_g10_endlessspiral",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "44_g10_endlessspiral",
-        "screenadapt": "coverall"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spirlstrsndlss",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spirlstrsndlss",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_energywell",
+            "volume": 0,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_energywell",
-        "volume": 0,
-        "loop": true,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.5,
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.5,
-        "channel": "a",
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_openftstpwalk",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_openftstpwalk",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#9$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#9$1",
-        "duration": 1,
-        "isblock": true
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "..."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#13$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#13$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Herr Giallo? Frau Droste?"
     },
     {
-        "text": "Herr Giallo? Frau Droste?",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#13$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#13$1",
-        "focus": "n"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_bodyfallvalley",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bodyfallvalley",
+            "volume": 1
+        }
     },
     {
         "text": "Ebenholz is uncertain when he got separated from the others. Crumbling structures fall periodically from above, and the stairs beneath his feet spiral endlessly."
@@ -118,1096 +138,1280 @@
         "text": "He can only move forward. He is alone, indefatigable."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_openftstpwalk",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_openftstpwalk",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "44_g10_endlessspiral",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "44_g10_endlessspiral",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$suspenseful_intro",
+            "key": "$suspenseful_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$suspenseful_intro",
-        "key": "$suspenseful_loop",
-        "volume": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1125_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.7,
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1125_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.7,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1126_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.7,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1126_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.7,
-        "duration": 1,
-        "isblock": true
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "You are despicable, Ebenholz."
     },
     {
-        "text": "You are despicable, Ebenholz.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "You've interfered in our judgment, wasted our time, and hindered our cause. You're practically the worst sinner there is!"
     },
     {
-        "text": "You've interfered in our judgment, wasted our time, and hindered our cause. You're practically the worst sinner there is!",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#7$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Forgive me if I don't look as sorry as I feel."
     },
     {
-        "text": "Forgive me if I don't look as sorry as I feel.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bdevilmgc",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bdevilmgc",
-        "volume": 1
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_darkholespell",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_darkholespell",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 0.6
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 50,
+            "ystrength": 50,
+            "vibration": 100,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 50,
-        "ystrength": 50,
-        "vibrato": 100,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1125_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1125_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1126_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1126_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "So would you join us for an audience with His Majesty now? Or would you seek to prevent his return to the mundane world?"
     },
     {
-        "text": "So would you join us for an audience with His Majesty now? Or would you seek to prevent his return to the mundane world?",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "You do not have what it takes, you could not do it."
     },
     {
-        "text": "You do not have what it takes, you could not do it.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "That should have been clear long ago. We should have known."
     },
     {
-        "text": "That should have been clear long ago. We should have known.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "It's obvious. His Majesty's blood is so strong, his soul so tenacious. The Voice of Mundane was but a byproduct of his music, and yet it alone had brought you to your knees with the pain it inflicts."
     },
     {
-        "text": "It's obvious. His Majesty's blood is so strong, his soul so tenacious. The Voice of Mundane was but a byproduct of his music, and yet it alone had brought you to your knees with the pain it inflicts.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "You were born weak, far too weak to live up to any expectations."
     },
     {
-        "text": "You were born weak, far too weak to live up to any expectations.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#7$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "That is to say, you're the ones forcing those wretched noises into my mind?"
     },
     {
-        "text": "That is to say, you're the ones forcing those wretched noises into my mind?",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Then, in the end, is it me who bears responsibility for all of this?"
     },
     {
-        "text": "Then, in the end, is it me who bears responsibility for all of this?",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1125_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1125_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1126_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1126_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "Hmph, you should be thankful, Ebenholz."
     },
     {
-        "text": "Hmph, you should be thankful, Ebenholz.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "Should they'd known from the beginning that the Voice of Mundane wasn't the key to His Majesty's inheritance, would the Twins have granted you the title of Graf Urtica?"
     },
     {
-        "text": "Should they'd known from the beginning that the Voice of Mundane wasn't the key to His Majesty's inheritance, would the Twins have granted you the title of Graf Urtica?",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "No, even before then, you'd have died in the cradle."
     },
     {
-        "text": "No, even before then, you'd have died in the cradle.",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "name",
+        "value": "Witch King's Echo'?",
+        "text": "You should take pride in your title, but more than that, you should be ashamed of it!"
     },
     {
-        "text": "You should take pride in your title, but more than that, you should be ashamed of it!",
-        "tag": "name",
-        "value": "'Witch King's Echo'?"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#7$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#7$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Ja, I feel the same."
     },
     {
-        "text": "Ja, I feel the same.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "And so, begone!"
     },
     {
-        "text": "And so, begone!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1125_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1125_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1126_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1126_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_darkholespell",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_darkholespell",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smkedspte",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smkedspte",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 2,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_498_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.7,
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_498_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.7,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_493_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.7,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_493_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.7,
-        "duration": 1,
-        "isblock": true
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_498_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_498_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "name",
+        "value": "Enraged Passerby?",
+        "text": "You are hateful, Ebenholz."
     },
     {
-        "text": "You are hateful, Ebenholz.",
-        "tag": "name",
-        "value": "Enraged Passerby?"
+        "command": "name",
+        "value": "Enraged Passerby?",
+        "text": "How many died under the Witch King's tyranny? How many disappeared without a trace? Leithanien is scarred, and even twenty-three years later, the wounds are still bleeding."
     },
     {
-        "text": "How many died under the Witch King's tyranny? How many disappeared without a trace? Leithanien is scarred, and even twenty-three years later, the wounds are still bleeding.",
-        "tag": "name",
-        "value": "Enraged Passerby?"
+        "command": "name",
+        "value": "Enraged Passerby?",
+        "text": "Verdammt! Only for the tyrant to die silently one night, never knowing any proper justice!"
     },
     {
-        "text": "Verdammt! Only for the tyrant to die silently one night, never knowing any proper justice!",
-        "tag": "name",
-        "value": "Enraged Passerby?"
+        "command": "name",
+        "value": "Enraged Passerby?",
+        "text": "And you, his last remaining descendant! You were born with the mark of sin in your blood. You should atone for him! Atone for all he did to Leithanien!"
     },
     {
-        "text": "And you, his last remaining descendant! You were born with the mark of sin in your blood. You should atone for him! Atone for all he did to Leithanien!",
-        "tag": "name",
-        "value": "Enraged Passerby?"
+        "command": "name",
+        "value": "Enraged Passerby?",
+        "text": "What right do you have to live a comfortable life, Ebenholz, all while mocking yourself as an 'obvious nobody'?"
     },
     {
-        "text": "What right do you have to live a comfortable life, Ebenholz, all while mocking yourself as an 'obvious nobody'?",
-        "tag": "name",
-        "value": "Enraged Passerby?"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "I despise this sin-tainted blood each and every day, the same as you do!"
     },
     {
-        "text": "I despise this sin-tainted blood each and every day, the same as you do!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_493_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_493_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "name",
+        "value": "Urtican Subject?",
+        "text": "No, you have no idea the evil it has wrought. Those remnants steal into Urtica again and again, encircling your spire like flies to rotting meat."
     },
     {
-        "text": "No, you have no idea the evil it has wrought. Those remnants steal into Urtica again and again, encircling your spire like flies to rotting meat.",
-        "tag": "name",
-        "value": "Urtican Subject?"
+        "command": "name",
+        "value": "Urtican Subject?",
+        "text": "My youngest son had only just joined the security forces when he found their trail. His corpse bobbed in a ravine for three days before they found it. All while you hid away in your spire!"
     },
     {
-        "text": "My youngest son had only just joined the security forces when he found their trail. His corpse bobbed in a ravine for three days before they found it. All while you hid away in your spire!",
-        "tag": "name",
-        "value": "Urtican Subject?"
+        "command": "name",
+        "value": "Urtican Subject?",
+        "text": "Do you even know the size of the Urtica domain? What crops it produces, how often the tax collector comes from the capital, what disasters the land has suffered in recent years?"
     },
     {
-        "text": "Do you even know the size of the Urtica domain? What crops it produces, how often the tax collector comes from the capital, what disasters the land has suffered in recent years?",
-        "tag": "name",
-        "value": "Urtican Subject?"
+        "command": "name",
+        "value": "Urtican Subject?",
+        "text": "There is no Lehnsherr more hateful than you, Your Illustrious Highness."
     },
     {
-        "text": "There is no Lehnsherr more hateful than you, Your Illustrious Highness.",
-        "tag": "name",
-        "value": "Urtican Subject?"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#10$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#10$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_498_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "focus": "n",
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_498_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "focus": "n",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_493_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "focus": "l",
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_493_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "focus": "l",
-        "duration": 0
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_darkholeborn",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_darkholeborn",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smkedspte",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smkedspte",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 2,
-        "isblock": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#10$1",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#10$1",
-        "duration": 0.5,
-        "isblock": true
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 2,
-        "isblock": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_486_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.7,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_486_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.7,
-        "duration": 1,
-        "isblock": true
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Stop, go no further. The braver you are, the more ridiculous you look."
     },
     {
-        "text": "Stop, go no further. The braver you are, the more ridiculous you look.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "You are pitiful, Ebenholz."
     },
     {
-        "text": "You are pitiful, Ebenholz.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Do you remember Gertrude? Before she died, she left some real nasty curses. She cursed Vyseheim, Leithanien, the Witch King... and she cursed you."
     },
     {
-        "text": "Do you remember Gertrude? Before she died, she left some real nasty curses. She cursed Vyseheim, Leithanien, the Witch King... and she cursed you.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Her curse was, word for word: 'May the madness of Ebenholz's bloodline haunt him forever.'"
     },
     {
-        "text": "Her curse was, word for word: 'May the madness of Ebenholz's bloodline haunt him forever.'",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "When you came back to Zwillingst\u00fcrme, I thought to myself, damn, that madwoman's curse really came to pass. That stubborn kid couldn't escape the vortex of fate."
     },
     {
-        "text": "When you came back to Zwillingst\u00fcrme, I thought to myself, damn, that madwoman's curse really came to pass. That stubborn kid couldn't escape the vortex of fate.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Of course he would never <i>give in</i> to fate, but this time, he'll have to fall into madness to break free of it."
     },
     {
-        "text": "Of course he would never <i>give in</i> to fate, but this time, he'll have to fall into madness to break free of it.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "You should feel relieved... shouldn't you?"
     },
     {
-        "text": "You should feel relieved... shouldn't you?",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "The Voice of Mundane has troubled you for over a decade. But even more than resisting it, you've been carefully guarding it."
     },
     {
-        "text": "The Voice of Mundane has troubled you for over a decade. But even more than resisting it, you've been carefully guarding it.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "You were guarding a bomb, afraid that it would blow at any moment. Afraid that the wrong people could use it to hurt the innocent."
     },
     {
-        "text": "You were guarding a bomb, afraid that it would blow at any moment. Afraid that the wrong people could use it to hurt the innocent.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "That was a heavy burden, an extraordinary... fate."
     },
     {
-        "text": "That was a heavy burden, an extraordinary... fate.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "But in the end, it was just noise. A totally nonlethal headache... Go home, Ebenholz. Gertrude's curse has already fizzled."
     },
     {
-        "text": "But in the end, it was just noise. A totally nonlethal headache... Go home, Ebenholz. Gertrude's curse has already fizzled.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Nein!"
     },
     {
-        "text": "Nein!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "I can't bear it!"
     },
     {
-        "text": "I can't bear it!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_486_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_486_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Because this is an even more debilitating curse?"
     },
     {
-        "text": "Because this is an even more debilitating curse?",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "In the end, your struggle isn't even worth mentioning, your resistance is meaningless. Those who sacrificed themselves for this, those tears and smiles you've carried in your mind forever..."
     },
     {
-        "text": "In the end, your struggle isn't even worth mentioning, your resistance is meaningless. Those who sacrificed themselves for this, those tears and smiles you've carried in your mind forever...",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "How will you face them?"
     },
     {
-        "text": "How will you face them?",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "You've come to realize that trust, pity, understanding, mutual reliance... All those incredibly beautiful emotions, they're not precious because they're rare."
     },
     {
-        "text": "You've come to realize that trust, pity, understanding, mutual reliance... All those incredibly beautiful emotions, they're not precious because they're rare.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "But they can suddenly turn so light, so weightless..."
     },
     {
-        "text": "But they can suddenly turn so light, so weightless...",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "name",
+        "value": "Biegler?",
+        "text": "Like a joke."
     },
     {
-        "text": "Like a joke.",
-        "tag": "name",
-        "value": "Biegler?"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "subtitle",
+        "params": {
+            "text": "Ja, a joke.",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "Ja, a joke."
     },
     {
-        "tag": "subtitle",
-        "text": "Ja, a joke.",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "How could they be a joke?!",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "How could they be a joke?!"
     },
     {
-        "tag": "subtitle",
-        "text": "How could they be a joke?!",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle"
     },
     {
-        "tag": "subtitle"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_486_1#1$1",
+            "bstart": 0.9,
+            "bend": 1,
+            "afrom": 0.7,
+            "ato": 0.7,
+            "duration": 0
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_486_1#1$1",
-        "bstart": 0.9,
-        "bend": 1,
-        "afrom": 0.7,
-        "ato": 0.7,
-        "duration": 0
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_darkholeboost",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_darkholeboost",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smkedspte",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smkedspte",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 2,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#5$1",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#5$1",
-        "duration": 0.5,
-        "isblock": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#1$1"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 2,
-        "isblock": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "44_g11_thronesworld",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "44_g11_thronesworld",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_dimnlspamb",
+            "volume": 0,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_dimnlspamb",
-        "volume": 0,
-        "loop": true,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.5,
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.5,
-        "channel": "a",
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "He looks to the spire."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#11$1",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#11$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "Hah, I knew it. I knew you'd be here.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "Hah, I knew it. I knew you'd be here."
     },
     {
-        "text": "You've been dead so long, but you still fantasize about letting this wicked spire descend upon Leithanien again.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "You've been dead so long, but you still fantasize about letting this wicked spire descend upon Leithanien again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "text": "You won't succeed!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "You won't succeed!"
     },
     {
-        "text": "I will use all my Arts, wave my wand until it breaks, manipulate my Originium dice until they shatter.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "I will use all my Arts, wave my wand until it breaks, manipulate my Originium dice until they shatter."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#10$1"
+        }
     },
     {
-        "text": "If you still have flesh, I will destroy it. If you still have a soul, I will annihilate it.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "If you still have flesh, I will destroy it. If you still have a soul, I will annihilate it."
     },
     {
-        "text": "I will interrogate you, curse you, and I will kill you.",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "I will interrogate you, curse you, and I will kill you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4046_ebnhlz_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4046_ebnhlz_1#8$1"
+        }
     },
     {
-        "text": "\u2014Witch King!",
-        "tag": "name",
-        "value": "Ebenholz"
+        "command": "name",
+        "value": "Ebenholz",
+        "text": "\u2014Witch King!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.5,
-        "fillto": 0.15,
-        "fadetime": 2
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.5,
+            "fillto": 0.15,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.5,
-        "fillto": 0.15,
-        "fadetime": 2
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.5,
+            "fillto": 0.15,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_act29side_sys_intro",
-        "key": "$m_act29side_sys_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_act29side_sys_intro",
+            "key": "$m_act29side_sys_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "image",
-        "image": "44_i12_1",
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "y": 300,
-        "fadetime": 1.5
+        "command": "image",
+        "params": {
+            "image": "44_i12_1",
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "y": 300,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -400,
-        "xTo": 200,
-        "duration": 35,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": -400,
+            "x": 200,
+            "duration": 35,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "text": "Franz.",
-        "tag": "name",
-        "value": "Witch King"
+        "command": "name",
+        "value": "Witch King",
+        "text": "Franz."
     },
     {
-        "text": "Do not touch the notes in the air.",
-        "tag": "name",
-        "value": "Witch King"
+        "command": "name",
+        "value": "Witch King",
+        "text": "Do not touch the notes in the air."
     },
     {
-        "text": "The witchcraft I've integrated into the melody here\u2014which I have deleted\u2014still contains a terrible power that will last until it completely dissipates.",
-        "tag": "name",
-        "value": "Witch King"
+        "command": "name",
+        "value": "Witch King",
+        "text": "The witchcraft I've integrated into the melody here\u2014which I have deleted\u2014still contains a terrible power that will last until it completely dissipates."
     },
     {
-        "text": "Calm your emotions, evade the will of the ancients from a millennium ago. Do not let your mind be distracted.",
-        "tag": "name",
-        "value": "Witch King"
+        "command": "name",
+        "value": "Witch King",
+        "text": "Calm your emotions, evade the will of the ancients from a millennium ago. Do not let your mind be distracted."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image",
-        "image": "44_i12_1",
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "x": 400,
-        "y": 100,
-        "fadetime": 3
+        "command": "image",
+        "params": {
+            "image": "44_i12_1",
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "x": 400,
+            "y": 100,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "imagetween",
-        "xTo": 0,
-        "duration": 40,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "x": 0,
+            "duration": 40,
+            "block": false
+        }
     },
     {
         "text": "Ebenholz tightens his grip on his wand, but cannot say a word."
@@ -1225,42 +1429,50 @@
         "text": "Even standing at the door, the surging energy presses firmly against his heartbeat."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.15,
-        "fillto": 0,
-        "fadetime": 3
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.15,
+            "fillto": 0,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.15,
-        "fillto": 0,
-        "fadetime": 3
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.15,
+            "fillto": 0,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "image",
-        "image": "44_i12_1",
-        "xScale": 1.05,
-        "yScale": 1.05,
-        "screenadapt": "coverall",
-        "fadetime": 3
+        "command": "image",
+        "params": {
+            "image": "44_i12_1",
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "screenadapt": "coverall",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.05,
-        "yScaleFrom": 1.05,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 10,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.05,
+            "yscalefrom": 1.05,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 10,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The man at the center of the room does not turn to look at him. He is focused and proud. He is a reef that stands above the turbulent waves."
@@ -1278,371 +1490,425 @@
         "text": "Not even in his most terrifying nightmares."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "44_g7_ludwigsuniv_inside",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "44_g7_ludwigsuniv_inside",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Fremont, you're late again.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Fremont, you're late again."
     },
     {
-        "text": "I don't recall you being such a popular teacher. Did you find yourself waylaid by a crowd of students?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I don't recall you being such a popular teacher. Did you find yourself waylaid by a crowd of students?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "First, if a teacher's temperament makes you hesitate in the face of knowledge, that means nothing more than that these youths claiming to be Leithanien's finest are in fact fit only to tend the ivy that climbs her spires.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "First, if a teacher's temperament makes you hesitate in the face of knowledge, that means nothing more than that these youths claiming to be Leithanien's finest are in fact fit only to tend the ivy that climbs her spires."
     },
     {
-        "text": "Secondly, it is Ludwigs-Universit\u00e4t, not you, that grants me my scholarly stipend each month. I am not at your beck and call.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Secondly, it is Ludwigs-Universit\u00e4t, not you, that grants me my scholarly stipend each month. I am not at your beck and call."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#9$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#9$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "Or should I not talk back to His Majesty the Great Herkunftshorn like this?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Or should I not talk back to His Majesty the Great Herkunftshorn like this?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "duration": 2,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "......"
     },
     {
-        "text": "This isn't the first time, nor will it be the last.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "This isn't the first time, nor will it be the last."
     },
     {
-        "text": "Next month, Kurf\u00fcrsten from across the land will begin to arrive in Vedunien. Time is running out, Fremont.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Next month, Kurf\u00fcrsten from across the land will begin to arrive in Vedunien. Time is running out, Fremont."
     },
     {
-        "text": "I hope that when their audiences conclude, they will each take copies of the amended G\u00fcldenesgesatz back to their respective Kreise.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "I hope that when their audiences conclude, they will each take copies of the amended G\u00fcldenesgesatz back to their respective Kreise."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#9$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#9$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "You're known far and wide as an exceptional monarch, even called a once-in-a-millennium ruler by these sheep and deer. Are you really so eager to set your own prestige in stone?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "You're known far and wide as an exceptional monarch, even called a once-in-a-millennium ruler by these sheep and deer. Are you really so eager to set your own prestige in stone?"
     },
     {
-        "text": "What's next? Bringing the Kurf\u00fcrsten's armies and civic powers under the direct control of the imperial spire?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "What's next? Bringing the Kurf\u00fcrsten's armies and civic powers under the direct control of the imperial spire?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "We've already discussed this.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "We've already discussed this."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "When I first arrived in Leithanien, the Kaiser at the time was already troubled by the Siracusan Question. How long has it been?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "When I first arrived in Leithanien, the Kaiser at the time was already troubled by the Siracusan Question. How long has it been?"
     },
     {
-        "text": "Now, the wolf pups dare not make but slightly bigger moves.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Now, the wolf pups dare not make but slightly bigger moves."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "You've only just ascended. Why not take some time to choose your robes for the upcoming ceremony?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "You've only just ascended. Why not take some time to choose your robes for the upcoming ceremony?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "I've already chosen.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "I've already chosen."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#8$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#8$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#7$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#7$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Are you still worried that amending the G\u00fcldenesgesatz and the accompanying policies could plunge the realm into unforeseen turmoil?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Are you still worried that amending the G\u00fcldenesgesatz and the accompanying policies could plunge the realm into unforeseen turmoil?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#5$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#5$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "I don't care what happens to Leithanien, but moving my library would be a tremendous pain.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "I don't care what happens to Leithanien, but moving my library would be a tremendous pain."
     },
     {
-        "text": "You've been studying the Movement ever since you became Kurf\u00fcrst of Einwald. We both know precisely what it is, and why no one dared consider amending it for a thousand years.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "You've been studying the Movement ever since you became Kurf\u00fcrst of Einwald. We both know precisely what it is, and why no one dared consider amending it for a thousand years."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#6$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#6$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "The three main sections, the tenfold melody woven into one... It's a truly superior piece of witchcraft, created by the Arts masters of a prior millennium.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "The three main sections, the tenfold melody woven into one... It's a truly superior piece of witchcraft, created by the Arts masters of a prior millennium."
     },
     {
-        "text": "It is The Supreme Will of Leithanien, infused with the power of countless sages into the creation, contemplation, and protection of this land.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "It is The Supreme Will of Leithanien, infused with the power of countless sages into the creation, contemplation, and protection of this land."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#5$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#5$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "It is as close as we could possibly come to eternity.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "It is as close as we could possibly come to eternity."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Eternity?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Eternity?"
     },
     {
-        "text": "Setting aside the Minoan philosophers musing on the question of whether or not a man can step into the same river twice, I think only the Liches are particularly fond of using that word.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Setting aside the Minoan philosophers musing on the question of whether or not a man can step into the same river twice, I think only the Liches are particularly fond of using that word."
     },
     {
-        "text": "And only you people truly understand its meaning.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "And only you people truly understand its meaning."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#6$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#6$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Eternity... The immutable, the immoveable. But eternity does not mean immortality.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Eternity... The immutable, the immoveable. But eternity does not mean immortality."
     },
     {
-        "text": "Indeed, the sages who crafted the Movement a thousand years ago accomplished an impossible feat.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Indeed, the sages who crafted the Movement a thousand years ago accomplished an impossible feat."
     },
     {
-        "text": "That is when this land came to be known as Leithanien, but it's more than just the name of a country.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "That is when this land came to be known as Leithanien, but it's more than just the name of a country."
     },
     {
-        "text": "The <i>idea</i> of 'Leithanien' is what allows the people here to both prosper and suffer together, engraving elegance, harmony, morality, and beauty into every breath we take.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "The <i>idea</i> of 'Leithanien' is what allows the people here to both prosper and suffer together, engraving elegance, harmony, morality, and beauty into every breath we take."
     },
     {
-        "text": "They of a millennium ago crafted a superior vision for the country, making 'Leithanien' into a truth of the land.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "They of a millennium ago crafted a superior vision for the country, making 'Leithanien' into a truth of the land."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "But all truths eventually decay, and our current friction with Siracusa is the greatest proof of that.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "But all truths eventually decay, and our current friction with Siracusa is the greatest proof of that."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#3$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#3$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "But I will bring a better future to Leithanien.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "But I will bring a better future to Leithanien."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The new Leithanian ruler produces the Movement and looks at the Lich."
@@ -1654,369 +1920,435 @@
         "text": "Herkunftshorn's voice is not heavy, but Fremont hears these hefty words shatter and reassemble between his lips and teeth."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#4$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#4$2",
+            "focus": "l"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#9$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#9$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "How arrogant of you. How very 'Herkunftshorn.'",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "How arrogant of you. How very 'Herkunftshorn.'"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#5$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#5$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "But how can you ensure that Leithanien, under your rule, won't face even greater crises? That the future you're bringing will be truly immortal?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "But how can you ensure that Leithanien, under your rule, won't face even greater crises? That the future you're bringing will be truly immortal?"
     },
     {
-        "text": "There is no composition that can't be written, no Arts that can't be surpassed, no will that can't be overcome, no unknown that can't be conquered...",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "There is no composition that can't be written, no Arts that can't be surpassed, no will that can't be overcome, no unknown that can't be conquered..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Immortality lies in renewal.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Immortality lies in renewal."
     },
     {
-        "text": "To this day, both the ocean and the sky remain shrouded in the fog of cognition, and this continent is the limit of what Terrans can know and perceive.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "To this day, both the ocean and the sky remain shrouded in the fog of cognition, and this continent is the limit of what Terrans can know and perceive."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#3$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#3$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "But the knowledge you've shared tells us that even the loftiest clouds and deepest sea trenches are nothing but 'reality' imprisoned by time and space.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "But the knowledge you've shared tells us that even the loftiest clouds and deepest sea trenches are nothing but 'reality' imprisoned by time and space."
     },
     {
-        "text": "And beyond this reality there exists another side of the world. A realm of emptiness, elusive and dangerous.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "And beyond this reality there exists another side of the world. A realm of emptiness, elusive and dangerous."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "If the questions are endless, then so too must be the answers.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "If the questions are endless, then so too must be the answers."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#4$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#4$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "The Graf's spire in Urtica is too small, so I built the Genesis Spire in Vedunien. It is already the tallest in Leithanien, but not necessarily across all the lands.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "The Graf's spire in Urtica is too small, so I built the Genesis Spire in Vedunien. It is already the tallest in Leithanien, but not necessarily across all the lands."
     },
     {
-        "text": "But I will never stop. That is the difference between myself and sages past.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "But I will never stop. That is the difference between myself and sages past."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "<i>That</i> is immortality, Fremont.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "<i>That</i> is immortality, Fremont."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#9$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#9$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "I hope that when you build a new spire, you'll make a few extra rooms. So you won't need to use my own secret chamber just to modify a piece of music.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "I hope that when you build a new spire, you'll make a few extra rooms. So you won't need to use my own secret chamber just to modify a piece of music."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#9$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#9$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "I will.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "I will."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Now then, let us begin.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Now then, let us begin."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#8$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#8$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "I'll go activate all the resonance capture devices. It will all be clearer once we dismantle the melody later.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "I'll go activate all the resonance capture devices. It will all be clearer once we dismantle the melody later."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_mgcdevcstartp",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_mgcdevcstartp",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_scroll",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_scroll",
+            "volume": 1
+        }
     },
     {
         "text": "Herkunftshorn sits firmly on the chair in the center of the room, unfolding the Movement. Fremont nudges aside priceless ancient tomes to make room for the witchcraft matrices."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#8$2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#8$2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "By the way, Fremont, what is it you call the other side of the world?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "By the way, Fremont, what is it you call the other side of the world?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Sarkaz) 'The beginning and end of all threads.'",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "(Sarkaz) 'The beginning and end of all threads.'"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "A petty name.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "A petty name."
     },
     {
-        "text": "Their phylactery grants Liches an almost unique ability among the races. Concealing that phylactery means a life that will not end.",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Their phylactery grants Liches an almost unique ability among the races. Concealing that phylactery means a life that will not end."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#8$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#8$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "With infinite time, Liches are allowed to glimpse the infinite truths of the world. But do you treat them as merely pages in a tome of knowledge?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "With infinite time, Liches are allowed to glimpse the infinite truths of the world. But do you treat them as merely pages in a tome of knowledge?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#1$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#1$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "Caution is in our nature. The more we discover, the fewer spaces we can live.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Caution is in our nature. The more we discover, the fewer spaces we can live."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "Right then, Fremont, what about you?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "Right then, Fremont, what about you?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1114_1#2$2",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1114_1#2$2",
+            "focus": "l"
+        }
     },
     {
-        "text": "Me?",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Me?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#4$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#4$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "'The beginning and end of all threads' ...",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "'The beginning and end of all threads' ..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1116_1#1$2",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1116_1#1$2",
+            "focus": "r"
+        }
     },
     {
-        "text": "You often complain that the Liches under your command are either too young or too hidebound, but have you ever considered entering that space, rather than treating it as simply a drawer in which to hide your phylactery?",
-        "tag": "name",
-        "value": "Herkunftshorn"
+        "command": "name",
+        "value": "Herkunftshorn",
+        "text": "You often complain that the Liches under your command are either too young or too hidebound, but have you ever considered entering that space, rather than treating it as simply a drawer in which to hide your phylactery?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "44_i12_2",
-        "screenadapt": "coverall",
-        "fadetime": 1
+        "command": "image",
+        "params": {
+            "image": "44_i12_2",
+            "screenadapt": "coverall",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_golden_star_01",
-        "layer": 0
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_golden_star_01",
+            "layer": 0
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_golden_melody_01",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_golden_melody_01",
+            "layer": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_golden_melody_02",
-        "layer": 2
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_golden_melody_02",
+            "layer": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
         "text": "A terrible chill sweeps over Fremont."
@@ -2043,169 +2375,195 @@
         "text": "But Herkunftshorn had raised it so naturally, casually bringing up the secret that had remained hidden all these long years."
     },
     {
-        "text": "Hahahaha!",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Hahahaha!"
     },
     {
         "text": "After a long while, Fremont bursts into hearty laughter."
     },
     {
-        "text": "Wonderful. As it happens, I've also encountered some bottlenecks in my study of that space.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Wonderful. As it happens, I've also encountered some bottlenecks in my study of that space."
     },
     {
-        "text": "If you're really interested, Herkunftshorn...",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "If you're really interested, Herkunftshorn..."
     },
     {
-        "text": "I could lend you my phylactery.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "I could lend you my phylactery."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magicchange",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magicchange",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "text": "That's enough, Herkunftshorn.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "That's enough, Herkunftshorn."
     },
     {
-        "text": "Don't you find the nostalgia nauseating? It's enough to make me want to vomit last night's leftovers. Besides, I'm running out of time.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "Don't you find the nostalgia nauseating? It's enough to make me want to vomit last night's leftovers. Besides, I'm running out of time."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "44_g15_kingsthrone",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "44_g15_kingsthrone",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "volume": 0,
-        "loop": true,
-        "channel": "b"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "volume": 0,
+            "loop": true,
+            "channel": "b"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.5,
-        "channel": "b",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.5,
+            "channel": "b",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1116_1#1$1",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1116_1#1$1",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "It's been a while, Fremont.",
-        "tag": "name",
-        "value": "Witch King"
+        "command": "name",
+        "value": "Witch King",
+        "text": "It's been a while, Fremont."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1114_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1114_1#7$1"
+        }
     },
     {
-        "text": "I'm sure you remember what you've borrowed. The time has come to return it.",
-        "tag": "name",
-        "value": "Fremont"
+        "command": "name",
+        "value": "Fremont",
+        "text": "I'm sure you remember what you've borrowed. The time has come to return it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "b",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "b",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

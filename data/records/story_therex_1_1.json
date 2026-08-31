@@ -1,49 +1,50 @@
 [
     {
-        "text": "\u4e2a\u4eba\u5267\u60c5 Thermal-EX",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.4
+        }
     },
     {
         "text": "2:30 P.M. \\ Clear"
@@ -52,2702 +53,3244 @@
         "text": "Rhodes Island Landship, Chief Engineer's Office"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_motorroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_motorroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_088"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_088"
+        }
     },
     {
-        "text": "Boss, here's this month's wiring inspection report.",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "Boss, here's this month's wiring inspection report."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Hmm, hmm... Looks good to me.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Hmm, hmm... Looks good to me."
     },
     {
-        "text": "Eh? This part here is somewhat strange.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Eh? This part here is somewhat strange."
     },
     {
-        "text": "\u2014There's been similar irregularities from two to six in the morning every day? This is the dorm, right?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "\u2014There's been similar irregularities from two to six in the morning every day? This is the dorm, right?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 2
+        }
     },
     {
-        "text": "That's the dorm. Oh, that reminds me. On the first few days, we got reports of a power outage there.",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "That's the dorm. Oh, that reminds me. On the first few days, we got reports of a power outage there."
     },
     {
-        "text": "We checked it out, and the wiring was all fine. The only thing was that the per unit time output was way over the threshold.",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "We checked it out, and the wiring was all fine. The only thing was that the per unit time output was way over the threshold."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Achoo\u2014Uh, by the way, doesn't it feel kinda cold in here?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Achoo\u2014Uh, by the way, doesn't it feel kinda cold in here?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "avg_npc_088",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "avg_npc_088",
+            "focus": 2
+        }
     },
     {
-        "text": "A little.",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "A little."
     },
     {
-        "text": "More accurately, it's been kinda cold in here lately... Maybe we should change the AC temperature?",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "More accurately, it's been kinda cold in here lately... Maybe we should change the AC temperature?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "text": "Nah, let's just bear with it. Gotta conserve energy.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Nah, let's just bear with it. Gotta conserve energy."
     },
     {
-        "text": "Now back on topic, I'm guessing someone's been up to no good and decided to use their unauthorized electronics here.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Now back on topic, I'm guessing someone's been up to no good and decided to use their unauthorized electronics here."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh, right, Boss. You know THRM-EX? I saw him in the hallway each and every time I did my inspections.",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "Oh, right, Boss. You know THRM-EX? I saw him in the hallway each and every time I did my inspections."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "text": "Huh? So it's actually the electronics that's up to no good?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Huh? So it's actually the electronics that's up to no good?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 2
+        }
     },
     {
-        "text": "Should I bring THRM-EX here?",
-        "tag": "name",
-        "value": "Engineering Operator"
+        "command": "name",
+        "value": "Engineering Operator",
+        "text": "Should I bring THRM-EX here?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "text": "Let's see where he's at now. Operator logs... There we go.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Let's see where he's at now. Operator logs... There we go."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Oh, THRM-EX is out on a mission in Siracusa? Who else is there... The Doctor?!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Oh, THRM-EX is out on a mission in Siracusa? Who else is there... The Doctor?!"
     },
     {
-        "text": "Uh, well, that's unexpected...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Uh, well, that's unexpected..."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "text": "Hm...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Hm..."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "avg_npc_088",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "avg_npc_088",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh well, if there's a problem, I'm sure it's just a tiny problem that we don't have to worry about, and if the Doctor's there, I'm sure everything will get sorted out no problem.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Oh well, if there's a problem, I'm sure it's just a tiny problem that we don't have to worry about, and if the Doctor's there, I'm sure everything will get sorted out no problem."
     },
     {
-        "text": "And once they're back, I'll talk to Kal'tsit and figure out what's up.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "And once they're back, I'll talk to Kal'tsit and figure out what's up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_offce",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_offce",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
         "text": "Rhodes Island Office, Locomotiva, Siracusa"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Thank you very much for coming all the way here. We have no issues with the terms of the contract.",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "Thank you very much for coming all the way here. We have no issues with the terms of the contract."
     },
     {
-        "text": "It has been both an honor and a pleasure to meet you, Doctor of Rhodes Island. Certainly, it was an unexpected surprise. Please send Miss Amiya our gratitude as well.",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "It has been both an honor and a pleasure to meet you, Doctor of Rhodes Island. Certainly, it was an unexpected surprise. Please send Miss Amiya our gratitude as well."
     },
     {
-        "tag": "decision",
-        "options": "The pleasure is mine.;It ain't so bad coming out here once in a while.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "The pleasure is mine.;It ain't so bad coming out here once in a while.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "text": "Now if you would give me the medicine's formula and sample\u2014",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "Now if you would give me the medicine's formula and sample\u2014"
     },
     {
-        "tag": "decision",
-        "options": "Thermal-EX.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Thermal-EX.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Hmph! Is it finally my time to shine?",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Hmph! Is it finally my time to shine?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "D-Did that thing just speak?! Here I thought it was just a menacing-looking machine...",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "D-Did that thing just speak?! Here I thought it was just a menacing-looking machine..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Born from Raythean Industries's latest and greatest technologies and jointly customized by the genius Closure and the great Mayer, it is I, THRM-EX, the most perfect robot you'll find in this day and age!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Born from Raythean Industries's latest and greatest technologies and jointly customized by the genius Closure and the great Mayer, it is I, THRM-EX, the most perfect robot you'll find in this day and age!"
     },
     {
-        "text": "Dear sir, it is no wonder that my capabilities have left you in awe.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Dear sir, it is no wonder that my capabilities have left you in awe."
     },
     {
-        "text": "And may I add that my capabilities far exceed your imagination. Feast your eyes on my burning hotness. Don't blink as I give you the performance of a lifetime with my light and heat\u2014",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "And may I add that my capabilities far exceed your imagination. Feast your eyes on my burning hotness. Don't blink as I give you the performance of a lifetime with my light and heat\u2014"
     },
     {
-        "tag": "decision",
-        "options": "Ahem, THRM-EX.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Ahem, THRM-EX.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Ah, Doctor, summoned me again, did you? You need my assistance. How may I help you, then? Your wish is my command.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Ah, Doctor, summoned me again, did you? You need my assistance. How may I help you, then? Your wish is my command."
     },
     {
-        "tag": "decision",
-        "options": "I'm getting there.;......;I want you to shut the hell up.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "I'm getting there.;......;I want you to shut the hell up.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Very well! THRM-EX, now severing control link\u2014",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Very well! THRM-EX, now severing control link\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Hey, wait, you didn't have to turn yourself off!!",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Hey, wait, you didn't have to turn yourself off!!"
     },
     {
-        "text": "Ahem.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Ahem."
     },
     {
-        "text": "Doctor, the portable Originium floppies are ready.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Doctor, the portable Originium floppies are ready."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "avg_npc_012",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "avg_npc_012",
+            "focus": 1
+        }
     },
     {
-        "text": "I take it this is the formula for the medicine?",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "I take it this is the formula for the medicine?"
     },
     {
-        "tag": "decision",
-        "options": "One moment.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "One moment.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Mmph! Ohhhh!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Mmph! Ohhhh!"
     },
     {
-        "tag": "decision",
-        "options": "Once THRM-EX is done with the transfer, I can hand the data over to you, Mr. Representative.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Once THRM-EX is done with the transfer, I can hand the data over to you, Mr. Representative.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028"
+        }
     },
     {
-        "text": "What a marvelous machine... uh, robot! Rhodes Island really is on another level. Not just its pharmaceuticals, but also its engineering and technological prowess!",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "What a marvelous machine... uh, robot! Rhodes Island really is on another level. Not just its pharmaceuticals, but also its engineering and technological prowess!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Much appreciated! Your sharp eyes are on another level as well! Your warm compliments will keep me going for the day!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Much appreciated! Your sharp eyes are on another level as well! Your warm compliments will keep me going for the day!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Ha... haha...",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "Ha... haha..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Transfer progress... Fifty percent.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Transfer progress... Fifty percent.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_284_spot_1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_284_spot_1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Is it finally over? I'm starting to miss my A6 clowns.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Is it finally over? I'm starting to miss my A6 clowns."
     },
     {
-        "text": "At least the clowns know how to talk normal, not like these temporary teammates I'm stuck with. They're either quiet as a mouse or don't know when to shut up.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "At least the clowns know how to talk normal, not like these temporary teammates I'm stuck with. They're either quiet as a mouse or don't know when to shut up."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Mr. Spot, you leaned next to me yesterday to dry your rain-soaked hair. It may only have been ten minutes, but the fact that the distance between us has shortened has ignited my burning passion!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Mr. Spot, you leaned next to me yesterday to dry your rain-soaked hair. It may only have been ten minutes, but the fact that the distance between us has shortened has ignited my burning passion!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Ahem.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Ahem."
     },
     {
-        "tag": "decision",
-        "options": "Transfer progress... Seventy-five percent.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Transfer progress... Seventy-five percent.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028"
+        }
     },
     {
-        "text": "Phew, I didn't expect our meeting to go without a hitch\u2014",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "Phew, I didn't expect our meeting to go without a hitch\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_158_milu",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_158_milu",
+            "focus": 2
+        }
     },
     {
-        "text": "Shut up.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Shut up."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_158_milu",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_158_milu",
+            "focus": 1
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Pharmaceutical Company Representative"
+        "command": "name",
+        "value": "Pharmaceutical Company Representative",
+        "text": "Huh?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_028",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_028",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Tsk, my friend, you have one real lucky mouth.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Tsk, my friend, you have one real lucky mouth."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 0.6
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Get down!",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Get down!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "playmusic",
-        "intro": "$chasing_intro",
-        "key": "$chasing_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$chasing_intro",
+            "key": "$chasing_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "W-What's going on? The wall just blew up!",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "W-What's going on? The wall just blew up!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Ah, a thermal shock! How familiar! But it is no match for my energy output!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Ah, a thermal shock! How familiar! But it is no match for my energy output!"
     },
     {
-        "text": "Doctor, since I shielded you, I take it you are safe and sound?",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Doctor, since I shielded you, I take it you are safe and sound?"
     },
     {
-        "tag": "decision",
-        "options": "I'm fine.;You're a little short for a shield.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "I'm fine.;You're a little short for a shield.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Judging by the scale of the Originium bomb's explosion, it must've been the local gangsters.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Judging by the scale of the Originium bomb's explosion, it must've been the local gangsters."
     },
     {
-        "text": "Well, that's strange. We've been operating here for a while. We have some run-ins with them once in a while, but most of the time, we get along fine. We share some of our medicine with them, after all.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Well, that's strange. We've been operating here for a while. We have some run-ins with them once in a while, but most of the time, we get along fine. We share some of our medicine with them, after all."
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "avg_npc_012",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "avg_npc_012",
+            "focus": 1
+        }
     },
     {
-        "text": "Heh, I know! They must be after me! Understandable, of course! With my burning passion, there is not a more perfect robot in this world!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Heh, I know! They must be after me! Understandable, of course! With my burning passion, there is not a more perfect robot in this world!"
     },
     {
-        "text": "If they got their hands on me, they would never again need to rely on such crude explosives!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "If they got their hands on me, they would never again need to rely on such crude explosives!"
     },
     {
-        "tag": "character",
-        "name": "char_284_spot_1"
+        "command": "character",
+        "params": {
+            "name": "char_284_spot_1"
+        }
     },
     {
-        "text": "Sometimes I wonder if this guy came out of the same womb as Midnight.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Sometimes I wonder if this guy came out of the same womb as Midnight."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "He's probably right.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "He's probably right."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh?",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Oh?"
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "It's a well-organized and planned-out attack. They must have a clear objective, and they came specifically right at this moment.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "It's a well-organized and planned-out attack. They must have a clear objective, and they came specifically right at this moment."
     },
     {
-        "tag": "decision",
-        "options": "THRM-EX's formula.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "THRM-EX's formula.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu"
+        "command": "character",
+        "params": {
+            "name": "char_158_milu"
+        }
     },
     {
-        "text": "Looks like news of this transaction leaked out.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Looks like news of this transaction leaked out."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "avg_npc_012",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "avg_npc_012",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Firewatch's staring at each and every one of us... kind of creeps me out...",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Firewatch's staring at each and every one of us... kind of creeps me out..."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "avg_npc_012",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "avg_npc_012",
+            "focus": 1
+        }
     },
     {
-        "text": "I won't let anyone hurt my friends.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "I won't let anyone hurt my friends."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Hey, speaking of the formula, this representative guy? He passed out.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Hey, speaking of the formula, this representative guy? He passed out."
     },
     {
-        "text": "What a wimp. He was standing pretty far from the wall. He probably just fainted because he was spooked.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "What a wimp. He was standing pretty far from the wall. He probably just fainted because he was spooked."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Get yourselves ready. We've got company. Five of them.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Get yourselves ready. We've got company. Five of them."
     },
     {
-        "tag": "decision",
-        "options": "Thermal-EX\u2014\u2014",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Thermal-EX\u2014\u2014",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Very well, Doctor! Just leave this to me and my burning passion!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Very well, Doctor! Just leave this to me and my burning passion!"
     },
     {
-        "tag": "decision",
-        "options": "\u2014\u2014Watch your timing.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "\u2014\u2014Watch your timing.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu"
+        "command": "character",
+        "params": {
+            "name": "char_158_milu"
+        }
     },
     {
-        "text": "Here they come.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Here they come."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.8,
-        "xstrength": 50,
-        "ystrength": 50,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.8,
+            "xstrength": 50,
+            "ystrength": 50,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Harrrrgh! Full throttle!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Harrrrgh! Full throttle!"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_offce",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_offce",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "That took care of them.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "That took care of them."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Well, if that isn't efficient...",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Well, if that isn't efficient..."
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Ugh... Uhhh... Burn... Burning...",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Ugh... Uhhh... Burn... Burning..."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "So that was an eleventh-hour last resort, huh?",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "So that was an eleventh-hour last resort, huh?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Is THRM-EX okay? I'm not sure I get what he's saying.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Is THRM-EX okay? I'm not sure I get what he's saying."
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Burning... Hot...",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Burning... Hot..."
     },
     {
-        "tag": "decision",
-        "options": "He used up too much energy in one go. That causes his other functions to stall for a while.;Give him a few minutes. Don't worry.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "He used up too much energy in one go. That causes his other functions to stall for a while.;Give him a few minutes. Don't worry.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu"
+        "command": "character",
+        "params": {
+            "name": "char_158_milu"
+        }
     },
     {
-        "text": "We still have more enemies outside.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "We still have more enemies outside."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Why does that matter? We can handle them.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Why does that matter? We can handle them."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 1
+        }
     },
     {
-        "text": "I can handle them myself.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "I can handle them myself."
     },
     {
-        "tag": "character",
-        "name": "char_158_milu",
-        "name2": "char_284_spot_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_158_milu",
+            "name2": "char_284_spot_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Well, look at you... So confident.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Well, look at you... So confident."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Everyone, there's an exit in the back... This used to be a safehouse before it was an office anyway.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Everyone, there's an exit in the back... This used to be a safehouse before it was an office anyway."
     },
     {
-        "tag": "decision",
-        "options": "Spot, you and Straightedge take the representative and get out through the secret exit.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Spot, you and Straightedge take the representative and get out through the secret exit.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Hot...",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Hot..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "What about you, Doctor? Looks like THRM-EX is still freezing up.",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "What about you, Doctor? Looks like THRM-EX is still freezing up."
     },
     {
-        "tag": "decision",
-        "options": "We'll stay here.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "We'll stay here.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Are you sure you'll be fine?",
-        "tag": "name",
-        "value": "Operator Straightedge"
+        "command": "name",
+        "value": "Operator Straightedge",
+        "text": "Are you sure you'll be fine?"
     },
     {
-        "tag": "character",
-        "name": "char_284_spot_1",
-        "name2": "avg_npc_012",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_284_spot_1",
+            "name2": "avg_npc_012",
+            "focus": 1
+        }
     },
     {
-        "text": "Come on, get a move on. You heard your order.",
-        "tag": "name",
-        "value": "Spot"
+        "command": "name",
+        "value": "Spot",
+        "text": "Come on, get a move on. You heard your order."
     },
     {
-        "tag": "decision",
-        "options": "Firewatch, stay hidden, and look out for my commands.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Firewatch, stay hidden, and look out for my commands.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu"
+        "command": "character",
+        "params": {
+            "name": "char_158_milu"
+        }
     },
     {
-        "text": "Understood.",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "Understood."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "*cough*... Why is it so hot in here? Those demolition morons sure like to overdo it...",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "*cough*... Why is it so hot in here? Those demolition morons sure like to overdo it..."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Don't move\u2014Huh? Just one of you in here? You took down five of us by yourself?",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Don't move\u2014Huh? Just one of you in here? You took down five of us by yourself?"
     },
     {
-        "tag": "decision",
-        "options": "They tripped and fainted.;......;That's right. I took them all down.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "They tripped and fainted.;......;That's right. I took them all down.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "text": "You, you, and you. You three, keep an eye on that one!",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "You, you, and you. You three, keep an eye on that one!"
     },
     {
-        "text": "The rest of you, search the house. Remember, we're looking for a few floppies.",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "The rest of you, search the house. Remember, we're looking for a few floppies."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031",
-        "name2": "avg_npc_031",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031",
+            "name2": "avg_npc_031",
+            "focus": 2
+        }
     },
     {
-        "text": "Yo, boss, there's another exit here!",
-        "tag": "name",
-        "value": "Mafioso B"
+        "command": "name",
+        "value": "Mafioso B",
+        "text": "Yo, boss, there's another exit here!"
     },
     {
-        "tag": "decision",
-        "options": "If you're looking for the formula, the representative took it with him.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "If you're looking for the formula, the representative took it with him.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031",
-        "name2": "avg_npc_031",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031",
+            "name2": "avg_npc_031",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Cazzo! He took it away?!",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Cazzo! He took it away?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031",
-        "name2": "avg_npc_031",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031",
+            "name2": "avg_npc_031",
+            "focus": 2
+        }
     },
     {
-        "text": "Uh, this isn't how we planned for this to go... Should we go after them?",
-        "tag": "name",
-        "value": "Mafioso B"
+        "command": "name",
+        "value": "Mafioso B",
+        "text": "Uh, this isn't how we planned for this to go... Should we go after them?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031",
-        "name2": "avg_npc_031",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031",
+            "name2": "avg_npc_031",
+            "focus": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Go after what?! We're after their formula! If they already have it...! Screw it!",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Go after what?! We're after their formula! If they already have it...! Screw it!"
     },
     {
-        "text": "The formula's gone, but we're bringing something back with us. Look for some medicine or whatever! Now get on it!",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "The formula's gone, but we're bringing something back with us. Look for some medicine or whatever! Now get on it!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Burning... Hot...",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Burning... Hot..."
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "avg_npc_031",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "avg_npc_031",
+            "focus": 2
+        }
     },
     {
-        "text": "Huh, what's this fancy thing? It's glittering. Is it made of Originium?",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Huh, what's this fancy thing? It's glittering. Is it made of Originium?"
     },
     {
-        "tag": "decision",
-        "options": "It's a medicine maker. Makes everything you could possibly want.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "It's a medicine maker. Makes everything you could possibly want.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_031"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_031"
+        }
     },
     {
-        "text": "Huh? Now how come I ain't never heard of a gizmo like that?",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Huh? Now how come I ain't never heard of a gizmo like that?"
     },
     {
-        "tag": "decision",
-        "options": "Come over here. I'll demonstrate.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Come over here. I'll demonstrate.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Well, you got no weapons on you, and you look like you ain't gonna last two seconds in a fight.",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Well, you got no weapons on you, and you look like you ain't gonna last two seconds in a fight."
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "text": "Alright... Show me what this thing's all about.",
-        "tag": "name",
-        "value": "Mafioso A"
+        "command": "name",
+        "value": "Mafioso A",
+        "text": "Alright... Show me what this thing's all about."
     },
     {
-        "tag": "decision",
-        "options": "You just need to point your finger\u2014",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "You just need to point your finger\u2014",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_158_milu"
+        "command": "character",
+        "params": {
+            "name": "char_158_milu"
+        }
     },
     {
-        "text": "(Aim)",
-        "tag": "name",
-        "value": "Firewatch"
+        "command": "name",
+        "value": "Firewatch",
+        "text": "(Aim)"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.8,
-        "xstrength": 50,
-        "ystrength": 50,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.8,
+            "xstrength": 50,
+            "ystrength": 50,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Burning hot!!!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Burning hot!!!"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_explo_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_explo_n"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_room_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_room_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Whoa, Doctor, did all this actually happen?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Whoa, Doctor, did all this actually happen?"
     },
     {
-        "text": "When you were in Siracusa, you beat up five mafia guys with just one punch, and then scared ten others shitless with just a few words? Then you used them as a bargaining chip and got us a huge order that's super in our favor?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "When you were in Siracusa, you beat up five mafia guys with just one punch, and then scared ten others shitless with just a few words? Then you used them as a bargaining chip and got us a huge order that's super in our favor?"
     },
     {
-        "tag": "decision",
-        "options": "It was THRM-EX who beat them up.;......;That company was trying to set us up. They deserve it.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "It was THRM-EX who beat them up.;......;That company was trying to set us up. They deserve it.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4"
+        }
     },
     {
-        "text": "Oh, don't be so humble, I heard the whole story when Firewatch and the squad reported to Kal'tsit.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Oh, don't be so humble, I heard the whole story when Firewatch and the squad reported to Kal'tsit."
     },
     {
-        "text": "They were working with a local gang to ambush you guys and steal the formula and samples. They really thought they could make off with all that without spending a penny.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "They were working with a local gang to ambush you guys and steal the formula and samples. They really thought they could make off with all that without spending a penny."
     },
     {
-        "text": "And that would apparently put them in a better negotiating position when they deal with Rhodes Island in the future.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "And that would apparently put them in a better negotiating position when they deal with Rhodes Island in the future."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "That's more or less what they were planning, right?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "That's more or less what they were planning, right?"
     },
     {
-        "tag": "decision",
-        "options": "That's why they ambushed us right before the deal was done.;That's why the guy from the other company passed out when he did.;That's why they didn't go after the floppies that they had already got their hands on.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "That's why they ambushed us right before the deal was done.;That's why the guy from the other company passed out when he did.;That's why they didn't go after the floppies that they had already got their hands on.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "Well, I should've expected no less, Doctor! Your whole mission turned out like some TV drama. You should talk to Kal'tsit, see if she'll let you go on missions outside some more.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Well, I should've expected no less, Doctor! Your whole mission turned out like some TV drama. You should talk to Kal'tsit, see if she'll let you go on missions outside some more."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1"
+        }
     },
     {
-        "text": "There's one thing about all this that's kinda strange, though.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "There's one thing about all this that's kinda strange, though."
     },
     {
-        "text": "According to the report, 'The Doctor accurately calculated the amount of time it would take for THRM-EX's functions to be fully restored and gave THRM-EX the order to conduct a second round of heat energy Arts attacks at the perfect moment'\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "According to the report, 'The Doctor accurately calculated the amount of time it would take for THRM-EX's functions to be fully restored and gave THRM-EX the order to conduct a second round of heat energy Arts attacks at the perfect moment'\u2014"
     },
     {
-        "text": "I crunched the numbers in my head, and THRM-EX shouldn't have completely recovered yet.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I crunched the numbers in my head, and THRM-EX shouldn't have completely recovered yet."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "You were going to have another operator attack, am I right?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "You were going to have another operator attack, am I right?"
     },
     {
-        "tag": "decision",
-        "options": "That's right.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "That's right.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "This is why I'm here.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "This is why I'm here.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Good evening, the most ingenious Master Closure and the most, most radiant Doctor!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Good evening, the most ingenious Master Closure and the most, most radiant Doctor!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Where's my other 'most?!'",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Where's my other 'most?!'"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "The great Mayer is attending to my body as we speak. With your participation, I can feel that burning hotness in me surging!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "The great Mayer is attending to my body as we speak. With your participation, I can feel that burning hotness in me surging!"
     },
     {
-        "text": "Why, hello, Doctor! Would you like me to go over that story of how, through our flawless cooperation at the most treacherous moment, we together defeated the Siracusan hooligans who tried to defile me?",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Why, hello, Doctor! Would you like me to go over that story of how, through our flawless cooperation at the most treacherous moment, we together defeated the Siracusan hooligans who tried to defile me?"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer",
+            "focus": 2
+        }
     },
     {
-        "text": "Stop, THRM-EX... I've already listened to your story hundreds of times. Granted, I've barely left the workshop for the past few days.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Stop, THRM-EX... I've already listened to your story hundreds of times. Granted, I've barely left the workshop for the past few days."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_242_mayer",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_242_mayer",
+            "focus": 1
+        }
     },
     {
-        "text": "You can't keep badass rumors under wraps just because you keep your door shut, Mayer. Just like how everyone knows how badass I am.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "You can't keep badass rumors under wraps just because you keep your door shut, Mayer. Just like how everyone knows how badass I am."
     },
     {
-        "tag": "character",
-        "name": "char_242_mayer#2"
+        "command": "character",
+        "params": {
+            "name": "char_242_mayer#2"
+        }
     },
     {
-        "text": "Meeboos.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Meeboos."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "H-Hey, no biting! I came here with the Doctor this time, and I sure as hell knocked!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "H-Hey, no biting! I came here with the Doctor this time, and I sure as hell knocked!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "\u2014Open THRM-EX's Energy Module Panel.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "\u2014Open THRM-EX's Energy Module Panel."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Could've told me sooner they weren't here for me...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Could've told me sooner they weren't here for me..."
     },
     {
-        "tag": "character",
-        "name": "char_242_mayer#3"
+        "command": "character",
+        "params": {
+            "name": "char_242_mayer#3"
+        }
     },
     {
-        "text": "His energy storage looks fine to me.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "His energy storage looks fine to me."
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "Please, my most respected Miss Mayer, a device personally designed by you can't possibly be defective! Look, my overflowing hotness is emanating in all directions from my body!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Please, my most respected Miss Mayer, a device personally designed by you can't possibly be defective! Look, my overflowing hotness is emanating in all directions from my body!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "So what was the reason you launched the second wave earlier?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "So what was the reason you launched the second wave earlier?"
     },
     {
-        "text": "Let me guess... Maybe the weapon energy output logic is faulty?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Let me guess... Maybe the weapon energy output logic is faulty?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "text": "I've already checked before you guys got there. The logic itself is fine.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "I've already checked before you guys got there. The logic itself is fine."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "Huh, 'itself?' So you mean there are still issues?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Huh, 'itself?' So you mean there are still issues?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Mm, I'm not sure if we can really call this a problem. Take a look yourself.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Mm, I'm not sure if we can really call this a problem. Take a look yourself."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Efficiency... improvement? It's only by a few percentage points, but the energy that THRM-EX uses when he attacks has clearly been decreasing.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Efficiency... improvement? It's only by a few percentage points, but the energy that THRM-EX uses when he attacks has clearly been decreasing."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "What a surprise! That's a great improvement\u2014Mayer, you're so awesome!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "What a surprise! That's a great improvement\u2014Mayer, you're so awesome!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_242_mayer",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_242_mayer",
+            "focus": 2
+        }
     },
     {
-        "text": "Stop... not so fast. I didn't implement this change. You know how busy I've been lately, don't you?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Stop... not so fast. I didn't implement this change. You know how busy I've been lately, don't you?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_242_mayer",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_242_mayer",
+            "focus": 1
+        }
     },
     {
-        "text": "Right, when I asked you to look into refactoring the robot arm automation logic, you even told me you couldn't work it into your schedule.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Right, when I asked you to look into refactoring the robot arm automation logic, you even told me you couldn't work it into your schedule."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Guess I'll just come out and ask, then. THRM-EX, has someone tinkered with you lately?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Guess I'll just come out and ask, then. THRM-EX, has someone tinkered with you lately?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "A most simple question to answer! Aside from you, the cutest ever Master Closure, and the most intelligent Miss Mayer, I'm of course most intimate with our unbeatable Doctor!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "A most simple question to answer! Aside from you, the cutest ever Master Closure, and the most intelligent Miss Mayer, I'm of course most intimate with our unbeatable Doctor!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "Doctor, showing an interest in operating platforms and AI, are we?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Doctor, showing an interest in operating platforms and AI, are we?"
     },
     {
-        "tag": "decision",
-        "options": "I haven't done anything.;......;We've only spent a little too much time with each other.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "I haven't done anything.;......;We've only spent a little too much time with each other.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "Yeah, I figured it couldn't be you.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Yeah, I figured it couldn't be you."
     },
     {
-        "text": "I mean, Mayer and I don't get much sleep because we're busy, but you and Kal'tsit seem to have 48 hours to spend in a day.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I mean, Mayer and I don't get much sleep because we're busy, but you and Kal'tsit seem to have 48 hours to spend in a day."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Don't worry, Master Closure! You can count on me to ensure the Doctor gets to enjoy a hot bedtime.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Don't worry, Master Closure! You can count on me to ensure the Doctor gets to enjoy a hot bedtime."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Huh?!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Huh?!"
     },
     {
-        "text": "A hot bedtime...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "A hot bedtime..."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "text": "I see, so that's what you've been up to this month.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I see, so that's what you've been up to this month."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Rhodes Island is an epoch-making vessel, yet there is one flaw. The temperature inside the dormitories is not warm enough at night!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Rhodes Island is an epoch-making vessel, yet there is one flaw. The temperature inside the dormitories is not warm enough at night!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Yeah, apparently that's the case for some operators. Silence talked to me about it too. Said she sometimes wants to grow some feathers while she's sleeping.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Yeah, apparently that's the case for some operators. Silence talked to me about it too. Said she sometimes wants to grow some feathers while she's sleeping."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh? Is my energy conservation plan affecting everyone's sleep?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Oh? Is my energy conservation plan affecting everyone's sleep?"
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "A\u2014Achoo!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "A\u2014Achoo!"
     },
     {
-        "text": "Well, we don't really have a choice. There's more and more people on this ship each day, and there are so many cabins being used at the same time. We need to keep iterating on our energy efficiency, and that ain't an easy job at all.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Well, we don't really have a choice. There's more and more people on this ship each day, and there are so many cabins being used at the same time. We need to keep iterating on our energy efficiency, and that ain't an easy job at all."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "I, too, wish to help take that weight off your shoulders, Master Closure. That is why, ever since that night I heard the Doctor sneeze, I made a decision.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "I, too, wish to help take that weight off your shoulders, Master Closure. That is why, ever since that night I heard the Doctor sneeze, I made a decision."
     },
     {
-        "text": "I thought I would share the warmth, the hotness in my body with the Doctor and any other operators who struggle with the coldness!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "I thought I would share the warmth, the hotness in my body with the Doctor and any other operators who struggle with the coldness!"
     },
     {
-        "tag": "decision",
-        "options": "Almost blew up my room at first.;Almost roasted me alive.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Almost blew up my room at first.;Almost roasted me alive.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Forgive me, Doctor! I was lacking in experience at the time! I wasn't yet able to manage the difference between the temperature to melt my foes and that to warm my friends!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Forgive me, Doctor! I was lacking in experience at the time! I wasn't yet able to manage the difference between the temperature to melt my foes and that to warm my friends!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Whoa, Closure and I never implemented space heater logic into you!",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Whoa, Closure and I never implemented space heater logic into you!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "You know, when you jumped like that, you almost sent me flying to the wall...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "You know, when you jumped like that, you almost sent me flying to the wall..."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Aren't you excited, Closure? THRM-EX's far exceeded the capabilities we designed for him!",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Aren't you excited, Closure? THRM-EX's far exceeded the capabilities we designed for him!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "Yeah, I've been listening.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Yeah, I've been listening."
     },
     {
-        "text": "He wants to warm the Doctor up, so he keeps using energy Arts every night, and so he needs to recharge often. Energy usage goes through the roof, overloading the wiring, and my conservation plan goes to waste\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "He wants to warm the Doctor up, so he keeps using energy Arts every night, and so he needs to recharge often. Energy usage goes through the roof, overloading the wiring, and my conservation plan goes to waste\u2014"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Wait, huh?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Wait, huh?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "THRM-EX, you changed your energy output logic on your own?!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "THRM-EX, you changed your energy output logic on your own?!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "My beautiful Master Closure, thank you very much for your passionate embrace! You are right. It wasn't easy, but I remembered that I am an excellent robot forged with your intelligence!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "My beautiful Master Closure, thank you very much for your passionate embrace! You are right. It wasn't easy, but I remembered that I am an excellent robot forged with your intelligence!"
     },
     {
-        "text": "A little setback\u2014including almost roasting the Doctor alive\u2014is not enough to dampen my spirits. After a period of trial and error, I finally found a way!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "A little setback\u2014including almost roasting the Doctor alive\u2014is not enough to dampen my spirits. After a period of trial and error, I finally found a way!"
     },
     {
-        "text": "And if I may brag for a moment, if I could give the Doctor and the other operators the warmth that they desired, the hard work would most certainly have paid off.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "And if I may brag for a moment, if I could give the Doctor and the other operators the warmth that they desired, the hard work would most certainly have paid off."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_376_therex_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_376_therex_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Is this... a robot evolving on its own? Even Lancet-2 and Castle-3 haven't come this far!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Is this... a robot evolving on its own? Even Lancet-2 and Castle-3 haven't come this far!"
     },
     {
-        "tag": "decision",
-        "options": "Maybe this is what happened in Siracusa?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Maybe this is what happened in Siracusa?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1"
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "Doctor, your guess is exactly on point as always!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Doctor, your guess is exactly on point as always!"
     },
     {
-        "text": "Just as I mentioned, as my provision of heat for you and our operators continued to improve, my understanding of how to control my power has also grown.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Just as I mentioned, as my provision of heat for you and our operators continued to improve, my understanding of how to control my power has also grown."
     },
     {
-        "text": "While I was still paralyzed, I could feel that you were in danger.",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "While I was still paralyzed, I could feel that you were in danger."
     },
     {
-        "text": "My worry for your wellbeing managed to reignite that burning power within my heart, and by the time I regained consciousness, I was already blasting that strike at our enemies!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "My worry for your wellbeing managed to reignite that burning power within my heart, and by the time I regained consciousness, I was already blasting that strike at our enemies!"
     },
     {
-        "text": "Although my moment to shine on the battlefield is still brief, I still wish to serve you to the best of my ability\u2014no, beyond my abilities!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Although my moment to shine on the battlefield is still brief, I still wish to serve you to the best of my ability\u2014no, beyond my abilities!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#6",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#6",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Closure, you hear that? This means it was THRM-EX's own will that drove this breakthrough! That was not even a coincidence!",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Closure, you hear that? This means it was THRM-EX's own will that drove this breakthrough! That was not even a coincidence!"
     },
     {
-        "text": "I gotta\u2014I gotta get this all recorded!",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "I gotta\u2014I gotta get this all recorded!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "THRM-EX, I want you to help me run some experiments. Is that okay?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "THRM-EX, I want you to help me run some experiments. Is that okay?"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Gladly, my dear Miss Mayer!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Gladly, my dear Miss Mayer!"
     },
     {
-        "tag": "character",
-        "name": "char_242_mayer#4"
+        "command": "character",
+        "params": {
+            "name": "char_242_mayer#4"
+        }
     },
     {
-        "text": "Meeboos, Meeboos! Bring all my equipment here\u2014",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Meeboos, Meeboos! Bring all my equipment here\u2014"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#4",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#4",
+            "focus": 1
+        }
     },
     {
-        "text": "Mayer.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Mayer."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Closure, what are you blocking me for?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Closure, what are you blocking me for?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "You're a researcher yourself. This might be a huge breakthrough to your research in smart robots! Aren't you excited?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "You're a researcher yourself. This might be a huge breakthrough to your research in smart robots! Aren't you excited?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Of course I am! Can't you tell?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Of course I am! Can't you tell?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh, you're being much quieter. Yeah, I can see that you're super excited.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Oh, you're being much quieter. Yeah, I can see that you're super excited."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "Right, but there's one thing you said that I don't really agree with.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Right, but there's one thing you said that I don't really agree with."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Hm? What is it?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Hm? What is it?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1",
-        "name2": "char_242_mayer#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1",
+            "name2": "char_242_mayer#3",
+            "focus": 1
+        }
     },
     {
-        "text": "\u2014\u2014That wasn't a coincidence.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "\u2014\u2014That wasn't a coincidence."
     },
     {
-        "text": "I think that probably wasn't a coincidence to THRM-EX.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I think that probably wasn't a coincidence to THRM-EX."
     },
     {
-        "tag": "decision",
-        "options": "But THRM-EX having such a unique personality is itself a coincidence.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "But THRM-EX having such a unique personality is itself a coincidence.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "Doctor, are you sure you don't want to give operation platform robotics and AI research a try?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Doctor, are you sure you don't want to give operation platform robotics and AI research a try?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Hmm, but didn't you design his personality?",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Hmm, but didn't you design his personality?"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Well, I did design it, but all I did was define a few basic parameters. I have nothing to do with the information he processes and the decisions he makes after that.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Well, I did design it, but all I did was define a few basic parameters. I have nothing to do with the information he processes and the decisions he makes after that."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#4",
-        "name2": "char_242_mayer#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#4",
+            "name2": "char_242_mayer#2",
+            "focus": 2
+        }
     },
     {
-        "text": "So in that case...",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "So in that case..."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "THRM-EX's breakthrough was not because of us, the designers, or any kind of tech. It's what he wanted himself.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "THRM-EX's breakthrough was not because of us, the designers, or any kind of tech. It's what he wanted himself."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_376_therex_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_376_therex_1",
+            "focus": 2
+        }
     },
     {
-        "text": "I still remember the very first thing you said to me, Master Closure! 'Your name is THRM-EX, and you must be strong!'",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "I still remember the very first thing you said to me, Master Closure! 'Your name is THRM-EX, and you must be strong!'"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 20,
-        "randomness": 70,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 20,
+            "randomness": 70,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "And to me, heat is strength! There's no such thing as a maximum temperature. You can always get hotter! I will forever follow this path that leads me to greater hotness!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "And to me, heat is strength! There's no such thing as a maximum temperature. You can always get hotter! I will forever follow this path that leads me to greater hotness!"
     },
     {
-        "tag": "character",
-        "name": "char_376_therex_1",
-        "name2": "char_242_mayer#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_376_therex_1",
+            "name2": "char_242_mayer#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Whoa, that's some burning enthusiasm.",
-        "tag": "name",
-        "value": "Mayer"
+        "command": "name",
+        "value": "Mayer",
+        "text": "Whoa, that's some burning enthusiasm."
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#5",
-        "name2": "char_242_mayer#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#5",
+            "name2": "char_242_mayer#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Just like that! That's getting myself all fired up too!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Just like that! That's getting myself all fired up too!"
     },
     {
-        "tag": "character",
-        "name": "char_007_closre_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_007_closre_1#2"
+        }
     },
     {
-        "text": "Doctor, Mayer, we'll bear witness to THRM-EX bringing about an even stronger thermal shock!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Doctor, Mayer, we'll bear witness to THRM-EX bringing about an even stronger thermal shock!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

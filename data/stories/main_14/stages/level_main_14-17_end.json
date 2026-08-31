@@ -1,88 +1,96 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "focusout",
+        "params": {
+            "duration": 0.5,
+            "type": "bg",
+            "from": 0,
+            "to": 1
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 0.5,
-        "type": "bg",
-        "from": 0,
-        "to": 1
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.15,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.15,
-        "fillto": 0.15,
-        "fadetime": 0.01,
-        "grad": true
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.15,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.15,
-        "fillto": 0.15,
-        "fadetime": 0.01,
-        "grad": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "focusout",
+        "params": {
+            "duration": 1.5,
+            "type": "bg",
+            "from": 1,
+            "to": 0,
+            "block": true
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 1.5,
-        "type": "bg",
-        "from": 1,
-        "to": 0,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "I have returned."
@@ -112,69 +120,81 @@
         "text": "Theresa is gone."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_room_2",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_room_2",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.15,
-        "fillto": 0.15,
-        "fadetime": 0.01,
-        "grad": true
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.15,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.15,
-        "fillto": 0.15,
-        "fadetime": 0.01,
-        "grad": true
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.15,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The room is empty. Nobody is waiting for my return."
@@ -198,217 +218,257 @@
         "text": "Theresa...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "...Doctor!",
-        "tag": "name",
-        "value": "Distant Voice"
+        "command": "name",
+        "value": "Distant Voice",
+        "text": "...Doctor!"
     },
     {
-        "text": "Can you hear my voice?",
-        "tag": "name",
-        "value": "Approaching Voice"
+        "command": "name",
+        "value": "Approaching Voice",
+        "text": "Can you hear my voice?"
     },
     {
-        "text": "Doctor!",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Doctor!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_dooropen",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_dooropen",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1"
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 0.1,
-        "type": "bg",
-        "from": 0,
-        "to": 1
+        "command": "focusout",
+        "params": {
+            "duration": 0.1,
+            "type": "bg",
+            "from": 0,
+            "to": 1
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 0.1,
-        "type": "char",
-        "from": 0,
-        "to": 1
+        "command": "focusout",
+        "params": {
+            "duration": 0.1,
+            "type": "char",
+            "from": 0,
+            "to": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Doctor...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Doctor..."
     },
     {
-        "text": "You are here, as I surmised.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You are here, as I surmised."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "(I feel rather unwell.);(What happened just now?);(Where am I?)",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "(I feel rather unwell.);(What happened just now?);(Where am I?)",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Based on how you look, you seem in poor health.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Based on how you look, you seem in poor health."
     },
     {
-        "text": "I am afraid that there's no way for me to do a physical examination here, Doctor. Please keep your head clear and look at me.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I am afraid that there's no way for me to do a physical examination here, Doctor. Please keep your head clear and look at me."
     },
     {
-        "text": "Did you... manage to remember something?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Did you... manage to remember something?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "You hear the woman's stern but caring words, and you make an effort to open your eyes wide."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "focusout",
-        "duration": 1.5,
-        "type": "char",
-        "from": 1,
-        "to": 0
+        "command": "focusout",
+        "params": {
+            "duration": 1.5,
+            "type": "char",
+            "from": 1,
+            "to": 0
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 1.5,
-        "type": "bg",
-        "from": 1,
-        "to": 0,
-        "block": true
+        "command": "focusout",
+        "params": {
+            "duration": 1.5,
+            "type": "bg",
+            "from": 1,
+            "to": 0,
+            "block": true
+        }
     },
     {
         "text": "Your vision gradually clears as the various parts of your body regain their functionality."
@@ -417,33 +477,39 @@
         "text": "You slowly open your mouth\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "(Unknown language) Kal'tsit...;(Unknown language) Where am I?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "(Unknown language) Kal'tsit...;(Unknown language) Where am I?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Your shattered consciousness reassembles, your fragmented thoughts realign with one another. You are now able to determine that you are standing on solid ground."
@@ -455,2089 +521,2513 @@
         "text": "The expression on the woman before you turns rather strange. Even hostile."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "(Unknown language) Who am I...;...;Who am I?",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "(Unknown language) Who am I...;...;Who am I?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.3,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.3,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0.8,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0.8,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "50_i11",
-        "screenadapt": "coverall",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "50_i11",
+            "screenadapt": "coverall",
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0.8,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0.8,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "50_i15",
-        "screenadapt": "coverall",
-        "fadetime": 0,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "50_i15",
+            "screenadapt": "coverall",
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0.8,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0.8,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "50_i16",
-        "screenadapt": "coverall",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "50_i16",
+            "screenadapt": "coverall",
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "I am Dr. {@nickname} of Rhodes Island."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Amiya!;Kal'tsit! Why are we on Rhodes Island?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Amiya!;Kal'tsit! Why are we on Rhodes Island?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You..."
     },
     {
-        "text": "...It seems you still remember who you are.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...It seems you still remember who you are."
     },
     {
-        "text": "Amiya is not here with us. What I can say for certain that this is not the original Rhodes Island.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Amiya is not here with us. What I can say for certain that this is not the original Rhodes Island."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "We were separated from the others?;Where are Logos and W?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "We were separated from the others?;Where are Logos and W?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You are the only one I have seen since I arrived here.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You are the only one I have seen since I arrived here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are you sure you don't know what is going on?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Are you sure you don't know what is going on?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "I'm as confused as you are.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "I'm as confused as you are.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Do you...;...not believe me?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Do you...;...not believe me?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...A certain degree of precaution is necessary in these circumstances.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...A certain degree of precaution is necessary in these circumstances."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Be on guard, Doctor. We must leave here, no matter what.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Be on guard, Doctor. We must leave here, no matter what."
     },
     {
-        "text": "This is <i>not</i> a place that we are familiar with. I do not know what unexpected complications we may encounter.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "This is <i>not</i> a place that we are familiar with. I do not know what unexpected complications we may encounter."
     },
     {
-        "text": "Still, I will do everything I can to protect you. Don't stray too far from me.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Still, I will do everything I can to protect you. Don't stray too far from me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_trainingcom",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_trainingcom",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$wasteland_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$wasteland_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrow_rain",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrow_rain",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_metallicclick",
-        "volume": 0.9,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_metallicclick",
+            "volume": 0.9,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing1",
-        "volume": 0.6,
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing1",
+            "volume": 0.6,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_124_kroos_1#3",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_124_kroos_1#3",
+            "focus": "m"
+        }
     },
     {
-        "text": "No... No more...",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "No... No more..."
     },
     {
-        "text": "I'm so tuckered out that I could sleep for an entire month.",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "I'm so tuckered out that I could sleep for an entire month."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_123_fang_1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_123_fang_1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't be like that, Kroos!",
-        "tag": "name",
-        "value": "Fang"
+        "command": "name",
+        "value": "Fang",
+        "text": "Don't be like that, Kroos!"
     },
     {
-        "text": "This is a live combat exercise! You need to treat the training room like the battlefield!",
-        "tag": "name",
-        "value": "Fang"
+        "command": "name",
+        "value": "Fang",
+        "text": "This is a live combat exercise! You need to treat the training room like the battlefield!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_122_beagle_1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_122_beagle_1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You can be real fierce sometimes, Captain...",
-        "tag": "name",
-        "value": "Beagle"
+        "command": "name",
+        "value": "Beagle",
+        "text": "You can be real fierce sometimes, Captain..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_123_fang_1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_123_fang_1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Focus up. There's still lots of training drills arranged by the instructors to go.",
-        "tag": "name",
-        "value": "Fang"
+        "command": "name",
+        "value": "Fang",
+        "text": "Focus up. There's still lots of training drills arranged by the instructors to go."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_124_kroos_1#3",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_124_kroos_1#3",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why so serious... They're not even here\u2014",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "Why so serious... They're not even here\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_124_kroos_1#1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_124_kroos_1#1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, Doctor!",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "Oh, Doctor!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "Good morning, Kroos.;Is everyone... here?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Good morning, Kroos.;Is everyone... here?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_123_fang_1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_123_fang_1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Kroos!",
-        "tag": "name",
-        "value": "Fang"
+        "command": "name",
+        "value": "Fang",
+        "text": "Kroos!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_124_kroos_1#1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_124_kroos_1#1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, don't worry, the Doctor's definitely not going to tattle on us to the instructors.",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "Oh, don't worry, the Doctor's definitely not going to tattle on us to the instructors."
     },
     {
-        "text": "Let me just take a nap here before\u2014",
-        "tag": "name",
-        "value": "Kroos"
+        "command": "name",
+        "value": "Kroos",
+        "text": "Let me just take a nap here before\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I thought I gave you combat <i>training</i> exercises, not combat sleeping ones.",
-        "tag": "name",
-        "value": "Stern Voice"
+        "command": "name",
+        "value": "Stern Voice",
+        "text": "I thought I gave you combat <i>training</i> exercises, not combat sleeping ones."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_123_fang_1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_123_fang_1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...We're doomed.",
-        "tag": "name",
-        "value": "Fang"
+        "command": "name",
+        "value": "Fang",
+        "text": "...We're doomed."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "focus": "m"
+        }
     },
     {
-        "text": "Attention, all members of A1 Detachment!",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "Attention, all members of A1 Detachment!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Sir!",
-        "tag": "name",
-        "value": "The Whole Team"
+        "command": "name",
+        "value": "The Whole Team",
+        "text": "Sir!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "focus": "m"
+        }
     },
     {
-        "text": "All of you, a hundred laps around the training room, then fifty sets of stamina training exercises, on the double!",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "All of you, a hundred laps around the training room, then fifty sets of stamina training exercises, on the double!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Yessir...",
-        "tag": "name",
-        "value": "The Whole Team"
+        "command": "name",
+        "value": "The Whole Team",
+        "text": "Yessir..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_soldiersstep",
-        "channel": "step1",
-        "loop": false,
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_soldiersstep",
+            "channel": "step1",
+            "loop": false,
+            "volume": 0.7
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step1",
-        "fadetime": 4
+        "command": "stopsound",
+        "params": {
+            "channel": "step1",
+            "fadetime": 4
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sorry you had to see that, Doctor.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "Sorry you had to see that, Doctor."
     },
     {
-        "text": "It's been too long since Rhodes Island experienced battle. These young fighters of ours can be a little slack.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "It's been too long since Rhodes Island experienced battle. These young fighters of ours can be a little slack."
     },
     {
-        "text": "So I guess it's up to me to tighten them up.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "So I guess it's up to me to tighten them up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Letting them grow up peacefully isn't so bad...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Letting them grow up peacefully isn't so bad...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_014_riope",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_014_riope",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course, but they still need to be prepared for any dangers we may come across.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "Of course, but they still need to be prepared for any dangers we may come across."
     },
     {
-        "text": "It'll be fine. No need to trouble yourself over their training. I'll handle it.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "It'll be fine. No need to trouble yourself over their training. I'll handle it."
     },
     {
-        "text": "You've been working real hard lately, Doctor. Go take a rest.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "You've been working real hard lately, Doctor. Go take a rest."
     },
     {
-        "text": "Don't worry. We'll be keeping watch.",
-        "tag": "name",
-        "value": "Ace"
+        "command": "name",
+        "value": "Ace",
+        "text": "Don't worry. We'll be keeping watch."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "decision",
-        "options": "Did you see all that too, Kal'tsit?;Am I dreaming?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Did you see all that too, Kal'tsit?;Am I dreaming?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I saw the same scene unfurl as you did. They truly do exist here.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I saw the same scene unfurl as you did. They truly do exist here."
     },
     {
-        "text": "Dreams would not be so clear, and this is not a scene out of your memory.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Dreams would not be so clear, and this is not a scene out of your memory."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "It would be nice if everything here was real...;No, it definitely isn't real.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "It would be nice if everything here was real...;No, it definitely isn't real.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Keep a clear head, Doctor.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Keep a clear head, Doctor."
     },
     {
-        "text": "We must press onwards.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "We must press onwards."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_bar_1",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_bar_1",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_inside",
-        "volume": 0.4,
-        "loop": true,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_inside",
+            "volume": 0.4,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_coin",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_coin",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "Rare to see you here, Doctor.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Rare to see you here, Doctor."
     },
     {
-        "text": "Got time to sit down and have a drink? Everything's on my tab, for one night only.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Got time to sit down and have a drink? Everything's on my tab, for one night only."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "It's lively here.;Sure is a lot of people, isn't it?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "It's lively here.;Sure is a lot of people, isn't it?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_249_1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_249_1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Did you forget, Doctor? Today's Outcast's retirement party.",
-        "tag": "name",
-        "value": "Touch"
+        "command": "name",
+        "value": "Touch",
+        "text": "Did you forget, Doctor? Today's Outcast's retirement party."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_252",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_252",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here's to our venerate elder.",
-        "tag": "name",
-        "value": "Sharp"
+        "command": "name",
+        "value": "Sharp",
+        "text": "Here's to our venerate elder."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$clink"
+        "command": "playsound",
+        "params": {
+            "key": "$clink"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$clink",
-        "loop": false,
-        "channel": 1,
-        "delay": 0.04
+        "command": "playsound",
+        "params": {
+            "key": "$clink",
+            "loop": false,
+            "channel": 1,
+            "delay": 0.04
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$clink",
-        "loop": false,
-        "channel": 2,
-        "delay": 0.06
+        "command": "playsound",
+        "params": {
+            "key": "$clink",
+            "loop": false,
+            "channel": 2,
+            "delay": 0.06
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$clink",
-        "loop": false,
-        "channel": 3,
-        "delay": 0.08
+        "command": "playsound",
+        "params": {
+            "key": "$clink",
+            "loop": false,
+            "channel": 3,
+            "delay": 0.08
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, shut it, Sharp. I'm barely older than you are.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Oh, shut it, Sharp. I'm barely older than you are."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "Thank you for all that you've done for Rhodes Island, Outcast.;I wish you a happy retirement.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Thank you for all that you've done for Rhodes Island, Outcast.;I wish you a happy retirement.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_095",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_095",
+            "focus": "m"
+        }
     },
     {
-        "text": "Here's to you, Outcast. We'll always remember your many deeds and exquisite marksmanship.",
-        "tag": "name",
-        "value": "Pith"
+        "command": "name",
+        "value": "Pith",
+        "text": "Here's to you, Outcast. We'll always remember your many deeds and exquisite marksmanship."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_017_homura_3#10",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_017_homura_3#10",
+            "focus": "m"
+        }
     },
     {
-        "text": "I can't believe that Outcast is leaving us...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I can't believe that Outcast is leaving us..."
     },
     {
-        "text": "There'sh not gonna to be anyone left to... *hic* drink wish me on weekend nights...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "There'sh not gonna to be anyone left to... *hic* drink wish me on weekend nights..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hey, I'm just retiring. Not even a Lateran funeral would be this sentimental.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Hey, I'm just retiring. Not even a Lateran funeral would be this sentimental."
     },
     {
-        "text": "Plus, even if I drink so much tonight that I don't wake up tomorrow, I'd call my life a life well lived.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Plus, even if I drink so much tonight that I don't wake up tomorrow, I'd call my life a life well lived."
     },
     {
-        "text": "My memories of working alongside you all are my greatest treasures, and I'll bring them to the grave with me along with my patron firearm.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "My memories of working alongside you all are my greatest treasures, and I'll bring them to the grave with me along with my patron firearm."
     },
     {
-        "text": "Just make sure that it's Rangers teaching the youngsters how to shoot.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Just make sure that it's Rangers teaching the youngsters how to shoot."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_017_homura_3#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_017_homura_3#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "You're drunk, Outcast. He uses a gun, how's he s'pposed to teach kids 'bout\u2014*burp*\u2014shootin' a Sankta crossbow?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "You're drunk, Outcast. He uses a gun, how's he s'pposed to teach kids 'bout\u2014*burp*\u2014shootin' a Sankta crossbow?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_095",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_095",
+            "focus": "m"
+        }
     },
     {
-        "text": "You need to cut back, Blaze. You're talking nonsense again.",
-        "tag": "name",
-        "value": "Pith"
+        "command": "name",
+        "value": "Pith",
+        "text": "You need to cut back, Blaze. You're talking nonsense again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "Pah, both need you to keep one eye open and one eye shut. Not too big a difference.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Pah, both need you to keep one eye open and one eye shut. Not too big a difference."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#6",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#6",
+            "focus": "n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bottlebroken",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$bottlebroken",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_245_1#1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_245_1#1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, looks like we're not the only ones at the bar tonight.",
-        "tag": "name",
-        "value": "Outcast"
+        "command": "name",
+        "value": "Outcast",
+        "text": "Oh, looks like we're not the only ones at the bar tonight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_bar_1",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_bar_1",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#9$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm serious, Dagda!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "I'm serious, Dagda!"
     },
     {
-        "text": "Show me how powerful the fist of a Knight of the Tower can be!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Show me how powerful the fist of a Knight of the Tower can be!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Just remember, you asked for this.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "...Just remember, you asked for this."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clnchfst"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clnchfst"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp",
-        "volume": 0.8,
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp",
+            "volume": 0.8,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_863_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_863_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hey! This isn't the boxing gym! We're guests here on Rhodes Island, so don't go about making trouble!",
-        "tag": "name",
-        "value": "Baird"
+        "command": "name",
+        "value": "Baird",
+        "text": "Hey! This isn't the boxing gym! We're guests here on Rhodes Island, so don't go about making trouble!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 0.8,
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 0.8,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_glassbroken",
-        "volume": 0.6,
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_glassbroken",
+            "volume": 0.6,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_397_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_397_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've had my fair share of times like this before.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "I've had my fair share of times like this before."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_407_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_407_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Now that you're formally a member of the Steam Knights, are you going to break things off with street loafers like us?",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "Now that you're formally a member of the Steam Knights, are you going to break things off with street loafers like us?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_397_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_397_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, stop it... Have you made your decision, Vina?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Oh, stop it... Have you made your decision, Vina?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_407_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_407_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I see no real reason for me to hesitate. My days in Norport might have been some of the happiest in my life, and I don't really see any need to return to the palace.",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "I see no real reason for me to hesitate. My days in Norport might have been some of the happiest in my life, and I don't really see any need to return to the palace."
     },
     {
-        "text": "Alexandrina Vina Victoria is a descendant of the royal family, but she is also a normal, honorable Victorian.",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "Alexandrina Vina Victoria is a descendant of the royal family, but she is also a normal, honorable Victorian."
     },
     {
-        "text": "You are now an honorable Steam Knight, Allerdale, I the honorable Siege.",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "You are now an honorable Steam Knight, Allerdale, I the honorable Siege."
     },
     {
-        "text": "I believe that these lives of ours are for the best.",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "I believe that these lives of ours are for the best."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_397_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_397_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Peaceful lives. Such precious things.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Peaceful lives. Such precious things."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_407_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_407_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "To life.",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "To life."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_397_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_397_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "To Victoria.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "To Victoria."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$clink"
+        "command": "playsound",
+        "params": {
+            "key": "$clink"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_407_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_407_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Whenever you're in the mood, we should go out and have a stroll together. Perhaps throw some stones at the dukes' windows?",
-        "tag": "name",
-        "value": "Vina"
+        "command": "name",
+        "value": "Vina",
+        "text": "Whenever you're in the mood, we should go out and have a stroll together. Perhaps throw some stones at the dukes' windows?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "How wonderful.;...;This isn't real.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "How wonderful.;...;This isn't real.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You still remember each and every one of them. The regret you feel over their tragic fates is clear on your face.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You still remember each and every one of them. The regret you feel over their tragic fates is clear on your face."
     },
     {
-        "text": "Otherwise you would not be seeing such things.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Otherwise you would not be seeing such things."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What do you feel, Doctor?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "What do you feel, Doctor?"
     },
     {
-        "text": "Gratification? Confusion? Perhaps anger?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Gratification? Confusion? Perhaps anger?"
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "These are the scenes that your subconscious mind wished to see.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "These are the scenes that your subconscious mind wished to see."
     },
     {
-        "text": "You hoped that they were all real, didn't you?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You hoped that they were all real, didn't you?"
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Who else will I see here?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Who else will I see here?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Only you can answer that.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Only you can answer that."
     },
     {
-        "text": "Let us continue, Doctor.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Let us continue, Doctor."
     },
     {
-        "text": "No matter what you see, you must face it. Surmount it.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "No matter what you see, you must face it. Surmount it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm back, Doctor. It's been a while.",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "I'm back, Doctor. It's been a while."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...;...Talulah?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "...;...Talulah?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hehe, it hasn't been that long. Don't recognize me anymore?",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "Hehe, it hasn't been that long. Don't recognize me anymore?"
     },
     {
-        "text": "I was out setting up an Infected treatment center in the north of Ursus. Took quite a lot of effort.",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "I was out setting up an Infected treatment center in the north of Ursus. Took quite a lot of effort."
     },
     {
-        "text": "Thankfully the workers in town were all supporting us, nothing the local lord could do but compromise. We managed to get the land that we needed out of the deal.",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "Thankfully the workers in town were all supporting us, nothing the local lord could do but compromise. We managed to get the land that we needed out of the deal."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Reunion doesn't exist...?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Reunion doesn't exist...?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are you trying to crack a joke, Doctor, or have you just woken up?",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "Are you trying to crack a joke, Doctor, or have you just woken up?"
     },
     {
-        "text": "If Reunion didn't exist, then who would be helping Rhodes Island with treating the Infected in Ursus?",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "If Reunion didn't exist, then who would be helping Rhodes Island with treating the Infected in Ursus?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "And Kashchey? What about him?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "And Kashchey? What about him?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_078#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_078#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why would you suddenly bring up the dead Black Snake?",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "Why would you suddenly bring up the dead Black Snake?"
     },
     {
-        "text": "Did you want me to thank you again? Very well. After all, it was only thanks to Rhodes Island that Ursus and I were able to cast off that mastermind and start a new future for countless people.",
-        "tag": "name",
-        "value": "Talulah"
+        "command": "name",
+        "value": "Talulah",
+        "text": "Did you want me to thank you again? Very well. After all, it was only thanks to Rhodes Island that Ursus and I were able to cast off that mastermind and start a new future for countless people."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Doctor.",
-        "tag": "name",
-        "value": "Cold Voice"
+        "command": "name",
+        "value": "Cold Voice",
+        "text": "Doctor."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "No...;(Do not look back.)",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "No...;(Do not look back.)",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walk_stage",
-        "volume": 1,
-        "loop": false,
-        "channel": "fwalk"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walk_stage",
+            "volume": 1,
+            "loop": false,
+            "channel": "fwalk"
+        }
     },
     {
-        "tag": "stopsound",
-        "fadetime": 2,
-        "channel": "fwalk"
+        "command": "stopsound",
+        "params": {
+            "fadetime": 2,
+            "channel": "fwalk"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Doctor?",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Doctor?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": ".........",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": ".........",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "FrostNova...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "FrostNova...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "You shouldn't be here.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "You shouldn't be here.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why?",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Why?"
     },
     {
-        "text": "You told me to give you my report immediately after completing the missions, no?",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "You told me to give you my report immediately after completing the missions, no?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Missions... for Rhodes Island?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Missions... for Rhodes Island?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Who else would I do them for? I've always been a Rhodes Island Operator.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Who else would I do them for? I've always been a Rhodes Island Operator."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1505_frstar_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1505_frstar_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You look strange, Doctor. Am I standing too close and making you feel cold?",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "You look strange, Doctor. Am I standing too close and making you feel cold?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "This isn't right.;This isn't...;THIS ISN'T RIGHT!",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "This isn't right.;This isn't...;THIS ISN'T RIGHT!",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_dreambroken",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_dreambroken",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_phntsmglsbrek",
-        "volume": 1,
-        "delay": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_phntsmglsbrek",
+            "volume": 1,
+            "delay": 3
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 3,
-        "type": "bg",
-        "from": 0,
-        "to": 1,
-        "block": false
+        "command": "focusout",
+        "params": {
+            "duration": 3,
+            "type": "bg",
+            "from": 0,
+            "to": 1,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g14_rhodescorridor_ex",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "50_g14_rhodescorridor_ex",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 2,
-        "type": "bg",
-        "from": 1,
-        "to": 0,
-        "block": true
+        "command": "focusout",
+        "params": {
+            "duration": 2,
+            "type": "bg",
+            "from": 1,
+            "to": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$ponder_intro",
-        "key": "$ponder_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$ponder_intro",
+            "key": "$ponder_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "One by one, the lively crew shed their visages, shifting into indistinct, jet-black shadows."
@@ -2546,1035 +3036,1256 @@
         "text": "They do not appear dangerous. They just slowly drift around you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Kal'tsit... What are they?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Kal'tsit... What are they?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "This is no illusion or dream. It is all real, in a sense.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "This is no illusion or dream. It is all real, in a sense."
     },
     {
-        "text": "All the people, all the things you have encountered in the past exist within your imagination. They took their forms based on what you most hoped to see.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "All the people, all the things you have encountered in the past exist within your imagination. They took their forms based on what you most hoped to see."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "They sully our memories.;How can you stay so calm?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "They sully our memories.;How can you stay so calm?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "These scenes affect me as much as they do you, Doctor.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "These scenes affect me as much as they do you, Doctor."
     },
     {
-        "text": "But they are ultimately the product of your thoughts.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "But they are ultimately the product of your thoughts."
     },
     {
-        "text": "Originium, guided by your wishes deep in your subconscious and your desires to make up for past regrets, has reproduced what you wish to see.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Originium, guided by your wishes deep in your subconscious and your desires to make up for past regrets, has reproduced what you wish to see."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You continue to hold a deep regard for everything you have experienced alongside Rhodes Island, yet despite that, you were able to break away from this beautiful lie.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You continue to hold a deep regard for everything you have experienced alongside Rhodes Island, yet despite that, you were able to break away from this beautiful lie."
     },
     {
-        "text": "Only now can I believe that you, as you are now, are still the Doctor of Rhodes Island.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Only now can I believe that you, as you are now, are still the Doctor of Rhodes Island."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "Originium? Since when could it do this?;Why is it being guided by what I want?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Originium? Since when could it do this?;Why is it being guided by what I want?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#000000>All that you wish for, I am able to grant.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#000000>All that you wish for, I am able to grant.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#000000>All that you wish for, I am able to grant.</color>"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Pries...tess...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Pries...tess...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As I thought, you already...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "As I thought, you already..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I once told you, Doctor, that others cannot tell you how to solve the mysteries surrounding you. You can only rely on yourself.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I once told you, Doctor, that others cannot tell you how to solve the mysteries surrounding you. You can only rely on yourself."
     },
     {
-        "text": "I suspect that we are now extremely close to that critical juncture.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I suspect that we are now extremely close to that critical juncture."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "If this is all based on my hopes, then are you...;I can at least say for sure that you are no illusion.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "If this is all based on my hopes, then are you...;I can at least say for sure that you are no illusion.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I thought that our prior interactions would be sufficient for you to render an accurate judgement.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I thought that our prior interactions would be sufficient for you to render an accurate judgement."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I hope that this judgement of yours is based on rationality, and not something else.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I hope that this judgement of yours is based on rationality, and not something else."
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "If these scenes are all about making up for regrets...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "If these scenes are all about making up for regrets...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Will I be able to meet Theresa?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Will I be able to meet Theresa?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I do not know for certain where Theresa is, nor what she is doing.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I do not know for certain where Theresa is, nor what she is doing."
     },
     {
-        "text": "What I am sure of is that she has something to do with this environment.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "What I am sure of is that she has something to do with this environment."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "text": "Doctor.",
-        "tag": "name",
-        "value": "Gentle Voice"
+        "command": "name",
+        "value": "Gentle Voice",
+        "text": "Doctor."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "\u2014!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "\u2014!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$calm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$calm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Amiya!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Amiya!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Doctor, Dr. Kal'tsit. Good, you're both here.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, Dr. Kal'tsit. Good, you're both here."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "(Hesitate);(Step forward without hesitation)",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "(Hesitate);(Step forward without hesitation)",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't worry, Doctor. I am the real Amiya. Really.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Don't worry, Doctor. I am the real Amiya. Really."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*sniff* I was looking all over for you, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "*sniff* I was looking all over for you, Doctor."
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "You look a little different.;Your clothes...?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "You look a little different.;Your clothes...?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Theresa left me this dress.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Theresa left me this dress."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "So she really is here?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "So she really is here?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I haven't seen her. I've sensed no presence of her aboard this 'Rhodes Island', in fact.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I haven't seen her. I've sensed no presence of her aboard this 'Rhodes Island', in fact."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Did you run into any danger?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Did you run into any danger?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm fine.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm fine."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "So many memories flowed before me...",
-        "tag": "multiline",
-        "name": "Amiya"
+        "value": "Amiya"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#7$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "But not only memories. Emotions too, rich ones in every shape and form.",
-        "tag": "multiline",
-        "name": "Amiya"
-    },
-    {
-        "text": "I think that the people that we saw were truly alive.",
-        "tag": "name",
         "value": "Amiya"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#2$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I think that the people that we saw were truly alive."
     },
     {
-        "text": "But this form of 'life' just makes me... sad.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But this form of 'life' just makes me... sad."
     },
     {
-        "text": "After walking down this corridor and seeing you, I think I understand now.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The emotions that I felt all stemmed from the same source, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "After walking down this corridor and seeing you, I think I understand now."
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The emotions that I felt all stemmed from the same source, Doctor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "n"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "...Me.",
-        "values": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "...Me.",
+            "values": "1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Yes.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Yes."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 1
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "I... 'touched' you, Doctor. I've never done that before...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "n"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I... 'touched' you, Doctor. I've never done that before..."
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "n"
+        }
     },
     {
         "text": "The girl holds your hand, just as she has always done, but a little tighter, and more carefully this time."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I know that you've changed a lot compared to the past, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I know that you've changed a lot compared to the past, Doctor."
     },
     {
-        "text": "But considering all that we've experienced together, I am even more convinced that... the you who stands before me now has always been the you that I've trusted the most.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But considering all that we've experienced together, I am even more convinced that... the you who stands before me now has always been the you that I've trusted the most."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Memory may tell falsehoods, but emotion always speaks the truth.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Memory may tell falsehoods, but emotion always speaks the truth."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There are many things that I still don't understand at this moment. I have questions that can't be answered until we see Theresa once more.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "There are many things that I still don't understand at this moment. I have questions that can't be answered until we see Theresa once more."
     },
     {
-        "text": "No matter what happens, no matter how many unhappy endings await us...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No matter what happens, no matter how many unhappy endings await us..."
     },
     {
-        "text": "You'll stand by my side, won't you, Doctor?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "You'll stand by my side, won't you, Doctor?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "I will.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "I will.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "I am Dr. {@nickname} of Rhodes Island.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "I am Dr. {@nickname} of Rhodes Island.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Good. That's all I ask for.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Good. That's all I ask for."
     },
     {
-        "text": "Let's go find Theresa, then.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Let's go find Theresa, then."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#14$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#14$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "First, we must figure out how to leave.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "First, we must figure out how to leave."
     },
     {
-        "text": "The answers we seek are not here.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "The answers we seek are not here."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "50_g11_rhodesdeck_ex",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "50_g11_rhodesdeck_ex",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Though this is no illusion, heaven and earth, life and death...",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "Though this is no illusion, heaven and earth, life and death..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It is all falsehood.",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "It is all falsehood."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1035_wisdel_1#1$2",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1035_wisdel_1#1$2",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1035_wisdel_1#11$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1035_wisdel_1#11$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hah, so even if you leave that dreary gallery of fakes, you'd just find yourself wandering around an even bigger stage?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Hah, so even if you leave that dreary gallery of fakes, you'd just find yourself wandering around an even bigger stage?"
     },
     {
-        "text": "Who the hell set up these curtains for us? Their taste sucks.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Who the hell set up these curtains for us? Their taste sucks."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1035_wisdel_1#11$2",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1035_wisdel_1#11$2",
+            "focus": "n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_footstep_stonestep",
-        "volume": 1,
-        "channel": "step1",
-        "loop": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_footstep_stonestep",
+            "volume": 1,
+            "channel": "step1",
+            "loop": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walk_stage",
-        "volume": 1,
-        "channel": "step2",
-        "loop": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walk_stage",
+            "volume": 1,
+            "channel": "step2",
+            "loop": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6,
-        "channel": "step3",
-        "loop": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6,
+            "channel": "step3",
+            "loop": false
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step1",
-        "fadetime": 2.5
+        "command": "stopsound",
+        "params": {
+            "channel": "step1",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step2",
-        "fadetime": 2.5
+        "command": "stopsound",
+        "params": {
+            "channel": "step2",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step3",
-        "fadetime": 2.5
+        "command": "stopsound",
+        "params": {
+            "channel": "step3",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1035_wisdel_1#1$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1035_wisdel_1#1$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, looks like the main cast is finally here.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Oh, looks like the main cast is finally here."
     },
     {
-        "text": "Hey, crone, let's put that all-knowing brain of yours to good use. I've got a real big question I want answered\u2014",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Hey, crone, let's put that all-knowing brain of yours to good use. I've got a real big question I want answered\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1035_wisdel_1#14$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1035_wisdel_1#14$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Where. The hell. Are we?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Where. The hell. Are we?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "verticalbg",
-        "imagegroup": "50_g22_1/50_g22_2",
-        "solidwidth": 1280,
-        "solidheight": "1512/1512",
-        "y": 1905
+        "command": "verticalbg",
+        "params": {
+            "imagegroup": "50_g22_1/50_g22_2",
+            "solidwidth": 1280,
+            "solidheight": "1512/1512",
+            "y": 1905
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 20,
-        "yFrom": 560,
-        "yTo": 860,
-        "block": false
+        "command": "largebgtween",
+        "params": {
+            "duration": 20,
+            "yfrom": 560,
+            "y": 860,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 10
+        "command": "delay",
+        "value": 10
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "verticalbg",
-        "imagegroup": "50_g22_1/50_g22_2",
-        "solidwidth": 1280,
-        "solidheight": "1512/1512",
-        "y": 1905
+        "command": "verticalbg",
+        "params": {
+            "imagegroup": "50_g22_1/50_g22_2",
+            "solidwidth": 1280,
+            "solidheight": "1512/1512",
+            "y": 1905
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 20,
-        "yFrom": 1660,
-        "yTo": 1890,
-        "block": false
+        "command": "largebgtween",
+        "params": {
+            "duration": 20,
+            "yfrom": 1660,
+            "y": 1890,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 10
+        "command": "delay",
+        "value": 10
     },
     {
         "text": "A small boat, drifting atop an endless golden sea."
     },
     {
-        "text": "We are within Originium.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "We are within Originium."
     },
     {
-        "text": "Within Originium, there exists a universe.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Within Originium, there exists a universe."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "largebg"
+        "command": "largebg"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     }
 ]

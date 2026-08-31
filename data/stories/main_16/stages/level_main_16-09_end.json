@@ -1,67 +1,73 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0,
-        "loop": true,
-        "channel": "sn"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "background",
+        "params": {
+            "image": "66_g14_ursusvillage",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "66_g14_ursusvillage",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The nights of deep autumn are cold in Ursus. Snow falls from the branches as the cold winds blow."
@@ -73,61 +79,71 @@
         "text": "A tiny flicker of flame still burns on the charred firewood in the middle of the clearing, clinging to its last gasp of life as the north winds tear at it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firewood_throw",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firewood_throw",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_warmbonfire_loop",
-        "loop": true,
-        "channel": "a",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_warmbonfire_loop",
+            "loop": true,
+            "channel": "a",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "A piece of thick firewood is thrown into the pile, and sparks fly in the air."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#1$1",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#1$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "They...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "They..."
     },
     {
-        "text": "They found us.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "They found us."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Dry firewood lies in ash, slowly becoming charred and twisted, before being swallowed by the leaping flames."
@@ -136,42 +152,46 @@
         "text": "The fire shines upon the face of the feeble Infected, but he feels no warmth."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#1$1"
+        }
     },
     {
-        "text": "The people here... everyone.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "The people here... everyone."
     },
     {
-        "text": "They must be wiped away... like Ganea was...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "They must be wiped away... like Ganea was..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#7$1"
+        }
     },
     {
-        "text": "This way, they will never...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "This way, they will never..."
     },
     {
-        "text": "They will never lose their goodness, nor abandon purity...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "They will never lose their goodness, nor abandon purity..."
     },
     {
-        "text": "Their souls shall never be defiled.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Their souls shall never be defiled."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "He is in pain, a pain that penetrates his heart like a needle."
@@ -183,34 +203,40 @@
         "text": "He must make himself warm again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firewood_throw",
-        "volume": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firewood_throw",
+            "volume": 0.2
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firewood_throw",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firewood_throw",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firewood_throw",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firewood_throw",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
         "text": "One piece, two pieces, three pieces."
@@ -225,68 +251,84 @@
         "text": "The frail miner picks up a burning firewood and walks toward the silent houses."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_newiceforest_3",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_newiceforest_3",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Tap, click, tap, click."
@@ -295,98 +337,110 @@
         "text": "The footsteps are rhythmic, one stronger than the other."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#4$1",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#4$1",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Asleep... asleep!",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Asleep... asleep!"
     },
     {
-        "text": "They're all asleep.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "They're all asleep."
     },
     {
-        "text": "You do not know what desperation awaits you, what judgment you will face.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "You do not know what desperation awaits you, what judgment you will face."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#5$1"
+        }
     },
     {
-        "text": "Aiding and abetting the Infected before selling them out. Blissful ignorance, docile as a burdenbeast!",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Aiding and abetting the Infected before selling them out. Blissful ignorance, docile as a burdenbeast!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#1$1"
+        }
     },
     {
-        "text": "But it is alright.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "But it is alright."
     },
     {
-        "text": "I will help you. I can help you.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "I will help you. I can help you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#2$1"
+        }
     },
     {
-        "text": "For I shall meditate...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "For I shall meditate..."
     },
     {
-        "text": "And share...",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "And share..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#6$1"
+        }
     },
     {
-        "text": "In your pain.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "In your pain."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The madman carries the torch of fear, but the flame can no longer stem the cold."
@@ -401,177 +455,216 @@
         "text": "He sees a large pile of hay."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#1$1"
+        }
     },
     {
-        "text": "Fire.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Fire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "He throws the torch."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#4$1"
+        }
     },
     {
-        "text": "Cleansing\u2014",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Cleansing\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "The flames awaken all that has withered."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#5$1"
+        }
     },
     {
-        "text": "Salvation!",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Salvation!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "sn",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firestorm",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$firestorm",
+            "volume": 1
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$m_bat_act37d0d0_01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$m_bat_act37d0d0_01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_062cg_phantom_front",
-        "fade": true,
-        "fadetime": 1.5,
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_062cg_phantom_front",
+            "fadetime": 1.5,
+            "layer": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "loop": true,
-        "channel": "a",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "loop": true,
+            "channel": "a",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.7,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.7,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "He has never felt so acutely alive."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "background",
-        "image": "34_g10_tent_inside",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "34_g10_tent_inside",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#1$1",
-        "posfrom": "0,-50",
-        "posto": "0,0",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#1$1",
+            "posfrom": "0,-50",
+            "posto": "0,0",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "The ringing continues in his head. In the nightmare, Rankin is clinging to the last vestige of cognition and sanity."
@@ -583,78 +676,96 @@
         "text": "He forces himself up and staggers towards the door of the tent, seeking a breath of fresh air."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_smoke_01",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_smoke_01",
+            "layer": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_snowconutry_3",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_snowconutry_3",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "loop": true,
-        "channel": "a",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "loop": true,
+            "channel": "a",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Hot air rushes at him, evaporating the sweat in an instant."
@@ -672,202 +783,236 @@
         "text": "In the gushing smoke, the scent of charred despair clutches at everyone's throats like a demonic claw. How tiny is man in the presence of terror."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1967_1#5$1",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1967_1#5$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Rankin!",
-        "tag": "name",
-        "value": "Nikto"
+        "command": "name",
+        "value": "Nikto",
+        "text": "Rankin!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#6$1"
+        }
     },
     {
-        "text": "What... what happened?",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "What... what happened?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1967_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1967_1#5$1"
+        }
     },
     {
-        "text": "No idea. The fire started all of a sudden. We can't put it out!",
-        "tag": "name",
-        "value": "Nikto"
+        "command": "name",
+        "value": "Nikto",
+        "text": "No idea. The fire started all of a sudden. We can't put it out!"
     },
     {
-        "text": "All we can do is evacuate the others!",
-        "tag": "name",
-        "value": "Nikto"
+        "command": "name",
+        "value": "Nikto",
+        "text": "All we can do is evacuate the others!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walkfast",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walkfast",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1969_1#1$1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1969_1#1$1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "duration": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1963_1#1$1",
-        "posfrom": "200,0",
-        "posto": "0,0",
-        "duration": 0.8
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1963_1#1$1",
+            "posfrom": "200,0",
+            "posto": "0,0",
+            "duration": 0.8
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1969_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1969_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The food we traded for is still inside. I have to go in\u2014",
-        "tag": "name",
-        "value": "Excited Miner"
+        "command": "name",
+        "value": "Excited Miner",
+        "text": "The food we traded for is still inside. I have to go in\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1963_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1963_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Now is not the time!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Now is not the time!"
     },
     {
-        "text": "Wake everyone! Get them out of the village! Go!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Wake everyone! Get them out of the village! Go!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "But his commands do not bring order to the crowd. Fear continues to spread unchecked."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0,
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 0,
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "image",
-        "image": "avg_8_30",
-        "screenadapt": "coverall",
-        "xScale": 1.05,
-        "yScale": 1.05,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "avg_8_30",
+            "screenadapt": "coverall",
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.05,
-        "yScaleFrom": 1.05,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.05,
+            "yscalefrom": 1.05,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 1,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 1,
+            "keep": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "He has never..."
@@ -876,272 +1021,320 @@
         "text": "Died."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_smoke_01",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_smoke_01",
+            "layer": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_snowconutry_3",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_snowconutry_3",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0,
+            "keep": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#7$1"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "No, no... I won! I killed him!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "No, no... I won! I killed him!"
     },
     {
-        "text": "I can save everyone...!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "I can save everyone...!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1,
-        "loop": true,
-        "channel": "r"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1,
+            "loop": true,
+            "channel": "r"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "r",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "r",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#6$1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#6$1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "<i>Uchitel!</i>",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "<i>Uchitel!</i>"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#6$1"
+        }
     },
     {
-        "text": "What are you doing here, Vetochki? Get to safety!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "What are you doing here, Vetochki? Get to safety!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "<i>Uchitel</i>, I-I...!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "<i>Uchitel</i>, I-I...!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#7$1"
+        }
     },
     {
-        "text": "Didn't you hear me?!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Didn't you hear me?!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Rankin tries to shake off Vetochki's hands, but the girl grabs his arm with all her strength."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "B-Babushka, sh-she's gone!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "B-Babushka, sh-she's gone!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#6$1"
+        }
     },
     {
-        "text": "What? Wasn't she with you?",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "What? Wasn't she with you?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The stammering girl gestures furiously, trying to explain what happened, but the terror on her face says it all."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#5$1"
+        }
     },
     {
-        "text": "Nikto!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Nikto!"
     },
     {
-        "text": "Continue the evacuation! We'll go find Nadia!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Continue the evacuation! We'll go find Nadia!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1967_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1967_1#1$1"
+        }
     },
     {
-        "text": "O-Okay!",
-        "tag": "name",
-        "value": "Nikto"
+        "command": "name",
+        "value": "Nikto",
+        "text": "O-Okay!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Rankin and Vetochki dart through the fire. The houses on both sides of them are burning, and the slightest misstep could set their clothes on fire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "Babushka... Babushka!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Babushka... Babushka!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Rankin wants to yell too, but the feeling of helplessness continues to accumulate in his heart. It is stuck in his throat, preventing him from making a sound, preventing him from breathing."
@@ -1150,43 +1343,49 @@
         "text": "He knows full well what a fire like this means for an invalid old woman."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "<i>Uchitel</i>, I... you... mm!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "<i>Uchitel</i>, I... you... mm!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "At the smoke-filled intersection, Vetochki covers her mouth and points to herself, then at Rankin, and finally towards the fork in the path."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#10$1"
+        }
     },
     {
-        "text": "No, Vetochki... you must not go off on your own... listen to me...",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "No, Vetochki... you must not go off on your own... listen to me..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "<i>Uchitel!</i>",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "<i>Uchitel!</i>"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The girl's face is red as tears flow from her eyes. She holds her hands together in a strange gesture of prayer."
@@ -1195,309 +1394,372 @@
         "text": "She is not praying to the Tsar, nor to the Yurodstvo. She is praying to Rankin."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#3$1"
+        }
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "I..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0,
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 0,
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image",
-        "image": "avg_8_29",
-        "screenadapt": "coverall",
-        "xScale": 1.05,
-        "yScale": 1.05,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "avg_8_29",
+            "screenadapt": "coverall",
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.05,
-        "yScaleFrom": 1.05,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.05,
+            "yscalefrom": 1.05,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 1,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 1,
+            "keep": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "Fool.",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "Fool.",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "Fool."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_smoke_01",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_smoke_01",
+            "layer": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_snowconutry_3",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_snowconutry_3",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0,
+            "keep": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4207_branch_1#5$1",
-        "posfrom": "-200,0",
-        "posto": "-200,0",
-        "duration": 0
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4207_branch_1#5$1",
+            "posfrom": "-200,0",
+            "posto": "-200,0",
+            "duration": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#7$1",
-        "focus": "m",
-        "posfrom": "-500,0",
-        "posto": "-200,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#7$1",
+            "focus": "m",
+            "posfrom": "-500,0",
+            "posto": "-200,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1971_1#7$1",
-        "focus": "m",
-        "posfrom": "-200,0",
-        "posto": "-230,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1971_1#7$1",
+            "focus": "m",
+            "posfrom": "-200,0",
+            "posto": "-230,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.4
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_4207_branch_1#10$1",
-        "posfrom": "-200,0",
-        "posto": "-150,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_4207_branch_1#10$1",
+            "posfrom": "-200,0",
+            "posto": "-150,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "r"
+        }
     },
     {
-        "text": "Ugh...!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Ugh...!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "-230,0",
-        "posto": "100,0",
-        "focus": "m",
-        "bstart": 0.2,
-        "bend": 0.7,
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "-230,0",
+            "posto": "100,0",
+            "focus": "m",
+            "bstart": 0.2,
+            "bend": 0.7,
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "A shadow flashes across their vision. He is limping, but there is an unusual strength in his steps, as though he is being drawn in by something."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#6$1"
+        }
     },
     {
-        "text": "Hawley? Where are you going?!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Hawley? Where are you going?!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The hunched figure ignores Rankin's cries, walking towards the sea of flames at the end of the path."
@@ -1506,163 +1768,191 @@
         "text": "Surrounded by the bright light of fire, his figure casts no shadow. He prepares to welcome baptism by fire, like the Yurodstvo walking towards the execution grounds in legend."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#1$1",
-        "posfrom": "-300,0",
-        "posto": "0,0",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#1$1",
+            "posfrom": "-300,0",
+            "posto": "0,0",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "300,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "300,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1963_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1963_1#7$1"
+        }
     },
     {
-        "text": "Vetochki! Wait!",
-        "tag": "name",
-        "value": "Rankin"
+        "command": "name",
+        "value": "Rankin",
+        "text": "Vetochki! Wait!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I have committed murder.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "I have committed murder."
     },
     {
-        "text": "Not for food, nor for water, nor for abode.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "Not for food, nor for water, nor for abode."
     },
     {
         "text": "He continues to walk as he chants, and pushes open a burning door."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "image",
-        "image": "66_i23",
-        "screenadapt": "coverall",
-        "xScale": 1.05,
-        "yScale": 1.05,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "66_i23",
+            "screenadapt": "coverall",
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.05,
-        "yScaleFrom": 1.05,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.05,
+            "yscalefrom": 1.05,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firestorm",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$firestorm",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "loop": true,
-        "channel": "a",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "loop": true,
+            "channel": "a",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.7,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.7,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Even the scorching light of the flames cannot stop Rankin from seeing what is inside the house, over Hawley's head\u2014"
@@ -1674,9 +1964,9 @@
         "text": "An old woman sits straight in the middle of it all."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Old Woman"
+        "command": "name",
+        "value": "Old Woman",
+        "text": "......"
     },
     {
         "text": "She is sitting on the last chair without a sound. The flames are only inches from her, but they cannot touch her, as though an invisible wall is keeping them at bay."
@@ -1685,47 +1975,55 @@
         "text": "She has not a speck of ash or dust on her. Even her hair is immaculately clean. Her eyes gently shut, but at the same time she seems to be watching everything."
     },
     {
-        "text": "I have cleansed their souls.",
-        "tag": "name",
-        "value": "Hawley"
+        "command": "name",
+        "value": "Hawley",
+        "text": "I have cleansed their souls."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

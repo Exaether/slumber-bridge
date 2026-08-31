@@ -1,173 +1,193 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0,
-        "loop": true,
-        "channel": "sn"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "name",
+        "value": "Eloysius",
+        "text": "The tracks end here. Up ahead is..."
     },
     {
-        "text": "The tracks end here. Up ahead is...",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Hah, I don't think we need to go any further."
     },
     {
-        "text": "Hah, I don't think we need to go any further.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What...?"
     },
     {
-        "text": "What...?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What happened here?"
     },
     {
-        "text": "What happened here?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1,
+            "loop": true,
+            "channel": "s"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1,
-        "loop": true,
-        "channel": "s"
+        "command": "stopsound",
+        "params": {
+            "channel": "s",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "s",
-        "fadetime": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "background",
+        "params": {
+            "image": "66_g15_ursusvillage_ruins",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "66_g15_ursusvillage_ruins",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "animtext",
+        "params": {
+            "id": "at1",
+            "name": "group_location_stamp",
+            "style": "avg_only_heavy",
+            "pos": "-400,-200",
+            "block": false
+        },
+        "text": "<p=1>Far North, Ursus</>"
     },
     {
-        "text": "<p=1>Far North, Ursus</>",
-        "tag": "animtext",
-        "id": "at1",
-        "name": "group_location_stamp",
-        "style": "avg_only_heavy",
-        "pos": "-400,-200",
-        "block": false
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "animtextclean"
     },
     {
-        "tag": "animtextclean"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1",
-        "duration": 1,
-        "isblock": true
+        "command": "name",
+        "value": "Eloysius",
+        "text": "This village is the closest to where the miners abandoned their vehicles. I thought we might be able to ask around..."
     },
     {
-        "text": "This village is the closest to where the miners abandoned their vehicles. I thought we might be able to ask around...",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Hard to tell if anyone's still alive. The burn marks on the fence look recent."
     },
     {
-        "text": "Hard to tell if anyone's still alive. The burn marks on the fence look recent.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#5$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#5$1"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "We're one step too late... again!"
     },
     {
-        "text": "We're one step too late... again!",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
-    },
-    {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Amiya keeps walking, until the quiet ruins are plain in view."
@@ -179,768 +199,906 @@
         "text": "Amiya feels a brief daze, then worry, as memories of a similar scene flash back into her mind."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "Mantra, we\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Mantra, we\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#2$1"
+        }
     },
     {
-        "text": "(Shakes head)",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "(Shakes head)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#8"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#8"
+        }
     },
     {
-        "text": "I'll take a team and search for survivors.",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "I'll take a team and search for survivors."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "I'll go too.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'll go too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#8"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#8"
+        }
     },
     {
-        "text": "We'll be fine, and we'll be back soon.",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "We'll be fine, and we'll be back soon."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "No, let's go together and split up over there.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No, let's go together and split up over there."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_081",
-        "posfrom": "200,0",
-        "posto": "0,0",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_081",
+            "posfrom": "200,0",
+            "posto": "0,0",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "I think I see someone...",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "I think I see someone..."
     },
     {
-        "text": "Hello! We're a rescue team! We're here to help!",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "Hello! We're a rescue team! We're here to help!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_081"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_081"
+        }
     },
     {
-        "text": "...!",
-        "tag": "name",
-        "value": "Villager"
+        "command": "name",
+        "value": "Villager",
+        "text": "...!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1,
-        "loop": true,
-        "channel": "sn"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "sn",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "sn",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#5",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#5",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "Do you live in this village? What happened here\u2014",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "Do you live in this village? What happened here\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_081"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_081"
+        }
     },
     {
-        "text": "<i>Govno</i>! <i>Govno</i>!",
-        "tag": "name",
-        "value": "Villager"
+        "command": "name",
+        "value": "Villager",
+        "text": "<i>Govno</i>! <i>Govno</i>!"
     },
     {
-        "text": "Again!",
-        "tag": "name",
-        "value": "Villager"
+        "command": "name",
+        "value": "Villager",
+        "text": "Again!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#10"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#10"
+        }
     },
     {
-        "text": "I did say we were a rescue team, didn't I? Was my Ursine weird?",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "I did say we were a rescue team, didn't I? Was my Ursine weird?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "No, he's just... afraid. I can sense it.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No, he's just... afraid. I can sense it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#8"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#8"
+        }
     },
     {
-        "text": "He must live around this place, though, if he showed up here.",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "He must live around this place, though, if he showed up here."
     },
     {
-        "text": "Should we follow him?",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "Should we follow him?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#3$1"
+        }
     },
     {
-        "text": "(Shakes head)",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "(Shakes head)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "Let's not. We don't want to frighten them.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Let's not. We don't want to frighten them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "Who's there?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Who's there?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1,
-        "loop": true,
-        "channel": "sn"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "sn",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "sn",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#7$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#7$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Oh!",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "Oh!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "Careful\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Careful\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#7$1"
+        }
     },
     {
-        "text": "I-I'm sorry!",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "I-I'm sorry!"
     },
     {
-        "text": "I wasn't, following you, on purpose!",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "I wasn't, following you, on purpose!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#8$1"
+        }
     },
     {
-        "text": "Your clothes, they're like hers, so...",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "Your clothes, they're like hers, so..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "Our clothes? Do you mean this symbol?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Our clothes? Do you mean this symbol?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#2$1"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "(Nods)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "What's the name of this woman you're talking about?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What's the name of this woman you're talking about?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#1$1"
+        }
     },
     {
-        "text": "S-Serafina...",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "S-Serafina..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$1"
+        }
     },
     {
-        "text": "Raidian's real name.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Raidian's real name."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_401_elysm_na_1#8"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_401_elysm_na_1#8"
+        }
     },
     {
-        "text": "Is this Serafina a short Liberi with four arms?",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "Is this Serafina a short Liberi with four arms?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#7$1"
+        }
     },
     {
-        "text": "You... know her?",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "You... know her?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$1"
+        }
     },
     {
-        "text": "Yes! She's our friend, and we've been looking for her.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Yes! She's our friend, and we've been looking for her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "What's your name? Can you take us to Serafina?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What's your name? Can you take us to Serafina?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#2$1"
+        }
     },
     {
-        "text": "I'm... Vetochki.",
-        "tag": "name",
-        "value": "Young Infected"
+        "command": "name",
+        "value": "Young Infected",
+        "text": "I'm... Vetochki."
     },
     {
-        "text": "Follow me.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Follow me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "gridbg",
-        "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2",
-        "solidwidth": "1280/1280/1280/1280",
-        "solidheight": "720/720/720/720",
-        "x": -105,
-        "fadetime": 1
+        "command": "gridbg",
+        "params": {
+            "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2",
+            "solidwidth": "1280/1280/1280/1280",
+            "solidheight": "720/720/720/720",
+            "x": -105,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 60,
-        "yFrom": 720,
-        "yTo": 360,
-        "block": false
+        "command": "largebgtween",
+        "params": {
+            "duration": 60,
+            "yfrom": 720,
+            "y": 360,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0,
-        "loop": true,
-        "channel": "sn"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0,
+            "loop": true,
+            "channel": "sn"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "sn",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "sn",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "A fire, broke out. The others are, outside the village.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "A fire, broke out. The others are, outside the village."
     },
     {
-        "text": "Serafina was, helping us. Without her, we couldn't have, gotten here.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Serafina was, helping us. Without her, we couldn't have, gotten here."
     },
     {
-        "text": "You're miners from the Central Mining District?",
-        "tag": "name",
-        "value": "Elysium"
+        "command": "name",
+        "value": "Elysium",
+        "text": "You're miners from the Central Mining District?"
     },
     {
-        "text": "Yes. You're here, and you say you'll help. Thank goodness...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Yes. You're here, and you say you'll help. Thank goodness..."
     },
     {
-        "text": "Now, we can live\u2014",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Now, we can live\u2014"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "text": "Here we are. Just ahead!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Here we are. Just ahead!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "sn",
-        "fadetime": 3
+        "command": "stopsound",
+        "params": {
+            "channel": "sn",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "gridbg"
+        "command": "gridbg"
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Who's there...?",
-        "tag": "name",
-        "value": "Haggard Miner"
+        "command": "name",
+        "value": "Haggard Miner",
+        "text": "Who's there...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#7$1",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#7$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "Dyadya Volya? You still, have a fever... don't sit, at the door!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Dyadya Volya? You still, have a fever... don't sit, at the door!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "I'm fine. No fever. The wound on my leg doesn't hurt anymore when I tie it up with clothes.",
-        "tag": "name",
-        "value": "Haggard Miner"
+        "command": "name",
+        "value": "Haggard Miner",
+        "text": "I'm fine. No fever. The wound on my leg doesn't hurt anymore when I tie it up with clothes."
     },
     {
-        "text": "And who are these people?",
-        "tag": "name",
-        "value": "Haggard Miner"
+        "command": "name",
+        "value": "Haggard Miner",
+        "text": "And who are these people?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#2$1"
+        }
     },
     {
-        "text": "They know, Serafina...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "They know, Serafina..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "We come from the same pharmaceutical company. We've come to help\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We come from the same pharmaceutical company. We've come to help\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Amiya?",
-        "tag": "name",
-        "value": "Surprised Voice"
+        "command": "name",
+        "value": "Surprised Voice",
+        "text": "Amiya?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.05,
-        "channel": "f",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.05,
+            "channel": "f",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_woodfloor_fts",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_woodfloor_fts",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#9$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#9$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Amiya... it's really you!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Amiya... it's really you!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#1$1"
+        }
     },
     {
-        "text": "How did you find this place?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "How did you find this place?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$1"
+        }
     },
     {
-        "text": "It's really you...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's really you..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#11$1"
+        }
     },
     {
-        "text": "We finally found you!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We finally found you!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 1.02,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 1.02,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "She runs up to her colleague and gives her a big hug."
@@ -952,1176 +1110,1378 @@
         "text": "Nothing beats the joy of reunion, and the comfort in seeing someone whom you have been worried about for a while."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#9$1"
+        }
     },
     {
-        "text": "I wasn't sure when the girl said your name, but now\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I wasn't sure when the girl said your name, but now\u2014"
     },
     {
-        "text": "I'm so glad.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm so glad."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "Is everything alright, Raidian?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Is everything alright, Raidian?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#1$1"
+        }
     },
     {
-        "text": "I'm fine. Sorry for making you worried.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'm fine. Sorry for making you worried."
     },
     {
-        "text": "Team Raidian, all nine members accounted for.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Team Raidian, all nine members accounted for."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#9$1"
+        }
     },
     {
-        "text": "Thank goodness...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Thank goodness..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "How did you find this place? Did someone find the markings I left behind?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "How did you find this place? Did someone find the markings I left behind?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_highheeledshoe_carpet_fts",
-        "volume": 1,
-        "loop": true,
-        "channel": "hi"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_highheeledshoe_carpet_fts",
+            "volume": 1,
+            "loop": true,
+            "channel": "hi"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "hi",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "hi",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#8$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#8$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "A wise course of action.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "A wise course of action."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#8$1"
+        }
     },
     {
-        "text": "Mantra! I knew you would be with them.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Mantra! I knew you would be with them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "The Doctor, Mon3tr, and I came when we lost contact with you.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The Doctor, Mon3tr, and I came when we lost contact with you."
     },
     {
-        "text": "The Doctor is with a researcher that we found, waiting for her to wake up. We'll meet up once communications are restored.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The Doctor is with a researcher that we found, waiting for her to wake up. We'll meet up once communications are restored."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#9$1"
+        }
     },
     {
-        "text": "The Doctor is here in Ursus too?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "The Doctor is here in Ursus too?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "I think we all have a lot of questions to ask each other...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I think we all have a lot of questions to ask each other..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "...Rankin left with part of the group after the fire was put out.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "...Rankin left with part of the group after the fire was put out."
     },
     {
-        "text": "The ones here were unwilling or unable to follow, or villagers who lived here to begin with.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "The ones here were unwilling or unable to follow, or villagers who lived here to begin with."
     },
     {
-        "text": "I regret not being able to stop the events...",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I regret not being able to stop the events..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$1"
+        }
     },
     {
-        "text": "So that's what happened...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "So that's what happened..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "Is this Rankin linked to Reunion?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Is this Rankin linked to Reunion?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "No... as far as I can tell, he never made direct contact with Reunion. He simply believed there was a Reunion position on the Ursus-Kazimierz border.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "No... as far as I can tell, he never made direct contact with Reunion. He simply believed there was a Reunion position on the Ursus-Kazimierz border."
     },
     {
-        "text": "I've heard fugitive Infected in the Far North talking about it. Does Rhodes Island have any intel?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I've heard fugitive Infected in the Far North talking about it. Does Rhodes Island have any intel?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#2$1"
+        }
     },
     {
-        "text": "(Shakes head)",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "(Shakes head)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "You mean these people have nothing to do with Reunion? They're just flying a banner that they happened to come across?",
-        "tag": "name",
-        "value": "Young Voice"
+        "command": "name",
+        "value": "Young Voice",
+        "text": "You mean these people have nothing to do with Reunion? They're just flying a banner that they happened to come across?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "Who might you be?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Who might you be?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 6
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_armyboots_walk",
-        "volume": 1,
-        "loop": true,
-        "channel": "ar"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_armyboots_walk",
+            "volume": 1,
+            "loop": true,
+            "channel": "ar"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "ar",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "ar",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Eloysius Gorchekova, Sergeant of the Imperial Guard, Vanguard Battalion. You can call me Eloysius.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Eloysius Gorchekova, Sergeant of the Imperial Guard, Vanguard Battalion. You can call me Eloysius."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "What is the Imperial Guard doing here?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What is the Imperial Guard doing here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#8$1"
+        }
     },
     {
-        "text": "Eloysius came to investigate rumors of mutated Infected in the Central Mining District. She helped us get into the district.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Eloysius came to investigate rumors of mutated Infected in the Central Mining District. She helped us get into the district."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#1$1"
+        }
     },
     {
-        "text": "It's a pleasure to meet you, Gospozha Raidian.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "It's a pleasure to meet you, Gospozha Raidian."
     },
     {
-        "text": "I am happy for your reunion, but time is short and I'll cut straight to the chase.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "I am happy for your reunion, but time is short and I'll cut straight to the chase."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "f",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "f",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$formal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$formal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "Were there any mutated Infected in this group of fugitive miners?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Were there any mutated Infected in this group of fugitive miners?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "Mutated?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Mutated?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "I'm sure you understand what I mean, as an operator of Rhodes Island.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "I'm sure you understand what I mean, as an operator of Rhodes Island."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "No... at least not the ones who stayed. We did not find any so-called mutated Infected when we examined them.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "No... at least not the ones who stayed. We did not find any so-called mutated Infected when we examined them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "That's strange... there's certainly something abnormal about these people. If there's nothing out of the ordinary with the ones who stayed, then we must hurry to catch up with the ones who left.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "That's strange... there's certainly something abnormal about these people. If there's nothing out of the ordinary with the ones who stayed, then we must hurry to catch up with the ones who left."
     },
     {
-        "text": "Did they tell you how they planned to proceed to the border? Or any other clues they left behind?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Did they tell you how they planned to proceed to the border? Or any other clues they left behind?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "I don't think I'm obliged to report anything to you.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I don't think I'm obliged to report anything to you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "I assure you that my sole purpose here is to discover the truth about the mutated Infected and bring about order.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "I assure you that my sole purpose here is to discover the truth about the mutated Infected and bring about order."
     },
     {
-        "text": "Deity Grypherburg seeks to protect the interests of the Infected.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Deity Grypherburg seeks to protect the interests of the Infected."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "I'm afraid I'm not convinced.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'm afraid I'm not convinced."
     },
     {
-        "text": "At the Tashkent Mines, at Chorna Prison... I never saw a single noble who stood up for the interests of the Infected.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "At the Tashkent Mines, at Chorna Prison... I never saw a single noble who stood up for the interests of the Infected."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#1$1"
+        }
     },
     {
-        "text": "Ah... so you're Ursine too? Third Army, I take it?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Ah... so you're Ursine too? Third Army, I take it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "That was a long time ago.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "That was a long time ago."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#10$1"
+        }
     },
     {
-        "text": "Very well... I accept that you have legitimate reasons for your dim opinion of this nation.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Very well... I accept that you have legitimate reasons for your dim opinion of this nation."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "Regardless, I am loyal to the motherland, and what you're trying to avoid lines up with what I'm trying to avoid, to an extent.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Regardless, I am loyal to the motherland, and what you're trying to avoid lines up with what I'm trying to avoid, to an extent."
     },
     {
-        "text": "The miners who left are headed towards the south. They will inevitably pass through Grypherburg on their way to the Kazimierzian border.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "The miners who left are headed towards the south. They will inevitably pass through Grypherburg on their way to the Kazimierzian border."
     },
     {
-        "text": "Whether they realize it or not, whatever their actual intentions are, they'll be treated as insurgents attempting to attack the capital, once they are discovered.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Whether they realize it or not, whatever their actual intentions are, they'll be treated as insurgents attempting to attack the capital, once they are discovered."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#6$1"
+        }
     },
     {
-        "text": "Only one end awaits them, in that event.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Only one end awaits them, in that event."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "I thought you were going to ask a question, not make a threat.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I thought you were going to ask a question, not make a threat."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "I'm just stating the truth. I would not have to be so solemn if Gospozha Raidian here would be frank and honest with me. I need to know how these miners left, and why they fled.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "I'm just stating the truth. I would not have to be so solemn if Gospozha Raidian here would be frank and honest with me. I need to know how these miners left, and why they fled."
     },
     {
-        "text": "Hiding the truth won't do you or them any good.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Hiding the truth won't do you or them any good."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "I see only a group of Infected who are only trying to survive. No one is in any position to denounce them.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I see only a group of Infected who are only trying to survive. No one is in any position to denounce them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#2$1"
+        }
     },
     {
-        "text": "You just won't listen, would you?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "You just won't listen, would you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#3$1"
+        }
     },
     {
-        "text": "Gospozha Amiya, we've traveled together for a while now. Could you perhaps help me persuade our strong-minded Liberi here?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Gospozha Amiya, we've traveled together for a while now. Could you perhaps help me persuade our strong-minded Liberi here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "There's something even more urgent before that, Eloysius.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "There's something even more urgent before that, Eloysius."
     },
     {
-        "text": "The miners and villagers here are in a dangerous situation. They have no supplies and nowhere to go. We can't just abandon them.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The miners and villagers here are in a dangerous situation. They have no supplies and nowhere to go. We can't just abandon them."
     },
     {
-        "text": "We must ensure their safety before talking about the next step.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We must ensure their safety before talking about the next step."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#3$1"
+        }
     },
     {
-        "text": "You don't have to worry about the villagers. I was planning to seek assistance from the Grand Duchess for the rebuilding of their village anyway. Her Imperial Highness has always been generous on such matters.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "You don't have to worry about the villagers. I was planning to seek assistance from the Grand Duchess for the rebuilding of their village anyway. Her Imperial Highness has always been generous on such matters."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "These miners, though... they're not a problem that a letter will solve.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "These miners, though... they're not a problem that a letter will solve."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "If you cannot offer assistance to them, then Rhodes Island will.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "If you cannot offer assistance to them, then Rhodes Island will."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#2$1"
+        }
     },
     {
-        "text": "Very well, I'll help you one more time, for the sake of our cooperation.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Very well, I'll help you one more time, for the sake of our cooperation."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#3$1"
+        }
     },
     {
-        "text": "We take the miners to Grypherburg.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "We take the miners to Grypherburg."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$1"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "Yes. We go to Deity Grypherburg and report to His Imperial Majesty the truth about the Infected mutation in the Central Mining District, turning these miners into witnesses.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Yes. We go to Deity Grypherburg and report to His Imperial Majesty the truth about the Infected mutation in the Central Mining District, turning these miners into witnesses."
     },
     {
-        "text": "This will give Grypherburg a reason to protect them, and intercept rather than eliminate the ones who left, until the investigation into the Grand Duchess has concluded, at least.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "This will give Grypherburg a reason to protect them, and intercept rather than eliminate the ones who left, until the investigation into the Grand Duchess has concluded, at least."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "And after that?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "And after that?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "I'll persuade the Chairman to request that His Imperial Majesty grant amnesty to these Infected, then ask Rhodes Island to intervene on the grounds of medical assistance.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "I'll persuade the Chairman to request that His Imperial Majesty grant amnesty to these Infected, then ask Rhodes Island to intervene on the grounds of medical assistance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "Or maybe you only need these miners for now, and you'll have no further use of them after you bring the Grand Duchess down.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Or maybe you only need these miners for now, and you'll have no further use of them after you bring the Grand Duchess down."
     },
     {
-        "text": "Otherwise, you have no reason to spare these Infected. I know Ursus. Whatever warmth the Tsar wants to bring to this cold soil... the Infected will never be part of it.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Otherwise, you have no reason to spare these Infected. I know Ursus. Whatever warmth the Tsar wants to bring to this cold soil... the Infected will never be part of it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#6$1"
+        }
     },
     {
-        "text": "Take that back.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Take that back."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "I'm just stating the truth.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'm just stating the truth."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#5$1"
+        }
     },
     {
-        "text": "How dare you\u2014",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "How dare you\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "\u2014Maybe that's true for Ursus, but I've seen enough of Eloysius that I'm willing to trust her.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "\u2014Maybe that's true for Ursus, but I've seen enough of Eloysius that I'm willing to trust her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "Amiya?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Amiya?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$1"
+        }
     },
     {
-        "text": "Sorry, Eloysius. Raidian's simply expressing her concerns. I'm sure we all know how Ursus has historically approached the Infected problem.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Sorry, Eloysius. Raidian's simply expressing her concerns. I'm sure we all know how Ursus has historically approached the Infected problem."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "(Nods)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#1$1"
+        }
     },
     {
-        "text": "Very well... thank you for your trust, even if it's only towards me.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Very well... thank you for your trust, even if it's only towards me."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Guardswoman bows at them exaggeratedly, and casts one last provoking look at Raidian."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "...I have one final question.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "...I have one final question."
     },
     {
-        "text": "Are you authorized to do this, <i>Sergeant?</i>",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Are you authorized to do this, <i>Sergeant?</i>"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#1$1"
+        }
     },
     {
-        "text": "Maybe you've been away from Grypherburg too long to know the weight that the name Gorchekova carries there.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Maybe you've been away from Grypherburg too long to know the weight that the name Gorchekova carries there."
     },
     {
-        "text": "On the name of my house\u2014",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "On the name of my house\u2014"
     },
     {
-        "text": "You don't need to worry about anything else, other than providing medical assistance.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "You don't need to worry about anything else, other than providing medical assistance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "......"
     },
     {
-        "text": "...You're telling the truth.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "...You're telling the truth."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#12$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#12$1"
+        }
     },
     {
-        "text": "Of course I am.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Of course I am."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#1$1"
+        }
     },
     {
-        "text": "Even if the plan works, we must get the miners to agree first.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Even if the plan works, we must get the miners to agree first."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "Yes. I'll go.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Yes. I'll go."
     },
     {
-        "text": "I'll explain the situation to them and ask what they think.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'll explain the situation to them and ask what they think."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_warmbonfire_loop",
-        "volume": 0,
-        "loop": true,
-        "channel": "wa"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_warmbonfire_loop",
+            "volume": 0,
+            "loop": true,
+            "channel": "wa"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.3,
-        "channel": "wa",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.3,
+            "channel": "wa",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "There you are, Vetochki...",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "There you are, Vetochki..."
     },
     {
-        "text": "There's something that we need to tell everyone. We have a choice: leave here and go to Deity Grypherburg together\u2014",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "There's something that we need to tell everyone. We have a choice: leave here and go to Deity Grypherburg together\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Grypherburg?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Grypherburg?"
     },
     {
-        "text": "Mama said, black locusts, and cherry trees, grow on the streets, of Grypherburg.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Mama said, black locusts, and cherry trees, grow on the streets, of Grypherburg."
     },
     {
-        "text": "The sky, is bright, the fowlbeasts, build nests, they don't, fly away.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "The sky, is bright, the fowlbeasts, build nests, they don't, fly away."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...There's spring there. That, Grypherburg?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "...There's spring there. That, Grypherburg?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Yes, that Grypherburg. Do you want to go?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Yes, that Grypherburg. Do you want to go?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#2$1",
+            "focus": "l"
+        }
     },
     {
+        "command": "name",
         "text": "Yes! I wanna\u2014",
-        "tag": "multiline",
-        "name": "Vetochki"
+        "value": "Vetochki"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "action": "shake",
-        "afrom": 1,
-        "ato": 1,
-        "power": 3,
-        "times": 30,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "action": "shake",
+            "afrom": 1,
+            "ato": 1,
+            "power": 3,
+            "duration": 0.3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#3$1",
+            "focus": "l"
+        }
     },
     {
+        "command": "name",
         "text": "*cough*!",
-        "tag": "multiline",
-        "name": "Vetochki",
-        "end": true
+        "value": "Vetochki"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "n"
+        }
     },
     {
         "text": "She is so eager that she lets cold air get into her throat, causing pain from the dryness."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I know you do. But what about the others?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I know you do. But what about the others?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I've never, left the mines. I...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "I've never, left the mines. I..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "We have to ask the others whether they're like you, if they're willing to trust us and go to Grypherburg.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "We have to ask the others whether they're like you, if they're willing to trust us and go to Grypherburg."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I-I'll ask. I know, they will!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "I-I'll ask. I know, they will!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Before you... came back, Darya said, we can't, get away.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Before you... came back, Darya said, we can't, get away."
     },
     {
-        "text": "Even if we, wanted to, go back, people outside would, stop us. They'll... burn us, to death.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Even if we, wanted to, go back, people outside would, stop us. They'll... burn us, to death."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I'll tell her, it's not, like that.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "I'll tell her, it's not, like that."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You're right. It's not like that.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "You're right. It's not like that."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Darya! Darya?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Darya! Darya?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Dazed Miner"
+        "command": "name",
+        "value": "Dazed Miner",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Darya! We'll go, to Deity Grypherburg! Serafina has, a way!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Darya! We'll go, to Deity Grypherburg! Serafina has, a way!"
     },
     {
-        "text": "We'll all, go!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "We'll all, go!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...Darya?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "...Darya?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The girl is sitting straight with her back against the wall. Her eyes are closed, exhaustion upon her young face like shadows."
@@ -2130,91 +2490,107 @@
         "text": "She still breaths, but she is not doing any more than the minimum required to live."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#5$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#5$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No... we can't... stay here...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "No... we can't... stay here..."
     },
     {
-        "text": "Come with me\u2014hang on, I'll carry, you!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Come with me\u2014hang on, I'll carry, you!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Dazed Miner"
+        "command": "name",
+        "value": "Dazed Miner",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4207_branch_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4207_branch_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Darya...!",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Darya...!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1730_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1730_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Probably just tired. Let her rest, we'll find others\u2014",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Probably just tired. Let her rest, we'll find others\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Vetochki looks around, hoping that her friend's silence is just a coincidence."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "Dyadya Volya...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Dyadya Volya..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "She walks over and shakes them one by one, only to find that their backs are all straight and stiff, just like Darya."
@@ -2226,17 +2602,19 @@
         "text": "Vetochki looks up, and a word slips from her mouth."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#9$1"
+        }
     },
     {
-        "text": "...Babushka?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "...Babushka?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Raidian follows Vetochki's fearful gaze."
@@ -2245,233 +2623,274 @@
         "text": "An ancient voice fills the space in the direction that they are all looking."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1964_1#1$1",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1964_1#1$1",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "Welcome...",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "Welcome..."
     },
     {
-        "text": "The one who Ursus remembers.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "The one who Ursus remembers."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The figure's face and eyes are concealed by a hood, but somehow, Raidian has a feeling that the figure is not looking at her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "What did you say?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What did you say?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Sorry for the interruption, but you're taking too long.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Sorry for the interruption, but you're taking too long."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_armyboots_walk",
-        "volume": 1,
-        "loop": true,
-        "channel": "ar"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_armyboots_walk",
+            "volume": 1,
+            "loop": true,
+            "channel": "ar"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "ar",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "ar",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Everyone! I have a proposal that can ensure your safety, to the greatest extent possible.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Everyone! I have a proposal that can ensure your safety, to the greatest extent possible."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "<i>Sergeant\u2014</i>",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "<i>Sergeant\u2014</i>"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "Leave the Far North with us and come to Deity Grypherburg.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Leave the Far North with us and come to Deity Grypherburg."
     },
     {
-        "text": "The State Council will protect you, as long as you are willing to testify against the Grand Duchess.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "The State Council will protect you, as long as you are willing to testify against the Grand Duchess."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#5$1"
+        }
     },
     {
-        "text": "His Imperial Majesty must know what happened here. Ursus must know what happened here!",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "His Imperial Majesty must know what happened here. Ursus must know what happened here!"
     },
     {
-        "text": "Once everything is settled, Rhodes Island, where this lady you all know came from, will provide further treatment.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Once everything is settled, Rhodes Island, where this lady you all know came from, will provide further treatment."
     },
     {
-        "text": "Now, anyone willing to come with me\u2014",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Now, anyone willing to come with me\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "They're not listening.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "They're not listening."
     },
     {
-        "text": "The electrical signals coming from them...",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "The electrical signals coming from them..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "wa",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "wa",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_signlntrfrnc",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_signlntrfrnc",
+            "volume": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_signalInterference",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_signalInterference",
+            "layer": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_radiodisturb_loop",
-        "volume": 1,
-        "loop": true,
-        "channel": "o"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_radiodisturb_loop",
+            "volume": 1,
+            "loop": true,
+            "channel": "o"
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_glitch",
-        "layer": 2
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_glitch",
+            "layer": 2
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_bat1_act15main_intro",
-        "key": "$m_bat1_act15main_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_bat1_act15main_intro",
+            "key": "$m_bat1_act15main_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "'Meditate.'",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'Meditate.'",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Meditate.'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "Suddenly, a strange coldness penetrates Raidian's cerebral cortex, virtually nailing her to the ground."
@@ -2480,89 +2899,107 @@
         "text": "She is unwilling to offer any further warnings, even if she was just about to do so just a moment ago."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#6$1"
+        }
     },
     {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "\u2014!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#11$1"
+        }
     },
     {
-        "text": "What...?",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "What...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_recorderglitch",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_recorderglitch",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
         "text": "Even the most chaotic electrical signal should have been benign to her, but now she turns it into a knife to keep herself lucid."
@@ -2571,354 +3008,420 @@
         "text": "Raidian shuts out her sensations with Originium Arts, attempting to break the shapeless restraint."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown2"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown2"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#11$1"
+        }
     },
     {
-        "text": "What are you\u2014",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "What are you\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Argh\u2014",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Argh\u2014"
     },
     {
-        "text": "We must\u2014go!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "We must\u2014go!"
     },
     {
-        "text": "Take\u2014everyone\u2014leave!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Take\u2014everyone\u2014leave!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "'Mantra... is this the name you go by now?'",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'Mantra... is this the name you go by now?'",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Mantra... is this the name you go by now?'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "stopsound",
-        "channel": "o",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "o",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "background",
-        "image": "66_g15_ursusvillage_ruins",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "66_g15_ursusvillage_ruins",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4204_mantra_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4204_mantra_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#2$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#2$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Mantra, I sense cold and... pain?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Mantra, I sense cold and... pain?"
     },
     {
-        "text": "A vortex, inviting me to step inside...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "A vortex, inviting me to step inside..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4204_mantra_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4204_mantra_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Amiya, do not look! Do not listen!",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Amiya, do not look! Do not listen!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I\u2014I\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I\u2014I\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "action": "shake",
-        "focus": "r",
-        "power": 8,
-        "times": 100,
-        "isblock": true,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "action": "shake",
+            "focus": "r",
+            "power": 8,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Ahh!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Ahh!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4204_mantra_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4204_mantra_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Shut out your senses with Arts, Amiya.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Shut out your senses with Arts, Amiya."
     },
     {
-        "text": "Same for you, Elysium. Stay here while I find out what's happening.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Same for you, Elysium. Stay here while I find out what's happening."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Mantra!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Mantra!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowbootwalk",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowbootwalk",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_radiodisturb_loop",
-        "volume": 0.5,
-        "loop": true,
-        "channel": "o"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_radiodisturb_loop",
+            "volume": 0.5,
+            "loop": true,
+            "channel": "o"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_dimnlspamb",
-        "volume": 0,
-        "loop": true,
-        "channel": "di"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_dimnlspamb",
+            "volume": 0,
+            "loop": true,
+            "channel": "di"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.5,
-        "channel": "di",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.5,
+            "channel": "di",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_glitch",
-        "layer": 2
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_glitch",
+            "layer": 2
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Stay back! This is not normal. They can't hear us speak\u2014",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Stay back! This is not normal. They can't hear us speak\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_highheeledshoe_carpet_fts",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_highheeledshoe_carpet_fts",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#4$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#4$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Whatever it is...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Whatever it is..."
     },
     {
-        "text": "It's calling to me.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "It's calling to me."
     },
     {
-        "text": "And I must face it.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "And I must face it."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Mantra closes her eyes, and begins to picture the closed space in her mind like a mental blueprint."
@@ -2930,157 +3433,185 @@
         "text": "At least, that is what should have happened."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "o",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "o",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "avgdisplay",
-        "id": 1,
-        "name": "act3mainss_01",
-        "style": "animekv",
-        "slot": "cgover",
-        "x": -50,
-        "y": -30,
-        "scalex": 1.05,
-        "scaley": 1.05,
-        "entryfrom": 0.6,
-        "entryto": 0.8,
-        "duration": 5,
-        "block": false
+        "command": "avgdisplay",
+        "params": {
+            "id": 1,
+            "name": "act3mainss_01",
+            "style": "animekv",
+            "slot": "cgover",
+            "x": -50,
+            "y": -30,
+            "scalex": 1.05,
+            "scaley": 1.05,
+            "entryfrom": 0.6,
+            "entryto": 0.8,
+            "duration": 5,
+            "block": false
+        }
     },
     {
-        "tag": "avgdisplay",
-        "id": 1,
-        "name": "act3mainss_01",
-        "style": "animekv",
-        "slot": "cgover",
-        "xto": 0,
-        "yto": 0,
-        "scalexto": 1,
-        "scaleyto": 1,
-        "duration": 20
+        "command": "avgdisplay",
+        "params": {
+            "id": 1,
+            "name": "act3mainss_01",
+            "style": "animekv",
+            "slot": "cgover",
+            "x": 0,
+            "y": 0,
+            "scalex": 1,
+            "scaley": 1,
+            "duration": 20
+        }
     },
     {
-        "tag": "image",
-        "image": "66_i28",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "66_i28",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "di",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "di",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "text": "No...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "No..."
     },
     {
-        "text": "There is only...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "There is only..."
     },
     {
-        "text": "Silence?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Silence?"
     },
     {
-        "text": "...?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.6,
-        "channel": "di",
-        "fadetime": 3
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.6,
+            "channel": "di",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "avgdisplay",
-        "id": 1
+        "command": "avgdisplay",
+        "params": {
+            "id": 1
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
         "text": "Red."
@@ -3095,376 +3626,447 @@
         "text": "Then, she opens her eyes."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.3,
-        "channel": "di",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.3,
+            "channel": "di",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "imgeffect",
-        "name": "$ib_screendistortion",
-        "image": "66_i09"
+        "command": "imgeffect",
+        "params": {
+            "name": "$ib_screendistortion",
+            "image": "66_i09"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$lab_intro",
-        "key": "$lab_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$lab_intro",
+            "key": "$lab_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>(Hums)</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>(Hums)</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>(Hums)</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>What makes us equal?</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>What makes us equal?</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>What makes us equal?</color>"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "Perseverance.",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "Perseverance."
     },
     {
-        "text": "Faith.",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "Faith."
     },
     {
-        "text": "Pain.",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "Pain."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>No, no, no. It is love.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>No, no, no. It is love.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>No, no, no. It is love.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>What needs to be saved?</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>What needs to be saved?</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>What needs to be saved?</color>"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "The soul?",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "The soul?"
     },
     {
-        "text": "The soul.",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "The soul."
     },
     {
-        "text": "The soul!",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "The soul!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>Yes, yes, yes. The soul.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>Yes, yes, yes. The soul.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>Yes, yes, yes. The soul.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>It is not our body that needs to be saved, but our souls.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>It is not our body that needs to be saved, but our souls.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>It is not our body that needs to be saved, but our souls.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>Love and the soul are one and whole. Love makes us endure, makes us believe, makes us persevere.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>Love and the soul are one and whole. Love makes us endure, makes us believe, makes us persevere.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>Love and the soul are one and whole. Love makes us endure, makes us believe, makes us persevere.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>And we shall meditate and share in the pain of others.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>And we shall meditate and share in the pain of others.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>And we shall meditate and share in the pain of others.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>Make love pure, save the soul.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>Make love pure, save the soul.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>Make love pure, save the soul.</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>For you, for him, for all who endure pain...</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>For you, for him, for all who endure pain...</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>For you, for him, for all who endure pain...</color>"
     },
     {
-        "tag": "subtitle",
-        "text": "<color=#FF4200>Desire not your own life, decide not your own death.</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "<color=#FF4200>Desire not your own life, decide not your own death.</color>",
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>Desire not your own life, decide not your own death.</color>"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "I endure.",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "I endure."
     },
     {
-        "text": "I believe!",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "I believe!"
     },
     {
-        "text": "I persevere...",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "I persevere..."
     },
     {
-        "text": "<i>Gosudar-batyushka</i>\u2014",
-        "tag": "name",
-        "value": "Miner"
+        "command": "name",
+        "value": "Miner",
+        "text": "<i>Gosudar-batyushka</i>\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "<color=#FF4200>'Gosudar-Yurodstvo!'</color>",
-        "x": 300,
-        "y": 350,
-        "alignment": "center",
-        "duration": 1,
-        "size": 26,
-        "delay": 0.04,
-        "width": 700
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 300,
+            "y": 350,
+            "alignment": "center",
+            "size": 26,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "<color=#FF4200>'Gosudar-Yurodstvo!'</color>"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 2,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopsound",
-        "channel": "di",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "di",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "imgeffect"
+        "command": "imgeffect"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

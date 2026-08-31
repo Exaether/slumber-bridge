@@ -1,52 +1,54 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "bg_snow_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_snow_2",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$distressed_intro",
+            "key": "$distressed_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$distressed_intro",
-        "key": "$distressed_loop",
-        "volume": 0.6
-    },
-    {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Who ever thought it'd snow like this?"
@@ -58,14 +60,18 @@
         "text": "How many plants would still be alive after ten days? One dares not think."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_3"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_3"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_1",
-        "delay": 0.15,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_1",
+            "delay": 0.15,
+            "channel": 2
+        }
     },
     {
         "text": "A musbeast stumbles around, barging into the silent field of wheat."
@@ -74,27 +80,33 @@
         "text": "Even the sparse crops in front of it are an unexpected joy. It sniffs around carefully, calculating how much it needs to tide it over and how much would be left to take back to the cave to feed its kin."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 10,
-        "ystrength": 30,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 10,
+            "ystrength": 30,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_frmrwkhrd"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_frmrwkhrd"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_smallbeastscream",
-        "delay": 0.5,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_smallbeastscream",
+            "delay": 0.5,
+            "channel": 1
+        }
     },
     {
         "text": "Until a thick metal hoe crashes down on its spine."
@@ -109,160 +121,188 @@
         "text": "With a long sigh, the farmer digs a hole in the ground and buries the beast's body."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Poor thing.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Poor thing."
     },
     {
-        "text": "Hardship strikes at will. Such occurrences are common.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Hardship strikes at will. Such occurrences are common."
     },
     {
-        "text": "If the wheat dies in this freeze, how many people will perish next year?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "If the wheat dies in this freeze, how many people will perish next year?"
     },
     {
-        "text": "A great many.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "A great many."
     },
     {
-        "text": "But there will also be many who come to their aid, and a lot of them will survive.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "But there will also be many who come to their aid, and a lot of them will survive."
     },
     {
-        "text": "Life itself will not cease.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Life itself will not cease."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "47_g16_beautifulland",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g16_beautifulland",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$prisonbreak_intro",
-        "key": "$prisonbreak_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$prisonbreak_intro",
+            "key": "$prisonbreak_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$tactfulboost"
+        "command": "playsound",
+        "params": {
+            "key": "$tactfulboost"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 18,
-        "ystrength": 26,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 18,
+            "ystrength": 26,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_imp_ancientsword_d"
+        "command": "playsound",
+        "params": {
+            "key": "$p_imp_ancientsword_d"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
         "text": "The firmament is as a veil."
@@ -271,2154 +311,2528 @@
         "text": "The ethereal satin-silk seems to be infinitely weighty, firmly separating the two combatants and pressing towards them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 18,
-        "ystrength": 6,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 18,
+            "ystrength": 6,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jghtket"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jghtket"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Nian, let's wrap it up.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Nian, let's wrap it up."
     },
     {
-        "text": "It took a considerable amount of effort to build this heart for you. It would be a terrible shame to see it torn apart in this conflict.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "It took a considerable amount of effort to build this heart for you. It would be a terrible shame to see it torn apart in this conflict."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You aren't in a position to be making small talk yourself. I nearly took your head off with that firecracker blast just now.",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "You aren't in a position to be making small talk yourself. I nearly took your head off with that firecracker blast just now."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Where'd all that destructive might of yours go? Why don't you make a massive pair of scissors and cut his little fabrications to bits?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "Where'd all that destructive might of yours go? Why don't you make a massive pair of scissors and cut his little fabrications to bits?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You put some effort into it too! He's about to turn your painting into papercraft!",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "You put some effort into it too! He's about to turn your painting into papercraft!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Oh, it's my fault now?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "Oh, it's my fault now?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Cut me some slack here, he just turned that big ol' firecracker I built into a pile of threads. Has he always been able to do stuff like that?",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "Cut me some slack here, he just turned that big ol' firecracker I built into a pile of threads. Has he always been able to do stuff like that?"
     },
     {
-        "text": "Didn't think he'd ever have the will to work on his powers over the years.",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "Didn't think he'd ever have the will to work on his powers over the years."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But the question is, why does he seem to have such a good grasp of what our powers are...?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "But the question is, why does he seem to have such a good grasp of what our powers are...?"
     },
     {
-        "text": "Hold on, is it really just one guy we're up against?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "Hold on, is it really just one guy we're up against?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#3$1"
+        }
     },
     {
-        "text": "Time's almost up...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Time's almost up..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "I truly would like to stick around to chat more, as rare as our reunions are. However, the unfortunate reality is that I am short on time, and must bid you farewell.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I truly would like to stick around to chat more, as rare as our reunions are. However, the unfortunate reality is that I am short on time, and must bid you farewell."
     },
     {
-        "text": "I really wish I didn't have to use this. The next time we meet, I will have to make amends.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I really wish I didn't have to use this. The next time we meet, I will have to make amends."
     },
     {
-        "text": "If we meet again, that is...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "If we meet again, that is..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jghtken"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jghtken"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lmrgcwnd"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lmrgcwnd"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "r": 0,
-        "g": 1,
-        "b": 0.3,
-        "fadetime": 1.5,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "r": 0,
+            "g": 1,
+            "b": 0.3,
+            "fadetime": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "47_g10_fairyfarmland_ex",
-        "screenadapt": "coverall",
-        "fadetime": 0
+        "command": "background",
+        "params": {
+            "image": "47_g10_fairyfarmland_ex",
+            "screenadapt": "coverall",
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_grass"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_grass"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "To think you'd strike down your own sister. What a disgrace.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "To think you'd strike down your own sister. What a disgrace."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Shu?",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "Shu?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I didn't think you'd just go and disappear altogether, but... Are you alright?",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "I didn't think you'd just go and disappear altogether, but... Are you alright?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I sincerely hope you weren't just trying to scare us on purpose...",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "I sincerely hope you weren't just trying to scare us on purpose..."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "Think of it as a much-needed rest. Sorry for worrying you.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Think of it as a much-needed rest. Sorry for worrying you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "And here I was wanting to see my little brother again, lo and behold the scene I come back to. Does he really not see this place as home anymore?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "And here I was wanting to see my little brother again, lo and behold the scene I come back to. Does he really not see this place as home anymore?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#7$1"
+        }
     },
     {
-        "text": "...My dear sister.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "...My dear sister."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "I know that look. That's the look on your face whenever you've done something wrong.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "I know that look. That's the look on your face whenever you've done something wrong."
     },
     {
-        "text": "How long has it been?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "How long has it been?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#2$1"
+        }
     },
     {
-        "text": "...Sixty-seven years.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "...Sixty-seven years."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "Then, you'll have to stay for dinner. If you have anything to say, you can say it at the table.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Then, you'll have to stay for dinner. If you have anything to say, you can say it at the table."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1"
+        }
     },
     {
-        "text": "I'm sorry, my dear sister. I can't listen to you this time.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I'm sorry, my dear sister. I can't listen to you this time."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#2$1"
+        }
     },
     {
-        "text": "So, you're taking orders from someone else now, huh...?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "So, you're taking orders from someone else now, huh...?"
     },
     {
-        "text": "The one who's been behind the curtain this whole time. How much longer does he plan to stay hidden?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "The one who's been behind the curtain this whole time. How much longer does he plan to stay hidden?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "Whatever it is, wouldn't it be better to tell me face-to-face?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Whatever it is, wouldn't it be better to tell me face-to-face?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_cnclouds",
-        "layer": 1,
-        "fade": true,
-        "fadetime": 2
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_cnclouds",
+            "layer": 1,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_reedmarshes",
-        "volume": 0,
-        "loop": true,
-        "channel": "reed"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_reedmarshes",
+            "volume": 0,
+            "loop": true,
+            "channel": "reed"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "fadetime": 1,
-        "channel": "reed"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "fadetime": 1,
+            "channel": "reed"
+        }
     },
     {
-        "tag": "background",
-        "image": "47_g9_fairyfarmland",
-        "screenadapt": "coverall",
-        "xScale": 1.03,
-        "yScale": 1.03,
-        "fadetime": 2.5
+        "command": "background",
+        "params": {
+            "image": "47_g9_fairyfarmland",
+            "screenadapt": "coverall",
+            "xscale": 1.03,
+            "yscale": 1.03,
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "stopsound",
-        "channel": "reed",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "reed",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "background",
-        "image": "47_g10_fairyfarmland_ex",
-        "screenadapt": "coverall",
-        "xScale": 1.03,
-        "yScale": 1.03,
-        "fadetime": 2.5
+        "command": "background",
+        "params": {
+            "image": "47_g10_fairyfarmland_ex",
+            "screenadapt": "coverall",
+            "xscale": 1.03,
+            "yscale": 1.03,
+            "fadetime": 2.5
+        }
     },
     {
         "text": "A man slowly walks forth from the distance, sauntering past the threshold of time immemorial. It is as if he has been there since the very beginning."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_hidehaystack"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_hidehaystack"
+        }
     },
     {
         "text": "Time and space halt with the sound of his footsteps."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playmusic",
-        "intro": "$chenandwei_intro",
-        "key": "$chenandwei_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$chenandwei_intro",
+            "key": "$chenandwei_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 3.5
+        "command": "delay",
+        "value": 3.5
     },
     {
-        "tag": "bgeffect",
-        "fade": true,
-        "fadetime": 3
+        "command": "bgeffect",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1"
+        }
     },
     {
-        "text": "You finally decide to show yourself.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You finally decide to show yourself."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "There's a whole crowd... What a lively gathering.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "There's a whole crowd... What a lively gathering."
     },
     {
-        "text": "You all... are still inclined to such excitement?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "You all... are still inclined to such excitement?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "\u2014!"
     },
     {
-        "text": "Wait, didn't he go insane?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "Wait, didn't he go insane?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The atmosphere of our little reunion isn't quite what I expected...",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "The atmosphere of our little reunion isn't quite what I expected..."
     },
     {
-        "text": "What happens in the movies when a relative on the most-wanted list suddenly shows up at your doorstep?",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "What happens in the movies when a relative on the most-wanted list suddenly shows up at your doorstep?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avgnew_2015_dusk_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avgnew_2015_dusk_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Is he actually the real deal, or just a shadow?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "Is he actually the real deal, or just a shadow?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avgnew_2014_nian_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avgnew_2014_nian_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Any shenanigans the weiqi failure tried to pull wouldn't surprise me at this point. It'd be a big deal if he pulled another Sui-Xiang out of his ass though...",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "Any shenanigans the weiqi failure tried to pull wouldn't surprise me at this point. It'd be a big deal if he pulled another Sui-Xiang out of his ass though..."
     },
     {
-        "text": "So, what's the plan, Shu? Are we fighting?",
-        "tag": "name",
-        "value": "Nian"
+        "command": "name",
+        "value": "Nian",
+        "text": "So, what's the plan, Shu? Are we fighting?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#2$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#17$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#17$1"
+        }
     },
     {
-        "text": "Shangshu, Yumen, and now here... Don't you think you've gone too far?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Shangshu, Yumen, and now here... Don't you think you've gone too far?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Small sacrifices for the greater good, each unto their own. Nothing more, nothing less.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Small sacrifices for the greater good, each unto their own. Nothing more, nothing less."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#17$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#17$1"
+        }
     },
     {
-        "text": "Look at all the devastated fields out there, and all the suffering people... I can't forgive you for talking like that.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Look at all the devastated fields out there, and all the suffering people... I can't forgive you for talking like that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Upon careful consideration, there still remain two lines of inquiry regarding who owes this debt.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Upon careful consideration, there still remain two lines of inquiry regarding who owes this debt."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "Then, you stay here so we can tally it up.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Then, you stay here so we can tally it up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "This account has been accumulating debt for over a thousand years.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "This account has been accumulating debt for over a thousand years."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 3
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_snow_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_snow_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 0.7,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snowstormflp",
-        "volume": 0,
-        "loop": true,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snowstormflp",
+            "volume": 0,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You haven't been here in a long time.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You haven't been here in a long time."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "There are things I must do... There is a battlefield to the north. When the troops assemble, I must stand on the front lines.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "There are things I must do... There is a battlefield to the north. When the troops assemble, I must stand on the front lines."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "'Bleached bones exposed in the wilds, where fowls sing not for a thousand li.'",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "'Bleached bones exposed in the wilds, where fowls sing not for a thousand li.'"
     },
     {
-        "text": "After a thousand years of war, in the end, it is still the commoners in the fields who suffer.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "After a thousand years of war, in the end, it is still the commoners in the fields who suffer."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You care about them a great deal.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "You care about them a great deal."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The people you take so lightly are actually our teachers, in the truest sense. We take after their form, find things that interest us, and only then do we find our place in the world.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "The people you take so lightly are actually our teachers, in the truest sense. We take after their form, find things that interest us, and only then do we find our place in the world."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "We have nothing in common with them. Not a single thing.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "We have nothing in common with them. Not a single thing."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "What is so different about us?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "What is so different about us?"
     },
     {
-        "text": "Feranmuts may have lives spanning tens of thousands of years, while mayflies die as quickly as they live. But in the end, we are all lives born under Heaven. Everything that has a beginning must also have an end.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Feranmuts may have lives spanning tens of thousands of years, while mayflies die as quickly as they live. But in the end, we are all lives born under Heaven. Everything that has a beginning must also have an end."
     },
     {
-        "text": "Warfare and slaughter. Why exactly did you choose this path? What value do you see in it?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Warfare and slaughter. Why exactly did you choose this path? What value do you see in it?"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Law and order.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Law and order."
     },
     {
-        "text": "I recently learned a game, <i>weiqi.</i> The rules are simple, but the underlying principles are quite similar to the art of war.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I recently learned a game, <i>weiqi.</i> The rules are simple, but the underlying principles are quite similar to the art of war."
     },
     {
-        "text": "It has demonstrated to me a singular wisdom: as chaotic and disorderly as things may appear, master the rules, and the final outcome will fall into place.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "It has demonstrated to me a singular wisdom: as chaotic and disorderly as things may appear, master the rules, and the final outcome will fall into place."
     },
     {
-        "text": "The final outcome that we've all been so keenly focused on.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "The final outcome that we've all been so keenly focused on."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.1,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.1,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "This dead silence... This is the outcome that you see.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "This dead silence... This is the outcome that you see."
     },
     {
-        "text": "Not just for us, but for all things living in these lands.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Not just for us, but for all things living in these lands."
     },
     {
-        "text": "How ironic. If death is the <i>effect,</i> then does that not make life itself the <i>cause?</i>",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "How ironic. If death is the <i>effect,</i> then does that not make life itself the <i>cause?</i>"
     },
     {
-        "text": "Do you never get tired of standing watch here?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Do you never get tired of standing watch here?"
     },
     {
-        "text": "Everything in existence is worthy of being cherished, just as it is now.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Everything in existence is worthy of being cherished, just as it is now."
     },
     {
-        "text": "All things have their time. People, beasts, mountains, water, grass, trees. They are all alike in this regard. That is the <i>Dao</i> the people speak of.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "All things have their time. People, beasts, mountains, water, grass, trees. They are all alike in this regard. That is the <i>Dao</i> the people speak of."
     },
     {
-        "text": "The grass becomes lush and green every spring. We have come, and we have existed. Is that not enough?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "The grass becomes lush and green every spring. We have come, and we have existed. Is that not enough?"
     },
     {
-        "text": "So, you've resigned yourself to this end.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "So, you've resigned yourself to this end."
     },
     {
-        "text": "That's not what you really think.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "That's not what you really think."
     },
     {
-        "text": "I was simply wondering...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I was simply wondering..."
     },
     {
-        "text": "Have we ever lived as our true selves?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Have we ever lived as our true selves?"
     },
     {
-        "text": "Wait, don't tell me you...?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "Wait, don't tell me you...?"
     },
     {
-        "text": "I've been contemplating this for a long time... Calculating.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I've been contemplating this for a long time... Calculating."
     },
     {
-        "text": "Finally... I have seen another outcome.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Finally... I have seen another outcome."
     },
     {
         "text": "Not far away, a green sapling pokes its head out from underneath the snow."
     },
     {
-        "text": "I know you can see it, Shu.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I know you can see it, Shu."
     },
     {
         "text": "The haggard man stretches out his hand, his fingertips still covered with rough callouses."
     },
     {
-        "text": "Can you read my palm for me?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Can you read my palm for me?"
     },
     {
-        "text": "'Endless solitude; kalpas blurred, death nigh inexorable.'",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "'Endless solitude; kalpas blurred, death nigh inexorable.'"
     },
     {
-        "text": "I'm very much looking forward to that... I shall be waiting.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I'm very much looking forward to that... I shall be waiting."
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "25_g08_pavilion",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "25_g08_pavilion",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 5
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...Were you able to see her again?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "...Were you able to see her again?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You know that wouldn't be possible.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You know that wouldn't be possible."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I often find myself thinking of her.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "I often find myself thinking of her."
     },
     {
-        "text": "She said that 'education is the great equalizer' and wished for every person to be able to read and write... All those schools and books are her legacy.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "She said that 'education is the great equalizer' and wished for every person to be able to read and write... All those schools and books are her legacy."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "In that regard, you are quite similar.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "In that regard, you are quite similar."
     },
     {
-        "text": "But, these last few years, I've forgotten many things... including her.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "But, these last few years, I've forgotten many things... including her."
     },
     {
-        "text": "About the books she wrote, and the meaning held by a <i>true name in one lone word...</i>",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "About the books she wrote, and the meaning held by a <i>true name in one lone word...</i>"
     },
     {
-        "text": "I can clearly recall that she once played a game with me. She wanted to tell me something during that game, but I've already forgotten what it was.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I can clearly recall that she once played a game with me. She wanted to tell me something during that game, but I've already forgotten what it was."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I thought...",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "I thought..."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Yes... Even <i>we</i> cannot escape this influence.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Yes... Even <i>we</i> cannot escape this influence."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You have regrets.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You have regrets."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I want to find a remedy...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I want to find a remedy..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1"
+        }
     },
     {
-        "tag": "background",
-        "image": "35_g3_yumenobservationtower_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "35_g3_yumenobservationtower_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "A hundred and eighty-one fragments. Everyone thought... you had lost your mind.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "A hundred and eighty-one fragments. Everyone thought... you had lost your mind."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Perhaps...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Perhaps..."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "What do you intend to do?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "What do you intend to do?"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I wish to return to that husk. I require Its power.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I wish to return to that husk. I require Its power."
     },
     {
-        "text": "I will slay It. And then I shall become It.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "I will slay It. And then I shall become It."
     },
     {
-        "text": "And using Its power, I will plot a 'great windfall' for all beings in this realm.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "And using Its power, I will plot a 'great windfall' for all beings in this realm."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_2025_shu_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_2025_shu_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It'll cost you your life.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "It'll cost you your life."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1237_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1237_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But the rest of you will live. And truly be yourselves...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "But the rest of you will live. And truly be yourselves..."
     },
     {
-        "text": "Shu, lend me a portion of your power.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Shu, lend me a portion of your power."
     },
     {
-        "text": "The twelve of us, with each additional portion of strength comes another chance at victory.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "The twelve of us, with each additional portion of strength comes another chance at victory."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 5
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "47_g10_fairyfarmland_ex",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g10_fairyfarmland_ex",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_chess",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_chess",
+            "volume": 1
+        }
     },
     {
         "text": "The vast farmland crisscrosses, and this particular visitor places a piece on the weiqi board."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_seedcheckerboard",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_seedcheckerboard",
+            "volume": 1
+        }
     },
     {
         "text": "Shu opens her palm, and a handful of seeds fall onto the board."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "This must be your answer.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "This must be your answer."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "You reap what you sow.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You reap what you sow."
     },
     {
-        "text": "If you haven't veered off the path and really are heading towards our end, then these seeds will germinate at the right time and bear the fruit you desire.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "If you haven't veered off the path and really are heading towards our end, then these seeds will germinate at the right time and bear the fruit you desire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "You will have conditions for me as well.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "You will have conditions for me as well."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "We can't let you keep creating problems for us.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "We can't let you keep creating problems for us."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Hah...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Hah..."
     },
     {
-        "text": "And so concludes the discussions concerning my affairs. If there's anything else, you should speak.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "And so concludes the discussions concerning my affairs. If there's anything else, you should speak."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#3$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#17$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#17$1"
+        }
     },
     {
-        "text": "You've really grown up, huh? Ready to fly the nest?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You've really grown up, huh? Ready to fly the nest?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#7$1"
+        }
     },
     {
-        "text": "I'm a thousand years old... my dear sister.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I'm a thousand years old... my dear sister."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#5$1"
+        }
     },
     {
-        "text": "I can't stop you.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "I can't stop you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "We had a big argument the last time I left. Could you leave me something to remember you by, this time?",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "We had a big argument the last time I left. Could you leave me something to remember you by, this time?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#17$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#17$1"
+        }
     },
     {
-        "text": "You've already woven all of Dahuang into that brocade of yours. What else do you want to take from me?",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "You've already woven all of Dahuang into that brocade of yours. What else do you want to take from me?"
     },
     {
-        "text": "If you have a bit of remorse in there, you'd better come back alive.",
-        "tag": "name",
-        "value": "Shu"
+        "command": "name",
+        "value": "Shu",
+        "text": "If you have a bit of remorse in there, you'd better come back alive."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#7$1"
+        }
     },
     {
-        "text": "Fair enough...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Fair enough..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "Dusk, can I ask one last thing from you?",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Dusk, can I ask one last thing from you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_2015_dusk_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_2015_dusk_1#1$1"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "What?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "That painting... Can you give it to me up front?",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "That painting... Can you give it to me up front?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_2015_dusk_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_2015_dusk_1#9$1"
+        }
     },
     {
-        "text": "How did you\u2013",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "How did you\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_2015_dusk_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_2015_dusk_1#2$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Dusk"
+        "command": "name",
+        "value": "Dusk",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_throwstone",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_throwstone",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 5,
-        "ystrength": 10,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 5,
+            "ystrength": 10,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "I will take good care of it.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I will take good care of it."
     },
     {
-        "text": "And with that, consider our account settled.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "And with that, consider our account settled."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Who said you could go?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Who said you could go?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playmusic",
-        "intro": "$awakening_intro",
-        "key": "$awakening_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$awakening_intro",
+            "key": "$awakening_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firemagic",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firemagic",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "loop": true,
-        "channel": "a",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "loop": true,
+            "channel": "a",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.7,
-        "fadetime": 2,
-        "channel": "a"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.7,
+            "fadetime": 2,
+            "channel": "a"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1238_1#5$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1238_1#5$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "You again...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "You again..."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1238_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1238_1#6$1"
+        }
     },
     {
-        "text": "The second Sui brother! Ni ya ting de! I knew you were behind this!",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "The second Sui brother! Ni ya ting de! I knew you were behind this!"
     },
     {
-        "text": "Do you have nothing better to do? Done hiding out in your ruined temple playing your shitty game of weiqi, and now you have to come to my turf to ruin everything?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Do you have nothing better to do? Done hiding out in your ruined temple playing your shitty game of weiqi, and now you have to come to my turf to ruin everything?"
     },
     {
-        "text": "Look at the mess you've all made with your little spat here, and all the crops you've destroyed! See if I won't beat your ass right here and now!",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Look at the mess you've all made with your little spat here, and all the crops you've destroyed! See if I won't beat your ass right here and now!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#4$1"
+        }
     },
     {
-        "text": "Watch out!",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Watch out!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firecut",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firecut",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#4$1",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#4$1",
+            "duration": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jghtket"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jghtket"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 10,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 10,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The satin-silk ignites upon contact with the incandescent white flames, reduced to smoke and ash in the blink of an eye."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spelldfns_1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spelldfns_1"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "duration": 0.3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_glassbroken"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_glassbroken"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1238_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1238_1#5$1"
+        }
     },
     {
-        "text": "Originium Arts that can reverse decomposition? When did you learn how to...? No, that's not it... This is <i>causality?</i>",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Originium Arts that can reverse decomposition? When did you learn how to...? No, that's not it... This is <i>causality?</i>"
     },
     {
-        "text": "Hah... Let's see how many more seeds you have left to withstand my flames!",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Hah... Let's see how many more seeds you have left to withstand my flames!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Tianshi... This might not be the best time to launch your attack.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Tianshi... This might not be the best time to launch your attack."
     },
     {
-        "text": "The Chamber of Heaven's Designs has suffered grave losses. Any more wrong moves, and Great Yan's entire northern defensive line may be imperiled.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "The Chamber of Heaven's Designs has suffered grave losses. Any more wrong moves, and Great Yan's entire northern defensive line may be imperiled."
     },
     {
-        "text": "It is more than just the demonic taint that has eyes on Yan's northern border, right?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "It is more than just the demonic taint that has eyes on Yan's northern border, right?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1238_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1238_1#6$1"
+        }
     },
     {
-        "text": "Stop trying to scare people! I swear, I'm gonna teach you a lesson if it's the last thing I do!",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Stop trying to scare people! I swear, I'm gonna teach you a lesson if it's the last thing I do!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Then, do you not care at all about the other long-lived among you?",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Then, do you not care at all about the other long-lived among you?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1238_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1238_1#5$1"
+        }
     },
     {
-        "text": "You little...",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "You little..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1237_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1237_1#1$1"
+        }
     },
     {
-        "text": "Ahh... You feign lunacy to protect your mind from demonic contamination, but you've not forgotten your true purpose at all.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Ahh... You feign lunacy to protect your mind from demonic contamination, but you've not forgotten your true purpose at all."
     },
     {
-        "text": "Weigh the pros and the cons. Surely there's no reason we shouldn't be able to come to some accord.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Weigh the pros and the cons. Surely there's no reason we shouldn't be able to come to some accord."
     },
     {
-        "text": "Until we meet again.",
-        "tag": "name",
-        "value": "Wang"
+        "command": "name",
+        "value": "Wang",
+        "text": "Until we meet again."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "47_g5_factory_inside",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g5_factory_inside",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$wasteland_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$wasteland_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "channel": "bgs",
-        "volume": 1,
-        "block": false,
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "channel": "bgs",
+            "volume": 1,
+            "block": false,
+            "loop": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 3
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Is it... over...?",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "Is it... over...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "duration": 1.5,
-        "bstart": 0.5,
-        "bend": 1,
-        "afrom": 0,
-        "ato": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "duration": 1.5,
+            "bstart": 0.5,
+            "bend": 1,
+            "afrom": 0,
+            "ato": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Yes, it's all over now.",
-        "tag": "name",
-        "value": "Ethereal Woman"
+        "command": "name",
+        "value": "Ethereal Woman",
+        "text": "Yes, it's all over now."
     },
     {
-        "text": "You were willing to throw away your life for this project. Why?",
-        "tag": "name",
-        "value": "Ethereal Woman"
+        "command": "name",
+        "value": "Ethereal Woman",
+        "text": "You were willing to throw away your life for this project. Why?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "...To become renowned for such a grand accomplishment.",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "...To become renowned for such a grand accomplishment."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.5,
-        "bend": 1,
-        "afrom": 0.6,
-        "ato": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.5,
+            "bend": 1,
+            "afrom": 0.6,
+            "ato": 0.6
+        }
     },
     {
-        "text": "And then what?",
-        "tag": "name",
-        "value": "Ethereal Woman"
+        "command": "name",
+        "value": "Ethereal Woman",
+        "text": "And then what?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I have a dream...",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "I have a dream..."
     },
     {
-        "text": "Cities interconnected for ten thousand li, stretching to the palace of Heaven; no longer would anyone across this great land want for shelter from wind and rain.",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "Cities interconnected for ten thousand li, stretching to the palace of Heaven; no longer would anyone across this great land want for shelter from wind and rain."
     },
     {
-        "text": "What is the point of being a Tianshi without any accomplishments to his name...?",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "What is the point of being a Tianshi without any accomplishments to his name...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.5,
-        "bend": 1,
-        "afrom": 0.6,
-        "ato": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.5,
+            "bend": 1,
+            "afrom": 0.6,
+            "ato": 0.6
+        }
     },
     {
-        "text": "Must you stand head and shoulders above the rest in order to lay the bricks of the city of your dreams?",
-        "tag": "name",
-        "value": "Ethereal Woman"
+        "command": "name",
+        "value": "Ethereal Woman",
+        "text": "Must you stand head and shoulders above the rest in order to lay the bricks of the city of your dreams?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "..."
     },
     {
-        "text": "Are you... one of the Heavenly Xians?",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "Are you... one of the Heavenly Xians?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.5,
-        "bend": 1,
-        "afrom": 0.6,
-        "ato": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.5,
+            "bend": 1,
+            "afrom": 0.6,
+            "ato": 0.6
+        }
     },
     {
-        "text": "I'll trade your life for your dream.",
-        "tag": "name",
-        "value": "Ethereal Woman"
+        "command": "name",
+        "value": "Ethereal Woman",
+        "text": "I'll trade your life for your dream."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_wind"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_wind"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "(Shallow breathing)",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "(Shallow breathing)"
     },
     {
-        "text": "The Skybound White Jade Capital, of Twelve Pagodas and Five Cities... The Xian strokes my head, knots my hair, and grants eternal life...",
-        "tag": "name",
-        "value": "Assistant Minister Wan"
+        "command": "name",
+        "value": "Assistant Minister Wan",
+        "text": "The Skybound White Jade Capital, of Twelve Pagodas and Five Cities... The Xian strokes my head, knots my hair, and grants eternal life..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "..."
@@ -2430,400 +2844,460 @@
         "text": "Alas, could I get mansions of ten thousand chambers, I'd shelter all the needy under Heaven, blessing them with joy."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "47_g2_desertedcityfield_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g2_desertedcityfield_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_dim_openeye",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_dim_openeye",
+            "layer": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "duration": 1.5,
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "duration": 1.5,
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "You're awake?",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "You're awake?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Where am I...?",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "Where am I...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "text": "Don't worry, the monsters are gone.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "Don't worry, the monsters are gone."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "You saved me...?",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "You saved me...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "text": "I wouldn't say that.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "I wouldn't say that."
     },
     {
-        "text": "You were lying unconscious on the ground when I found you, so I went over to try to wake you up.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "You were lying unconscious on the ground when I found you, so I went over to try to wake you up."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "...Duoxie.",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "...Duoxie."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "text": "You're the <i>Old Xiangzhang</i> of Dahuang, but the responsibility does not fall solely on your shoulders.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "You're the <i>Old Xiangzhang</i> of Dahuang, but the responsibility does not fall solely on your shoulders."
     },
     {
-        "text": "It might not necessarily be a good deal to exchange your life for the safety and stability of this place.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "It might not necessarily be a good deal to exchange your life for the safety and stability of this place."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "That's my choice to make... What matters is that Dahuang is safe.",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "That's my choice to make... What matters is that Dahuang is safe."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "text": "You care a lot about this place.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "You care a lot about this place."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Of course I care. I've spent most of my life here, and my roots run deep...",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "Of course I care. I've spent most of my life here, and my roots run deep..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "bstart": 0.2,
-        "bend": 0.35
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "bstart": 0.2,
+            "bend": 0.35
+        }
     },
     {
-        "text": "Mmhmm.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "Mmhmm."
     },
     {
-        "text": "Take care of yourself. I'm off.",
-        "tag": "name",
-        "value": "Passing Nongye Tianshi"
+        "command": "name",
+        "value": "Passing Nongye Tianshi",
+        "text": "Take care of yourself. I'm off."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_wind"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_wind"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1240_1#3$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1240_1#3$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Goodbye, Shu.",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "Goodbye, Shu."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1240_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1240_1#2$1"
+        }
     },
     {
-        "text": "You deserve your freedom.",
-        "tag": "name",
-        "value": "Rong Wanqing"
+        "command": "name",
+        "value": "Rong Wanqing",
+        "text": "You deserve your freedom."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "47_g11_shuresearchoffice",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g11_shuresearchoffice",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#2$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#2$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "The incubator, the incubator...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "The incubator, the incubator..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#1$1"
+        }
     },
     {
-        "text": "The rice plant can still be saved... There's still hope for the experiment...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "The rice plant can still be saved... There's still hope for the experiment..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Here you are...",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Here you are..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#1$1"
+        }
     },
     {
-        "text": "I've found it!",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "I've found it!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#2$1"
+        }
     },
     {
-        "text": "Found what?",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Found what?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#10$1"
+        }
     },
     {
-        "text": "This is the one rice plant... the one that survived the 'Wanqing' project's experimental plot.",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "This is the one rice plant... the one that survived the 'Wanqing' project's experimental plot."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#11$1"
+        }
     },
     {
-        "text": "It isn't impossible to grow crops on Originium-contaminated soil. Laoshi's experiments proved it\u2013\u2013",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "It isn't impossible to grow crops on Originium-contaminated soil. Laoshi's experiments proved it\u2013\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#8$1"
+        }
     },
     {
-        "text": "Wait...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "Wait..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#8$1"
+        }
     },
     {
-        "text": "You're...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "You're..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#1$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#10$1"
+        }
     },
     {
-        "text": "Judging from your clothes, are you a Shouye Tianshi from the Bureau? I don't think I've seen you before...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "Judging from your clothes, are you a Shouye Tianshi from the Bureau? I don't think I've seen you before..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "..."
     },
     {
-        "text": "Yes... I haven't been here very long.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Yes... I haven't been here very long."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The young man scratches his head in confusion, as if he has forgotten something."
@@ -2835,629 +3309,737 @@
         "text": "After spacing out for a spell, the young man cracks a smile."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#1$1"
+        }
     },
     {
-        "text": "I'm an apprentice of the Tianshi Bureau, called He Sheng. I guess I ought to call you Laoshi now too.",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "I'm an apprentice of the Tianshi Bureau, called He Sheng. I guess I ought to call you Laoshi now too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "Hello, He Sheng...",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Hello, He Sheng..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#1$1"
+        }
     },
     {
-        "text": "I just discovered a very important crop... one that can grow on soil contaminated by Originium...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "I just discovered a very important crop... one that can grow on soil contaminated by Originium..."
     },
     {
-        "text": "This has been a long-term project. As long as this crop can be widely distributed, we'll be able to reclaim tons of wasteland into usable farmland, and nobody will go hungry ever again...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "This has been a long-term project. As long as this crop can be widely distributed, we'll be able to reclaim tons of wasteland into usable farmland, and nobody will go hungry ever again..."
     },
     {
-        "text": "It might take a while to reach that goal, maybe even a really long time, but at least, there's a glimmer of hope now.",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "It might take a while to reach that goal, maybe even a really long time, but at least, there's a glimmer of hope now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "In that case, are you willing to devote the rest of your time to that goal?",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "In that case, are you willing to devote the rest of your time to that goal?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#10$1"
+        }
     },
     {
-        "text": "Yeah!",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "Yeah!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "I wish you luck.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "I wish you luck."
     },
     {
-        "text": "Do your best. I won't keep you from your research any longer. Zai gin.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Do your best. I won't keep you from your research any longer. Zai gin."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#7$1"
+        }
     },
     {
-        "text": "Huh? You're leaving already? I was hoping to tell you a bit more about the project, and maybe get a few pointers...",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "Huh? You're leaving already? I was hoping to tell you a bit more about the project, and maybe get a few pointers..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#10$1"
+        }
     },
     {
-        "text": "That's alright. I trust that you'll be able to accomplish your goals.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "That's alright. I trust that you'll be able to accomplish your goals."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_2025_shu_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_2025_shu_1#9$1"
+        }
     },
     {
-        "text": "Zai gin.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Zai gin."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_glassdoorclose"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_glassdoorclose"
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#7$1"
+        }
     },
     {
-        "text": "Hmm...?",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "Hmm...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4119_wanqin_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4119_wanqin_1#8$1"
+        }
     },
     {
-        "text": "That teacher... Why does it seem like I've seen her somewhere before?",
-        "tag": "name",
-        "value": "He Sheng"
+        "command": "name",
+        "value": "He Sheng",
+        "text": "That teacher... Why does it seem like I've seen her somewhere before?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "47_g3_fieldpath",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "47_g3_fieldpath",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$tech_intro",
-        "key": "$tech_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$tech_intro",
+            "key": "$tech_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "Off to deliver the goods, Laobo?",
-        "tag": "name",
-        "value": "Astute Merchant"
+        "command": "name",
+        "value": "Astute Merchant",
+        "text": "Off to deliver the goods, Laobo?"
     },
     {
-        "text": "How are food prices this year?",
-        "tag": "name",
-        "value": "Astute Merchant"
+        "command": "name",
+        "value": "Astute Merchant",
+        "text": "How are food prices this year?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Famine year. Each catty of grain is three wen more expensive than last year.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "Famine year. Each catty of grain is three wen more expensive than last year."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "I suppose when everything's accounted for, your coin sack's a bit heavier than it was last year?",
-        "tag": "name",
-        "value": "Astute Merchant"
+        "command": "name",
+        "value": "Astute Merchant",
+        "text": "I suppose when everything's accounted for, your coin sack's a bit heavier than it was last year?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "That's not necessarily a good thing.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "That's not necessarily a good thing."
     },
     {
-        "text": "Farming's all about putting food on people's tables. Never heard of farming to get rich.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "Farming's all about putting food on people's tables. Never heard of farming to get rich."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "Let me teach you a method to make a little extra money. Just keep it in the back of your mind when you're selling your goods.",
-        "tag": "name",
-        "value": "Astute Merchant"
+        "command": "name",
+        "value": "Astute Merchant",
+        "text": "Let me teach you a method to make a little extra money. Just keep it in the back of your mind when you're selling your goods."
     },
     {
-        "text": "Sell your highest-quality crops locally at a normal price to increase your reputation; for your average-quality stuff, mark up the price and hire a caravan to ship it far away as a novelty product.",
-        "tag": "name",
-        "value": "Astute Merchant"
+        "command": "name",
+        "value": "Astute Merchant",
+        "text": "Sell your highest-quality crops locally at a normal price to increase your reputation; for your average-quality stuff, mark up the price and hire a caravan to ship it far away as a novelty product."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "What are you going on about? Never anything so silly.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "What are you going on about? Never anything so silly."
     },
     {
-        "text": "The best crops are for family and friends first. You sell the average-quality stuff, and then use the rest as feed.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "The best crops are for family and friends first. You sell the average-quality stuff, and then use the rest as feed."
     },
     {
-        "text": "You youngsters have way too many sly tricks.",
-        "tag": "name",
-        "value": "Elderly Farmer"
+        "command": "name",
+        "value": "Elderly Farmer",
+        "text": "You youngsters have way too many sly tricks."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "200,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "200,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Where're you planning to go?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Where're you planning to go?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Baizao.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Baizao."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "After making that much trouble, you just up and leave without saying anything?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "After making that much trouble, you just up and leave without saying anything?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It <i>is</i> time to leave. Though, I also don't have Dage's martial skill. If you won't let me go, then naturally, I won't be able to leave.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "It <i>is</i> time to leave. Though, I also don't have Dage's martial skill. If you won't let me go, then naturally, I won't be able to leave."
     },
     {
-        "text": "So, it depends on you. How unwilling are you to let me leave?",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "So, it depends on you. How unwilling are you to let me leave?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I just wanted to ask you a question.",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "I just wanted to ask you a question."
     },
     {
-        "text": "You said you were gonna make a deal with Yan. Were you planning to help build Dahuang up from the very beginning?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "You said you were gonna make a deal with Yan. Were you planning to help build Dahuang up from the very beginning?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I am a merchant, and when doing business, I value mutual profit and reciprocity. If only one side profits, how would I be any different from a robber?",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I am a merchant, and when doing business, I value mutual profit and reciprocity. If only one side profits, how would I be any different from a robber?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "If you didn't want to make an enemy out of all Yan, why did you need to do all this?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "If you didn't want to make an enemy out of all Yan, why did you need to do all this?"
     },
     {
-        "text": "Did you two brothers really have to pick a fight with Yan?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Did you two brothers really have to pick a fight with Yan?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Our sister was killed, after all.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Our sister was killed, after all."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That said, the people of Yan harbor no animus towards us. Even if Erge sees the world as nothing more than a weiqi board, a weiqi player naturally feels some sentiment towards the pieces and equipment he's used for a long time.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "That said, the people of Yan harbor no animus towards us. Even if Erge sees the world as nothing more than a weiqi board, a weiqi player naturally feels some sentiment towards the pieces and equipment he's used for a long time."
     },
     {
-        "text": "However, those sitting in the court, lurking in the shadows, must pay the price for what they've done.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "However, those sitting in the court, lurking in the shadows, must pay the price for what they've done."
     },
     {
-        "text": "This account... must be settled eventually.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "This account... must be settled eventually."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Even if your own life is on the line?",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Even if your own life is on the line?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Using a twelfth to combat the whole was already a fool's errand.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Using a twelfth to combat the whole was already a fool's errand."
     },
     {
-        "text": "My life has already been assigned a price upon the ledger.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "My life has already been assigned a price upon the ledger."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You really have lost it...",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "You really have lost it..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I still remember, a long time ago, you came to visit all of us, one by one, posing a question to each and pointing the way.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "I still remember, a long time ago, you came to visit all of us, one by one, posing a question to each and pointing the way."
     },
     {
-        "text": "'What do you see in the lands of Great Yan?'",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "'What do you see in the lands of Great Yan?'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My answer has never changed, and I imagine the same is true for Erge.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "My answer has never changed, and I imagine the same is true for Erge."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Wo pei! Never cared for either of you bastards from the very beginning. There's no talking wisdom with you. And when the time is right, I'm still coming to beat your asses.",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Wo pei! Never cared for either of you bastards from the very beginning. There's no talking wisdom with you. And when the time is right, I'm still coming to beat your asses."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My brother used to have quite the temper. Whenever he'd lose a game, he'd start throwing cups and bowls around. But weak as he was, there was never any strength behind it.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "My brother used to have quite the temper. Whenever he'd lose a game, he'd start throwing cups and bowls around. But weak as he was, there was never any strength behind it."
     },
     {
-        "text": "This time, he went a bit overboard, so thank you for stepping in.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "This time, he went a bit overboard, so thank you for stepping in."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1238_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1238_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Gun kai! Get outta here already!",
-        "tag": "name",
-        "value": "'Old Tianshi'"
+        "command": "name",
+        "value": "Old Tianshi",
+        "text": "Gun kai! Get outta here already!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1236_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1236_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "..."
     },
     {
-        "text": "Until we meet again.",
-        "tag": "name",
-        "value": "Ji"
+        "command": "name",
+        "value": "Ji",
+        "text": "Until we meet again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

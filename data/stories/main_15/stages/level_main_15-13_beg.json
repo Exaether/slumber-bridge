@@ -1,89 +1,99 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "60_g8_rhodeslowerdeck_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "60_g8_rhodeslowerdeck_origin",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Playlist 'Golden Oldies' selected..."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_filmprojection"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_filmprojection"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_filmprojection_loop",
-        "loop": true,
-        "channel": "bgs",
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_filmprojection_loop",
+            "loop": true,
+            "channel": "bgs",
+            "delay": 0.5
+        }
     },
     {
         "text": "Resuming from previous playback\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$distressed_intro",
-        "key": "$distressed_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$distressed_intro",
+            "key": "$distressed_loop",
+            "volume": 0.6
+        }
     },
     {
         "text": "\u2014My love\u266a"
@@ -92,66 +102,71 @@
         "text": "Blows the blossoms on the hills\u2014\u266a"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#7$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#7$2"
+        }
     },
     {
-        "text": "...?!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "...?!"
     },
     {
-        "text": "Now's not the time for karaoke, Friston-3!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Now's not the time for karaoke, Friston-3!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#4$1"
+        }
     },
     {
-        "text": "You think I wanted to do that?!",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "You think I wanted to do that?!"
     },
     {
+        "command": "name",
         "text": "My playback module is customized, and I don't have the remote\u2014",
-        "tag": "multiline",
-        "name": "Friston-3"
+        "value": "Friston-3"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
+        "command": "name",
         "text": "Damn you, Closure!",
-        "tag": "multiline",
-        "name": "Friston-3",
-        "end": true
-    },
-    {
-        "text": "Blaze! Watch out for Justice Knight!",
-        "tag": "name",
         "value": "Friston-3"
     },
     {
-        "text": "Which damnable subdirectory did Closure put my code synchronization function in?!",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Blaze! Watch out for Justice Knight!"
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Which damnable subdirectory did Closure put my code synchronization function in?!"
+    },
+    {
+        "command": "charslot"
     },
     {
         "text": "\u2014Gonna give you my tears\u266a"
@@ -160,261 +175,307 @@
         "text": "Save my precious\u2014\u266a"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#5$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#5$2"
+        }
     },
     {
-        "text": "Kitten, on my six. Justice Knight has me in her sights\u2014",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Kitten, on my six. Justice Knight has me in her sights\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_asyouwish",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_asyouwish",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_391_rosmon_1#1$2",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_391_rosmon_1#1$2",
+            "duration": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Got it. Whoa, almost hit Justice Knight\u2014",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Got it. Whoa, almost hit Justice Knight\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#5$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#5$2"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch02",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch02",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "80,15",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "80,15",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Ouch! Stop running into me!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Ouch! Stop running into me!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_aircraftimpact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_aircraftimpact",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_376_therex_1",
-        "posfrom": "0,0",
-        "posto": "50,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_376_therex_1",
+            "posfrom": "0,0",
+            "posto": "50,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "50,0",
-        "posto": "0,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "50,0",
+            "posto": "0,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "(Rams with burning heat)",
-        "tag": "name",
-        "value": "Abnormal THRM-EX"
+        "command": "name",
+        "value": "Abnormal THRM-EX",
+        "text": "(Rams with burning heat)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_aircraftimpact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_aircraftimpact",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_376_therex_1",
-        "posfrom": "0,0",
-        "posto": "50,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_376_therex_1",
+            "posfrom": "0,0",
+            "posto": "50,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "50,0",
-        "posto": "0,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "50,0",
+            "posto": "0,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Burn, burning\u2014Boom... mmmmmmmmm\u2014",
-        "tag": "name",
-        "value": "Abnormal THRM-EX"
+        "command": "name",
+        "value": "Abnormal THRM-EX",
+        "text": "Burn, burning\u2014Boom... mmmmmmmmm\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "\u2014No matter who\u266a"
@@ -423,128 +484,156 @@
         "text": "Whispers of love, one trap one lifetime\u266a"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#1$2"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firestorm",
-        "volume": 1,
-        "loop": true,
-        "channel": "fire"
+        "command": "playsound",
+        "params": {
+            "key": "$firestorm",
+            "volume": 1,
+            "loop": true,
+            "channel": "fire"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_churchfire",
-        "volume": 0,
-        "channel": "f",
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_churchfire",
+            "volume": 0,
+            "channel": "f",
+            "loop": true
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "f",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "f",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 0.92,
-        "g": 0.4,
-        "b": 0.3,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 0.92,
+            "g": 0.4,
+            "b": 0.3,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "fire",
-        "fadetime": 6
+        "command": "stopsound",
+        "params": {
+            "channel": "fire",
+            "fadetime": 6
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "f",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "f",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "Alright, THRM-EX! Let's see who burns brighter!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Alright, THRM-EX! Let's see who burns brighter!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_391_rosmon_1#4$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_391_rosmon_1#4$2"
+        }
     },
     {
-        "text": "Hey, don't hurt the buggies\u2014",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Hey, don't hurt the buggies\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#1$2"
+        }
     },
     {
-        "text": "I know! I got this.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I know! I got this."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_286_cast3_1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_286_cast3_1$1"
+        }
     },
     {
-        "text": "Protect, protect, friends\u2014",
-        "tag": "name",
-        "value": "Abnormal Castle-3"
+        "command": "name",
+        "value": "Abnormal Castle-3",
+        "text": "Protect, protect, friends\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "You need healing, Friston-3.",
-        "tag": "name",
-        "value": "Abnormal Lancet-2"
+        "command": "name",
+        "value": "Abnormal Lancet-2",
+        "text": "You need healing, Friston-3."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "I guess I should thank Closure for fitting that energy barrier generator\u2014",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "I guess I should thank Closure for fitting that energy barrier generator\u2014"
     },
     {
         "text": "\u2014Here's my most beloved\u266a"
@@ -553,162 +642,190 @@
         "text": "You shine in my tears\u2014\u266a"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#11$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#11$2"
+        }
     },
     {
-        "text": "Friston-3! How long do you need?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Friston-3! How long do you need?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "The synchronization module is ready, but I can't jump across this Originium.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "The synchronization module is ready, but I can't jump across this Originium."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_391_rosmon_1#6$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_391_rosmon_1#6$2"
+        }
     },
     {
-        "text": "I'll make a path for you. Now!",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I'll make a path for you. Now!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carspeedup",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carspeedup",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Friston-3 accelerates up the ramp and takes flight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$skill_flash",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$skill_flash",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
         "text": "As he spins in mid-air, he can not help but throw a photo out."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carrobotfall",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carrobotfall",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#2$1",
-        "posfrom": "-300,50",
-        "posto": "30,-15",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#2$1",
+            "posfrom": "-300,50",
+            "posto": "30,-15",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#2$1",
-        "posfrom": "30,-15",
-        "posto": "0,0",
-        "afrom": 1,
-        "ato": 1,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#2$1",
+            "posfrom": "30,-15",
+            "posto": "0,0",
+            "afrom": 1,
+            "ato": 1,
+            "duration": 0.5
+        }
     },
     {
-        "text": "(Man, it's been so long... so long since I moved like this.)",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "(Man, it's been so long... so long since I moved like this.)"
     },
     {
-        "text": "(That synchronized transmission system that you boasted about had better work, Closure...)",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "(That synchronized transmission system that you boasted about had better work, Closure...)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "Guide these crazy carts into position and immobilize them. I'll fix them!",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Guide these crazy carts into position and immobilize them. I'll fix them!"
     },
     {
         "text": "\u2014A gift to you\u266a"
@@ -717,43 +834,51 @@
         "text": "This love in my heart\u2014\u266a"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#6$1"
+        }
     },
     {
-        "text": "I have a connection!",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "I have a connection!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_signlntrfrnc",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_signlntrfrnc",
+            "volume": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_signalInterference",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_signalInterference",
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_desert03_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_desert03_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
         "text": "The song continues to echo in the empty desert."
@@ -765,9 +890,9 @@
         "text": "This love in my heart\u2014\u266a"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Trevor Friston"
+        "command": "name",
+        "value": "Trevor Friston",
+        "text": "......"
     },
     {
         "text": "There is no question that the playback module has malfunctioned, playing Closure's favorite ballads over and over, as though this scene were supposed to be some tear-jerker."
@@ -779,450 +904,524 @@
         "text": "Trevor Friston would have no shortage of profanities to spew, if he could spew them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1",
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "What's this place...? I thought we were trapped in a... in a... uh...",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "What's this place...? I thought we were trapped in a... in a... uh..."
     },
     {
-        "text": "I don't remember anything\u2014",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "I don't remember anything\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4000_jnight_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4000_jnight_1#1"
+        }
     },
     {
-        "text": "Beep beep! Anomalous target detected!",
-        "tag": "name",
-        "value": "'Justice Knight'"
+        "command": "name",
+        "value": "Justice Knight",
+        "text": "Beep beep! Anomalous target detected!"
     },
     {
-        "text": "Who are you?!",
-        "tag": "name",
-        "value": "'Justice Knight'"
+        "command": "name",
+        "value": "Justice Knight",
+        "text": "Who are you?!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Use your brains, whatever they're made of!",
-        "tag": "name",
-        "value": "Trevor Friston"
+        "command": "name",
+        "value": "Trevor Friston",
+        "text": "Use your brains, whatever they're made of!"
     },
     {
-        "text": "Closure says you're supposed to be smart!",
-        "tag": "name",
-        "value": "Trevor Friston"
+        "command": "name",
+        "value": "Trevor Friston",
+        "text": "Closure says you're supposed to be smart!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_286_cast3_1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_286_cast3_1$1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_microrobot",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_microrobot",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "That voice, that tone... y-you're Friston-3!",
-        "tag": "name",
-        "value": "Castle-3"
+        "command": "name",
+        "value": "Castle-3",
+        "text": "That voice, that tone... y-you're Friston-3!"
     },
     {
-        "text": "But Friston-3 isn't as tall as you are.",
-        "tag": "name",
-        "value": "Castle-3"
+        "command": "name",
+        "value": "Castle-3",
+        "text": "But Friston-3 isn't as tall as you are."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_376_therex_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "No, he is Friston-3! I feel a familiar warmth from him\u2014",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "No, he is Friston-3! I feel a familiar warmth from him\u2014"
     },
     {
-        "text": "Warmth... how come I can't feel my own warmth anymore\u2014",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "Warmth... how come I can't feel my own warmth anymore\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Ugh, this is such a headache.",
-        "tag": "name",
-        "value": "Trevor Friston"
+        "command": "name",
+        "value": "Trevor Friston",
+        "text": "Ugh, this is such a headache."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carrobotmove",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carrobotmove",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Maybe this will make you feel better.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Maybe this will make you feel better."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "......"
     },
     {
-        "text": "What is this place?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "What is this place?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "My dream. A dream that was a surprise to me too.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "My dream. A dream that was a surprise to me too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#4$1"
+        }
     },
     {
-        "text": "Now shut up and listen.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Now shut up and listen."
     },
     {
-        "text": "Something is wrong with PRTS. I have a pretty good idea of what's going on. Someone made your cognitive modules go haywire, and you were wreaking havoc all over the place. I had no choice but to put a stop to it.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Something is wrong with PRTS. I have a pretty good idea of what's going on. Someone made your cognitive modules go haywire, and you were wreaking havoc all over the place. I had no choice but to put a stop to it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4000_jnight_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4000_jnight_1#1"
+        }
     },
     {
-        "text": "Beep beep. Justice Knight does not understand.",
-        "tag": "name",
-        "value": "'Justice Knight'"
+        "command": "name",
+        "value": "Justice Knight",
+        "text": "Beep beep. Justice Knight does not understand."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#4$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "Basically, I'm rewriting your bottom-layer code with my core code. I'll ensure that your memory modules remain intact, of course.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Basically, I'm rewriting your bottom-layer code with my core code. I'll ensure that your memory modules remain intact, of course."
     },
     {
-        "text": "This will take some time. In order to make sure that you stay put during this time, I had to connect your cognitive modules to mine.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "This will take some time. In order to make sure that you stay put during this time, I had to connect your cognitive modules to mine."
     },
     {
-        "text": "The side effect is... *expletive from an unknown language* I share my dreams involuntarily.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "The side effect is... *expletive from an unknown language* I share my dreams involuntarily."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "What is going on, Friston-3?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "What is going on, Friston-3?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "A friend of mine is waking up from a long slumber.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "A friend of mine is waking up from a long slumber."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_376_therex_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_376_therex_1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_286_cast3_1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_286_cast3_1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Castle-3"
+        "command": "name",
+        "value": "Castle-3",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "Stop thinking. It'll overload your brains.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Stop thinking. It'll overload your brains."
     },
     {
-        "text": "What you need to do is walk with me before things come to a close. The gathering is about to begin...",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "What you need to do is walk with me before things come to a close. The gathering is about to begin..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carrobotmove",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carrobotmove",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firework_amb",
-        "volume": 0,
-        "loop": true,
-        "channel": "fire"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firework_amb",
+            "volume": 0,
+            "loop": true,
+            "channel": "fire"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.6,
-        "channel": "fire",
-        "fadetime": 3
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.6,
+            "channel": "fire",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_desert03_n",
-        "screenadapt": "coverall",
-        "fadetime": 3
+        "command": "background",
+        "params": {
+            "image": "bg_desert03_n",
+            "screenadapt": "coverall",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cheer_street",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cheer_street",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "A blonde dances joyfully in the camp filled with lights and ribbons."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carrobotmove",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carrobotmove",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_376_therex_1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_376_therex_1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "text": "It is a party!",
-        "tag": "name",
-        "value": "THRM-EX"
+        "command": "name",
+        "value": "THRM-EX",
+        "text": "It is a party!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "No... a wedding. My daughter's wedding.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "No... a wedding. My daughter's wedding."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "Are we not going to join, Friston-3?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "Are we not going to join, Friston-3?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "We'll watch from here. I don't want to go there, because it means I'll once again\u2014",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "We'll watch from here. I don't want to go there, because it means I'll once again\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "Are you sad?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "Are you sad?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "...You can tell?",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "...You can tell?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "Of course! Are we not the same?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "Of course! Are we not the same?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_286_cast3_1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_286_cast3_1$1"
+        }
     },
     {
-        "text": "You said someone made our cognitive modules go haywire. Why did you help us?",
-        "tag": "name",
-        "value": "Castle-3"
+        "command": "name",
+        "value": "Castle-3",
+        "text": "You said someone made our cognitive modules go haywire. Why did you help us?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "No particularly special reason. Like Lancet-2 said, we're the same... at least we are now, on Rhodes Island.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "No particularly special reason. Like Lancet-2 said, we're the same... at least we are now, on Rhodes Island."
     },
     {
-        "text": "Life on this ship is peaceful. I won't say I like it, but compared to that dream without an end, those unrealized futures, it's not as...",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "Life on this ship is peaceful. I won't say I like it, but compared to that dream without an end, those unrealized futures, it's not as..."
     },
     {
-        "text": "It's not as bad.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "It's not as bad."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cheer_street",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cheer_street",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Trevor Friston can hear the familiar laughter of his daughter."
@@ -1231,640 +1430,772 @@
         "text": "A wedding that he must miss, a promise that he must break. Perhaps, if he did not go any closer, he would not have to watch her walk away..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#5$1"
+        }
     },
     {
-        "text": "...Code overwrite complete. Let's go home.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "...Code overwrite complete. Let's go home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carrobotmove",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carrobotmove",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
         "text": "He does not wish to stay there, not even for a moment longer."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "fire",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "fire",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "60_g8_rhodeslowerdeck_origin",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "60_g8_rhodeslowerdeck_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "...?!",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "...?!"
     },
     {
-        "text": "What happened to Rhodes Island?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "What happened to Rhodes Island?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#8$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#8$2"
+        }
     },
     {
-        "text": "Friston-3? Are they all back to normal?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Friston-3? Are they all back to normal?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "For now.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "For now."
     },
     {
-        "text": "I rewrote the sections of their code associated with PRTS, ensuring their basic operation with my own core code.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "I rewrote the sections of their code associated with PRTS, ensuring their basic operation with my own core code."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#11$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#11$2"
+        }
     },
     {
-        "text": "Great. Now we can go and help Misery's team, kitten.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Great. Now we can go and help Misery's team, kitten."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_391_rosmon_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_391_rosmon_1#1$2"
+        }
     },
     {
-        "text": "Where are you going next, Friston-3?",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Where are you going next, Friston-3?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4093_frston_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4093_frston_1#1$1"
+        }
     },
     {
-        "text": "I'll have a meeting with the kids, now that they've woken up. There should be something that we can help with.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "I'll have a meeting with the kids, now that they've woken up. There should be something that we can help with."
     },
     {
-        "text": "I'll talk to Closure. I've got a score to settle with her anyway.",
-        "tag": "name",
-        "value": "Friston-3"
+        "command": "name",
+        "value": "Friston-3",
+        "text": "I'll talk to Closure. I've got a score to settle with her anyway."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "60_g10_rhodescorridor_origin",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "60_g10_rhodescorridor_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#1$3"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#1$3"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#1$3",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#1$3",
+            "focus": "l"
+        }
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_vertical_common",
-        "size": "290,760",
-        "tsfrom": "0,1",
-        "tsto": "1,1",
-        "tsduration": 0.5,
-        "switch": true,
-        "style": 0,
-        "offset": "-250,0",
-        "channel": 3
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_vertical_common",
+            "size": "290,760",
+            "tsfrom": "0,1",
+            "tsto": "1,1",
+            "tsduration": 0.5,
+            "switch": true,
+            "style": 0,
+            "offset": "-250,0",
+            "channel": 3
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true,
-        "type": 3,
-        "slot": "m",
-        "pfrom": "-250,0",
-        "pto": "-250,0",
-        "name": "avg_npc_1723_1#1$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true,
+            "type": 3,
+            "slot": "m",
+            "pfrom": "-250,0",
+            "pto": "-250,0",
+            "name": "avg_npc_1723_1#1$1",
+            "duration": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Looks like the buggies are back to normal for now, Amiya.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Looks like the buggies are back to normal for now, Amiya."
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#1$3",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#1$3",
+            "focus": "r"
+        }
     },
     {
-        "text": "What about Mr. Friston?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What about Mr. Friston?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true,
-        "type": 3,
-        "slot": "m",
-        "pfrom": "-250,0",
-        "pto": "-250,0",
-        "name": "avg_npc_1723_1#9$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true,
+            "type": 3,
+            "slot": "m",
+            "pfrom": "-250,0",
+            "pto": "-250,0",
+            "name": "avg_npc_1723_1#9$1",
+            "duration": 0
+        }
     },
     {
-        "text": "Well, he seems a little pissed at me... other than that, everything looks alright.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Well, he seems a little pissed at me... other than that, everything looks alright."
     },
     {
-        "text": "Great idea, rewriting PRTS-associated code with his own. Would have been a lot of trouble otherwise.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Great idea, rewriting PRTS-associated code with his own. Would have been a lot of trouble otherwise."
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#6$3",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#6$3",
+            "focus": "r"
+        }
     },
     {
-        "text": "Are all our PRTS permissions gone?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Are all our PRTS permissions gone?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true,
-        "type": 3,
-        "slot": "m",
-        "pfrom": "-250,0",
-        "pto": "-250,0",
-        "name": "avg_npc_1723_1#6$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true,
+            "type": 3,
+            "slot": "m",
+            "pfrom": "-250,0",
+            "pto": "-250,0",
+            "name": "avg_npc_1723_1#6$1",
+            "duration": 0
+        }
     },
     {
-        "text": "I'm afraid so.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I'm afraid so."
     },
     {
-        "text": "PRTS is actively blocking all of our access. All of its operations take place in a black box now.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "PRTS is actively blocking all of our access. All of its operations take place in a black box now."
     },
     {
-        "text": "Kal'tsit is fighting to take control, but I'm not sure how long she can keep it up.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Kal'tsit is fighting to take control, but I'm not sure how long she can keep it up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "decision",
-        "options": "Cut off the core power supply of PRTS.;Manually activate the backup system and fight for control over the ship.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Cut off the core power supply of PRTS.;Manually activate the backup system and fight for control over the ship.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true
+        }
     },
     {
-        "text": "Cutting off the core power supply means going into the Abyss directly. It's risky.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Cutting off the core power supply means going into the Abyss directly. It's risky."
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#8$3",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#8$3",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'll protect the Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'll protect the Doctor."
     },
     {
-        "text": "Besides, we're not alone. The elite operators stand with us.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Besides, we're not alone. The elite operators stand with us."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#6$3",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#6$3",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'm not abandoning the Doctor or Rhodes Island.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm not abandoning the Doctor or Rhodes Island."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true,
-        "type": 3,
-        "slot": "m",
-        "pfrom": "-250,0",
-        "pto": "-250,0",
-        "name": "avg_npc_1723_1#6$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true,
+            "type": 3,
+            "slot": "m",
+            "pfrom": "-250,0",
+            "pto": "-250,0",
+            "name": "avg_npc_1723_1#6$1",
+            "duration": 0
+        }
     },
     {
-        "text": "My ZOOT system is unable to fully wrestle control from PRTS.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "My ZOOT system is unable to fully wrestle control from PRTS."
     },
     {
-        "text": "Kal'tsit and I have done simulations about this sort of situation.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Kal'tsit and I have done simulations about this sort of situation."
     },
     {
-        "text": "By force-booting it with the ship's power, it may be able to temporarily establish control over certain non-core areas...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "By force-booting it with the ship's power, it may be able to temporarily establish control over certain non-core areas..."
     },
     {
-        "text": "But all outcomes end with destruction of its core components due to overload.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "But all outcomes end with destruction of its core components due to overload."
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_1037_amiya3_1#8$3",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_1037_amiya3_1#8$3",
+            "focus": "r"
+        }
     },
     {
-        "text": "You've already made a decision, haven't you?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "You've already made a decision, haven't you?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true,
-        "type": 3,
-        "slot": "m",
-        "pfrom": "-250,0",
-        "pto": "-250,0",
-        "name": "avg_npc_1723_1#9$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true,
+            "type": 3,
+            "slot": "m",
+            "pfrom": "-250,0",
+            "pto": "-250,0",
+            "name": "avg_npc_1723_1#9$1",
+            "duration": 0
+        }
     },
     {
-        "text": "Hah, I can get to work right now.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Hah, I can get to work right now."
     },
     {
-        "text": "If I can make one, I can make another.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "If I can make one, I can make another."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "focus": "n"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
     {
-        "tag": "decision",
-        "options": "Let's prepare both options.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Let's prepare both options.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "We will activate the backup command system at the same time as we attempt to penetrate the Abyss.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "We will activate the backup command system at the same time as we attempt to penetrate the Abyss.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "clear": true
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "clear": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_rhodesengineeringroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_rhodesengineeringroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#2$1"
+        }
     },
     {
-        "text": "Now, you're finally coming online.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Now, you're finally coming online."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#1$1"
+        }
     },
     {
-        "text": "I've waited for this moment for too long. Let me take a good look at you\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I've waited for this moment for too long. Let me take a good look at you\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spotlightc",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spotlightc",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.01,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.01,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Closure awaits with anxious anticipation. She had longed for the day when it would truly come online, just as much as she had feared it."
@@ -1873,1283 +2204,1564 @@
         "text": "For it would mean that Rhodes Island was once again in desperate straits\u2014"
     },
     {
-        "tag": "dialog"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_systemstart",
-        "volume": 1
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "..................",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nZOOT command system online. Updating permission log...",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nOriginal administrator privileges detected. Confirm key...",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nKey command 'Machine Oil Aesthete'. Verification complete.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nWelcome back, Closure.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 0.5,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "multi": true,
-        "text": "Awakening all backup nodes.",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "multi": true,
-        "text": "\\n\\nLoading...",
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.7,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "multi": true,
-        "text": "\\n\\nWarning: Awakening failed. Unable to bypass PRTS restrictions.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "duration": 0.5,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "playsound",
-        "key": "$keyboard",
-        "volume": 1
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#6$1"
-    },
-    {
-        "text": "...Activate overload.",
-        "tag": "name",
-        "value": "Closure"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_spotlightc",
-        "volume": 1
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.01,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "Backup power detected. Source\u2014Rhodes Island mobility layer. 71% remaining.",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 900,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.7,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nWarning: Overload mode will greatly reduce equipment lifespan.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nEstimated power remaining in minutes: Sixty-one.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nOverload mode activated.",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nAwakening all backup nodes...",
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 1,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.4,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "Warning: PRTS incursion!",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 0.6
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.4,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "multi": true,
-        "text": "Warning: ZOOT core program is being overwritten\u2014",
-        "x": 180,
-        "y": 240,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 0.6
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.4,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st3",
-        "multi": true,
-        "text": "Warning: Insufficient power to continue operating the ZOOT system\u2014",
-        "x": 180,
-        "y": 310,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 0.5,
-        "block": false
-    },
+        "command": "dialog"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_systemstart",
+            "volume": 1
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": ".................."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nZOOT command system online. Updating permission log..."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nOriginal administrator privileges detected. Confirm key..."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nKey command 'Machine Oil Aesthete'. Verification complete."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nWelcome back, Closure."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
+    },
     {
-        "tag": "sticker",
-        "id": "st2",
-        "duration": 0.5,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "sticker",
-        "id": "st3",
-        "duration": 0.5,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "Awakening all backup nodes."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nLoading..."
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$keyboard",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#6$1"
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "Wait! Hang in there, 'Zeroth Order Oil Tank'!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nWarning: Awakening failed. Unable to bypass PRTS restrictions."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#7$1"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Dammit. It's all or nothing!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "playsound",
+        "params": {
+            "key": "$keyboard",
+            "volume": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#6$1"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "name",
+        "value": "Closure",
+        "text": "...Activate overload."
     },
     {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.4,
-        "block": true
+        "command": "charslot"
     },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "Warning: Severe core component damage.",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 0.6
-    },
-    {
-        "tag": "playsound",
-        "key": "$alarmenter",
-        "volume": 0.8
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.4,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "multi": true,
-        "text": "Warning: Insufficient backup power. Time remaining: Twenty-one minutes.",
-        "x": 180,
-        "y": 240,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "sticker",
-        "id": "st3",
-        "multi": true,
-        "text": "Communications are online.",
-        "x": 180,
-        "y": 310,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 800,
-        "block": true
-    },
-    {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 0.5,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st2",
-        "duration": 0.5,
-        "block": false
-    },
-    {
-        "tag": "sticker",
-        "id": "st3",
-        "duration": 0.5,
-        "block": false
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#6$1"
-    },
-    {
-        "text": "We're being attacked by PRTS, Doctor. ZOOT will coordinate defenses with Kal'tsit.",
-        "tag": "name",
-        "value": "Closure"
-    },
-    {
-        "text": "The rest is up to you!",
-        "tag": "name",
-        "value": "Closure"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "stopmusic",
-        "fadetime": 2
-    },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "charslot"
-    },
-    {
-        "tag": "background",
-        "image": "60_g8_rhodeslowerdeck_origin",
-        "screenadapt": "coverall"
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "decision",
-        "options": "All personnel, comm check.",
-        "values": 1
-    },
-    {
-        "tag": "predicate",
-        "references": 1
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$kaltsitteam_intro",
-        "key": "$kaltsitteam_loop",
-        "volume": 0.6
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 1
-    },
-    {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Raidian",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,170",
-        "channel": 3
-    },
-    {
-        "tag": "interlude",
-        "channel": 3,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "450,0",
-        "pto": "-180,50",
-        "name": "avg_npc_1730_1#1$1",
-        "duration": 0
-    },
-    {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true
-    },
-    {
-        "text": "In position.",
-        "tag": "name",
-        "value": "Raidian"
-    },
-    {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Mantra",
-        "switch": true,
-        "style": 1,
-        "offset": "200,170",
-        "channel": 4
-    },
-    {
-        "tag": "interlude",
-        "channel": 4,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "220,-60",
-        "name": "avg_npc_1300_1#1$1",
-        "duration": 0
-    },
-    {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
-    },
-    {
-        "text": "Acknowleged.",
-        "tag": "name",
-        "value": "Mantra"
-    },
-    {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Misery",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,-120",
-        "channel": 5
-    },
-    {
-        "tag": "interlude",
-        "channel": 5,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "-160,-350",
-        "name": "avg_npc_235",
-        "duration": 0
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spotlightc",
+            "volume": 1
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "switch": false
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.01,
+            "block": true
+        }
     },
     {
-        "text": "Waiting for you on the front lines.",
-        "tag": "name",
-        "value": "Misery"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Logos",
-        "switch": true,
-        "style": 1,
-        "offset": "200,-120",
-        "channel": 6
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 900,
+            "block": true
+        },
+        "text": "Backup power detected. Source\u2014Rhodes Island mobility layer. 71% remaining."
     },
     {
-        "tag": "interlude",
-        "channel": 6,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "190,-320",
-        "name": "avg_4133_logos_1#1$1",
-        "duration": 0
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 5,
-        "switch": false
-    },
-    {
-        "text": "Moving to rendezvous point.",
-        "tag": "name",
-        "value": "Logos"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "interlude",
-        "channel": 3,
-        "clear": true
-    },
-    {
-        "tag": "interlude",
-        "channel": 4,
-        "clear": true
-    },
-    {
-        "tag": "interlude",
-        "channel": 5,
-        "clear": true
-    },
-    {
-        "tag": "interlude",
-        "channel": 6,
-        "clear": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.7,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nWarning: Overload mode will greatly reduce equipment lifespan."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nEstimated power remaining in minutes: Sixty-one."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nOverload mode activated."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nAwakening all backup nodes..."
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.4,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": false
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": false
+        },
+        "text": "Warning: PRTS incursion!"
+    },
+    {
+        "command": "delay",
+        "value": 0.6
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.4,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": false
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "multi": true,
+            "x": 180,
+            "y": 240,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": false
+        },
+        "text": "Warning: ZOOT core program is being overwritten\u2014"
+    },
+    {
+        "command": "delay",
+        "value": 0.6
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.4,
+            "block": true
+        }
+    },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": false
+        }
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Mechanist",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,170",
-        "channel": 3
+        "command": "sticker",
+        "params": {
+            "id": "st3",
+            "multi": true,
+            "x": 180,
+            "y": 310,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": true
+        },
+        "text": "Warning: Insufficient power to continue operating the ZOOT system\u2014"
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "block": false
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st3",
+            "block": false
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$keyboard",
+            "volume": 1
+        }
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#6$1"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Closure",
+        "text": "Wait! Hang in there, 'Zeroth Order Oil Tank'!"
+    },
+    {
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#7$1"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Closure",
+        "text": "Dammit. It's all or nothing!"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.4,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": false
+        }
+    },
+    {
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": false
+        },
+        "text": "Warning: Severe core component damage."
+    },
+    {
+        "command": "delay",
+        "value": 0.6
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$alarmenter",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.4,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": false
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "450,0",
-        "pto": "-130,-50",
-        "name": "avg_npc_521_1#1$1",
-        "duration": 0
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "multi": true,
+            "x": 180,
+            "y": 240,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": false
+        },
+        "text": "Warning: Insufficient backup power. Time remaining: Twenty-one minutes."
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Be right there.",
-        "tag": "name",
-        "value": "Mechanist"
+        "command": "sticker",
+        "params": {
+            "id": "st3",
+            "multi": true,
+            "x": 180,
+            "y": 310,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 800,
+            "block": true
+        },
+        "text": "Communications are online."
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Rosmontis",
-        "switch": true,
-        "style": 1,
-        "offset": "200,170",
-        "channel": 4
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "240,70",
-        "name": "avg_391_rosmon_1#1$2",
-        "duration": 0
+        "command": "sticker",
+        "params": {
+            "id": "st2",
+            "block": false
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "sticker",
+        "params": {
+            "id": "st3",
+            "block": false
+        }
     },
     {
-        "text": "I'm here, Doctor.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Blaze",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,-120",
-        "channel": 5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#6$1"
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 5,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "-175,-300",
-        "name": "avg_017_huang_1#12$2",
-        "duration": 0
+        "command": "name",
+        "value": "Closure",
+        "text": "We're being attacked by PRTS, Doctor. ZOOT will coordinate defenses with Kal'tsit."
     },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "switch": false
+        "command": "name",
+        "value": "Closure",
+        "text": "The rest is up to you!"
     },
-    {
-        "text": "It's been a long time since we've had a good brawl together!",
-        "tag": "name",
-        "value": "Blaze"
+    {
+        "command": "dialog"
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Sharp",
-        "switch": true,
-        "style": 1,
-        "offset": "200,-120",
-        "channel": 6
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 6,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "240,-320",
-        "name": "avg_npc_252",
-        "duration": 0
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 5,
-        "switch": false
+        "command": "charslot"
     },
     {
-        "text": "The <i>Bad Guy</i> has returned. Moving to rendezvous.",
-        "tag": "name",
-        "value": "Sharp"
+        "command": "background",
+        "params": {
+            "image": "60_g8_rhodeslowerdeck_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "dialog"
-    },
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "clear": true
-    },
+        "command": "delay",
+        "value": 1
+    },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "clear": true
+        "command": "decision",
+        "params": {
+            "options": "All personnel, comm check.",
+            "values": "1"
+        }
     },
-    {
-        "tag": "interlude",
-        "channel": 5,
-        "clear": true
+    {
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 6,
-        "clear": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$kaltsitteam_intro",
+            "key": "$kaltsitteam_loop",
+            "volume": 0.6
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 1
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Raidian",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,170",
+            "channel": 3
+        }
     },
-    {
-        "tag": "delay",
-        "time": 1
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "450,0",
+            "pto": "-180,50",
+            "name": "avg_npc_1730_1#1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true
+        }
+    },
+    {
+        "command": "name",
+        "value": "Raidian",
+        "text": "In position."
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Mantra",
+            "switch": true,
+            "style": 1,
+            "offset": "200,170",
+            "channel": 4
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "220,-60",
+            "name": "avg_npc_1300_1#1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
     },
-    {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 1
+    {
+        "command": "name",
+        "value": "Mantra",
+        "text": "Acknowleged."
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Stormeye",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,170",
-        "channel": 3
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Misery",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,-120",
+            "channel": 5
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "450,0",
-        "pto": "-200,-60",
-        "name": "avg_npc_167",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "-160,-350",
+            "name": "avg_npc_235",
+            "duration": 0
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": true
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "switch": false
+        }
     },
     {
-        "text": "Give me a minute.",
-        "tag": "name",
-        "value": "Stormeye"
+        "command": "name",
+        "value": "Misery",
+        "text": "Waiting for you on the front lines."
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Logos",
+            "switch": true,
+            "style": 1,
+            "offset": "200,-120",
+            "channel": 6
+        }
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Pith",
-        "switch": true,
-        "style": 1,
-        "offset": "200,170",
-        "channel": 4
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "190,-320",
+            "name": "avg_4133_logos_1#1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "switch": false
+        }
     },
+    {
+        "command": "name",
+        "value": "Logos",
+        "text": "Moving to rendezvous point."
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "clear": true
+        }
+    },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "200,10",
-        "name": "avg_npc_1310_1#1$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "clear": true
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "switch": false
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "clear": true
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "clear": true
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 1
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Mechanist",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,170",
+            "channel": 3
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "450,0",
+            "pto": "-130,-50",
+            "name": "avg_npc_521_1#1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true
+        }
+    },
+    {
+        "command": "name",
+        "value": "Mechanist",
+        "text": "Be right there."
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Rosmontis",
+            "switch": true,
+            "style": 1,
+            "offset": "200,170",
+            "channel": 4
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "240,70",
+            "name": "avg_391_rosmon_1#1$2",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
+    },
+    {
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I'm here, Doctor."
     },
     {
-        "text": "I'm here.",
-        "tag": "name",
-        "value": "Pith"
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Blaze",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,-120",
+            "channel": 5
+        }
     },
     {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Touch",
-        "switch": true,
-        "style": 1,
-        "offset": "-200,-120",
-        "channel": 5
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "-175,-300",
+            "name": "avg_017_huang_1#12$2",
+            "duration": 0
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 5,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "-230,-250",
-        "name": "avg_npc_249_1$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "switch": false
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "switch": false
+        "command": "name",
+        "value": "Blaze",
+        "text": "It's been a long time since we've had a good brawl together!"
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Sharp",
+            "switch": true,
+            "style": 1,
+            "offset": "200,-120",
+            "channel": 6
+        }
     },
     {
-        "text": "Assembling.",
-        "tag": "name",
-        "value": "Touch"
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "240,-320",
+            "name": "avg_npc_252",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "switch": false
+        }
+    },
+    {
+        "command": "name",
+        "value": "Sharp",
+        "text": "The <i>Bad Guy</i> has returned. Moving to rendezvous."
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "clear": true
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "clear": true
+        }
     },
-    {
-        "tag": "interlude",
-        "maskid": "group_interclude_square_common",
-        "char": "Ascalon",
-        "switch": true,
-        "style": 1,
-        "offset": "200,-120",
-        "channel": 6
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "clear": true
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "clear": true
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 1
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Stormeye",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,170",
+            "channel": 3
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "450,0",
+            "pto": "-200,-60",
+            "name": "avg_npc_167",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": true
+        }
+    },
+    {
+        "command": "name",
+        "value": "Stormeye",
+        "text": "Give me a minute."
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Pith",
+            "switch": true,
+            "style": 1,
+            "offset": "200,170",
+            "channel": 4
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "200,10",
+            "name": "avg_npc_1310_1#1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "switch": false
+        }
+    },
+    {
+        "command": "name",
+        "value": "Pith",
+        "text": "I'm here."
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Touch",
+            "switch": true,
+            "style": 1,
+            "offset": "-200,-120",
+            "channel": 5
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "-230,-250",
+            "name": "avg_npc_249_1$1",
+            "duration": 0
+        }
+    },
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "switch": false
+        }
     },
+    {
+        "command": "name",
+        "value": "Touch",
+        "text": "Assembling."
+    },
     {
-        "tag": "interlude",
-        "channel": 6,
-        "type": 3,
-        "slot": "m",
-        "switch": true,
-        "pfrom": "-450,0",
-        "pto": "190,-320",
-        "name": "avg_4132_ascln_1#1$1",
-        "duration": 0
+        "command": "interlude",
+        "params": {
+            "maskid": "group_interclude_square_common",
+            "char": "Ascalon",
+            "switch": true,
+            "style": 1,
+            "offset": "200,-120",
+            "channel": 6
+        }
     },
-    {
-        "tag": "interlude",
-        "channel": 5,
-        "switch": false
+    {
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "type": 3,
+            "slot": "m",
+            "switch": true,
+            "pfrom": "-450,0",
+            "pto": "190,-320",
+            "name": "avg_4132_ascln_1#1$1",
+            "duration": 0
+        }
     },
     {
-        "text": "Waiting for you.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "switch": false
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Waiting for you."
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 1
+        "command": "dialog"
     },
     {
-        "tag": "interlude",
-        "channel": 3,
-        "clear": true,
-        "tsto": "0,1",
-        "tsduration": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 1
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 4,
-        "clear": true,
-        "tsto": "0,1",
-        "tsduration": 0.5
+        "command": "interlude",
+        "params": {
+            "channel": 3,
+            "clear": true,
+            "tsto": "0,1",
+            "tsduration": 0.5
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 5,
-        "clear": true,
-        "tsto": "0,1",
-        "tsduration": 0.5
+        "command": "interlude",
+        "params": {
+            "channel": 4,
+            "clear": true,
+            "tsto": "0,1",
+            "tsduration": 0.5
+        }
     },
     {
-        "tag": "interlude",
-        "channel": 6,
-        "clear": true,
-        "tsto": "0,1",
-        "tsduration": 0.5
+        "command": "interlude",
+        "params": {
+            "channel": 5,
+            "clear": true,
+            "tsto": "0,1",
+            "tsduration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "interlude",
+        "params": {
+            "channel": 6,
+            "clear": true,
+            "tsto": "0,1",
+            "tsduration": 0.5
+        }
     },
     {
-        "tag": "decision",
-        "options": "Objectives updated.",
-        "values": 1
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "Objectives updated.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Priority objective\u2014support Kal'tsit.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "Priority objective\u2014support Kal'tsit.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Core objective\u2014enter Abyss and cut off PRTS's core power supply.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "Core objective\u2014enter Abyss and cut off PRTS's core power supply.",
+            "values": "1"
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "60_g4_rhodesabyss_w",
-        "screenadapt": "coverall"
+        "command": "charslot"
     },
     {
-        "tag": "focusout",
-        "type": "bg",
-        "id": "60_g4_rhodesabyss_w",
-        "from": 0,
-        "to": 1,
-        "duration": 0.1,
-        "block": false
+        "command": "background",
+        "params": {
+            "image": "60_g4_rhodesabyss_w",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_labamb",
-        "volume": 0,
-        "loop": true,
-        "channel": "a"
+        "command": "focusout",
+        "params": {
+            "type": "bg",
+            "id": "60_g4_rhodesabyss_w",
+            "from": 0,
+            "to": 1,
+            "duration": 0.1,
+            "block": false
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.8,
-        "channel": "a",
-        "fadetime": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_labamb",
+            "volume": 0,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.8,
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_recorderglitch",
-        "volume": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "Progress: \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_recorderglitch",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "Progress: \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0 \u25a0"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_signlntrfrnc",
-        "volume": 1
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_signlntrfrnc",
+            "volume": 1
+        }
     },
-    {
-        "tag": "bgeffect",
-        "name": "$eb_signalInterference",
-        "layer": 1
+    {
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_signalInterference",
+            "layer": 1
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 0.5,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "......",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "......"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_kalimbapizz",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_kalimbapizz",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 0,
-        "g": 0.2,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 0,
+            "g": 0.2,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nWelcome back, Administrator.",
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nWelcome back, Administrator."
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 2,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

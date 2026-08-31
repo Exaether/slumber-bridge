@@ -1,634 +1,750 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "50_g2_mainbattlefield",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "x": -100,
+            "y": -20
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g2_mainbattlefield",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "x": -100,
-        "y": -20
+        "command": "playmusic",
+        "params": {
+            "intro": "$frontline_intro",
+            "key": "$frontline_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$frontline_intro",
-        "key": "$frontline_loop",
-        "volume": 0.6
+        "command": "backgroundtween",
+        "params": {
+            "x": -130,
+            "y": -60,
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "duration": 10,
+            "block": false
+        }
     },
     {
-        "tag": "backgroundtween",
-        "x": -100,
-        "y": -20,
-        "xTo": -130,
-        "yTo": -60,
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "duration": 10,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": false
+        "command": "delay",
+        "value": 6
     },
     {
-        "tag": "delay",
-        "time": 6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_battlefield_environment",
+            "volume": 0.4,
+            "loop": true,
+            "channel": "bgs"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_battlefield_environment",
-        "volume": 0.4,
-        "loop": true,
-        "channel": "bgs"
+        "command": "background",
+        "params": {
+            "image": "50_g2_mainbattlefield",
+            "fadetime": 1,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g2_mainbattlefield",
-        "fadetime": 1,
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_405_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_405_1#4$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Morgan",
+        "text": "What the hell are those things up in the sky?!"
     },
     {
-        "text": "What the hell are those things up in the sky?!",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4110_delphn_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4110_delphn_1#3$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Delphine",
+        "text": "Get down!"
     },
     {
-        "text": "Get down!",
-        "tag": "name",
-        "value": "Delphine"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_energycannon",
+            "volume": 0.7
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_explodebris",
+            "volume": 1,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_energycannon",
-        "volume": 0.7
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_explodebris",
-        "volume": 1,
-        "delay": 0.5
+        "command": "camerashake",
+        "params": {
+            "duration": 2.5,
+            "xstrength": 35,
+            "ystrength": 35,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2.5,
-        "xstrength": 35,
-        "ystrength": 35,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 1,
-        "block": true
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 1,
+            "block": true
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.5
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_explo_n"
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 1.0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_gen_explo_n"
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 1.0
-    },
-    {
-        "tag": "playsound",
-        "key": "$e_skill_explodebris",
-        "volume": 0.5
-    },
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_explodebris",
+            "volume": 0.5
+        }
+    },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
-    },
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
+    },
     {
-        "tag": "bgeffect",
-        "name": "$eb_smoke_l",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_smoke_l",
+            "layer": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_405_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_405_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Urgh! *cough* *cough* *cough!",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Urgh! *cough* *cough* *cough!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_405_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_405_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Delphine, your right hand\u2014",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Delphine, your right hand\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4110_delphn_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4110_delphn_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't touch.",
-        "tag": "name",
-        "value": "Delphine"
+        "command": "name",
+        "value": "Delphine",
+        "text": "Don't touch."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4110_delphn_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4110_delphn_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "This isn't any normal cannonfire. Sarkaz witchcraft... is corrosive in nature. I won't be much help.",
-        "tag": "name",
-        "value": "Delphine"
+        "command": "name",
+        "value": "Delphine",
+        "text": "This isn't any normal cannonfire. Sarkaz witchcraft... is corrosive in nature. I won't be much help."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_405_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_405_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Those people still trapped in the polluted area...",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Those people still trapped in the polluted area..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4110_delphn_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4110_delphn_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's too late for them.",
-        "tag": "name",
-        "value": "Delphine"
+        "command": "name",
+        "value": "Delphine",
+        "text": "It's too late for them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You got shit in the air, stuff growing on the ground, AND crystals and dust everywhere! Can't even take a damn step!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "You got shit in the air, stuff growing on the ground, AND crystals and dust everywhere! Can't even take a damn step!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Sarkaz want to turn this battlefield into their home turf \u2013 forcing us to put down our gear and cower while they pummel us.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "The Sarkaz want to turn this battlefield into their home turf \u2013 forcing us to put down our gear and cower while they pummel us."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "When it comes to a head-to-head infantry battle, the Sarkaz will surely have an advantage due to their natural physique.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "When it comes to a head-to-head infantry battle, the Sarkaz will surely have an advantage due to their natural physique."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Alright, I get it now. It's all just a dirty trick!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Alright, I get it now. It's all just a dirty trick!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Which is why we can't afford to get caught off guard. If they ever get the drop on us, we're done for on the spot.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Which is why we can't afford to get caught off guard. If they ever get the drop on us, we're done for on the spot."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Morgan, get as many of our vehicles up and running as you can. Avoid any close combat with Sarkaz infantry.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Morgan, get as many of our vehicles up and running as you can. Avoid any close combat with Sarkaz infantry."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Even if a vehicle's destroyed, don't overlook the mounted cannon. They're the best weapons we've got.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Even if a vehicle's destroyed, don't overlook the mounted cannon. They're the best weapons we've got."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_405_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_405_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Understood!",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Understood!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Delphine,send the signalers out as widely as you feasibly can. The Exemplars will be able to maintain communication that way, at the least.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Delphine,send the signalers out as widely as you feasibly can. The Exemplars will be able to maintain communication that way, at the least."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4110_delphn_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4110_delphn_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course.",
-        "tag": "name",
-        "value": "Delphine"
+        "command": "name",
+        "value": "Delphine",
+        "text": "Of course."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "If we want to push forward, we're going to have to take down that altar up ahead.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "If we want to push forward, we're going to have to take down that altar up ahead."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Horn, covering fire!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Horn, covering fire!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Roger!",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "Roger!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Indra, your team's responsible for holding the enemy back. Doesn't matter if it's casters or Arts Creations or whatever those things are up in the sky.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Indra, your team's responsible for holding the enemy back. Doesn't matter if it's casters or Arts Creations or whatever those things are up in the sky."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You got it.",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "You got it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Dagda's team, you're with me.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Dagda's team, you're with me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Same as always?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Same as always?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Same as always.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Same as always."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I can see the core \u2013 move out.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "I can see the core \u2013 move out."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Another altar of Sarkaz witchcraft."
@@ -652,234 +768,282 @@
         "text": "The devil's crimson eye stares at her."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_singleblunt",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_singleblunt",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_land_impact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_land_impact",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rockfall",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rockfall",
+            "volume": 1
+        }
     },
     {
         "text": "The hammer comes down hard, and the altar begins to collapse before Siege even reaches the ground."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It worked! Phew...",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "It worked! Phew..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We took it down even quicker than the last one.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "We took it down even quicker than the last one."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I hear something.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "I hear something."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Back up!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Back up!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_energycannon",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_energycannon",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_explodebris",
-        "volume": 1,
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_explodebris",
+            "volume": 1,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 2.5,
-        "xstrength": 35,
-        "ystrength": 35,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2.5,
+            "xstrength": 35,
+            "ystrength": 35,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Something's... growin' outta that bloody thing! It's another altar, not far from the one we knocked down!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Something's... growin' outta that bloody thing! It's another altar, not far from the one we knocked down!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_155_tiger_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_155_tiger_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How many of these little buggers did they bury in the ground? Bloody hell...",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "How many of these little buggers did they bury in the ground? Bloody hell..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "There's no end to them."
@@ -891,797 +1055,949 @@
         "text": "They are adapting. But not quickly enough."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Trilby Asher, has the location of the Stone of the Sword changed?",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Trilby Asher, has the location of the Stone of the Sword changed?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I haven't been notified of any changes to the plan.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "I haven't been notified of any changes to the plan."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Can the ship still move, with all the Originium crystals everywhere?",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Can the ship still move, with all the Originium crystals everywhere?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'll have you know, Victoria has the most powerful fleet on land.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "I'll have you know, Victoria has the most powerful fleet on land."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We might be slowed a little, but we're certainly not without options.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "We might be slowed a little, but we're certainly not without options."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#10$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#10$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I hear naval guns.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "I hear naval guns."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I believe it's the Iron Duke's Gastrell, going by the sound.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "I believe it's the Iron Duke's Gastrell, going by the sound."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
-    },
-    {
-        "text": "The next round of our assault is beginning.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "character",
-        "fadetime": 0
-    },
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
+    },
     {
-        "tag": "background",
-        "image": "50_g4_warshipandswrdpedestal",
-        "screenadapt": "coverall"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "The next round of our assault is beginning."
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "dialog"
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
+    },
+    {
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
+    },
+    {
+        "command": "background",
+        "params": {
+            "image": "50_g4_warshipandswrdpedestal",
+            "screenadapt": "coverall"
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1337_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1337_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "One of Abercorn's assault ships has run into the Sarkaz advance brigade!",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "One of Abercorn's assault ships has run into the Sarkaz advance brigade!"
     },
     {
-        "text": "The enemy was hiding in the fog and suddenly appeared\u2013",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "The enemy was hiding in the fog and suddenly appeared\u2013"
     },
     {
-        "text": "Our vision is severely limited by the Originium crystals and we can't follow their movements at all!",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "Our vision is severely limited by the Originium crystals and we can't follow their movements at all!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Has mid-range communication been restored yet?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Has mid-range communication been restored yet?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1337_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1337_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The ship's comm tower is still out of commission. Engineering's trying to repair it, but in this Originium-dense zone...",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "The ship's comm tower is still out of commission. Engineering's trying to repair it, but in this Originium-dense zone..."
     },
     {
-        "text": "Your Grace, what are you doing on deck?",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "Your Grace, what are you doing on deck?"
     },
     {
-        "text": "There's Originium dust everywhere outside, please try not to leave the command center...",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "There's Originium dust everywhere outside, please try not to leave the command center..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've heard that Wellington always stands on the deck of the Gastrell, personally commanding his frontline troops.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "I've heard that Wellington always stands on the deck of the Gastrell, personally commanding his frontline troops."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1337_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1337_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Iron Duke has been through many battles, but you...",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "The Iron Duke has been through many battles, but you..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Just now, the Gastrell opened fire.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Just now, the Gastrell opened fire."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Your ears did not deceive you.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Your ears did not deceive you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is he still pressing forward?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Is he still pressing forward?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm afraid so. The Iron Duke's forces have penetrated deeper than we thought, and are about to collide with the Sarkaz core units.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "I'm afraid so. The Iron Duke's forces have penetrated deeper than we thought, and are about to collide with the Sarkaz core units."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wellington...",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Wellington..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Does he plan to take the head of the Sarkaz regent?",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Does he plan to take the head of the Sarkaz regent?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Wesley Wellington I knew was indeed a warrior before he became the Iron Duke.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "The Wesley Wellington I knew was indeed a warrior before he became the Iron Duke."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "His bravery might have bordered on madness... but he would never gamble with the outcome of a battle.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "His bravery might have bordered on madness... but he would never gamble with the outcome of a battle."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Regardless, the Iron Duke's recklessness has placed us at great risk.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Regardless, the Iron Duke's recklessness has placed us at great risk."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As per the initial orders, Duke Abercorn's and Duke Ashworth's men are following the Iron Duke... and among them, our vanguard as well.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "As per the initial orders, Duke Abercorn's and Duke Ashworth's men are following the Iron Duke... and among them, our vanguard as well."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Factoring in the surrounding Originium, our front line is being stretched thin.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Factoring in the surrounding Originium, our front line is being stretched thin."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What of the 'eyes' you placed aboard the Gastrell?",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "What of the 'eyes' you placed aboard the Gastrell?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Nothing yet.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Nothing yet."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Even us Trilby Ashers are experiencing some... serious delays in communication.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Even us Trilby Ashers are experiencing some... serious delays in communication."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Aileen, confirm the status of the Stone of the Sword.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Aileen, confirm the status of the Stone of the Sword."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1337_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1337_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No issues so far!",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "No issues so far!"
     },
     {
-        "text": "We will never allow the Stone of the Sword to be tainted by Sarkaz witchcraft.",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "We will never allow the Stone of the Sword to be tainted by Sarkaz witchcraft."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Your Grace, the Poet has launched a flare.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "Your Grace, the Poet has launched a flare."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So Alexandrina and the Sighs of Kings will arrive soon.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "So Alexandrina and the Sighs of Kings will arrive soon."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Have your people keep a close eye on them. Don't let the sword get lost on the battlefield.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Have your people keep a close eye on them. Don't let the sword get lost on the battlefield."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We must put the Sighs of Kings to work immediately.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "We must put the Sighs of Kings to work immediately."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_726_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_726_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Unless the comms are restored fully... the so-called ducal alliance is a non-entity.",
-        "tag": "name",
-        "value": "Duke of Caster"
+        "command": "name",
+        "value": "Duke of Caster",
+        "text": "Unless the comms are restored fully... the so-called ducal alliance is a non-entity."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g2_mainbattlefield",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g2_mainbattlefield",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1341_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1341_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1341_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1341_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The enemy seems to be getting stronger.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "The enemy seems to be getting stronger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The same witchcraft... eats away at us while strengthening them.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "The same witchcraft... eats away at us while strengthening them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Siege, watch out!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Siege, watch out!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2013\u2013",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "\u2013\u2013"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 20,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 20,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_spark_02_large",
-        "x": 0,
-        "y": 0,
-        "layer": 3
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_02_large",
+            "x": 0,
+            "y": 0,
+            "layer": 3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword"
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_396_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_396_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Argh\u2014!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Argh\u2014!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Dagda!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Dagda!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_singleblunt",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_singleblunt",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_land_impact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_land_impact",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The hammer falls, and a portion of the Nachzehrer warrior's body is caved in."
@@ -1690,109 +2006,131 @@
         "text": "But he continues to advance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#7$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#7$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2013\u2013\u2013!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "\u2013\u2013\u2013!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_singleblunt",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_singleblunt",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_land_impact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_land_impact",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_singleblunt",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_singleblunt",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_land_impact",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_land_impact",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "A second swing. Then a third."
@@ -1804,106 +2142,124 @@
         "text": "The Trilby Asher's flaming blade pierces his chest."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Dull gasps)",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "(Dull gasps)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That's just one. There are still... many more ahead.",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "That's just one. There are still... many more ahead."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_867_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_867_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "These Sarkaz are truly...",
-        "tag": "name",
-        "value": "'Trilby Asher'"
+        "command": "name",
+        "value": "Trilby Asher",
+        "text": "These Sarkaz are truly..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_414_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_414_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Monsters!",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Monsters!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_414_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_414_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "These bloody devils are all monsters, goddamn it! They're not even flesh-and-blood !",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "These bloody devils are all monsters, goddamn it! They're not even flesh-and-blood !"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_414_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_414_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Do you think they're already dead? Only the dead can...",
-        "tag": "name",
-        "value": "Victorian Soldier"
+        "command": "name",
+        "value": "Victorian Soldier",
+        "text": "Do you think they're already dead? Only the dead can..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_112_siege_1#5$2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_112_siege_1#5$2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Already dead...?",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Already dead...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Strange noises can be heard in all directions."
@@ -1912,132 +2268,156 @@
         "text": "They are distinct from the sounds of Originium crystal clusters piercing the ground. They are not omens to the explosion of Originium dust."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "Captain, we can't hold out like this!",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "Captain, we can't hold out like this!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "There's no end to them!",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "There's no end to them!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "Better focus on the one right in front of you, then.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "Better focus on the one right in front of you, then."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "There's always going to be someone standing up front.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "There's always going to be someone standing up front."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Raise the shield, fire the cannon. Repeat, ad infinitum."
@@ -2052,21 +2432,23 @@
         "text": "The artillery fire unleashes its fury, but it cannot stem the surging tide."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "*huff*... *pant*...",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "*huff*... *pant*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "There's no end to the enemies."
@@ -2078,9 +2460,11 @@
         "text": "The number of fallen Victorians is perhaps even greater."
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.3,
-        "fadetime": 3
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.3,
+            "fadetime": 3
+        }
     },
     {
         "text": "She can hear Bagpipe's shouts and the whistling of her spear. From those she finds utmost solace, and that's enough to keep her fighting on."
@@ -2089,54 +2473,62 @@
         "text": "A plume of firelight suddenly springs up not too far away."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Bagpipe...",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "Bagpipe..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#5",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#5",
+            "focus": "m"
+        }
     },
     {
-        "text": "What is it, Captain?",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "What is it, Captain?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "I think... I just saw Hill again.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "I think... I just saw Hill again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Oh, Hill."
@@ -2145,65 +2537,75 @@
         "text": "That same face again. The same face that appears in her nightmares every now and then, reminding her of how tragically her teammates died... The face of that traitor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...He's dead.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "...He's dead."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#2",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#2",
+            "focus": "m"
+        }
     },
     {
-        "text": "Is he that one... lyin' over there? Seems to have been killed in action some time ago... Um, Captain, just now, did he...?",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "Is he that one... lyin' over there? Seems to have been killed in action some time ago... Um, Captain, just now, did he...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "He moved.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "He moved."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_229_1#7",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_229_1#7",
+            "focus": "m"
+        }
     },
     {
-        "text": "He's... standing up again.",
-        "tag": "name",
-        "value": "Horn"
+        "command": "name",
+        "value": "Horn",
+        "text": "He's... standing up again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_248",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_248",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "'Adjutant Hill'"
+        "command": "name",
+        "value": "Adjutant Hill",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The man clad in the uniform of Wellington's forces staggers towards them."
@@ -2221,89 +2623,109 @@
         "text": "In the midst of the dead silent gray, only a tiny speck of purple dances."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's her.",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "It's her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_222_bpipe_1#6",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_222_bpipe_1#6",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's... Dublinn!",
-        "tag": "name",
-        "value": "Bagpipe"
+        "command": "name",
+        "value": "Bagpipe",
+        "text": "It's... Dublinn!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g3_mainbattlefield_ex",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g3_mainbattlefield_ex",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_244",
-        "bstart": 0,
-        "bend": 0.4,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_244",
+            "bstart": 0,
+            "bend": 0.4,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_244",
-        "bstart": 0,
-        "bend": 0.4,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_244",
+            "bstart": 0,
+            "bend": 0.4,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_244",
-        "bstart": 0,
-        "bend": 0.7,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_244",
+            "bstart": 0,
+            "bend": 0.7,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
         "text": "'I lay down now my soldier's honor here, so that in time the soil of Tara need no longer be soaked in carmine blood, and Draco cross no swords with Draco kin.'"
@@ -2312,352 +2734,418 @@
         "text": "'Be that unless a day comes, whereupon Red Dragon's flame should lead all those that fell, our fighters from the forge to be reborn.'"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The third set of altars has been crushed!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "The third set of altars has been crushed!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Milady, our casters and flying soldiers are in position. We're about to approach the largest altar!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Milady, our casters and flying soldiers are in position. We're about to approach the largest altar!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Our deceased compatriots have managed to protect us from the devils' vile pollution, but the destructive power of their witchcraft is unprecedented!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Our deceased compatriots have managed to protect us from the devils' vile pollution, but the destructive power of their witchcraft is unprecedented!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Allow me.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Allow me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Milady?",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "...Milady?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You're... going to destroy the altar yourself?",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "You're... going to destroy the altar yourself?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You, as my subjects, have done all you needed to do.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "You, as my subjects, have done all you needed to do."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I, as your sovereign, ought to lead you forward.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "I, as your sovereign, ought to lead you forward."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How can I take this land as my own if I have never set foot upon it?",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "How can I take this land as my own if I have never set foot upon it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Red Dragon's flame... shall fall upon the battlefield's front lines, just as it has for thousands of years.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "The Red Dragon's flame... shall fall upon the battlefield's front lines, just as it has for thousands of years."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_explo_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_explo_n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst",
+            "volume": 1
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_eblana_attack",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_eblana_attack",
+            "layer": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2013\u2013Our altar's being razed!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "\u2013\u2013Our altar's being razed!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Stay in formation! Don't get scattered by those flames \u2013 keep casting!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Stay in formation! Don't get scattered by those flames \u2013 keep casting!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "They're nothing but a ragtag bunch of impotent outbloods\u2013",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They're nothing but a ragtag bunch of impotent outbloods\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I wouldn't be so sure about that.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "I wouldn't be so sure about that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We are nothing like those Victorians who have it easy.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "We are nothing like those Victorians who have it easy."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Every Taran warrior has been forged within the shadows, tempered by pain and suffering.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Every Taran warrior has been forged within the shadows, tempered by pain and suffering."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We were once known as specters, for we knew most intimately the scent of death.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "We were once known as specters, for we knew most intimately the scent of death."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I won't let you\u2013!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "I won't let you\u2013!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Trying to turn yourself into an Arts catalyst... to detonate the altar?",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Trying to turn yourself into an Arts catalyst... to detonate the altar?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "As you wish.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "As you wish."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No...!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "No...!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1341_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1341_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm... too late...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "I'm... too late..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "blocker",
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 1,
-        "block": true,
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1,
+            "block": true,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The spark of life gradually fades."
@@ -2666,308 +3154,362 @@
         "text": "And in its place burns a deathly purple flame, leaping across the body of the slain Sarkaz warrior just as it dances in Eblana's eyes."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image",
-        "image": "50_i38",
-        "fadetime": 2,
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "50_i38",
+            "fadetime": 2,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "imagetween",
-        "image": "50_i38",
-        "duration": 40,
-        "xScaleFrom": 1.3,
-        "yScaleFrom": 1.3,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "image": "50_i38",
+            "duration": 40,
+            "xscalefrom": 1.3,
+            "yscalefrom": 1.3,
+            "xscale": 1,
+            "yscale": 1,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "a": 0,
-        "block": true,
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0,
+            "block": true,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There is no Royal Court in death's domain.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "There is no Royal Court in death's domain."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sarkaz, your people know death so well... only because you've fought enough wars.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Sarkaz, your people know death so well... only because you've fought enough wars."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "See that?",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "See that?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Death itself stands with us! Our enemies are not inscrutable demons!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Death itself stands with us! Our enemies are not inscrutable demons!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Drag those Sarkaz out from their pretentious Arts Circles and give them a taste of our crossbows and cannons!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Drag those Sarkaz out from their pretentious Arts Circles and give them a taste of our crossbows and cannons!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Brigadier... I see a flame burning within your eyes.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Brigadier... I see a flame burning within your eyes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've waited far too long for this, just like countless other Taran warriors.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "I've waited far too long for this, just like countless other Taran warriors."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "All of us grew up hearing the legends of the Empire's Death Knell, and enlisted with burning fervor in our hearts!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "All of us grew up hearing the legends of the Empire's Death Knell, and enlisted with burning fervor in our hearts!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But over the last few decades, Wellington's administrator and the Duke have had their hands tied, and we've also been caught between the cracks of the other dukes' negotiation tables.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "But over the last few decades, Wellington's administrator and the Duke have had their hands tied, and we've also been caught between the cracks of the other dukes' negotiation tables."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So many hot-blooded warriors were repressed because of their background, while many others perished in the Victorians' conspiracies.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "So many hot-blooded warriors were repressed because of their background, while many others perished in the Victorians' conspiracies."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've endured for so many years, even to see myself turn into a scheming villain, all for the sake of witnessing a real war \u2013 not one ignited by the nobles' petty power-jockeying.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "I've endured for so many years, even to see myself turn into a scheming villain, all for the sake of witnessing a real war \u2013 not one ignited by the nobles' petty power-jockeying."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Only on such a battlefield can a warrior's death be glorious and meaningful.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Only on such a battlefield can a warrior's death be glorious and meaningful."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If I am to die in this battle\u2013",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "If I am to die in this battle\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Then please bestow upon me your flames so that I may stand once more!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Then please bestow upon me your flames so that I may stand once more!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Until my remains are consumed fully by the fire, until our promised nation has been established, I shall never lay down my arms!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Until my remains are consumed fully by the fire, until our promised nation has been established, I shall never lay down my arms!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Excellent. Now then, come with me.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Excellent. Now then, come with me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Do you see... that throne of deadwood?",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Do you see... that throne of deadwood?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That's the Sarkaz leader.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "That's the Sarkaz leader."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Nachzehrer, Nezzsalem. He who calls himself the lord of war and death.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "The Nachzehrer, Nezzsalem. He who calls himself the lord of war and death."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Sarkaz Royal Court sure has a thing for these overblown titles.",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "The Sarkaz Royal Court sure has a thing for these overblown titles."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Overblown...? Hardly.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Overblown...? Hardly."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "He just happens to be ancient enough.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "He just happens to be ancient enough."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But, he is not the only living legend here.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "But, he is not the only living legend here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_723_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_723_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why of course!",
-        "tag": "name",
-        "value": "'The Brigadier'"
+        "command": "name",
+        "value": "The Brigadier",
+        "text": "Why of course!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Not far away, naval guns roar."
@@ -2976,170 +3518,204 @@
         "text": "Ancient witchcraft is not the only force that can cause mountains to move."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_722_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_722_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Now, let us pit war against war... and death against death.",
-        "tag": "name",
-        "value": "Eblana"
+        "command": "name",
+        "value": "Eblana",
+        "text": "Now, let us pit war against war... and death against death."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_explo_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_explo_n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst",
+            "volume": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g3_mainbattlefield_ex",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g3_mainbattlefield_ex",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My Patriarch, the hunt has been cut short.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "My Patriarch, the hunt has been cut short."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That Draco's flames have broken our formation.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "That Draco's flames have broken our formation."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Draco.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "...Draco."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Thousands of years ago, after the Sarkaz first lost their homeland, they once did battle against a red dragon on this very soil.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Thousands of years ago, after the Sarkaz first lost their homeland, they once did battle against a red dragon on this very soil."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Those flames turned fields of Sarkaz into charred stone. They are still beside us, and beneath our feet.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Those flames turned fields of Sarkaz into charred stone. They are still beside us, and beneath our feet."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We will slay her.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "We will slay her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A red dragon will sate our appetite for a while.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "A red dragon will sate our appetite for a while."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She is not the one who drives this war.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "She is not the one who drives this war."
     },
     {
         "text": "The Nachzehrer King turns his gaze towards a certain part of the battlefield."
@@ -3148,56 +3724,68 @@
         "text": "Behind the Red Dragon's smoke and flames, a huge shadow is rushing toward them at an unexpected speed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A titan that casts a shadow across the land, able to shake mountains and rivers with but a single breath\u2013",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "A titan that casts a shadow across the land, able to shake mountains and rivers with but a single breath\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No longer is it a mere red dragon.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "No longer is it a mere red dragon."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g13_warshipcommandroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g13_warshipcommandroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "'All parameters set!'"
@@ -3215,277 +3803,337 @@
         "text": "'Main guns, first salvo!'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Confirmed hit!",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "Confirmed hit!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "General, we've swept the obstacles away.",
-        "tag": "name",
-        "value": "Flag Officer"
+        "command": "name",
+        "value": "Flag Officer",
+        "text": "General, we've swept the obstacles away."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Good.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Good."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Gastrell, all ahead full.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Gastrell, all ahead full."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Our objective \u2013 the Nachzehrer's throne.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Our objective \u2013 the Nachzehrer's throne."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g2_mainbattlefield",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g2_mainbattlefield",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The naval guns roar."
@@ -3512,148 +4160,178 @@
         "text": "Only this way can the two of them defeat even stronger enemies together."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g3_mainbattlefield_ex",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g3_mainbattlefield_ex",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Intercept them!",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "Intercept them!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The crystal barrier... has been shattered.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "The crystal barrier... has been shattered."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The enemy continues to advance.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "The enemy continues to advance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How they must long for death, using artillery fire to cleave a path.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "How they must long for death, using artillery fire to cleave a path."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Wave after wave of cannonfire pours down onto the sea of Originium."
@@ -3662,21 +4340,23 @@
         "text": "Golden fragments crack and split apart, revealing a gap within those congealed waves."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How dare they... approach us\u2013\u2013",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "How dare they... approach us\u2013\u2013"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "A thick haze envelops the battleship."
@@ -3694,37 +4374,43 @@
         "text": "The hard, steel hull is being digested, just like all other prey that has fallen into the Nachzehrers' Arts circles."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Capture... complete...",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "Capture... complete..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Not yet.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Not yet."
     },
     {
         "text": "He lifts his scepter."
@@ -3742,32 +4428,36 @@
         "text": "For the first time since the battle began, the Nachzehrer's throne shakes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "My Patriarch!",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "My Patriarch!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It matters not.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "It matters not."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "From the thick haze of corruption, the warship slowly comes into view."
@@ -3785,142 +4475,172 @@
         "text": "The Sarkaz atop the throne lowers his head, noticing a faint shadow among the crystal clusters."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g2_mainbattlefield",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g2_mainbattlefield",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "General, the Gastrell has successfully drawn the attention of the main Sarkaz force!",
-        "tag": "name",
-        "value": "Redsteel Guard Member"
+        "command": "name",
+        "value": "Redsteel Guard Member",
+        "text": "General, the Gastrell has successfully drawn the attention of the main Sarkaz force!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "They didn't even notice that we were transferred from the main ship\u2013",
-        "tag": "name",
-        "value": "Redsteel Guard Member"
+        "command": "name",
+        "value": "Redsteel Guard Member",
+        "text": "They didn't even notice that we were transferred from the main ship\u2013"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wait, something's coming in fast!",
-        "tag": "name",
-        "value": "Redsteel Guard Member"
+        "command": "name",
+        "value": "Redsteel Guard Member",
+        "text": "Wait, something's coming in fast!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_408_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_408_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Guardsmen, tighten your formation!",
-        "tag": "name",
-        "value": "Redsteel Guard Member"
+        "command": "name",
+        "value": "Redsteel Guard Member",
+        "text": "Guardsmen, tighten your formation!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "A salvo of artillery fire."
@@ -3935,181 +4655,213 @@
         "text": "The Nachzehrer King casts his gaze down upon the commander at the center of the army. Not far behind the old Feline, the bloodthirsty warship is waiting, eager to tear at his rotting flesh."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Duke... of Victoria.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Duke... of Victoria."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We have devoured many Victorians. General, Duke. Whatever the title, they all tasted the same.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "We have devoured many Victorians. General, Duke. Whatever the title, they all tasted the same."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Conspirators. Merchants. But none of their warriors.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Conspirators. Merchants. But none of their warriors."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "They saw the battlefield as little more than a sandbox atop a table. The soldiers, mere chess pieces; war itself, only a tool for power and profit. How frivolous war was to them.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "They saw the battlefield as little more than a sandbox atop a table. The soldiers, mere chess pieces; war itself, only a tool for power and profit. How frivolous war was to them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But, you are different. Your ship has also feasted on many enemies.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "But, you are different. Your ship has also feasted on many enemies."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ursine. Leithanian. Gaulish... And, Sarkaz. I can smell their flesh.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Ursine. Leithanian. Gaulish... And, Sarkaz. I can smell their flesh."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "They have also been absorbed by the Nachzehrers.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "They have also been absorbed by the Nachzehrers."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sarkaz... I've read plenty of records about you.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Sarkaz... I've read plenty of records about you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The ancient Nachzehrers, with a tenth of the Victorian Army's numbers, were able to halt their advance on Kazdel.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "The ancient Nachzehrers, with a tenth of the Victorian Army's numbers, were able to halt their advance on Kazdel."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A feat of war that defies all reason, one that cannot be taught in military academies or replicated.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "A feat of war that defies all reason, one that cannot be taught in military academies or replicated."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are you here to take revenge?",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Are you here to take revenge?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Haha. My only regret is that I hadn't been born two hundred years ago.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Haha. My only regret is that I hadn't been born two hundred years ago."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "They apparently call you the 'God of War'?",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "They apparently call you the 'God of War'?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No. There are no gods when it comes to war.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "No. There are no gods when it comes to war."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There only exists... the moment of victory or defeat.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "There only exists... the moment of victory or defeat."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_exsheath",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_exsheath",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Wellington draws his sword and points it at the Sarkaz in midair."
@@ -4118,56 +4870,66 @@
         "text": "Behind him, all the guns on his ship are pointed in the same direction."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Nezzsalem, I will defeat you.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Nezzsalem, I will defeat you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_652_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_652_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Just like all the other mighty foes that have fallen at my hands.",
-        "tag": "name",
-        "value": "Duke of Wellington"
+        "command": "name",
+        "value": "Duke of Wellington",
+        "text": "Just like all the other mighty foes that have fallen at my hands."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

@@ -1,1844 +1,2129 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "bg_infirmary",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_infirmary",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$drift_intro",
+            "key": "$drift_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$drift_intro",
-        "key": "$drift_loop",
-        "volume": 0.4
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {}
     },
     {
-        "tag": "palysound",
-        "name": "$d_gen_doorknockquite"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "character",
+        "params": {
+            "name": "char_empty"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_empty"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "x": 200,
+            "block": true
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "xpos": 200,
-        "fadetime": 0.3,
-        "block": true
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "x": -200,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "xpos": -200,
-        "fadetime": 1.5,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "fadetime": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Hello, Lara."
     },
     {
-        "text": "Hello, Lara.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "'The Spire hid amongst the mist, and the rain dripped onto the thousands of umbrellas...'"
     },
     {
-        "text": "'The Spire hid amongst the mist, and the rain dripped onto the thousands of umbrellas...'",
-        "tag": "name",
-        "value": "Lara"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, hello, Doctor."
     },
     {
-        "text": "Oh, hello, Doctor.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Sorry to disturb you while you're reading. How are you feeling?"
     },
     {
-        "text": "Sorry to disturb you while you're reading. How are you feeling?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Uhh, my wounds don't hurt so much anymore, but I still get dizzy pretty often and can't see things clearly."
     },
     {
-        "text": "Uhh, my wounds don't hurt so much anymore, but I still get dizzy pretty often and can't see things clearly.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Have you had any problems with the IV drip? Is it comfortable? Does anything feel off?"
     },
     {
-        "text": "Have you had any problems with the IV drip? Is it comfortable? Does anything feel off?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "My arm feels kinda cold, but I got used to it."
     },
     {
-        "text": "My arm feels kinda cold, but I got used to it.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Doctor, how many more days will I have to stay on IV?"
     },
     {
-        "text": "Doctor, how many more days will I have to stay on IV?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Hm... That depends."
     },
     {
-        "text": "Hm... That depends.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Will it be much longer? I wanna go out for a walk."
     },
     {
-        "text": "Will it be much longer? I wanna go out for a walk.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I've been in bed for days. Even though I haven't moved an inch, it really tires me out."
     },
     {
-        "text": "I've been in bed for days. Even though I haven't moved an inch, it really tires me out.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It won't be much longer, but your wounds are still healing. We'll let you walk around once they're better."
     },
     {
-        "text": "It won't be much longer, but your wounds are still healing. We'll let you walk around once they're better.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "That said..."
     },
     {
-        "text": "That said...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_ri_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ri_1",
-        "screenadapt": "showall"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 1
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1"
+        "command": "delay",
+        "value": 1.2
     },
     {
-        "tag": "delay",
-        "time": 1.2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "The bloodwork is back for the girl who was caught in the Originium bomb blast. Her condition is clearly worsening."
     },
     {
-        "text": "The bloodwork is back for the girl who was caught in the Originium bomb blast. Her condition is clearly worsening.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "We managed to slow down the deterioration somewhat, but... *sigh*. It's an acute infection, and she had all these open wounds. We've done all the emergency treatment we could."
     },
     {
-        "text": "We managed to slow down the deterioration somewhat, but... *sigh*. It's an acute infection, and she had all these open wounds. We've done all the emergency treatment we could.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Based on the imaging tests, the Originium in her body is starting to put pressure on her optic nerves."
     },
     {
-        "text": "Based on the imaging tests, the Originium in her body is starting to put pressure on her optic nerves.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yes, she noticed something was off herself. Her vision blurs sometimes."
     },
     {
-        "text": "Yes, she noticed something was off herself. Her vision blurs sometimes.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Even with suppressants, we haven't yet managed to stabilize her condition. At this rate, she's likely to go blind."
     },
     {
-        "text": "Even with suppressants, we haven't yet managed to stabilize her condition. At this rate, she's likely to go blind.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "How would she react if I told her, though? Would she be able to bear it?"
     },
     {
-        "text": "How would she react if I told her, though? Would she be able to bear it?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "If I were the one on the bed, maybe I'd think it's better to know the truth, no matter how harsh it is."
     },
     {
-        "text": "If I were the one on the bed, maybe I'd think it's better to know the truth, no matter how harsh it is.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "But she doesn't know fear yet. Her long nightmare has yet to begin. If I can let her have peace of mind, even for only a few more days..."
     },
     {
-        "text": "But she doesn't know fear yet. Her long nightmare has yet to begin. If I can let her have peace of mind, even for only a few more days...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "bg_infirmary",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_infirmary",
-        "screenadapt": "showall"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Lara",
+        "text": "Okay, I get it. Even after I can move, the doctors will still need to observe my condition a little longer. I'll only be discharged from Rhodes Island when my Oripathy is stabilized."
     },
     {
-        "text": "Okay, I get it. Even after I can move, the doctors will still need to observe my condition a little longer. I'll only be discharged from Rhodes Island when my Oripathy is stabilized.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "But yesterday, another doctor told me that Rhodes Island's a big ship, and I'm allowed to leave the hospital wing and visit other places as long as I take someone from medical with me."
     },
     {
-        "text": "But yesterday, another doctor told me that Rhodes Island's a big ship, and I'm allowed to leave the hospital wing and visit other places as long as I take someone from medical with me.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "She even brought me a book from the library."
     },
     {
-        "text": "She even brought me a book from the library.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Right, Rhodes Island's a big place. There's a lot you can do here."
     },
     {
-        "text": "Right, Rhodes Island's a big place. There's a lot you can do here.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "For now though, I need to redress your wounds. Don't worry about what I'm doing and keep reading."
     },
     {
-        "text": "For now though, I need to redress your wounds. Don't worry about what I'm doing and keep reading.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Is it okay if I read out loud? I don't want to hear the tweezers and medicine bottles."
     },
     {
-        "text": "Is it okay if I read out loud? I don't want to hear the tweezers and medicine bottles.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yes, of course."
     },
     {
-        "text": "Yes, of course.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "'Having forgotten my umbrella, I saw someone standing underneath the roof of a cafe on the other side of the street... A strange woman.'"
     },
     {
-        "text": "'Having forgotten my umbrella, I saw someone standing underneath the roof of a cafe on the other side of the street... A strange woman.'",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "'The way she is dressed is very... not with the times. With a harp in her hand, she quietly... starts singing to the rain.'"
     },
     {
-        "text": "'The way she is dressed is very... not with the times. With a harp in her hand, she quietly... starts singing to the rain.'",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "'The musical notes waft toward me continuously. After a while, I finally make out the words she is singing...'"
     },
     {
-        "text": "'The musical notes waft toward me continuously. After a while, I finally make out the words she is singing...'",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "The words... she is singing... uhh..."
     },
     {
-        "text": "The words... she is singing... uhh...",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "'Please forget about me, just like the early spring snow.'"
     },
     {
-        "text": "'Please forget about me, just like the early spring snow.'",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Sorry, I couldn't help myself."
     },
     {
-        "text": "Sorry, I couldn't help myself.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, don't be sorry."
     },
     {
-        "text": "Oh, don't be sorry.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "You should close your eyes and get some rest. Maybe you've been reading too much. Your eyes are tired, and that's why you couldn't make out the letters."
     },
     {
-        "text": "You should close your eyes and get some rest. Maybe you've been reading too much. Your eyes are tired, and that's why you couldn't make out the letters.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Doctor, have you read this book before?"
     },
     {
-        "text": "Doctor, have you read this book before?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yes, but the movie adaptation is more famous. I've seen it several times, and I couldn't help but finish the quote when I heard it."
     },
     {
-        "text": "Yes, but the movie adaptation is more famous. I've seen it several times, and I couldn't help but finish the quote when I heard it.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "What does the protagonist look like in the movie? I think of her as kind of tall with red hair, and she does this face when she talks\u2014"
     },
     {
-        "text": "What does the protagonist look like in the movie? I think of her as kind of tall with red hair, and she does this face when she talks\u2014",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "\u2014Wwrr!"
     },
     {
-        "text": "\u2014Wwrr!",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "D-Don't move now. The wounds on your face aren't too deep, but they still need time to heal."
     },
     {
-        "text": "D-Don't move now. The wounds on your face aren't too deep, but they still need time to heal.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Hehe."
     },
     {
-        "text": "Hehe.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I don't think the actress they cast for the movie is quite like what you had in mind."
     },
     {
-        "text": "I don't think the actress they cast for the movie is quite like what you had in mind.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "That said, the movie and the book are completely different stories to begin with."
     },
     {
-        "text": "That said, the movie and the book are completely different stories to begin with.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "If I were you, I would finish the book first and let my imagination flourish before seeing how the movie adapted things."
     },
     {
-        "text": "If I were you, I would finish the book first and let my imagination flourish before seeing how the movie adapted things.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "Okay, I won't ask for any more spoilers then. Once I'm done with the book, I'll watch the movie myself."
     },
     {
-        "text": "Okay, I won't ask for any more spoilers then. Once I'm done with the book, I'll watch the movie myself.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, but I'm Infected now... They don't let Infected into movie theaters, do they?"
     },
     {
-        "text": "Oh, but I'm Infected now... They don't let Infected into movie theaters, do they?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I used to go to the movies with Mommy. The two of us always bought a huge tub of popcorn."
     },
     {
-        "text": "I used to go to the movies with Mommy. The two of us always bought a huge tub of popcorn.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "She told me to never talk during a movie. I know you have to wait till it's over before you ask about the things you didn't get."
     },
     {
-        "text": "She told me to never talk during a movie. I know you have to wait till it's over before you ask about the things you didn't get.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "So I'm a good girl, right...?"
     },
     {
-        "text": "So I'm a good girl, right...?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "*Sob*..."
     },
     {
-        "text": "*Sob*...",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Don't cry. At the very least, you can watch movies in the AV room here on Rhodes Island."
     },
     {
-        "text": "Don't cry. At the very least, you can watch movies in the AV room here on Rhodes Island.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "The screens aren't as big as the ones at the theaters, but it might be the perfect size for watching a movie alone, or with a few friends."
     },
     {
-        "text": "The screens aren't as big as the ones at the theaters, but it might be the perfect size for watching a movie alone, or with a few friends.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Even if it's just immersing yourself in the movie's sounds."
     },
     {
-        "text": "Even if it's just immersing yourself in the movie's sounds.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "In that case, take me to see it as soon as I can get out of bed."
     },
     {
-        "text": "In that case, take me to see it as soon as I can get out of bed.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Eh? Me? But I..."
     },
     {
-        "text": "Eh? Me? But I...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_ri_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ri_1",
-        "screenadapt": "showall"
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 1
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "You're thinking of leaving Rhodes Island?"
     },
     {
-        "text": "You're thinking of leaving Rhodes Island?",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Right. I've been here for quite a while now. Before I knew it, I'd already gotten to know everyone here so well."
     },
     {
-        "text": "Right. I've been here for quite a while now. Before I knew it, I'd already gotten to know everyone here so well.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "...To the point that it's starting to scare me."
     },
     {
-        "text": "...To the point that it's starting to scare me.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "name",
+        "value": "Whisperain",
+        "text": "N-Not that I'm afraid of you."
     },
     {
-        "text": "N-Not that I'm afraid of you.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "Yeah, I know."
     },
     {
-        "text": "Yeah, I know.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "name",
+        "value": "Weedy",
+        "text": "Have you figured out when you're leaving?"
     },
     {
-        "text": "Have you figured out when you're leaving?",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I got a new patient recently. I want to wait until her condition is more stable."
     },
     {
-        "text": "I got a new patient recently. I want to wait until her condition is more stable.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "Should I keep it a secret, then?"
     },
     {
-        "text": "Should I keep it a secret, then?",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yes, please. I don't want to tell anyone something so... depressing."
     },
     {
-        "text": "Yes, please. I don't want to tell anyone something so... depressing.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "bg_infirmary",
+            "screenadapt": "showall",
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_infirmary",
-        "screenadapt": "showall",
-        "isblock": true
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Sorry, but I'll probably be very busy, and I can't make any promises."
     },
     {
-        "text": "Sorry, but I'll probably be very busy, and I can't make any promises.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "No worries. I'll ask the other doctors, then."
     },
     {
-        "text": "No worries. I'll ask the other doctors, then.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "There, we're done. Does it feel off anywhere?"
     },
     {
-        "text": "There, we're done. Does it feel off anywhere?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "focus": -1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "focus": -1
+        "command": "name",
+        "value": "Lara",
+        "text": "No, not at all. Thanks."
     },
     {
-        "text": "No, not at all. Thanks.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, wait up. Could you help me adjust the bookstand? I can't make out the words very well."
     },
     {
-        "text": "Oh, wait up. Could you help me adjust the bookstand? I can't make out the words very well.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I think the Oripathy might've made me near-sighted."
     },
     {
-        "text": "I think the Oripathy might've made me near-sighted.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "No, this isn't nearsightedness."
     },
     {
-        "text": "No, this isn't nearsightedness.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "But it's true that it will affect your vision. As for how much... we can't tell for sure yet."
     },
     {
-        "text": "But it's true that it will affect your vision. As for how much... we can't tell for sure yet.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "You should keep reading your books, but be sure to take a look at the beautiful scenery outside the window too."
     },
     {
-        "text": "You should keep reading your books, but be sure to take a look at the beautiful scenery outside the window too.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "showall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1.51
     },
     {
-        "tag": "delay",
-        "time": 1.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "fadetime": 0.5
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "So the girl is going blind, but you haven't told her? And she wants to watch a movie?"
     },
     {
-        "text": "So the girl is going blind, but you haven't told her? And she wants to watch a movie?",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Right. I couldn't bring myself to commit to anything. Telling her either the truth or a lie would be too cruel."
     },
     {
-        "text": "Right. I couldn't bring myself to commit to anything. Telling her either the truth or a lie would be too cruel.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "But you want to make her wish come true, right?"
     },
     {
-        "text": "But you want to make her wish come true, right?",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "If I could, I'd love to watch a movie with her."
     },
     {
-        "text": "If I could, I'd love to watch a movie with her.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It'd be even better if there were a ticket stub to keep. After all, it will be my last movie here on Rhodes Island."
     },
     {
-        "text": "It'd be even better if there were a ticket stub to keep. After all, it will be my last movie here on Rhodes Island.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It's just... she might not get to see it."
     },
     {
-        "text": "It's just... she might not get to see it.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "In terms of both venue and technical requirements, it's not all that hard to put together one of the relatively formal movie screenings we've held on Rhodes Island before."
     },
     {
-        "text": "In terms of both venue and technical requirements, it's not all that hard to put together one of the relatively formal movie screenings we've held on Rhodes Island before.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "So you think I should've said yes to her?"
     },
     {
-        "text": "So you think I should've said yes to her?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "Obviously that's for you to decide, as her doctor."
     },
     {
-        "text": "Obviously that's for you to decide, as her doctor.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "name",
+        "value": "Weedy",
+        "text": "All I'm saying is that, even if it's just for yourself, you could hold a movie screening and keep the ticket stub to commemorate your departure."
     },
     {
-        "text": "All I'm saying is that, even if it's just for yourself, you could hold a movie screening and keep the ticket stub to commemorate your departure.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Just for myself..."
     },
     {
-        "text": "Just for myself...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "But I'm afraid I don't know who to ask to set up a temporary movie theater."
     },
     {
-        "text": "But I'm afraid I don't know who to ask to set up a temporary movie theater.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "Don't worry, I can help with that. It's not in my department's usual wheelhouse, but nothing a little engineering can't solve."
     },
     {
-        "text": "Don't worry, I can help with that. It's not in my department's usual wheelhouse, but nothing a little engineering can't solve.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "name",
+        "value": "Weedy",
+        "text": "And if requiring tickets is that important to you... Right, maybe we could add an automatic ticketing machine. That way, you won't need anyone to staff it, which will probably make things easier on you."
     },
     {
-        "text": "And if requiring tickets is that important to you... Right, maybe we could add an automatic ticketing machine. That way, you won't need anyone to staff it, which will probably make things easier on you.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Thank you."
     },
     {
-        "text": "Thank you.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_400_weedy_1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_400_weedy_1",
-        "focus": 2
+        "command": "name",
+        "value": "Weedy",
+        "text": "Don't mention it. This is nothing."
     },
     {
-        "text": "Don't mention it. This is nothing.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "name",
+        "value": "Weedy",
+        "text": "I just hope it'll leave you with some pleasant memories."
     },
     {
-        "text": "I just hope it'll leave you with some pleasant memories.",
-        "tag": "name",
-        "value": "Weedy"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "background",
+        "params": {
+            "image": "bg_infirmary",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_infirmary",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.4
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "fadetime": 0.5
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Hello, Doctor."
     },
     {
-        "text": "Hello, Doctor.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Are you... the doctor who talks to me about movies?"
     },
     {
-        "text": "Are you... the doctor who talks to me about movies?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Sorry, I can't see very well, so I can only try to guess by your footsteps. Sorry if I got it wrong."
     },
     {
-        "text": "Sorry, I can't see very well, so I can only try to guess by your footsteps. Sorry if I got it wrong.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "No, you got it right. Hello, Lara."
     },
     {
-        "text": "No, you got it right. Hello, Lara.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, that's wonderful."
     },
     {
-        "text": "Oh, that's wonderful.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "What should I call you? Most of the doctors here have badges, but you don't."
     },
     {
-        "text": "What should I call you? Most of the doctors here have badges, but you don't.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Oh, don't worry about my name."
     },
     {
-        "text": "Oh, don't worry about my name.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It's time to give you another checkup."
     },
     {
-        "text": "It's time to give you another checkup.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Mm. Okay."
     },
     {
-        "text": "Mm. Okay.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Doctor, I'm actually a little scared."
     },
     {
-        "text": "Doctor, I'm actually a little scared.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "My eyesight is getting worse and worse, but nobody will tell me what's going on."
     },
     {
-        "text": "My eyesight is getting worse and worse, but nobody will tell me what's going on.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I know there's no cure to Oripathy, but... I'm not ready... Am I about to...?"
     },
     {
-        "text": "I know there's no cure to Oripathy, but... I'm not ready... Am I about to...?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "You're overthinking it. Your life isn't in danger, for the time being."
     },
     {
-        "text": "You're overthinking it. Your life isn't in danger, for the time being.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Your Oripathy has been gradually stabilizing, and the wounds on your legs and abdomen have healed up very well."
     },
     {
-        "text": "Your Oripathy has been gradually stabilizing, and the wounds on your legs and abdomen have healed up very well.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Once we have the results of this checkup, we'll know for sure when we can take out the stitches."
     },
     {
-        "text": "Once we have the results of this checkup, we'll know for sure when we can take out the stitches.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Soon, maybe in a couple of days, we can let you watch a movie."
     },
     {
-        "text": "Soon, maybe in a couple of days, we can let you watch a movie.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Really?"
     },
     {
-        "text": "Really?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Oh, right."
     },
     {
-        "text": "Oh, right.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It also just so happens that Rhodes Island will hold a movie screening soon, and it's the one that's based on the book you're reading."
     },
     {
-        "text": "It also just so happens that Rhodes Island will hold a movie screening soon, and it's the one that's based on the book you're reading.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Let's go see it together, once you're out of bed."
     },
     {
-        "text": "Let's go see it together, once you're out of bed.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Yay! It's a promise!"
     },
     {
-        "text": "Yay! It's a promise!",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yep, it's a promise."
     },
     {
-        "text": "Yep, it's a promise.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Then... will you keep telling me the story during the checkup?"
     },
     {
-        "text": "Then... will you keep telling me the story during the checkup?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I want to read it myself, but it really tires me out to read now."
     },
     {
-        "text": "I want to read it myself, but it really tires me out to read now.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I understand."
     },
     {
-        "text": "I understand.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Close your eyes and get some rest."
     },
     {
-        "text": "Close your eyes and get some rest.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.6
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "y": -50,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "ypos": -50,
-        "fadetime": 1.8,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "fadetime": 0.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "characteraction",
+        "params": {
+            "name": "left",
+            "type": "move",
+            "x": 100
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "left",
-        "type": "move",
-        "xpos": 100,
-        "fadetime": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "If I remember correctly, last time we got to the part where the protagonist and the wandering bard from the past reached a Leithanian nomadic city."
     },
     {
-        "text": "If I remember correctly, last time we got to the part where the protagonist and the wandering bard from the past reached a Leithanian nomadic city.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Yep."
     },
     {
-        "text": "Yep.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "She had never gone inside a nomadic city. She was terrified just from having to take the elevator at the entrance."
     },
     {
-        "text": "She had never gone inside a nomadic city. She was terrified just from having to take the elevator at the entrance.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "The city must be a noisy place to a bard."
     },
     {
-        "text": "The city must be a noisy place to a bard.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yes, very. She relied on her sensitive ears to tell pitches apart, but everything was so loud in the city."
     },
     {
-        "text": "Yes, very. She relied on her sensitive ears to tell pitches apart, but everything was so loud in the city.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "She'd never seen instruments with Arts Units that were tuned by machines. The music they played was like a kind of Originium Art in itself. She was completely mesmerized."
     },
     {
-        "text": "She'd never seen instruments with Arts Units that were tuned by machines. The music they played was like a kind of Originium Art in itself. She was completely mesmerized.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Moreover, the city was very affectionate to her. Many of the Spires' masters invited her as their guest."
     },
     {
-        "text": "Moreover, the city was very affectionate to her. Many of the Spires' masters invited her as their guest.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "But she's from the past. She has to figure out a way to go back."
     },
     {
-        "text": "But she's from the past. She has to figure out a way to go back.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Hmm... Actually, there isn't anywhere she can go back to."
     },
     {
-        "text": "Hmm... Actually, there isn't anywhere she can go back to.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Why not?"
     },
     {
-        "text": "Why not?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "\u2014Oh, maybe we should make this a cliffhanger! I'll find out the ending for myself when we watch the movie."
     },
     {
-        "text": "\u2014Oh, maybe we should make this a cliffhanger! I'll find out the ending for myself when we watch the movie.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "...Right, Lara."
     },
     {
-        "text": "...Right, Lara.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 2
+        "command": "name",
+        "value": "Lara",
+        "text": "Hm?"
     },
     {
-        "text": "Hm?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "char_empty",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "char_empty",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "When we watch the movie, aside from what's on the screen, there will be lots of sounds, too."
     },
     {
-        "text": "When we watch the movie, aside from what's on the screen, there will be lots of sounds, too.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Like the bard strumming her instrument and singing, the chirping of the fowlbeasts, the winds blowing through the vast forest as they travel, and the rain that falls on the forest hut's roof."
     },
     {
-        "text": "Like the bard strumming her instrument and singing, the chirping of the fowlbeasts, the winds blowing through the vast forest as they travel, and the rain that falls on the forest hut's roof.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "And since we'll be watching the movie in the AV room, we can talk quietly to each other."
     },
     {
-        "text": "And since we'll be watching the movie in the AV room, we can talk quietly to each other.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "So if there's anything that you can't see well, I can tell you what's going on."
     },
     {
-        "text": "So if there's anything that you can't see well, I can tell you what's going on.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_ri_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ri_1",
-        "screenadapt": "showall"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "fadetime": 0.5
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Whisperain, come get some rest. Would you like some blueberry raisins?"
     },
     {
-        "text": "Whisperain, come get some rest. Would you like some blueberry raisins?",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I appreciate the offer, but no thanks. After I look at Lara's results, I still have other patients to take care of."
     },
     {
-        "text": "I appreciate the offer, but no thanks. After I look at Lara's results, I still have other patients to take care of.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Don't be so focused on taking care of others that you forget to take care of yourself. Your body isn't in great condition either, and needs rest."
     },
     {
-        "text": "Don't be so focused on taking care of others that you forget to take care of yourself. Your body isn't in great condition either, and needs rest.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Thanks, but you don't have to worry about me so much."
     },
     {
-        "text": "Thanks, but you don't have to worry about me so much.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Right, you said you'll bring Lara to a movie. Is it the screening on Saturday?"
     },
     {
-        "text": "Right, you said you'll bring Lara to a movie. Is it the screening on Saturday?",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "That's right."
     },
     {
-        "text": "That's right.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "*Sigh*... Have you told her about the worst case scenario yet? She might have to enjoy the movie through sound alone by then."
     },
     {
-        "text": "*Sigh*... Have you told her about the worst case scenario yet? She might have to enjoy the movie through sound alone by then.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I... I haven't. She's been really looking forward to it these last few days. I don't want to dampen her spirits."
     },
     {
-        "text": "I... I haven't. She's been really looking forward to it these last few days. I don't want to dampen her spirits.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Yeah, I guess. Whatever the case, letting her do these little things she did before the accident will probably alleviate some stress."
     },
     {
-        "text": "Yeah, I guess. Whatever the case, letting her do these little things she did before the accident will probably alleviate some stress.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Once her condition stabilizes, I'll bring her some snacks and have a chat with her."
     },
     {
-        "text": "Once her condition stabilizes, I'll bring her some snacks and have a chat with her.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Oh, and I'll bring some for you too, of course. Just be sure to actually have some next time!"
     },
     {
-        "text": "Oh, and I'll bring some for you too, of course. Just be sure to actually have some next time!",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Next time? ...Sure, thank you."
     },
     {
-        "text": "Next time? ...Sure, thank you.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Right, so I've asked all the operators I see in the break room to go to the screening this weekend."
     },
     {
-        "text": "Right, so I've asked all the operators I see in the break room to go to the screening this weekend.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "It'll feel more like a movie theater with a bigger crowd, right? It should help the patients rebuild the confidence to interact with others, too."
     },
     {
-        "text": "It'll feel more like a movie theater with a bigger crowd, right? It should help the patients rebuild the confidence to interact with others, too.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Right, thank you. I'll always remember my time here at\u2014"
     },
     {
-        "text": "Right, thank you. I'll always remember my time here at\u2014",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "characteraction",
+        "params": {
+            "name": "left",
+            "type": "move",
+            "x": -80
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "left",
-        "type": "move",
-        "xpos": -80,
-        "fadetime": 1
+        "command": "name",
+        "value": "Whisperain",
+        "text": "\u2014Hold on, Dr. Honeyberry. Take a look at this."
     },
     {
-        "text": "\u2014Hold on, Dr. Honeyberry. Take a look at this.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.9
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.5
+        }
     },
     {
         "text": "Hurry! The movie's about to start!"
@@ -1865,722 +2150,840 @@
         "text": "Yeah, me too!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Lara, be careful.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Lara, be careful."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "It's okay, Doctor. It's a little dark, but I can still see the steps with how high they are!",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "It's okay, Doctor. It's a little dark, but I can still see the steps with how high they are!"
     },
     {
-        "text": "Huh? This place really feels like a movie theater. There are so many people... Is it really okay for me to go inside?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Huh? This place really feels like a movie theater. There are so many people... Is it really okay for me to go inside?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't worry. You've been coming into contact with so many people every day. You won't spread Oripathy to them.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Don't worry. You've been coming into contact with so many people every day. You won't spread Oripathy to them."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "I'll sit in the front row, then.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I'll sit in the front row, then."
     },
     {
-        "text": "It's such a big screen... I can see everything so clearly like this.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "It's such a big screen... I can see everything so clearly like this."
     },
     {
-        "text": "Doctor, you don't have to stay with me if you're busy. I'll find my way back to my room.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Doctor, you don't have to stay with me if you're busy. I'll find my way back to my room."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "No, please. Let me stay and watch the story again.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "No, please. Let me stay and watch the story again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$slideshow",
-        "channel": "bag",
-        "volume": 2
+        "command": "playsound",
+        "params": {
+            "key": "$slideshow",
+            "channel": "bag",
+            "volume": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopsound",
-        "channel": "bag",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "bag",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "bg_ri_1",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_ri_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.6
+        "command": "delay",
+        "value": 1.6
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.6,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "\u2014Hold on, Dr. Honeyberry. Take a look at this.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "\u2014Hold on, Dr. Honeyberry. Take a look at this."
     },
     {
-        "text": "Going by these imaging results, the spread of Originium inside Lara's body is... under control.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Going by these imaging results, the spread of Originium inside Lara's body is... under control."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Wow, you're right!",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Wow, you're right!"
     },
     {
-        "text": "Now you two can watch the movie together with no issues!",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Now you two can watch the movie together with no issues!"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Yeah...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Yeah..."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_449_glider_1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_449_glider_1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Are you still worried about something?",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Are you still worried about something?"
     },
     {
-        "text": "If there's anything on your mind, you can tell me. It doesn't matter if it's happy or sad, it always feels better if you talk to someone about it.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "If there's anything on your mind, you can tell me. It doesn't matter if it's happy or sad, it always feels better if you talk to someone about it."
     },
     {
-        "text": "Don't worry. I'm a certified counselor. It won't be a burden for me.",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Don't worry. I'm a certified counselor. It won't be a burden for me."
     },
     {
-        "text": "Besides, how would you know how others will react if you never tell anyone?",
-        "tag": "name",
-        "value": "Honeyberry"
+        "command": "name",
+        "value": "Honeyberry",
+        "text": "Besides, how would you know how others will react if you never tell anyone?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0,
+            "keep": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "I don't think I understood the movie's ending, but it gave me this kinda weird feeling.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I don't think I understood the movie's ending, but it gave me this kinda weird feeling."
     },
     {
-        "text": "Huh? Doctor, are you crying?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Huh? Doctor, are you crying?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't worry about it. It stirs my emotions every time I hear the credits theme.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Don't worry about it. It stirs my emotions every time I hear the credits theme."
     },
     {
-        "text": "There are a lot of different interpretations of the ending. Even I see it differently depending on my mood.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "There are a lot of different interpretations of the ending. Even I see it differently depending on my mood."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "Then I guess I should see it again when I get older.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Then I guess I should see it again when I get older."
     },
     {
-        "text": "Thank you for staying with me all this time, Doctor.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Thank you for staying with me all this time, Doctor."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Hold on, Lara.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Hold on, Lara."
     },
     {
-        "text": "Sorry, but there's something very important that I haven't told you yet.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Sorry, but there's something very important that I haven't told you yet."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "Hm?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Hm?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "As you've noticed, your vision is deteriorating because of your condition.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "As you've noticed, your vision is deteriorating because of your condition."
     },
     {
-        "text": "It's under control for the time being, but as long as you have Oripathy, Originium will inevitably eat away at your body.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "It's under control for the time being, but as long as you have Oripathy, Originium will inevitably eat away at your body."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "So you mean... I won't be able to see anything?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "So you mean... I won't be able to see anything?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Right... I can't say for sure when you'll go blind, but it will happen eventually. All too soon.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Right... I can't say for sure when you'll go blind, but it will happen eventually. All too soon."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "Phew...",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Phew..."
     },
     {
-        "text": "Actually, I kind of figured.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Actually, I kind of figured."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "I'm sorry that I've been keeping it from you.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "I'm sorry that I've been keeping it from you."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "No worries, Doctor. I've already given it a lot of thought. Actually, I'd even mentally prepared myself for not being able to watch the movie.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "No worries, Doctor. I've already given it a lot of thought. Actually, I'd even mentally prepared myself for not being able to watch the movie."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "That's why, for the past few days, I've been trying my best to keep my eyes wide open. To remember all the streets, houses, flowers, and grass that I see, how blue the sky is and how white the snow.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "That's why, for the past few days, I've been trying my best to keep my eyes wide open. To remember all the streets, houses, flowers, and grass that I see, how blue the sky is and how white the snow."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "I don't know when Oripathy will make my body hurt again... or when I'll wake up one morning and not be able to see.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I don't know when Oripathy will make my body hurt again... or when I'll wake up one morning and not be able to see."
     },
     {
-        "text": "But until then, I want to try my best to remember everything that I come across.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "But until then, I want to try my best to remember everything that I come across."
     },
     {
-        "text": "I want to remember everyone that I like too, everyone who takes care of me.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "I want to remember everyone that I like too, everyone who takes care of me."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "That way, when I hear their names, I'll remember how they look.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "That way, when I hear their names, I'll remember how they look."
     },
     {
-        "text": "So even if things do turn out the way I just said, and I slowly forget everything like my old grandpa who doesn't remember who I am...",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "So even if things do turn out the way I just said, and I slowly forget everything like my old grandpa who doesn't remember who I am..."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "Even if there comes a day...",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Even if there comes a day..."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Even if there comes a day I hear a movie's title but don't remember what it means to me.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Even if there comes a day I hear a movie's title but don't remember what it means to me."
     },
     {
-        "text": "Just like the wandering bard who disappears into the rain at the end of the movie. She too once danced in this era's rain.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Just like the wandering bard who disappears into the rain at the end of the movie. She too once danced in this era's rain."
     },
     {
-        "text": "Oh, sorry. I finished your sentence again.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Oh, sorry. I finished your sentence again."
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 2
+        }
     },
     {
-        "text": "But that's exactly how I feel.",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "But that's exactly how I feel."
     },
     {
-        "text": "Oh, right, about the ending. Do you think the bard went back in the end? Or do you think she stayed with us?",
-        "tag": "name",
-        "value": "Lara"
+        "command": "name",
+        "value": "Lara",
+        "text": "Oh, right, about the ending. Do you think the bard went back in the end? Or do you think she stayed with us?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr",
-        "name2": "avg_npc_045",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr",
+            "name2": "avg_npc_045",
+            "focus": 1
+        }
     },
     {
-        "text": "Well, what I think is...",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Well, what I think is..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "fadetime": 0.51
+        "command": "character",
+        "params": {
+            "fadetime": 0.51
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "character",
-        "name": "char_empty"
+        "command": "character",
+        "params": {
+            "name": "char_empty"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "xpos": -200,
-        "fadetime": 0.3,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "x": -200,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "xpos": 200,
-        "fadetime": 2,
-        "block": false
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "x": 200,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "char_451_robin",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_451_robin",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.2
+        "command": "delay",
+        "value": 2.2
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "text": "Oh, that's the girl I always see in the AV room.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Oh, that's the girl I always see in the AV room."
     },
     {
-        "tag": "character",
-        "name": "char_451_robin"
+        "command": "character",
+        "params": {
+            "name": "char_451_robin"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Robin"
+        "command": "name",
+        "value": "Robin",
+        "text": "(Nods)"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "(Nods)"
     },
     {
-        "tag": "character",
-        "name": "char_451_robin"
+        "command": "character",
+        "params": {
+            "name": "char_451_robin"
+        }
     },
     {
-        "text": "...I'm going to borrow the AV room to watch 'Drifting Memories' next Saturday.",
-        "tag": "name",
-        "value": "Robin"
+        "command": "name",
+        "value": "Robin",
+        "text": "...I'm going to borrow the AV room to watch 'Drifting Memories' next Saturday."
     },
     {
-        "text": "Want to join me?",
-        "tag": "name",
-        "value": "Robin"
+        "command": "name",
+        "value": "Robin",
+        "text": "Want to join me?"
     },
     {
-        "tag": "character",
-        "name": "char_436_whispr"
+        "command": "character",
+        "params": {
+            "name": "char_436_whispr"
+        }
     },
     {
-        "text": "Next Saturday?",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "Next Saturday?"
     },
     {
-        "text": "...I'd love to. Thanks for inviting me.",
-        "tag": "name",
-        "value": "Whisperain"
+        "command": "name",
+        "value": "Whisperain",
+        "text": "...I'd love to. Thanks for inviting me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

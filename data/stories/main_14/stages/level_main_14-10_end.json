@@ -1,418 +1,492 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "50_g18_originiumcave",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g18_originiumcave",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_boneflute_low",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_boneflute_low",
-        "volume": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#2$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#2$1",
-        "duration": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Amiya",
+        "text": "A death knell."
     },
     {
-        "text": "A death knell.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Logos's bone whistle."
     },
     {
-        "text": "Logos's bone whistle.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#2$1",
+            "focus": "none"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#2$1",
-        "focus": "none"
+        "command": "decision",
+        "params": {
+            "options": "A bone whistle...;...For whom?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "A bone whistle...;...For whom?",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#11$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "..."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#11$1",
+            "focus": "none"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#11$1",
-        "focus": "none"
+        "command": "decision",
+        "params": {
+            "options": "Amiya...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Amiya...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#17$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#17$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm fine, Doctor."
     },
     {
-        "text": "I'm fine, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#11$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm just reminded of... a lot of things."
     },
     {
-        "text": "I'm just reminded of... a lot of things.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Logos rarely conducted himself as Lord of the Banshees when we were at Rhodes Island."
     },
     {
-        "text": "Logos rarely conducted himself as Lord of the Banshees when we were at Rhodes Island.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "He said he was no different from Scout or Misery, just another Sarkaz operator who believed in the ideals of Rhodes Island."
     },
     {
-        "text": "He said he was no different from Scout or Misery, just another Sarkaz operator who believed in the ideals of Rhodes Island.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#2$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The day we set out, when Logos put on his Royal Court garment..."
     },
     {
-        "text": "The day we set out, when Logos put on his Royal Court garment...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I sensed great determination in his eyes..."
     },
     {
-        "text": "I sensed great determination in his eyes...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#11$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Amiya",
+        "text": "And great sorrow."
     },
     {
-        "text": "And great sorrow.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "50_g1_originiumcanyon",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "50_g1_originiumcanyon",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_thunders_amb",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_thunders_amb",
-        "volume": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#10$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#10$1",
-        "duration": 1.5
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Logos",
+        "text": "..."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Logos"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
-    },
-    {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The bone whistle has cracked. The bone pen has broken. Blood flows the corner of his lips."
     },
     {
-        "tag": "playmusic",
-        "intro": "$dignified_intro",
-        "key": "$dignified_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$dignified_intro",
+            "key": "$dignified_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1"
+        }
     },
     {
-        "text": "You can no longer use witchcraft.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "You can no longer use witchcraft."
     },
     {
-        "text": "You push yourself to the limit, burning all the blood in your body to blow your bone whistle... just to stop me for a moment.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "You push yourself to the limit, burning all the blood in your body to blow your bone whistle... just to stop me for a moment."
     },
     {
-        "text": "Aefanyl...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Aefanyl..."
     },
     {
-        "text": "You are a fine warrior.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "You are a fine warrior."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Nachzehrer King spreads his arms wide."
@@ -427,361 +501,429 @@
         "text": "The fallen Sudaram rise again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$a_bat_buildingshaking_1",
-        "volume": 1,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$a_bat_buildingshaking_1",
+            "volume": 1,
+            "channel": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_darkwhisper",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_darkwhisper",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1331_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1331_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1331_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1331_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 3.5
+        "command": "delay",
+        "value": 3.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1"
+        }
     },
     {
-        "text": "But you are not fighting one, or a few.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "But you are not fighting one, or a few."
     },
     {
-        "text": "There have been no shortage of revolutionaries amongst the Sarkaz or the Royal Court. They have all failed, just as Theresa did.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "There have been no shortage of revolutionaries amongst the Sarkaz or the Royal Court. They have all failed, just as Theresa did."
     },
     {
-        "text": "War is the great boulder destined to fall on top of the Sarkaz in the abyss, again and again.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "War is the great boulder destined to fall on top of the Sarkaz in the abyss, again and again."
     },
     {
-        "text": "And you...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "And you..."
     },
     {
-        "text": "You've gained the Nachzehrers' respect, and so I shall now grant you death.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "You've gained the Nachzehrers' respect, and so I shall now grant you death."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "The Nachzehrer walks atop mists of decay towards the young Banshee."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_dim_closeeye",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_dim_closeeye",
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cnstrctnck",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cnstrctnck",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "posfrom": "0,-120",
-        "posto": "0,-120"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "posfrom": "0,-120",
+            "posto": "0,-120"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.5,0.65",
-        "scale": 2,
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.5,0.65",
+            "scale": 2,
+            "focus": "all"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magicscreen",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magicscreen",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "text": "'Sever.'",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "'Sever.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_5",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_5",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
         "text": "The Banshee utters the final incantation, so soft it is almost inaudible. The cutting words become a tangible blade, which he grabs with his hand\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_bladeline_01_large",
-        "x": -162.12,
-        "y": 42.4,
-        "rox": 8.6,
-        "roy": -47,
-        "roz": 29.2,
-        "layer": 1
+        "command": "effect",
+        "params": {
+            "name": "$e_bladeline_01_large",
+            "x": -162.12,
+            "y": 42.4,
+            "rox": 8.6,
+            "roy": -47,
+            "roz": 29.2,
+            "layer": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "And cuts off the Nachzehrer King's right arm."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_darkwhisper",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_darkwhisper",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,-120",
-        "posto": "0,0",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,-120",
+            "posto": "0,0",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Theresis's swordcraft\u2014",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Theresis's swordcraft\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_punch",
-        "volume": 1,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_punch",
+            "volume": 1,
+            "channel": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "The full blast of the Nachzehrer King's power hits Logos in the chest."
@@ -790,59 +932,71 @@
         "text": "He falls from the cliff."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jump_water",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jump_water",
+            "volume": 1
+        }
     },
     {
-        "tag": "background",
-        "image": "49_g12_diving",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "49_g12_diving",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_underwateramb",
-        "volume": 1,
-        "loop": true,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_underwateramb",
+            "volume": 1,
+            "loop": true,
+            "channel": 1
+        }
     },
     {
-        "tag": "backgroundtween",
-        "xScaleFrom": 1.3,
-        "yScaleFrom": 1.3,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 50,
-        "block": false,
-        "screenadapt": "coverall"
+        "command": "backgroundtween",
+        "params": {
+            "xscalefrom": 1.3,
+            "yscalefrom": 1.3,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 50,
+            "block": false,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The ground made of Originium begins to collapse."
@@ -878,226 +1032,252 @@
         "text": "He remembers himself many years ago."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_sunlight_01",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_sunlight_01",
+            "layer": 1
+        }
     },
     {
-        "tag": "image",
-        "image": "50_i07",
-        "screenadapt": "coverall",
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "y": 30
+        "command": "image",
+        "params": {
+            "image": "50_i07",
+            "screenadapt": "coverall",
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "y": 30
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 30,
-        "yTo": 0
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 30,
+            "y": 0
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$calm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$calm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "You have made your decision.",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "You have made your decision."
     },
     {
-        "text": "Yes.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "Yes."
     },
     {
-        "text": "I will stay at Rhodes Island and journey the land with the ship.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "I will stay at Rhodes Island and journey the land with the ship."
     },
     {
-        "text": "Theresa is gone.",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "Theresa is gone."
     },
     {
-        "text": "The dream of Babel...",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "The dream of Babel..."
     },
     {
-        "text": "...Lives.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "...Lives."
     },
     {
-        "text": "Her Highness has named her heir. She is young, but carries a familiar fire in her eyes that belongs only to dreamers.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "Her Highness has named her heir. She is young, but carries a familiar fire in her eyes that belongs only to dreamers."
     },
     {
-        "text": "And it's not just for her that I choose to stay.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "And it's not just for her that I choose to stay."
     },
     {
-        "text": "The journey of Her Highness's search hasn't ended, and it should not end like this. I will continue the journey, as long as the answer to the future of the Sarkaz lies elsewhere.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "The journey of Her Highness's search hasn't ended, and it should not end like this. I will continue the journey, as long as the answer to the future of the Sarkaz lies elsewhere."
     },
     {
-        "text": "I may not come back to the Valley for a long time.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "I may not come back to the Valley for a long time."
     },
     {
-        "text": "Do you feel sorry because you cannot stay with us?",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "Do you feel sorry because you cannot stay with us?"
     },
     {
-        "text": "I will not act as a sovereign of the Royal Court outside the Valley.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "I will not act as a sovereign of the Royal Court outside the Valley."
     },
     {
-        "text": "Many will see my will as the will of the Royal Court. They may see the Banshees as their enemies... I'm afraid I won't be able to help you fend off any storms coming from outside the Valley.",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "Many will see my will as the will of the Royal Court. They may see the Banshees as their enemies... I'm afraid I won't be able to help you fend off any storms coming from outside the Valley."
     },
     {
-        "text": "If any old friends want to pay a visit, I'll be sure to give them a warm welcome.",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "If any old friends want to pay a visit, I'll be sure to give them a warm welcome."
     },
     {
-        "text": "I will not question the former master of the Valley of the Banshees...",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "I will not question the former master of the Valley of the Banshees..."
     },
     {
-        "text": "My sister and I worry for you in the same way.",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "My sister and I worry for you in the same way."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Aefanyl"
+        "command": "name",
+        "value": "Aefanyl",
+        "text": "..."
     },
     {
-        "text": "Take our thoughts with you.",
-        "tag": "name",
-        "value": "Laqeramaline"
+        "command": "name",
+        "value": "Laqeramaline",
+        "text": "Take our thoughts with you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "bgeffect"
+        "command": "bgeffect"
     },
     {
-        "tag": "background",
-        "image": "49_g12_diving",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "49_g12_diving",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_underwateramb",
-        "volume": 1,
-        "loop": true,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_underwateramb",
+            "volume": 1,
+            "loop": true,
+            "channel": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The song of the Banshees surrounds their young lord."
@@ -1118,110 +1298,128 @@
         "text": "'But our blessing will be with you, wherever you go.'"
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1334_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.8,
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1334_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.8,
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "text": "Hang in there, Aefanyl.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hang in there, Aefanyl."
     },
     {
-        "text": "We're with you. We've always been with you.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "We're with you. We've always been with you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_2"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_2"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 1,
-        "g": 1,
-        "b": 0,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 1,
+            "g": 1,
+            "b": 0,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_2"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_2"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 1,
-        "g": 1,
-        "b": 0,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 1,
+            "g": 1,
+            "b": 0,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The power of incantation fills Logos, to the very ends of his limbs."
@@ -1236,166 +1434,192 @@
         "text": "All the pursuers are compelled to stop."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": 1,
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": 1,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "50_g1_originiumcanyon",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g1_originiumcanyon",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.5
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "..."
     },
     {
-        "text": "I never thought I would hear the chorus of the Banshees here in this distant land.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "I never thought I would hear the chorus of the Banshees here in this distant land."
     },
     {
-        "text": "Ever is death accompanied by new life...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Ever is death accompanied by new life..."
     },
     {
-        "text": "Are you still trying to sway me with song, young one, here at the end of all things?",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Are you still trying to sway me with song, young one, here at the end of all things?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1"
+        }
     },
     {
-        "text": "My Patriarch, this is no more than a Banshee's incantation.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "My Patriarch, this is no more than a Banshee's incantation."
     },
     {
-        "text": "They have not truly joined the battle. Our foe remains only the young Banshee.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "They have not truly joined the battle. Our foe remains only the young Banshee."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.5
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "..."
     },
     {
-        "text": "Yes...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Yes..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1"
+        }
     },
     {
-        "text": "Your injuries are grave...",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "Your injuries are grave..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.5
+        }
     },
     {
-        "text": "The curse of Aefanyl dictates that decay return to decay. I will not be able to regenerate for some time. But this body will last long enough to see this battle through.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "The curse of Aefanyl dictates that decay return to decay. I will not be able to regenerate for some time. But this body will last long enough to see this battle through."
     },
     {
-        "text": "For now... let me hear his song, and that of the Banshees.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "For now... let me hear his song, and that of the Banshees."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Nezzsalem walks to the edge of the cliff, without the help of any Arts."
@@ -1404,74 +1628,80 @@
         "text": "For an instant, he looks like an ordinary old man."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.5
+        }
     },
     {
-        "text": "Do you remember Buldrokkas'tee?",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Do you remember Buldrokkas'tee?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1331_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1331_1#1$1"
+        }
     },
     {
-        "text": "Yes.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "Yes."
     },
     {
-        "text": "You raised him as you would raise your own son.",
-        "tag": "name",
-        "value": "Sudaram"
+        "command": "name",
+        "value": "Sudaram",
+        "text": "You raised him as you would raise your own son."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1339_1#1$1",
-        "bstart": 0.3,
-        "bend": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1339_1#1$1",
+            "bstart": 0.3,
+            "bend": 0.5
+        }
     },
     {
-        "text": "Such a talented boy. He would have become the hero of Kazdel.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Such a talented boy. He would have become the hero of Kazdel."
     },
     {
-        "text": "He was my best student.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "He was my best student."
     },
     {
-        "text": "But he left Kazdel, and died to a conspiracy in a distant land.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "But he left Kazdel, and died to a conspiracy in a distant land."
     },
     {
-        "text": "But he died a warrior. He lived the meaning of life through war, and returned to the myriad souls upon his death.",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "But he died a warrior. He lived the meaning of life through war, and returned to the myriad souls upon his death."
     },
     {
-        "text": "After that... after that...",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "After that... after that..."
     },
     {
-        "text": "Where is the next hero of Kazdel?",
-        "tag": "name",
-        "value": "Nezzsalem"
+        "command": "name",
+        "value": "Nezzsalem",
+        "text": "Where is the next hero of Kazdel?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Nezzsalem looks down the cliff."
@@ -1480,249 +1710,294 @@
         "text": "Wind passes through the holes in his body that have not healed, creating sounds without meaning."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "50_g18_originiumcave",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g18_originiumcave",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#2$1"
+        }
     },
     {
-        "text": "The dirge of the myriad souls has grown softer.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The dirge of the myriad souls has grown softer."
     },
     {
-        "text": "Logos's bone whistle has temporarily suppressed the link between the Blood of Teekaz and Originium.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Logos's bone whistle has temporarily suppressed the link between the Blood of Teekaz and Originium."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#7$1"
+        }
     },
     {
-        "text": "This is our chance.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "This is our chance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_394_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_394_1#7$1"
+        }
     },
     {
-        "text": "Doctor, Dr. Kal'tsit... this time, I won't let it slip from my hands.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, Dr. Kal'tsit... this time, I won't let it slip from my hands."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "50_g8_altarcoreandblood",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g8_altarcoreandblood",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_653_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_653_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "text": "...They've caught up.",
-        "tag": "name",
-        "value": "Salus"
+        "command": "name",
+        "value": "Salus",
+        "text": "...They've caught up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_653_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_653_1#5$1"
+        }
     },
     {
-        "text": "Are you here too, dear Qui'sar\u0161innag?",
-        "tag": "name",
-        "value": "Salus"
+        "command": "name",
+        "value": "Salus",
+        "text": "Are you here too, dear Qui'sar\u0161innag?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_653_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_653_1#9$1"
+        }
     },
     {
-        "text": "You and our Leader... our dear father. Who will be the one to approach the throne?",
-        "tag": "name",
-        "value": "Salus"
+        "command": "name",
+        "value": "Salus",
+        "text": "You and our Leader... our dear father. Who will be the one to approach the throne?"
     },
     {
-        "tag": "delay"
-    },
-    {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Salus reaches for the drop of blood at the top of the altar."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 3.5
+        "command": "delay",
+        "value": 3.5
     },
     {
         "text": "Originium burns, and the myriad souls roar."
@@ -1731,437 +2006,509 @@
         "text": "The powerful witchcraft quickly turns her fingers into charred black crystals."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_653_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_653_1#10$1"
+        }
     },
     {
-        "text": "I want to see it so badly...",
-        "tag": "name",
-        "value": "Salus"
+        "command": "name",
+        "value": "Salus",
+        "text": "I want to see it so badly..."
     },
     {
-        "text": "The origin is so near.",
-        "tag": "name",
-        "value": "Salus"
+        "command": "name",
+        "value": "Salus",
+        "text": "The origin is so near."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "50_g7_confessariusaltar_on",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "50_g7_confessariusaltar_on",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "You\u2014",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "You\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing4",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing4",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#5$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#5$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#5$1"
+        }
     },
     {
-        "text": "You've hid well.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "You've hid well."
     },
     {
-        "text": "It took a long time to find you. Too long.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "It took a long time to find you. Too long."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "Traitor!",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Traitor!"
     },
     {
-        "text": "How many have you killed on your way here?",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "How many have you killed on your way here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#5$1"
+        }
     },
     {
-        "text": "...Not more than I killed when I escaped.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "...Not more than I killed when I escaped."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "The underground labs were full of the dead back then... our dead.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "The underground labs were full of the dead back then... our dead."
     },
     {
-        "text": "You ruined our Leader's plans at the Royal Academy of Sciences. The Victorians almost found out about it because of you!",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "You ruined our Leader's plans at the Royal Academy of Sciences. The Victorians almost found out about it because of you!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
-        "text": "I wish he had never succeeded.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "I wish he had never succeeded."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "Ha... that's not what you used to say.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Ha... that's not what you used to say."
     },
     {
-        "text": "How dare you act high and mighty, when you were the one who gave us our orders!",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "How dare you act high and mighty, when you were the one who gave us our orders!"
     },
     {
-        "text": "That cave outside Londinium, all the research bases... was there any part of it that you weren't in charge of?",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "That cave outside Londinium, all the research bases... was there any part of it that you weren't in charge of?"
     },
     {
-        "text": "The Leader was in Kazdel most of the time. You were the one who directed the research. You looked exactly like the Leader with your mask on!",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "The Leader was in Kazdel most of the time. You were the one who directed the research. You looked exactly like the Leader with your mask on!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#4$1"
+        }
     },
     {
-        "text": "I had no choice back then.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "I had no choice back then."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "No choice? What about the things you said when you took us to Londinium and had us don this mask?",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "No choice? What about the things you said when you took us to Londinium and had us don this mask?"
     },
     {
-        "text": "We were mere mercenaries, but we believed in the Confessarii's teachings, believed in the 'First and Final Path' that you preached!",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "We were mere mercenaries, but we believed in the Confessarii's teachings, believed in the 'First and Final Path' that you preached!"
     },
     {
-        "text": "Our original sin, the sin that outsiders imposed upon us, will be washed away at its coming.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Our original sin, the sin that outsiders imposed upon us, will be washed away at its coming."
     },
     {
-        "text": "Was that all a lie?",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Was that all a lie?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "..."
     },
     {
-        "text": "I wish that was a lie.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "I wish that was a lie."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "it wasn't a lie... it was real. All the Leader's promises to us were sincere. The same for you, Qui'sar\u0161innag, even if you have strayed from the path...",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "it wasn't a lie... it was real. All the Leader's promises to us were sincere. The same for you, Qui'sar\u0161innag, even if you have strayed from the path..."
     },
     {
-        "text": "The Leader and the Regent are so close to victory.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "The Leader and the Regent are so close to victory."
     },
     {
-        "text": "The freedom and power that have been lost for thousands of years are about to return to the hands of the Sarkaz.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "The freedom and power that have been lost for thousands of years are about to return to the hands of the Sarkaz."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_425_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_425_1#1$1"
+        }
     },
     {
-        "text": "Kill me if you want.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Kill me if you want."
     },
     {
-        "text": "Go and see the Leader. Your father.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "Go and see the Leader. Your father."
     },
     {
-        "text": "He is waiting for you at the end of the path. They're all waiting for you.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "He is waiting for you at the end of the path. They're all waiting for you."
     },
     {
-        "text": "You will witness it for us, for every life that your sword took.",
-        "tag": "name",
-        "value": "Confessarius Guard"
+        "command": "name",
+        "value": "Confessarius Guard",
+        "text": "You will witness it for us, for every life that your sword took."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "0,-50",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "0,-50",
+            "duration": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,-50",
-        "posto": "0,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,-50",
+            "posto": "0,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Shining removes the guard's mask."
@@ -2173,9 +2520,11 @@
         "text": "They knew nothing at first. They were only tasked to excavate the ruins outside the city."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#3$1"
+        }
     },
     {
         "text": "The young man had expressed his gratitude to her directly, thanked the Confessarii for giving them a safe, well-paid job."
@@ -2187,9 +2536,11 @@
         "text": "The Leader of the Confessarii came to Londinium."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
         "text": "There were no more idle mercenaries drinking and playing games. Everyone put on the same mask, and did not speak except when necessary."
@@ -2204,65 +2555,77 @@
         "text": "It was she who killed them first."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#2$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#3$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avgnew_147_shining_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avgnew_147_shining_1#5$1"
+        }
     },
     {
-        "text": "This sin...",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "This sin..."
     },
     {
-        "text": "...has gone on long enough.",
-        "tag": "name",
-        "value": "Shining"
+        "command": "name",
+        "value": "Shining",
+        "text": "...has gone on long enough."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_glassbroken",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_glassbroken",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The mask cracks. The pieces stab at Shining's palm."
@@ -2271,34 +2634,40 @@
         "text": "She continues her journey to the top."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

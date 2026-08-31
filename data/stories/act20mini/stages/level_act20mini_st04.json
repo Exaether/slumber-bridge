@@ -1,92 +1,106 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "56_g6_courtsquare_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g6_courtsquare_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.15,
-        "fadetime": 0.01
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.15,
-        "fadetime": 0.01
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "key": "$wasteland_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$wasteland_loop",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rainlight_loop",
+            "volume": 0,
+            "loop": true,
+            "channel": "c"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rainlight_loop",
-        "volume": 0,
-        "loop": true,
-        "channel": "c"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_truckengine",
+            "volume": 0,
+            "loop": true,
+            "channel": "car"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_truckengine",
-        "volume": 0,
-        "loop": true,
-        "channel": "car"
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.6,
+            "channel": "c",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.6,
-        "channel": "c",
-        "fadetime": 1
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.5,
+            "channel": "car",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.5,
-        "channel": "car",
-        "fadetime": 2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "For a long time afterwards, Eirene thought back to her hesitation that night every time she drove her truck alone."
@@ -98,39 +112,43 @@
         "text": "She called Lavinia on her way, saying she has something to discuss."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*sigh*",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "*sigh*"
     },
     {
-        "text": "I don't know what to do, Lavinia...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I don't know what to do, Lavinia..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Eirene mutters in the driver's seat, but she cannot bring herself to finish the sentence: 'You're the only one I can count on.'"
@@ -139,441 +157,519 @@
         "text": "Is she really the only one? Eirene spends a few moments in bitter silence, as raindrops splash her face through a gap in the window."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "car",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "car",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "She turns off the engine."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "c",
-        "fadetime": 2.5
+        "command": "stopsound",
+        "params": {
+            "channel": "c",
+            "fadetime": 2.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "background",
-        "image": "56_g9_truckcamp",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g9_truckcamp",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1561_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1561_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I made more money in one trip than I did in the last two weeks combined!",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "I made more money in one trip than I did in the last two weeks combined!"
     },
     {
-        "text": "The Kazimierzians pay well.",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "The Kazimierzians pay well."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You showing off?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "You showing off?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Make-up payments for this week alone wiped out a whole trip's margin for me.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Make-up payments for this week alone wiped out a whole trip's margin for me."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I don't hear you talking about the heavy fines the Kazimierzians levy.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I don't hear you talking about the heavy fines the Kazimierzians levy."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hehe, thanks for helping to pay my share. Now that I've gotten paid, how much do I owe you?",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "Hehe, thanks for helping to pay my share. Now that I've gotten paid, how much do I owe you?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Don't worry about it. Brothers help each other out.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Don't worry about it. Brothers help each other out."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Right you are. I'll save a portion and do my part next time someone gets fined.",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "Right you are. I'll save a portion and do my part next time someone gets fined."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#2$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#2$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Saving is the right move. Originium fuel prices are rising. I was just at the station, and boy did it hurt to watch the numbers going up and up and up.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Saving is the right move. Originium fuel prices are rising. I was just at the station, and boy did it hurt to watch the numbers going up and up and up."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I did run into a bloke from Leoti Pharmacy at the fuel station who lent me his discount card.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I did run into a bloke from Leoti Pharmacy at the fuel station who lent me his discount card."
     },
     {
-        "text": "I should bring him a pack of smokes next time I go by their shop.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I should bring him a pack of smokes next time I go by their shop."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Really? As long as Eirene doesn't catch you hanging out with the wise guy\u2014",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "Really? As long as Eirene doesn't catch you hanging out with the wise guy\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hanging out with who?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Hanging out with who?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No, no, it's nothing.",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "No, no, it's nothing."
     },
     {
-        "text": "Ciao, Eirene! Haven't seen you in a while. I think I'm going to break your delivery record soon!",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "Ciao, Eirene! Haven't seen you in a while. I think I'm going to break your delivery record soon!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Great. As a reward, you get the transportation security paperwork from the Agenzia per la Sicurezza dei Trasporti.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Great. As a reward, you get the transportation security paperwork from the Agenzia per la Sicurezza dei Trasporti."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hah, anything but the AST! Anyway, it's time for me to go to my next job. <i>A dopo!</i>",
-        "tag": "name",
-        "value": "Sandro"
+        "command": "name",
+        "value": "Sandro",
+        "text": "Hah, anything but the AST! Anyway, it's time for me to go to my next job. <i>A dopo!</i>"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "He's right, we haven't seen you in camp for a while. How you gotten thinner? You gotta take care of your health, or Sommer will never forgive us\u2014",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "He's right, we haven't seen you in camp for a while. How you gotten thinner? You gotta take care of your health, or Sommer will never forgive us\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't change the subject. What were you chatting about?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Don't change the subject. What were you chatting about?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Um, it's nothing, really.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Um, it's nothing, really."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, come on...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Oh, come on..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "When will you and Sam learn?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "When will you and Sam learn?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Where IS Sam, anyway? I didn't see him anywhere in camp, and his schedule's empty for a few days. Where is he?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Where IS Sam, anyway? I didn't see him anywhere in camp, and his schedule's empty for a few days. Where is he?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "He's been sick. Fever, vomiting, diarrhea, the whole shebang. Had to go home and lie down after last night's delivery. Gianni's taking his orders for today.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "He's been sick. Fever, vomiting, diarrhea, the whole shebang. Had to go home and lie down after last night's delivery. Gianni's taking his orders for today."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Kazimierzians dock pay for days off, you know... better to find a sub, if we've got one.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "The Kazimierzians dock pay for days off, you know... better to find a sub, if we've got one."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Never mind. I'll get a doctor to look at him.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Never mind. I'll get a doctor to look at him."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Did you need him for something?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Did you need him for something?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lqudrppg",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lqudrppg",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Eirene irritably shakes the object in her hand. It makes a swishing sound."
@@ -582,529 +678,605 @@
         "text": "The package is obviously wine bottle-shaped, never mind the Saluzzo Vino logo displayed prominently on it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why did Saluzzo Vino send us a bottle of wine?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Why did Saluzzo Vino send us a bottle of wine?"
     },
     {
-        "text": "I would have thought that one of you dropped a delivery in the mail room, if the package didn't have Sam's name on it.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I would have thought that one of you dropped a delivery in the mail room, if the package didn't have Sam's name on it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, that's probably a moving gift for Sam's cousin's family.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Oh, that's probably a moving gift for Sam's cousin's family."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Moving gift?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Moving gift?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "When his cousin's family first came to Nuova Volsinii, Signor Bellone\u2014I mean, Demetri, helped out.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "When his cousin's family first came to Nuova Volsinii, Signor Bellone\u2014I mean, Demetri, helped out."
     },
     {
-        "text": "I think he mentioned he'd send a bottle of wine as a moving gift.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I think he mentioned he'd send a bottle of wine as a moving gift."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's just a little wine, Eirene... and it's not for him. Sam quit drinking, you know that.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "It's just a little wine, Eirene... and it's not for him. Sam quit drinking, you know that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I know. I'm just wondering how Signor Bellone knew about Sam's cousin.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I know. I'm just wondering how Signor Bellone knew about Sam's cousin."
     },
     {
-        "text": "And you, Ruggiero. I was planning to go shopping at your little supermarket a few days ago, only to find that it's become a Saluzzo Vino outlet.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "And you, Ruggiero. I was planning to go shopping at your little supermarket a few days ago, only to find that it's become a Saluzzo Vino outlet."
     },
     {
-        "text": "Since when have you gotten so friendly with each other?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Since when have you gotten so friendly with each other?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Erm, I rented it to them. Turns out managing a whole supermarket was more trouble than it's worth, and I figured I was better off driving trucks.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Erm, I rented it to them. Turns out managing a whole supermarket was more trouble than it's worth, and I figured I was better off driving trucks."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Were you in some trouble I didn't know about? Something that you couldn't tell me, but you were comfortable telling the mafia?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Were you in some trouble I didn't know about? Something that you couldn't tell me, but you were comfortable telling the mafia?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's not that, Eirene...",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "It's not that, Eirene..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "text": "When will you understand? Small favors are favors too, and all favors have to be repaid someday. With interest.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "When will you understand? Small favors are favors too, and all favors have to be repaid someday. With interest."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But they're just helping us right now.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "But they're just helping us right now."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are they? The Red Wine Championship starts in a few days. Is it not obvious why Saluzzo Vino sent a 'moving gift' right now?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Are they? The Red Wine Championship starts in a few days. Is it not obvious why Saluzzo Vino sent a 'moving gift' right now?"
     },
     {
-        "text": "It's 'just a bottle of wine' at this point, but what about later? Mafia money? The famiglia's name? Will you go back to working for them, like you used to?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "It's 'just a bottle of wine' at this point, but what about later? Mafia money? The famiglia's name? Will you go back to working for them, like you used to?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If you're worried about history repeating itself, I promise you it won't.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "If you're worried about history repeating itself, I promise you it won't."
     },
     {
-        "text": "Besides, under Nuova Volsinii's new order... even if you don't trust me, you should trust the mayor and Judge Lavinia.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Besides, under Nuova Volsinii's new order... even if you don't trust me, you should trust the mayor and Judge Lavinia."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's not that I don't trust them. It's just...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "It's not that I don't trust them. It's just..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Never mind. Don't forget what happened at the Carnevale.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Never mind. Don't forget what happened at the Carnevale."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Avoid dealing with the famiglie. You may think they're just ordinary employees and shopkeepers, but everything they do is under the watchful eyes of the wise guys.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Avoid dealing with the famiglie. You may think they're just ordinary employees and shopkeepers, but everything they do is under the watchful eyes of the wise guys."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I know it was traumatic for you, as it was for all of us.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I know it was traumatic for you, as it was for all of us."
     },
     {
-        "text": "But things have changed for the Saluzzos. Venezia Jr. is gone. It's a new era of leadership\u2014",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "But things have changed for the Saluzzos. Venezia Jr. is gone. It's a new era of leadership\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Ruggiero is interrupted by the sound of his phone ringing. Eirene says nothing; she shakes her head and turns around to leave."
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
         "text": "Ruggiero hears an urgent voice as soon as he picks up the phone."
     },
     {
-        "text": "Ruggiero! I can't reach Sam! Wh-What do I do?",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "Ruggiero! I can't reach Sam! Wh-What do I do?"
     },
     {
-        "text": "Come to the vehicle checkpoint at dock 2! The Kazimierzians say they're slapping on an extra fine, and I just can't get them to listen to me!",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "Come to the vehicle checkpoint at dock 2! The Kazimierzians say they're slapping on an extra fine, and I just can't get them to listen to me!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What...?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "What...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Seeing Ruggiero's anxiety, Eirene gestures for him to pass the terminal."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's me. What's going on?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "It's me. What's going on?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Eirene? Oh, I'm so glad you're there!",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "Eirene? Oh, I'm so glad you're there!"
     },
     {
-        "text": "Sam's been running a fever, so I swapped shifts with him. This run just happened to be on the way to my order. But the Kazimierzians changed the delivery destination at the last minute, and I didn't make it in time.",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "Sam's been running a fever, so I swapped shifts with him. This run just happened to be on the way to my order. But the Kazimierzians changed the delivery destination at the last minute, and I didn't make it in time."
     },
     {
-        "text": "I tried to explain, but this Kazimierzian doesn't seem to understand what I'm saying. He keeps saying I broke the contract and he's demanding I pay a fine!",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "I tried to explain, but this Kazimierzian doesn't seem to understand what I'm saying. He keeps saying I broke the contract and he's demanding I pay a fine!"
     },
     {
-        "text": "Please hurry, Eirene! The print on the contract is tiny and thick and I can't make sense of it!",
-        "tag": "name",
-        "value": "Gianni"
+        "command": "name",
+        "value": "Gianni",
+        "text": "Please hurry, Eirene! The print on the contract is tiny and thick and I can't make sense of it!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I'm on my way!",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I'm on my way!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g11_newvolsiniipier",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g11_newvolsiniipier",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1542_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1542_1#6$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_223"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_223"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Surely you can make an accommodation? It was your side that changed the delivery address at the last minute. Why should the driver pay a penalty?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Surely you can make an accommodation? It was your side that changed the delivery address at the last minute. Why should the driver pay a penalty?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_223",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_223",
+            "focus": "r"
+        }
     },
     {
-        "text": "Commissioner, all orders are logged in our system, and our adjustments are made according to the published schedule. Drivers bear responsibility for any shift changes they make themselves.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Commissioner, all orders are logged in our system, and our adjustments are made according to the published schedule. Drivers bear responsibility for any shift changes they make themselves."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "But..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_223",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_223",
+            "focus": "r"
+        }
     },
     {
-        "text": "The contract makes it quite clear. Exceptions compromise our ability to enforce our contracts in the future.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "The contract makes it quite clear. Exceptions compromise our ability to enforce our contracts in the future."
     },
     {
-        "text": "Continuing this argument does neither of us any good. If the driver doesn't leave now, based on road conditions and the published schedule...",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Continuing this argument does neither of us any good. If the driver doesn't leave now, based on road conditions and the published schedule..."
     },
     {
-        "text": "You may be held in substantive breach of the contract, resulting in a fine equal to fifteen percent of the order.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "You may be held in substantive breach of the contract, resulting in a fine equal to fifteen percent of the order."
     },
     {
-        "text": "It will also be your seventh penalty of the month.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "It will also be your seventh penalty of the month."
     },
     {
-        "text": "Therefore, the windows for any subsequent orders will be tightened accordingly.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Therefore, the windows for any subsequent orders will be tightened accordingly."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Eirene cannot recall what she saw in the forced smile that Gianni offered her."
@@ -1119,186 +1291,216 @@
         "text": "I can't just let it go like this, thought Eirene."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g9_truckcamp",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g9_truckcamp",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walkmeadow",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walkmeadow",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Back already, Eirene? How did things go with Gianni?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Back already, Eirene? How did things go with Gianni?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Did we keep a copy of the Kazimierzian contracts at the camp? Bring it to me.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Did we keep a copy of the Kazimierzian contracts at the camp? Bring it to me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Wh-What's going on?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Wh-What's going on?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The terms... something's not right. There are certain parts that don't seem reasonable. We need to talk it over with their people.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The terms... something's not right. There are certain parts that don't seem reasonable. We need to talk it over with their people."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Gianni's trouble hasn't been resolved, has it?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Gianni's trouble hasn't been resolved, has it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "No."
     },
     {
-        "text": "But I'll take care of it.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "But I'll take care of it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I knew it.... other drivers have tried to talk to the Kazimierzian. Informally. As for the outcome... I think you can guess.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I knew it.... other drivers have tried to talk to the Kazimierzian. Informally. As for the outcome... I think you can guess."
     },
     {
-        "text": "We were talking about how to handle Gianni's fines while you were away.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "We were talking about how to handle Gianni's fines while you were away."
     },
     {
-        "text": "His wife just gave birth to twins, and the folks at home are not in the best of health. Thankfully, Deme\u2014",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "His wife just gave birth to twins, and the folks at home are not in the best of health. Thankfully, Deme\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Ruggiero stops in mid-sentence. Eirene asks no more; perhaps she is afraid that she might ask how the mob boss learned about the issues facing Gianni's family, when she herself has only just heard of them moments ago."
@@ -1307,81 +1509,95 @@
         "text": "She feels like she has spent too long in her office, so long that she can barely recognize her family anymore. Same as it was two years ago."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Get the contract.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Get the contract."
     },
     {
-        "text": "I'll be fine. I'll find a way to deal with it.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I'll be fine. I'll find a way to deal with it."
     },
     {
-        "text": "The AST's drivers do not rely on the kindness of strangers, especially those looking to hide their traps.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The AST's drivers do not rely on the kindness of strangers, especially those looking to hide their traps."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$saferoom_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$saferoom_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The lighting at the Kazimierzian Chamber of Commerce's reception room is much warmer than the Agenzia per la Sicurezza dei Trasporti's office, the thick rug thoroughly muffling the sound of any footsteps."
@@ -1396,88 +1612,98 @@
         "text": "Eirene sits without engaging in small talk."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I wish to make certain adjustments to the cooperation between the Agenzia per la Sicurezza dei Trasporti and the Kazimierzian Chamber of Commerce.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I wish to make certain adjustments to the cooperation between the Agenzia per la Sicurezza dei Trasporti and the Kazimierzian Chamber of Commerce."
     },
     {
-        "text": "The drivers are not machines. They are doing their best to cooperate. And while it's true they must sometimes be held responsible breaches of contract...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The drivers are not machines. They are doing their best to cooperate. And while it's true they must sometimes be held responsible breaches of contract..."
     },
     {
-        "text": "Many more are attributable to a disconnect between contract terms and reality.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Many more are attributable to a disconnect between contract terms and reality."
     },
     {
-        "text": "Too many of these terms are unreasonable.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Too many of these terms are unreasonable."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_wadmoney",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_wadmoney",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Eirene takes out a stack of contracts and pushes them forward. The edges are frayed from excessive flipping, and the pages are heavily labeled."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper1",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper1",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper2",
-        "volume": 0.7,
-        "delay": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper2",
+            "volume": 0.7,
+            "delay": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "On their own, the individual terms may not seem unreasonable.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "On their own, the individual terms may not seem unreasonable."
     },
     {
-        "text": "Taken together, however, and they serve to put all the pressure on the lowest rung of the ladder.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Taken together, however, and they serve to put all the pressure on the lowest rung of the ladder."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Kazimierzian representative flips through the contract, reading it carefully, staying on one page for minutes, seemingly to confirm the detailed wording."
@@ -1486,75 +1712,85 @@
         "text": "After some time, he finally puts it away."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "I understand your concerns. Indeed, we have also noted the recent freight disruptions.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "I understand your concerns. Indeed, we have also noted the recent freight disruptions."
     },
     {
-        "text": "However, the terms of the contract are clear, and you had the opportunity to review them before you signed it.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "However, the terms of the contract are clear, and you had the opportunity to review them before you signed it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, because none of us realized that they would be relevant at the same time, so often.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Yes, because none of us realized that they would be relevant at the same time, so often."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "The rules themselves are not contradictory, it is just that current operating conditions are tighter than expected.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "The rules themselves are not contradictory, it is just that current operating conditions are tighter than expected."
     },
     {
-        "text": "What is your request, then, Commissioner?",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "What is your request, then, Commissioner?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I would like more flexibility when dealing with edge cases, at least for the time being. Some space in implementation, if nothing else.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I would like more flexibility when dealing with edge cases, at least for the time being. Some space in implementation, if nothing else."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I think it would be conductive to better cooperation in the future.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I think it would be conductive to better cooperation in the future."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Kazimierzian representative is silent for a moment."
@@ -1566,234 +1802,270 @@
         "text": "A fleeting feeling, nothing more."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "Marking every single little adjustment would be a considerable burden on management moving forward.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Marking every single little adjustment would be a considerable burden on management moving forward."
     },
     {
-        "text": "However\u2014",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "However\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "We could, shall we say, set the recent records aside, for the time being.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We could, shall we say, set the recent records aside, for the time being."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What do you mean, set aside?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "What do you mean, set aside?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "They will not be referenced at the current stage, at least not until this scheduling cycle is over.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "They will not be referenced at the current stage, at least not until this scheduling cycle is over."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What about penalty records of individual drivers?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "What about penalty records of individual drivers?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "They will not be scrutinized individually, at the current stage. You may focus your time and energy on ensuring smooth overall operation. Small problems will not be examined so closely when the big picture is secure.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "They will not be scrutinized individually, at the current stage. You may focus your time and energy on ensuring smooth overall operation. Small problems will not be examined so closely when the big picture is secure."
     },
     {
-        "text": "We, too, would prefer that our partners are able to work without pressure.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We, too, would prefer that our partners are able to work without pressure."
     },
     {
-        "text": "We recognize, of course, that recent circumstances are exceptional. We appreciate your contributions in dealing with the increased workload associated with the upcoming Red Wine Championship.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We recognize, of course, that recent circumstances are exceptional. We appreciate your contributions in dealing with the increased workload associated with the upcoming Red Wine Championship."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, the AST has committed virtually all of our capacity to the Red Wine Championship's orders. I appreciate our Kazimierzian partners' understanding of our drivers' circumstances.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Yes, the AST has committed virtually all of our capacity to the Red Wine Championship's orders. I appreciate our Kazimierzian partners' understanding of our drivers' circumstances."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "For better cooperation in the future... yes?",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "For better cooperation in the future... yes?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I will adjust our schedules and review the conditions of our drivers... I recognize that doing business with you has been very beneficial for our members.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I will adjust our schedules and review the conditions of our drivers... I recognize that doing business with you has been very beneficial for our members."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_chairrub",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_chairrub",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Eirene stands up and shakes hands with her counterpart. The hand held in hers is firm, without applying excessive force, and the expression on the man's face remains polite, exactly as it was when Eirene entered the room."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "We will review the next steps once things have settled down a bit.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We will review the next steps once things have settled down a bit."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Eirene nods."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$doorclosequite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$doorclosequite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "gridbg",
-        "imagegroup": "53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2",
-        "solidwidth": "1280/1280/1280/1280",
-        "solidheight": "720/720/720/720",
-        "x": -900,
-        "fadetime": 0
+        "command": "gridbg",
+        "params": {
+            "imagegroup": "53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2",
+            "solidwidth": "1280/1280/1280/1280",
+            "solidheight": "720/720/720/720",
+            "x": -900,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 40,
-        "yFrom": 500,
-        "yTo": 360,
-        "block": false
+        "command": "largebgtween",
+        "params": {
+            "duration": 40,
+            "yfrom": 500,
+            "y": 360,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Eirene even feels a slight spring in her step as she leaves the room, carrying the contract."
@@ -1814,63 +2086,75 @@
         "text": "Everything is getting better, just like the sunny weather that has graced Nuova Volsinii recently, thinks Eirene."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "gridbg"
+        "command": "gridbg"
     },
     {
-        "tag": "background",
-        "image": "56_g4_newvolsiniialley_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g4_newvolsiniialley_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$normal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$normal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Sam is already feeling better by the time he leaves the pharmacy."
@@ -1879,561 +2163,649 @@
         "text": "In terms of his wallet, at least. He has been off for three days; his fever has subsided, and he feels ready to go back to work."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Can't have the others subbing in for me all the time... I should figure out my schedule tomorrow, then hit the ground running.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Can't have the others subbing in for me all the time... I should figure out my schedule tomorrow, then hit the ground running."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Who's calling at this hour?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Who's calling at this hour?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hello?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Hello?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, Tommaso? From Saluzzo Vino?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Oh, Tommaso? From Saluzzo Vino?"
     },
     {
-        "text": "Thanks for the flu and fever pills you gave me the other day! They worked great. I was just looking for them in the pharmacy, to keep them on hand for the next time I get a fever.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Thanks for the flu and fever pills you gave me the other day! They worked great. I was just looking for them in the pharmacy, to keep them on hand for the next time I get a fever."
     },
     {
-        "text": "Oh, you're too kind! You said the order wasn't urgent, but I didn't want to hold up your business any longer, so I took it upon myself to deliver it.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Oh, you're too kind! You said the order wasn't urgent, but I didn't want to hold up your business any longer, so I took it upon myself to deliver it."
     },
     {
-        "text": "I didn't expect to see medicine boxes in with the pay! You weren't there when I picked it up, but I guess it was you who put the meds in there?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "I didn't expect to see medicine boxes in with the pay! You weren't there when I picked it up, but I guess it was you who put the meds in there?"
     },
     {
-        "text": "You Saluzzos are too kind\u2014",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "You Saluzzos are too kind\u2014"
     },
     {
-        "text": "Oh, sorry, Bellones, of course! You Bellones are too kind! So, what do you need from me at a time like this?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Oh, sorry, Bellones, of course! You Bellones are too kind! So, what do you need from me at a time like this?"
     },
     {
+        "command": "name",
         "text": "Your boss forgot to add a few crates to the delivery? And no one's available...?",
-        "tag": "multiline",
-        "name": "Sam"
+        "value": "Sam"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
+        "command": "name",
         "text": "And you need it for tomorrow's Red Wine Championship?",
-        "tag": "multiline",
-        "name": "Sam"
-    },
-    {
-        "text": "Well, we can't have that! I'm just one block away from your winery, I'll get it! Should only take a few minutes on my bike!",
-        "tag": "name",
         "value": "Sam"
     },
     {
-        "text": "Don't worry about a fee! Neighbors help each other out, after all. You insist? Alright, alright, have it your way. We can talk about it after I deliver the wine!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Well, we can't have that! I'm just one block away from your winery, I'll get it! Should only take a few minutes on my bike!"
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Sam",
+        "text": "Don't worry about a fee! Neighbors help each other out, after all. You insist? Alright, alright, have it your way. We can talk about it after I deliver the wine!"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_enginerun",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.4,
-        "channel": "bgs",
-        "fadetime": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_enginerun",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.4,
+            "channel": "bgs",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "Heh, guess even the big companies slip up every once in a while.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Good think Tommaso found me... how did he get my number, anyway? Did I ever tell him?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Heh, guess even the big companies slip up every once in a while."
     },
     {
-        "text": "Never mind, that's not important. What IS important is that a Nuova Volsiniese wine wins this Red Wine Championship!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Good think Tommaso found me... how did he get my number, anyway? Did I ever tell him?"
     },
     {
-        "text": "Do the Kazimierzians make good wine? Couldn't possibly be as good as the Siracusan stuff, at any rate...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Never mind, that's not important. What IS important is that a Nuova Volsiniese wine wins this Red Wine Championship!"
     },
     {
-        "text": "Two more stops till I get to the venue!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Do the Kazimierzians make good wine? Couldn't possibly be as good as the Siracusan stuff, at any rate..."
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Sam",
+        "text": "Two more stops till I get to the venue!"
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$drift",
-        "volume": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bottlecollide",
-        "volume": 0.8,
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$drift",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bottlecollide",
+            "volume": 0.8,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#3$1",
-        "duration": 0.7
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#3$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#3$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Where did that truck come from?!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Sam",
+        "text": "Where did that truck come from?!"
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$drift",
-        "volume": 1
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carcrash_wreck",
-        "volume": 0.7,
-        "delay": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$drift",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sundries",
-        "volume": 0.8,
-        "delay": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carcrash_wreck",
+            "volume": 0.7,
+            "delay": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_windowbreak",
-        "volume": 1,
-        "delay": 1.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sundries",
+            "volume": 0.8,
+            "delay": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_windowbreak",
+            "volume": 1,
+            "delay": 1.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 3.5
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 3.5
     },
     {
-        "text": "Phew...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That driver scared the shit out of me, the way he swerved! Good thing the wine's okay...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Phew..."
     },
     {
-        "text": "Must have dozed off and missed the red light, I guess. Yikes, the whole truck's flipped over. I hope the driver's okay... I should call the police...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "That driver scared the shit out of me, the way he swerved! Good thing the wine's okay..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#3$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Sam",
+        "text": "Must have dozed off and missed the red light, I guess. Yikes, the whole truck's flipped over. I hope the driver's okay... I should call the police..."
     },
     {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Gianni?! Is that you?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "\u2014!"
     },
     {
-        "text": "Somebody, help! My fratello's hurt! Hey, you\u2014Tommaso! You're here too?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Gianni?! Is that you?"
     },
     {
-        "text": "Help me get him out from under the wreck! I'll call an ambulance!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Somebody, help! My fratello's hurt! Hey, you\u2014Tommaso! You're here too?"
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Sam",
+        "text": "Help me get him out from under the wreck! I'll call an ambulance!"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "text": "Hello...? Th-There's been a crash! The driver's out cold! I need an ambulance, right now!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Sam",
+        "text": "Hello...? Th-There's been a crash! The driver's out cold! I need an ambulance, right now!"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "curtain"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g9_truckcamp",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "curtain"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "56_g9_truckcamp",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "...So Tommaso told me their boss will pay for Gianni's medical bills and the truckload of wine.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Sam",
+        "text": "...So Tommaso told me their boss will pay for Gianni's medical bills and the truckload of wine."
     },
     {
-        "text": "Said Gianni might not have crashed if they didn't ask me to make the delivery, and the Kazimierzians' stuff wouldn't have spilled...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#4$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Sam",
+        "text": "Said Gianni might not have crashed if they didn't ask me to make the delivery, and the Kazimierzians' stuff wouldn't have spilled..."
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "text": "And then?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Eirene",
+        "text": "And then?"
     },
     {
-        "text": "Then what? Nothing. That's all Tommaso told me.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's just an act of kindness, Eirene. Tommaso says the owner of Saluzzo Vino is very troubled about Gianni, that he never expected such a terrible accident.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Then what? Nothing. That's all Tommaso told me."
     },
     {
-        "text": "Besides, Gianni's in hospital, and he needs the money!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "It's just an act of kindness, Eirene. Tommaso says the owner of Saluzzo Vino is very troubled about Gianni, that he never expected such a terrible accident."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Sam",
+        "text": "Besides, Gianni's in hospital, and he needs the money!"
     },
     {
-        "text": "You were at the Kazimierzians' place for a while. What are they saying? Do we need to pay compensation for the goods, or is it Saluzzo Vino's responsibility?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "You were at the Kazimierzians' place for a while. What are they saying? Do we need to pay compensation for the goods, or is it Saluzzo Vino's responsibility?"
     },
     {
-        "text": "The Kazimierzians said they can write off the goods...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The Kazimierzians said they can write off the goods..."
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
+    },
+    {
+        "command": "charslot"
     },
     {
         "text": "Eirene stops mid-sentence. She feels a lump in her throat."
@@ -2442,329 +2814,383 @@
         "text": "Her gaze falls upon the truck sitting on the edge of the camp. It has not been repaired yet, and the broken glass inside the truck gleams in the sunlight."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The way they put it, they agree to not pursue individual liability for the incident.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The way they put it, they agree to not pursue individual liability for the incident."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "It takes a few moments for Sam to process the weight of the message, whereupon he visibly lets out a sigh of relief."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What about Gianni?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "What about Gianni?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No personal restitution.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "No personal restitution."
     },
     {
-        "text": "It'll be treated as a failed contract; they'll write off the loss of goods. Nice words they used, 'sharing risks' and 'treating partners fairly'.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "It'll be treated as a failed contract; they'll write off the loss of goods. Nice words they used, 'sharing risks' and 'treating partners fairly'."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That's great!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "That's great!"
     },
     {
-        "text": "Honestly, I don't think Gianni could handle paying restitution. He's got way too much on his plate already.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Honestly, I don't think Gianni could handle paying restitution. He's got way too much on his plate already."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "He's been taking so many jobs lately, the fatigue must have gotten to him...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "He's been taking so many jobs lately, the fatigue must have gotten to him..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "text": "Anyway, tell the friend who asked you to run the errand that we don't need their help. The AST's insurance will pay part of Gianni's medical bills, and I'll deal with the rest.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Anyway, tell the friend who asked you to run the errand that we don't need their help. The AST's insurance will pay part of Gianni's medical bills, and I'll deal with the rest."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sure, alright! The boys have been talking about chipping in for the bills anyway. I'll do my part too.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Sure, alright! The boys have been talking about chipping in for the bills anyway. I'll do my part too."
     },
     {
-        "text": "Oh, Tommaso, right? I-I'll give him a call now\u2014",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Oh, Tommaso, right? I-I'll give him a call now\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walkfast",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walkfast",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Oh, come on...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Oh, come on..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I doubt the Kazimierzians will let it go so easily. You told us about their nice words. What about the not-so-nice ones?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "I doubt the Kazimierzians will let it go so easily. You told us about their nice words. What about the not-so-nice ones?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...They made it very clear that this was an exception that they only agree to based on our current partnership.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "...They made it very clear that this was an exception that they only agree to based on our current partnership."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "What do you mean?",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "What do you mean?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It means that they want us to be more... proactive in working within their system, such as future schedules, routes, and other things that we used to decide on our own.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "It means that they want us to be more... proactive in working within their system, such as future schedules, routes, and other things that we used to decide on our own."
     },
     {
-        "text": "As for penalty records, they said they'll assess them in aggregate. Bunch of officialese: 'for internal reference only', no direct fines.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "As for penalty records, they said they'll assess them in aggregate. Bunch of officialese: 'for internal reference only', no direct fines."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That's what they said before too.",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "That's what they said before too."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Formal renegotiations with the Kazimierzians regarding the specifics will take place after the Red Wine Championship. We won't let them put unreasonable terms into the contract this time...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Formal renegotiations with the Kazimierzians regarding the specifics will take place after the Red Wine Championship. We won't let them put unreasonable terms into the contract this time..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Anyway, that's all about the truckload of wine. Don't ask questions, and don't think too much about it. It's all in the past now.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Anyway, that's all about the truckload of wine. Don't ask questions, and don't think too much about it. It's all in the past now."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1550_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1550_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Eirene...",
-        "tag": "name",
-        "value": "Ruggiero"
+        "command": "name",
+        "value": "Ruggiero",
+        "text": "Eirene..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I know what you're trying to say.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I know what you're trying to say."
     },
     {
-        "text": "I don't need it. We don't need it. It's all done.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I don't need it. We don't need it. It's all done."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#3$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1542_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1542_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Don't worry, I'll find a way. Things will get better for drivers at the AST...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Don't worry, I'll find a way. Things will get better for drivers at the AST..."
     },
     {
-        "text": "For the Truckers' Union.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "For the Truckers' Union."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "For a long time afterwards, what Eirene recalls most vividly about those two negotiations is not anything that her counterpart said, but the strange confidence that she had."
@@ -2776,78 +3202,92 @@
         "text": "That things would solve themselves if they were put out in the open, as long as rules and boundaries were upheld, even without having to rely on those forces that she was loathe to involve."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g9_truckcamp",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g9_truckcamp",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$loading_intro",
-        "key": "$loading_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$loading_intro",
+            "key": "$loading_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Not now, I don't have time for you\u2014",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Not now, I don't have time for you\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Eirene impatiently waves away the Lupo deliveryman behind her and turns to face the smartly-dressed Kuranta."
@@ -2856,376 +3296,430 @@
         "text": "She is anxious yet helpless, unsure what to do with her raised hand."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
+        "command": "name",
         "text": "B-But we couldn't possibly pay such an amount!",
-        "tag": "multiline",
-        "name": "Eirene"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
-    },
-    {
-        "text": "And what do you mean, you'll end our partnership if we don't accept...?",
-        "tag": "multiline",
-        "name": "Eirene"
-    },
-    {
-        "text": "Didn't we say the other day...?",
-        "tag": "name",
         "value": "Eirene"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Our agreement that day was based on the circumstances before that day. Our demands today are based on the changes that will occur after today.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "text": "And what do you mean, you'll end our partnership if we don't accept...?",
+        "value": "Eirene"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "n"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Didn't we say the other day...?"
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
+    },
+    {
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Our agreement that day was based on the circumstances before that day. Our demands today are based on the changes that will occur after today."
+    },
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "n"
+        }
     },
     {
         "text": "His tone was calm, impassive, as though he was simply stating an indisputable fact, and was kind enough to explain it again for Eirene's sake."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "We will not intervene with the assignment of responsibility for the traffic accident, nor do we intend to influence the judgment of the relevant authorities.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We will not intervene with the assignment of responsibility for the traffic accident, nor do we intend to influence the judgment of the relevant authorities."
     },
     {
-        "text": "But the destruction of the goods is the outcome, and nothing can change that.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "But the destruction of the goods is the outcome, and nothing can change that."
     },
     {
-        "text": "Not to mention the poisoning...",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Not to mention the poisoning..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "As fate would have it... it was supposed to be our wine that the conductor in question last sampled, yet a Lupo claims that he had asked someone to deliver it.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "As fate would have it... it was supposed to be our wine that the conductor in question last sampled, yet a Lupo claims that he had asked someone to deliver it."
     },
     {
-        "text": "And the vehicle that delivered the samples under suspicion happened to be the one that caused the accident involving the truck delivering our wine...",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "And the vehicle that delivered the samples under suspicion happened to be the one that caused the accident involving the truck delivering our wine..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The AST's drivers have nothing to do with the poisoning!",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "The AST's drivers have nothing to do with the poisoning!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course, I fully believe that. At least, I do, from a traffic perspective.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Of course, I fully believe that. At least, I do, from a traffic perspective."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "<i>...Traffic perspective?</i>",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "<i>...Traffic perspective?</i>"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "Regardless of whether the rider violated traffic laws, his actions objectively impacted the non-delivery of our goods.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Regardless of whether the rider violated traffic laws, his actions objectively impacted the non-delivery of our goods."
     },
     {
-        "text": "He created a high-risk environment at a critical juncture, the result of which was that the contract was not fulfilled according to agreement.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "He created a high-risk environment at a critical juncture, the result of which was that the contract was not fulfilled according to agreement."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So you're going after someone who did not commit any actual violations?",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "So you're going after someone who did not commit any actual violations?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "'Going after' is such a strong phrase. I said nothing of the sort.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "'Going after' is such a strong phrase. I said nothing of the sort."
     },
     {
-        "text": "We are simply assessing the associated liabilities in accordance with the law.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We are simply assessing the associated liabilities in accordance with the law."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "The Kuranta pauses, then continues."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "The portions of damages that insurance does not cover must, of course, be borne by the liable parties.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "The portions of damages that insurance does not cover must, of course, be borne by the liable parties."
     },
     {
-        "text": "Business is business, Commissioner Eirene. I beg your understanding.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Business is business, Commissioner Eirene. I beg your understanding."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Business?! This is highway robbery!",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Business?! This is highway robbery!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_223",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_223",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ah, we regret that you see it as such.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Ah, we regret that you see it as such."
     },
     {
-        "text": "I assure you, our company is most disappointed in this turn of events.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "I assure you, our company is most disappointed in this turn of events."
     },
     {
-        "text": "Meanwhile, we invite any interested drivers to pick up a pamphlet in hopes of future cooperation.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "Meanwhile, we invite any interested drivers to pick up a pamphlet in hopes of future cooperation."
     },
     {
-        "text": "We continue to welcome rational choices.",
-        "tag": "name",
-        "value": "Kazimierzian Representative"
+        "command": "name",
+        "value": "Kazimierzian Representative",
+        "text": "We continue to welcome rational choices."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "W-Wait! Eirene! Say something! There's no way I can deal with what's on this piece of paper myself!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "W-Wait! Eirene! Say something! There's no way I can deal with what's on this piece of paper myself!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I guess I'll have to go to\u2014",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "I guess I'll have to go to\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "No!",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "No!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Then what do you suggest I do? If you didn't sign that partnership agreement with these foreigners, that crash would never have happened, and Gianni wouldn't be lying in a hospital bed right now!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Then what do you suggest I do? If you didn't sign that partnership agreement with these foreigners, that crash would never have happened, and Gianni wouldn't be lying in a hospital bed right now!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I know you just want to help us make money, but those Kazimierzians are going to sue me!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "I know you just want to help us make money, but those Kazimierzians are going to sue me!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I've never even SEEN that much money my entire life! How am I supposed to pay it?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "I've never even SEEN that much money my entire life! How am I supposed to pay it?"
     },
     {
-        "text": "You said that regulations would protect the Truckers' Union, no, the AST's drivers once we were part of the municipal system!",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "You said that regulations would protect the Truckers' Union, no, the AST's drivers once we were part of the municipal system!"
     },
     {
-        "text": "I shouldn't have to deal with this on my own, right?",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "I shouldn't have to deal with this on my own, right?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I know, I'll find a way...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I know, I'll find a way..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1561_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1561_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Well, either you do that, or...",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Well, either you do that, or..."
     },
     {
-        "text": "Or I go and talk to that Bellone associate behind you.",
-        "tag": "name",
-        "value": "Sam"
+        "command": "name",
+        "value": "Sam",
+        "text": "Or I go and talk to that Bellone associate behind you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
         "text": "Eirene reflexively opens her mouth to say 'no', as she had done so many times whenever this subject is broached, but no words come out."
@@ -3240,99 +3734,121 @@
         "text": "The drivers listen to the Kuranta's explanations with perplexed expressions on their faces, while casting subtle, searching glances at Eirene."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't worry, I'll find a way... I will...",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Don't worry, I'll find a way... I will..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "56_g2_newvolsiniistreet_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "56_g2_newvolsiniistreet_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 0,
-        "fillfrom": 0.01,
-        "fillto": 0.15,
-        "fadetime": 0.01
+        "command": "curtain",
+        "params": {
+            "direction": 0,
+            "fillfrom": 0.01,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "curtain",
-        "direction": 4,
-        "fillfrom": 0.01,
-        "fillto": 0.15,
-        "fadetime": 0.01
+        "command": "curtain",
+        "params": {
+            "direction": 4,
+            "fillfrom": 0.01,
+            "fillto": 0.15,
+            "fadetime": 0.01
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_truckengine",
-        "volume": 0,
-        "loop": true,
-        "channel": "car"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_truckengine",
+            "volume": 0,
+            "loop": true,
+            "channel": "car"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.7,
-        "channel": "car",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.7,
+            "channel": "car",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "It has been a long time since Eirene last drove a truck to work. It has been a long time since she drove a truck on the new city's roads."
@@ -3362,71 +3878,83 @@
         "text": "Eirene continues to drive for a long time. As the colors of dusk fill the sky, she dials a certain number on her terminal."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1542_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1542_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Lavinia? It's me, Eirene... I'm coming over to the courthouse right now.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "Lavinia? It's me, Eirene... I'm coming over to the courthouse right now."
     },
     {
-        "text": "I need to talk to you. It's important.",
-        "tag": "name",
-        "value": "Eirene"
+        "command": "name",
+        "value": "Eirene",
+        "text": "I need to talk to you. It's important."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "car",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "car",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "curtain"
+        "command": "curtain"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

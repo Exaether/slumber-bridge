@@ -1,52 +1,54 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.4
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Everything you could ever want is right here."
@@ -58,20 +60,24 @@
         "text": "Your consciousness expands limitlessly, breaking its shackles. You are free."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "decision",
-        "options": "What is freedom?;I'm free!",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "What is freedom?;I'm free!",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
         "text": "Broadly speaking, to be free is a relative state, free from constraints. However, people who say this are often constrained by their flesh."
@@ -80,15 +86,19 @@
         "text": "But you are truly free."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
         "text": "That's right, my dear friend. You are free, and you forever will be."
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
         "text": "You are a resolute stone in the river of time. Though your responsibilities, fate, desires, and attachments may all be washed away, you, and only you, will always exist here."
@@ -97,13 +107,17 @@
         "text": "You are beholden to nothing, and nothing is beholden to you."
     },
     {
-        "tag": "decision",
-        "options": "There is nothing better than this!;Responsibilities. Fate. Desires. Attachments...",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "There is nothing better than this!;Responsibilities. Fate. Desires. Attachments...",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
         "text": "You understand everything. Right now, you are speaking to an unfathomable being. Gaze in awe and offer up your purest blood."
@@ -112,13 +126,17 @@
         "text": "Or maybe you have merely been hit on the head and fallen into a state of unconsciousness. You are simply carrying out a meaningless conversation with an imaginary self."
     },
     {
-        "tag": "decision",
-        "options": "I want to build my kingdom here!;No, on second thought, I'm more of a masochist.",
-        "values": "3;4"
+        "command": "decision",
+        "params": {
+            "options": "I want to build my kingdom here!;No, on second thought, I'm more of a masochist.",
+            "values": "3;4"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
         "text": "A wise decision, my King. This place is broader than Terra itself, and you can build whatever you wish here."
@@ -136,8 +154,10 @@
         "text": "Like a ray of light that shines through the curtains, a strong sense of discomfort suddenly invades your consciousness."
     },
     {
-        "tag": "predicate",
-        "references": 4
+        "command": "predicate",
+        "params": {
+            "references": 4
+        }
     },
     {
         "text": "You love pain. You like exhaustion. You enjoy plunging into the flames. You relish getting hurt."
@@ -155,8 +175,10 @@
         "text": "From every nook and cranny of your flesh, comes the sensation of extreme soreness."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
         "text": "Soldier, you have borne countless pains, witnessed innumerable failures. There is little that brings you joy."
@@ -168,13 +190,17 @@
         "text": "Some things can never be taken back. Some things you need not burden yourself with."
     },
     {
-        "tag": "decision",
-        "options": "You're right. It's time for me to rest.;No, there are people waiting for me.",
-        "values": "5;6"
+        "command": "decision",
+        "params": {
+            "options": "You're right. It's time for me to rest.;No, there are people waiting for me.",
+            "values": "5;6"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 5
+        "command": "predicate",
+        "params": {
+            "references": 5
+        }
     },
     {
         "text": "Yes, my dear. That is how it should be."
@@ -186,8 +212,10 @@
         "text": "And yet, just as you fall into slumber, a powerful sensation assaults you\u2014\u2014pain!"
     },
     {
-        "tag": "predicate",
-        "references": 6
+        "command": "predicate",
+        "params": {
+            "references": 6
+        }
     },
     {
         "text": "Ah, I see. I do admit they are all good children."
@@ -205,72 +233,86 @@
         "text": "From every nook and cranny of your flesh, comes the sensation of extreme soreness."
     },
     {
-        "tag": "predicate",
-        "references": "3;4;5;6"
+        "command": "predicate",
+        "params": {
+            "references": "3;4;5;6"
+        }
     },
     {
         "text": "What follows is a distant yet familiar voice."
     },
     {
-        "text": "...D-Doctor!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "...D-Doctor!"
     },
     {
         "text": "Amiya? No, no. This voice is far more mature than Amiya's."
     },
     {
-        "text": "Still sleeping after all this time, huh? Why do you do this to me?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Still sleeping after all this time, huh? Why do you do this to me?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.2,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.2,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.55
+        "command": "delay",
+        "value": 0.55
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral"
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.7,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 120,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.7,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 120,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "...Far more violent, too."
@@ -279,14 +321,14 @@
         "text": "You feel several slaps on what seems to be your cheeks. It would appear they are willing to practice what they preach."
     },
     {
-        "text": "That didn't do the trick... Hmm, what should I do? Since Amiya isn't here, guess I'll just give the Doctor a few rounds of the whirlwind.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "That didn't do the trick... Hmm, what should I do? Since Amiya isn't here, guess I'll just give the Doctor a few rounds of the whirlwind."
     },
     {
-        "text": "Whirlwind? Is it fun? I want to play too!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Whirlwind? Is it fun? I want to play too!"
     },
     {
         "text": "It seems they are preparing some extreme measures now. Also, the voice that just cut in carries a hint of innocence."
@@ -295,13 +337,17 @@
         "text": "The problem? In this situation, the wonderful trait of innocence belies a sense of commitment."
     },
     {
-        "tag": "decision",
-        "options": "No, I want to go back!;Open my eyes",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "No, I want to go back!;Open my eyes",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
         "text": "Oh, woe. Some journeys cannot be undertaken by your will alone. You have already lost the chance to step out on this journey."
@@ -310,795 +356,957 @@
         "text": "Fret not, however, for such chances remain plentiful. Now, let us open our eyes..."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
-    {
-        "tag": "predicate",
-        "references": "1;2"
+    {
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.8,
-        "crossfade": 1,
-        "delay": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.8,
+            "crossfade": 1,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_desert_1",
-        "x": -100,
-        "y": -50,
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "fadetime": 2
+        "command": "background",
+        "params": {
+            "image": "bg_desert_1",
+            "x": -100,
+            "y": -50,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image",
-        "image": "ac12_1",
-        "x": 0,
-        "y": 0,
-        "xScale": 1,
-        "yScale": 1
+        "command": "image",
+        "params": {
+            "image": "ac12_1",
+            "x": 0,
+            "y": 0,
+            "xscale": 1,
+            "yscale": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Gavial, how do we play the whirlwind?",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "Gavial, how do we play the whirlwind?"
     },
     {
-        "text": "What you want to do is grab the person's legs or hands, then start spinning in a circle.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "What you want to do is grab the person's legs or hands, then start spinning in a circle."
     },
     {
-        "text": "When you're ready, just let go.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "When you're ready, just let go."
     },
     {
-        "text": "It sounds really fun! I want to try!",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "It sounds really fun! I want to try!"
     },
     {
-        "text": "Sure. I'll just catch the Doctor after... Oh?",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Sure. I'll just catch the Doctor after... Oh?"
     },
     {
-        "text": "Doctor, you're finally awake.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Doctor, you're finally awake."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Ah, it's the Doctor!",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "Ah, it's the Doctor!"
     },
     {
-        "text": "Kay, don't tackle the Doctor like that. Crush those organs and that one won't stay with us for long.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Kay, don't tackle the Doctor like that. Crush those organs and that one won't stay with us for long."
     },
     {
-        "text": "Oh, sorry, Doctor!",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "Oh, sorry, Doctor!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "bg_desert_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_desert_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.8,
-        "crossfade": 1,
-        "delay": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.8,
+            "crossfade": 1,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "fadetime": 2,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "decision",
-        "options": "Are you both alright?;......;Was that you who just slapped me?",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "Are you both alright?;......;Was that you who just slapped me?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 1
+        }
     },
     {
-        "text": "I'm fine. This isn't high enough to scare me.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "I'm fine. This isn't high enough to scare me."
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 2
+        }
     },
     {
-        "text": "I'm fine too!",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "I'm fine too!"
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#3"
+        }
     },
     {
-        "text": "Uh oh. Don't tell me you tripped and lost your memory again, Doctor.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Uh oh. Don't tell me you tripped and lost your memory again, Doctor."
     },
     {
-        "tag": "decision",
-        "options": "I have amnesia.;And who might you be, Ma'am?",
-        "values": "4;5"
+        "command": "decision",
+        "params": {
+            "options": "I have amnesia.;And who might you be, Ma'am?",
+            "values": "4;5"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 4
+        "command": "predicate",
+        "params": {
+            "references": 4
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "Don't forget, I'm a doctor too. The real, medical kind.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Don't forget, I'm a doctor too. The real, medical kind."
     },
     {
-        "tag": "predicate",
-        "references": 5
+        "command": "predicate",
+        "params": {
+            "references": 5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#3"
+        }
     },
     {
-        "text": "But if you're cracking jokes, I guess you're good.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "But if you're cracking jokes, I guess you're good."
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#3"
+        }
     },
     {
-        "text": "Sure did.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Sure did."
     },
     {
-        "tag": "predicate",
-        "references": "1;3;4;5"
+        "command": "predicate",
+        "params": {
+            "references": "1;3;4;5"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Anyway, Doctor, let me catch you up on what happened while you were napping.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Anyway, Doctor, let me catch you up on what happened while you were napping."
     },
     {
-        "text": "Short version is: we crashed.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Short version is: we crashed."
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 2
+        }
     },
     {
-        "text": "We fell from a very high place! Whooooosh\u2014\u2014! Kaboom! Like that.",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "We fell from a very high place! Whooooosh\u2014\u2014! Kaboom! Like that."
     },
     {
-        "tag": "decision",
-        "options": "Please elaborate.;......;I want the whole story!",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "Please elaborate.;......;I want the whole story!",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Tch, fine. Basically, Doctor, you're bad luck. During the attack, something exploded by your seat and you slammed into the wall there and passed out.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Tch, fine. Basically, Doctor, you're bad luck. During the attack, something exploded by your seat and you slammed into the wall there and passed out."
     },
     {
-        "text": "Don't worry, I took care of your wounds. Nothing major. Besides, you're healthier now than when you first showed up at Rhodes Island. Nice work, Doctor.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Don't worry, I took care of your wounds. Nothing major. Besides, you're healthier now than when you first showed up at Rhodes Island. Nice work, Doctor."
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Urk... Sorry, Doctor. I should have caught you, but the loud noises scared me...",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "Urk... Sorry, Doctor. I should have caught you, but the loud noises scared me..."
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1",
-        "name2": "char_2013_cerber_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1",
+            "name2": "char_2013_cerber_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Can't blame you for that. To be honest, I never would have expected these bastards to have anti-air weapons.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Can't blame you for that. To be honest, I never would have expected these bastards to have anti-air weapons."
     },
     {
-        "tag": "decision",
-        "options": "So you thought someone would attack us?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "So you thought someone would attack us?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "Sure. Did I forget to tell you? My people love to fight, not that any of them could take me.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Sure. Did I forget to tell you? My people love to fight, not that any of them could take me."
     },
     {
-        "tag": "decision",
-        "options": "What about the others?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "What about the others?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "When we were going down, everybody else jumped early to stabilize our altitude.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "When we were going down, everybody else jumped early to stabilize our altitude."
     },
     {
-        "text": "Ceobe and I jumped last, to stick with you.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Ceobe and I jumped last, to stick with you."
     },
     {
-        "text": "Oh, and Lancet-2 should still be on the aircraft.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Oh, and Lancet-2 should still be on the aircraft."
     },
     {
-        "tag": "decision",
-        "options": "Where's the aircraft?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Where's the aircraft?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "I think it's that way. Should be just over the hill.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "I think it's that way. Should be just over the hill."
     },
     {
-        "tag": "decision",
-        "options": "Let's go check on it.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Let's go check on it.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "Sure.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Sure."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_desert_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_desert_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "text": "See? The aircraft's right there.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "See? The aircraft's right there."
     },
     {
-        "text": "Oh? That's a lot of smoke. It's not in good shape.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Oh? That's a lot of smoke. It's not in good shape."
     },
     {
-        "text": "I guess it's still fixable, though.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "I guess it's still fixable, though."
     },
     {
-        "text": "Doctor, Gavial, there's people with the aircraft!",
-        "tag": "name",
-        "value": "Ceobe"
+        "command": "name",
+        "value": "Ceobe",
+        "text": "Doctor, Gavial, there's people with the aircraft!"
     },
     {
-        "text": "Hm? That's...",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Hm? That's..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_desert_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_desert_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "char_285_medic2_1"
+        "command": "character",
+        "params": {
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "Please do not approach me. Though I am responsible for protecting Rhodes Island property, I am just a medical tool... Nnng...",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "Please do not approach me. Though I am responsible for protecting Rhodes Island property, I am just a medical tool... Nnng..."
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.8,
-        "crossfade": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.8,
+            "crossfade": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 1
+        }
     },
     {
-        "text": "Hey, I think this machine is talking.",
-        "tag": "name",
-        "value": "Archosauria A"
+        "command": "name",
+        "value": "Archosauria A",
+        "text": "Hey, I think this machine is talking."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 2
+        }
     },
     {
-        "text": "Yeah, not only did such an amazing machine fall from the sky, there's another machine that can talk inside it!",
-        "tag": "name",
-        "value": "Archosauria B"
+        "command": "name",
+        "value": "Archosauria B",
+        "text": "Yeah, not only did such an amazing machine fall from the sky, there's another machine that can talk inside it!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_070"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_070"
+        }
     },
     {
-        "text": "Do you think there's a person inside?",
-        "tag": "name",
-        "value": "Archosauria C"
+        "command": "name",
+        "value": "Archosauria C",
+        "text": "Do you think there's a person inside?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 1
+        }
     },
     {
-        "text": "No idea. Why don't we bring it back? Leader's sure to like it.",
-        "tag": "name",
-        "value": "Archosauria A"
+        "command": "name",
+        "value": "Archosauria A",
+        "text": "No idea. Why don't we bring it back? Leader's sure to like it."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 2
+        }
     },
     {
-        "text": "Sure, let's take it!",
-        "tag": "name",
-        "value": "Archosauria B"
+        "command": "name",
+        "value": "Archosauria B",
+        "text": "Sure, let's take it!"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "char_285_medic2_1"
+        "command": "character",
+        "params": {
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "Help!",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "Help!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#4",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#4",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "text": "Stop right there!",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Stop right there!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071"
+        }
     },
     {
-        "text": "...&% (Who's there?!)",
-        "tag": "name",
-        "value": "Archosauria A"
+        "command": "name",
+        "value": "Archosauria A",
+        "text": "...&% (Who's there?!)"
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#4"
+        }
     },
     {
-        "text": "You got a death wish? Laying your grubby hands on our stuff.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "You got a death wish? Laying your grubby hands on our stuff."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 1
+        }
     },
     {
-        "text": "...\uffe5%%# (Who says it's your stuff? It fell from the sky!)",
-        "tag": "name",
-        "value": "Archosauria A"
+        "command": "name",
+        "value": "Archosauria A",
+        "text": "...\uffe5%%# (Who says it's your stuff? It fell from the sky!)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 2
+        }
     },
     {
-        "text": "@#%...& (Yeah, that's right! Finders keepers!)",
-        "tag": "name",
-        "value": "Archosauria B"
+        "command": "name",
+        "value": "Archosauria B",
+        "text": "@#%...& (Yeah, that's right! Finders keepers!)"
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#2"
+        }
     },
     {
-        "text": "Keh, they have a point.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Keh, they have a point."
     },
     {
-        "tag": "decision",
-        "options": "Gavial, what're they saying?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Gavial, what're they saying?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1"
+        }
     },
     {
-        "text": "Hm? Ah, right. I forgot you guys don't speak the language.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "Hm? Ah, right. I forgot you guys don't speak the language."
     },
     {
-        "text": "We're in Sargon, but no one here speaks standard Sargonian.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "We're in Sargon, but no one here speaks standard Sargonian."
     },
     {
-        "text": "I'll translate anything anyone says to you.",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "I'll translate anything anyone says to you."
     },
     {
-        "text": "And for the rest, just use your intuition!",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "And for the rest, just use your intuition!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 1
+        }
     },
     {
-        "text": "...&*# (What are you whispering about, you bastards!)",
-        "tag": "name",
-        "value": "Archosauria A"
+        "command": "name",
+        "value": "Archosauria A",
+        "text": "...&*# (What are you whispering about, you bastards!)"
     },
     {
-        "tag": "character",
-        "name": "char_187_ccheal_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_187_ccheal_1#3"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "I said: if this stuff is yours, I just have to beat you up and it'll all be mine!",
-        "tag": "name",
-        "value": "Gavial"
+        "command": "name",
+        "value": "Gavial",
+        "text": "I said: if this stuff is yours, I just have to beat you up and it'll all be mine!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_071",
-        "name2": "avg_npc_070",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_071",
+            "name2": "avg_npc_070",
+            "focus": 2
+        }
     },
     {
-        "text": "&&......! @ (What? This woman is so damned full of herself. Get her, boys!)",
-        "tag": "name",
-        "value": "Archosauria B"
+        "command": "name",
+        "value": "Archosauria B",
+        "text": "&&......! @ (What? This woman is so damned full of herself. Get her, boys!)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

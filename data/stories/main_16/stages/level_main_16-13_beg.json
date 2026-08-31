@@ -1,158 +1,186 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rockfall",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rockfall",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rainlight_loop",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rainlight_loop",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "camerashake",
+        "params": {
+            "duration": 4,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 40,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 4,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 40,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "background",
+        "params": {
+            "image": "66_g6_magnetofluidwaterfall",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "66_g6_magnetofluidwaterfall",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "decision",
+        "params": {
+            "options": "......;......",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "......;......",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Has it...?;Stopped moving?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Has it...?;Stopped moving?",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playmusic",
+        "params": {
+            "key": "$darkness_03_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$darkness_03_loop",
-        "volume": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4208_wintim_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4208_wintim_1#8$1",
-        "duration": 1
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Ksenia",
+        "text": "I think so..."
     },
     {
-        "text": "I think so...",
-        "tag": "name",
-        "value": "Ksenia"
+        "command": "name",
+        "value": "Ksenia",
+        "text": "The roaring and the heavy breathing have ceased. Did we kill it?"
     },
     {
-        "text": "The roaring and the heavy breathing have ceased. Did we kill it?",
-        "tag": "name",
-        "value": "Ksenia"
+        "command": "name",
+        "value": "Ksenia",
+        "text": "But it's still standing\u2014"
     },
     {
-        "text": "But it's still standing\u2014",
-        "tag": "name",
-        "value": "Ksenia"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#6$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#6$1"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Don't move! I'll check."
     },
     {
-        "text": "Don't move! I'll check.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_shallowswalk",
+            "loop": true,
+            "channel": "w1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_shallowswalk",
-        "loop": true,
-        "channel": "w1"
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
-    },
-    {
-        "tag": "stopsound",
-        "channel": "w1",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "w1",
+            "fadetime": 0.5
+        }
     },
     {
         "text": "Mon3tr ascertains that the other two are at a safe distance, and approaches it on her own."
@@ -167,290 +195,354 @@
         "text": "She observes the manglerbeast. It was dangerous to begin with, and its mutations make it look strange, almost otherworldly."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#5$1"
+        }
     },
     {
-        "text": "The influence of Originium is turning it into a 'human' physiologically...",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "The influence of Originium is turning it into a 'human' physiologically..."
     },
     {
-        "text": "It must be in a great deal of pain...",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "It must be in a great deal of pain..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "loop": true,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.6
+        "command": "delay",
+        "value": 1.6
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "decision",
-        "options": "Mon3tr, look out!;It's moving again!",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Mon3tr, look out!;It's moving again!",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#8$1"
+        }
     },
     {
-        "text": "Oh\u2014",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Oh\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "But the manglerbeast does not attack or even move from its spot. It falls toward the ground\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_giantmonster_fall"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_giantmonster_fall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Until its forelimbs touch the ground again with a thud."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#9$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Now's our chance to leave, Mon3tr.;We should leave and go back to the lab, now.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Now's our chance to leave, Mon3tr.;We should leave and go back to the lab, now.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#2$1"
+        }
     },
     {
-        "text": "No, Doctor.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "No, Doctor."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Mon3tr?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Mon3tr?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_giantmonster_breathe"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_giantmonster_breathe"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#8$1"
+        }
     },
     {
-        "text": "It's still breathing!",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "It's still breathing!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#5$1"
+        }
     },
     {
-        "text": "And it sounds like it's... in pain? I think.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "And it sounds like it's... in pain? I think."
     },
     {
-        "text": "I can't sense another's emotions like Amiya can, and this is just a mutated animal. But...",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "I can't sense another's emotions like Amiya can, and this is just a mutated animal. But..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#9$1"
+        }
     },
     {
-        "text": "I know it will die, even if we don't do anything.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "I know it will die, even if we don't do anything."
     },
     {
-        "text": "The Originium has impaled its throat. Every part of its body is in pain. It would claw out its own mutated organs if it could.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "The Originium has impaled its throat. Every part of its body is in pain. It would claw out its own mutated organs if it could."
     },
     {
-        "text": "Perhaps this is why it attacked us. It's not in control of itself anymore.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Perhaps this is why it attacked us. It's not in control of itself anymore."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Let's end its pain, then.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Let's end its pain, then.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#2$1"
+        }
     },
     {
-        "text": "Yes.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Yes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#3$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4179_monstr_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4179_monstr_1#2$1"
+        }
     },
     {
-        "text": "I can do it. I can...",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "I can do it. I can..."
     },
     {
-        "text": "End its pain.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "End its pain."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_shallowswalk",
-        "loop": true,
-        "channel": "w1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_shallowswalk",
+            "loop": true,
+            "channel": "w1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopsound",
-        "channel": "w1",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "w1",
+            "fadetime": 0.5
+        }
     },
     {
         "text": "She walks towards the fallen beast. Standing next to it, she puts her claws against a piece of fur with fewer crystals."
@@ -462,73 +554,85 @@
         "text": "Then, she surgically extinguishes the mutated manglerbeast's last, intermittent breathing."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$knifegore"
+        "command": "playsound",
+        "params": {
+            "key": "$knifegore"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Let's go, Doctor.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Let's go, Doctor."
     },
     {
-        "text": "Back to the lab.",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "Back to the lab."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "imgeffect",
-        "name": "$ib_screendistortion",
-        "image": "66_i09"
+        "command": "imgeffect",
+        "params": {
+            "name": "$ib_screendistortion",
+            "image": "66_i09"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$suspenseful_intro",
-        "key": "$suspenseful_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$suspenseful_intro",
+            "key": "$suspenseful_loop",
+            "volume": 0.6
+        }
     },
     {
         "text": "Mantra continues to listen."
@@ -540,107 +644,124 @@
         "text": "And so she listens, until the first word of prayer drops in the crowd like the first snow."
     },
     {
-        "text": "Yurodstvo...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Yurodstvo..."
     },
     {
-        "text": "'Gabrielus.'",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "'Gabrielus.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "I'm listening.",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "I'm listening.",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "I'm listening."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Then stop.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Then stop."
     },
     {
-        "text": "Stop\u2014",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Stop\u2014"
     },
     {
-        "text": "Stop it all!",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Stop it all!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "I cannot stop what never began.",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "I cannot stop what never began.",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "I cannot stop what never began."
     },
     {
-        "tag": "subtitle",
-        "text": "What you see is only in your mind.",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "What you see is only in your mind.",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "What you see is only in your mind."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "Mantra stops trying to communicate. She steps forward and tries to steady the trembling red, white and black threads."
@@ -649,131 +770,153 @@
         "text": "As she stretches out her hand\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tinnitus"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tinnitus"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "imgeffect"
+        "command": "imgeffect"
     },
     {
-        "text": "...!",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "...!"
     },
     {
-        "text": "\u2014Mantra\u2014",
-        "tag": "name",
-        "value": "Flickering Voice"
+        "command": "name",
+        "value": "Flickering Voice",
+        "text": "\u2014Mantra\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "text": "Mantra!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Mantra!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#6$1"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "What?"
     },
     {
-        "tag": "playmusic",
-        "intro": "$ponder_intro",
-        "key": "$ponder_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$ponder_intro",
+            "key": "$ponder_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "You were completely motionless.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "You were completely motionless."
     },
     {
-        "text": "I've never seen you like this... what happened?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I've never seen you like this... what happened?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#3$1"
+        }
     },
     {
-        "text": "Did you hear that?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Did you hear that?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "Hear what?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Hear what?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The old woman does not immediately answer."
@@ -782,257 +925,305 @@
         "text": "She looks around and realizes that the remaining miners look different from before. She frowns and glances around herself."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#10$1"
+        }
     },
     {
-        "text": "Where is Eloysius?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Where is Eloysius?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "She heard me and ran outside.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "She heard me and ran outside."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "So you did tell us to leave.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "So you did tell us to leave."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "Yes, but I don't remember why... this is strange.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Yes, but I don't remember why... this is strange."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Mental Arts.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Mental Arts."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "Are you sure? I've received specific training. I would not be defenseless against such attacks.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Are you sure? I've received specific training. I would not be defenseless against such attacks."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#4$1"
+        }
     },
     {
-        "text": "Check for short-term memory interference, Raidian.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Check for short-term memory interference, Raidian."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "What sort of interference?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What sort of interference?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#4$1"
+        }
     },
     {
-        "text": "Interference that I can create.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Interference that I can create."
     },
     {
-        "text": "One time, I had Mechanist forget that he wanted to ask you about borrowing Dendie and Axie. Not by wiping the memory, but by blocking its formation.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "One time, I had Mechanist forget that he wanted to ask you about borrowing Dendie and Axie. Not by wiping the memory, but by blocking its formation."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "I remember... that was the first time you tried to use your Arts like that, I think? We forget when information in our brain is not successfully stored in the memory.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I remember... that was the first time you tried to use your Arts like that, I think? We forget when information in our brain is not successfully stored in the memory."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Yes. It was your idea. You are far more experienced than I am in the understanding and utilization of human bioelectrical signals.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Yes. It was your idea. You are far more experienced than I am in the understanding and utilization of human bioelectrical signals."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "You think someone here uses the same sort of Arts?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "You think someone here uses the same sort of Arts?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Unsure. Perhaps I just saw and heard more than you did.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Unsure. Perhaps I just saw and heard more than you did."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "What do you mean?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What do you mean?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#4$1"
+        }
     },
     {
-        "text": "The Yurodstvo of Ursus may be here, Raidian.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The Yurodstvo of Ursus may be here, Raidian."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#4$1"
+        }
     },
     {
-        "text": "Yurodstvo? Why do you bring that up\u2014",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Yurodstvo? Why do you bring that up\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "The Yurodstvo is here? But the last Yurodstvo was burned alive in Grypherburg two years ago. Could another be born so soon?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "The Yurodstvo is here? But the last Yurodstvo was burned alive in Grypherburg two years ago. Could another be born so soon?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "I don't know. I'm going to find out.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I don't know. I'm going to find out."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "If it's really the Yurodstvo, and it was hidden in the group, without me detecting it... then it's extremely dangerous.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "If it's really the Yurodstvo, and it was hidden in the group, without me detecting it... then it's extremely dangerous."
     },
     {
-        "text": "I'll put the others on alert. Be careful.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'll put the others on alert. Be careful."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "The danger is not physical. Not yet, at least.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The danger is not physical. Not yet, at least."
     },
     {
-        "text": "I'll seek help if necessary.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I'll seek help if necessary."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "Don't forget it.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Don't forget it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Mantra turns around and walks towards the place where the red was, a few moments ago."
@@ -1041,304 +1232,350 @@
         "text": "The assembled miners either give way to her, or reach out to her."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#1$1"
+        }
     },
     {
-        "text": "Who are you... looking for?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "Who are you... looking for?"
     },
     {
-        "text": "We're still going, to Grypherburg, right?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "We're still going, to Grypherburg, right?"
     },
     {
-        "text": "We'll l-live...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "We'll l-live..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "(Nods)",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "(Nods)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#1$1"
+        }
     },
     {
-        "text": "But they look like, they don't want, to leave? I asked Dyadya Volya. He doesn't want, to leave.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "But they look like, they don't want, to leave? I asked Dyadya Volya. He doesn't want, to leave."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#10$1"
+        }
     },
     {
-        "text": "He'd rather, his wounds rot, than to run.",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "He'd rather, his wounds rot, than to run."
     },
     {
-        "text": "But isn't surviving, the most important thing?",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "But isn't surviving, the most important thing?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#2$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#1$1"
+        }
     },
     {
-        "text": "You're not, talking...",
-        "tag": "name",
-        "value": "Vetochki"
+        "command": "name",
+        "value": "Vetochki",
+        "text": "You're not, talking..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1969_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1969_1#1$1"
+        }
     },
     {
-        "text": "Stranger.",
-        "tag": "name",
-        "value": "Tired Miner"
+        "command": "name",
+        "value": "Tired Miner",
+        "text": "Stranger."
     },
     {
-        "text": "Are you going to see Nadia? Then go on your knees, and raise your eyes to her.",
-        "tag": "name",
-        "value": "Tired Miner"
+        "command": "name",
+        "value": "Tired Miner",
+        "text": "Are you going to see Nadia? Then go on your knees, and raise your eyes to her."
     },
     {
-        "text": "See her, repent, and be forgiven. Then you will realize how foolish you were, for struggling and failing to find peace.",
-        "tag": "name",
-        "value": "Tired Miner"
+        "command": "name",
+        "value": "Tired Miner",
+        "text": "See her, repent, and be forgiven. Then you will realize how foolish you were, for struggling and failing to find peace."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Mantra neither assents nor dissents. She does not speak to them with Arts. She simply nods and passes them by, staring straight into the deepest reaches of the room."
     },
     {
-        "text": "You will understand... when you are in her presence.",
-        "tag": "name",
-        "value": "Tired Miner"
+        "command": "name",
+        "value": "Tired Miner",
+        "text": "You will understand... when you are in her presence."
     },
     {
         "text": "A hunched, tiny grey-white figure sits at the end of the room like a statue."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "66_g15_ursusvillage_ruins",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "66_g15_ursusvillage_ruins",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#11$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#11$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "\u2014Yurodstvo?!",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "\u2014Yurodstvo?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#5$1"
+        }
     },
     {
-        "text": "Impossible. It's impossible! The Yurodstvo is dead!",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Impossible. It's impossible! The Yurodstvo is dead!"
     },
     {
-        "text": "The Tsar granted the madman the mercy of defending himself before his sentence was pronounced.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "The Tsar granted the madman the mercy of defending himself before his sentence was pronounced."
     },
     {
-        "text": "Seven days! He engaged in sophistry for seven days without stopping, without eating or drinking.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "Seven days! He engaged in sophistry for seven days without stopping, without eating or drinking."
     },
     {
-        "text": "He had the audacity to stand in the middle of the State Council, telling everyone who came to listen\u2014",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "He had the audacity to stand in the middle of the State Council, telling everyone who came to listen\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#8$1"
+        }
     },
     {
-        "text": "'I forgive you.'",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "'I forgive you.'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#4$1"
+        }
     },
     {
-        "text": "His Imperial Majesty finally had enough and sentenced him to death, personally, but brainwashed believers attempted to raid the execution, resulting in the biggest riot in Grypherburg in a decade.",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "His Imperial Majesty finally had enough and sentenced him to death, personally, but brainwashed believers attempted to raid the execution, resulting in the biggest riot in Grypherburg in a decade."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "We know all that.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "We know all that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1966_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1966_1#10$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Eloysius"
+        "command": "name",
+        "value": "Eloysius",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#5$1"
+        }
     },
     {
-        "text": "If Mantra said it was the Yurodstvo, she must have had the evidence to make the deduction.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "If Mantra said it was the Yurodstvo, she must have had the evidence to make the deduction."
     },
     {
-        "text": "All we need to do is protect ourselves and wait to hear from her.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "All we need to do is protect ourselves and wait to hear from her."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Mantra does not kneel as the miners instructed."
@@ -1347,598 +1584,677 @@
         "text": "She steps into the shadow, facing forward, as though there are a pair of eyes looking backwards in front of her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "I know you can 'hear'.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I know you can 'hear'."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$kjerag_n_intro",
-        "key": "$kjerag_n_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$kjerag_n_intro",
+            "key": "$kjerag_n_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 1.5,
-        "type": "bg",
-        "from": 0,
-        "to": 1
+        "command": "focusout",
+        "params": {
+            "duration": 1.5,
+            "type": "bg",
+            "from": 0,
+            "to": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "I hear your questions.",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "I hear your questions.",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "I hear your questions."
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "I hope you're more than just a pale imitation of my Arts and my way of speaking, Yurodstvo.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I hope you're more than just a pale imitation of my Arts and my way of speaking, Yurodstvo."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "'Yurodstvo'... if that is the name you need me to have.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "'Yurodstvo'... if that is the name you need me to have."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Explain.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Explain."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Gabrielus, Solomida, Bessmert, Aurora, Nadia... or, perhaps, Yurodstvo.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "Gabrielus, Solomida, Bessmert, Aurora, Nadia... or, perhaps, Yurodstvo."
     },
     {
-        "text": "I am all of them.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "I am all of them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Why did you hide amongst these suffering people?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Why did you hide amongst these suffering people?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Because it is a journey of proselytization.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "Because it is a journey of proselytization."
     },
     {
-        "text": "I shall walk this vast land and redeem the people from their sufferings.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "I shall walk this vast land and redeem the people from their sufferings."
     },
     {
-        "text": "And because I saw and heard her.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "And because I saw and heard her."
     },
     {
-        "text": "I stayed because of her pain.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "I stayed because of her pain."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Who is she?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Who is she?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "A suffering soul.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "A suffering soul."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "You deceived her and made her call you 'Nadia'?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "You deceived her and made her call you 'Nadia'?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "I never deceived.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "I never deceived."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "You lie.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "You lie."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "She asked as you did. I answered as I do.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "She asked as you did. I answered as I do."
     },
     {
-        "text": "That was all.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "That was all."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "A meaningless response. What are you?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "A meaningless response. What are you?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "You saw me.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "You saw me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "I see shadow without order.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I see shadow without order."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Yes, I am.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "Yes, I am."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "But not in the eyes of others.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "But not in the eyes of others."
     },
     {
-        "text": "Explain.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Explain."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "People see in me the reflection of their perception and expectation.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "People see in me the reflection of their perception and expectation."
     },
     {
-        "text": "I thought, of all the souls, you alone would understand why I exist so.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "I thought, of all the souls, you alone would understand why I exist so."
     },
     {
-        "text": "After all...",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "After all..."
     },
     {
-        "text": "You are the unfinished sculpture. You were once to become\u2014",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "You are the unfinished sculpture. You were once to become\u2014"
     },
     {
-        "text": "'Me.'",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "'Me.'"
     },
     {
         "text": "Mantra keeps her eyes fixed on the strange apparition in front of her, but she is unsure whether she can identify any useful information from it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "......"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "A long time ago, you cut away a black piece of rotten flesh.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "A long time ago, you cut away a black piece of rotten flesh."
     },
     {
-        "text": "So did I. It pursued me, and I repelled it, like cutting off a piece of rotten flesh between breaths.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "So did I. It pursued me, and I repelled it, like cutting off a piece of rotten flesh between breaths."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "An absurd analogy.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "An absurd analogy."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "No, a simple principle.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "No, a simple principle."
     },
     {
-        "text": "If it is rotten and no longer connected to the rest of your body...",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "If it is rotten and no longer connected to the rest of your body..."
     },
     {
-        "text": "Why keep it?",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "Why keep it?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 1,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_8_29",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "avg_8_29",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "This is...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "This is..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "66_i01",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "66_i01",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Your memory?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Your memory?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "66_i02",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "66_i02",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "66_i03",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "66_i03",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ibindoor",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ibindoor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "But it is mine\u2014",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "But it is mine\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#10$1"
+        }
     },
     {
-        "text": "No. The Royal Guard... if you can influence a Royal Guard, you can influence the miners.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "No. The Royal Guard... if you can influence a Royal Guard, you can influence the miners."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "You killed it. You became me.",
-        "tag": "name",
-        "value": "Nadia"
+        "command": "name",
+        "value": "Nadia",
+        "text": "You killed it. You became me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "If this is the only thing we share in common...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "If this is the only thing we share in common..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#6$1"
+        }
     },
     {
-        "text": "The body, and rotten flesh. Your relationship to the Royal Guard\u2014the Yurodstvo was the source of the Royal Guard experiments.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The body, and rotten flesh. Your relationship to the Royal Guard\u2014the Yurodstvo was the source of the Royal Guard experiments."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "No sound comes from the trembling shadows, neither affirmation nor denial."
@@ -1947,227 +2263,263 @@
         "text": "Mantra begins to back off and leaves the shadow's edge."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "focusout",
-        "duration": 1.5,
-        "type": "bg",
-        "from": 1,
-        "to": 0,
-        "block": true
+        "command": "focusout",
+        "params": {
+            "duration": 1.5,
+            "type": "bg",
+            "from": 1,
+            "to": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "...I need support, Raidian.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "...I need support, Raidian."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "I'm here.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I'm here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "The conjecture is confirmed.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The conjecture is confirmed."
     },
     {
-        "text": "Also, additional information...",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Also, additional information..."
     },
     {
-        "text": "The Yurodstvo hid amongst the miners and helped them kill the Royal Guard.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The Yurodstvo hid amongst the miners and helped them kill the Royal Guard."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "...I see.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "...I see."
     },
     {
-        "text": "What do you need us to do?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What do you need us to do?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "I need you to continue to contact other Rhodes Island assets in Ursus, and ask Amiya to delay Eloysius.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I need you to continue to contact other Rhodes Island assets in Ursus, and ask Amiya to delay Eloysius."
     },
     {
-        "text": "We can't leave yet, at least not until I find a way to rouse the miners.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "We can't leave yet, at least not until I find a way to rouse the miners."
     },
     {
-        "text": "Have Elysium standby inside the range of my Arts. I may need his assistance.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Have Elysium standby inside the range of my Arts. I may need his assistance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "What's your plan?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "What's your plan?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Remove the influence that the Yurodstvo has on the miners.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Remove the influence that the Yurodstvo has on the miners."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "You think the Yurodstvo is controlling the miners and causing them to refuse to leave?",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "You think the Yurodstvo is controlling the miners and causing them to refuse to leave?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Yes.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Yes."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#4$1"
+        }
     },
     {
-        "text": "We cannot kill the Yurodstvo directly, but it can kill anyone here, anytime it chooses to.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "We cannot kill the Yurodstvo directly, but it can kill anyone here, anytime it chooses to."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Maybe Amiya can help.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Maybe Amiya can help."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#1$1"
+        }
     },
     {
-        "text": "Maybe. But Amiya does not understand the Yurodstvo, and I do not want to her to become involved without any understanding.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Maybe. But Amiya does not understand the Yurodstvo, and I do not want to her to become involved without any understanding."
     },
     {
-        "text": "The Yurodstvo's powers are similar to mine. This is why I am the only one who can make this decision.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "The Yurodstvo's powers are similar to mine. This is why I am the only one who can make this decision."
     },
     {
-        "text": "It relies on the cognition of others to establish itself. I must find the key to its establishment of the 'Nadia' identity, in order to remove its influence.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "It relies on the cognition of others to establish itself. I must find the key to its establishment of the 'Nadia' identity, in order to remove its influence."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "You have someone you suspect.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "You have someone you suspect."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#2$1"
+        }
     },
     {
-        "text": "...Yes.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "...Yes."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4207_branch_1#9$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4207_branch_1#9$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "Mantra casts her gaze at the surrounding miners, and eventually upon the girl who walks past her to the Yurodstvo."
@@ -2176,42 +2528,48 @@
         "text": "She mutters in a daze, in bewilderment and sorrow."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4204_mantra_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4204_mantra_1#3$1"
+        }
     },
     {
-        "text": "I just need time to confirm.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "I just need time to confirm."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "hidecgitem"
+        "command": "hidecgitem"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

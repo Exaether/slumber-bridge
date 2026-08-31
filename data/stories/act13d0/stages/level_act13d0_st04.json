@@ -1,49 +1,50 @@
 [
     {
-        "text": "\u4e2d\u79cb \u6ce5\u5ca9",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
-    },
-    {
-        "tag": "playmusic",
-        "intro": "$storyendjp_intro",
-        "key": "$storyendjp_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$storyendjp_intro",
+            "key": "$storyendjp_loop",
+            "volume": 0.4
+        }
     },
     {
         "text": "Bob, how have you been?"
@@ -70,245 +71,295 @@
         "text": "But\u2014"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$epic_intro",
-        "key": "$epic_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$epic_intro",
+            "key": "$epic_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_npc_054"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_054"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Run! Mudrock!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Run! Mudrock!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_054"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_054"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Run, to Kazdel, to somewhere you can survive...!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Run, to Kazdel, to somewhere you can survive...!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "No... No, don't say that, don't...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "No... No, don't say that, don't..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_054"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_054"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Mudrock\u2014!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock\u2014!"
     },
     {
-        "text": "And never... never look back!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "And never... never look back!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "But...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "But..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_054"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_054"
+        }
     },
     {
-        "text": "L... Leave me, run! Run far, until Kazdel, until you... reach... Kazdel...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "L... Leave me, run! Run far, until Kazdel, until you... reach... Kazdel..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Chainsmoke...! Chain...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Chainsmoke...! Chain..."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "Let... let's go. Hurry.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Let... let's go. Hurry."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
         "text": "But it's hard to say we're doing well."
@@ -320,8 +371,10 @@
         "text": "We've gone through a lot. One mortifying thing is we're called 'Mudrock Squad' now."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 4
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 4
+        }
     },
     {
         "text": "You know I don't like to show myself. But the Infected in Leithanien needed help. They needed to be saved."
@@ -330,415 +383,483 @@
         "text": "I couldn't leave them to their fates, Bob. Just like you'd never leave your bounty hunter brothers behind."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067"
+        }
     },
     {
-        "text": "Why, why haven't the scouts reported back yet?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Why, why haven't the scouts reported back yet?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Not them too, right...?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Not them too, right...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...Don't panic.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Don't panic."
     },
     {
-        "text": "The fog in this forest's thick. They wouldn't find us again so easily...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "The fog in this forest's thick. They wouldn't find us again so easily..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "But, but it's been eight days, already!",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "But, but it's been eight days, already!"
     },
     {
-        "text": "And we've lost twelve of our own! We don't even know who it is hunting us!",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "And we've lost twelve of our own! We don't even know who it is hunting us!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't be too hard on anyone... Against enemies like these, it's only natural to panic. It's only right.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Don't be too hard on anyone... Against enemies like these, it's only natural to panic. It's only right."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Mudrock?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...The one thing we can be sure is that they're casters.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...The one thing we can be sure is that they're casters."
     },
     {
-        "text": "My friends can be my eyes, but that's all. No way to seize their silhouettes in this fog.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "My friends can be my eyes, but that's all. No way to seize their silhouettes in this fog."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 1
+        }
     },
     {
-        "text": "But it's been non-stop fireballs, hailstones and hurricanes! They've been right by us all this time, they've... wait!",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "But it's been non-stop fireballs, hailstones and hurricanes! They've been right by us all this time, they've... wait!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "What if this days-long fog is their Arts as well? This isn't normal weather...! If they can make eyes of fire dance in the sky, they can\u2014",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "What if this days-long fog is their Arts as well? This isn't normal weather...! If they can make eyes of fire dance in the sky, they can\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Calm down.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Calm down."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "We're leaning on the back foot, though. That's a fact.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "We're leaning on the back foot, though. That's a fact."
     },
     {
-        "text": "We have no clue about their identity, their numbers, or how they're even tracking us.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "We have no clue about their identity, their numbers, or how they're even tracking us."
     },
     {
-        "text": "The moment we leave an opening, someone gets attacked. This is some messed-up exotic guerilla warfare.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "The moment we leave an opening, someone gets attacked. This is some messed-up exotic guerilla warfare."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Do Leithanian casters do this? If so, it's news to me...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Do Leithanian casters do this? If so, it's news to me..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 1
+        }
     },
     {
-        "text": "I... I don't know... I've never known casters like this...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "I... I don't know... I've never known casters like this..."
     },
     {
-        "text": "And if the Captain's tremendous gift for Arts... if the Captain can't do anything, what can we do...?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "And if the Captain's tremendous gift for Arts... if the Captain can't do anything, what can we do...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...What do we do?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...What do we do?"
     },
     {
-        "text": "If we keep pressing forward like we planned, I don't know even how many attacks we'll take before we're out of this forest\u2014",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "If we keep pressing forward like we planned, I don't know even how many attacks we'll take before we're out of this forest\u2014"
     },
     {
-        "text": "But if we wanted to fight back, we'd be fighting unknown foes in horrible visibility and falling temperatures.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "But if we wanted to fight back, we'd be fighting unknown foes in horrible visibility and falling temperatures."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Take two of us to secure our route ahead. Keep within 500m of us. Report back every minute.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Take two of us to secure our route ahead. Keep within 500m of us. Report back every minute."
     },
     {
-        "text": "I'll watch the rear personally.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I'll watch the rear personally."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "No guarantees they're to our 'rear'.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "No guarantees they're to our 'rear'."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "My friends will guard the main group.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "My friends will guard the main group."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...Fine. But don't go heavy with your Arts.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Fine. But don't go heavy with your Arts."
     },
     {
-        "text": "We can't risk you of all people falling.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "We can't risk you of all people falling."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "I understand that... Thank you.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I understand that... Thank you."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Mudrock?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Swear to me one thing, Chef.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Swear to me one thing, Chef."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "What?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "So long as you're in contact with the main group, keep leading them forward.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "So long as you're in contact with the main group, keep leading them forward."
     },
     {
-        "text": "Ignore whatever happens behind you... never look back.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Ignore whatever happens behind you... never look back."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Bob. What kind of place is Columbia?"
@@ -759,465 +880,549 @@
         "text": "If I find my own calm corner of the world to live in, I'll write to you from there. If I do, could you send me a small sample in return?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_laccolith",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_laccolith",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "What's happening!? What's going on!?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "What's happening!? What's going on!?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "My skin... the crystals are moving, they're moving inside me\u2014I\u2014my\u2014gaaahh\u2014",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "My skin... the crystals are moving, they're moving inside me\u2014I\u2014my\u2014gaaahh\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "They're... they're trying to use the Infected as Arts Units...?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They're... they're trying to use the Infected as Arts Units...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "They couldn't... they can't! Where the hell are the casters? These Arts... how could someone manage to do this!?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They couldn't... they can't! Where the hell are the casters? These Arts... how could someone manage to do this!?"
     },
     {
-        "text": "Where's Mudrock!? Is Mudrock still there!?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Where's Mudrock!? Is Mudrock still there!?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Are you okay?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Are you okay?"
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 0.2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Gasp... keep... your distance!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Gasp... keep... your distance!"
     },
     {
-        "text": "They're nearby, I can feel it, it's like witchcraft... No modern Arts are like this...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They're nearby, I can feel it, it's like witchcraft... No modern Arts are like this..."
     },
     {
-        "text": "They're using... the Originium\u2014ghhak\u2014inside the Infected...!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They're using... the Originium\u2014ghhak\u2014inside the Infected...!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Snap out of it!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Snap out of it!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_defboost",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_defboost",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "Boulders, find my enemy\u2014!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Boulders, find my enemy\u2014!"
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Don't... don't waste the energy, Mudrock!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Don't... don't waste the energy, Mudrock!"
     },
     {
-        "text": "You're still... far from returning to the fertile land... You need to live on!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "You're still... far from returning to the fertile land... You need to live on!"
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "No\u2014!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "No\u2014!"
     },
     {
-        "text": "Your hand! The crystals, piercing your skin... I need to...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Your hand! The crystals, piercing your skin... I need to..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Hah-hah... the imagination they must have to 'use' Infected like this... Those hatted casters... they're terrifying.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Hah-hah... the imagination they must have to 'use' Infected like this... Those hatted casters... they're terrifying."
     },
     {
-        "text": "...Mudrock.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Mudrock."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "\u2014I'm here.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "\u2014I'm here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Take the rest of us, and live... to return to Kazdel. Yes\u2014to return to our home\u2014",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Take the rest of us, and live... to return to Kazdel. Yes\u2014to return to our home\u2014"
     },
     {
-        "text": "Hah, our home...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Hah, our home..."
     },
     {
-        "text": "Didn't we know deep down... we had nothing, wherever we went. As long we can live on, who cares where we go?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Didn't we know deep down... we had nothing, wherever we went. As long we can live on, who cares where we go?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "text": "Grhk\u2014Like hell I'd let my life be their weapon! Tell all the others\u2014I died fighting!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Grhk\u2014Like hell I'd let my life be their weapon! Tell all the others\u2014I died fighting!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.6,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.6,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Wait...!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Wait...!"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "text": "You... Why...? No warrior's end should be by his own hands...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "You... Why...? No warrior's end should be by his own hands..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "\u2014Come out here!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "\u2014Come out here!"
     },
     {
-        "text": "Come out, right now\u2014!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Come out, right now\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
         "text": "Rock echoes the wrathful Sarkaz. The colossus stands tall. Stands as if a monument to the deceased."
@@ -1232,136 +1437,166 @@
         "text": "The colossus flies forth for them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_defboost",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_defboost",
+            "volume": 0.6
+        }
     },
     {
-        "text": "............",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "............"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.4
+        }
     },
     {
         "text": "Bob. Sorry for rambling on like this."
@@ -1379,243 +1614,283 @@
         "text": "\u2014Afterwards, I might pay a visit to Columbia to see you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_laccolith",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_laccolith",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Mudrock, you're okay! The others...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock, you're okay! The others..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Oh..."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "......"
     },
     {
-        "text": "Goddamn it...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Goddamn it..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "We left a single forest. It cost half of us to do so...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We left a single forest. It cost half of us to do so..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...Mudrock.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Mudrock."
     },
     {
-        "text": "Can we fight back?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Can we fight back?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "text": "Our group... has so many civilians, still. We can't...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Our group... has so many civilians, still. We can't..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "...Mudrock?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "...Mudrock?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "Ah... Is something wrong?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Ah... Is something wrong?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "Our pursuers... There might... be something we know about them.",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Our pursuers... There might... be something we know about them."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "Them, their Originium Arts... taking Infected lives as toys...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Them, their Originium Arts... taking Infected lives as toys..."
     },
     {
-        "text": "This sort of thing... should have long since faded into the past... but a few nobles research it, still...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "This sort of thing... should have long since faded into the past... but a few nobles research it, still..."
     },
     {
-        "text": "They must be attendants of the towers, or Arts researchers... damn them, damn them...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "They must be attendants of the towers, or Arts researchers... damn them, damn them..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "...As long as they're not 'Knights,' worse has not yet come to worst.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...As long as they're not 'Knights,' worse has not yet come to worst."
     },
     {
-        "text": "Don't worry... At the very least, for now... we've escaped them.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Don't worry... At the very least, for now... we've escaped them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "The way back to Kazdel... is a long, long one."
@@ -1630,679 +1905,793 @@
         "text": "Resplendent cities the Sarkaz had never been allowed to have. But I'm only asking for somewhere quiet. A place to catch my breath for a while, in the middle of this age-old conflict."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness02_intro",
-        "key": "$darkness02_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness02_intro",
+            "key": "$darkness02_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "...Past this mountain, we'll be in Kazdel...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Past this mountain, we'll be in Kazdel..."
     },
     {
-        "text": "From the top, we should see a great bridge, and past the river... a hundred kilometers north, a village where outsiders have settled.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "From the top, we should see a great bridge, and past the river... a hundred kilometers north, a village where outsiders have settled."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 1
+        }
     },
     {
-        "text": "...Is that where we're headed?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "...Is that where we're headed?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_067",
-        "name2": "avg_npc_011#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_067",
+            "name2": "avg_npc_011#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Yes...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Yes..."
     },
     {
-        "text": "I once... lived there.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I once... lived there."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Mudrock, we've finished securing our route ahead. No sign of any pursuers.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock, we've finished securing our route ahead. No sign of any pursuers."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Good...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Good..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Let's move. We'll pitch our camp on the other side of the river before sundown.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Let's move. We'll pitch our camp on the other side of the river before sundown."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "...Mudrock!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Mudrock!"
     },
     {
-        "text": "Twenty-odd of our mercenaries got attacked by that lot! We never even so much as saw their faces!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Twenty-odd of our mercenaries got attacked by that lot! We never even so much as saw their faces!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...We can't fight them. Too dangerous... Would you send your people to die like that?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...We can't fight them. Too dangerous... Would you send your people to die like that?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "We-We're sorry... we just...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "We-We're sorry... we just..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "No... I wasn't saying to... *Sigh*.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "No... I wasn't saying to... *Sigh*."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Move. Don't look back.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Move. Don't look back."
     },
     {
-        "text": "I'll keep the rear.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I'll keep the rear."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ltstrongpoint",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ltstrongpoint",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Mudrock?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Ah... sorry. I fell asleep...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Ah... sorry. I fell asleep..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "You're exhausted.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "You're exhausted."
     },
     {
-        "text": "You haven't given your Arts any rest since the attack.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "You haven't given your Arts any rest since the attack."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "I'll be fine.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I'll be fine."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "*Sigh* No-one can change your mind, I've learned that much.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "*Sigh* No-one can change your mind, I've learned that much."
     },
     {
-        "text": "...You know, I'm beginning to miss the good old days, when we were fighting Leithanians we could actually see.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...You know, I'm beginning to miss the good old days, when we were fighting Leithanians we could actually see."
     },
     {
-        "text": "The Gendarmerie, the armed guards, the militiamen. Hell, even the caster regiments...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "The Gendarmerie, the armed guards, the militiamen. Hell, even the caster regiments..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "We did everything we could to avoid conflict with them... After all, they didn't want to risk going down with us.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We did everything we could to avoid conflict with them... After all, they didn't want to risk going down with us."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "But ever since last month, things changed.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "But ever since last month, things changed."
     },
     {
-        "text": "...Mudrock, promise not to laugh at me, but I'm a little scared.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Mudrock, promise not to laugh at me, but I'm a little scared."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Casters cloaking their true colors. Fearful Arts. Completely unable to protect ourselves. Where's the shame in being afraid?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Casters cloaking their true colors. Fearful Arts. Completely unable to protect ourselves. Where's the shame in being afraid?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Yeah. You're not wrong, for sure.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Yeah. You're not wrong, for sure."
     },
     {
-        "text": "...If, and this is only hypothetical, if they were still behind us even now... or suppose they're on the other side of the bridge. What then?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...If, and this is only hypothetical, if they were still behind us even now... or suppose they're on the other side of the bridge. What then?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Would we have to fight? Or\u2014",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Would we have to fight? Or\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Casters, with few exceptions, are frail. We are many and strong. They know that all too well... their Arts are strange, and powerful...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Casters, with few exceptions, are frail. We are many and strong. They know that all too well... their Arts are strange, and powerful..."
     },
     {
-        "text": "But the strongest caster is still a human. Don't be afraid.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "But the strongest caster is still a human. Don't be afraid."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "They kept pace with our march in the forest. For a whole month, we never found any of their camps, never found any of their supply convoys, never even found a single trace of their movements...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They kept pace with our march in the forest. For a whole month, we never found any of their camps, never found any of their supply convoys, never even found a single trace of their movements..."
     },
     {
-        "text": "Only lone teams, one after another, failing to returning contact.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Only lone teams, one after another, failing to returning contact."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Turning Infected into Arts Units... it's possible, but the concept itself... no, even the raw difficulty would be far too...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Turning Infected into Arts Units... it's possible, but the concept itself... no, even the raw difficulty would be far too..."
     },
     {
-        "text": "Ah, I see... they're experimenting.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Ah, I see... they're experimenting."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Huh?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "We're the perfect test subjects. An inexhaustible supply of them.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We're the perfect test subjects. An inexhaustible supply of them."
     },
     {
-        "text": "From their point of view, that is... all we are.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "From their point of view, that is... all we are."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...Then who the hell are they?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Then who the hell are they?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Good question...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Good question..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Past here, we should see the village in the basin.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Past here, we should see the village in the basin."
     },
     {
-        "text": "The final stretch... and then we'll be...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "The final stretch... and then we'll be..."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "text": "Wait until the scouts come back... See how things are in the village.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Wait until the scouts come back... See how things are in the village."
     },
     {
-        "text": "Maybe this is where... we can start thinking about life afterwards.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Maybe this is where... we can start thinking about life afterwards."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "Life afterwards? We can... finally call an end to our flight...?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Life afterwards? We can... finally call an end to our flight...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...Now we lay down our weapons and begin anew?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...Now we lay down our weapons and begin anew?"
     },
     {
-        "text": "What kind of life to live, I wonder...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "What kind of life to live, I wonder..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "text": "Mudrock? Where are you going?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock? Where are you going?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "Hm... To take a look from the hilltop.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Hm... To take a look from the hilltop."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "text": "Alright. Stay in contact. We can set off at any time.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Alright. Stay in contact. We can set off at any time."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "Mm.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Mm."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Before I left for Leithanien, I had been putting off the question."
@@ -2320,69 +2709,79 @@
         "text": "I only want to live on... I want us all to live on."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Kazdel's villages... are more prosperous than before.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Kazdel's villages... are more prosperous than before."
     },
     {
-        "text": "Cooking smoke. Wagons. Markets.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Cooking smoke. Wagons. Markets."
     },
     {
-        "text": "How long has it been since I last saw\u2014hm?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "How long has it been since I last saw\u2014hm?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
         "text": "Yet some things\u2014"
@@ -2391,561 +2790,653 @@
         "text": "\u2014you cannot run from."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Are these...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Are these..."
     },
     {
-        "text": "...bones?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...bones?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Mudrock.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Mudrock."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "What?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "There's fog again... I don't know if it's just the fog of morning in the mountains, or...",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "There's fog again... I don't know if it's just the fog of morning in the mountains, or..."
     },
     {
-        "text": "But either way, everyone's shaken. We need you to calm us all down.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "But either way, everyone's shaken. We need you to calm us all down."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "Mm\u2014",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Mm\u2014"
     },
     {
-        "text": "Yes. I can barely see the village from here anymore... fog has come.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Yes. I can barely see the village from here anymore... fog has come."
     },
     {
-        "text": "Wait until the scouts return. Then come to me here.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Wait until the scouts return. Then come to me here."
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$drift_intro",
-        "key": "$drift_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$drift_intro",
+            "key": "$drift_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053"
+        }
     },
     {
-        "text": "We're all here.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "We're all here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Do me a favor.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Do me a favor."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "What are...? Are these someone's bones? Sarkaz remains?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "What are...? Are these someone's bones? Sarkaz remains?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "They were small... Probably a child.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They were small... Probably a child."
     },
     {
-        "text": "Here. It's a broken knife. Rusted. This child might've died in battle.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Here. It's a broken knife. Rusted. This child might've died in battle."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "Mm... help me bury them, at least.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Mm... help me bury them, at least."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "You could use your Arts to...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "You could use your Arts to..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "I want... to do it with my own hands.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I want... to do it with my own hands."
     },
     {
-        "text": "So lend yours too.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "So lend yours too."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "Ah. Okay...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Ah. Okay..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "...Everybody. In front of us is a new life.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Everybody. In front of us is a new life."
     },
     {
-        "text": "We've made it back.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We've made it back."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "A lot of our people sacrificed themselves for this.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "A lot of our people sacrificed themselves for this."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "Did we lose them?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Did we lose them?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "...I don't know.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...I don't know."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "How's the village?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "How's the village?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "If I had to say, it's bustling with life.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "If I had to say, it's bustling with life."
     },
     {
-        "text": "There's a good few Caprinae, not to mention a decent amount of Sami people.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "There's a good few Caprinae, not to mention a decent amount of Sami people."
     },
     {
-        "text": "They've got a marketplace. Some plots of land up for sale in there. It's an old Sarkaz who used to be a mercenary, managing those. Should be able to 'get along.'",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "They've got a marketplace. Some plots of land up for sale in there. It's an old Sarkaz who used to be a mercenary, managing those. Should be able to 'get along.'"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "I see... Wonderful.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I see... Wonderful."
     },
     {
-        "text": "We're very close to the village now. From here to there, we should have no trouble...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We're very close to the village now. From here to there, we should have no trouble..."
     },
     {
-        "text": "So go and find your new lives.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "So go and find your new lives."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "...Er, Mudrock? What about all of you?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "...Er, Mudrock? What about all of you?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "...We need to stay here. See this through to the end.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...We need to stay here. See this through to the end."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Yeah... about time we did some mercenary work.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Yeah... about time we did some mercenary work."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "Wait...! You mean...",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "Wait...! You mean..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "Go.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Go."
     },
     {
-        "text": "Don't look back.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Don't look back."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "You\u2014You brought us all this way back to your homeland, just to get yourselves killed now...!?",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "You\u2014You brought us all this way back to your homeland, just to get yourselves killed now...!?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "...He's right. I'm just in it to help a bunch of old bastards get one over. You're still young. Now's the time to go.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...He's right. I'm just in it to help a bunch of old bastards get one over. You're still young. Now's the time to go."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Huh? You want me to run? I'd have to twist my own damn head off for you to kick if I wanted to look back.",
-        "tag": "name",
-        "value": "Young Sarkaz Warrior"
+        "command": "name",
+        "value": "Young Sarkaz Warrior",
+        "text": "Huh? You want me to run? I'd have to twist my own damn head off for you to kick if I wanted to look back."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_067",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_067",
+            "focus": 2
+        }
     },
     {
-        "text": "But we can't just\u2014",
-        "tag": "name",
-        "value": "Leithanian Infected"
+        "command": "name",
+        "value": "Leithanian Infected",
+        "text": "But we can't just\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_067",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_067",
+            "focus": 1
+        }
     },
     {
-        "text": "...We won't look back. All who want to leave, can leave now.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...We won't look back. All who want to leave, can leave now."
     },
     {
-        "text": "There's no shame in it. There's no need to blame yourself... We will protect this bridge.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "There's no shame in it. There's no need to blame yourself... We will protect this bridge."
     },
     {
-        "text": "...Supposing this is all a false alarm, and they've long given up, we'll see you in town.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Supposing this is all a false alarm, and they've long given up, we'll see you in town."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "......"
     },
     {
-        "text": "Warriors. Line up. Eyes forward.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Warriors. Line up. Eyes forward."
     },
     {
-        "text": "We defend this bridge to the death.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "We defend this bridge to the death."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "What makes us think we can escape our cruel fate without a scratch?"
@@ -2957,517 +3448,635 @@
         "text": "We can't escape it, any of us. In the end, we all have to raise our weapons and confront the present we built with our past."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_wild_a",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_wild_a",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...How many have stayed?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...How many have stayed?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Why don't you look back for yourself and see?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Why don't you look back for yourself and see?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "I... I'm just a little worried...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "I... I'm just a little worried..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Seriously, you... alright, someone else, then. Hey. Count how many there are for Mudrock.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Seriously, you... alright, someone else, then. Hey. Count how many there are for Mudrock."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Don't mess with me, alright? Didn't I tell you I'd have to twist my head off to look back?",
-        "tag": "name",
-        "value": "Young Sarkaz Warrior"
+        "command": "name",
+        "value": "Young Sarkaz Warrior",
+        "text": "Don't mess with me, alright? Didn't I tell you I'd have to twist my head off to look back?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_053",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_053",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...You can tell just by the sound of it. Not that many even left.",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "...You can tell just by the sound of it. Not that many even left."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Thank you.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Thank you."
     },
     {
-        "text": "Really... thank you.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Really... thank you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "text": "The fog's getting thicker... Captain, should we still keep an eye on them?",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "The fog's getting thicker... Captain, should we still keep an eye on them?"
     },
     {
-        "text": "Those casters with the tall hats seriously made me want to throw up... they used the Infected slaves they had with them as their... their staves.",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "Those casters with the tall hats seriously made me want to throw up... they used the Infected slaves they had with them as their... their staves."
     },
     {
-        "text": "...It looks like the Reunion bunch are readying for their last stand. What should we do?",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "...It looks like the Reunion bunch are readying for their last stand. What should we do?"
     },
     {
-        "tag": "decision",
-        "options": "Imagine, the Twin Empresses ascending the throne. It's been decades since the Witch King passed\u2014;\u2014Leithanien still hosts lunatics who mire themselves in the Witch King's shadow.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "Imagine, the Twin Empresses ascending the throne. It's been decades since the Witch King passed\u2014;\u2014Leithanien still hosts lunatics who mire themselves in the Witch King's shadow.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "text": "Err... Captain, this stuff you talk about always flies over my head. Couldn't you say things a little simpler?",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "Err... Captain, this stuff you talk about always flies over my head. Couldn't you say things a little simpler?"
     },
     {
-        "text": "Hold on, Captain, where are you going?",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "Hold on, Captain, where are you going?"
     },
     {
-        "tag": "decision",
-        "options": "To save them.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "To save them.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Whoa, that's simple alright... But saving Reunion?",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "Whoa, that's simple alright... But saving Reunion?"
     },
     {
-        "tag": "decision",
-        "options": "I only see a group of Sarkaz defending the Infected to the end.;From Casters desecrating life on the whims of rotten nobles.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "I only see a group of Sarkaz defending the Infected to the end.;From Casters desecrating life on the whims of rotten nobles.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_013_riop"
+        "command": "character",
+        "params": {
+            "name": "char_013_riop"
+        }
     },
     {
-        "text": "But you said they were all super powerful, right?! At least wait until our team's all together before\u2014",
-        "tag": "name",
-        "value": "Rhodes Island Guard"
+        "command": "name",
+        "value": "Rhodes Island Guard",
+        "text": "But you said they were all super powerful, right?! At least wait until our team's all together before\u2014"
     },
     {
-        "tag": "decision",
-        "options": "No need.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "No need.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "They're no knights and garner no art's favor. They're jesters who flaunt witchcraft about.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "They're no knights and garner no art's favor. They're jesters who flaunt witchcraft about.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Rhodes Island does not permit the desecration of Infected lives.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Rhodes Island does not permit the desecration of Infected lives.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_forest",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_forest",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "\u2014Someone's coming.",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "\u2014Someone's coming."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Ready!",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Ready!"
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "\u2014Hold on!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "\u2014Hold on!"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_defboost",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_defboost",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 4,
-        "ystrength": 4,
-        "vibrato": 20,
-        "randomness": 30,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 4,
+            "ystrength": 4,
+            "vibration": 20,
+            "randomness": 30,
+            "fadeout": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Huh?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 2
+        }
     },
     {
-        "text": "Wa\u2014Wait, what did they... do?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "Wa\u2014Wait, what did they... do?"
     },
     {
-        "text": "That was a single push... and Mudrock's Colossus just...?",
-        "tag": "name",
-        "value": "Sarkaz Warrior"
+        "command": "name",
+        "value": "Sarkaz Warrior",
+        "text": "That was a single push... and Mudrock's Colossus just...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2",
-        "name2": "avg_npc_053",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2",
+            "name2": "avg_npc_053",
+            "focus": 1
+        }
     },
     {
-        "text": "...Don't engage! Fall back!",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "...Don't engage! Fall back!"
     },
     {
-        "text": "That's... That's a Sarkaz...! And...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "That's... That's a Sarkaz...! And..."
     },
     {
-        "tag": "decision",
-        "options": "I've heard of you, in Operator Folinic's report. The Sarkaz who makes the earth dance.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "I've heard of you, in Operator Folinic's report. The Sarkaz who makes the earth dance.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "I, too, am not your enemy.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "I, too, am not your enemy.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_011#2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_011#2"
+        }
     },
     {
-        "text": "The fog... cleared...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "The fog... cleared..."
     },
     {
-        "text": "\u2014You're not a Leithanian. You give off a very unusual feeling... and you're so young...",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "\u2014You're not a Leithanian. You give off a very unusual feeling... and you're so young..."
     },
     {
-        "text": "Who are you?",
-        "tag": "name",
-        "value": "Mudrock"
+        "command": "name",
+        "value": "Mudrock",
+        "text": "Who are you?"
     },
     {
-        "tag": "decision",
-        "options": "Only a Rhodes Island Operator... Only of a kind with you, a Sarkaz.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Only a Rhodes Island Operator... Only of a kind with you, a Sarkaz.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Call me Logos if you wish.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Call me Logos if you wish.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$newhope01_intro",
-        "key": "$newhope01_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$newhope01_intro",
+            "key": "$newhope01_loop",
+            "volume": 0.4
+        }
     },
     {
         "text": "Bob, how have you been?"
@@ -3506,21 +4115,23 @@
         "text": "Live on well, Bob. Maybe one day... far in the future, I'll be able to see you and your people in Columbia."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

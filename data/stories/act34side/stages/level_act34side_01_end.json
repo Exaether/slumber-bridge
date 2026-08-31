@@ -1,633 +1,755 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "51_g1_beaconsquare",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "51_g1_beaconsquare",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5",
-        "duration": 1
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Skadi",
+        "text": "Did you think we were touring a museum? You were looking at the instruments like they were exhibits."
     },
     {
-        "text": "Did you think we were touring a museum? You were looking at the instruments like they were exhibits.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "decision",
+        "params": {
+            "options": "The third place I mistook for a museum, then.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "The third place I mistook for a museum, then.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "Why is gravity reversed in there?;What's with the water flowing around the pillars?;What's that space that warped my fingers?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Why is gravity reversed in there?;What's with the water flowing around the pillars?;What's that space that warped my fingers?",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5"
+        "command": "name",
+        "value": "Skadi",
+        "text": "There are some things even I can't explain."
     },
     {
-        "text": "There are some things even I can't explain.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "Technology has advanced a lot in five years."
     },
     {
-        "text": "Technology has advanced a lot in five years.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "decision",
+        "params": {
+            "options": "Wait, that tower...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Wait, that tower...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "decision",
+        "params": {
+            "options": "There's a launchpad at the heart of the city?",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "There's a launchpad at the heart of the city?",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "Good eye, Doctor, that's a beacon launcher. One with plenty of history."
     },
     {
-        "text": "Good eye, Doctor, that's a beacon launcher. One with plenty of history.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5"
+        "command": "name",
+        "value": "Skadi",
+        "text": "You know about it, Shark?"
     },
     {
-        "text": "You know about it, Shark?",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "My parents took me around the home territories when I was little. There are similar structures in many cities."
     },
     {
-        "text": "My parents took me around the home territories when I was little. There are similar structures in many cities.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "decision",
+        "params": {
+            "options": "I thought \u00c6gir children were raised collectively.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "I thought \u00c6gir children were raised collectively.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#3"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#3"
+        "command": "name",
+        "value": "Skadi",
+        "text": "I was, but Shark has a special relationship with her biological parents."
     },
     {
-        "text": "I was, but Shark has a special relationship with her biological parents.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#12$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#12$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "They're more like friends than parents."
     },
     {
-        "text": "They're more like friends than parents.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project."
     },
     {
-        "text": "They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them."
     },
     {
-        "text": "I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "decision",
+        "params": {
+            "options": "So, what's this beacon launcher for?",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "So, what's this beacon launcher for?",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "Exactly what it sounds like: it launches beacons to mark the Waterway."
     },
     {
-        "text": "Exactly what it sounds like: it launches beacons to mark the Waterway.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "decision",
+        "params": {
+            "options": "Those are some huge beacons.;How big is this Waterway anyway?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Those are some huge beacons.;How big is this Waterway anyway?",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#10$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#10$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "\u00c6gir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts."
     },
     {
-        "text": "\u00c6gir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Then we cast our sights on another ocean, one brimming with stars."
     },
     {
-        "text": "Then we cast our sights on another ocean, one brimming with stars.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier."
     },
     {
-        "text": "Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "decision",
+        "params": {
+            "options": "Beyond the barrier...",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Beyond the barrier...",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "The Preserver was right, Doctor. Kristen's achievement is not beyond \u00c6gir's reach."
     },
     {
-        "text": "The Preserver was right, Doctor. Kristen's achievement is not beyond \u00c6gir's reach.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "The sea and the sky are closer than we thought."
     },
     {
-        "text": "The sea and the sky are closer than we thought.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#12$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#12$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space..."
     },
     {
-        "text": "People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space...",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "This beacon launcher is a product of that era."
     },
     {
-        "text": "This beacon launcher is a product of that era.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts."
     },
     {
-        "text": "It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed."
     },
     {
-        "text": "Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5"
+        "command": "name",
+        "value": "Skadi",
+        "text": "You never told me any of this before."
     },
     {
-        "text": "You never told me any of this before.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "Lucid moments were hard to come by on land."
     },
     {
-        "text": "Lucid moments were hard to come by on land.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#10$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#10$1"
+        "command": "name",
+        "value": "Specter",
+        "text": "But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch."
     },
     {
-        "text": "But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Then, I saw Laurentina dance."
     },
     {
-        "text": "Then, I saw Laurentina dance.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song."
     },
     {
-        "text": "She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "The universe and imagination know no bounds, and Laurentina's dances will never cease."
     },
     {
-        "text": "The universe and imagination know no bounds, and Laurentina's dances will never cease.",
-        "tag": "name",
-        "value": "Specter"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#3$1"
+        }
     },
     {
         "text": "Specter closes her eyes, as though sinking back into the dream."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#4"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#4"
+        }
     },
     {
-        "text": "Mm...",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "Mm..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "text": "What is it?",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "What is it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5"
+        }
     },
     {
-        "text": "Just trying to picture it.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "Just trying to picture it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "It's a beautiful dream, Laurentina.;Perhaps that day will really come, Laurentina.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "It's a beautiful dream, Laurentina.;Perhaps that day will really come, Laurentina.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#12$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#12$1"
+        }
     },
     {
-        "text": "Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream."
     },
     {
-        "text": "We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future...",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future..."
     },
     {
-        "text": "The Seaborn fundamentally changed \u00c6gir.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "The Seaborn fundamentally changed \u00c6gir."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "What did you do before becoming a Hunter, Skadi?;What did you do before becoming a Hunter, Specter?",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "What did you do before becoming a Hunter, Skadi?;What did you do before becoming a Hunter, Specter?",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_263_skadi#5"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_263_skadi#5"
+        }
     },
     {
-        "text": "Me?",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "Me?"
     },
     {
-        "text": "I was the best technician at the Institute of Facility Management. I could keep an entire city's underwater lighting array running on my own.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "I was the best technician at the Institute of Facility Management. I could keep an entire city's underwater lighting array running on my own."
     },
     {
-        "text": "The Institute of Development Planning's career proposal was pretty much what I was thinking, so I accepted.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "The Institute of Development Planning's career proposal was pretty much what I was thinking, so I accepted."
     },
     {
-        "text": "Working by yourself can be lonely, but it's not such a bad thing playing with the giant fins in the reefs, or lighting up the ocean while daydreaming.",
-        "tag": "name",
-        "value": "Skadi"
+        "command": "name",
+        "value": "Skadi",
+        "text": "Working by yourself can be lonely, but it's not such a bad thing playing with the giant fins in the reefs, or lighting up the ocean while daydreaming."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "text": "I was just an apprentice sculptor.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "I was just an apprentice sculptor."
     },
     {
-        "text": "The Institute of Development Planning provides tailored career proposals for each citizen, which are usually in line with our wishes.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "The Institute of Development Planning provides tailored career proposals for each citizen, which are usually in line with our wishes."
     },
     {
-        "text": "I suppose I would have gone into dome design, sculpting, or dance.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "I suppose I would have gone into dome design, sculpting, or dance."
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "text": "Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Because they've changed.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Because they've changed.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1023_ghost2_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1023_ghost2_1#1$1"
+        }
     },
     {
-        "text": "I guess you're right. Sorry for bringing up something so heavy on a tour.",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "I guess you're right. Sorry for bringing up something so heavy on a tour."
     },
     {
-        "text": "We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?",
-        "tag": "name",
-        "value": "Specter"
+        "command": "name",
+        "value": "Specter",
+        "text": "We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "51_g7_consuloffice",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "51_g7_consuloffice",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$act18d3d0_intro",
-        "key": "$act18d3d0_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$act18d3d0_intro",
+            "key": "$act18d3d0_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Gladiia.",
-        "tag": "name",
-        "value": "Kind Woman"
+        "command": "name",
+        "value": "Kind Woman",
+        "text": "Gladiia."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_higheldshosfts",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_higheldshosfts",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
         "text": "Gladiia's hand instinctively goes to her weapon as the woman approaches with a ceremonial sword in hand."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.7
+        }
     },
     {
         "text": "But all she does is put her arms around Gladiia's shoulders. Gladiia smells stimulants in the air."
@@ -639,166 +761,194 @@
         "text": "But this woman's action felt completely natural."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_474_gladiia_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_474_gladiia_1#1"
+        }
     },
     {
-        "text": "Consul Clementia?",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Consul Clementia?"
     },
     {
-        "text": "I was not aware that this was the standard salute between Chief Designers of Warfare.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "I was not aware that this was the standard salute between Chief Designers of Warfare."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#1$1"
+        }
     },
     {
-        "text": "Nothing makes me happier than seeing the Hunters return as lucid as ever.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Nothing makes me happier than seeing the Hunters return as lucid as ever."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_474_gladiia_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_474_gladiia_1#1"
+        }
     },
     {
-        "text": "Your soldiers' reactions when they first saw me suggested otherwise.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Your soldiers' reactions when they first saw me suggested otherwise."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#9$1"
+        }
     },
     {
-        "text": "The operation to eliminate the Firstborn cost \u00c6gir all of its Abyssal Hunters.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The operation to eliminate the Firstborn cost \u00c6gir all of its Abyssal Hunters."
     },
     {
-        "text": "Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#6$1"
+        }
     },
     {
-        "text": "Your mother, Horatia, had no choice but to publicly declare you dead.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Your mother, Horatia, had no choice but to publicly declare you dead."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#2$1"
+        }
     },
     {
-        "text": "But I know her. She doesn't really believe that.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "But I know her. She doesn't really believe that."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_474_gladiia_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_474_gladiia_1#1"
+        }
     },
     {
-        "text": "Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing."
     },
     {
-        "text": "I know her, too.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "I know her, too."
     },
     {
-        "text": "But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1382_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1382_1#2$1"
+        }
     },
     {
-        "text": "Of course, of course.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Of course, of course."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_higheldshosfts",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_higheldshosfts",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Look at the city.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Look at the city."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "51_i02",
-        "screenadapt": "coverall",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "y": -70
+        "command": "image",
+        "params": {
+            "image": "51_i02",
+            "screenadapt": "coverall",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "y": -70
+        }
     },
     {
-        "tag": "imagetween",
-        "yTo": 0,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 60,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "y": 0,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 60,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
         "text": "The Consul's Pensivarium sits high in the city. The seawater hangs just above their heads."
@@ -810,853 +960,971 @@
         "text": "Beneath the dome, the entire city is bathed in a blue hue. The beacon launchpad stands tall at its center, while ships glide in and out of the distant docks like schools of fins."
     },
     {
-        "text": "The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous."
     },
     {
-        "text": "We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn."
     },
     {
-        "text": "All that's left on the seafloor are their colorful, eerie nests.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "All that's left on the seafloor are their colorful, eerie nests."
     },
     {
-        "text": "I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution."
     },
     {
-        "text": "So I want to know what solution \u00c6gir has come up with next. What you have come up with.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "So I want to know what solution \u00c6gir has come up with next. What you have come up with."
     },
     {
-        "text": "What is this Waterway Program?",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "What is this Waterway Program?"
     },
     {
-        "text": "Gladiia, I didn't mean...",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Gladiia, I didn't mean..."
     },
     {
-        "text": "I'm simply part of an even bigger gambit, one with even higher stakes.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "I'm simply part of an even bigger gambit, one with even higher stakes."
     },
     {
-        "text": "The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn."
     },
     {
-        "text": "This time, however, we have taken into account every weapon at our disposal or under development.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "This time, however, we have taken into account every weapon at our disposal or under development."
     },
     {
-        "text": "A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them."
     },
     {
-        "text": "But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles."
     },
     {
-        "text": "Et cetera, et cetera.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Et cetera, et cetera."
     },
     {
-        "text": "Until their evolution outpaced the ability of the Academy of Technology to innovate.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Until their evolution outpaced the ability of the Academy of Technology to innovate."
     },
     {
-        "text": "Yes. At day's end, all we're doing is merely buying time. \u00c6gir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Yes. At day's end, all we're doing is merely buying time. \u00c6gir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source."
     },
     {
-        "text": "The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research."
     },
     {
-        "text": "The Seaborn and the Feranmuts share the same genesis.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "The Seaborn and the Feranmuts share the same genesis."
     },
     {
-        "text": "Is \u00c6gir coming ashore to seek memories even more ancient?",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Is \u00c6gir coming ashore to seek memories even more ancient?"
     },
     {
-        "text": "Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say."
     },
     {
-        "text": "Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse."
     },
     {
-        "text": "Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn."
     },
     {
-        "text": "We already saw hints of that in Iberia.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "We already saw hints of that in Iberia."
     },
     {
-        "text": "Thus, for \u00c6gir, the land is both a source of answers and a solemn responsibility.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Thus, for \u00c6gir, the land is both a source of answers and a solemn responsibility."
     },
     {
-        "text": "Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology."
     },
     {
-        "text": "They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area."
     },
     {
-        "text": "We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked."
     },
     {
-        "text": "Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to \u00c6gir's home territories.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to \u00c6gir's home territories."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "51_g7_consuloffice",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "51_g7_consuloffice",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_474_gladiia_1#1"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_474_gladiia_1#1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#2$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_474_gladiia_1#1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_474_gladiia_1#1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Yes, she did tell me herself that 'the Waterway Program will not fail.'",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Yes, she did tell me herself that 'the Waterway Program will not fail.'"
     },
     {
-        "text": "I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But that is no longer true. The changes in the past month necessitate a review of our plans.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "But that is no longer true. The changes in the past month necessitate a review of our plans."
     },
     {
-        "text": "The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III."
     },
     {
-        "text": "But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_474_gladiia_1#1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_474_gladiia_1#1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted \u00c6gir.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted \u00c6gir."
     },
     {
-        "text": "Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them."
     },
     {
-        "text": "The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Unless they're not being influenced by the Church of the Deep, but by another Firstborn.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Unless they're not being influenced by the Church of the Deep, but by another Firstborn."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_474_gladiia_1#1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_474_gladiia_1#1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I see you've read my belated report.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "I see you've read my belated report."
     },
     {
-        "text": "Indeed. Ulpianus claims that the one we eliminated was not the only one.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "Indeed. Ulpianus claims that the one we eliminated was not the only one."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The Abyssal Hunters were the first and last \u00c6gir to enter the Firstborn's lair.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "The Abyssal Hunters were the first and last \u00c6gir to enter the Firstborn's lair."
     },
     {
-        "text": "Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through."
     },
     {
-        "text": "Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_474_gladiia_1#5",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_474_gladiia_1#5",
+            "focus": "l"
+        }
     },
     {
-        "text": "You're still deliberating on whether to believe him.",
-        "tag": "name",
-        "value": "Gladiia"
+        "command": "name",
+        "value": "Gladiia",
+        "text": "You're still deliberating on whether to believe him."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction."
     },
     {
-        "text": "Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?"
     },
     {
-        "text": "There are too many unanswered questions about Ulpianus and that fateful operation.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "There are too many unanswered questions about Ulpianus and that fateful operation."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1382_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1382_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "And so, I regret to inform you that \u00c6gir has no choice but to welcome its Hunters home with a tribunal.",
-        "tag": "name",
-        "value": "Clementia"
+        "command": "name",
+        "value": "Clementia",
+        "text": "And so, I regret to inform you that \u00c6gir has no choice but to welcome its Hunters home with a tribunal."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "51_g4_aegirstreet_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "51_g4_aegirstreet_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$formal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$formal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I thought we had designated this area for investigation.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "I thought we had designated this area for investigation."
     },
     {
-        "text": "Madam Irene? From Iberia?",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Madam Irene? From Iberia?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "May I ask to whom I am speaking?",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "May I ask to whom I am speaking?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday."
     },
     {
-        "text": "The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#1$1"
+        }
     },
     {
-        "text": "I would like to assist as myself, not as an envoy.",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "I would like to assist as myself, not as an envoy."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Your offer is appreciated, but unnecessary.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Your offer is appreciated, but unnecessary."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#1$1"
+        }
     },
     {
-        "text": "I want to\u2014",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "I want to\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Any news from the other teams?",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Any news from the other teams?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "One moment, getting the video feed now.",
-        "tag": "name",
-        "value": "Sea Patroller"
+        "command": "name",
+        "value": "Sea Patroller",
+        "text": "One moment, getting the video feed now."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#2$1"
+        }
     },
     {
-        "text": "Ma'am\u2014",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "Ma'am\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "No unusual movements at the port.",
-        "tag": "name",
-        "value": "Sea Patroller"
+        "command": "name",
+        "value": "Sea Patroller",
+        "text": "No unusual movements at the port."
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_4137_udflow_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_4137_udflow_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Tsk.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Tsk."
     },
     {
-        "text": "Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_npc_1391_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_npc_1391_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Roger.",
-        "tag": "name",
-        "value": "Sea Patroller"
+        "command": "name",
+        "value": "Sea Patroller",
+        "text": "Roger."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "posfrom": "0,0",
-        "posto": "200,0",
-        "duration": 1,
-        "afrom": 1,
-        "ato": 0
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "posfrom": "0,0",
+            "posto": "200,0",
+            "duration": 1,
+            "afrom": 1,
+            "ato": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#2$1"
+        }
     },
     {
-        "text": "You're okay with talking about this in front of me?",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "You're okay with talking about this in front of me?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1"
+        }
     },
     {
-        "text": "This is part of our regular duties. There's no need for confidentiality.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "This is part of our regular duties. There's no need for confidentiality."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#1$1"
+        }
     },
     {
-        "text": "But you had your Little Handies clear the place out.",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "But you had your Little Handies clear the place out."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1"
+        }
     },
     {
-        "text": "Only to prevent unnecessary harm to civilians.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Only to prevent unnecessary harm to civilians."
     },
     {
-        "text": "If you insist on staying, you'll be responsible for your own safety.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "If you insist on staying, you'll be responsible for your own safety."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#7$1"
+        }
     },
     {
-        "text": "I'll\u2014",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "I'll\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1"
+        }
     },
     {
-        "text": "The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests."
     },
     {
-        "text": "She went AWOL 30 hours ago and hasn't been seen since.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "She went AWOL 30 hours ago and hasn't been seen since."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4009_irene_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4009_irene_1#7$1"
+        }
     },
     {
-        "text": "Could it be... the Church of the Deep?",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "Could it be... the Church of the Deep?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1"
+        }
     },
     {
-        "text": "That's what we intend to find out.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "That's what we intend to find out."
     },
     {
-        "text": "Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable."
     },
     {
-        "text": "If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#3$1"
+        }
     },
     {
-        "text": "Unless\u2014",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "Unless\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#5$1"
+        }
     },
     {
-        "text": "She learned something she wasn't supposed to.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "She learned something she wasn't supposed to."
     },
     {
-        "text": "I need to inspect her home.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "I need to inspect her home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-200,0",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-200,0",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_4009_irene_1#1$1",
-        "posfrom": "150,0",
-        "posto": "0,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_4009_irene_1#1$1",
+            "posfrom": "150,0",
+            "posto": "0,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You're sharp, Madam Irene, but I would recommend against coming with us.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "You're sharp, Madam Irene, but I would recommend against coming with us."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_4009_irene_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_4009_irene_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'm simply investigating our common enemy in my own way.",
-        "tag": "name",
-        "value": "Irene"
+        "command": "name",
+        "value": "Irene",
+        "text": "I'm simply investigating our common enemy in my own way."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4137_udflow_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4137_udflow_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Suit yourself.",
-        "tag": "name",
-        "value": "Secunda"
+        "command": "name",
+        "value": "Secunda",
+        "text": "...Suit yourself."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

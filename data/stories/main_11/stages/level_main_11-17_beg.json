@@ -1,149 +1,167 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "background",
+        "params": {
+            "image": "32_g10_kingrestcore",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "32_g10_kingrestcore",
-        "screenadapt": "coverall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "image",
+        "params": {
+            "image": "32_i11",
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "y": -80,
+            "x": 100,
+            "fadetime": 0,
+            "block": false
+        }
     },
     {
-        "tag": "image",
-        "image": "32_i11",
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "y": -80,
-        "x": 100,
-        "fadetime": 0,
-        "block": false
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 0.9,
+            "yscale": 0.9,
+            "y": 0,
+            "x": 0,
+            "duration": 45,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 0.9,
-        "yScaleTo": 0.9,
-        "yTo": 0,
-        "xTo": 0,
-        "duration": 45,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": -1,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 40,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": -1,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 40,
-        "randomness": 90,
-        "block": false
+        "command": "name",
+        "value": "Dagda",
+        "text": "In front of you, Siege!"
     },
     {
-        "text": "In front of you, Siege!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Is that...?"
     },
     {
-        "text": "Is that...?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playmusic",
+        "params": {
+            "intro": "$stmkgt_02_intro",
+            "key": "$stmkgt_02_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$stmkgt_02_intro",
-        "key": "$stmkgt_02_loop",
-        "volume": 0.4
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "name",
+        "value": "Siege",
+        "text": "A suit of steam armor."
     },
     {
-        "text": "A suit of steam armor.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_stmkgt_h",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_stmkgt_h",
-        "volume": 0.5
-    },
-    {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The spurts of white steam stand out in front of the dark hue of the armor."
     },
     {
-        "tag": "camerashake",
-        "duration": 5,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 40,
-        "randomness": 90,
-        "block": false,
-        "fadeout": true
+        "command": "camerashake",
+        "params": {
+            "duration": 5,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 40,
+            "randomness": 90,
+            "block": false,
+            "fadeout": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease",
-        "volume": 0.4,
-        "loop": false,
-        "channel": "release",
-        "delay": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease",
+            "volume": 0.4,
+            "loop": false,
+            "channel": "release",
+            "delay": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease",
-        "volume": 0.5,
-        "loop": false,
-        "channel": "release1",
-        "delay": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease",
+            "volume": 0.5,
+            "loop": false,
+            "channel": "release1",
+            "delay": 2
+        }
     },
     {
         "text": "Spurt after spurt."
@@ -164,262 +182,310 @@
         "text": "Not even death."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_399_1#1$1",
-        "name2": "avg_npc_399_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_399_1#1$1",
+            "name2": "avg_npc_399_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "It's moving! Look, it's moving!",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "It's moving! Look, it's moving!"
     },
     {
-        "text": "Man alive, what is happening here?!",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "Man alive, what is happening here?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrow"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrow"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrow",
-        "delay": 0.1,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrow",
+            "delay": 0.1,
+            "channel": "a"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "playsound",
-        "key": "$swordtsing1",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing1",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pendrop",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pendrop",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#4$1"
+        }
     },
     {
-        "text": "Agh! Bolts do nothing!",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Totter",
+        "text": "Agh! Bolts do nothing!"
     },
     {
-        "text": "Get the grenades!",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Totter",
+        "text": "Get the grenades!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1",
-        "blackstart": 0.2,
-        "blackend": 0.8,
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1",
+            "blackstart": 0.2,
+            "blackend": 0.8,
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_imp_tekken_h",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$p_imp_tekken_h",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_demonkatk",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_demonkatk",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.15,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.15,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_demonkatk",
-        "volume": 0.7,
-        "channel": "a",
-        "loop": false,
-        "delay": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_demonkatk",
+            "volume": 0.7,
+            "channel": "a",
+            "loop": false,
+            "delay": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "camerashake",
-        "duration": 0.1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 60,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 60,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "camerashake",
-        "duration": 0.1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 60,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 60,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The massive suit of armor rises from the rubble."
     },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 50,
-        "ystrength": 50,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 50,
+            "ystrength": 50,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.6
+        }
     },
     {
         "text": "Heavy footsteps."
@@ -431,885 +497,1055 @@
         "text": "It walks toward the panicked crowd, one step at a time."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_mechawalk",
-        "channel": "a",
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_mechawalk",
+            "channel": "a",
+            "loop": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$mapboomset",
-        "channel": "a",
-        "loop": false
+        "command": "playsound",
+        "params": {
+            "key": "$mapboomset",
+            "channel": "a",
+            "loop": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_cadkgt_s_lp",
-        "channel": "a",
-        "loop": false
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_cadkgt_s_lp",
+            "channel": "a",
+            "loop": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.8
+        "command": "delay",
+        "value": 0.8
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
-    },
-    {
-        "tag": "bgeffect",
-        "name": "$eb_steamrelease",
-        "layer": 2
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
-    },
-    {
-        "tag": "bgeffect",
-        "layer": 2
-    },
-    {
-        "text": "(Heavy gushing)",
-        "tag": "name",
-        "value": "'Steam Armor'"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_arrow_rain"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_02_mid",
-        "x": 100,
-        "y": 100,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 1,
-        "delay": 0.2
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_01_mid",
-        "x": 150,
-        "y": -100,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 2,
-        "delay": 0.6
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_02_mid",
-        "x": -100,
-        "y": 100,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 3,
-        "delay": 0.8
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_01_mid",
-        "x": 150,
-        "y": 200,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 4,
-        "delay": 1
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_02_mid",
-        "x": -200,
-        "y": -200,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 5,
-        "delay": 0.2
-    },
-    {
-        "tag": "effect",
-        "name": "$e_spark_01_mid",
-        "x": 0,
-        "y": 0,
-        "rox": 30,
-        "roy": 30,
-        "roz": 10,
-        "layer": 6
-    },
-    {
-        "tag": "playsound",
-        "key": "$swordtsing1",
-        "delay": 0.2,
-        "channel": "R",
-        "volume": 1,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_axehitscrape",
-        "delay": 0.6,
-        "channel": "h",
-        "volume": 1,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$swordtsing2",
-        "delay": 0.8,
-        "channel": "o",
-        "volume": 1,
-        "block": true
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_axehitscrape",
-        "delay": 1,
-        "channel": "d",
-        "volume": 1,
-        "block": true
-    },
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
+    },
+    {
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_steamrelease",
+            "layer": 2
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
+    },
+    {
+        "command": "bgeffect",
+        "params": {
+            "layer": 2
+        }
+    },
+    {
+        "command": "name",
+        "value": "Steam Armor",
+        "text": "(Heavy gushing)"
+    },
+    {
+        "command": "dialog"
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrow_rain"
+        }
+    },
+    {
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_02_mid",
+            "x": 100,
+            "y": 100,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 1,
+            "delay": 0.2
+        }
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_01_mid",
+            "x": 150,
+            "y": -100,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 2,
+            "delay": 0.6
+        }
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_02_mid",
+            "x": -100,
+            "y": 100,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 3,
+            "delay": 0.8
+        }
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_01_mid",
+            "x": 150,
+            "y": 200,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 4,
+            "delay": 1
+        }
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_02_mid",
+            "x": -200,
+            "y": -200,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 5,
+            "delay": 0.2
+        }
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_spark_01_mid",
+            "x": 0,
+            "y": 0,
+            "rox": 30,
+            "roy": 30,
+            "roz": 10,
+            "layer": 6
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing1",
+            "delay": 0.2,
+            "channel": "R",
+            "volume": 1,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_axehitscrape",
+            "delay": 0.6,
+            "channel": "h",
+            "volume": 1,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing2",
+            "delay": 0.8,
+            "channel": "o",
+            "volume": 1,
+            "block": true
+        }
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_axehitscrape",
+            "delay": 1,
+            "channel": "d",
+            "volume": 1,
+            "block": true
+        }
+    },
     {
-        "tag": "playsound",
-        "key": "$swordtsing1",
-        "channel": "e",
-        "volume": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$swordtsing1",
+            "channel": "e",
+            "volume": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_axehitscrape",
-        "delay": 0.4,
-        "channel": "s",
-        "volume": 1,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_axehitscrape",
+            "delay": 0.4,
+            "channel": "s",
+            "volume": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 4
+        "command": "delay",
+        "value": 4
     },
     {
-        "tag": "character",
-        "name": "avg_npc_399_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_399_1#1$1"
+        }
     },
     {
-        "text": "There's no point.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "There's no point."
     },
     {
-        "text": "You're from Sargon, Totter. You wouldn't understand.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "You're from Sargon, Totter. You wouldn't understand."
     },
     {
-        "text": "They were the stuff of our bedtime stories.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "They were the stuff of our bedtime stories."
     },
     {
-        "text": "It's still stories of the Steam Knights I tell when I put my kids to bed.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "It's still stories of the Steam Knights I tell when I put my kids to bed."
     },
     {
-        "text": "How are we supposed to defeat him?",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "How are we supposed to defeat him?"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 0.5
+        }
     },
     {
-        "text": "How do we defeat our pride, our glory, our hero, who's already been betrayed once?",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "How do we defeat our pride, our glory, our hero, who's already been betrayed once?"
     },
     {
-        "text": "We can't defeat him.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "We can't defeat him."
     },
     {
-        "text": "This is a... a Victorian Steam Knight.",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "This is a... a Victorian Steam Knight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#7$1"
+        }
     },
     {
-        "text": "Fall back! Fall back!",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Totter",
+        "text": "Fall back! Fall back!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "27_g7_subway",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "27_g7_subway",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#2$1",
-        "name2": "avg_155_tiger_1#10$1",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#2$1",
+            "name2": "avg_155_tiger_1#10$1",
+            "focus": -1
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$suspenseful_intro",
-        "key": "$suspenseful_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$suspenseful_intro",
+            "key": "$suspenseful_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease",
-        "volume": 0.3,
-        "delay": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease",
+            "volume": 0.3,
+            "delay": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#2$1",
-        "name2": "avg_155_tiger_1#10$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#2$1",
+            "name2": "avg_155_tiger_1#10$1",
+            "focus": 1
+        }
     },
     {
-        "text": "What's that sound?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "What's that sound?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#2$1",
-        "name2": "avg_155_tiger_1#10$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#2$1",
+            "name2": "avg_155_tiger_1#10$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Sounds like steam.",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Sounds like steam."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#9$1",
-        "name2": "avg_155_tiger_1#10$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#9$1",
+            "name2": "avg_155_tiger_1#10$1",
+            "focus": 1
+        }
     },
     {
-        "text": "How?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "How?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#9$1",
-        "name2": "avg_155_tiger_1#10$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#9$1",
+            "name2": "avg_155_tiger_1#10$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Definitely steam. They're back!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Definitely steam. They're back!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#9$1",
-        "name2": "avg_155_tiger_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#9$1",
+            "name2": "avg_155_tiger_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "I know I backed the right one! This is where Vina hid her joker!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "I know I backed the right one! This is where Vina hid her joker!"
     },
     {
-        "text": "Morgan, we've got the Steam Knights on our side!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Morgan, we've got the Steam Knights on our side!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "There are Steam Knights left in Londinium? Here?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "There are Steam Knights left in Londinium? Here?"
     },
     {
-        "text": "Are they guarding the Mausoleum of Kings? The Sighs of Kings?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Are they guarding the Mausoleum of Kings? The Sighs of Kings?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Ha, who cares what they're doing?",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Ha, who cares what they're doing?"
     },
     {
-        "text": "Vina is their king!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Vina is their king!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 2
+        }
     },
     {
-        "text": "When we come out up top with the Steam Knights, those Sarkaz will... hey, Morgan, what's that look on your face for?",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "When we come out up top with the Steam Knights, those Sarkaz will... hey, Morgan, what's that look on your face for?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Vina's gonna get the Sighs of Kings.",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Vina's gonna get the Sighs of Kings."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#7$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#7$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Four years. The Steam Knights have stayed by the sword for four years, in this sunless dungeon.",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Four years. The Steam Knights have stayed by the sword for four years, in this sunless dungeon."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 1
+        }
     },
     {
-        "text": "They didn't show up when the Sarkaz occupied the city. They didn't show up when the Sarkaz took over the factories. They didn't show up when the Sarkaz burned the noble houses.",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "They didn't show up when the Sarkaz occupied the city. They didn't show up when the Sarkaz took over the factories. They didn't show up when the Sarkaz burned the noble houses."
     },
     {
-        "text": "What do they think?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "What do they think?"
     },
     {
-        "text": "Are they gonna side with intruders into the Mausoleum of Kings?",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Are they gonna side with intruders into the Mausoleum of Kings?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 3
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.7,
-        "channel": "a",
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.7,
+            "channel": "a",
+            "loop": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 0.3
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0,
-        "channel": "b",
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0,
+            "channel": "b",
+            "loop": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.9,
-        "channel": "b",
-        "fadetime": 0
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.9,
+            "channel": "b",
+            "fadetime": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "tag": "stopsound",
-        "channel": "b",
-        "fadetime": 0.3
+        "command": "stopsound",
+        "params": {
+            "channel": "b",
+            "fadetime": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#5$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#5$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Who's there?!",
-        "tag": "name",
-        "value": "Morgan"
+        "command": "name",
+        "value": "Morgan",
+        "text": "Who's there?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#9$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#9$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Take your weapon, Morgan.",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Take your weapon, Morgan."
     },
     {
-        "text": "They're strong... they're all around us.",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "They're strong... they're all around us."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Hah, this is getting interesting.",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Hah, this is getting interesting."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Why are the hoodlums of Norport here?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Why are the hoodlums of Norport here?"
     },
     {
-        "text": "The Glasgow Gang? Under Alexandrina?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The Glasgow Gang? Under Alexandrina?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_405_1#5$1",
-        "name2": "avg_155_tiger_1#7$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_405_1#5$1",
+            "name2": "avg_155_tiger_1#7$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Show your face, now!",
-        "tag": "name",
-        "value": "Indra"
+        "command": "name",
+        "value": "Indra",
+        "text": "Show your face, now!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Hmph. There are enough variables without that sound of gushing steam rising in Londinium again.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hmph. There are enough variables without that sound of gushing steam rising in Londinium again."
     },
     {
-        "text": "What would the Duke think if she knew there were survivors among the Steam Knights?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "What would the Duke think if she knew there were survivors among the Steam Knights?"
     },
     {
-        "text": "Would she be uneasy? Or glad that the glorious heroes of old have returned?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Would she be uneasy? Or glad that the glorious heroes of old have returned?"
     },
     {
-        "text": "Ha, glory...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Ha, glory..."
     },
     {
-        "text": "Let's take care of the hoodlums. Don't let them get in Allerdale's way.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Let's take care of the hoodlums. Don't let them get in Allerdale's way."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "32_g10_kingrestcore",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "32_g10_kingrestcore",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$church_intro",
-        "key": "$church_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$church_intro",
+            "key": "$church_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1"
+        }
     },
     {
-        "text": "(Heavy gushing)",
-        "tag": "name",
-        "value": "'Steam Armor'"
+        "command": "name",
+        "value": "Steam Armor",
+        "text": "(Heavy gushing)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#4$2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#4$2"
+        }
     },
     {
-        "text": "...Steam Knights.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "...Steam Knights."
     },
     {
-        "text": "Four years... there are survivors among the Steam Knights?",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Four years... there are survivors among the Steam Knights?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#9$1"
+        }
     },
     {
-        "text": "Those marks... they should have been lethal wounds. The Sarkaz spikes destroyed the cores. There's no way the wearer would survive.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Those marks... they should have been lethal wounds. The Sarkaz spikes destroyed the cores. There's no way the wearer would survive."
     },
     {
-        "text": "Plus, no one could enter or leave the Mausoleum of Kings without the royal key.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Plus, no one could enter or leave the Mausoleum of Kings without the royal key."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1"
+        }
     },
     {
-        "text": "He's spent four years in this dark dungeon...",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "He's spent four years in this dark dungeon..."
     },
     {
-        "text": "Even if he survived the initial carnage, how could he have survived in this place?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Even if he survived the initial carnage, how could he have survived in this place?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#7$2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#7$2"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1"
+        }
     },
     {
-        "text": "What does the man in the armor look like now?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "What does the man in the armor look like now?"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1"
+        }
     },
     {
-        "text": "(Heavy gushing)",
-        "tag": "name",
-        "value": "'Steam Armor'"
+        "command": "name",
+        "value": "Steam Armor",
+        "text": "(Heavy gushing)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#4$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#7$1"
+        }
     },
     {
-        "text": "Who are... you...?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Who are... you...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "No... what are you?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "No... what are you?"
     },
     {
         "text": "A flame sparks in the helmet of the armor."
@@ -1324,50 +1560,60 @@
         "text": "The flame..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "initamount": 0,
-        "amount": 0.7,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "initamount": 0,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "32_i03",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "y": -100,
-        "x": -200,
-        "fadetime": 0,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "32_i03",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "y": -100,
+            "x": -200,
+            "fadetime": 0,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "xTo": 50,
-        "duration": 30,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "x": 50,
+            "duration": 30,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "The armor roaring in the flames."
@@ -1385,43 +1631,51 @@
         "text": "A nightmare, too terrible to gaze upon."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "He is back. Back before her."
@@ -1430,291 +1684,347 @@
         "text": "Allerdale cannot keep herself from trembling."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "Have you come to settle this?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Have you come to settle this?"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1"
+        }
     },
     {
-        "text": "(Heavy gushing)",
-        "tag": "name",
-        "value": "'Steam Armor'"
+        "command": "name",
+        "value": "Steam Armor",
+        "text": "(Heavy gushing)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#4$2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#4$2"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#3$2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#3$2"
+        }
     },
     {
-        "text": "Allerdale!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Allerdale!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Look out!",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Look out!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "channel": "run",
-        "loop": false,
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "channel": "run",
+            "loop": false,
+            "volume": 0.9
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "xpos": 800,
-        "fadetime": 0.5,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "x": 800,
+            "block": true
+        }
     },
     {
-        "tag": "stopsound",
-        "fadetime": 1,
-        "channel": "run"
+        "command": "stopsound",
+        "params": {
+            "fadetime": 1,
+            "channel": "run"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "32_i12",
-        "xScale": 1.4,
-        "yScale": 1.4,
-        "y": 250,
-        "x": -200,
-        "fadetime": 0.3,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "32_i12",
+            "xscale": 1.4,
+            "yscale": 1.4,
+            "y": 250,
+            "x": -200,
+            "fadetime": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bldwhoosh",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bldwhoosh",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": -1,
-        "xstrength": 10,
-        "ystrength": 8,
-        "vibrato": 40,
-        "randomness": 90,
-        "fadeout": false,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": -1,
+            "xstrength": 10,
+            "ystrength": 8,
+            "vibration": 40,
+            "randomness": 90,
+            "fadeout": false,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Steam Knight, I am Alexandrina Vina Victoria, heir to the Aslan kings.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Steam Knight, I am Alexandrina Vina Victoria, heir to the Aslan kings."
     },
     {
-        "text": "Halt your attack, knight.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "Halt your attack, knight."
     },
     {
-        "text": "We are not your enemies.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "We are not your enemies."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 10,
-        "ystrength": 8,
-        "vibrato": 40,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 10,
+            "ystrength": 8,
+            "vibration": 40,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "'Steam Armor'"
+        "command": "name",
+        "value": "Steam Armor",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "image",
-        "image": "32_i12",
-        "xScale": 1.4,
-        "yScale": 1.4,
-        "y": 0,
-        "x": -100,
-        "fadetime": 1,
-        "block": false
+        "command": "image",
+        "params": {
+            "image": "32_i12",
+            "xscale": 1.4,
+            "yscale": 1.4,
+            "y": 0,
+            "x": -100,
+            "fadetime": 1,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.4,
-        "yScaleFrom": 1.4,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "xTo": 0,
-        "yTo": -80,
-        "duration": 45,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.4,
+            "yscalefrom": 1.4,
+            "xscale": 1,
+            "yscale": 1,
+            "x": 0,
+            "y": -80,
+            "duration": 45,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "subtitle",
-        "text": "'Victoria.'",
-        "x": 300,
-        "y": 370,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700
+        "command": "subtitle",
+        "params": {
+            "text": "'Victoria.'",
+            "x": 300,
+            "y": 370,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700
+        },
+        "text": "'Victoria.'"
     },
     {
-        "tag": "subtitle"
+        "command": "subtitle"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "Siege hears a voice echo above her head."
@@ -1729,28 +2039,32 @@
         "text": "The dark knight raises his massive weapon towards her."
     },
     {
-        "tag": "image",
-        "image": "32_i12",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "y": -80,
-        "x": 0,
-        "fadetime": 0.5,
-        "block": false,
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "32_i12",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "y": -80,
+            "x": 0,
+            "fadetime": 0.5,
+            "block": false,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.2,
-        "yScaleFrom": 1.2,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "xFrom": 0,
-        "xTo": 0,
-        "yFrom": -80,
-        "yTo": 0,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.2,
+            "yscalefrom": 1.2,
+            "xscale": 1,
+            "yscale": 1,
+            "xfrom": 0,
+            "x": 0,
+            "yfrom": -80,
+            "y": 0,
+            "duration": 20,
+            "block": false
+        }
     },
     {
         "text": "'Victoria.'"
@@ -1765,9 +2079,9 @@
         "text": "The Sighs of Kings, the symbol of the royal house of Victoria."
     },
     {
-        "text": "'Victoria.'",
-        "tag": "name",
-        "value": "'The Last Steam Knight'"
+        "command": "name",
+        "value": "The Last Steam Knight",
+        "text": "'Victoria.'"
     },
     {
         "text": "He called the sword Victoria."
@@ -1785,915 +2099,1085 @@
         "text": "He charges towards the heir to the throne."
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 50,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 50,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "32_g10_kingrestcore",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "32_g10_kingrestcore",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#5$1"
+        }
     },
     {
-        "text": "Get out of the way, Siege!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Get out of the way, Siege!"
     },
     {
-        "text": "Why did the Steam Knight attack you?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Why did the Steam Knight attack you?"
     },
     {
-        "text": "Can't he tell...?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Can't he tell...?"
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#1$1"
+        }
     },
     {
-        "text": "Get down!",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Totter",
+        "text": "Get down!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_stmwpn_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_stmwpn_n",
+            "volume": 1
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.2
+    },
+    {
+        "command": "effect",
+        "params": {
+            "name": "$e_slash_02_l",
+            "rox": 110,
+            "y": -50,
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_slash_02_l",
-        "rox": 110,
-        "y": -50,
-        "layer": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": -80,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.3,
-        "block": false
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": -80,
-        "fadetime": 0.3,
-        "block": false
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "shake",
+            "power": 10,
+            "duration": 100,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1",
-        "fadetime": 0.5
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": -50,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "shake",
-        "power": 10,
-        "times": 100,
-        "fadetime": 0.3,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": 50,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": -50,
-        "fadetime": 0,
-        "block": false
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": 50,
-        "fadetime": 0.5,
-        "block": false
+        "command": "name",
+        "value": "Dagda",
+        "text": "Argh... *cough*..."
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#4$1"
+        }
     },
     {
-        "text": "Argh... *cough*...",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Totter",
+        "text": "The sword of fire..."
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#4$1"
+        "command": "name",
+        "value": "Totter",
+        "text": "Don't let it hit you!"
     },
     {
-        "text": "The sword of fire...",
-        "tag": "name",
-        "value": "Totter"
+        "command": "dialog"
     },
     {
-        "text": "Don't let it hit you!",
-        "tag": "name",
-        "value": "Totter"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "character"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_stmwpn_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1",
-        "fadetime": 0.5
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_stmwpn_n",
-        "volume": 1
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "effect",
+        "params": {
+            "name": "$e_slash_01_l",
+            "x": -100,
+            "y": 80,
+            "rox": 0,
+            "roy": 150,
+            "roz": 90,
+            "layer": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_slash_01_l",
-        "x": -100,
-        "y": 80,
-        "rox": 0,
-        "roy": 150,
-        "roz": 90,
-        "layer": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.3,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "avg_npc_399_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "It's gone mad! We can't stop it!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_399_1#1$1"
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "Get out of here! Get out! Get out..."
     },
     {
-        "text": "It's gone mad! We can't stop it!",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "dialog"
     },
     {
-        "text": "Get out of here! Get out! Get out...",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "playsound",
+        "params": {
+            "key": "$e_imp_stmwpn_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_imp_stmwpn_n",
-        "volume": 1
+        "command": "effect",
+        "params": {
+            "name": "$e_slash_02_l",
+            "x": -100,
+            "y": 80,
+            "rox": -10,
+            "roy": 80,
+            "roz": 90,
+            "layer": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_slash_02_l",
-        "x": -100,
-        "y": 80,
-        "rox": -10,
-        "roy": 80,
-        "roz": 90,
-        "layer": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.3,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_fireharm",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tear",
+            "volume": 0.4,
+            "loop": false,
+            "channel": "blood0",
+            "delay": 0.1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_fireharm",
-        "volume": 1
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "shake",
+            "power": 5,
+            "duration": 40,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tear",
-        "volume": 0.4,
-        "loop": false,
-        "channel": "blood0",
-        "delay": 0.1
+        "command": "name",
+        "value": "Victorian Mercenary",
+        "text": "Gah!"
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "shake",
-        "power": 5,
-        "times": 40,
-        "fadetime": 0.2,
-        "block": false
+        "command": "dialog"
     },
     {
-        "text": "Gah!",
-        "tag": "name",
-        "value": "Victorian Mercenary"
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": -50,
+            "block": false
+        }
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": -50,
-        "fadetime": 0.5,
-        "block": false
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 0.7
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_399_1#1$1",
+            "name2": "avg_npc_399_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "effect",
+        "params": {
+            "name": "$e_slash_01_l",
+            "x": 0,
+            "y": 0,
+            "rox": -80,
+            "roy": 70,
+            "roz": 120,
+            "layer": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_399_1#1$1",
-        "name2": "avg_npc_399_1#1$1"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "effect",
-        "name": "$e_slash_01_l",
-        "x": 0,
-        "y": 0,
-        "rox": -80,
-        "roy": 70,
-        "roz": 120,
-        "layer": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$e_imp_stmwpn_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_imp_stmwpn_n",
-        "volume": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.9,
+            "g": 0.25,
+            "b": 0.2,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.03,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.9,
-        "g": 0.25,
-        "b": 0.2,
-        "fadetime": 0.3,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "left",
+            "type": "shake",
+            "power": 5,
+            "duration": 40,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "shake",
+            "power": 5,
+            "duration": 40,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "left",
-        "type": "shake",
-        "power": 5,
-        "times": 40,
-        "fadetime": 0.2,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_fireharm",
+            "volume": 1
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "shake",
-        "power": 5,
-        "times": 40,
-        "fadetime": 0.2,
-        "block": false
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tear",
+            "volume": 0.4,
+            "loop": false,
+            "channel": "blood1",
+            "delay": 0.1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_fireharm",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_tear",
+            "volume": 0.4,
+            "loop": false,
+            "channel": "blood2",
+            "delay": 0.18
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tear",
-        "volume": 0.4,
-        "loop": false,
-        "channel": "blood1",
-        "delay": 0.1
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_tear",
-        "volume": 0.4,
-        "loop": false,
-        "channel": "blood2",
-        "delay": 0.18
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 0.7,
+            "delay": 0.1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 0.7,
-        "delay": 0.1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#7$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Totter",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#9$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Totter",
+        "text": "We'll all be dead before long."
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2"
+        }
     },
     {
-        "text": "We'll all be dead before long.",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Siege",
+        "text": "Get your men out."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#11$1"
+        }
     },
     {
-        "text": "Get your men out.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Totter",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#11$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#6$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Totter"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Do as Vina says."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#6$1"
+        "command": "character",
+        "params": {
+            "name": "avg_4062_totter_1#1$1"
+        }
     },
     {
-        "text": "Do as Vina says.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Totter",
+        "text": "Mission aborted, then."
     },
     {
-        "tag": "character",
-        "name": "avg_4062_totter_1#1$1"
+        "command": "name",
+        "value": "Totter",
+        "text": "Looks like my retirement plan will have to wait."
     },
     {
-        "text": "Mission aborted, then.",
-        "tag": "name",
-        "value": "Totter"
+        "command": "dialog"
     },
     {
-        "text": "Looks like my retirement plan will have to wait.",
-        "tag": "name",
-        "value": "Totter"
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 1
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "name",
+        "value": "Siege",
+        "text": "Dagda, take the mercs and get out."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#5$1"
+        }
     },
     {
-        "text": "Dagda, take the mercs and get out.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Your Highness!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2"
+        }
     },
     {
-        "text": "Your Highness!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Siege",
+        "text": "You're the last one who bowed to them."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2"
+        "command": "name",
+        "value": "Siege",
+        "text": "Take their story back, let it see the light of day."
     },
     {
-        "text": "You're the last one who bowed to them.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#7$1"
+        }
     },
     {
-        "text": "Take their story back, let it see the light of day.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Dagda",
+        "text": "The story belongs to all of us, Siege."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#7$1"
+        "command": "name",
+        "value": "Dagda",
+        "text": "We should tell it together."
     },
     {
-        "text": "The story belongs to all of us, Siege.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#9$1"
+        }
     },
     {
-        "text": "We should tell it together.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "I don't know what's come over you, Allerdale."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#9$1"
+        "command": "name",
+        "value": "Dagda",
+        "text": "I used to respect you. I thought you were worthy of a knight's honor. No, you were a knight paragon in my mind."
     },
     {
-        "text": "I don't know what's come over you, Allerdale.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Always at the forefront, not caring for fame and fortune, not afraid of any foe."
     },
     {
-        "text": "I used to respect you. I thought you were worthy of a knight's honor. No, you were a knight paragon in my mind.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1"
+        }
     },
     {
-        "text": "Always at the forefront, not caring for fame and fortune, not afraid of any foe.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "You were Cumberland the Ever on High!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#7$1"
+        }
     },
     {
-        "text": "You were Cumberland the Ever on High!",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Nothing can remain on High forever, Dagda."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#2$1"
+        }
     },
     {
-        "text": "Nothing can remain on High forever, Dagda.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Dagda",
+        "text": "But we fought together, didn't we?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#2$1"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Your story is here too, Allerdale."
     },
     {
-        "text": "But we fought together, didn't we?",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "If you want to come back."
     },
     {
-        "text": "Your story is here too, Allerdale.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "If you want to come back.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "I can't do that, can I?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_396_1#1$1"
+        }
     },
     {
-        "text": "I can't do that, can I?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Dagda",
+        "text": "It depends on you."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_396_1#1$1"
+        "command": "name",
+        "value": "Dagda",
+        "text": "But first, we deal with this knight."
     },
     {
-        "text": "It depends on you.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "My master taught me that a duel between knights must be fair and honorable."
     },
     {
-        "text": "But first, we deal with this knight.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Our foe is a glorious hero."
     },
     {
-        "text": "My master taught me that a duel between knights must be fair and honorable.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2",
+            "name2": "avg_npc_396_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Our foe is a glorious hero.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Dagda",
+        "text": "Allow me to stand by your side, Your Highness."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2",
-        "name2": "avg_npc_396_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2",
+            "name2": "avg_npc_396_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Allow me to stand by your side, Your Highness.",
-        "tag": "name",
-        "value": "Dagda"
+        "command": "name",
+        "value": "Siege",
+        "text": "...Of course."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2",
-        "name2": "avg_npc_396_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#7$1"
+        }
     },
     {
-        "text": "...Of course.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Fight... him?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "Fight... him?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "A pathetic, despicable, lying traitor."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "How can one like that challenge fate?"
     },
     {
-        "text": "A pathetic, despicable, lying traitor.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#1$1"
+        }
     },
     {
-        "text": "How can one like that challenge fate?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "It's a wonderful fable, isn't it?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#1$1"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "An innocent child wanted to become a hero. But she went bad, and when the hero returned from history, she found his sword at her throat."
     },
     {
-        "text": "It's a wonderful fable, isn't it?",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#5$1"
+        }
     },
     {
-        "text": "An innocent child wanted to become a hero. But she went bad, and when the hero returned from history, she found his sword at her throat.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "The story should end with her death."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#5$1"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "She should lose everything. Never to fulfill her destiny."
     },
     {
-        "text": "The story should end with her death.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "Vina, I..."
     },
     {
-        "text": "She should lose everything. Never to fulfill her destiny.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#3$2"
+        }
     },
     {
-        "text": "Vina, I...",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "name",
+        "value": "Siege",
+        "text": "I don't want to hear you talk about 'destiny' anymore, Allerdale."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#3$2"
+        "command": "name",
+        "value": "Siege",
+        "text": "Hold your head high, Allerdale Cumberland. There is no such thing as destiny, for me or for you."
     },
     {
-        "text": "I don't want to hear you talk about 'destiny' anymore, Allerdale.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_407_1#6$2"
+        }
     },
     {
-        "text": "Hold your head high, Allerdale Cumberland. There is no such thing as destiny, for me or for you.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "I need to calm him down. Then, if you still want this sword, all you need to do is challenge me, and I'll abide."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_407_1#6$2"
+        "command": "name",
+        "value": "Siege",
+        "text": "This is not your bloody destiny, Allerdale. What you want to do, do it."
     },
     {
-        "text": "I need to calm him down. Then, if you still want this sword, all you need to do is challenge me, and I'll abide.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Siege",
+        "text": "But don't say that word anymore."
     },
     {
-        "text": "This is not your bloody destiny, Allerdale. What you want to do, do it.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#4$1"
+        }
     },
     {
-        "text": "But don't say that word anymore.",
-        "tag": "name",
-        "value": "Siege"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#4$1"
+        "command": "dialog"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_steamrelease"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_651_1#1$1"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_steamrelease"
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_steamrelease",
+            "layer": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_651_1#1$1"
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_steamrelease",
-        "layer": 1
+        "command": "name",
+        "value": "The Last Steam Knight",
+        "text": "(Heavy gushing)"
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_397_1#6$1"
+        }
     },
     {
-        "text": "(Heavy gushing)",
-        "tag": "name",
-        "value": "'The Last Steam Knight'"
+        "command": "name",
+        "value": "Allerdale",
+        "text": "He's coming."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_397_1#6$1"
+        "command": "dialog"
     },
     {
-        "text": "He's coming.",
-        "tag": "name",
-        "value": "Allerdale"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
-    },
-    {
-        "tag": "character"
-    },
-    {
-        "tag": "image"
+        "command": "image"
     }
 ]

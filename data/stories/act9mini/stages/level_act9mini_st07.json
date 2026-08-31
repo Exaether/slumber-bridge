@@ -1,62 +1,67 @@
 [
     {
-        "text": "\u5361\u897f\u7c73\u5c141.5-7",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_kxstreet",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_kxstreet",
-        "screenadapt": "coverall"
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.4
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "character",
+        "params": {
+            "name": "char_204na_platnm_1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204na_platnm_1",
-        "fadetime": 1.5
-    },
-    {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "My life as a student has come to an end..."
@@ -74,8 +79,10 @@
         "text": "One could also enlist in the military and go through an entire year of hellish training, and then spend one's days on the borders praying that war doesn't break out."
     },
     {
-        "tag": "character",
-        "name": "char_204na_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204na_platnm_1#7"
+        }
     },
     {
         "text": "Oh, of course, there is the option of working for the Adeptus Sprawiedliwi, with a bright future ahead of you, but I'm not interested in a career like that one bit."
@@ -84,32 +91,38 @@
         "text": "That's why..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_223",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_223",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Miss Centaurea, would you be interested trying out for my company's knight preliminaries?",
-        "tag": "name",
-        "value": "Knight Scout"
+        "command": "name",
+        "value": "Knight Scout",
+        "text": "Miss Centaurea, would you be interested trying out for my company's knight preliminaries?"
     },
     {
-        "tag": "character",
-        "name": "char_204na_platnm_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_204na_platnm_1#4"
+        }
     },
     {
         "text": "...when the Rose Paper Union man handed me his business card, I took it right away, trading pleasantries with a surprised expression on my face."
@@ -118,8 +131,10 @@
         "text": "A knight."
     },
     {
-        "tag": "character",
-        "name": "char_204na_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204na_platnm_1#3"
+        }
     },
     {
         "text": "Here in Kazimierz, who wouldn't want to be a knight?"
@@ -134,60 +149,72 @@
         "text": "I'm one of the finest archers there is, and I'm pretty hot too. Most importantly, I'm willing to follow the company's orders."
     },
     {
-        "tag": "character",
-        "name": "char_204na_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204na_platnm_1#8"
+        }
     },
     {
         "text": "If I could become a knight, even if I didn't win fights, I could still be an idol in the Eszeweria Knightclub or something, sing and dance, rake in some money while I'm young, and retire early. That wouldn't be so bad."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G09",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G09",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "In the end, I got second place in Rose Paper's knight prelims that year, and I landed myself the contract of my dreams."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
         "text": "As for the one who got first place? It was a blond man who stank of sunshine..."
@@ -202,8 +229,10 @@
         "text": "At least, I didn't stand a chance in the polls."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#8"
+        }
     },
     {
         "text": "Oh well, no reason to complain about that."
@@ -212,75 +241,87 @@
         "text": "There's a long road ahead. Who knows? I might get my knight title before him."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_arena_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_arena_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_222",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_222",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Rest easy, Miss Centaurea. You'll get a title this time.",
-        "tag": "name",
-        "value": "Manager"
+        "command": "name",
+        "value": "Manager",
+        "text": "Rest easy, Miss Centaurea. You'll get a title this time."
     },
     {
-        "text": "I've already confirmed with headquarters. Right now, out of all the contracted independent knights, you have the highest priority.",
-        "tag": "name",
-        "value": "Manager"
+        "command": "name",
+        "value": "Manager",
+        "text": "I've already confirmed with headquarters. Right now, out of all the contracted independent knights, you have the highest priority."
     },
     {
-        "text": "You might get a little less matches than before, but we'll arrange for you to get more media time.",
-        "tag": "name",
-        "value": "Manager"
+        "command": "name",
+        "value": "Manager",
+        "text": "You might get a little less matches than before, but we'll arrange for you to get more media time."
     },
     {
-        "text": "Just wait a few months. Once you get your title, you'll be the foremost titled knight of your class at Rose.",
-        "tag": "name",
-        "value": "Manager"
+        "command": "name",
+        "value": "Manager",
+        "text": "Just wait a few months. Once you get your title, you'll be the foremost titled knight of your class at Rose."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "text": "Hm, alright. Thanks.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "Hm, alright. Thanks."
     },
     {
         "text": "It wasn't my first time hearing an empty promise like that."
@@ -292,8 +333,10 @@
         "text": "They get all caught up in their own illusions there. No managed independent knight would take their word for anything."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "Well, this manager's a nice fella. He's industrious, and he jumps through hoops for me."
@@ -305,8 +348,10 @@
         "text": "I'm getting tired of this knight business."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "Before I even got my title, I'm hitting all the ugly problems a proper knight could possibly come across in her career."
@@ -321,8 +366,10 @@
         "text": "Having to deal with the made up scandals and the match arrangements that change at any moment for no reason, though. That's really wearing me out."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "Do I really have to be running errands like that just because I'm a seed for this year's independent knights?"
@@ -340,8 +387,10 @@
         "text": "......"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
         "text": "The only good news I've had recently, if it can be called that, is that my application for a title finally made it through the Court."
@@ -368,42 +417,50 @@
         "text": "*Sigh*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_hotel",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_hotel",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#6",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#6",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "What's the deal with this Kuranta today?"
@@ -418,8 +475,10 @@
         "text": "If... If I didn't have to pretend I was hurt, then I'd have\u2014"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "......"
@@ -434,46 +493,56 @@
         "text": "\u2014or you disappear without a trace after showing up on the news."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_arena_1",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_arena_1",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
         "text": "The Rose Paper Union is putting all its independent knights on a variety show today."
@@ -485,23 +554,27 @@
         "text": "But right before the rehearsal, a few uninvited guests paid us a visit."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "They dragged all the knights into the corner and interrogated us one by one."
@@ -522,182 +595,212 @@
         "text": "As for the show, we ended up starting after a four hour delay."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "What happened to the knight that got taken away? No idea. Nobody ever heard anything about him again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_hotel",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_hotel",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "Not long after that incident, I get a phone call."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "*ring* *ring*."
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "text": "Phew... Hello.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "Phew... Hello."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "focus": -1
+        }
     },
     {
-        "text": "Good afternoon, Independent Knight Centaurea. Congratulations on your forthcoming title.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Good afternoon, Independent Knight Centaurea. Congratulations on your forthcoming title."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
-        "text": "I have no idea how you got my number, but if you're calling about business, talk to my manager. Thanks.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "I have no idea how you got my number, but if you're calling about business, talk to my manager. Thanks."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2",
+            "focus": -1
+        }
     },
     {
-        "text": "It doesn't sound like you are very fond of your job. I can hear the exhaustion.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "It doesn't sound like you are very fond of your job. I can hear the exhaustion."
     },
     {
-        "text": "I can offer you a job that's far more suitable.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I can offer you a job that's far more suitable."
     },
     {
-        "text": "You only need to pass a simple test, and the job will be yours.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You only need to pass a simple test, and the job will be yours."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
         "text": "While I'm still being confused and hesitant, the man on the other end of the terminal keep going."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "focus": -1
+        }
     },
     {
-        "text": "The arena's too small for you, isn't it?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The arena's too small for you, isn't it?"
     },
     {
-        "text": "By the time you release your bowstring, the arrow has already made it to the other end of the arena.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "By the time you release your bowstring, the arrow has already made it to the other end of the arena."
     },
     {
-        "text": "With the job I'm offering, you will find the salary as satisfactory as that you've received as a knight, and you will also have much more freedom.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "With the job I'm offering, you will find the salary as satisfactory as that you've received as a knight, and you will also have much more freedom."
     },
     {
-        "text": "If you like, Miss Centaurea, your arrows could pierce even the night skies of the Grand Knight Territory.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "If you like, Miss Centaurea, your arrows could pierce even the night skies of the Grand Knight Territory."
     },
     {
-        "text": "I await your reply.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I await your reply."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
         "text": "As soon as he hung up, I received an address on my terminal."
@@ -709,53 +812,65 @@
         "text": "'If you like, Miss Centaurea, your arrows could pierce even the night skies of the Grand Knight Territory.'"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#8"
+        }
     },
     {
         "text": "Sounds better than shooting commercials."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G07",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "I made my way to the address. A flower shop. When the owner noticed me, he hands me a bouquet."
@@ -776,8 +891,10 @@
         "text": "But it also means I have no actual choice."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
         "text": "Could I go back and be a regular knight after getting 'their' invitation?"
@@ -786,8 +903,10 @@
         "text": "It's either completing their test or showing up in the next day's newspapers."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#6"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#6"
+        }
     },
     {
         "text": "I can already imagine the headlines\u2014'Independent Knight Centaurea Dies at Home in Freak Accident.'"
@@ -796,42 +915,50 @@
         "text": "Hmph, no real choice at all..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G05",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G05",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "I don't like to kill, but, right now, I have lots of reasons to do in this guy. That guy enjoying his massage chair in front of his floor to ceiling window."
@@ -852,27 +979,33 @@
         "text": "I guess that's why Kazimierz needs Knight-Assassins."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "I think to myself, hold my breath and concentrate, pulling back my bowstring\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_arrow_h"
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_arrow_h"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 80,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 80,
+            "block": true
+        }
     },
     {
         "text": "The arrow draws an arc in the air and bores through the window, his forehead, and his massage chair, before burying itself in the expensive hardwood floor."
@@ -884,8 +1017,10 @@
         "text": "I would've had to figure out how to pierce his armor, I would've had to throw in lots of flashy moves to please the crowd."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#8"
+        }
     },
     {
         "text": "But this way?"
@@ -903,165 +1038,193 @@
         "text": "The chair is still giving him his massage, but he'll never get up out of it again."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "*ring* *ring*."
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
-        "text": "Hello.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "Hello."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3",
+            "focus": -1
+        }
     },
     {
-        "text": "Wonderful work, Miss Centaurea. You masterfully gathered your intel and picked the finest vantage point from which to carry out your mission. Superb execution, considering your age and talents.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Wonderful work, Miss Centaurea. You masterfully gathered your intel and picked the finest vantage point from which to carry out your mission. Superb execution, considering your age and talents."
     },
     {
-        "text": "From here on out, you are part of the Armorless Union.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "From here on out, you are part of the Armorless Union."
     },
     {
-        "text": "We've concluded our negotiations with the Rose Paper Union too. They agreed to terminate your contract, and you will receive a mental health compensation payout.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "We've concluded our negotiations with the Rose Paper Union too. They agreed to terminate your contract, and you will receive a mental health compensation payout."
     },
     {
-        "text": "Please come to the General Chamber of Commerce's headquarters tomorrow morning. Someone will meet you there for the follow-up arrangements.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Please come to the General Chamber of Commerce's headquarters tomorrow morning. Someone will meet you there for the follow-up arrangements."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
-        "text": "Alright.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "Alright."
     },
     {
-        "text": "So what should I call you?",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "So what should I call you?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2",
+            "focus": -1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "text": "You may call me\u2014",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You may call me\u2014"
     },
     {
-        "text": "Platinum.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Platinum."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G03",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G03",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "That's the kind of place Kazimierz is."
@@ -1082,8 +1245,10 @@
         "text": "Management, leadership, staffing, and command."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#8"
+        }
     },
     {
         "text": "Hmm... maybe he's trying to develop my leadership skills, training me to work in management?"
@@ -1092,42 +1257,50 @@
         "text": "I guess it wouldn't be so bad to sit in an office and boss people around, without dirtying my own hands."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G03",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G03",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "After three months, the people have long forgotten there was ever an independent knight called Centaurea."
@@ -1148,8 +1321,10 @@
         "text": "It was as though she never existed."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "Forgotten so soon after shining so brightly."
@@ -1158,8 +1333,10 @@
         "text": "Maybe that's the fate of all knights."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "But being in the Armorless Union is different. They hold a knight's life and death in their hands. Even the most prideful knights are afraid to speak up before them."
@@ -1168,8 +1345,10 @@
         "text": "That is, as long as we don't mess up the jobs the bosses hand down to us."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
         "text": "After all... K.G.C.C.'s directors don't like seeing the words 'mission failed' on their reports."
@@ -1178,128 +1357,150 @@
         "text": "And if we do screw it up, even Platinum himself gets an earful."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G03",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G03",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216",
+            "focus": -1
+        }
     },
     {
-        "text": "That's how the Armorless Union works?",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "That's how the Armorless Union works?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Armorless Union Member"
+        "command": "name",
+        "value": "Armorless Union Member",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216",
+            "focus": -1
+        }
     },
     {
-        "text": "I'm sure I was clear that there's nothing more important than intel!",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "I'm sure I was clear that there's nothing more important than intel!"
     },
     {
-        "text": "I don't care whether that knight's dead or alive, but you let him send out top secret intel?",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "I don't care whether that knight's dead or alive, but you let him send out top secret intel?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216",
+            "focus": -1
+        }
     },
     {
-        "text": "'The target planted fake transmitters to deceive our assets and hid a miniature transmitter with his body, allowing it to send out information'?",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "'The target planted fake transmitters to deceive our assets and hid a miniature transmitter with his body, allowing it to send out information'?"
     },
     {
-        "text": "You couldn't have been more careless, could you?",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "You couldn't have been more careless, could you?"
     },
     {
-        "text": "You took care of the guy, but what about the problem?!",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "You took care of the guy, but what about the problem?!"
     },
     {
-        "text": "Have you taken care of my problem?!",
-        "tag": "name",
-        "value": "Spokesman"
+        "command": "name",
+        "value": "Spokesman",
+        "text": "Have you taken care of my problem?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_216"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_216"
+        }
     },
     {
-        "text": "(Purses lips)",
-        "tag": "name",
-        "value": "Armorless Union Member"
+        "command": "name",
+        "value": "Armorless Union Member",
+        "text": "(Purses lips)"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
-        "text": "(Looks at Platinum)",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "(Looks at Platinum)"
     },
     {
         "text": "The spokesman has been yelling at us for over an hour already. It makes me wonder just where a big shot finds so much time to waste yelling at people."
@@ -1344,8 +1545,10 @@
         "text": "He was the only one who talked during the whole meeting. As for us, well, it didn't seem like we even had permission to speak."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "That was the day I finally figured it out."
@@ -1363,175 +1566,203 @@
         "text": "*Sigh*..."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G07",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "It was a regular rainy night when the Lazurite paid me a visit after I'd taken care of a knight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7,
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "My little pegasus, I'm looking for Platinum. Have you seen him?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "My little pegasus, I'm looking for Platinum. Have you seen him?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "text": "My master's out on a mission right now, Lazurite.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "My master's out on a mission right now, Lazurite."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "Haha, is he now?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Haha, is he now?"
     },
     {
-        "text": "What sort of mission?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "What sort of mission?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "text": "He didn't tell me.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "He didn't tell me."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "Then did he tell you he had doubts about this mission?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Then did he tell you he had doubts about this mission?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
-        "text": "No, he didn't, but I kind of sensed it.",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "No, he didn't, but I kind of sensed it."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "......"
     },
     {
-        "text": "You're an honest one, little pegasus.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "You're an honest one, little pegasus."
     },
     {
-        "text": "Well, since you shared what you know about Platinum with me, let me tell you what I know as well.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Well, since you shared what you know about Platinum with me, let me tell you what I know as well."
     },
     {
-        "text": "'Platinum' is dead. On the path of betrayal, even.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "'Platinum' is dead. On the path of betrayal, even."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#6"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#6"
+        }
     },
     {
-        "text": "!",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "!"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Centaurea"
+        "command": "name",
+        "value": "Centaurea",
+        "text": "......"
     },
     {
         "text": "I knew that he felt something for his target."
@@ -1540,29 +1771,33 @@
         "text": "But I never expected him to give his life for hers."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "You see, it would be very inconvenient for this position to go unfilled, both for me, the Darksteels, and the General Chamber of Commerce directors.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "You see, it would be very inconvenient for this position to go unfilled, both for me, the Darksteels, and the General Chamber of Commerce directors."
     },
     {
-        "text": "How about this, little pegasus?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "How about this, little pegasus?"
     },
     {
-        "text": "Why don't you be the next Platinum?",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Why don't you be the next Platinum?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
         "text": "Put on the spot like that, I can't knee-jerk an answer."
@@ -1574,8 +1809,10 @@
         "text": "All I can do is stand there and mutter incoherent words."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "I'm just not brave enough to answer him."
@@ -1599,87 +1836,105 @@
         "text": "Seeing me standing here like an idiot, Lazurite chuckles a little, and shoves a badge into my hand\u2014the symbol of 'Platinum.'"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_209_1",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_209_1",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "Silence means yes.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Silence means yes."
     },
     {
-        "text": "Do your new job well, Platinum.",
-        "tag": "name",
-        "value": "'Lazurite'"
+        "command": "name",
+        "value": "Lazurite",
+        "text": "Do your new job well, Platinum."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "And then he leaves. And there's Centaurea, who is now Platinum, with a knight lying there on the ground."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G03",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G03",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "It wasn't until I became Platinum that I understood how hard things were for him."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
         "text": "Every day, the K.G.C.C.'s directors dish out difficult assignments to the Armorless Union."
@@ -1691,8 +1946,10 @@
         "text": "Platinum has to manage, command, and take to the field personally. There's no more tiring job in Kazimierz."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
         "text": "Thankfully, everything he taught me came in handy."
@@ -1701,8 +1958,10 @@
         "text": "After I made a few mistakes and got yelled at by the spokespeople a few times, I started to get the hang of things, and, just barely, I'm finally a decent Platinum."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "If I could quit, I would hand in my resignation to the K.G.C.C. the first opportunity I got."
@@ -1711,8 +1970,10 @@
         "text": "With so much responsibility and risk, plus how exhausting it is, who'd want a job like this?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
         "text": "But, you know, I don't have a choice here."
@@ -1721,57 +1982,69 @@
         "text": "*Sigh*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G07",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2.5,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1.5
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "One thing that sucks about being Platinum..."
@@ -1795,8 +2068,10 @@
         "text": "You just dial her number, have her take the call and make her listen to the K.G.C.C."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7"
+        }
     },
     {
         "text": "And Platinum can't refuse whatever it is they want."
@@ -1805,143 +2080,167 @@
         "text": "Which is why\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Go ahead.",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "Go ahead."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#7",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#7",
+            "focus": -1
+        }
     },
     {
-        "text": "Hello, Platinum. We have a secret mission for you. Please see to it immediately.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hello, Platinum. We have a secret mission for you. Please see to it immediately."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1"
+        }
     },
     {
-        "text": "Hmph... Go ahead.",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "Hmph... Go ahead."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "focus": -1
+        }
     },
     {
-        "text": "We want you to make sure that Glorious Shield Industries' Chairman doesn't attend the General Chamber of Commerce's board meeting tomorrow.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "We want you to make sure that Glorious Shield Industries' Chairman doesn't attend the General Chamber of Commerce's board meeting tomorrow."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4"
+        }
     },
     {
-        "text": "Y-You mean...?",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "Y-You mean...?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4",
+            "focus": -1
+        }
     },
     {
-        "text": "Right, and we would prefer that he has no more involvement in Glorious Shield Industries' affairs in the future.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Right, and we would prefer that he has no more involvement in Glorious Shield Industries' affairs in the future."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4"
+        }
     },
     {
-        "text": "I don't think I'm allowed to go after someone that high up.",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "I don't think I'm allowed to go after someone that high up."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4",
+            "focus": -1
+        }
     },
     {
-        "text": "This mission was originally meant for the Lazurites, but they recommended you for the job.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "This mission was originally meant for the Lazurites, but they recommended you for the job."
     },
     {
-        "text": "That's why your phone rang.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "That's why your phone rang."
     },
     {
-        "text": "Here is the mission authorization passcode\u2014",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Here is the mission authorization passcode\u2014"
     },
     {
-        "text": "Please confirm.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Please confirm."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4"
+        }
     },
     {
-        "text": "Confirmed... It's a match.",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "Confirmed... It's a match."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4",
-        "focus": -1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4",
+            "focus": -1
+        }
     },
     {
-        "text": "Very good.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Very good."
     },
     {
-        "text": "Do not disappoint us.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Do not disappoint us."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#4"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "It's easy to make a regular Joe disappear, but it's no simple task to have a K.G.C.C. director die under mysterious circumstances."
@@ -1956,8 +2255,10 @@
         "text": "Apparently, this isn't going to be very difficult. Everything is already in order, and no one will be there to stop me."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#2"
+        }
     },
     {
         "text": "After he hung up, I breathed a long sigh."
@@ -1969,42 +2270,50 @@
         "text": "There are only four hours until daybreak."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G07",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "To make sure the Chairman has no way out, I stationed an Armorless Union squad around his children before heading to the company."
@@ -2022,42 +2331,50 @@
         "text": "It has access to the top floor, where the Chairman's lounge is."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "As soon as I walk into the room, or should I say the floor, I spot the Chairman, still working tirelessly in front of his large terminals."
@@ -2072,8 +2389,10 @@
         "text": "Per the usual procedures, I would get a phone call from the K.G.C.C. right away, so I'm not in a hurry to get out."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
         "text": "It's a phone call. Why does it matter where I take it?"
@@ -2082,33 +2401,39 @@
         "text": "I pull the curtains open. Through the giant floor to ceiling windows, I gaze out at the brilliant lights illuminating the Grand Knight Territory's night sky."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_23_G07",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_23_G07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "When I was still a student, I admired the knights."
@@ -2165,160 +2490,192 @@
         "text": "And you can never escape them, so long as you walk the world."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_ltroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_ltroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#3"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "Hmph...",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "Hmph..."
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#8"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#8"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "*Sigh*... Can't I at least get a little time to veg out...?",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "*Sigh*... Can't I at least get a little time to veg out...?"
     },
     {
-        "tag": "character",
-        "name": "char_204_platnm_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_204_platnm_1#5"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$phonevibration",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$phonevibration",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 5,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 5,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
-        "text": "I'm so tired...",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "I'm so tired..."
     },
     {
-        "text": "I want a vacation...",
-        "tag": "name",
-        "value": "Platinum"
+        "command": "name",
+        "value": "Platinum",
+        "text": "I want a vacation..."
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

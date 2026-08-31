@@ -1,65 +1,71 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "gridbg",
+        "params": {
+            "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2",
+            "solidwidth": "1280/1280/1280/1280",
+            "solidheight": "720/720/720/720",
+            "x": -360
+        }
     },
     {
-        "tag": "gridbg",
-        "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2",
-        "solidwidth": "1280/1280/1280/1280",
-        "solidheight": "720/720/720/720",
-        "x": -360
+        "command": "largebgtween",
+        "params": {
+            "duration": 60,
+            "yfrom": 0,
+            "y": 100,
+            "block": false
+        }
     },
     {
-        "tag": "largebgtween",
-        "duration": 60,
-        "yFrom": 0,
-        "yTo": 100,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle"
+        }
     },
     {
         "text": "Dear Kal'tsit,"
@@ -86,531 +92,613 @@
         "text": "Fortunately, a woman who goes by the name of Savage has joined our little band, which has helped take some of the burden off me."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "gridbg"
+        "command": "gridbg"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "46_g5_rmbtwild_n",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "46_g5_rmbtwild_n",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "A shadow leaps out of the dunes in the moonlight."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "-100,0",
-        "posto": "0,0",
-        "duration": 1.5,
-        "bstart": 0.6,
-        "bend": 0.9
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "-100,0",
+            "posto": "0,0",
+            "duration": 1.5,
+            "bstart": 0.6,
+            "bend": 0.9
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "(Approaches cautiously)",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "(Approaches cautiously)"
     },
     {
-        "text": "(Threatening roar)",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "(Threatening roar)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#1$1",
-        "duration": 1.5,
-        "bstart": 0.4,
-        "bend": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#1$1",
+            "duration": 1.5,
+            "bstart": 0.4,
+            "bend": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "jump",
-        "posto": "0,0",
-        "power": 30,
-        "times": 1,
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "jump",
+            "posto": "0,0",
+            "power": 30,
+            "duration": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "text": "Hey! Go away!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hey! Go away!"
     },
     {
-        "text": "Don't come any closer!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Don't come any closer!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_3"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_3"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "0,0",
-        "posto": "100,0",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "0,0",
+            "posto": "100,0",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#1$1",
-        "posfrom": "-100,0",
-        "posto": "0,0",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#1$1",
+            "posfrom": "-100,0",
+            "posto": "0,0",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Rubs claws excitedly)",
-        "tag": "name",
-        "value": "Massive Sandbeast"
+        "command": "name",
+        "value": "Massive Sandbeast",
+        "text": "(Rubs claws excitedly)"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#7$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Moves head in confusion)",
-        "tag": "name",
-        "value": "Young Sandbeast"
+        "command": "name",
+        "value": "Young Sandbeast",
+        "text": "(Moves head in confusion)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "You seem to have made them even more excited, Amiya.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You seem to have made them even more excited, Amiya."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#5$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#5$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Don't worry, Doctor, I can deal with this!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Don't worry, Doctor, I can deal with this!"
     },
     {
-        "text": "Mum and Dad taught me how to chase the sandbeasts away. All you need to do is imitate the sound of their natural enemies.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Mum and Dad taught me how to chase the sandbeasts away. All you need to do is imitate the sound of their natural enemies."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#6$1"
+        }
     },
     {
-        "text": "Chirp, chirp...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Chirp, chirp..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "100,0",
-        "posto": "100,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "100,0",
+            "posto": "100,0",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#1$1",
-        "posfrom": "0,0",
-        "posto": "0,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#1$1",
+            "posfrom": "0,0",
+            "posto": "0,0",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Pauses in confusion)",
-        "tag": "name",
-        "value": "Massive Sandbeast"
+        "command": "name",
+        "value": "Massive Sandbeast",
+        "text": "(Pauses in confusion)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#10$1"
+        }
     },
     {
-        "text": "Wait, that wasn't right. Was it 'Chip, chip'?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Wait, that wasn't right. Was it 'Chip, chip'?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "100,0",
-        "posto": "100,0",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "100,0",
+            "posto": "100,0",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#7$1",
-        "posfrom": "0,0",
-        "posto": "0,0",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#7$1",
+            "posfrom": "0,0",
+            "posto": "0,0",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Tilts head in confusion)",
-        "tag": "name",
-        "value": "Young Sandbeast"
+        "command": "name",
+        "value": "Young Sandbeast",
+        "text": "(Tilts head in confusion)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#10$1"
+        }
     },
     {
-        "text": "It's still not right. What was it again?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's still not right. What was it again?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "'Aoww'? 'Ku, ku'? 'Tick, tock'?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "'Aoww'? 'Ku, ku'? 'Tick, tock'?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "100,0",
-        "posto": "100,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "100,0",
+            "posto": "100,0",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#1$1",
-        "posfrom": "0,0",
-        "posto": "0,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#1$1",
+            "posfrom": "0,0",
+            "posto": "0,0",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Swings tail in confusion)",
-        "tag": "name",
-        "value": "Massive Sandbeast"
+        "command": "name",
+        "value": "Massive Sandbeast",
+        "text": "(Swings tail in confusion)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "That's not right either...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "That's not right either..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "It's okay, Amiya. I'll take care of this.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "It's okay, Amiya. I'll take care of this."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
         "text": "The Doctor makes a ring with thumb and index finger, and whistles, producing a strange sound."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "100,0",
-        "posto": "100,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "100,0",
+            "posto": "100,0",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#1$1",
-        "posfrom": "0,0",
-        "posto": "0,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#1$1",
+            "posfrom": "0,0",
+            "posto": "0,0",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "jump",
-        "posto": "0,0",
-        "power": 30,
-        "times": 1,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "jump",
+            "posto": "0,0",
+            "power": 30,
+            "duration": 0.3
+        }
     },
     {
-        "text": "(Stands up startled)",
-        "tag": "name",
-        "value": "Massive Sandbeast"
+        "command": "name",
+        "value": "Massive Sandbeast",
+        "text": "(Stands up startled)"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Looks around uneasily)",
-        "tag": "name",
-        "value": "Young Sandbeast"
+        "command": "name",
+        "value": "Young Sandbeast",
+        "text": "(Looks around uneasily)"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandanimaldig"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandanimaldig"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1190_1#1$1",
-        "posfrom": "100,0",
-        "posto": "100,0",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1190_1#1$1",
+            "posfrom": "100,0",
+            "posto": "100,0",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "power": 10,
-        "times": 100,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 10,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Quickly digs a hole)",
-        "tag": "name",
-        "value": "Massive Sandbeast"
+        "command": "name",
+        "value": "Massive Sandbeast",
+        "text": "(Quickly digs a hole)"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandanimaldig"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandanimaldig"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1188_1#5$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1188_1#5$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "action": "shake",
-        "power": 5,
-        "times": 10,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Slowly follows)",
-        "tag": "name",
-        "value": "Young Sandbeast"
+        "command": "name",
+        "value": "Young Sandbeast",
+        "text": "(Slowly follows)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#1$1"
+        }
     },
     {
-        "text": "Wow, Doctor! That was just like the real thing!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Wow, Doctor! That was just like the real thing!"
     },
     {
-        "text": "Let me try!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Let me try!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_unskilledwhistle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_unskilledwhistle"
+        }
     },
     {
         "text": "Amiya presses her tiny hand against her lips, but used too much force, and only gets a sound out after going all red and puffy in the face."
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_1"
+        }
     },
     {
         "text": "The pair of whistles echo across the wastes, sending the sandbeasts scurrying underground."
@@ -622,346 +710,406 @@
         "text": "Then the laughter fades away to silence, and a soft little sigh."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Come here, Amiya.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Come here, Amiya."
     },
     {
-        "text": "Why the sullen look? The sandbeast ran off.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Why the sullen look? The sandbeast ran off."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#7$1",
-        "posfrom": "70,0",
-        "posto": "0,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#7$1",
+            "posfrom": "70,0",
+            "posto": "0,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I could never remember, even after Mum and Dad taught me so many times... and I couldn't protect you, even though I said I would.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I could never remember, even after Mum and Dad taught me so many times... and I couldn't protect you, even though I said I would."
     },
     {
-        "text": "Your hand's still wounded... it hasn't fully healed.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Your hand's still wounded... it hasn't fully healed."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "Don't worry, it doesn't hurt. Anyway, don't you remember?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Don't worry, it doesn't hurt. Anyway, don't you remember?"
     },
     {
-        "text": "It was you who taught me how to make that sound.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "It was you who taught me how to make that sound."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I did?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I did?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "You see? Like I told you, your brain slows down and you start to forget things, if you don't sleep.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You see? Like I told you, your brain slows down and you start to forget things, if you don't sleep."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I... I don't want to sleep.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I... I don't want to sleep."
     },
     {
-        "text": "I'm scared that I'll dream of... those things.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm scared that I'll dream of... those things."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "But you told me you dream of your parents too.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "But you told me you dream of your parents too."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Um...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Um..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "We have some time before our ride gets here. Have a sleep.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "We have some time before our ride gets here. Have a sleep."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hm...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Hm..."
     },
     {
-        "text": "Can I come closer?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Can I come closer?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "When I wake up... the first thing I want to see is you.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "When I wake up... the first thing I want to see is you."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "Of course. Why don't I tell you a few stories while we wait for Savage?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Of course. Why don't I tell you a few stories while we wait for Savage?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "0,0",
-        "posto": "-100,0",
-        "duration": 1,
-        "afrom": 1,
-        "ato": 0
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "0,0",
+            "posto": "-100,0",
+            "duration": 1,
+            "afrom": 1,
+            "ato": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "focus": "l"
+        }
     },
     {
-        "text": "A long time ago, there was a really smart scientist...",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "A long time ago, there was a really smart scientist..."
     },
     {
-        "text": "Her home was in danger, and she made a difficult choice to protect it and the people around her...",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Her home was in danger, and she made a difficult choice to protect it and the people around her..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "*Zzz*...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "*Zzz*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_truckengine",
-        "loop": true,
-        "channel": "bgs",
-        "volume": 0
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_truckengine",
+            "loop": true,
+            "channel": "bgs",
+            "volume": 0
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.8,
-        "channel": "bgs",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.8,
+            "channel": "bgs",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopsound",
-        "channel": "bgs",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "bgs",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cardoorc",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cardoorc",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Doctor, I found a vehicle! We'll be able to go to the next\u2014",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Doctor, I found a vehicle! We'll be able to go to the next\u2014"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Whisper) Shh, she's sleeping.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "(Whisper) Shh, she's sleeping."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "46_g6_rmbtmine",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "46_g6_rmbtmine",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$tech_intro",
-        "key": "$tech_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$tech_intro",
+            "key": "$tech_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Dear Kal'tsit, I was glad to find signs of life wherever I went."
@@ -976,733 +1124,853 @@
         "text": "Stories can become reality, and the reality we see can become stories."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "You can come over, Amiya. No need to keep poking your head out from there.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You can come over, Amiya. No need to keep poking your head out from there."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "posfrom": "150,0",
-        "posto": "100,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "posfrom": "150,0",
+            "posto": "100,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "100,0",
-        "posto": "0,0",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "100,0",
+            "posto": "0,0",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Are you drawing, Doctor? Am I interrupting?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Are you drawing, Doctor? Am I interrupting?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Of course not.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Of course not."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_paper2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_paper2",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Take a look. Is it good?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Take a look. Is it good?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It's the mining truck we just drove together!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's the mining truck we just drove together!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I've been drawing lots of our experiences.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I've been drawing lots of our experiences."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Have you driven a mining truck before? Even the old miners can't go as fast as you did.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Have you driven a mining truck before? Even the old miners can't go as fast as you did."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I've seen many amazing vehicles before. Like Originium slug eggs, but much larger. Once, I drove one of them...",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I've seen many amazing vehicles before. Like Originium slug eggs, but much larger. Once, I drove one of them..."
     },
     {
-        "text": "...and went through the bridge between stars.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "...and went through the bridge between stars."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The bridge between stars? It's always dark at night, so it must've been really dark! Was it dangerous?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "The bridge between stars? It's always dark at night, so it must've been really dark! Was it dangerous?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "No. Guides stand by the bridge, borrowing glowing clouds from old stars and making round mirrors out of them.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "No. Guides stand by the bridge, borrowing glowing clouds from old stars and making round mirrors out of them."
     },
     {
-        "text": "Follow the path the mirrors show, and we can...",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Follow the path the mirrors show, and we can..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "We can...?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We can...?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "See the spires fading in and out of the clouds, and the crown of flowers worn by the stars, on the other side of the bridge.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "See the spires fading in and out of the clouds, and the crown of flowers worn by the stars, on the other side of the bridge."
     },
     {
-        "text": "When we descend on the crown, you'll find that it belongs to good children like you. It's a really, really big playground.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "When we descend on the crown, you'll find that it belongs to good children like you. It's a really, really big playground."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "A playground? I've read about them in the stories... there are lots of children there.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "A playground? I've read about them in the stories... there are lots of children there."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Do you want to play with other children?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Do you want to play with other children?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "No. I... I just want to play with you, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "No. I... I just want to play with you, Doctor."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You'll make more friends as you grow up.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You'll make more friends as you grow up."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "As I grow up...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "As I grow up..."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "What's the most amazing vehicle you've ever driven?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What's the most amazing vehicle you've ever driven?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "The most amazing...? Well... I spent a very long time with it. Very long indeed.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "The most amazing...? Well... I spent a very long time with it. Very long indeed."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Was there anyone else with you?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Was there anyone else with you?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "In the beginning, yes. In the end, though, I was alone.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "In the beginning, yes. In the end, though, I was alone."
     },
     {
-        "text": "...But it's alright. I was sleeping. I slept for a very long time.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "...But it's alright. I was sleeping. I slept for a very long time."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Take me with you next time! That way, I can keep you company and you won't have to sleep all day.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Take me with you next time! That way, I can keep you company and you won't have to sleep all day."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...Hehe.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "...Hehe."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Why are you laughing, Doctor?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Why are you laughing, Doctor?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That's a big promise to make. Are you sure?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "That's a big promise to make. Are you sure?"
     },
     {
-        "text": "You'll have your own journey, your vision, your future... are you sure you want to be with me?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You'll have your own journey, your vision, your future... are you sure you want to be with me?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_1295_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_1295_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But they all say that... there's no future for people with rocks on them.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But they all say that... there's no future for people with rocks on them."
     },
     {
-        "text": "So... I'll always be with you...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "So... I'll always be with you..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "......"
     },
     {
-        "text": "We'll have a future, Amiya.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "We'll have a future, Amiya."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "left",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "left",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "How's Amiya doing? Still not great?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "How's Amiya doing? Still not great?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hm... still a bit of fever. Maybe Oripathy complications from all the excitement. Hard to find Oripathy meds around these parts.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Hm... still a bit of fever. Maybe Oripathy complications from all the excitement. Hard to find Oripathy meds around these parts."
     },
     {
-        "text": "She acts like it's nothing during the day, but keeps having nightmares. Poor girl...",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "She acts like it's nothing during the day, but keeps having nightmares. Poor girl..."
     },
     {
-        "text": "Every survivor of that accident was infected. No exceptions.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Every survivor of that accident was infected. No exceptions."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "How long does it take for Oripathy to progress in a child her age?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "How long does it take for Oripathy to progress in a child her age?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It's different for everyone. Some disintegrate the day after developing acute symptoms. Some suffer for more than a decade of misery.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "It's different for everyone. Some disintegrate the day after developing acute symptoms. Some suffer for more than a decade of misery."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#2$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#2$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But the end is always the same.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "But the end is always the same."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Oripathy... is there anyone in the world who can cure it?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Oripathy... is there anyone in the world who can cure it?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#10$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#10$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The world? Oh, you mean Terra, our great land? Man, you sound like one of those old scholars. I didn't know you had a sense of humor.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "The world? Oh, you mean Terra, our great land? Man, you sound like one of those old scholars. I didn't know you had a sense of humor."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#4$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#4$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Wait... you're serious?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Wait... you're serious?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#5$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#5$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I'm afraid not. It's impossible.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "I'm afraid not. It's impossible."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I need it to be possible.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I need it to be possible."
     },
     {
-        "text": "People couldn't imagine the nomadic cities a few centuries ago, could they?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "People couldn't imagine the nomadic cities a few centuries ago, could they?"
     },
     {
-        "text": "I'll find a way, before her symptoms deteriorate. It may be hard, but that doesn't mean it's impossible.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I'll find a way, before her symptoms deteriorate. It may be hard, but that doesn't mean it's impossible."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Say it to a Rim Billy, and they'll think you're making fun of them.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Say it to a Rim Billy, and they'll think you're making fun of them."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "You never fail to surprise me, but I just can't help but believe in you.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "You never fail to surprise me, but I just can't help but believe in you."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Is that the charm of being smart?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Is that the charm of being smart?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Come on, Charlotte.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Come on, Charlotte."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hehe, I meant you... never mind.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Hehe, I meant you... never mind."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "What?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Oh, I meant... hm...",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Oh, I meant... hm..."
     },
     {
-        "text": "Can't you tell? There's something about you... something that lets everyone know that you're different from us.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Can't you tell? There's something about you... something that lets everyone know that you're different from us."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Amiya senses it. Children are more sensitive than we know.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Amiya senses it. Children are more sensitive than we know."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Is it that obvious?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Is it that obvious?"
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "She's strong. She doesn't show her sadness in front of you. She wants you to see her joy. She doesn't want to be a burden to you; she's trying to take care of you.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "She's strong. She doesn't show her sadness in front of you. She wants you to see her joy. She doesn't want to be a burden to you; she's trying to take care of you."
     },
     {
-        "text": "You became the only pillar in her life the day you saved it.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "You became the only pillar in her life the day you saved it."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#7$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#7$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But she knows you were never supposed to cross paths. She's afraid that you'll abandon her too.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "But she knows you were never supposed to cross paths. She's afraid that you'll abandon her too."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1360_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1360_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "......"
     },
     {
-        "text": "Don't worry. I won't leave her.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Don't worry. I won't leave her."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#9$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#9$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Now that's the spirit.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Now that's the spirit."
     },
     {
-        "tag": "charslot",
-        "slot": "right",
-        "name": "avg_230_savage_1#8$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "right",
+            "name": "avg_230_savage_1#8$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I knew you would say that.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "I knew you would say that."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle"
+        }
     },
     {
         "text": "Dear Kal'tsit, I thought I would never be more a passing visitor in this place, one history would never remember."
@@ -1717,140 +1985,166 @@
         "text": "But the warmth of life coming from a child's palm stings my heart and makes it burn."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "46_g4_rmbtwild_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "46_g4_rmbtwild_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$tech_intro",
-        "key": "$tech_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$tech_intro",
+            "key": "$tech_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandftsingle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandftsingle"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "This is...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "This is..."
     },
     {
-        "text": "Jerky and fruit. Left here on purpose.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Jerky and fruit. Left here on purpose."
     },
     {
-        "text": "They know I'm here?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "They know I'm here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#3$1"
+        }
     },
     {
-        "text": "Always inscrutable.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Always inscrutable."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "46_g4_rmbtwild_d",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "46_g4_rmbtwild_d",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$tech_intro",
-        "key": "$tech_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$tech_intro",
+            "key": "$tech_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle"
+        }
     },
     {
         "text": "Dear Kal'tsit, I'm planning to take Amiya back to Babel."
@@ -1868,498 +2162,572 @@
         "text": "The convoy that we were traveling with broke down. We found a herder to guide us through the wilderness of Rim Billiton on the backs of burdenbeasts, to the rumbling of drills and engines."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1163_1#1$1",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1163_1#1$1",
+            "duration": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "(Licks docilely)",
-        "tag": "name",
-        "value": "Burdenbeast"
+        "command": "name",
+        "value": "Burdenbeast",
+        "text": "(Licks docilely)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#8$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Good boy, good boy.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Good boy, good boy."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pcknmgrwl"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pcknmgrwl"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#2$1"
+        }
     },
     {
-        "text": "Are we really not going to Yan, Doctor?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Are we really not going to Yan, Doctor?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "We're going somewhere else, to cure your sickness.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "We're going somewhere else, to cure your sickness."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "But... there's no cure for Oripathy...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But... there's no cure for Oripathy..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "There's no such thing as an impossible puzzle, Amiya.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "There's no such thing as an impossible puzzle, Amiya."
     },
     {
-        "text": "There's a place called Babel, where people I trust are working hard to fight this disease.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "There's a place called Babel, where people I trust are working hard to fight this disease."
     },
     {
-        "text": "Let's work with them.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Let's work with them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "Will I have to spend a long time there?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Will I have to spend a long time there?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Some time, at least. But don't worry, there'll be a lot of people with you, caring for you. I'll be there, too.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Some time, at least. But don't worry, there'll be a lot of people with you, caring for you. I'll be there, too."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "text": "Doctor... do we really have to go?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor... do we really have to go?"
     },
     {
-        "text": "Lots of sick kids went away to get treated, but no one came back...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Lots of sick kids went away to get treated, but no one came back..."
     },
     {
-        "text": "Oripathy doesn't hurt at all.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Oripathy doesn't hurt at all."
     },
     {
-        "text": "I promise I'll be good, Doctor. Right, Savage?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I promise I'll be good, Doctor. Right, Savage?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Yes... Amiya has always been a good girl.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Yes... Amiya has always been a good girl."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#1$1"
+        }
     },
     {
-        "text": "Are you sure you don't want to rethink this, Doctor?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Are you sure you don't want to rethink this, Doctor?"
     },
     {
-        "text": "Billies deal with Originium every day. We know what Oripathy can do.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Billies deal with Originium every day. We know what Oripathy can do."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#7$1"
+        }
     },
     {
-        "text": "Stay here in Rim Billiton, and at least we can give her... a home.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Stay here in Rim Billiton, and at least we can give her... a home."
     },
     {
-        "text": "Maybe that's more important than the cold walls of a laboratory.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Maybe that's more important than the cold walls of a laboratory."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "...A home.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "...A home."
     },
     {
-        "text": "You have a point. But I can't just stand by and watch Originium hurt her... I have an obligation.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You have a point. But I can't just stand by and watch Originium hurt her... I have an obligation."
     },
     {
-        "text": "Amiya, I promise you, I'll do my best to cure you, no matter what happens.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Amiya, I promise you, I'll do my best to cure you, no matter what happens."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "Doctor...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Savage does have a point, though, and Babel is in a place that's not entirely safe.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Savage does have a point, though, and Babel is in a place that's not entirely safe."
     },
     {
-        "text": "You can stay with Savage, if you don't want to leave Rim Billiton.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "You can stay with Savage, if you don't want to leave Rim Billiton."
     },
     {
-        "text": "I'm sorry to force this decision on you at such a young age... but you're a strong girl, and we'll respect your choice.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I'm sorry to force this decision on you at such a young age... but you're a strong girl, and we'll respect your choice."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1"
+        }
     },
     {
-        "text": "The Doctor's right, Amiya. No need to knee-jerk an answer. Think carefully about it.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "The Doctor's right, Amiya. No need to knee-jerk an answer. Think carefully about it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#1$1"
+        }
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I..."
     },
     {
-        "text": "...I trust you, Doctor.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...I trust you, Doctor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#4$1"
+        }
     },
     {
-        "text": "I want to have a future. I want to grow up, read books with you, travel with Savage. I...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I want to have a future. I want to grow up, read books with you, travel with Savage. I..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "It's just that... I'm a little scared...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It's just that... I'm a little scared..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1"
+        }
     },
     {
-        "text": "Heh.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Heh."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Thank you, Amiya.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Thank you, Amiya."
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
         "text": "The Doctor pats Amiya's head, then picks her up and climbs onto the burdenbeast."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake"
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 6,
-        "ystrength": 3,
-        "vibrato": 50,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 6,
+            "ystrength": 3,
+            "vibration": 50,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
         "text": "They've hardly sat down when the ground begins to shake, stirring up clouds of dust."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "(Growls in alarm)",
-        "tag": "name",
-        "value": "Burdenbeast"
+        "command": "name",
+        "value": "Burdenbeast",
+        "text": "(Growls in alarm)"
     },
     {
-        "text": "What's going on?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What's going on?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#4$1"
+        }
     },
     {
-        "text": "\u2014Underneath our feet!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "\u2014Underneath our feet!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#3$1"
+        }
     },
     {
-        "text": "Must be a deep digger! It's spooking the burdenbeast! Watch out!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Must be a deep digger! It's spooking the burdenbeast! Watch out!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 40,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 40,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pcknmgrwl"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pcknmgrwl"
+        }
     },
     {
-        "text": "(Panicked cry)",
-        "tag": "name",
-        "value": "Burdenbeast"
+        "command": "name",
+        "value": "Burdenbeast",
+        "text": "(Panicked cry)"
     },
     {
-        "text": "Stay, boy, stay! Whoa!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Stay, boy, stay! Whoa!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Whoa!",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Whoa!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#4$1"
+        }
     },
     {
-        "text": "Hang in there, Doctor!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Hang in there, Doctor!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Doctor!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor!"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pcknmgrwl"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pcknmgrwl"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalrun"
+        }
     },
     {
         "text": "The burdenbeast rears up on its hind legs, gives a loud cry, then charges forward."
@@ -2368,72 +2736,88 @@
         "text": "The rest of the pack follows."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "image",
-        "image": "49_i07",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "49_i07",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$holiday_intro",
-        "key": "$holiday_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$holiday_intro",
+            "key": "$holiday_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": -1,
-        "xstrength": 2,
-        "ystrength": 2,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": false,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": -1,
+            "xstrength": 2,
+            "ystrength": 2,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": false,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalrun"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalswaterfs",
-        "delay": 2,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalswaterfs",
+            "delay": 2,
+            "channel": 2
+        }
     },
     {
         "text": "They run towards a shallow shoal, splashing water everywhere."
@@ -2448,229 +2832,267 @@
         "text": "With one hand on the burdenbeast, she stretches out the other towards the Doctor."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "xTo": 200,
-        "xScaleFrom": 1,
-        "yScaleFrom": 1,
-        "xScaleTo": 1.5,
-        "yScaleTo": 1.5,
-        "duration": 0,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "x": 200,
+            "xscalefrom": 1,
+            "yscalefrom": 1,
+            "xscale": 1.5,
+            "yscale": 1.5,
+            "duration": 0,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "Grab my hand, Doctor!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Grab my hand, Doctor!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xFrom": 200,
-        "xTo": 100,
-        "yFrom": 0,
-        "yTo": 50,
-        "duration": 0.5,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "xfrom": 200,
+            "x": 100,
+            "yfrom": 0,
+            "y": 50,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pcknmgrwl"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pcknmgrwl"
+        }
     },
     {
-        "text": "(Angry roar)",
-        "tag": "name",
-        "value": "Burdenbeast"
+        "command": "name",
+        "value": "Burdenbeast",
+        "text": "(Angry roar)"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalrun"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalswaterfsfast",
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalswaterfsfast",
+            "channel": 3
+        }
     },
     {
-        "text": "(Accelerates)",
-        "tag": "name",
-        "value": "Burdenbeast"
+        "command": "name",
+        "value": "Burdenbeast",
+        "text": "(Accelerates)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xFrom": 100,
-        "xTo": 0,
-        "yFrom": 50,
-        "yTo": -50,
-        "duration": 0.5,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "xfrom": 100,
+            "x": 0,
+            "yfrom": 50,
+            "y": -50,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "I have to get them to\u2014whoa!",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I have to get them to\u2014whoa!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "xTo": 200,
-        "yFrom": -50,
-        "yTo": 0,
-        "duration": 0.3,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "x": 200,
+            "yfrom": -50,
+            "y": 0,
+            "duration": 0.3,
+            "block": true
+        }
     },
     {
-        "text": "Hang on! It's speeding up!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Hang on! It's speeding up!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xFrom": 200,
-        "xTo": 0,
-        "yFrom": 0,
-        "yTo": -50,
-        "duration": 0.3,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "xfrom": 200,
+            "x": 0,
+            "yfrom": 0,
+            "y": -50,
+            "duration": 0.3,
+            "block": true
+        }
     },
     {
-        "text": "I'm\u2014try\u2014ing!",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I'm\u2014try\u2014ing!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "imagetween",
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 1.5,
-        "yScaleFrom": 1.5,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 0.5,
-        "block": true
+        "command": "imagetween",
+        "params": {
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 1.5,
+            "yscalefrom": 1.5,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Hang in there, Doctor! I'm coming!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Hang in there, Doctor! I'm coming!"
     },
     {
-        "text": "Hur\u2014ry!",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Hur\u2014ry!"
     },
     {
-        "text": "I\u2014",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalrun"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalrun"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 10,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": false,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 10,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": false,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "imagerotate",
-        "angle": -20,
-        "fadetime": 0.3,
-        "block": false
+        "command": "imagerotate",
+        "params": {
+            "angle": -20,
+            "fadetime": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "yFrom": 0,
-        "xTo": 500,
-        "duration": 0.3,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "yfrom": 0,
+            "x": 500,
+            "duration": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_slip"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_slip"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "text": "Whooooaaaahhhh\u2014!",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Whooooaaaahhhh\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_jump_water",
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_jump_water",
+            "channel": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_penrustle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_penrustle"
+        }
     },
     {
         "text": "In the end, I was thrown from the back of the burdenbeast into the water."
@@ -2685,53 +3107,63 @@
         "text": "I heard the sound of my life surging."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "bg_laccolith",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_laccolith",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$calm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$calm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Summer, 1091"
@@ -2740,106 +3172,120 @@
         "text": "Kazdel"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "...No more Messenger stations from here on.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "...No more Messenger stations from here on."
     },
     {
-        "text": "Villages become sparse, and bandits become frequent...",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Villages become sparse, and bandits become frequent..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "I'm afraid we have to part ways here, Savage.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I'm afraid we have to part ways here, Savage."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#4$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#4$1"
+        }
     },
     {
-        "text": "Why?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Why?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "The region ahead is in turmoil. You'll be in danger, if the mercenaries spot you.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "The region ahead is in turmoil. You'll be in danger, if the mercenaries spot you."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#1$1"
+        }
     },
     {
-        "text": "You and Amiya will be in danger too, won't you?",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "You and Amiya will be in danger too, won't you?"
     },
     {
-        "text": "I'll be fine! I've come this far, I'll see your journey through to the end.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "I'll be fine! I've come this far, I'll see your journey through to the end."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "......"
     },
     {
-        "text": "Charlotte... thank you.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Charlotte... thank you."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "The Cautus's ears quiver at the mention of her real name. She glances at the Doctor."
@@ -2860,344 +3306,403 @@
         "text": "The Cautus who goes by the name of Savage sighs. What can she do? She is not as smart as the Doctor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#2$1"
+        }
     },
     {
-        "text": "Will you come and visit, Savage?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Will you come and visit, Savage?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1"
+        }
     },
     {
-        "text": "Of course!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Of course!"
     },
     {
-        "text": "The Doctor said Babel's new base is being worked on by Billy engineers, right? Maybe we'll see each other soon!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "The Doctor said Babel's new base is being worked on by Billy engineers, right? Maybe we'll see each other soon!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#8$1"
+        }
     },
     {
-        "text": "Then... I'll be waiting for you, Savage.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Then... I'll be waiting for you, Savage."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#9$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#9$1"
+        }
     },
     {
-        "text": "Good girl, Amiya. Now, though, I need to figure out how to take you and the Doctor through the wilderness!",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "Good girl, Amiya. Now, though, I need to figure out how to take you and the Doctor through the wilderness!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_230_savage_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_230_savage_1#8$1"
+        }
     },
     {
-        "text": "You and Amiya stay here and rest for a while, Doctor. I'll see if the transport hub ahead has any good vehicles for hire.",
-        "tag": "name",
-        "value": "Savage"
+        "command": "name",
+        "value": "Savage",
+        "text": "You and Amiya stay here and rest for a while, Doctor. I'll see if the transport hub ahead has any good vehicles for hire."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandftsingle"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandftsingle"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "200,0",
-        "duration": 1,
-        "afrom": 1,
-        "ato": 0
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "200,0",
+            "duration": 1,
+            "afrom": 1,
+            "ato": 0
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Doctor.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Doctor."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "jump",
-        "posto": "0,0",
-        "power": 30,
-        "times": 1,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "jump",
+            "posto": "0,0",
+            "power": 30,
+            "duration": 0.3
+        }
     },
     {
-        "text": "Whoa!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Whoa!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Do we have time to say goodbye?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Do we have time to say goodbye?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "The longer we stay here, the more dangerous it gets.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "The longer we stay here, the more dangerous it gets."
     },
     {
-        "text": "The Cautus girl seems rather determined. It's better for both of you to part ways here.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "The Cautus girl seems rather determined. It's better for both of you to part ways here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "...I suppose you're right.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "...I suppose you're right."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "We won't wait for Savage?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "We won't wait for Savage?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Sometimes, Amiya, we have to do bad things for good reasons.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Sometimes, Amiya, we have to do bad things for good reasons."
     },
     {
-        "text": "We don't want Savage to be in danger, do we? But she doesn't want to leave you.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "We don't want Savage to be in danger, do we? But she doesn't want to leave you."
     },
     {
-        "text": "It's rude to leave without saying goodbye, but that way, Savage won't face danger.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "It's rude to leave without saying goodbye, but that way, Savage won't face danger."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "Um...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Um..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "I promise, we'll get to see her again.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "I promise, we'll get to see her again."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#7$1"
+        }
     },
     {
-        "text": "Can I leave a note for Savage? She'll be worried if she comes back to find us gone.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Can I leave a note for Savage? She'll be worried if she comes back to find us gone."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Good thinking. Go ahead and write one.",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Good thinking. Go ahead and write one."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1295_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1295_1#8$1"
+        }
     },
     {
-        "text": "Okay!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Okay!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "posfrom": "0,0",
-        "posto": "-100,0",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "posfrom": "0,0",
+            "posto": "-100,0",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Her Highness wants to meet with you, alone.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Her Highness wants to meet with you, alone."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Are things not going well? How's Kal'tsit?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Are things not going well? How's Kal'tsit?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Now is not the time.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Now is not the time."
     },
     {
-        "text": "We'll leave once the girl has written her note.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "We'll leave once the girl has written her note."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1360_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1360_1#1$1"
+        }
     },
     {
-        "text": "Alright. Can we trouble you with the note?",
-        "tag": "name",
-        "value": "Doctor"
+        "command": "name",
+        "value": "Doctor",
+        "text": "Alright. Can we trouble you with the note?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Certainly. I'll leave it where she is sure to see it.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Certainly. I'll leave it where she is sure to see it."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     }
 ]

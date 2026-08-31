@@ -1,103 +1,113 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g8_srcroom",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "33_g8_srcroom",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#1$1",
-        "duration": 1
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'm back."
     },
     {
-        "text": "I'm back.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...Luna? Are you there?"
     },
     {
-        "text": "...Luna? Are you there?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "There's no response from inside the room, but Lavinia looks around and finds who she's looking for at the desk in the corner."
@@ -106,2066 +116,2394 @@
         "text": "The table is stacked with books that have been read, and sleeping at the center of the books is the girl hunched over at the desk."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "text": "Pap\u00e0...",
-        "tag": "name",
-        "value": "Sleeping Girl"
+        "command": "name",
+        "value": "Sleeping Girl",
+        "text": "Pap\u00e0..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Luna.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Luna."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walk_stage",
-        "volume": 1,
-        "loop": false,
-        "channel": "slide1"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walk_stage",
+            "volume": 1,
+            "loop": false,
+            "channel": "slide1"
+        }
     },
     {
-        "tag": "stopsound",
-        "fadetime": 1.5,
-        "channel": "slide1"
+        "command": "stopsound",
+        "params": {
+            "fadetime": 1.5,
+            "channel": "slide1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "posfrom": "-50,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "posfrom": "-50,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hmm... Huh?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Hmm... Huh?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Sorry, did I wake you?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Sorry, did I wake you?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I... fell asleep?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I... fell asleep?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You sure did.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You sure did."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I finished this book today, Lavinia.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I finished this book today, Lavinia."
     },
     {
-        "text": "I read the notes you wrote in it, and left my own comments too.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I read the notes you wrote in it, and left my own comments too."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That's amazing. It took me a month to get through that one when I was a student, but you only took a week.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "That's amazing. It took me a month to get through that one when I was a student, but you only took a week."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I thought I may as well study at home since I don't have a school to go to anymore.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I thought I may as well study at home since I don't have a school to go to anymore."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I'm sorry... The new city still needs some time to sort out its resources, particularly education.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'm sorry... The new city still needs some time to sort out its resources, particularly education."
     },
     {
-        "text": "I'll make sure you get enrolled in a new one as soon as I can.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'll make sure you get enrolled in a new one as soon as I can."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It's not your fault.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "It's not your fault."
     },
     {
-        "text": "After what padre did, I didn't want to go to that school anymore anyway.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "After what padre did, I didn't want to go to that school anymore anyway."
     },
     {
-        "text": "I should be thanking you instead, Lavinia. For taking me in.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I should be thanking you instead, Lavinia. For taking me in."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I promised him I would. Besides, there's no way I could just watch Segretario Rubio's daughter live out on the streets.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I promised him I would. Besides, there's no way I could just watch Segretario Rubio's daughter live out on the streets."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...Actually, I don't care if I can't go back to school.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...Actually, I don't care if I can't go back to school."
     },
     {
-        "text": "I mean, everyone already knows I'm his daughter.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I mean, everyone already knows I'm his daughter."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...You had a long study session. You should take a break. I'll make dinner.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...You had a long study session. You should take a break. I'll make dinner."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "It's fine, I'm not tired. I'll help you out.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "It's fine, I'm not tired. I'll help you out."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g8_srcroom",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g8_srcroom",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cutvegetable",
-        "volume": 1,
-        "loop": true,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cutvegetable",
+            "volume": 1,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 3
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...Do you know why I know how to cook?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...Do you know why I know how to cook?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Why?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Why?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Padre used to do two things as Segretario di Sicurezza Alimentare. Walk around the markets, and cook for the famiglie.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Padre used to do two things as Segretario di Sicurezza Alimentare. Walk around the markets, and cook for the famiglie."
     },
     {
-        "text": "When he cooked for the famiglie, he usually had to keep his guests company so he couldn't cook for me and mamma.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "When he cooked for the famiglie, he usually had to keep his guests company so he couldn't cook for me and mamma."
     },
     {
-        "text": "Mamma didn't like to cook, so he taught me how.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Mamma didn't like to cook, so he taught me how."
     },
     {
-        "text": "And I was usually the one who made our meals.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "And I was usually the one who made our meals."
     },
     {
-        "text": "I used to scold padre in my head whenever I cooked.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I used to scold padre in my head whenever I cooked."
     },
     {
-        "text": "I still do.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I still do."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_plateplace",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_plateplace",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The kitchen knife streaks across the moist scallions as it makes contact with the chopping board."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Stupid idiot... Why did he have to do that...",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Stupid idiot... Why did he have to do that..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Are you still unwilling to forgive him?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Are you still unwilling to forgive him?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Does it matter? He's not coming back anyways.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Does it matter? He's not coming back anyways."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...It's alright, Luna.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...It's alright, Luna."
     },
     {
-        "text": "I'll be with you.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'll be with you."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Sorry... I... I... don't know.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Sorry... I... I... don't know."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...We'll visit Famiglia Saluzzo tomorrow and put an end to this.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...We'll visit Famiglia Saluzzo tomorrow and put an end to this."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You are his daughter, so legally you have the right to do this.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You are his daughter, so legally you have the right to do this."
     },
     {
-        "text": "Though I won't force you to go if you don't want to.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Though I won't force you to go if you don't want to."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...I'm going.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...I'm going."
     },
     {
-        "text": "Padre was stupid, but I'd feel bad letting the Saluzzos keep his body.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Padre was stupid, but I'd feel bad letting the Saluzzos keep his body."
     },
     {
-        "text": "You want a proper end to this whole thing too, right?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "You want a proper end to this whole thing too, right?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#15$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#15$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Whatever our reasons may be, the Saluzzos still owe us an explanation.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Whatever our reasons may be, the Saluzzos still owe us an explanation."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness01_intro",
-        "key": "$darkness01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The famous magnanimous judge of Volsinii is gracing us with a visit today?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The famous magnanimous judge of Volsinii is gracing us with a visit today?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I thought I'd find Don Alberto here.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I thought I'd find Don Alberto here."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "The Don is no longer in Volsinii.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The Don is no longer in Volsinii."
     },
     {
-        "text": "But he did expect someone to come asking for Rubio's body, so he specially instructed us to offer you our hospitality.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "But he did expect someone to come asking for Rubio's body, so he specially instructed us to offer you our hospitality."
     },
     {
-        "text": "Though I didn't think you'd bring little Luna along.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Though I didn't think you'd bring little Luna along."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...I've seen you before. You used to work under mio padre.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...I've seen you before. You used to work under mio padre."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You remember me? Wonderful. Just call me Teresa.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "You remember me? Wonderful. Just call me Teresa."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So you're part of the Saluzzos?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "So you're part of the Saluzzos?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yes, and it was no secret to Rubio.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Yes, and it was no secret to Rubio."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't worry, Signorina Lavinia. The Don emphasized that we must wrap this matter up nicely.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Don't worry, Signorina Lavinia. The Don emphasized that we must wrap this matter up nicely."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#15$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#15$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Do you think it's 'nice' for us to have to personally knock on your door to get Segretario Rubio's body?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Do you think it's 'nice' for us to have to personally knock on your door to get Segretario Rubio's body?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How could you say that?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "How could you say that?"
     },
     {
-        "text": "His death was extremely troublesome for us, you know.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "His death was extremely troublesome for us, you know."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, my apologies, dear. I didn't mean to hurt your feelings.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Oh, my apologies, dear. I didn't mean to hurt your feelings."
     },
     {
-        "text": "He was a very friendly boss to work under; everyone thought so. We were all upset by his death as well.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "He was a very friendly boss to work under; everyone thought so. We were all upset by his death as well."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We didn't come here to talk about this.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "We didn't come here to talk about this."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "But Your Honor, wouldn't you agree with me?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "But Your Honor, wouldn't you agree with me?"
     },
     {
-        "text": "His speech may have been quite moving, and even today I can still hear that gunshot going off.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "His speech may have been quite moving, and even today I can still hear that gunshot going off."
     },
     {
-        "text": "But... it's been a while since then, and nothing has changed.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "But... it's been a while since then, and nothing has changed."
     },
     {
-        "text": "It seems to me everything's the same as ever.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "It seems to me everything's the same as ever."
     },
     {
-        "text": "The only thing that's different is a child lost her father.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "The only thing that's different is a child lost her father."
     },
     {
-        "text": "Have you been well, dear?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Have you been well, dear?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...Lavinia takes good care of me.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...Lavinia takes good care of me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Good, good to hear.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Good, good to hear."
     },
     {
-        "text": "However, Her Honor is a VIP in our new city with many affairs to tend to, so I don't see her having free time to play with you.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "However, Her Honor is a VIP in our new city with many affairs to tend to, so I don't see her having free time to play with you."
     },
     {
-        "text": "*sigh* How callous of your father. To throw you away along with his own life, all for nothing.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "*sigh* How callous of your father. To throw you away along with his own life, all for nothing."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You think padre died for nothing?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "You think padre died for nothing?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I don't want to lie to you.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I don't want to lie to you."
     },
     {
-        "text": "Let's say we hand over the reins of the new city to that Bellone boy and our dear judge here. What could they possibly achieve?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Let's say we hand over the reins of the new city to that Bellone boy and our dear judge here. What could they possibly achieve?"
     },
     {
-        "text": "Your Honor, do you truly believe you can build a city free of the famiglie?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Your Honor, do you truly believe you can build a city free of the famiglie?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#15$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#15$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "We did not come here to debate with you, Signorina Teresa. Only to retrieve her father's body.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "We did not come here to debate with you, Signorina Teresa. Only to retrieve her father's body."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course, of course.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Of course, of course."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_snapping",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_snapping",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_walk_stage",
-        "volume": 1,
-        "loop": false,
-        "channel": "ds"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_walk_stage",
+            "volume": 1,
+            "loop": false,
+            "channel": "ds"
+        }
     },
     {
-        "tag": "stopsound",
-        "fadetime": 2,
-        "channel": "ds"
+        "command": "stopsound",
+        "params": {
+            "fadetime": 2,
+            "channel": "ds"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Bring them both to Rubio's remains.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Bring them both to Rubio's remains."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Come with me, you two.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Come with me, you two."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g5_srcpark",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g5_srcpark",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Don't let her get to you, Luna.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Don't let her get to you, Luna."
     },
     {
-        "text": "She's just trying to provoke us.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "She's just trying to provoke us."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Can you really say that, Signorina?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Can you really say that, Signorina?"
     },
     {
-        "text": "Shouldn't you know better than anyone the weight of what she was saying?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Shouldn't you know better than anyone the weight of what she was saying?"
     },
     {
-        "text": "It doesn't matter what you or Signor Leontuzzo think of your own capabilities. Your goals just seem so ridiculous.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "It doesn't matter what you or Signor Leontuzzo think of your own capabilities. Your goals just seem so ridiculous."
     },
     {
-        "text": "You can't possibly think to defeat the famiglie with a slogan or two. Or do you really think Signora Sicilia likes you <i>that</i> much?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "You can't possibly think to defeat the famiglie with a slogan or two. Or do you really think Signora Sicilia likes you <i>that</i> much?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "amount": 0.7,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "amount": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.3,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.3,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You think padre died for nothing?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "You think padre died for nothing?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I don't want to lie to you.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I don't want to lie to you."
     },
     {
-        "text": "Let's say we hand over the reins of the new city to that Bellone boy and our dear judge here. What could they possibly achieve?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Let's say we hand over the reins of the new city to that Bellone boy and our dear judge here. What could they possibly achieve?"
     },
     {
-        "text": "Your Honor, do you truly believe you can build a city free of the famiglie?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Your Honor, do you truly believe you can build a city free of the famiglie?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g5_srcpark",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g5_srcpark",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "fadetime": 0,
-        "keep": true,
-        "amount": 0,
-        "block": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "fadetime": 0,
+            "keep": true,
+            "amount": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.6,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.6,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Muttering) I'm sorry, Lavinia.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "(Muttering) I'm sorry, Lavinia."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.6,
-        "channel": "w",
-        "loop": true
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.6,
+            "channel": "w",
+            "loop": true
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "w",
-        "fadetime": 0.8
+        "command": "stopsound",
+        "params": {
+            "channel": "w",
+            "fadetime": 0.8
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.5,0.49",
-        "scale": 0.98,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.5,0.49",
+            "scale": 0.98,
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Of course you wouldn't understand. 'Fairness' is not a word in a mafioso's dictionary.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Of course you wouldn't understand. 'Fairness' is not a word in a mafioso's dictionary."
     },
     {
-        "text": "We may have to borrow Signora Sicilia's power for now, but we will prove to her that we won't need it forever.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "We may have to borrow Signora Sicilia's power for now, but we will prove to her that we won't need it forever."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Bold words, but the girl doesn't seem to agree.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Bold words, but the girl doesn't seem to agree."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
+        "command": "name",
         "text": "Luna...",
-        "tag": "multiline",
-        "name": "Lavinia"
+        "value": "Lavinia"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#4$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#4$1",
+            "focus": "l"
+        }
     },
     {
+        "command": "name",
         "text": "Luna?",
-        "tag": "multiline",
-        "name": "Lavinia"
-    },
-    {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "l"
-    },
-    {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
-    },
-    {
-        "text": "Where is she?!",
-        "tag": "name",
         "value": "Lavinia"
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Where is she?!"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crowdrun",
-        "volume": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_031",
-        "duration": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_031",
-        "duration": 1
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crowdrun",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "dialog"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_031",
+            "duration": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_031",
+            "duration": 1
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$darkness_03_loop",
-        "volume": 0.6
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "r"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "charslot"
     },
     {
-        "text": "Kill some time with us, Signorina.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "playmusic",
+        "params": {
+            "key": "$darkness_03_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "WHAT DID YOU DO TO HER?!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Kill some time with us, Signorina."
     },
     {
-        "text": "Oh, don't get the wrong idea. We didn't touch her; she left you on her own.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "WHAT DID YOU DO TO HER?!"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_daggerexsheath",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Oh, don't get the wrong idea. We didn't touch her; she left you on her own."
     },
     {
-        "text": "Our job is just to stop you from finding her.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_daggerexsheath",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Our job is just to stop you from finding her."
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "duration": 0.7
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "I knew you'd be back.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "text": "My dear little Luna.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Come, let's talk. About your padre.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I knew you'd be back."
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "My dear little Luna."
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Come, let's talk. About your padre."
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "33_g5_srcpark",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#7$1"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "background",
+        "params": {
+            "image": "33_g5_srcpark",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#7$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#7$1",
-        "focus": "l"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "What are you talking about...?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "Did you really think the Saluzzos would leave things be?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#7$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "All of us detest the Bellones. And you. And Rubio.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "What are you talking about...?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#15$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "So you devised this scheme to threaten me, with Luna as a hostage?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Did you really think the Saluzzos would leave things be?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "All of us detest the Bellones. And you. And Rubio."
     },
     {
-        "text": "Threaten?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#15$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "*tsk* *tsk* I see you still don't know us well enough, Signorina.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "So you devised this scheme to threaten me, with Luna as a hostage?"
     },
     {
-        "text": "We know people like you. We could kill someone you love right before your eyes, and you wouldn't even consider revenge.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "So more... unusual methods are required.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Threaten?"
     },
     {
-        "text": "Our little Luna should be with Teresa by now.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "*tsk* *tsk* I see you still don't know us well enough, Signorina."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#4$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "We know people like you. We could kill someone you love right before your eyes, and you wouldn't even consider revenge."
     },
     {
-        "text": "You mean\u2014",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "So more... unusual methods are required."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Our little Luna should be with Teresa by now."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#4$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You dare\u2014?!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You mean\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Haha. Bingo, Your Honor.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You dare\u2014?!"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Haha. Bingo, Your Honor."
     },
     {
-        "tag": "charslot"
+        "command": "dialog"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "I don't get it. How?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "How can you talk about padre's death so lightly?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Because life and death are everyday matters for us.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "I don't get it. How?"
     },
     {
-        "text": "One day you're telling a joke, and the next you're gone forever.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "How can you talk about padre's death so lightly?"
     },
     {
-        "text": "You get used to it.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Because life and death are everyday matters for us."
     },
     {
-        "text": "I don't want to.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "One day you're telling a joke, and the next you're gone forever."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "You get used to it."
     },
     {
-        "text": "Then you might just join the ones who disappear for good.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That gunshot may have caused some misconceptions, and you might have thought your father died a hero.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "I don't want to."
     },
     {
-        "text": "But give it a few days, months, years\u2014will anyone actually remember what he did?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "The sound of the rain silences everything, eventually.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Then you might just join the ones who disappear for good."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "That gunshot may have caused some misconceptions, and you might have thought your father died a hero."
     },
     {
-        "text": "Lavinia said she'll remember, and some other people too. That's enough.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "But give it a few days, months, years\u2014will anyone actually remember what he did?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "The sound of the rain silences everything, eventually."
     },
     {
-        "text": "And you believe her?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "If you really, truly do\u2014if you don't doubt her at all... then why did you come to me?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "Lavinia said she'll remember, and some other people too. That's enough."
     },
     {
-        "text": "You <i>do</i> have doubts, don't you?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Even if Rubio's wish can come true, how much time will it take?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "And you believe her?"
     },
     {
-        "text": "Can you afford to wait that long?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "If you really, truly do\u2014if you don't doubt her at all... then why did you come to me?"
     },
     {
-        "text": "Or perhaps I should be asking: Are you willing to wait, my dear?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "You <i>do</i> have doubts, don't you?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Even if Rubio's wish can come true, how much time will it take?"
     },
     {
-        "text": "I\u2014",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Can you afford to wait that long?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Or perhaps I should be asking: Are you willing to wait, my dear?"
     },
     {
-        "text": "Let's be serious, ragazzina.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "You don't actually understand what Rubio was talking about.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "I\u2014"
     },
     {
-        "text": "You don't care either. How could you, at your age?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Honestly, shouldn't the target of your hate be our dear judge instead?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Let's be serious, ragazzina."
     },
     {
-        "text": "She lied to you.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "You don't actually understand what Rubio was talking about."
     },
     {
-        "text": "About being patient. That what Rubio said could come true. I mean, consider this... what if <i>she</i> was the one who made him do all that in the first place?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "You don't care either. How could you, at your age?"
     },
     {
-        "text": "How much more blood will be spilled on the streets, all for our righteous lady of justice's ideals?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Honestly, shouldn't the target of your hate be our dear judge instead?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "She lied to you."
     },
     {
-        "text": "I won't let you talk about her that way!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "About being patient. That what Rubio said could come true. I mean, consider this... what if <i>she</i> was the one who made him do all that in the first place?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "How much more blood will be spilled on the streets, all for our righteous lady of justice's ideals?"
     },
     {
-        "text": "But you <i>do</i> have doubts, no?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Let's make a deal then, shall we?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "I won't let you talk about her that way!"
     },
     {
-        "text": "I'll hand over your father's corpse to Signorina Lavinia.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "We only ask that you put in some nice words for us in any subsequent court hearings.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "But you <i>do</i> have doubts, no?"
     },
     {
-        "text": "Rubio killed himself. Saluzzo had nothing to do with his suicide.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Let's make a deal then, shall we?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I'll hand over your father's corpse to Signorina Lavinia."
     },
     {
-        "text": "...Just how much do you have to belittle mio padre and Lavinia until you're satisfied?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "We only ask that you put in some nice words for us in any subsequent court hearings."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "r"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Rubio killed himself. Saluzzo had nothing to do with his suicide."
     },
     {
-        "text": "Belittle? I'm just stating the facts.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I mean, do you not loathe your father for leaving you behind?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Luna",
+        "text": "...Just how much do you have to belittle mio padre and Lavinia until you're satisfied?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "...!!!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Belittle? I'm just stating the facts."
     },
     {
-        "text": "You're wrong\u2014",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I mean, do you not loathe your father for leaving you behind?"
     },
     {
-        "text": "I do hate him for dying on his own and leaving me behind.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But I also know I should hate you guys even more.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...!!!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "name",
+        "value": "Luna",
+        "text": "You're wrong\u2014"
     },
     {
-        "text": "The famiglia who drove him to his death!!!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I do hate him for dying on his own and leaving me behind."
     },
     {
-        "tag": "dialog"
+        "command": "name",
+        "value": "Luna",
+        "text": "But I also know I should hate you guys even more."
     },
     {
-        "tag": "charslot"
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovementsp",
-        "volume": 0.8
+        "command": "name",
+        "value": "Luna",
+        "text": "The famiglia who drove him to his death!!!"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "dialog"
+    },
+    {
+        "command": "charslot"
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovementsp",
+            "volume": 0.8
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Luna rips her backpack open to grab her hidden crossbow, and aims it at Teresa."
@@ -2174,838 +2512,994 @@
         "text": "Teresa meets the cold crossbow bolt with a smile."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$e_atk_arrowload_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$e_atk_arrowload_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowtarget",
-        "volume": 0.6,
-        "delay": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowtarget",
+            "volume": 0.6,
+            "delay": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g5_srcpark",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g5_srcpark",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_singleblunt",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_singleblunt",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_hammer",
-        "volume": 0.8,
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_hammer",
+            "volume": 0.8,
+            "delay": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1,
-        "delay": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1,
+            "delay": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "From the very start... you planned to lure Luna into killing Teresa.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "From the very start... you planned to lure Luna into killing Teresa."
     },
     {
-        "text": "Are you people mad?! Willingly sending one of your own to die?!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Are you people mad?! Willingly sending one of your own to die?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mad? Us?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Mad? Us?"
     },
     {
-        "text": "To us, Rubio was the madman.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "To us, Rubio was the madman."
     },
     {
-        "text": "He dragged us all down for his insane, impossible fantasy.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "He dragged us all down for his insane, impossible fantasy."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You don't know the first thing about Segretario Rubio!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You don't know the first thing about Segretario Rubio!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You're right, we have no idea what he was talking about. But we do know how to deal with people like you.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "You're right, we have no idea what he was talking about. But we do know how to deal with people like you."
     },
     {
-        "text": "Relax, we have no plans to rub you out. But you better not get any ideas about finding the girl either.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Relax, we have no plans to rub you out. But you better not get any ideas about finding the girl either."
     },
     {
-        "text": "Just sit tight here till it's all over, and then we can go get Teresa's body.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Just sit tight here till it's all over, and then we can go get Teresa's body."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why?! Is Teresa that willing to throw her life away?!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Why?! Is Teresa that willing to throw her life away?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "She was pretty unlucky to be Rubio's subordinate.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "She was pretty unlucky to be Rubio's subordinate."
     },
     {
-        "text": "But when she dies, her brother and their useless father will get to live.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "But when she dies, her brother and their useless father will get to live."
     },
     {
-        "text": "And she'll bring glory to the famiglia.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "And she'll bring glory to the famiglia."
     },
     {
-        "text": "If everything goes nicely, little Luna may even be able to fill her shoes in future. Wouldn't that be nice?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "If everything goes nicely, little Luna may even be able to fill her shoes in future. Wouldn't that be nice?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Luna is innocent!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Luna is innocent!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You had Bellone backing you in the past so we could only turn a blind eye to your antics.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "You had Bellone backing you in the past so we could only turn a blind eye to your antics."
     },
     {
-        "text": "But the Bellones are history now. Old Bernado's dead. So did you really think we'd just let you do as you please?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "But the Bellones are history now. Old Bernado's dead. So did you really think we'd just let you do as you please?"
     },
     {
-        "text": "You were the main target all along.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "You were the main target all along."
     },
     {
-        "text": "So if you want to blame someone, Signorina, blame yourself. You shouldn't have taken her in. A truly terrible decision.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "So if you want to blame someone, Signorina, blame yourself. You shouldn't have taken her in. A truly terrible decision."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#3$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#3$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Out of my way\u2014",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Out of my way\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_twohandedblunt"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_twohandedblunt"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_axeimp",
-        "volume": 1,
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_axeimp",
+            "volume": 1,
+            "delay": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rockfall",
-        "volume": 0.5,
-        "delay": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rockfall",
+            "volume": 0.5,
+            "delay": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*tsk* Truly a judge who strikes fear in the famiglie's hearts. Can't underestimate your combat prowess.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "*tsk* Truly a judge who strikes fear in the famiglie's hearts. Can't underestimate your combat prowess."
     },
     {
-        "text": "A shame you're here alone.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "A shame you're here alone."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "n"
+        }
     },
     {
-        "text": "And what if she has backup?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "And what if she has backup?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What\u2014?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "What\u2014?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_ignite_cast",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_ignite_cast",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_aoe_nmag_h",
-        "volume": 1,
-        "delay": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$p_aoe_nmag_h",
+            "volume": 1,
+            "delay": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_runstop",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_427_vigil_1#1$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_427_vigil_1#1$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "playmusic",
-        "intro": "$exciting_intro",
-        "key": "$exciting_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$exciting_intro",
+            "key": "$exciting_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_427_vigil_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_427_vigil_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Lavinia, are you alright?",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "Lavinia, are you alright?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Leon?!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Leon?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Why, if it isn't Nuova Volsinii's very own celebrity, Signor Leontuzzo.",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Why, if it isn't Nuova Volsinii's very own celebrity, Signor Leontuzzo."
     },
     {
-        "text": "Or should I call you Representative Leontuzzo now?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Or should I call you Representative Leontuzzo now?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_427_vigil_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_427_vigil_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Whatever you want.",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "Whatever you want."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "How did you\u2014",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "How did you\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_427_vigil_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_427_vigil_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I heard you were planning to pick up Rubio's body, so I placed some people here to keep an eye out.",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "I heard you were planning to pick up Rubio's body, so I placed some people here to keep an eye out."
     },
     {
-        "text": "Go, Lavinia. I have a rough idea of what's going on, so leave it to me. The girl...",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "Go, Lavinia. I have a rough idea of what's going on, so leave it to me. The girl..."
     },
     {
-        "text": "Only you can save her.",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "Only you can save her."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Leontuzzo. What difference does it make, you being here?",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Leontuzzo. What difference does it make, you being here?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_427_vigil_1#8$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_427_vigil_1#8$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I came prepared, of course.",
-        "tag": "name",
-        "value": "Leontuzzo"
+        "command": "name",
+        "value": "Leontuzzo",
+        "text": "I came prepared, of course."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_swrdgnlght",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_swrdgnlght",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1028_texas2_1#7$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1028_texas2_1#7$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*tch* So Texas is here too...",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "*tch* So Texas is here too..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_698_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_698_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Stop them!",
-        "tag": "name",
-        "value": "Radical Mafioso"
+        "command": "name",
+        "value": "Radical Mafioso",
+        "text": "Stop them!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$e_skill_skulsrsword",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$e_skill_skulsrsword",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1028_texas2_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1028_texas2_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "This way.",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "This way."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Grazie.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Grazie."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowtarget",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowtarget",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_stringtrem",
-        "volume": 1,
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_stringtrem",
+            "volume": 1,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The crossbow bolt nails Teresa's clothes down."
@@ -3014,416 +3508,480 @@
         "text": "Luna's eyes are glued to her, but a smile remains on the woman's face."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Pretty good shot. You must have pictured this moment in your head so many times, huh?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Pretty good shot. You must have pictured this moment in your head so many times, huh?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Shut up.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Shut up."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If only you could see yourself now, my dear.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "If only you could see yourself now, my dear."
     },
     {
-        "text": "When I looked into your eyes, I just knew. You're truly one of us.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "When I looked into your eyes, I just knew. You're truly one of us."
     },
     {
-        "text": "No, that's not it. Rather, is there anyone who <i>isn't</i> one of us?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "No, that's not it. Rather, is there anyone who <i>isn't</i> one of us?"
     },
     {
-        "text": "Does that judge truly think she's any less base, less filthy than we are?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Does that judge truly think she's any less base, less filthy than we are?"
     },
     {
-        "text": "How much blood does she have on her hands?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "How much blood does she have on her hands?"
     },
     {
-        "text": "And your father, what a beautiful speech he gave.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "And your father, what a beautiful speech he gave."
     },
     {
-        "text": "But how many deaths did he turn a blind eye to?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "But how many deaths did he turn a blind eye to?"
     },
     {
-        "text": "I don't believe it, ragazzina. What makes them think they can build a clean house with dirty hands?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I don't believe it, ragazzina. What makes them think they can build a clean house with dirty hands?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Padre's hands are clean, and so are Lavinia's!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Padre's hands are clean, and so are Lavinia's!"
     },
     {
-        "text": "I won't let you insult them again!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I won't let you insult them again!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bowstring_tightened",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bowstring_tightened",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Luna keeps her crossbow aimed at Teresa, but the clerk does not flinch one bit."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Insult?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Insult?"
     },
     {
-        "text": "I'm only stating the facts.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "I'm only stating the facts."
     },
     {
-        "text": "If you truly hate the famiglia that drove Rubio to his death...",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "If you truly hate the famiglia that drove Rubio to his death..."
     },
     {
-        "text": "Then this is your chance.",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Then this is your chance."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What's wrong, are you scared?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "What's wrong, are you scared?"
     },
     {
-        "text": "Is that all your feelings for your father amount to?",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Is that all your feelings for your father amount to?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 25,
-        "ystrength": 25,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 25,
+            "ystrength": 25,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "SHUT UP!!!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "SHUT UP!!!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_runstop",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#12$1",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#12$1",
+            "duration": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Luna, stop!",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Luna, stop!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bowstring_rebound",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bowstring_rebound",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_arrowtarget",
-        "volume": 0.5,
-        "delay": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_arrowtarget",
+            "volume": 0.5,
+            "delay": 0.3
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.8,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.8,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 1,
-        "g": 0.2,
-        "b": 0.2,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 1,
+            "g": 0.2,
+            "b": 0.2,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ugh...",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Ugh..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "A sharp crossbow bolt pierces through Lavinia's shoulder."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "La... vinia...?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "La... vinia...?"
     },
     {
-        "text": "Wh-Why...?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Wh-Why...?"
     },
     {
-        "text": "I... I\u2019m sorry...",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I... I\u2019m sorry..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Lavinia?! What are those men doing\u2014",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Lavinia?! What are those men doing\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$fightgeneral",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$fightgeneral",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_697_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_697_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ugh...",
-        "tag": "name",
-        "value": "Clerk Teresa"
+        "command": "name",
+        "value": "Clerk Teresa",
+        "text": "Ugh..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown2",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playmusic",
-        "intro": "$dignified_intro",
-        "key": "$dignified_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$dignified_intro",
+            "key": "$dignified_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Calm down, Luna. And put your weapon down too.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Calm down, Luna. And put your weapon down too."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Lavinia covers her shoulder and slowly but surely approaches the girl."
@@ -3432,334 +3990,374 @@
         "text": "Luna recoils in panic, but doesn't know where to run."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...No.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "...No."
     },
     {
-        "text": "She insulted padre. She said he died for nothing.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "She insulted padre. She said he died for nothing."
     },
     {
-        "text": "She insulted you too. Said everything you do is meaningless.",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "She insulted you too. Said everything you do is meaningless."
     },
     {
-        "text": "She deserves to die, just like all the mafiosi!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "She deserves to die, just like all the mafiosi!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "People like her will be punished in the end.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "People like her will be punished in the end."
     },
     {
-        "text": "But if you kill her now, everything will be over.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "But if you kill her now, everything will be over."
     },
     {
-        "text": "The books you borrowed from me, aren't you reading them because you wanted to be a person who can judge others fairly?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "The books you borrowed from me, aren't you reading them because you wanted to be a person who can judge others fairly?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 25,
-        "ystrength": 25,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 25,
+            "ystrength": 25,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "I know!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I know!"
     },
     {
-        "text": "But, but\u2014!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "But, but\u2014!"
     },
     {
-        "text": "I dream of Pap\u00e0 every day, and I dream of that gunshot!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I dream of Pap\u00e0 every day, and I dream of that gunshot!"
     },
     {
-        "text": "I don't know what to do!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I don't know what to do!"
     },
     {
-        "text": "I study so hard so I can forget, but I can't!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I study so hard so I can forget, but I can't!"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 25,
-        "ystrength": 25,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 25,
+            "ystrength": 25,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "I CAN'T!!!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I CAN'T!!!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#1$1",
-        "posfrom": "-50,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#1$1",
+            "posfrom": "-50,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#11$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#11$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "...Who could forget?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...Who could forget?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "But the last thing your father would want is for you to act on impulse and forget what we should do, and where we should go.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "But the last thing your father would want is for you to act on impulse and forget what we should do, and where we should go."
     },
     {
-        "text": "He waited decades for his one and only chance.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "He waited decades for his one and only chance."
     },
     {
-        "text": "He may not want you and I to walk the same path, but I can't just stand by and watch you stain your hands with blood.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "He may not want you and I to walk the same path, but I can't just stand by and watch you stain your hands with blood."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "But I can't help it. There's no way I can...",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "But I can't help it. There's no way I can..."
     },
     {
-        "text": "I can't wait that long...",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I can't wait that long..."
     },
     {
-        "text": "I want everyone to know padre wasn't the kind of person they think he was...",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I want everyone to know padre wasn't the kind of person they think he was..."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "That day will come, Luna. I promise you.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "That day will come, Luna. I promise you."
     },
     {
-        "text": "And until it does, I'll always be by your side.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "And until it does, I'll always be by your side."
     },
     {
-        "text": "Even if I'm the last person in this land to believe in your father's words. I'll keep the faith and fight for it.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Even if I'm the last person in this land to believe in your father's words. I'll keep the faith and fight for it."
     },
     {
-        "text": "Because I share the same dream.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Because I share the same dream."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "posfrom": "0,0",
-        "posto": "150,0",
-        "duration": 2
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "posfrom": "0,0",
+            "posto": "150,0",
+            "duration": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "n"
+        }
     },
     {
         "text": "Lavinia walks over to Luna and cradles the crying child in a tight embrace."
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "When you can't take it anymore, just come find me.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "When you can't take it anymore, just come find me."
     },
     {
-        "text": "I'll listen to your complaints; I'll cry with you.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'll listen to your complaints; I'll cry with you."
     },
     {
-        "text": "And when you're older, we can drink a little vino together as we complain to one another, and bear each other's troubles when we can't handle them alone.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "And when you're older, we can drink a little vino together as we complain to one another, and bear each other's troubles when we can't handle them alone."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I... Can I really?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I... Can I really?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Of course. But you must promise me you will learn patience.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Of course. But you must promise me you will learn patience."
     },
     {
-        "text": "You must try to hold it in against anything that angers you.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "You must try to hold it in against anything that angers you."
     },
     {
-        "text": "Alright?",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Alright?"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I wanted to, I really, wanted to, but, but... I'm so..s-sorry\u2014*sob* Waaaaah!!!!",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "I wanted to, I really, wanted to, but, but... I'm so..s-sorry\u2014*sob* Waaaaah!!!!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_4065_judge_1#10$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_4065_judge_1#10$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "I know, I know.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I know, I know."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_guitarfallground",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_guitarfallground",
+            "volume": 0.7
+        }
     },
     {
         "text": "The crossbow drops to the floor, and the hands that were holding it grab onto Lavinia instead."
@@ -3768,61 +4366,73 @@
         "text": "Tears well up once more, but this time they wash away the anger and hate."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "33_g7_reception",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "33_g7_reception",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "After a long time, the crying finally stops."
@@ -3834,193 +4444,213 @@
         "text": "As they walk, she suddenly seems to recall something, and says\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "...I'm sorry, Luna.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "...I'm sorry, Luna."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "Huh?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#6$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#6$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Whether it's me or your father, consciously or otherwise, we've been asking you to become what we want you to be.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Whether it's me or your father, consciously or otherwise, we've been asking you to become what we want you to be."
     },
     {
-        "text": "I've met enough people to know that justice and righteousness... are not the only paths one can take.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I've met enough people to know that justice and righteousness... are not the only paths one can take."
     },
     {
-        "text": "But\u2014",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "But\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "A long time ago, when I had just started working...",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "A long time ago, when I had just started working..."
     },
     {
-        "text": "I was the same as you, hoping I could knock some sense into the famiglie. I wanted to let them know they can't do as they please.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I was the same as you, hoping I could knock some sense into the famiglie. I wanted to let them know they can't do as they please."
     },
     {
-        "text": "Then one day, I found myself at the entrance of an alley.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Then one day, I found myself at the entrance of an alley."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If not for someone stopping me from going in, I may have died in that very alley.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "If not for someone stopping me from going in, I may have died in that very alley."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That person presented me with a box containing the glove and hammer I wield now.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "That person presented me with a box containing the glove and hammer I wield now."
     },
     {
-        "text": "Back then, I thought that if I hid behind him... I might not be able to stand up for myself for the rest of my life.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Back then, I thought that if I hid behind him... I might not be able to stand up for myself for the rest of my life."
     },
     {
-        "text": "So I took the weapon he gave me and walked ahead of him.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "So I took the weapon he gave me and walked ahead of him."
     },
     {
-        "text": "Now that I'm recalling all this, I think that's what he hoped I'd do. And he'd also hope I would do this today.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Now that I'm recalling all this, I think that's what he hoped I'd do. And he'd also hope I would do this today."
     },
     {
-        "text": "Mafiosi always treat death like it is inevitable, as merely the result of solving a problem.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Mafiosi always treat death like it is inevitable, as merely the result of solving a problem."
     },
     {
-        "text": "This cycle of violence is how they live and survive.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "This cycle of violence is how they live and survive."
     },
     {
-        "text": "Long, long ago, a bunch of people walked in the rain into an alley with no lights. They would either die in there, or come out with blood on their hands.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Long, long ago, a bunch of people walked in the rain into an alley with no lights. They would either die in there, or come out with blood on their hands."
     },
     {
-        "text": "Then, they went further, deeper into the alley, and gradually forgot why they were there in the first place. And in the end, they saw that narrow alley as a full-width street.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Then, they went further, deeper into the alley, and gradually forgot why they were there in the first place. And in the end, they saw that narrow alley as a full-width street."
     },
     {
-        "text": "Siracusa is a labyrinth of narrow alleys, even dead ends.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Siracusa is a labyrinth of narrow alleys, even dead ends."
     },
     {
-        "text": "The people living inside the maze don't have many choices to make.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "The people living inside the maze don't have many choices to make."
     },
     {
-        "text": "If the choice was between people like me or the famiglie, I'd rather insist on keeping you by my side.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "If the choice was between people like me or the famiglie, I'd rather insist on keeping you by my side."
     },
     {
-        "text": "But you don't have to become me, and I'm not hoping for that either.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "But you don't have to become me, and I'm not hoping for that either."
     },
     {
-        "text": "I'd much rather be able to take you outside this labyrinth entirely.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "I'd much rather be able to take you outside this labyrinth entirely."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_700_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_700_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What's outside of it?",
-        "tag": "name",
-        "value": "Luna"
+        "command": "name",
+        "value": "Luna",
+        "text": "What's outside of it?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4065_judge_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4065_judge_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Roads. Many wide open roads.",
-        "tag": "name",
-        "value": "Lavinia"
+        "command": "name",
+        "value": "Lavinia",
+        "text": "Roads. Many wide open roads."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

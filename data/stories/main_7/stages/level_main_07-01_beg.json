@@ -1,870 +1,1028 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playmusic",
+        "params": {
+            "intro": "$dignified_intro",
+            "key": "$dignified_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$dignified_intro",
-        "key": "$dignified_loop",
-        "volume": 0.4
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor",
-        "screenadapt": "coverall"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
         "text": "6:30 p.m."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Number 00000-00002, Clearance Level-8.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Number 00000-00002, Clearance Level-8."
     },
     {
-        "text": "Dr. {@nickname}, thank you for visiting the Rhodes Island Integrated Bioprocessing Unit. Your intentions have been determined through analysis of available biological data.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Dr. {@nickname}, thank you for visiting the Rhodes Island Integrated Bioprocessing Unit. Your intentions have been determined through analysis of available biological data."
     },
     {
-        "text": "In addition, the system detects that you are in a bad mood.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "In addition, the system detects that you are in a bad mood."
     },
     {
-        "tag": "decision",
-        "options": "Leave me alone.;......;And what would count for a good mood?",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "Leave me alone.;......;And what would count for a good mood?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Dr. {@nickname} is displaying aggression.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Dr. {@nickname} is displaying aggression."
     },
     {
-        "text": "Rest assured the system will not electrocute you. There is no need to fear these tests.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Rest assured the system will not electrocute you. There is no need to fear these tests."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Dr. {@nickname} fell silent.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Dr. {@nickname} fell silent."
     },
     {
-        "text": "Whether silent protest or refusal to communicate, I believe it is an expression of an autism spectrum disorder.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Whether silent protest or refusal to communicate, I believe it is an expression of an autism spectrum disorder."
     },
     {
-        "text": "Please, by all means. The system treats all equally.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Please, by all means. The system treats all equally."
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Good and bad are subjective judgments.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Good and bad are subjective judgments."
     },
     {
-        "text": "However, this system has collected nearly all documented states of mental activity, as well as hormonal criteria for various types of neurological excitement.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "However, this system has collected nearly all documented states of mental activity, as well as hormonal criteria for various types of neurological excitement."
     },
     {
-        "text": "So you could argue that the system's subjective judgment is substantially closer to objective truth.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "So you could argue that the system's subjective judgment is substantially closer to objective truth."
     },
     {
-        "text": "Therefore, no matter what action Dr. {@nickname} may take, the system will be able to process it to some degree.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Therefore, no matter what action Dr. {@nickname} may take, the system will be able to process it to some degree."
     },
     {
-        "text": "Which is to say: you may do as you wish.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Which is to say: you may do as you wish."
     },
     {
-        "text": "PRTS is equipped with a nonlethal pacification function.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "PRTS is equipped with a nonlethal pacification function."
     },
     {
-        "text": "Should you take unreasonable action, you will lose consciousness for 3.55 working hours, ensuring you maintain a behavioral standard close to normal.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Should you take unreasonable action, you will lose consciousness for 3.55 working hours, ensuring you maintain a behavioral standard close to normal."
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Welcome home, Doctor.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Welcome home, Doctor."
     },
     {
-        "tag": "decision",
-        "options": "Can this really be called home?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Can this really be called home?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Are you Dr. {@nickname}?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Are you Dr. {@nickname}?"
     },
     {
-        "tag": "decision",
-        "options": "Huh?;......?;Hello?",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "Huh?;......?;Hello?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "It's you. I'm sure of it.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "It's you. I'm sure of it."
     },
     {
-        "text": "I can feel it... you're a little different.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I can feel it... you're a little different."
     },
     {
-        "text": "But... the person you're holding, that uniform...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "But... the person you're holding, that uniform..."
     },
     {
-        "text": "Can I ask who's that you're holding?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Can I ask who's that you're holding?"
     },
     {
-        "tag": "decision",
-        "options": "A fighter.;One of my people.;A friend.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "A fighter.;One of my people.;A friend.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Fighter?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Fighter?"
     },
     {
-        "text": "Oh... she wounded you. Were you fighting?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh... she wounded you. Were you fighting?"
     },
     {
-        "text": "No, you weren't... This isn't a lethal wound.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No, you weren't... This isn't a lethal wound."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Is she Infected too...?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Is she Infected too...?"
     },
     {
-        "text": "No, that's not what you meant.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No, that's not what you meant."
     },
     {
-        "text": "Dr. {@nickname}, you seem like you lost something.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Dr. {@nickname}, you seem like you lost something."
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "She's your friend?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "She's your friend?"
     },
     {
-        "text": "But... you barely know her at all.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "But... you barely know her at all."
     },
     {
-        "text": "I don't know... this might disappear soon.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I don't know... this might disappear soon."
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "What... do you feel?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "What... do you feel?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Traces of people communicating with each other. Smell, warmth, shape.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Traces of people communicating with each other. Smell, warmth, shape."
     },
     {
-        "text": "I'm not sure, but she...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'm not sure, but she..."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "The girl reaches out to FrostNova."
     },
     {
-        "tag": "decision",
-        "options": "(Let her).;(Stop her).",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "(Let her).;(Stop her).",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Hm.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hm."
     },
     {
-        "text": "No.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No."
     },
     {
-        "text": "You don't want me to do that?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You don't want me to do that?"
     },
     {
-        "text": "No. I'm an outsider. I don't know her.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No. I'm an outsider. I don't know her."
     },
     {
-        "text": "I can't do this, can I?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I can't do this, can I?"
     },
     {
-        "text": "I'm sorry.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'm sorry."
     },
     {
-        "tag": "decision",
-        "options": "Can you read minds, like Amiya?;......;I'm having trouble understanding you.",
-        "values": "4;5;6"
+        "command": "decision",
+        "params": {
+            "options": "Can you read minds, like Amiya?;......;I'm having trouble understanding you.",
+            "values": "4;5;6"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 4
+        "command": "predicate",
+        "params": {
+            "references": 4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "No, I can't...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No, I can't..."
     },
     {
-        "text": "Amiya is special. I know Amiya's Arts... and I think she suffers a lot.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Amiya is special. I know Amiya's Arts... and I think she suffers a lot."
     },
     {
-        "tag": "predicate",
-        "references": 5
+        "command": "predicate",
+        "params": {
+            "references": 5
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "I... I can't touch her, and I can't feel her.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I... I can't touch her, and I can't feel her."
     },
     {
-        "text": "Her connection to this world has no connection to me.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Her connection to this world has no connection to me."
     },
     {
-        "text": "I... I have no right to touch her.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I... I have no right to touch her."
     },
     {
-        "tag": "predicate",
-        "references": 6
+        "command": "predicate",
+        "params": {
+            "references": 6
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "The other operators say that too.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The other operators say that too."
     },
     {
-        "text": "There are a lot of big personalities at Rhodes Island... But I might be weird, even for them.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "There are a lot of big personalities at Rhodes Island... But I might be weird, even for them."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Oh...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh..."
     },
     {
-        "text": "I'm... I'm sorry...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'm... I'm sorry..."
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I..."
     },
     {
-        "tag": "decision",
-        "options": "Sorry.;......;I'm sorry, little girl.",
-        "values": "7;8;9"
+        "command": "decision",
+        "params": {
+            "options": "Sorry.;......;I'm sorry, little girl.",
+            "values": "7;8;9"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 7
+        "command": "predicate",
+        "params": {
+            "references": 7
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "No, it's fine. I'm used to it.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "No, it's fine. I'm used to it."
     },
     {
-        "tag": "predicate",
-        "references": 8
+        "command": "predicate",
+        "params": {
+            "references": 8
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "P-please don't be mad...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "P-please don't be mad..."
     },
     {
-        "text": "When you don't speak, I... I don't know what to say.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "When you don't speak, I... I don't know what to say."
     },
     {
-        "tag": "predicate",
-        "references": 9
+        "command": "predicate",
+        "params": {
+            "references": 9
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "I'm fine.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'm fine."
     },
     {
-        "text": "I'd much rather someone be straight with me than be scared of me. So I'm fine.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'd much rather someone be straight with me than be scared of me. So I'm fine."
     },
     {
-        "tag": "predicate",
-        "references": "4;5;6;7;8;9"
+        "command": "predicate",
+        "params": {
+            "references": "4;5;6;7;8;9"
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Did you want... to use this machine?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Did you want... to use this machine?"
     },
     {
-        "tag": "decision",
-        "options": "If this is indeed the final resting place of the Infected.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "If this is indeed the final resting place of the Infected.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "...it is.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "...it is."
     },
     {
-        "text": "Just a second. Let me check the log.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Just a second. Let me check the log."
     },
     {
-        "text": "Yes, they cleaned this cabin already. Put her on this slab. Easy now. There.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Yes, they cleaned this cabin already. Put her on this slab. Easy now. There."
     },
     {
-        "text": "Then the slab will slide in there, and... wait for it to close, and finally press this button.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Then the slab will slide in there, and... wait for it to close, and finally press this button."
     },
     {
-        "tag": "decision",
-        "options": "You're really familiar with it.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "You're really familiar with it.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Oh, I've had to use it a lot.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh, I've had to use it a lot."
     },
     {
-        "tag": "decision",
-        "options": "Why...?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Why...?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "This is where all of Rhodes Island's Infected end up.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "This is where all of Rhodes Island's Infected end up."
     },
     {
-        "text": "And if I knew them, if I felt them, if they were my teammates, I always take care of them myself.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "And if I knew them, if I felt them, if they were my teammates, I always take care of them myself."
     },
     {
-        "text": "The original manual was really complicated, but I wrote down how to use it in my terminal. Just a quick look and I can feel it.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "The original manual was really complicated, but I wrote down how to use it in my terminal. Just a quick look and I can feel it."
     },
     {
-        "tag": "decision",
-        "options": "Feel what?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Feel what?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Hmm... it's like a chain.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hmm... it's like a chain."
     },
     {
-        "tag": "decision",
-        "options": "A chain...?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "A chain...?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Or I could say it's like seeing the links between people.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Or I could say it's like seeing the links between people."
     },
     {
-        "text": "Sending off the people tied to you means untangling the lines around them. The other ends of the threads are still tied to us, but even when the one side is gone, the threads don't hang down.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Sending off the people tied to you means untangling the lines around them. The other ends of the threads are still tied to us, but even when the one side is gone, the threads don't hang down."
     },
     {
-        "text": "It feels like you've lost something inside yourself. Something you didn't know was there, but knowing it won't come back.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "It feels like you've lost something inside yourself. Something you didn't know was there, but knowing it won't come back."
     },
     {
-        "tag": "decision",
-        "options": "Why would you want to feel that?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Why would you want to feel that?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Because if you know the feeling, it won't suddenly sting you, right?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Because if you know the feeling, it won't suddenly sting you, right?"
     },
     {
-        "tag": "decision",
-        "options": "So then you...?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "So then you...?",
+            "values": "1"
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Excuse me.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Excuse me."
     },
     {
-        "text": "Identifier for Rosmontis, elite operator present in Rhodes Island Integrated Infected Bioprocessing Unit, will expire in fifteen minutes.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Identifier for Rosmontis, elite operator present in Rhodes Island Integrated Infected Bioprocessing Unit, will expire in fifteen minutes."
     },
     {
-        "text": "I will update you momentarily. Stand in place for about fifteen seconds.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "I will update you momentarily. Stand in place for about fifteen seconds."
     },
     {
-        "text": "In addition, there is a skirmish taking place by the starboard hull. If possible, please assist after updating your identification code, in order to reduce resource consumption.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "In addition, there is a skirmish taking place by the starboard hull. If possible, please assist after updating your identification code, in order to reduce resource consumption."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Oh, okay. I'll go do that.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Oh, okay. I'll go do that."
     },
     {
-        "text": "I'm making a note of it in my terminal.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I'm making a note of it in my terminal."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Reminding you for the sixth time, if you would allow access to this system, it could send the information directly to...",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Reminding you for the sixth time, if you would allow access to this system, it could send the information directly to..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "No.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "No."
     },
     {
-        "text": "I'm... the only one who can use this.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I'm... the only one who can use this."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Understood.",
-        "tag": "name",
-        "value": "PRTS"
+        "command": "name",
+        "value": "PRTS",
+        "text": "Understood."
     },
     {
-        "tag": "decision",
-        "options": "Elite operator...?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Elite operator...?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "PRTS means me.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "PRTS means me."
     },
     {
-        "tag": "decision",
-        "options": "Should I call you Rosmontis?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Should I call you Rosmontis?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "Yes... Rosmontis.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Yes... Rosmontis."
     },
     {
-        "text": "What... about her?",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "What... about her?"
     },
     {
-        "text": "I think... I should at least know her name.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I think... I should at least know her name."
     },
     {
-        "tag": "decision",
-        "options": "FrostNova.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "FrostNova.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_042"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_042"
+        }
     },
     {
-        "text": "FrostNova...",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "FrostNova..."
     },
     {
-        "text": "A good name.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "A good name."
     },
     {
-        "text": "Hello, FrostNova.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Hello, FrostNova."
     },
     {
-        "text": "...Bye bye.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "...Bye bye."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

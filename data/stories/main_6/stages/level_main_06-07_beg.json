@@ -1,59 +1,62 @@
 [
     {
-        "text": "\u7b2c\u4e09\u5173\uff08\u524d\uff09",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "avg_6_14",
+            "x": 0,
+            "y": 0,
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_6_14",
-        "x": 0,
-        "y": 0,
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "fadetime": 0
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness02_intro",
+            "key": "$darkness02_loop",
+            "volume": 0.8,
+            "crossfade": 1.5,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness02_intro",
-        "key": "$darkness02_loop",
-        "volume": 0.8,
-        "crossfade": 1.5,
-        "delay": 0.5
+        "command": "character"
     },
     {
-        "tag": "character"
-    },
-    {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "yFrom": 0,
-        "xTo": 30,
-        "yTo": 0,
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "duration": 15,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "yfrom": 0,
+            "x": 30,
+            "y": 0,
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "duration": 15,
+            "block": false
+        }
     },
     {
         "text": "9:00 A.M. / Overcast"
@@ -77,1116 +80,1308 @@
         "text": "14 individuals."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.6,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.6,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.6,
+            "block": false
+        }
     },
     {
-        "tag": "background",
-        "screenadapt": "coverall",
-        "image": "bg_aircraft",
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "screenadapt": "coverall",
+            "image": "bg_aircraft",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "daley",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "This is your stop. Amiya and her people are nearby!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "This is your stop. Amiya and her people are nearby!"
     },
     {
-        "text": "Was it really okay to drop the team outside the city? You're gonna go down there by yourself?!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Was it really okay to drop the team outside the city? You're gonna go down there by yourself?!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Come on, it's a lot better for them to be out there clearing a path and pushing back Reunion's pursuit forces than to fight here.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Come on, it's a lot better for them to be out there clearing a path and pushing back Reunion's pursuit forces than to fight here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Okay. The terrain down there is pretty rough. This is as far as I can take you.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Okay. The terrain down there is pretty rough. This is as far as I can take you."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "It's fine.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "It's fine."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "...At least let me put down a rope for you?",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "...At least let me put down a rope for you?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "When have you ever seen me use a rope?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "When have you ever seen me use a rope?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "You're just gonna go for it again, huh?",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "You're just gonna go for it again, huh?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Go for what? What are you talking about?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Go for what? What are you talking about?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Every time we have a mission together, you go off and do crazy stuff while I sit in the cockpit on pins and needles and watch.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Every time we have a mission together, you go off and do crazy stuff while I sit in the cockpit on pins and needles and watch."
     },
     {
-        "text": "I'm kind of used to it, but that doesn't change the fact that you're way too reckless out there.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "I'm kind of used to it, but that doesn't change the fact that you're way too reckless out there."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "That just goes to show you what a good rapport you, me, and my team have!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "That just goes to show you what a good rapport you, me, and my team have!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Rapport my ass! Last time you demolished a town, bombed out a reservoir, and collapsed a mine!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Rapport my ass! Last time you demolished a town, bombed out a reservoir, and collapsed a mine!"
     },
     {
-        "text": "Keep the chaos on the ground please, don't bring it onto my baby!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Keep the chaos on the ground please, don't bring it onto my baby!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Fine, fine. I got it. But, 'Bad Guy,' really? Maybe think a little harder next time you pick a name.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Fine, fine. I got it. But, 'Bad Guy,' really? Maybe think a little harder next time you pick a name."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Just jump already.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Just jump already."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "I think the welcoming committee's spotted us. This is where we say goodbye, Blaze.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "I think the welcoming committee's spotted us. This is where we say goodbye, Blaze."
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_017_homura_3#4"
+        "command": "character",
+        "params": {
+            "name": "char_017_homura_3#4"
+        }
     },
     {
-        "text": "No problem.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "No problem."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "I'll wait for you by the entrance to the ruins. Be quick!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "I'll wait for you by the entrance to the ruins. Be quick!"
     },
     {
-        "text": "Huh? The comms.",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Huh? The comms."
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "HELLO?!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "HELLO?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "I can hear you! You don't have to yell!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "I can hear you! You don't have to yell!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Oh. Hi, Rhodes Islanders. I'm with the L. G. D. I've met up with your team by the ruins!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh. Hi, Rhodes Islanders. I'm with the L. G. D. I've met up with your team by the ruins!"
     },
     {
-        "tag": "character",
-        "name": "char_017_homura_3#4"
+        "command": "character",
+        "params": {
+            "name": "char_017_homura_3#4"
+        }
     },
     {
-        "text": "Didn't the L. G. D. withdraw already? What are you trying to pull?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Didn't the L. G. D. withdraw already? What are you trying to pull?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "I'm not like that Ch'en lady! Trust me, I can help you.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I'm not like that Ch'en lady! Trust me, I can help you."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "And how should we call you?",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "And how should we call you?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Use my codename. Call me Officer Swire!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Use my codename. Call me Officer Swire!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "......"
     },
     {
-        "text": "Isn't Swire just your name?",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Isn't Swire just your name?"
     },
     {
-        "text": "Blaze, can you take care of this? I'm not good with bureaucrats...",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Blaze, can you take care of this? I'm not good with bureaucrats..."
     },
     {
-        "text": "......Blaze?",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "......Blaze?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012",
-        "name2": "char_017_homura_3#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012",
+            "name2": "char_017_homura_3#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Don't look at me.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Don't look at me."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012",
-        "name2": "char_017_homura_3#4",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012",
+            "name2": "char_017_homura_3#4",
+            "focus": 1
+        }
     },
     {
-        "text": "Get back here! Don't jump!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Get back here! Don't jump!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012",
-        "name2": "char_017_homura_3#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012",
+            "name2": "char_017_homura_3#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Didn't you tell me to jump a second ago? You can handle this. I believe in you! *Mwah*",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Didn't you tell me to jump a second ago? You can handle this. I believe in you! *Mwah*"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_012"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_012"
+        }
     },
     {
-        "text": "Mwah my ass!",
-        "tag": "name",
-        "value": "Pilot"
+        "command": "name",
+        "value": "Pilot",
+        "text": "Mwah my ass!"
     },
     {
-        "tag": "stopmusic",
-        "time": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_cher_11",
-        "width": 1,
-        "height": 1,
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_cher_11",
+            "width": 1,
+            "height": 1,
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.8,
-        "crossfade": 1.5,
-        "delay": 0.5
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.8,
+            "crossfade": 1.5,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_193_frostl_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_193_frostl_1#5"
+        }
     },
     {
-        "text": "*Pant* *pant*...",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "*Pant* *pant*..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4",
-        "name2": "char_219_meteo_1#7",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4",
+            "name2": "char_219_meteo_1#7",
+            "focus": 2
+        }
     },
     {
-        "text": "...Is she okay?",
-        "tag": "name",
-        "value": "Meteorite"
+        "command": "name",
+        "value": "Meteorite",
+        "text": "...Is she okay?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4",
-        "name2": "char_219_meteo_1#7",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4",
+            "name2": "char_219_meteo_1#7",
+            "focus": 1
+        }
     },
     {
-        "text": "Yes, it's nothing serious. Just her body temperature's a little low.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Yes, it's nothing serious. Just her body temperature's a little low."
     },
     {
-        "tag": "character",
-        "name": "char_193_frostl_1"
+        "command": "character",
+        "params": {
+            "name": "char_193_frostl_1"
+        }
     },
     {
-        "text": "It's always... low. I'm fine. I just...",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "It's always... low. I'm fine. I just..."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#4"
+        }
     },
     {
-        "text": "Frostleaf, slow down. Your temperature is even lower than usual.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Frostleaf, slow down. Your temperature is even lower than usual."
     },
     {
-        "text": "Doctor, pass me a bandage.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Doctor, pass me a bandage."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Here.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Here.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_193_frostl_1"
+        "command": "character",
+        "params": {
+            "name": "char_193_frostl_1"
+        }
     },
     {
-        "text": "I told you, I'm fine. Meteorite got hit a lot harder.",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "I told you, I'm fine. Meteorite got hit a lot harder."
     },
     {
-        "tag": "character",
-        "name": "char_219_meteo_1"
+        "command": "character",
+        "params": {
+            "name": "char_219_meteo_1"
+        }
     },
     {
-        "text": "It's okay. I'm a Sarkaz. I'm more worried about you.",
-        "tag": "name",
-        "value": "Meteorite"
+        "command": "name",
+        "value": "Meteorite",
+        "text": "It's okay. I'm a Sarkaz. I'm more worried about you."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_259_Jessica_1#1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_259_Jessica_1#1",
+            "focus": 1
+        }
     },
     {
-        "text": "Jessica, what is Yeti Squad doing?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Jessica, what is Yeti Squad doing?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_259_Jessica_1#1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_259_Jessica_1#1",
+            "focus": 2
+        }
     },
     {
-        "text": "Th- they're approaching our position! About 500 meters out!",
-        "tag": "name",
-        "value": "Jessica"
+        "command": "name",
+        "value": "Jessica",
+        "text": "Th- they're approaching our position! About 500 meters out!"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "And the debris clearing?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "And the debris clearing?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "We need about fifteen more minutes. The collapsed building has a pretty complicated superstructure and we can't risk blasting here.",
-        "tag": "name",
-        "value": "Rhodes Island Operator"
+        "command": "name",
+        "value": "Rhodes Island Operator",
+        "text": "We need about fifteen more minutes. The collapsed building has a pretty complicated superstructure and we can't risk blasting here."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_219_meteo_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_219_meteo_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Meteorite, get ready to fight. We have to hold this line.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Meteorite, get ready to fight. We have to hold this line."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_219_meteo_1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_219_meteo_1",
+            "focus": 2
+        }
     },
     {
-        "text": "Roger. Do we have a stock of bolts?",
-        "tag": "name",
-        "value": "Meteorite"
+        "command": "name",
+        "value": "Meteorite",
+        "text": "Roger. Do we have a stock of bolts?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "name2": "char_219_meteo_1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "name2": "char_219_meteo_1",
+            "focus": 1
+        }
     },
     {
-        "text": "Yes. Logistics can get them for you...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Yes. Logistics can get them for you..."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "text": "Amiya, are you there?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Amiya, are you there?"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "char_259_Jessica_1#1"
+        "command": "character",
+        "params": {
+            "name": "char_259_Jessica_1#1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Jessica"
+        "command": "name",
+        "value": "Jessica",
+        "text": "......"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "...guh.",
-        "tag": "name",
-        "value": "Rhodes Island Operator"
+        "command": "name",
+        "value": "Rhodes Island Operator",
+        "text": "...guh."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#1"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#1"
+        }
     },
     {
-        "text": "Did somebody leave their comms open?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Did somebody leave their comms open?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "text": "This is the elite operators' channel, I can open it from my end.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "This is the elite operators' channel, I can open it from my end."
     },
     {
-        "tag": "character",
-        "name": "char_259_Jessica_1#2"
+        "command": "character",
+        "params": {
+            "name": "char_259_Jessica_1#2"
+        }
     },
     {
-        "text": "That voice...?",
-        "tag": "name",
-        "value": "Jessica"
+        "command": "name",
+        "value": "Jessica",
+        "text": "That voice...?"
     },
     {
-        "tag": "character",
-        "name": "char_193_frostl_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_193_frostl_1#5"
+        }
     },
     {
-        "text": "Oh no. They sent her.",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "Oh no. They sent her."
     },
     {
-        "tag": "character",
-        "name": "char_259_Jessica_1#2",
-        "name2": "char_193_frostl_1#5",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_259_Jessica_1#2",
+            "name2": "char_193_frostl_1#5",
+            "focus": 1
+        }
     },
     {
-        "text": "Um... who is it?",
-        "tag": "name",
-        "value": "Jessica"
+        "command": "name",
+        "value": "Jessica",
+        "text": "Um... who is it?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "decision",
-        "options": "Yes, who is this? And what's got her so excited?;......;Can she really make a difference here?",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "Yes, who is this? And what's got her so excited?;......;Can she really make a difference here?",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_193_frostl_1"
+        "command": "character",
+        "params": {
+            "name": "char_193_frostl_1"
+        }
     },
     {
-        "text": "They call her Blaze. She can certainly level the whole area and leave everyone pissing themselves.",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "They call her Blaze. She can certainly level the whole area and leave everyone pissing themselves."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "text": "Damn right it's me! But that last part is a little off.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Damn right it's me! But that last part is a little off."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "Please... let's be serious here.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Please... let's be serious here."
     },
     {
-        "text": "Where are you, Blaze? We need your support.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Where are you, Blaze? We need your support."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "I'm right above you.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I'm right above you."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "What?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Just about 200 meters to go and I'll be there!",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Just about 200 meters to go and I'll be there!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_037"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_037"
+        }
     },
     {
-        "text": "I can't hit the machine, it's out of range!",
-        "tag": "name",
-        "value": "Yeti Squad Member"
+        "command": "name",
+        "value": "Yeti Squad Member",
+        "text": "I can't hit the machine, it's out of range!"
     },
     {
-        "text": "Flying machines... they have such equipment?",
-        "tag": "name",
-        "value": "Yeti Squad Member"
+        "command": "name",
+        "value": "Yeti Squad Member",
+        "text": "Flying machines... they have such equipment?"
     },
     {
-        "tag": "character",
-        "name": "char_1505_frstar_1"
+        "command": "character",
+        "params": {
+            "name": "char_1505_frstar_1"
+        }
     },
     {
-        "text": "Make sure they do not come down.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Make sure they do not come down."
     },
     {
-        "text": "Wipe out the Rhodes Island squad before their reinforcements arrive. They cannot be allowed to join forces.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Wipe out the Rhodes Island squad before their reinforcements arrive. They cannot be allowed to join forces."
     },
     {
-        "text": "Wait.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Wait."
     },
     {
-        "tag": "character",
-        "name": "char_1505_frstar_1#9"
+        "command": "character",
+        "params": {
+            "name": "char_1505_frstar_1#9"
+        }
     },
     {
-        "text": "\u2014\u2014\u2014Stand back!",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "\u2014\u2014\u2014Stand back!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_219_meteo_1"
+        "command": "character",
+        "params": {
+            "name": "char_219_meteo_1"
+        }
     },
     {
-        "text": "She jumped again?",
-        "tag": "name",
-        "value": "Meteorite"
+        "command": "name",
+        "value": "Meteorite",
+        "text": "She jumped again?"
     },
     {
-        "tag": "character",
-        "name": "char_219_meteo_1",
-        "name2": "char_193_frostl_1#5",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_219_meteo_1",
+            "name2": "char_193_frostl_1#5",
+            "focus": 2
+        }
     },
     {
-        "text": "She jumped again.",
-        "tag": "name",
-        "value": "Frostleaf"
+        "command": "name",
+        "value": "Frostleaf",
+        "text": "She jumped again."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#5"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "......"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "text": "We can jump together sometime, Amiya! If you want.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "We can jump together sometime, Amiya! If you want."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "I think I'll take a rain check. Where's your team?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I think I'll take a rain check. Where's your team?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
     },
     {
-        "text": "I left them outside the city. They'll be here in a bit.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I left them outside the city. They'll be here in a bit."
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "text": "I can't hear anything over the wind. Turn off your comms!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I can't hear anything over the wind. Turn off your comms!"
     },
     {
-        "text": "Everyone... move to support Blaze.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Everyone... move to support Blaze."
     },
     {
-        "text": "Dr. {@nickname}, no matter what she says...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Dr. {@nickname}, no matter what she says..."
     },
     {
-        "text": "...just nod.",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "...just nod."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "decision",
-        "options": "......?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "......?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 8,
-        "ystrength": 6,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 8,
+            "ystrength": 6,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.7,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.02,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.7,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.02,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_sp_ballista"
+        "command": "playsound",
+        "params": {
+            "key": "$d_sp_ballista"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.25,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.25,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.6,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_6_11",
-        "x": 0,
-        "y": 0,
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "avg_6_11",
+            "x": 0,
+            "y": 0,
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.6,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.6,
+            "block": false
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 15,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 15,
+            "block": false
+        }
     },
     {
-        "text": "It dropped something...",
-        "tag": "name",
-        "value": "Yeti Squad Member"
+        "command": "name",
+        "value": "Yeti Squad Member",
+        "text": "It dropped something..."
     },
     {
-        "text": "...a person?",
-        "tag": "name",
-        "value": "Yeti Squad Member"
+        "command": "name",
+        "value": "Yeti Squad Member",
+        "text": "...a person?"
     },
     {
-        "tag": "character",
-        "name": "char_1505_frstar_1"
+        "command": "character",
+        "params": {
+            "name": "char_1505_frstar_1"
+        }
     },
     {
-        "text": "There's only one. But keep your guard up.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "There's only one. But keep your guard up."
     },
     {
-        "text": "I sense a heat. She's using some kind of temperature Arts.",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "I sense a heat. She's using some kind of temperature Arts."
     },
     {
-        "tag": "character",
-        "name": "char_017_homura_3#4"
+        "command": "character",
+        "params": {
+            "name": "char_017_homura_3#4"
+        }
     },
     {
-        "text": "Hello, Reunion friends.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Hello, Reunion friends."
     },
     {
-        "text": "I don't like fighting other Infected. But I heard you hurt some of my Rhodes Island co-workers...",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I don't like fighting other Infected. But I heard you hurt some of my Rhodes Island co-workers..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.6,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_cher_6",
-        "width": 1,
-        "height": 1,
-        "fadetime": 1
+        "command": "background",
+        "params": {
+            "image": "bg_cher_6",
+            "width": 1,
+            "height": 1,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.6,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.6,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "char_017_homura_3#4",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_017_homura_3#4",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "And you're still after my buddies. So I'm going to have to put a stop to that.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "And you're still after my buddies. So I'm going to have to put a stop to that."
     },
     {
-        "tag": "character",
-        "name": "char_1505_frstar_1"
+        "command": "character",
+        "params": {
+            "name": "char_1505_frstar_1"
+        }
     },
     {
-        "text": "Aren't you mouthy...",
-        "tag": "name",
-        "value": "FrostNova"
+        "command": "name",
+        "value": "FrostNova",
+        "text": "Aren't you mouthy..."
     },
     {
-        "tag": "character",
-        "name": "char_017_homura_3#4"
+        "command": "character",
+        "params": {
+            "name": "char_017_homura_3#4"
+        }
     },
     {
-        "text": "Hi. How you doing, Miss Frosty?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Hi. How you doing, Miss Frosty?"
     },
     {
-        "text": "I wanna see what happens when my hot meets your cold.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I wanna see what happens when my hot meets your cold."
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "block": true
+        "command": "blocker",
+        "params": {
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

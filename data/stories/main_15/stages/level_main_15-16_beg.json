@@ -1,72 +1,80 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_drkcludsthdr",
+            "volume": 0,
+            "loop": true,
+            "channel": "d"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_drkcludsthdr",
-        "volume": 0,
-        "loop": true,
-        "channel": "d"
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "d",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "d",
-        "fadetime": 2
+        "command": "background",
+        "params": {
+            "image": "60_g13_rhodesdeck_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "60_g13_rhodesdeck_origin",
-        "screenadapt": "coverall"
+        "command": "playmusic",
+        "params": {
+            "key": "$m_bat_act37d0d0_01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$m_bat_act37d0d0_01_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Kal'tsit has disappeared from your vision, before you even have a chance to process what has happened."
@@ -75,293 +83,357 @@
         "text": "The only thing left on the deck is a jacket."
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$Mon3tr_n"
+        "command": "playsound",
+        "params": {
+            "key": "$Mon3tr_n"
+        }
     },
     {
-        "text": "(Pained wail)",
-        "tag": "name",
-        "value": "Mon3tr"
+        "command": "name",
+        "value": "Mon3tr",
+        "text": "(Pained wail)"
     },
     {
         "text": "Next, Mon3tr's massive frame begins to contract, shrinking into a black, crystalline cocoon."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1718_1#2$1",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1718_1#2$1",
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "text": "AMa-10 was one of my proud creations.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "AMa-10 was one of my proud creations."
     },
     {
-        "text": "This was not the result I had hoped for.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "This was not the result I had hoped for."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "She had a name.;Her name was Kal'tsit.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "She had a name.;Her name was Kal'tsit.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1718_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1718_1#3$1"
+        }
     },
     {
-        "text": "It had its own code name. I do not recognize any significance in the renaming.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "It had its own code name. I do not recognize any significance in the renaming."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "duration": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "Priestess walks towards the cocoon on the deck."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$3"
+        }
     },
     {
-        "text": "Step back, Doctor! I must protect Mon3tr!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Step back, Doctor! I must protect Mon3tr!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spelldfns_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spelldfns_1",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.4,
-        "r": 255,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.4,
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spellattack_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spellattack_2",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spiritwhoosh"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spiritwhoosh"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_aoe_nmag_h"
+        "command": "playsound",
+        "params": {
+            "key": "$p_aoe_nmag_h"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$p_imp_amiyamag_h",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$p_imp_amiyamag_h",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_thunders_amb",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_thunders_amb",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_defboost",
-        "volume": 0.5,
-        "Delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_defboost",
+            "volume": 0.5,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_thunders_amb",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_thunders_amb",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_attack_heavy",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_attack_heavy",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.4,
-        "b": 0.4,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.4,
+            "b": 0.4,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 1,
-        "g": 0.4,
-        "b": 0.4,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 1,
+            "g": 0.4,
+            "b": 0.4,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "r": 1,
-        "g": 0.4,
-        "b": 0.1,
-        "afrom": 1,
-        "rfrom": 1,
-        "gfrom": 0.4,
-        "bfrom": 0.4,
-        "fadetime": 0.2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "r": 1,
+            "g": 0.4,
+            "b": 0.1,
+            "afrom": 1,
+            "rfrom": 1,
+            "gfrom": 0.4,
+            "bfrom": 0.4,
+            "fadetime": 0.2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 0.8,
-        "rfrom": 1,
-        "gfrom": 1,
-        "bfrom": 1,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 0.8,
+            "rfrom": 1,
+            "gfrom": 1,
+            "bfrom": 1,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "afrom": 0,
-        "rfrom": 0,
-        "gfrom": 0,
-        "bfrom": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "afrom": 0,
+            "rfrom": 0,
+            "gfrom": 0,
+            "bfrom": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.1,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.1,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Threads emerge from Amiya's staff, attempting to stall Priestess's steps."
@@ -376,52 +448,62 @@
         "text": "Priestess, whose powers seem impossible to resist, and Kal'tsit's only legacy\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1718_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1718_1#1$1"
+        }
     },
     {
-        "text": "You want to save it?",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "You want to save it?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "......",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "......",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1718_1#8$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1718_1#8$1"
+        }
     },
     {
-        "text": "I want to fix it too.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "I want to fix it too."
     },
     {
-        "text": "Not only does AMa-10 carry our hopes, it has also preserved a record that is very important to me.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "Not only does AMa-10 carry our hopes, it has also preserved a record that is very important to me."
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "You have yet to recover from the shock."
@@ -436,32 +518,38 @@
         "text": "Priestess apparently notices your thought process\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1718_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1718_1#6$1"
+        }
     },
     {
-        "text": "Why... are you afraid of me, Dr. {@nickname}?",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "Why... are you afraid of me, Dr. {@nickname}?"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "She approaches you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "(Think... think of something...);(Think of something!)",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "(Think... think of something...);(Think of something!)",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
         "text": "The Originium spreading under your feet has immobilized you and Amiya."
@@ -470,277 +558,337 @@
         "text": "You see <i>her</i> up close for the first time."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 0.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "d",
-        "fadetime": 0.5
+        "command": "stopsound",
+        "params": {
+            "channel": "d",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.2,
-        "fadetime": 2
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.2,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_graduate",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_graduate",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "decision",
-        "options": "Just what are you trying to do?!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Just what are you trying to do?!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1"
+        }
     },
     {
-        "text": "...I'm trying to protect you.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...I'm trying to protect you."
     },
     {
-        "text": "Just like what I promised to do.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Just like what I promised to do."
     },
     {
-        "text": "I promised to protect both you and Amiya.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I promised to protect both you and Amiya."
     },
     {
-        "text": "Until the moment you breathe your last breath, Doctor. That's my responsibility.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Until the moment you breathe your last breath, Doctor. That's my responsibility."
     },
     {
-        "text": "But I will never stop hating you. I am in no position to educate or criticize Rosmontis. After all, I might not be able to hold myself back from taking revenge.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "But I will never stop hating you. I am in no position to educate or criticize Rosmontis. After all, I might not be able to hold myself back from taking revenge."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "decision",
-        "options": "...You...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "...You...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
         "text": "There was a similar scenery and a similar conversation. There were different emotions during different eras. All of which are working together to bridge that large gap in your memories."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#1$1"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_003_kalts_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_003_kalts_1#6$1"
+        }
     },
     {
-        "text": "What... did you just remember?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "What... did you just remember?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_humanchange",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_humanchange",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0.8,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0.8,
+            "keep": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_8_9",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "avg_8_9",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "'Priestess'."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "......",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "......",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
         "text": "No. This time, you remembered her first. You remembered Kal'tsit."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_humanchange",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_humanchange",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.4
+        "command": "delay",
+        "value": 0.4
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "avg_ac8mi_melancholic_kalts",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "avg_ac8mi_melancholic_kalts",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
         "text": "The physician whom you trusted so deeply still seems to be here."
@@ -755,309 +903,391 @@
         "text": "'I never forgot.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "60_g1_rhodescorridor_bc",
-        "screenadapt": "coverall",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "y": -50
+        "command": "background",
+        "params": {
+            "image": "60_g1_rhodescorridor_bc",
+            "screenadapt": "coverall",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "y": -50
+        }
     },
     {
-        "tag": "backgroundtween",
-        "xFrom": 100,
-        "xTo": -100,
-        "duration": 20,
-        "block": false
+        "command": "backgroundtween",
+        "params": {
+            "xfrom": 100,
+            "x": -100,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "focusout",
-        "type": "bg",
-        "id": "60_g1_rhodescorridor_bc",
-        "from": 0,
-        "to": 1,
-        "duration": 0.1,
-        "block": false
+        "command": "focusout",
+        "params": {
+            "type": "bg",
+            "id": "60_g1_rhodescorridor_bc",
+            "from": 0,
+            "to": 1,
+            "duration": 0.1,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_drkcludsthdr",
-        "volume": 0,
-        "loop": true,
-        "channel": "d"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_drkcludsthdr",
+            "volume": 0,
+            "loop": true,
+            "channel": "d"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.3,
-        "channel": "d",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.3,
+            "channel": "d",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "text": "(Whispering in unknown language) No matter where in this vast universe you came from, I bid you to witness the beacons we left behind, remnants of a civilization now gone to eternal rest.",
-        "tag": "name",
-        "value": "Oracle"
+        "command": "name",
+        "value": "Oracle",
+        "text": "(Whispering in unknown language) No matter where in this vast universe you came from, I bid you to witness the beacons we left behind, remnants of a civilization now gone to eternal rest."
     },
     {
-        "text": "(Whispering in unknown language) Perhaps it will be our blessing... and the final gift of hope.",
-        "tag": "name",
-        "value": "Oracle"
+        "command": "name",
+        "value": "Oracle",
+        "text": "(Whispering in unknown language) Perhaps it will be our blessing... and the final gift of hope."
     },
     {
         "text": "You are certain that those eyes now see you, across the vast reaches of time."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "focusout",
-        "type": "bg",
-        "id": "60_g13_rhodesdeck_origin",
-        "from": 1,
-        "to": 0,
-        "duration": 0,
-        "block": false
+        "command": "focusout",
+        "params": {
+            "type": "bg",
+            "id": "60_g13_rhodesdeck_origin",
+            "from": 1,
+            "to": 0,
+            "duration": 0,
+            "block": false
+        }
     },
     {
-        "tag": "background",
-        "image": "60_g13_rhodesdeck_origin",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "60_g13_rhodesdeck_origin",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_drkcludsthdr",
-        "volume": 0,
-        "loop": true,
-        "channel": "d"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_drkcludsthdr",
+            "volume": 0,
+            "loop": true,
+            "channel": "d"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "d",
-        "fadetime": 0.5
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "d",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "amount": 0,
-        "keep": true
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "amount": 0,
+            "keep": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "decision",
-        "options": "(The formulas...);(The gift...)",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "(The formulas...);(The gift...)",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "d",
-        "fadetime": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "d",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$m_bat_theresa_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$m_bat_theresa_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "decision",
-        "options": "Amiya! The formulas!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Amiya! The formulas!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#5$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#5$3"
+        }
     },
     {
-        "text": "Formulas?!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Formulas?!"
     },
     {
-        "text": "Dr. Kal'tsit mentioned that it reduces the loss of meta-information during transmission through special mediums...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Dr. Kal'tsit mentioned that it reduces the loss of meta-information during transmission through special mediums..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Reverse it.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Reverse it.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Obstruct the transmission of information through Originium!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Obstruct the transmission of information through Originium!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$3"
+        }
     },
     {
-        "text": "What should I do?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "What should I do?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Link to my mind!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Link to my mind!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#3$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#3$3"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_1",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.2,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.2,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1.5
+        "command": "charslot",
+        "params": {
+            "duration": 1.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "There is no time to hesitate, Amiya acts."
@@ -1075,570 +1305,692 @@
         "text": "For Kal'tsit."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Remember the things in my mind, Amiya!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Remember the things in my mind, Amiya!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$3"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "text": "Got it, Doctor!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Got it, Doctor!"
     },
     {
-        "text": "Just weave it in my Arts, as Logos taught me\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Just weave it in my Arts, as Logos taught me\u2014"
     },
     {
-        "text": "Then\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Then\u2014"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1037_amiya3_1#6$3"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1037_amiya3_1#6$3"
+        }
     },
     {
-        "text": "STOP!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "STOP!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_icecrystlncrse",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_icecrystlncrse",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$p_skill_chimera",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$p_skill_chimera",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.8,
-        "r": 1,
-        "g": 1,
-        "b": 1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.8,
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.4,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.4,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_phntsmbrek",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_phntsmbrek",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_phntsmglsbrek",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_phntsmglsbrek",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_erthshkng",
-        "volume": 1,
-        "loop": true,
-        "channel": "e"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_erthshkng",
+            "volume": 1,
+            "loop": true,
+            "channel": "e"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 4,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 90,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 4,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 90,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "e",
-        "fadetime": 6
+        "command": "stopsound",
+        "params": {
+            "channel": "e",
+            "fadetime": 6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.03,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.03,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image",
-        "image": "60_i13_1",
-        "screenadapt": "coverall",
-        "xScale": 1.1,
-        "yScale": 1.1,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "60_i13_1",
+            "screenadapt": "coverall",
+            "xscale": 1.1,
+            "yscale": 1.1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rockfall",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rockfall",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
         "text": "Shockwaves from Amiya's Arts repel the Originium that surrounds you."
     },
     {
-        "text": "This is...?",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "This is...?"
     },
     {
         "text": "The Originium attempting to trap you again is unable to progress any further. Amiya's silhouette is reflected on the countless crystalline surfaces."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "It's working?!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "It's working?!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_scrystalroad",
-        "volume": 1,
-        "loop": true,
-        "channel": "sc"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_scrystalroad",
+            "volume": 1,
+            "loop": true,
+            "channel": "sc"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "stopsound",
-        "channel": "sc",
-        "fadetime": 6
+        "command": "stopsound",
+        "params": {
+            "channel": "sc",
+            "fadetime": 6
+        }
     },
     {
-        "text": "I'm trying to hold on\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I'm trying to hold on\u2014"
     },
     {
-        "text": "But the Originium is pressing in even faster now...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "But the Originium is pressing in even faster now..."
     },
     {
-        "text": "I... I need to work harder! I can do it!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I... I need to work harder! I can do it!"
     },
     {
         "text": "Amiya's eyes are resolute. You can't help but feel worried for her."
     },
     {
-        "text": "You do not understand the powers that you are toying with.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "You do not understand the powers that you are toying with."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "......",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "......",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "It seems my Arts aren't just stopping them, it's also detecting her status...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It seems my Arts aren't just stopping them, it's also detecting her status..."
     },
     {
-        "text": "She's not as invincible as I thought\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "She's not as invincible as I thought\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_surfacefrozen",
-        "volume": 0,
-        "loop": true,
-        "channel": "sur"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_surfacefrozen",
+            "volume": 0,
+            "loop": true,
+            "channel": "sur"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.6,
-        "channel": "sur",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.6,
+            "channel": "sur",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image",
-        "image": "60_i13_1",
-        "screenadapt": "coverall",
-        "xScale": 1.6,
-        "yScale": 1.6,
-        "y": -200
+        "command": "image",
+        "params": {
+            "image": "60_i13_1",
+            "screenadapt": "coverall",
+            "xscale": 1.6,
+            "yscale": 1.6,
+            "y": -200
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -300,
-        "xTo": -380,
-        "duration": 8,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": -300,
+            "x": -380,
+            "duration": 8,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_stonegrowing",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_stonegrowing",
+            "volume": 1
+        }
     },
     {
-        "tag": "image",
-        "image": "60_i13_2",
-        "screenadapt": "coverall",
-        "xScale": 1.6,
-        "yScale": 1.6,
-        "y": -200,
-        "fadetime": 2
+        "command": "image",
+        "params": {
+            "image": "60_i13_2",
+            "screenadapt": "coverall",
+            "xscale": 1.6,
+            "yscale": 1.6,
+            "y": -200,
+            "fadetime": 2
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -320,
-        "xTo": -380,
-        "duration": 6,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": -320,
+            "x": -380,
+            "duration": 6,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Indeed, I've been roused too soon. The rate at which Originium has assimilated this planet falls below my expectations.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "Indeed, I've been roused too soon. The rate at which Originium has assimilated this planet falls below my expectations."
     },
     {
-        "text": "In addition, the reckless behavior of those two Terrans have prevented me from utilizing Originium as I planned...",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "In addition, the reckless behavior of those two Terrans have prevented me from utilizing Originium as I planned..."
     },
     {
-        "text": "But that does not mean you can change the inevitable with your clumsy usage of our technology.",
-        "tag": "name",
-        "value": "Priestess"
+        "command": "name",
+        "value": "Priestess",
+        "text": "But that does not mean you can change the inevitable with your clumsy usage of our technology."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Amiya!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Amiya!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_spellattack_1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_spellattack_1",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crystalmagic_intro",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crystalmagic_intro",
+            "volume": 1
+        }
     },
     {
-        "tag": "image",
-        "image": "60_i13_2",
-        "screenadapt": "coverall",
-        "xScale": 1.6,
-        "yScale": 1.6,
-        "x": -380,
-        "y": -200,
-        "fadetime": 0.5
+        "command": "image",
+        "params": {
+            "image": "60_i13_2",
+            "screenadapt": "coverall",
+            "xscale": 1.6,
+            "yscale": 1.6,
+            "x": -380,
+            "y": -200,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -380,
-        "xTo": 100,
-        "duration": 0.5,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": -380,
+            "x": 100,
+            "duration": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crystalmagic_loop",
-        "volume": 1,
-        "loop": true,
-        "channel": "a"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crystalmagic_loop",
+            "volume": 1,
+            "loop": true,
+            "channel": "a"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 1,
-        "channel": "sur",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 1,
+            "channel": "sur",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "image",
-        "image": "60_i13_2",
-        "screenadapt": "coverall"
+        "command": "image",
+        "params": {
+            "image": "60_i13_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.2,
-        "yScaleFrom": 1.2,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 30,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.2,
+            "yscalefrom": 1.2,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 30,
+            "block": false
+        }
     },
     {
-        "tag": "cgitem",
-        "image": "cgitem_60_i13_2",
-        "style": "cg",
-        "sfrom": 1.2,
-        "sto": 1,
-        "sduration": 30,
-        "layer": 1
+        "command": "cgitem",
+        "params": {
+            "image": "cgitem_60_i13_2",
+            "style": "cg",
+            "sfrom": 1.2,
+            "sto": 1,
+            "sduration": 30,
+            "layer": 1
+        }
     },
     {
-        "tag": "cgitem",
-        "image": "cgitem_60_i13_1",
-        "style": "cg",
-        "sfrom": 1,
-        "sto": 1.5,
-        "sduration": 30,
-        "layer": 2
+        "command": "cgitem",
+        "params": {
+            "image": "cgitem_60_i13_1",
+            "style": "cg",
+            "sfrom": 1,
+            "sto": 1.5,
+            "sduration": 30,
+            "layer": 2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 5,
-        "ystrength": 5,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 5,
+            "ystrength": 5,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_phntsmbrek",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_phntsmbrek",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_phntsmglsbrek",
-        "volume": 1,
-        "channel": 2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_phntsmglsbrek",
+            "volume": 1,
+            "channel": 2
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_land_impact",
-        "volume": 1,
-        "channel": 3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_land_impact",
+            "volume": 1,
+            "channel": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Pink threads fly out from Amiya's staff, dancing in the space enclosed by Originium."
@@ -1656,719 +2008,863 @@
         "text": "It is as though..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "She is everywhere.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "She is everywhere.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Theresa is teaching me how to cast these new Arts more efficiently, Doctor!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "Theresa is teaching me how to cast these new Arts more efficiently, Doctor!"
     },
     {
-        "text": "I think I've weakened Priestess's control over Originium. I should be able to delay her\u2014",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "I think I've weakened Priestess's control over Originium. I should be able to delay her\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "As Amiya's Arts run wild, you hear a reassuring voice in your head."
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "a",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.2,
-        "channel": "sur",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.2,
+            "channel": "sur",
+            "fadetime": 2
+        }
     },
     {
-        "text": "Doctor, Amiya, we're in the Abyss. The Originium interference was weakened for a moment.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Doctor, Amiya, we're in the Abyss. The Originium interference was weakened for a moment."
     },
     {
-        "text": "It was...",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "It was..."
     },
     {
-        "text": "Raidian has reestablished communications, but the situation is rough. I can barely use my Arts to help Raidian maintain the link.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Raidian has reestablished communications, but the situation is rough. I can barely use my Arts to help Raidian maintain the link."
     },
     {
-        "text": "Also, she can not detect Dr. Kal'tsit's biosignal.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Also, she can not detect Dr. Kal'tsit's biosignal."
     },
     {
-        "text": "Where are you? What's the situation?",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Where are you? What's the situation?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "We're on the deck of Rhodes Island!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "We're on the deck of Rhodes Island!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "We're confronting Priestess!",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "We're confronting Priestess!",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Get in touch with Warfarin.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Get in touch with Warfarin.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Evacuate the ship immediately.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Evacuate the ship immediately.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "sur",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "sur",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "a",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "a",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "hidecgitem",
-        "image": "cgitem_60_i13_2"
+        "command": "hidecgitem"
     },
     {
-        "tag": "hidecgitem",
-        "image": "cgitem_60_i13_1"
+        "command": "hidecgitem"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_infirmary",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_infirmary",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_171_bldsk_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_171_bldsk_1#1$1"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "text": "You heard the Doctor.",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "You heard the Doctor."
     },
     {
-        "text": "Don't worry, Lancet-2 will help monitor your status.",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "Don't worry, Lancet-2 will help monitor your status."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "I will not let you down, Dr. Warfarin!",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "I will not let you down, Dr. Warfarin!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_171_bldsk_1#5$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_171_bldsk_1#5$1"
+        }
     },
     {
-        "text": "Once you're out of the ship, establish an isolation zone around the ship according to Kal'tsit's original plan. Don't let any of those things get out!",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "Once you're out of the ship, establish an isolation zone around the ship according to Kal'tsit's original plan. Don't let any of those things get out!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_285_medic2_1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_285_medic2_1"
+        }
     },
     {
-        "text": "You are not coming with us, Dr. Warfarin?",
-        "tag": "name",
-        "value": "Lancet-2"
+        "command": "name",
+        "value": "Lancet-2",
+        "text": "You are not coming with us, Dr. Warfarin?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_171_bldsk_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_171_bldsk_1#1$1"
+        }
     },
     {
-        "text": "My patients are still here. I'll lead their evacuation myself.",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "My patients are still here. I'll lead their evacuation myself."
     },
     {
-        "text": "Don't worry about me.",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "Don't worry about me."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_171_bldsk_1#10$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_171_bldsk_1#10$1"
+        }
     },
     {
-        "text": "(Why am I not hearing from you, Kal'tsit?)",
-        "tag": "name",
-        "value": "Warfarin"
+        "command": "name",
+        "value": "Warfarin",
+        "text": "(Why am I not hearing from you, Kal'tsit?)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "bg_rhodesengineeringroom",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_rhodesengineeringroom",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "style": "slider",
-        "inverse": true,
-        "fadetime": 1.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "style": "slider",
+            "inverse": true,
+            "fadetime": 1.5,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_transmissionget",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_transmissionget",
+            "volume": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "\u2014Bzzt\u2014Abandon ship, repeat, abandon ship.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "\u2014Bzzt\u2014Abandon ship, repeat, abandon ship.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Back up all data\u2014Bzzt\u2014",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Back up all data\u2014Bzzt\u2014",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#6$1"
+        }
     },
     {
-        "text": "I'm working on it! Give me some time!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I'm working on it! Give me some time!"
     },
     {
-        "text": "More importantly, once PRTS is shut down, its core data must be downloaded\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "More importantly, once PRTS is shut down, its core data must be downloaded\u2014"
     },
     {
-        "text": "Kal'tsit has set up a backdoor.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Kal'tsit has set up a backdoor."
     },
     {
-        "text": "It will be the key to eliminating the threat, once and for all.",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "It will be the key to eliminating the threat, once and for all."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "text": "Mechanist acknowledges.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "Mechanist acknowledges."
     },
     {
-        "text": "We are moving through the Abyss.",
-        "tag": "name",
-        "value": "Mantra"
+        "command": "name",
+        "value": "Mantra",
+        "text": "We are moving through the Abyss."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#6$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#6$1"
+        }
     },
     {
-        "text": "Counting on you!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Counting on you!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1723_1#11$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1723_1#11$1"
+        }
     },
     {
-        "text": "Is Kal'tsit hurt, Doctor?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Is Kal'tsit hurt, Doctor?"
     },
     {
-        "text": "Why am I not hearing from her?",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Why am I not hearing from her?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "focus": "n"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "focus": "n"
+        }
     },
     {
-        "tag": "decision",
-        "options": "......;She's buying time for us.",
-        "values": "1;2"
+        "command": "decision",
+        "params": {
+            "options": "......;She's buying time for us.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Amiya and I will fight to the bitter end.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Amiya and I will fight to the bitter end.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Rhodes Island...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Rhodes Island...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "Is in your hands.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Is in your hands.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "background",
-        "image": "60_g15_rhodesabyss_off",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "60_g15_rhodesabyss_off",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_energywell",
-        "volume": 0,
-        "loop": true,
-        "channel": "en"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_energywell",
+            "volume": 0,
+            "loop": true,
+            "channel": "en"
+        }
     },
     {
-        "tag": "soundvolume",
-        "volume": 0.8,
-        "channel": "en",
-        "fadetime": 2
+        "command": "soundvolume",
+        "params": {
+            "volume": 0.8,
+            "channel": "en",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0.5,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.5,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_footsteps_flock",
-        "volume": 1,
-        "loop": true,
-        "channel": "f"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_footsteps_flock",
+            "volume": 1,
+            "loop": true,
+            "channel": "f"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "f",
-        "fadetime": 4
+        "command": "stopsound",
+        "params": {
+            "channel": "f",
+            "fadetime": 4
+        }
     },
     {
-        "text": "<p=1>Inside the Abyss</><p=2>At the same time</>",
-        "tag": "animtext",
-        "id": "at1",
-        "name": "group_location_stamp",
-        "style": "avg_both",
-        "pos": "-400,-200",
-        "block": false
+        "command": "animtext",
+        "params": {
+            "id": "at1",
+            "name": "group_location_stamp",
+            "style": "avg_both",
+            "pos": "-400,-200",
+            "block": false
+        },
+        "text": "<p=1>Inside the Abyss</><p=2>At the same time</>"
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "animtextclean"
+        "command": "animtextclean"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "We have restored communications with the Doctor.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "We have restored communications with the Doctor."
     },
     {
-        "text": "We stick to the plan.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "We stick to the plan."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_391_rosmon_1#1$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_391_rosmon_1#1$2"
+        }
     },
     {
-        "text": "I'm not detecting any more enemies.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "I'm not detecting any more enemies."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#2$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#2$1"
+        }
     },
     {
-        "text": "Nor any new data transmission from the PRTS core.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Nor any new data transmission from the PRTS core."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#7$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#7$1"
+        }
     },
     {
-        "text": "It's too quiet.",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "It's too quiet."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Location of the core, Raidian?",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Location of the core, Raidian?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$transmission",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$transmission",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1730_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1730_1#3$1"
+        }
     },
     {
-        "text": "Here you go.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Here you go."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4132_ascln_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4132_ascln_1#1$1"
+        }
     },
     {
-        "text": "Continue to push towards the core and attempt to deactivate it.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Continue to push towards the core and attempt to deactivate it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_017_huang_1#11$2"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_017_huang_1#11$2"
+        }
     },
     {
-        "text": "I'll take point! PRTS will definitely come up with new waves of enemies to meet us.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "I'll take point! PRTS will definitely come up with new waves of enemies to meet us."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_521_1#1$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_521_1#1$1"
+        }
     },
     {
-        "text": "I'll take charge of analyzing the core.",
-        "tag": "name",
-        "value": "Mechanist"
+        "command": "name",
+        "value": "Mechanist",
+        "text": "I'll take charge of analyzing the core."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4133_logos_1#3$1"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4133_logos_1#3$1"
+        }
     },
     {
-        "text": "'Aurora.'",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "'Aurora.'"
     },
     {
-        "text": "This little light will guide our way\u2014",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "This little light will guide our way\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_magic_2",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_magic_2",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "text": "\u2014?",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "\u2014?"
     },
     {
-        "text": "What is it, Logos?",
-        "tag": "name",
-        "value": "Mechanist"
+        "command": "name",
+        "value": "Mechanist",
+        "text": "What is it, Logos?"
     },
     {
-        "text": "This is not my light...",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "This is not my light..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playmusic",
-        "intro": "$lab_intro",
-        "key": "$lab_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$lab_intro",
+            "key": "$lab_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "cgitem",
-        "image": "cgitem_60_i16",
-        "style": "cg",
-        "sfrom": 1,
-        "sto": 1.5,
-        "sduration": 0.01,
-        "pfrom": "0,0",
-        "pto": "-55,-300",
-        "pduration": 0.01,
-        "rfrom": -11,
-        "rto": -11,
-        "rduration": 0.1,
-        "afrom": 0,
-        "ato": 1,
-        "aduration": 0.5,
-        "layer": 1
+        "command": "cgitem",
+        "params": {
+            "image": "cgitem_60_i16",
+            "style": "cg",
+            "sfrom": 1,
+            "sto": 1.5,
+            "sduration": 0.01,
+            "pfrom": "0,0",
+            "pto": "-55,-300",
+            "pduration": 0.01,
+            "rfrom": -11,
+            "rto": -11,
+            "rduration": 0.1,
+            "afrom": 0,
+            "ato": 1,
+            "aduration": 0.5,
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "A rhombus-shaped halo hangs in the darkness, swaying gently."
@@ -2377,106 +2873,118 @@
         "text": "It is like a cold eye, gazing upon all present."
     },
     {
-        "text": "Alert...",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Alert..."
     },
     {
-        "text": "Is this the 'Priestess' that Dr. Kal'tsit was talking about?",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Is this the 'Priestess' that Dr. Kal'tsit was talking about?"
     },
     {
-        "text": "I don't think so.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I don't think so."
     },
     {
-        "text": "I just detected a large amount of haphazard but familiar signals.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "I just detected a large amount of haphazard but familiar signals."
     },
     {
-        "text": "They come from Rhodes Island itself.",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "They come from Rhodes Island itself."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopsound",
-        "channel": "en",
-        "fadetime": 4
+        "command": "stopsound",
+        "params": {
+            "channel": "en",
+            "fadetime": 4
+        }
     },
     {
-        "tag": "cgitem",
-        "image": "cgitem_60_i16",
-        "style": "cg",
-        "sfrom": 1.5,
-        "sto": 1.2,
-        "sduration": 4,
-        "pfrom": "-55,-300",
-        "pto": "-70,-45",
-        "pduration": 4,
-        "rfrom": -11,
-        "rto": 0,
-        "rduration": 4,
-        "layer": 1
+        "command": "cgitem",
+        "params": {
+            "image": "cgitem_60_i16",
+            "style": "cg",
+            "sfrom": 1.5,
+            "sto": 1.2,
+            "sduration": 4,
+            "pfrom": "-55,-300",
+            "pto": "-70,-45",
+            "pduration": 4,
+            "rfrom": -11,
+            "rto": 0,
+            "rduration": 4,
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_systemstart_weird",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_systemstart_weird",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "cgitem",
-        "image": "cgitem_60_i16",
-        "style": "cg",
-        "sfrom": 1.2,
-        "sto": 1,
-        "sduration": 22,
-        "pfrom": "-70,-45",
-        "pto": "-55,0",
-        "pduration": 22,
-        "layer": 1
+        "command": "cgitem",
+        "params": {
+            "image": "cgitem_60_i16",
+            "style": "cg",
+            "sfrom": 1.2,
+            "sto": 1,
+            "sduration": 22,
+            "pfrom": "-70,-45",
+            "pto": "-55,0",
+            "pduration": 22,
+            "layer": 1
+        }
     },
     {
-        "tag": "image",
-        "image": "60_i16",
-        "screenadapt": "coverall",
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "y": -50,
-        "fadetime": 0.5
+        "command": "image",
+        "params": {
+            "image": "60_i16",
+            "screenadapt": "coverall",
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "y": -50,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1.2,
-        "yScaleFrom": 1.2,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "yFrom": -50,
-        "yTo": 0,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1.2,
+            "yscalefrom": 1.2,
+            "xscale": 1,
+            "yscale": 1,
+            "yfrom": -50,
+            "y": 0,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "What... is this?",
-        "tag": "name",
-        "value": "Misery"
+        "command": "name",
+        "value": "Misery",
+        "text": "What... is this?"
     },
     {
         "text": "A massive machine emerges in the endless white noise\u2014"
@@ -2488,19 +2996,19 @@
         "text": "Closure has often showed off the parts that she used to modify Rhodes Island's modules. Some of them were made by the elite operators themselves."
     },
     {
-        "text": "PRTS has repurposed and weaponized Rhodes Island's facilities.",
-        "tag": "name",
-        "value": "Touch"
+        "command": "name",
+        "value": "Touch",
+        "text": "PRTS has repurposed and weaponized Rhodes Island's facilities."
     },
     {
-        "text": "But where did they come from? They weren't supposed to be in the Abyss...",
-        "tag": "name",
-        "value": "Touch"
+        "command": "name",
+        "value": "Touch",
+        "text": "But where did they come from? They weren't supposed to be in the Abyss..."
     },
     {
-        "text": "Originium.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Originium."
     },
     {
         "text": "Originium shards scatter irregularly across the unusual machine."
@@ -2509,64 +3017,66 @@
         "text": "No longer do they simply consume; now, they are creating."
     },
     {
-        "text": "Are you telling me Originium can recreate the stuff that's on Rhodes Island?",
-        "tag": "name",
-        "value": "Misery"
+        "command": "name",
+        "value": "Misery",
+        "text": "Are you telling me Originium can recreate the stuff that's on Rhodes Island?"
     },
     {
         "text": "Logos is reminded of the tower in the Assimilated Universe, and of 'her'."
     },
     {
-        "text": "It's not that simple.",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "It's not that simple."
     },
     {
-        "text": "PRTS does not have the capability to decode Originium data. Someone else is intervening.",
-        "tag": "name",
-        "value": "Logos"
+        "command": "name",
+        "value": "Logos",
+        "text": "PRTS does not have the capability to decode Originium data. Someone else is intervening."
     },
     {
-        "text": "Priestess.",
-        "tag": "name",
-        "value": "Ascalon"
+        "command": "name",
+        "value": "Ascalon",
+        "text": "Priestess."
     },
     {
-        "text": "Its data is connected to the core of PRTS in a way that I can't understand. These things are different from the Originium entities that we faced!",
-        "tag": "name",
-        "value": "Raidian"
+        "command": "name",
+        "value": "Raidian",
+        "text": "Its data is connected to the core of PRTS in a way that I can't understand. These things are different from the Originium entities that we faced!"
     },
     {
-        "text": "Looks like we're in for a fight.",
-        "tag": "name",
-        "value": "Blaze"
+        "command": "name",
+        "value": "Blaze",
+        "text": "Looks like we're in for a fight."
     },
     {
-        "text": "I see no other way.",
-        "tag": "name",
-        "value": "Stormeye"
+        "command": "name",
+        "value": "Stormeye",
+        "text": "I see no other way."
     },
     {
-        "text": "Ready?",
-        "tag": "name",
-        "value": "Stormeye"
+        "command": "name",
+        "value": "Stormeye",
+        "text": "Ready?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_attack_ready",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_attack_ready",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Ready.",
-        "tag": "name",
-        "value": "Rosmontis"
+        "command": "name",
+        "value": "Rosmontis",
+        "text": "Ready."
     },
     {
         "text": "The rhombus-shaped eye glows even brighter."
@@ -2575,84 +3085,101 @@
         "text": "Controlled by PRTS, the mimic machine charges up."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_energygather",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_energygather",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "No target restrictions. Combat style analysis complete.",
-        "x": 180,
-        "y": 170,
-        "alignment": "left",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 180,
+            "y": 170,
+            "alignment": "left",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "No target restrictions. Combat style analysis complete."
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nNo power restrictions.",
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nNo power restrictions."
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nPRTS final cleanup protocol loaded\u2014",
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nPRTS final cleanup protocol loaded\u2014"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "duration": 0.5,
-        "block": false
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background"
+        "command": "background"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

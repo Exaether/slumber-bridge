@@ -1,81 +1,85 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "fadetime": 1,
-        "block": true
+        "command": "dialog"
     },
     {
-        "tag": "dialog",
-        "fadetime": 2,
-        "block": true
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.4
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "image",
+        "params": {
+            "image": "avg_ac9_8",
+            "xfrom": -60,
+            "yfrom": 50,
+            "xscale": 1.2,
+            "yscale": 1.2,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_ac9_8",
-        "xFrom": -60,
-        "yFrom": 50,
-        "xScale": 1.2,
-        "yScale": 1.2,
-        "fadetime": 0
+        "command": "imagetween",
+        "params": {
+            "xfrom": -60,
+            "yfrom": 50,
+            "x": 20,
+            "y": -20,
+            "xscalefrom": 1.2,
+            "yscalefrom": 1.2,
+            "xscale": 1.05,
+            "yscale": 1.05,
+            "duration": 30,
+            "block": false
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -60,
-        "yFrom": 50,
-        "xTo": 20,
-        "yTo": -20,
-        "xScaleFrom": 1.2,
-        "yScaleFrom": 1.2,
-        "xScaleTo": 1.05,
-        "yScaleTo": 1.05,
-        "duration": 30,
-        "block": false
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "The Sarkaz stopped."
@@ -114,44 +118,52 @@
         "text": "An unthreatening... slender Sarkaz."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
         "text": "......"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
         "text": "They... for the moment..."
@@ -160,21 +172,21 @@
         "text": "Sarkaz... must..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
         "text": "...You will... what?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
         "text": "She is heavily injured... If we don't do something now..."
@@ -186,1490 +198,1720 @@
         "text": "...Kal'tsit, give me a hand."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
         "text": "...*Sigh*. Fine."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_room_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_room_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$darkness02_intro",
-        "key": "$darkness02_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$darkness02_intro",
+            "key": "$darkness02_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.4,
-        "xstrength": 0,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 30,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.4,
+            "xstrength": 0,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 30,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "\u2014\u2014!",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "\u2014\u2014!"
     },
     {
-        "text": "Where am I...?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Where am I...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "On a landship.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "On a landship."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "Landship...?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Landship...?"
     },
     {
-        "text": "How are we still alive?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "How are we still alive?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "If you're gonna screw around, can you leave me out of it?",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "If you're gonna screw around, can you leave me out of it?"
     },
     {
-        "text": "*Sigh*...",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "*Sigh*..."
     },
     {
-        "text": "Long story short, we got rescued.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "Long story short, we got rescued."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "So where are we?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "So where are we?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "The main convoy. This is the landship we were protecting. Now it's hauling our wounded.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "The main convoy. This is the landship we were protecting. Now it's hauling our wounded."
     },
     {
-        "text": "Looks like it's still under construction. I can't tell how it all fits together. Weird.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "Looks like it's still under construction. I can't tell how it all fits together. Weird."
     },
     {
-        "text": "(But the shadow I saw... It was... Some questions are better left unanswered.)",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "(But the shadow I saw... It was... Some questions are better left unanswered.)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "What about Hoederer?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "What about Hoederer?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "He's with the client... Err, he's... talking to the boss of this place.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "He's with the client... Err, he's... talking to the boss of this place."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "Right. If you're still hanging around here, Hoederer must be fine.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Right. If you're still hanging around here, Hoederer must be fine."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "Tch.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "Tch."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "So what's the deal with 'the boss of this place?'",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "So what's the deal with 'the boss of this place?'"
     },
     {
-        "text": "You look nervous. And I don't need to blind myself with Originium Arts to figure that out.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "You look nervous. And I don't need to blind myself with Originium Arts to figure that out."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't tell me you think I'm hanging out here because I care about you?",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "Don't tell me you think I'm hanging out here because I care about you?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 2
+        }
     },
     {
-        "text": "Definitely not. So what's the reason?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Definitely not. So what's the reason?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_052",
-        "name2": "avg_npc_046",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_052",
+            "name2": "avg_npc_046",
+            "focus": 1
+        }
     },
     {
-        "text": "*Sigh.*",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "*Sigh.*"
     },
     {
-        "text": "I guess I just feel bad for him.",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "I guess I just feel bad for him."
     },
     {
-        "text": "Who knows what kinds of monsters are in that room with him...",
-        "tag": "name",
-        "value": "Ines"
+        "command": "name",
+        "value": "Ines",
+        "text": "Who knows what kinds of monsters are in that room with him..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_corridor_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_047"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_047"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "name2": "avg_npc_047",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "name2": "avg_npc_047",
+            "focus": 1
+        }
     },
     {
-        "text": "Try to relax. Nervousness will only drag down our efficiency.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Try to relax. Nervousness will only drag down our efficiency."
     },
     {
-        "text": "You did the best you could. The leak was our fault.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You did the best you could. The leak was our fault."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "name2": "avg_npc_047",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "name2": "avg_npc_047",
+            "focus": 2
+        }
     },
     {
-        "text": "We don't really look for fault on the battlefield. I know who I'm dealing with.",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "We don't really look for fault on the battlefield. I know who I'm dealing with."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "name2": "avg_npc_047",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "name2": "avg_npc_047",
+            "focus": 1
+        }
     },
     {
-        "text": "Good.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Good."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "name2": "avg_npc_047",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "name2": "avg_npc_047",
+            "focus": 2
+        }
     },
     {
-        "text": "But I can't say I expected that commander... to be one of Her Majesty's own.",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "But I can't say I expected that commander... to be one of Her Majesty's own."
     },
     {
-        "text": "You're... a lot stronger than I expected. I haven't had a chance to thank you yet, Dr. Kal'tsit.",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "You're... a lot stronger than I expected. I haven't had a chance to thank you yet, Dr. Kal'tsit."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "name2": "avg_npc_047",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "name2": "avg_npc_047",
+            "focus": 1
+        }
     },
     {
-        "text": "Theresa's the one you should be thanking.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Theresa's the one you should be thanking."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "What was that about me?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "What was that about me?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_047"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_047"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.4,
-        "xstrength": 0,
-        "ystrength": 8,
-        "vibrato": 30,
-        "randomness": 30,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.4,
+            "xstrength": 0,
+            "ystrength": 8,
+            "vibration": 30,
+            "randomness": 30,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "\u2014\u2014!",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "\u2014\u2014!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_047"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_047"
+        }
     },
     {
-        "text": "Your Majesty\u2014\u2014",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "Your Majesty\u2014\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "We're not in Kazdel anymore. Let's not stand on ceremony. We're here to sit down and talk, Hoederer.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "We're not in Kazdel anymore. Let's not stand on ceremony. We're here to sit down and talk, Hoederer."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_047"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_047"
+        }
     },
     {
-        "text": "By your command.",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "By your command."
     },
     {
-        "text": "And, the one in the coat there must be...?",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "And, the one in the coat there must be...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_048"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_048"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "I hope you don't mind. It's very important that the Doctor be well aware of any new intelligence.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "I hope you don't mind. It's very important that the Doctor be well aware of any new intelligence."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_047"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_047"
+        }
     },
     {
-        "text": "Thank you for understanding.",
-        "tag": "name",
-        "value": "Hoederer"
+        "command": "name",
+        "value": "Hoederer",
+        "text": "Thank you for understanding."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_corridor_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_corridor_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$relax_intro",
-        "key": "$relax_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$relax_intro",
+            "key": "$relax_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "text": "(It really is a landship... But it's pretty big, huh...?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(It really is a landship... But it's pretty big, huh...?)"
     },
     {
-        "text": "(There are parts that look new, but some bits are so old they're practically falling apart...)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(There are parts that look new, but some bits are so old they're practically falling apart...)"
     },
     {
-        "text": "(I think... this is from Rim Billiton...)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(I think... this is from Rim Billiton...)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_051"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_051"
+        }
     },
     {
-        "text": "Oh! S-sorry. They're still building this place...",
-        "tag": "name",
-        "value": "Small Cautus"
+        "command": "name",
+        "value": "Small Cautus",
+        "text": "Oh! S-sorry. They're still building this place..."
     },
     {
-        "text": "Dr. Kal'tsit said... not to go any deeper. It's dangerous...",
-        "tag": "name",
-        "value": "Small Cautus"
+        "command": "name",
+        "value": "Small Cautus",
+        "text": "Dr. Kal'tsit said... not to go any deeper. It's dangerous..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "Uh huh...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Uh huh..."
     },
     {
-        "text": "Okay. I'll go somewhere else.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Okay. I'll go somewhere else."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_051"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_051"
+        }
     },
     {
-        "text": "Thanks.",
-        "tag": "name",
-        "value": "Small Cautus"
+        "command": "name",
+        "value": "Small Cautus",
+        "text": "Thanks."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "What a nice kid. With those ears, she's definitely not Sarkaz.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "What a nice kid. With those ears, she's definitely not Sarkaz."
     },
     {
-        "text": "Come to think of it, that one lady who sucks even more than Ines, that doctor, she isn't a Sarkaz either...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Come to think of it, that one lady who sucks even more than Ines, that doctor, she isn't a Sarkaz either..."
     },
     {
-        "text": "What's going on here? I look around in the middle of a battle and nobody's Sarkaz?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "What's going on here? I look around in the middle of a battle and nobody's Sarkaz?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 10,
-        "ystrength": 12,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": true
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 10,
+            "ystrength": 12,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": true
+        }
     },
     {
         "text": "How could you be jammed again?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "Huh?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Huh?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "Happy place, Closure. That's only the seventh short circuit today...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Happy place, Closure. That's only the seventh short circuit today..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 2
+        }
     },
     {
-        "text": "THE\u2014\u2014SEVENTH\u2014\u2014SHORT\u2014\u2014CIRCUIT\u2014\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "THE\u2014\u2014SEVENTH\u2014\u2014SHORT\u2014\u2014CIRCUIT\u2014\u2014"
     },
     {
-        "text": "Kind of embarrassing for a genius engineer, huh? What if we invested in a new set of doors? That'd save some time!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Kind of embarrassing for a genius engineer, huh? What if we invested in a new set of doors? That'd save some time!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh... well, we have so many wounded to care for. Their provisions are rather expensive, in both manpower and resources...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh... well, we have so many wounded to care for. Their provisions are rather expensive, in both manpower and resources..."
     },
     {
-        "text": "And wouldn't giving up be an even bigger embarrassment...?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "And wouldn't giving up be an even bigger embarrassment...?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 2
+        }
     },
     {
-        "text": "Waaaahhhh\u2014\u2014",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Waaaahhhh\u2014\u2014"
     },
     {
-        "text": "Okay! Your Majesty!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Okay! Your Majesty!"
     },
     {
-        "text": "Give me three days! If I can't fix it in three days, I'll take the whole security control system apart and reinstall it!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Give me three days! If I can't fix it in three days, I'll take the whole security control system apart and reinstall it!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 1
+        }
     },
     {
-        "text": "Re-reinstall? You can do that?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Re-reinstall? You can do that?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 2
+        }
     },
     {
-        "text": "I dunno who built these mysterious systems and then buried them out in Rim Billiton somewhere, then if we can't figure it out...",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "I dunno who built these mysterious systems and then buried them out in Rim Billiton somewhere, then if we can't figure it out..."
     },
     {
-        "text": "We'll just have to replace it with something we can! Easy peasy!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "We'll just have to replace it with something we can! Easy peasy!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 1
+        }
     },
     {
-        "text": "Well... I'll leave you to it then.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Well... I'll leave you to it then."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056",
-        "name2": "avg_npc_050",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056",
+            "name2": "avg_npc_050",
+            "focus": 2
+        }
     },
     {
-        "text": "Roger that!",
-        "tag": "name",
-        "value": "Closure"
+        "command": "name",
+        "value": "Closure",
+        "text": "Roger that!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "...*Sigh*.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "...*Sigh*."
     },
     {
-        "text": "Rhodes Island... how long will it be until you're up and running...?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Rhodes Island... how long will it be until you're up and running...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "Rhodes Island?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Rhodes Island?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "Oh...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Oh..."
     },
     {
-        "text": "You're... I remember, you were with Hoederer...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You're... I remember, you were with Hoederer..."
     },
     {
-        "text": "You've regained consciousness? Your wounds were quite serious.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You've regained consciousness? Your wounds were quite serious."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "(Did I scare her...?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(Did I scare her...?)"
     },
     {
-        "text": "I'm W, the mercenary. I'm looking for Captain Hoederer and I kinda got lost...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "I'm W, the mercenary. I'm looking for Captain Hoederer and I kinda got lost..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "Be careful where you wander. This place is still being built. There are a lot of exposed wires. You could get shocked.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Be careful where you wander. This place is still being built. There are a lot of exposed wires. You could get shocked."
     },
     {
-        "text": "But I have a feeling such caution is second nature to you, no?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "But I have a feeling such caution is second nature to you, no?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "W, was it?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "W, was it?"
     },
     {
-        "text": "You may call me Theresa.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "You may call me Theresa."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "\u2014\u2014",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "\u2014\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Hoederer had words with the Doctor after our meeting. I believe he should be back in his room in Medical by now.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Hoederer had words with the Doctor after our meeting. I believe he should be back in his room in Medical by now."
     },
     {
-        "text": "Don't make them worry. You ought to head back too.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Don't make them worry. You ought to head back too."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "Theresa... Your Majesty?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Theresa... Your Majesty?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh? Well, we're not in Kazdel anymore. No need for titles.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Oh? Well, we're not in Kazdel anymore. No need for titles."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "Okay, Theresa... Majesty, why were you wrestling with a door just now?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Okay, Theresa... Majesty, why were you wrestling with a door just now?"
     },
     {
-        "text": "And that short girl there is an engineer, right? I mean, it's just a door...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "And that short girl there is an engineer, right? I mean, it's just a door..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "It's not just a door.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "It's not just a door."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "O... kay?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "O... kay?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "How many things are there totally unworthy of my attention?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "How many things are there totally unworthy of my attention?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "text": "So what's Rhodes Island?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "So what's Rhodes Island?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh, you heard that.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Oh, you heard that."
     },
     {
-        "text": "That is the name of this vessel. Although it has not yet been officially christened... that is the name I wish for it.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "That is the name of this vessel. Although it has not yet been officially christened... that is the name I wish for it."
     },
     {
-        "text": "Maybe it's just my whimsy. The Doctor and Kal'tsit may reject its 'true name.'",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Maybe it's just my whimsy. The Doctor and Kal'tsit may reject its 'true name.'"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "...Heh. True name? For this landship?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "...Heh. True name? For this landship?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "You saw. This vessel wasn't built in Kazdel.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "You saw. This vessel wasn't built in Kazdel."
     },
     {
-        "text": "Searching deep in the oldest records we have, I came across that name...",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Searching deep in the oldest records we have, I came across that name..."
     },
     {
-        "text": "'Rhodes Island.'",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "'Rhodes Island.'"
     },
     {
-        "text": "I'm not actually sure what it means. Hm... Kal'tsit should know more.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I'm not actually sure what it means. Hm... Kal'tsit should know more."
     },
     {
-        "text": "But that is what I want to name it. It already had a name, after all.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "But that is what I want to name it. It already had a name, after all."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "(Her Majesty Theresa fought against the Regent who usurped Kazdel... She personally brought together more than half the Sarkaz clans...)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(Her Majesty Theresa fought against the Regent who usurped Kazdel... She personally brought together more than half the Sarkaz clans...)"
     },
     {
-        "text": "(...and she's fixing a door herself?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(...and she's fixing a door herself?)"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "What's wrong? You have an odd expression on your face.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "What's wrong? You have an odd expression on your face."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "Would it be considered improper to laugh in front of Your Majesty?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Would it be considered improper to laugh in front of Your Majesty?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "N-no... But neither Kal'tsit nor the Doctor are the laughing type... and the warriors have too much on their plates for such frivolity.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "N-no... But neither Kal'tsit nor the Doctor are the laughing type... and the warriors have too much on their plates for such frivolity."
     },
     {
-        "text": "I would quite like it if you all would smile.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I would quite like it if you all would smile."
     },
     {
-        "text": "But that is perhaps an extravagant hope. I understand the pressure I've placed on everyone.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "But that is perhaps an extravagant hope. I understand the pressure I've placed on everyone."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "So I'm cool to laugh then?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "So I'm cool to laugh then?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Um, yes?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Um, yes?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "text": "Nah, the magic's gone. Can't do it...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Nah, the magic's gone. Can't do it..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Why do I feel like that's my fault?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Why do I feel like that's my fault?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "Hehe... well, I wouldn't dare.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Hehe... well, I wouldn't dare."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "What about you?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "What about you?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "What about me?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "What about me?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "I am Theresa, this is Rhodes Island, and you are?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I am Theresa, this is Rhodes Island, and you are?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "'W'......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "'W'......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "That's not what I mean. 'W' is a mercenary codename. I want to know your true name. The one that represents you..",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "That's not what I mean. 'W' is a mercenary codename. I want to know your true name. The one that represents you.."
     },
     {
-        "text": "You need not cloak yourself in a disguise tainted by war. This goes beyond names. Let's just say I'm nosy.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "You need not cloak yourself in a disguise tainted by war. This goes beyond names. Let's just say I'm nosy."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "Oh... forgive me.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Oh... forgive me."
     },
     {
-        "text": "You don't have a name?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "You don't have a name?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "It's pretty common for Sarkaz born in Kazdel.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "It's pretty common for Sarkaz born in Kazdel."
     },
     {
-        "text": "We don't really care much for... names. People forget them all the time. What's the point in making an effort to remember a name?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "We don't really care much for... names. People forget them all the time. What's the point in making an effort to remember a name?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "I don't want to forget them. I can't forget them.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "I don't want to forget them. I can't forget them."
     },
     {
-        "text": "If you wait for the dust to settle in Kazdel... until you're no longer 'W,' we could speak like this once again.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "If you wait for the dust to settle in Kazdel... until you're no longer 'W,' we could speak like this once again."
     },
     {
-        "text": "Maybe then you could have a more fitting name. A proper name for a Sarkaz woman like yourself.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Maybe then you could have a more fitting name. A proper name for a Sarkaz woman like yourself."
     },
     {
-        "text": "Like Rhodes Island. A name makes things feel so much warmer, doesn't it?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Like Rhodes Island. A name makes things feel so much warmer, doesn't it?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......"
     },
     {
-        "text": "I never really thought about it...",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "I never really thought about it..."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Theresa, message.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Theresa, message."
     },
     {
-        "text": "Kazdel is on the move. The Doctor is getting ready.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Kazdel is on the move. The Doctor is getting ready."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_056"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_056"
+        }
     },
     {
-        "text": "Right, I'm on my way.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "Right, I'm on my way."
     },
     {
-        "text": "W?",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "W?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh, yeah, I'm here.",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Oh, yeah, I'm here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_056",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_056",
+            "focus": 2
+        }
     },
     {
-        "text": "If you are willing to fight for us still, you will always be welcome here. No matter what.",
-        "tag": "name",
-        "value": "Theresa"
+        "command": "name",
+        "value": "Theresa",
+        "text": "If you are willing to fight for us still, you will always be welcome here. No matter what."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_049"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_049"
+        }
     },
     {
-        "text": "...*Sigh*.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...*Sigh*."
     },
     {
-        "text": "I'm not going to criticize Theresa's decision, but...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I'm not going to criticize Theresa's decision, but..."
     },
     {
-        "text": "Don't expect too warm a welcome. I've seen your record. You're dangerous.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Don't expect too warm a welcome. I've seen your record. You're dangerous."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_049",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_049",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh. Same?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "Oh. Same?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046",
-        "name2": "avg_npc_049",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046",
+            "name2": "avg_npc_049",
+            "focus": 2
+        }
     },
     {
-        "text": "You're recovering fast, but not enough to have you wandering around as you please.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "You're recovering fast, but not enough to have you wandering around as you please."
     },
     {
-        "text": "Go back to bed before we have to have someone carry you there.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Go back to bed before we have to have someone carry you there."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.4
+        }
     },
     {
         "text": "I realized later."
@@ -1702,86 +1944,94 @@
         "text": "What kind of sights would I see?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_048"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_048"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_046"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_046"
+        }
     },
     {
-        "text": "......?",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "......?"
     },
     {
-        "text": "(That hood... is that the 'Doctor' they were talking about?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(That hood... is that the 'Doctor' they were talking about?)"
     },
     {
-        "text": "(Is that person... looking my way...?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(Is that person... looking my way...?)"
     },
     {
-        "text": "\uff08......\uff09",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "\uff08......\uff09"
     },
     {
-        "text": "(What the... Why...?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(What the... Why...?)"
     },
     {
-        "text": "(Am I scared? Scared of what? That person gives off pretty normal vibes, but...? No, it's too vague. I've never seen anyone that weird before...)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(Am I scared? Scared of what? That person gives off pretty normal vibes, but...? No, it's too vague. I've never seen anyone that weird before...)"
     },
     {
-        "text": "(Oh... that's Babel's battlefield commander. I remember now...)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "(Oh... that's Babel's battlefield commander. I remember now...)"
     },
     {
-        "text": "('The Doctor,' huh?)",
-        "tag": "name",
-        "value": "W"
+        "command": "name",
+        "value": "W",
+        "text": "('The Doctor,' huh?)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
         "text": "I'm starting to get why Ines wouldn't go near Her Majesty."
@@ -1796,21 +2046,25 @@
         "text": "Call it a whim. Hoederer and the others would understand."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "character"
+        "command": "character"
     }
 ]

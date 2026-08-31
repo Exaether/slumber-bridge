@@ -1,82 +1,92 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "41_i08",
+            "screenadapt": "coverall",
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "41_i08",
-        "screenadapt": "coverall",
-        "fadetime": 0,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_underwateramb",
+            "channel": "volcano",
+            "loop": true,
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_underwateramb",
-        "channel": "volcano",
-        "loop": true,
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$firestorm",
+            "volume": 0.3,
+            "loop": false,
+            "channel": "vo"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firestorm",
-        "volume": 0.3,
-        "loop": false,
-        "channel": "vo"
+        "command": "playmusic",
+        "params": {
+            "intro": "$holiday_intro",
+            "key": "$holiday_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$holiday_intro",
-        "key": "$holiday_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 4,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 4,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "stopsound",
+        "params": {
+            "channel": "volcano",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "volcano",
-        "fadetime": 2
-    },
-    {
-        "tag": "stopsound",
-        "channel": "vo",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "vo",
+            "fadetime": 2
+        }
     },
     {
         "text": "Oof... This is just the right temperature. Hot springs are fun, but the temperature's a tad bit too peaceful."
@@ -100,534 +110,646 @@
         "text": "Hm? What's with the ruckus... Is somebody trying to join us?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "background",
-        "image": "41_g11_volcanomountainside",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g11_volcanomountainside",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$escape_intro",
-        "key": "$escape_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$escape_intro",
+            "key": "$escape_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 4,
-        "xstrength": 25,
-        "ystrength": 25,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 4,
+            "xstrength": 25,
+            "ystrength": 25,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandstone"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandstone"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_rockfall",
-        "volume": 0.7,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_rockfall",
+            "volume": 0.7,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "The enormous monster beneath their feet is breathing heavier and heavier by the second. The temperature in their surroundings has risen quite a bit. The lava spewed out from the volcano's crater rapidly cools and turns into rocks that come rolling down."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#2$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#2$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Kahn, Professor Keller... This place is dangerous... We should leave...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Kahn, Professor Keller... This place is dangerous... We should leave..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_996_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_996_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_999_1#6$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_999_1#6$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Adele, you get out of here first. This is something that I need to settle with her, right here and now!",
-        "tag": "name",
-        "value": "Kahn"
+        "command": "name",
+        "value": "Kahn",
+        "text": "Adele, you get out of here first. This is something that I need to settle with her, right here and now!"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_999_1#6$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_999_1#6$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Kahn, don't be absurd!",
-        "tag": "name",
-        "value": "Keller"
+        "command": "name",
+        "value": "Keller",
+        "text": "Kahn, don't be absurd!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_996_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_996_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "When you left them there on Mount Unna, what they had to face was much worse!",
-        "tag": "name",
-        "value": "Kahn"
+        "command": "name",
+        "value": "Kahn",
+        "text": "When you left them there on Mount Unna, what they had to face was much worse!"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_996_1#8$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_996_1#8$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "Do you even have a conscience? Is admitting to what you've done harder than facing death?!",
-        "tag": "name",
-        "value": "Kahn"
+        "command": "name",
+        "value": "Kahn",
+        "text": "Do you even have a conscience? Is admitting to what you've done harder than facing death?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "\u2014!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_996_1#8$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_996_1#8$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_999_1#6$1",
-        "focus": "all"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_999_1#6$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 4,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 4,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown2",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown2",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 0.7,
-        "delay": 0.1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 0.7,
+            "delay": 0.1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_996_1#8$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.6
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_996_1#8$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_999_1#6$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_999_1#6$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.2
+        "command": "delay",
+        "value": 1.2
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_runstop"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firemagic",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firemagic",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firemagic_explosion",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$firemagic_explosion",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 0.6,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 0.6,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Kahn... We need to hurry...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Kahn... We need to hurry..."
     },
     {
-        "text": "I won't be able to block the next wave...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "I won't be able to block the next wave..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "effect",
-        "name": "$e_magic_fire_01",
-        "rox": 73,
-        "layer": 1
+        "command": "effect",
+        "params": {
+            "name": "$e_magic_fire_01",
+            "rox": 73,
+            "layer": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_fireharm",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_fireharm",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firemag_n",
-        "volume": 1,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$firemag_n",
+            "volume": 1,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.3,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0.1,
-        "block": true
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.4,
-        "g": 0.1,
-        "b": 0.1,
-        "fadetime": 0.3,
-        "block": true
-    },
+        "command": "blocker",
+        "params": {
+            "a": 0.3,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0.1,
+            "block": true
+        }
+    },
     {
-        "tag": "camerashake",
-        "duration": 3,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.1,
+            "fadetime": 0.3,
+            "block": true
+        }
+    },
+    {
+        "command": "camerashake",
+        "params": {
+            "duration": 3,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$firemagic_explosion",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$firemagic_explosion",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_explosion_stone",
-        "volume": 0.7,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_explosion_stone",
+            "volume": 0.7,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.6,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.6,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "text": "Watch out! Behind you!",
-        "tag": "name",
-        "value": "Kahn"
+        "command": "name",
+        "value": "Kahn",
+        "text": "Watch out! Behind you!"
     },
     {
         "text": "Adele lifts her staff, but the rocks are falling like rain. Her Originium Arts are unable to melt all of them down."
@@ -636,383 +758,457 @@
         "text": "She focuses on protecting her allies, yet she can't hear their warnings or the sound of the danger behind her."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
-    {
-        "text": "\u2014!",
-        "tag": "name",
-        "value": "Keller"
-    },
-    {
-        "tag": "dialog"
-    },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "focus": "all"
-    },
-    {
-        "tag": "delay",
-        "time": 0.2
-    },
-    {
-        "tag": "playsound",
-        "key": "$d_avg_runstop",
-        "volume": 1
+    {
+        "command": "name",
+        "value": "Keller",
+        "text": "\u2014!"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1,
-        "delay": 0.4
+        "command": "dialog"
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "focus": "all"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_999_1#3$1",
-        "posfrom": "0,0",
-        "posto": "-100,0",
-        "duration": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop",
+            "volume": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "posfrom": "-100,0",
-        "posto": "-150,-20",
-        "duration": 0.8,
-        "isblock": false
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "posfrom": "0,0",
-        "posto": "-60,-40",
-        "duration": 0.7,
-        "isblock": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#5$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.4
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_999_1#3$1",
+            "posfrom": "0,0",
+            "posto": "-100,0",
+            "duration": 0.2
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.4
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "posfrom": "-100,0",
+            "posto": "-150,-20",
+            "duration": 0.8,
+            "block": false
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "posfrom": "0,0",
+            "posto": "-60,-40",
+            "duration": 0.7,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "afrom": 0,
-        "ato": 0,
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 0.2,
-        "duration": 0,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#5$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
-    },
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.4
+        }
+    },
+    {
+        "command": "delay",
+        "value": 1
+    },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 1,
-        "channel": 1
+        "command": "charslot"
     },
-    {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 1,
-        "duration": 0.35,
-        "isblock": false
+    {
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "afrom": 0,
+            "ato": 0,
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 0.2,
+            "duration": 0,
+            "block": false
+        }
+    },
+    {
+        "command": "delay",
+        "value": 0.1
+    },
+    {
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.3,
-        "isblock": false
-    },
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 1,
+            "duration": 0.35,
+            "block": false
+        }
+    },
     {
-        "tag": "bgeffect",
-        "name": "$eb_sheepshow",
-        "layer": 1
-    },
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.3,
+            "block": false
+        }
+    },
+    {
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_sheepshow",
+            "layer": 1
+        }
+    },
     {
-        "tag": "delay",
-        "time": 0.3
+        "command": "delay",
+        "value": 0.3
     },
     {
-        "tag": "playsound",
-        "key": "$b_char_defboost",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$b_char_defboost",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_firecut",
-        "volume": 1,
-        "delay": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_firecut",
+            "volume": 1,
+            "delay": 0.2
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.05,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.05,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.7,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.7,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "bgeffect",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "layer": 1
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "41_g6_siestaunbuiltland_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g6_siestaunbuiltland_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "key": "$formal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$formal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1010_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1010_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_992_1#1$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_992_1#1$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1010_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1010_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Cheerful Creature"
+        "command": "name",
+        "value": "Cheerful Creature",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "I saw you the past few days, but it looks like nobody else can.",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "I saw you the past few days, but it looks like nobody else can."
     },
     {
-        "text": "I don't know where you came from, but you're the only one who's willing to hang out with me. I know, you like strawberry ice cream, too, right?",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "I don't know where you came from, but you're the only one who's willing to hang out with me. I know, you like strawberry ice cream, too, right?"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1010_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1010_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "text": "(Lies down obediently)",
-        "tag": "name",
-        "value": "Cheerful Creature"
+        "command": "name",
+        "value": "Cheerful Creature",
+        "text": "(Lies down obediently)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Look, our home used to be right under that volcano there, but it's going to go away soon.",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "Look, our home used to be right under that volcano there, but it's going to go away soon."
     },
     {
-        "text": "I actually know... I was abandoned there, and Harley and Enis found me.",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "I actually know... I was abandoned there, and Harley and Enis found me."
     },
     {
-        "text": "I don't know why I was abandoned, but if my real parents ever come looking for me, will they still be able to find me?",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "I don't know why I was abandoned, but if my real parents ever come looking for me, will they still be able to find me?"
     },
     {
-        "text": "*sigh*... Daddy is gone, and Enis is leaving. Little lamb, where do you think our home really is? Where is the friend who ate strawberry ice cream with me a long time ago?",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "*sigh*... Daddy is gone, and Enis is leaving. Little lamb, where do you think our home really is? Where is the friend who ate strawberry ice cream with me a long time ago?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "l",
-        "name": "avg_npc_1010_1#1$1",
-        "focus": "l"
+        "command": "charslot",
+        "params": {
+            "slot": "l",
+            "name": "avg_npc_1010_1#1$1",
+            "focus": "l"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bleatone",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bleatone",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "text": "(Unsatisfied groan)",
-        "tag": "name",
-        "value": "Cheerful Creature"
+        "command": "name",
+        "value": "Cheerful Creature",
+        "text": "(Unsatisfied groan)"
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hey\u2014",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "Hey\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_watermagic_2",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_watermagic_2",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The ocean doesn't answer her. It merely sits between the two Siestas as always."
@@ -1021,111 +1217,133 @@
         "text": "Suddenly, the girl notices that the calm, quiet shoreline has gotten closer to her at some point. The seawater gradually drowned the dry surface and has reached her feet."
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "r"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "r"
+        }
     },
     {
-        "text": "Hmm...?",
-        "tag": "name",
-        "value": "Dejected Little Girl"
+        "command": "name",
+        "value": "Dejected Little Girl",
+        "text": "Hmm...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$rungeneral",
-        "volume": 0.9
+        "command": "playsound",
+        "params": {
+            "key": "$rungeneral",
+            "volume": 0.9
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Liv!",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Liv!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_watermagic_2",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_watermagic_2",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "41_g11_volcanomountainside",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g11_volcanomountainside",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playmusic",
-        "key": "$calm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$calm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Their surroundings suddenly fall silent."
@@ -1137,92 +1355,102 @@
         "text": "Adele isn't sure if it is her hearing aids that have failed or that she has once again fallen into a dream. All she can feel is that she is enveloped by a formless warmth, as though she has fallen into a cozy mattress."
     },
     {
-        "text": "Poor little one, you seem to be frightened. *sigh*, why did you climb the volcano at a time like this?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Poor little one, you seem to be frightened. *sigh*, why did you climb the volcano at a time like this?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#4$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#4$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mr. Dolly? So this is where you've been!",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Mr. Dolly? So this is where you've been!"
     },
     {
-        "text": "I thought you'd left... Where are Keller and Kahn?! Did the lambs cause the volcanic anomaly? I... Am I already dead...?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "I thought you'd left... Where are Keller and Kahn?! Did the lambs cause the volcanic anomaly? I... Am I already dead...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hey, hey! Calm down, little one. I know you have a lot of questions, but slow down. We'll take it one step at a time.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Hey, hey! Calm down, little one. I know you have a lot of questions, but slow down. We'll take it one step at a time."
     },
     {
-        "text": "You are alive and well, and so are your buddies, but I won't let them see me. Once they wake up from this, all they'll think is that they had a nice little nap.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "You are alive and well, and so are your buddies, but I won't let them see me. Once they wake up from this, all they'll think is that they had a nice little nap."
     },
     {
-        "text": "As for all that strange equipment on the volcano... Terribly sorry. I told them to be extra careful\u2014I'm not lying this time!",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "As for all that strange equipment on the volcano... Terribly sorry. I told them to be extra careful\u2014I'm not lying this time!"
     },
     {
-        "text": "But I wasn't able to keep them in check. They were being so rowdy with their fun... And I'm not lying about this, either.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "But I wasn't able to keep them in check. They were being so rowdy with their fun... And I'm not lying about this, either."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Having fun... on a volcano?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Having fun... on a volcano?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Of course! Didn't I tell you? This is second best thing on the planet! Volcano surfing!",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Of course! Didn't I tell you? This is second best thing on the planet! Volcano surfing!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Adele lifts her head up and looks into the distance. There is lava gushing out of the crater sporadically, but she can faintly make out silhouettes of critters enjoying themselves. At the same time, there are many more creatures happily making their way toward the crater."
@@ -1231,190 +1459,212 @@
         "text": "The mountain is covered in a blanket of white wool, almost like clouds have come falling down from the sky and draped themselves over it."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mr. Dolly, these sheep aren't just your clones, are they...?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Mr. Dolly, these sheep aren't just your clones, are they...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Ohh? You've realized it, have you?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Ohh? You've realized it, have you?"
     },
     {
-        "text": "Just as I said, I've met a lot of interesting folk during the long, long time I've been around.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Just as I said, I've met a lot of interesting folk during the long, long time I've been around."
     },
     {
-        "text": "Oh, don't get the wrong idea. They aren't 'souls' or anything.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Oh, don't get the wrong idea. They aren't 'souls' or anything."
     },
     {
-        "text": "There's no way to keep lives that have been lost. I simply copied how they looked and made all these little ones... It's like... a personal collection? I thought you'd like them.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "There's no way to keep lives that have been lost. I simply copied how they looked and made all these little ones... It's like... a personal collection? I thought you'd like them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "That sounds... kind of cruel...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "That sounds... kind of cruel..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "duration": 0.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Look at me talking on and on. I only just noticed that you've found the fur too. Yeah... it's been way too long since the last time I saw them.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Look at me talking on and on. I only just noticed that you've found the fur too. Yeah... it's been way too long since the last time I saw them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "Just then, another scar appears on her old, tattered protective gear."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I should've guessed.",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "I should've guessed."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's an apt metaphor, isn't it? Animals need very thick fur to protect themselves\u2014same for humans.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "It's an apt metaphor, isn't it? Animals need very thick fur to protect themselves\u2014same for humans."
     },
     {
-        "text": "When I see you standing here like that, it's like I'm looking at those two old friends of mine. I really miss them.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "When I see you standing here like that, it's like I'm looking at those two old friends of mine. I really miss them."
     },
     {
-        "text": "Oh, you earn no praise from me for inheriting their exquisite mantle. It's just I'm guessing you miss them too. Poor girl, why can't you just open up and admit it?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Oh, you earn no praise from me for inheriting their exquisite mantle. It's just I'm guessing you miss them too. Poor girl, why can't you just open up and admit it?"
     },
     {
-        "text": "No need to act tough. You shouldn't keep yourself so on edge, either. No one will deny a girl your age the right to feel sad or afraid. You need to learn to not act tough.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "No need to act tough. You shouldn't keep yourself so on edge, either. No one will deny a girl your age the right to feel sad or afraid. You need to learn to not act tough."
     },
     {
-        "text": "If you're tired, stop and take a break or cry your heart out.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "If you're tired, stop and take a break or cry your heart out."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mr. Dolly, is this scavenger hunt <i>just</i> a game?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Mr. Dolly, is this scavenger hunt <i>just</i> a game?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's true that it's not really all that mysterious of a puzzle. I just wanted you to have some fun, Adele.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "It's true that it's not really all that mysterious of a puzzle. I just wanted you to have some fun, Adele."
     },
     {
-        "text": "I had lots of fun during my time in Siesta.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "I had lots of fun during my time in Siesta."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I don't understand. Why are you taking such good care of me in particular...?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "I don't understand. Why are you taking such good care of me in particular...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's simple. A girl as lovely as you is a rare sight on this world.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "It's simple. A girl as lovely as you is a rare sight on this world."
     },
     {
-        "text": "Misfortune may find you often... but you have no less love than anybody else.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Misfortune may find you often... but you have no less love than anybody else."
     },
     {
-        "text": "Actually, I saw you a long time ago, back in Leithanien.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Actually, I saw you a long time ago, back in Leithanien."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
         "text": "A little girl always earnestly reading her books in that tiny, little spire."
@@ -1426,751 +1676,883 @@
         "text": "Outstanding, remarkably talented individuals like her are always burdened with achieving results to match their talent. Even if they are inflicted with an incurable disease, they are seen by others as a tenacious role model."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Young Adele, has anyone ever asked you what you wanted?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Young Adele, has anyone ever asked you what you wanted?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Take a look. There are so many people and so many lives all around the world. You know volcanoes like the back of your hoof, but there are so many fun things out there besides volcanoes. Why not see for yourself?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Take a look. There are so many people and so many lives all around the world. You know volcanoes like the back of your hoof, but there are so many fun things out there besides volcanoes. Why not see for yourself?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Thanks... Mr. Dolly. I've... had a lot of fun these past few days...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Thanks... Mr. Dolly. I've... had a lot of fun these past few days..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I can smell <i>half</i> a lie. Just half, but we'll leave it like this for now.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "I can smell <i>half</i> a lie. Just half, but we'll leave it like this for now."
     },
     {
-        "text": "It's nearly time. I really wanted to invite you to come try lava surfing with me, but the human body is too weak.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "It's nearly time. I really wanted to invite you to come try lava surfing with me, but the human body is too weak."
     },
     {
-        "text": "I'll take you three somewhere safe. Then, I'll have to be ready for the opening of Volcano Paradise.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "I'll take you three somewhere safe. Then, I'll have to be ready for the opening of Volcano Paradise."
     },
     {
-        "text": "So long, Adele.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "So long, Adele."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Thanks, Mr. Dolly... Will we meet again?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Thanks, Mr. Dolly... Will we meet again?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Perhaps... No, maybe I should say we will meet again for sure.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Perhaps... No, maybe I should say we will meet again for sure."
     },
     {
-        "text": "I hope that the next time we meet, I will get to see a truly happy Adele.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "I hope that the next time we meet, I will get to see a truly happy Adele."
     },
     {
-        "text": "Promise me this?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Promise me this?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Yeah!",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Yeah!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "random": true,
-        "power": 5,
-        "times": 60,
-        "duration": 0.5,
-        "isblock": true
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.5,
+            "block": true
+        }
     },
     {
         "text": "The fluffy creature shakes its body a little, walks forward a few steps, and lightly brushes the girl's cheek with its snout."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1.5
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "charslot",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "afrom": 0,
-        "ato": 0,
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 0.2,
-        "duration": 0,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "afrom": 0,
+            "ato": 0,
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 0.2,
+            "duration": 0,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.1
+        "command": "delay",
+        "value": 0.1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 1,
-        "channel": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 1,
+            "channel": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "zoom",
-        "poszoom": "0.5,0.5",
-        "scale": 1,
-        "duration": 0.35,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "zoom",
+            "poszoom": "0.5,0.5",
+            "scale": 1,
+            "duration": 0.35,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.3,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.3,
+            "block": false
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 50,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 50,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "bgeffect",
-        "name": "$eb_sheepshow",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "name": "$eb_sheepshow",
+            "layer": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.7
+        "command": "delay",
+        "value": 0.7
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh! I almost forgot. I owe you a reward for finding all three things.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Oh! I almost forgot. I owe you a reward for finding all three things."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#9$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#9$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "......"
     },
     {
-        "text": "Mr. Dolly, do you know anything else about... the death of my parents?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Mr. Dolly, do you know anything else about... the death of my parents?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hrmm...",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Hrmm..."
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What I mean is... The thing you've been looking for... isn't 'Volcano Watchers?'",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "What I mean is... The thing you've been looking for... isn't 'Volcano Watchers?'"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "You've been talking about Volcano Watchers?!",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "You've been talking about Volcano Watchers?!"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "S-Surprise...?",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "S-Surprise...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I thought...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "I thought..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "There used to be a lot of Volcano Watchers growing on Mount Siesta's hills. They look pretty, and they are tasty. That's why the little ones ate most of them up.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "There used to be a lot of Volcano Watchers growing on Mount Siesta's hills. They look pretty, and they are tasty. That's why the little ones ate most of them up."
     },
     {
-        "text": "Then I realized if they kept on eating them, it wouldn't be long before they went extinct. That's why I planted some of them in a secret spot behind their backs.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Then I realized if they kept on eating them, it wouldn't be long before they went extinct. That's why I planted some of them in a secret spot behind their backs."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "So the Volcano Watchers aren't extinct yet... That's good news...",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "So the Volcano Watchers aren't extinct yet... That's good news..."
     },
     {
-        "text": "Then where did you plant the flowers?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "Then where did you plant the flowers?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh, just on top of a hill around the back of the volcano.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Oh, just on top of a hill around the back of the volcano."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1016_agoat2_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1016_agoat2_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "......"
     },
     {
-        "text": "By volcano... You mean this one, the one that's about to erupt...?",
-        "tag": "name",
-        "value": "Adele"
+        "command": "name",
+        "value": "Adele",
+        "text": "By volcano... You mean this one, the one that's about to erupt...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1014_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1014_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "......"
     },
     {
-        "text": "Er... yeah.",
-        "tag": "name",
-        "value": "Dolly"
+        "command": "name",
+        "value": "Dolly",
+        "text": "Er... yeah."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "bgeffect",
-        "layer": 1
+        "command": "bgeffect",
+        "params": {
+            "layer": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$smallearthquake",
-        "volume": 1,
-        "channel": "e"
+        "command": "playsound",
+        "params": {
+            "key": "$smallearthquake",
+            "volume": 1,
+            "channel": "e"
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "e",
-        "fadetime": 4
+        "command": "stopsound",
+        "params": {
+            "channel": "e",
+            "fadetime": 4
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "41_g6_siestaunbuiltland_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g6_siestaunbuiltland_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_statueshake",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_statueshake",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "playmusic",
-        "key": "$formal_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "key": "$formal_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Enis?",
-        "tag": "name",
-        "value": "Girl"
+        "command": "name",
+        "value": "Girl",
+        "text": "Enis?"
     },
     {
-        "text": "Are you... leaving...?",
-        "tag": "name",
-        "value": "Girl"
+        "command": "name",
+        "value": "Girl",
+        "text": "Are you... leaving...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Out of breath)",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "(Out of breath)"
     },
     {
-        "text": "Why did you... run out here all by yourself...?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Why did you... run out here all by yourself...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I thought... you weren't ever going to come back.",
-        "tag": "name",
-        "value": "Girl"
+        "command": "name",
+        "value": "Girl",
+        "text": "I thought... you weren't ever going to come back."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are you kidding me...?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Are you kidding me...?"
     },
     {
-        "text": "When you're on the adventure team... you never work alone.",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "When you're on the adventure team... you never work alone."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Let's go home.",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Let's go home."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#1$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#1$1",
+            "focus": "none"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sea",
-        "loop": true,
-        "channel": "sea",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sea",
+            "loop": true,
+            "channel": "sea",
+            "volume": 0.5
+        }
     },
     {
         "text": "The seawater has risen above their soles, making it difficult to even walk."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Hurry!",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Hurry!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopsound",
-        "channel": "sea",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "sea",
+            "fadetime": 2
+        }
     },
     {
         "text": "At first, the waves were just a hazy line at the far reach of their vision, but in just the blink of an eye, they are right here in front of them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_watermagic_2",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_watermagic_2",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 15,
-        "ystrength": 15,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 15,
+            "ystrength": 15,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Enis tightly clutches his sister as the waves beat against his less than robust back, causing him to stagger."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_watermagic_2",
-        "channel": 2,
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_watermagic_2",
+            "channel": 2,
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2.5
+        "command": "delay",
+        "value": 2.5
     },
     {
         "text": "Another, taller wave is approaching them."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#13$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#13$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(There's no way...)",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "(There's no way...)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "(Let's try this\u2014)",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "(Let's try this\u2014)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_originiumcastshort",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_originiumcastshort",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0.95,
-        "g": 0.95,
-        "b": 0.95,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0.95,
+            "g": 0.95,
+            "b": 0.95,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_statueshake",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_statueshake",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_watermagic_2",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_watermagic_2",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_statuecollapse",
-        "volume": 0.9,
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_statuecollapse",
+            "volume": 0.9,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 2,
-        "xstrength": 40,
-        "ystrength": 40,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 2,
+            "xstrength": 40,
+            "ystrength": 40,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
         "text": "Enis tries his hardest to feel the 'rock' in his body. It's close to his heart. Every time his heart beats, he can feel its hard texture."
@@ -2182,231 +2564,277 @@
         "text": "There is an intense pain in his chest."
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_992_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_992_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Enis!",
-        "tag": "name",
-        "value": "Girl"
+        "command": "name",
+        "value": "Girl",
+        "text": "Enis!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#15$1",
-        "duration": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#15$1",
+            "duration": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#15$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#15$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Look... Didn't I tell you...? I know magic...",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Look... Didn't I tell you...? I know magic..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#15$1",
-        "focus": "none"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#15$1",
+            "focus": "none"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sea",
-        "volume": 1,
-        "loop": true,
-        "channel": "sa"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sea",
+            "volume": 1,
+            "loop": true,
+            "channel": "sa"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_clothmovement",
-        "volume": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_clothmovement",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.3,
-        "xstrength": 10,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.3,
+            "xstrength": 10,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Enis wipes the blood on his face and pulls his sister so she isn't hurt by the crumbling gravel."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Quick, hide behind me!",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Quick, hide behind me!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "soundvolume",
-        "channel": "sa",
-        "volume": 0.5,
-        "fadetime": 3
+        "command": "soundvolume",
+        "params": {
+            "channel": "sa",
+            "volume": 0.5,
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 0.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 0.3
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 0.5,
-        "loop": false,
-        "channel": "sp1",
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 0.5,
+            "loop": false,
+            "channel": "sp1",
+            "delay": 0.4
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 0.7,
-        "loop": false,
-        "channel": "sp2",
-        "delay": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 0.7,
+            "loop": false,
+            "channel": "sp2",
+            "delay": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 0.9,
-        "loop": false,
-        "channel": "sp3",
-        "delay": 1.1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 0.9,
+            "loop": false,
+            "channel": "sp3",
+            "delay": 1.1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_blcksheepborn",
-        "volume": 0.9,
-        "loop": false,
-        "channel": "sp4",
-        "delay": 1.3
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_blcksheepborn",
+            "volume": 0.9,
+            "loop": false,
+            "channel": "sp4",
+            "delay": 1.3
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_animalrun",
-        "volume": 0.8
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_animalrun",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "image",
-        "image": "41_i09",
-        "screenadapt": "coverall",
-        "fadetime": 0,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "41_i09",
+            "screenadapt": "coverall",
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 3
+        "command": "delay",
+        "value": 3
     },
     {
-        "tag": "playmusic",
-        "intro": "$newhope02_intro",
-        "key": "$newhope02_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$newhope02_intro",
+            "key": "$newhope02_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": -20,
-        "yFrom": 30,
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 1.1,
-        "yScaleFrom": 1.1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 8,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": -20,
+            "yfrom": 30,
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 1.1,
+            "yscalefrom": 1.1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 8,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "One, two..."
@@ -2418,400 +2846,470 @@
         "text": "The waves clash against the furry dam, completely absorbed by it the very next second."
     },
     {
-        "text": "I must've gone crazy...",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "I must've gone crazy..."
     },
     {
-        "text": "What exactly is this...?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "What exactly is this...?"
     },
     {
         "text": "Having absorbed the seawater, their white wool has grown even puffier, enough to keep the siblings safe from the dangerous waves."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopsound",
-        "channel": "sa",
-        "fadetime": 2
+        "command": "stopsound",
+        "params": {
+            "channel": "sa",
+            "fadetime": 2
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_black",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_black",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "After who knows how long, the ground has finally stopped shaking, and the waves gradually start to calm."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "41_g6_siestaunbuiltland_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g6_siestaunbuiltland_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "playmusic",
-        "intro": "$warm_intro",
-        "key": "$warm_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$warm_intro",
+            "key": "$warm_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#20$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#20$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#20$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#20$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Are... Are we saved?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Are... Are we saved?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1012_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1012_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "action": "shake",
-        "random": true,
-        "power": 5,
-        "times": 80,
-        "duration": 0.3
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "action": "shake",
+            "power": 5,
+            "duration": 0.3
+        }
     },
     {
-        "text": "(Shivers) (Shakes to dry body)",
-        "tag": "name",
-        "value": "Dozy Creature"
+        "command": "name",
+        "value": "Dozy Creature",
+        "text": "(Shivers) (Shakes to dry body)"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#20$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#20$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Th-Thank you...?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "Th-Thank you...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1012_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1012_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_bleatone",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_bleatone",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "(Happy bleat)",
-        "tag": "name",
-        "value": "Dozy Creature"
+        "command": "name",
+        "value": "Dozy Creature",
+        "text": "(Happy bleat)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Just like cotton candy dissolving in the water, the beastling suddenly disappears."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#16$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#16$1",
+            "focus": "m"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "text": "I guess that's... a near-death hallucination...?",
-        "tag": "name",
-        "value": "Enis"
+        "command": "name",
+        "value": "Enis",
+        "text": "I guess that's... a near-death hallucination...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown1",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown1",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 30,
-        "ystrength": 30,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 30,
+            "ystrength": 30,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_4106_bryota_1#16$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_4106_bryota_1#16$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.2
+        "command": "delay",
+        "value": 1.2
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "playsound",
-        "key": "$drift",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$drift",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_carjolt",
-        "volume": 0.7,
-        "delay": 0.4
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_carjolt",
+            "volume": 0.7,
+            "delay": 0.4
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cardoorc"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cardoorc"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_runstop"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_runstop"
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1033_swire2_1#11$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1033_swire2_1#11$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_1033_swire2_1#11$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_1033_swire2_1#11$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Enis!",
-        "tag": "name",
-        "value": "Swire"
+        "command": "name",
+        "value": "Swire",
+        "text": "Enis!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "background",
-        "image": "41_g2_siestacommercialstreet_n",
-        "screenadapt": "coverall",
-        "y": 40,
-        "xScale": 1.3,
-        "yScale": 1.3,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g2_siestacommercialstreet_n",
+            "screenadapt": "coverall",
+            "y": 40,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_crwddiscuss_inside",
-        "loop": true,
-        "channel": "street",
-        "volume": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_crwddiscuss_inside",
+            "loop": true,
+            "channel": "street",
+            "volume": 0.2
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "delay",
+        "value": 0.5
     },
     {
         "text": "The night deepens, and at some point in time, the bustling crowd's clamor gradually started to fade."
@@ -2826,52 +3324,60 @@
         "text": "A pillar of smoke gradually rises from the volcano's caldera, followed by spews of dark red and ash gray. The ground is trembling slightly underneath their feet."
     },
     {
-        "text": "We're so far out. We definitely won't get caught in that, right...?",
-        "tag": "name",
-        "value": "Perturbed Passerby"
+        "command": "name",
+        "value": "Perturbed Passerby",
+        "text": "We're so far out. We definitely won't get caught in that, right...?"
     },
     {
-        "text": "*sigh*... It still came.",
-        "tag": "name",
-        "value": "Regretful Passerby"
+        "command": "name",
+        "value": "Regretful Passerby",
+        "text": "*sigh*... It still came."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1000_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1000_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Oh... It really erupted...",
-        "tag": "name",
-        "value": "Male Instrument Shop Owner"
+        "command": "name",
+        "value": "Male Instrument Shop Owner",
+        "text": "Oh... It really erupted..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1001_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1001_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "*sob*...",
-        "tag": "name",
-        "value": "Female Instrument Shop Owner"
+        "command": "name",
+        "value": "Female Instrument Shop Owner",
+        "text": "*sob*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "duration": 0.7
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "street",
-        "fadetime": 1.5
+        "command": "stopsound",
+        "params": {
+            "channel": "street",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The people in the crowd hold the hands of those around them. Parents hug their children tight, as pedestrians begin to hold their breaths."
@@ -2883,173 +3389,193 @@
         "text": "This continues for a very, very long time, until the crowd snaps back from the sight before them."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1002_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1002_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "......"
     },
     {
-        "text": "I can still recall that back when I was a young boy... my parents would take me to this little hill. It was full of flowers and trees whose names I never knew. There were so many of them, and they smelled so wonderful every spring.",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "I can still recall that back when I was a young boy... my parents would take me to this little hill. It was full of flowers and trees whose names I never knew. There were so many of them, and they smelled so wonderful every spring."
     },
     {
-        "text": "My father was allergic to their pollen, so he would wait for us at the bottom of the hill. My mother and I would bend the flowers' branches and weave garlands. We ran and ran across the hill, and waved down to the bottom of the hill...",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "My father was allergic to their pollen, so he would wait for us at the bottom of the hill. My mother and I would bend the flowers' branches and weave garlands. We ran and ran across the hill, and waved down to the bottom of the hill..."
     },
     {
-        "text": "...That won't ever happen again...",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "...That won't ever happen again..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1005_1#7$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1005_1#7$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Mr. Tom...",
-        "tag": "name",
-        "value": "Snowsant"
+        "command": "name",
+        "value": "Snowsant",
+        "text": "Mr. Tom..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1002_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1002_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's nothing, girl. I'm just thinking about the past... I used to sell ice cream every day, meeting all kinds of children.",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "It's nothing, girl. I'm just thinking about the past... I used to sell ice cream every day, meeting all kinds of children."
     },
     {
-        "text": "Now my children are all in Columbia. They didn't come back home, even for a time like this.",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "Now my children are all in Columbia. They didn't come back home, even for a time like this."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_990_1#2$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_990_1#2$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "......"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_990_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_990_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Sir, your children are far away. It's possible that they didn't know Siesta's volcano was going to erupt today. The might be on their way, or they could have a package still in transit...",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "Sir, your children are far away. It's possible that they didn't know Siesta's volcano was going to erupt today. The might be on their way, or they could have a package still in transit..."
     },
     {
-        "text": "I came here because I wanted to build a logistics center that connected all regions and shortened the distances between them.",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "I came here because I wanted to build a logistics center that connected all regions and shortened the distances between them."
     },
     {
-        "text": "Maybe someday, you'll get things from different places more quickly, and your children will know how you're doing that much faster.",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "Maybe someday, you'll get things from different places more quickly, and your children will know how you're doing that much faster."
     },
     {
-        "text": "But we're still a long way away from achieving that... Just now, I was thinking that I might be able to do something to help...",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "But we're still a long way away from achieving that... Just now, I was thinking that I might be able to do something to help..."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1002_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1002_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "What's that...?",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "What's that...?"
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_990_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_990_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "If anyone needs to send a postcard to family abroad, Mountaincomm Trade could deliver them for free the next few days.",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "If anyone needs to send a postcard to family abroad, Mountaincomm Trade could deliver them for free the next few days."
     },
     {
-        "text": "By the time they get them, or when they come back after they get their postcards, Siesta will be a better place than it is now.",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "By the time they get them, or when they come back after they get their postcards, Siesta will be a better place than it is now."
     },
     {
-        "text": "I'll do my best to make this a better place, too. It's a small wish of mine, aside from my commercial ambitions.",
-        "tag": "name",
-        "value": "Bison"
+        "command": "name",
+        "value": "Bison",
+        "text": "I'll do my best to make this a better place, too. It's a small wish of mine, aside from my commercial ambitions."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1002_1#1$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1002_1#1$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Thanks, kid.",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "Thanks, kid."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1005_1#10$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1005_1#10$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "It's such a nice thing to be able to write your family...",
-        "tag": "name",
-        "value": "Snowsant"
+        "command": "name",
+        "value": "Snowsant",
+        "text": "It's such a nice thing to be able to write your family..."
     },
     {
-        "text": "When I was studying in Columbia, I would sometimes get homesick at night. I always wanted to write home, but I couldn't afford international postage, so all I ever did was cry myself to sleep...",
-        "tag": "name",
-        "value": "Snowsant"
+        "command": "name",
+        "value": "Snowsant",
+        "text": "When I was studying in Columbia, I would sometimes get homesick at night. I always wanted to write home, but I couldn't afford international postage, so all I ever did was cry myself to sleep..."
     },
     {
-        "text": "That's when I'd remember a poem that means something like, wheresoever someone is, the twin moons in the night sky are always the same, and if we look at the moons, even the greatest distances are nothing.",
-        "tag": "name",
-        "value": "Snowsant"
+        "command": "name",
+        "value": "Snowsant",
+        "text": "That's when I'd remember a poem that means something like, wheresoever someone is, the twin moons in the night sky are always the same, and if we look at the moons, even the greatest distances are nothing."
     },
     {
-        "text": "Does Siesta have any songs like that...?",
-        "tag": "name",
-        "value": "Snowsant"
+        "command": "name",
+        "value": "Snowsant",
+        "text": "Does Siesta have any songs like that...?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 2
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 2
+        }
     },
     {
         "text": "The old man clears his throat. His beard slightly twitches, as though he remembers something, and starts singing a song stiltedly."
@@ -3058,34 +3584,38 @@
         "text": "The volcanic ash slowly spreads, covering half the sky."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_guitarmusic",
-        "loop": true,
-        "channel": "guitar",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_guitarmusic",
+            "loop": true,
+            "channel": "guitar",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "backgroundtween",
-        "yFrom": 40,
-        "yTo": -80,
-        "xScaleFrom": 1.3,
-        "yScaleFrom": 1.3,
-        "xScaleTo": 1.3,
-        "yScaleTo": 1.3,
-        "duration": 20,
-        "block": false
+        "command": "backgroundtween",
+        "params": {
+            "yfrom": 40,
+            "y": -80,
+            "xscalefrom": 1.3,
+            "yscalefrom": 1.3,
+            "xscale": 1.3,
+            "yscale": 1.3,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "text": "Each day I linger, aside my dreams \u266a",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "Each day I linger, aside my dreams \u266a"
     },
     {
         "text": "I've lost my way, I'm a fowl without wings \u266a"
@@ -3103,225 +3633,257 @@
         "text": "But I'm just headin' far, I'm no wanderer \u266a"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "text": "...I'm just headin' far, I'm no wanderer \u266a",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "...I'm just headin' far, I'm no wanderer \u266a"
     },
     {
-        "text": "'Cause right out there... I've been lookin' to be \u266a",
-        "tag": "name",
-        "value": "Cold Drinks Shop Owner"
+        "command": "name",
+        "value": "Cold Drinks Shop Owner",
+        "text": "'Cause right out there... I've been lookin' to be \u266a"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopsound",
-        "channel": "guitar",
-        "fadetime": 3
+        "command": "stopsound",
+        "params": {
+            "channel": "guitar",
+            "fadetime": 3
+        }
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "background",
-        "image": "41_g2_siestacommercialstreet_n",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "41_g2_siestacommercialstreet_n",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Lady Ceylon.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Lady Ceylon."
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1003_1#5$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1003_1#5$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "Schwarz! What are you doing here?!",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Schwarz! What are you doing here?!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 0.2
+        "command": "delay",
+        "value": 0.2
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_340_shwaz_1#12$1",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_340_shwaz_1#12$1",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_340_shwaz_1#12$1",
-        "focus": "m"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_340_shwaz_1#12$1",
+            "focus": "m"
+        }
     },
     {
-        "text": "I had a few missions for Rhodes Island, but I came as soon as I was finished with them.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "I had a few missions for Rhodes Island, but I came as soon as I was finished with them."
     },
     {
-        "text": "It took me forever to find you. I'd been searching the crowd for the better part of the day. I have your favorite tea in my bag. I'll give it to you as soon as we get back.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "It took me forever to find you. I'd been searching the crowd for the better part of the day. I have your favorite tea in my bag. I'll give it to you as soon as we get back."
     },
     {
-        "text": "And... I also wanted to come back...",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "And... I also wanted to come back..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     },
     {
-        "tag": "charslot"
+        "command": "charslot"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sandstormimpact",
-        "loop": false,
-        "channel": "a",
-        "volume": 0.1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sandstormimpact",
+            "loop": false,
+            "channel": "a",
+            "volume": 0.1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$fireburst",
-        "volume": 0.2,
-        "delay": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$fireburst",
+            "volume": 0.2,
+            "delay": 0.5
+        }
     },
     {
-        "tag": "image",
-        "image": "41_i10",
-        "screenadapt": "coverall",
-        "fadetime": 0,
-        "block": true
+        "command": "image",
+        "params": {
+            "image": "41_i10",
+            "screenadapt": "coverall",
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$newhope01_intro",
-        "key": "$newhope01_loop",
-        "volume": 0.6
+        "command": "playmusic",
+        "params": {
+            "intro": "$newhope01_intro",
+            "key": "$newhope01_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "imagetween",
-        "xFrom": 0,
-        "yFrom": -60,
-        "xTo": 0,
-        "yTo": 0,
-        "xScaleFrom": 1.2,
-        "yScaleFrom": 1.2,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 20,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xfrom": 0,
+            "yfrom": -60,
+            "x": 0,
+            "y": 0,
+            "xscalefrom": 1.2,
+            "yscalefrom": 1.2,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 20,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "They see the rocks in their memories crumble, as a magnificent evening glow they had never before seen rises from the top of the volcano."
@@ -3330,397 +3892,458 @@
         "text": "A pink smoke covers half of the sky and gradually flutters downward toward the ground. Although they did not see it for themselves, they know a memory that belonged only to them has now been forever buried underneath the white volcanic ash."
     },
     {
-        "text": "Am I seeing things... How did the top of the volcano turn white?",
-        "tag": "name",
-        "value": "Surprised Passerby"
+        "command": "name",
+        "value": "Surprised Passerby",
+        "text": "Am I seeing things... How did the top of the volcano turn white?"
     },
     {
-        "text": "What are you talking about? I don't see it...",
-        "tag": "name",
-        "value": "Curious Passerby"
+        "command": "name",
+        "value": "Curious Passerby",
+        "text": "What are you talking about? I don't see it..."
+    },
+    {
+        "command": "name",
+        "value": "Regretful Passerby",
+        "text": "Siesta... has been wiped out."
     },
     {
-        "text": "Siesta... has been wiped out.",
-        "tag": "name",
-        "value": "Regretful Passerby"
+        "command": "name",
+        "value": "No Longer Panicked Passerby",
+        "text": "I think... 'reborn' might be the more appropriate word here."
     },
     {
-        "text": "I think... 'reborn' might be the more appropriate word here.",
-        "tag": "name",
-        "value": "No Longer Panicked Passerby"
+        "command": "name",
+        "value": "No Longer Panicked Passerby",
+        "text": "I say we remember this day forevermore... How about we call it the 'Volcano Festival?'"
     },
     {
-        "text": "I say we remember this day forevermore... How about we call it the 'Volcano Festival?'",
-        "tag": "name",
-        "value": "No Longer Panicked Passerby"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 0.6,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0.6,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 300,
+            "y": 300,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "Sweet peaceful dreams to you each evening \u266a"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "Sweet peaceful dreams to you each evening \u266a",
-        "x": 300,
-        "y": 300,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nNot a worry, not a sweat \u266a"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nNot a worry, not a sweat \u266a",
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1"
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1"
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "x": 300,
+            "y": 300,
+            "alignment": "center",
+            "size": 24,
+            "delay": 0.04,
+            "width": 700,
+            "block": true
+        },
+        "text": "For what's gone is gone, and the future will come \u266a"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "For what's gone is gone, and the future will come \u266a",
-        "x": 300,
-        "y": 300,
-        "alignment": "center",
-        "size": 24,
-        "delay": 0.04,
-        "width": 700,
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1",
+            "multi": true,
+            "block": true
+        },
+        "text": "\\n\\nThe sun will rise tomorrow, happy days \u266a"
     },
     {
-        "tag": "sticker",
-        "id": "st1",
-        "multi": true,
-        "text": "\\n\\nThe sun will rise tomorrow, happy days \u266a",
-        "block": true
+        "command": "sticker",
+        "params": {
+            "id": "st1"
+        }
     },
     {
-        "tag": "sticker",
-        "id": "st1"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Schwarz",
+        "text": "See you, Siesta."
     },
     {
-        "text": "See you, Siesta.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "See you... Siesta"
     },
     {
-        "text": "See you... Siesta",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Schwarz",
+        "text": "...Don't be sad, Lady Ceylon. Tomorrow is a new day."
     },
     {
-        "text": "...Don't be sad, Lady Ceylon. Tomorrow is a new day.",
-        "tag": "name",
-        "value": "Schwarz"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Right... tomorrow is a new day."
     },
     {
-        "text": "Right... tomorrow is a new day.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "image"
     },
     {
-        "tag": "image"
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "background",
+        "params": {
+            "image": "41_g11_volcanomountainside",
+            "screenadapt": "coverall",
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "41_g11_volcanomountainside",
-        "screenadapt": "coverall",
-        "block": true
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.6
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1009_1#1$1",
+            "posfrom": "-200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1009_1#1$1",
-        "posfrom": "-200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1,
-        "isblock": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sheeprun",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sheeprun",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1009_1#1$1",
+            "posfrom": "0,0",
+            "posto": "300,0",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1009_1#1$1",
-        "posfrom": "0,0",
-        "posto": "300,0",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1009_1#1$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.4,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1009_1#1$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.4,
-        "isblock": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_2",
+            "loop": true,
+            "channel": "step1",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_2",
-        "loop": true,
-        "channel": "step1",
-        "volume": 0.8
+        "command": "stopsound",
+        "params": {
+            "channel": "step1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step1",
-        "fadetime": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "char_105_emper",
+            "posfrom": "-200,0",
+            "posto": "200,0",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "char_105_emper",
-        "posfrom": "-200,0",
-        "posto": "200,0",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 1,
-        "isblock": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1010_1#1$1",
+            "posfrom": "200,0",
+            "posto": "0,0",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 1,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1010_1#1$1",
-        "posfrom": "200,0",
-        "posto": "0,0",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 1,
-        "isblock": true
+        "command": "delay",
+        "value": 0.5
     },
     {
-        "tag": "delay",
-        "time": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_sheeprun",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_sheeprun",
-        "volume": 1
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1010_1#1$1",
+            "posfrom": "0,0",
+            "posto": "-300,0",
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1010_1#1$1",
-        "posfrom": "0,0",
-        "posto": "-300,0",
-        "duration": 0.7
+        "command": "charslot",
+        "params": {
+            "slot": "m",
+            "name": "avg_npc_1010_1#1$1",
+            "afrom": 1,
+            "ato": 0,
+            "duration": 0.4,
+            "block": true
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "m",
-        "name": "avg_npc_1010_1#1$1",
-        "afrom": 1,
-        "ato": 0,
-        "duration": 0.4,
-        "isblock": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_2",
+            "loop": true,
+            "channel": "step1",
+            "volume": 0.8
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_2",
-        "loop": true,
-        "channel": "step1",
-        "volume": 0.8
+        "command": "stopsound",
+        "params": {
+            "channel": "step1",
+            "fadetime": 1.5
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "step1",
-        "fadetime": 1.5
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "action": "jump",
+            "posfrom": "0,0",
+            "posto": "-200,0",
+            "power": 5,
+            "duration": 1,
+            "block": false
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "action": "jump",
-        "posfrom": "0,0",
-        "posto": "-200,0",
-        "power": 5,
-        "times": 20,
-        "duration": 1,
-        "isblock": false
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "name": "char_105_emper",
+            "afrom": 0,
+            "ato": 1,
+            "duration": 0.7
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "name": "char_105_emper",
-        "afrom": 0,
-        "ato": 1,
-        "duration": 0.7
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "name",
+        "value": "Emperor",
+        "text": "Hey! You ugly-ass sheep..."
     },
     {
-        "text": "Hey! You ugly-ass sheep...",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Keep my vinyls out your stinkin' mouth...! No chewin' my limited edition shirt, either!"
     },
     {
-        "text": "Keep my vinyls out your stinkin' mouth...! No chewin' my limited edition shirt, either!",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Watch that lava! Dammit! Heat degrades a vinyl's sound!"
     },
     {
-        "text": "Watch that lava! Dammit! Heat degrades a vinyl's sound!",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You think <i>this</i> gonna wear out my patience? You got another thing comin'. I'd do this ten thousand years..."
     },
     {
-        "text": "You think <i>this</i> gonna wear out my patience? You got another thing comin'. I'd do this ten thousand years...",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "charslot",
+        "params": {
+            "slot": "r",
+            "action": "shake",
+            "power": 10,
+            "duration": 0.5
+        }
     },
     {
-        "tag": "charslot",
-        "slot": "r",
-        "action": "shake",
-        "random": true,
-        "power": 10,
-        "times": 70,
-        "duration": 0.5
+        "command": "name",
+        "value": "Emperor",
+        "text": "Dolly! I swear, I'ma feed your clones to the wolves...!"
     },
     {
-        "text": "Dolly! I swear, I'ma feed your clones to the wolves...!",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "charslot"
     },
     {
-        "tag": "charslot"
-    },
-    {
-        "tag": "image"
+        "command": "image"
     }
 ]

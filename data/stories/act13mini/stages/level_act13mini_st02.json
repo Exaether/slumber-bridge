@@ -1,56 +1,58 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_indoor",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_indoor",
-        "screenadapt": "showall"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$nervous_intro",
+            "key": "$nervous_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$nervous_intro",
-        "key": "$nervous_loop",
-        "volume": 0.4
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
-    },
-    {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "The frost-like moonlight shines down on the paulownia table in the middle of the hall. Sitting at it are a husband and wife. The wife rubs her hands as though she has something to say, while her husband props his head up with his hands, attempting to catch a nap."
@@ -59,286 +61,330 @@
         "text": "She swallows her saliva and begins to speak hesitantly."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "fadetime": 0.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "Dear, I heard a strange sound in the kitchen today... It sounded like... da-da-dah. It was so frightening.",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Dear, I heard a strange sound in the kitchen today... It sounded like... da-da-dah. It was so frightening."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "So? Is it worth making a fuss over? All houses creak like that to no end when they get on in years. We just moved in. You'll get used to it.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "So? Is it worth making a fuss over? All houses creak like that to no end when they get on in years. We just moved in. You'll get used to it."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "No, I don't mean creaking. I-It sounded like there was something inside the wall.",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "No, I don't mean creaking. I-It sounded like there was something inside the wall."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Damn it, woman. Stop wasting time listening to the walls and do some housework for once! I go out. I work my butt off to make a living. All I want is to come home to a nice, hot meal on the table, but, instead, I get nothing.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Damn it, woman. Stop wasting time listening to the walls and do some housework for once! I go out. I work my butt off to make a living. All I want is to come home to a nice, hot meal on the table, but, instead, I get nothing."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "I-I couldn't... I felt a chill down my spine whenever I stepped into the kitchen. It was like... there was something looking at me.",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "I-I couldn't... I felt a chill down my spine whenever I stepped into the kitchen. It was like... there was something looking at me."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Enough quibbling! You just want to slack off, don't you?! Maybe a good beating'll teach you how to get your work done!",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Enough quibbling! You just want to slack off, don't you?! Maybe a good beating'll teach you how to get your work done!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "I-I'm sorry, please! I still haven't healed up from last time!",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "I-I'm sorry, please! I still haven't healed up from last time!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Then get your big butt back in the kitchen and get me a warm bottle of booze! And fry up some peanuts, while you're at it.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Then get your big butt back in the kitchen and get me a warm bottle of booze! And fry up some peanuts, while you're at it."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "No, please, I'm scared to go in the kitchen!",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "No, please, I'm scared to go in the kitchen!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Then it sounds like you ain't been hit enough!",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Then it sounds like you ain't been hit enough!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "Please, forgive me! Have mercy!",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Please, forgive me! Have mercy!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Let's see how you feel after I\u2014",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Let's see how you feel after I\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "Listen! It's that noise again!",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Listen! It's that noise again!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
         "text": "Da-da-da."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "I'm not lying! That's the noise!",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "I'm not lying! That's the noise!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
         "text": "Da-da-da."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 1
+        }
     },
     {
-        "text": "Fine. I'll go and see what's up. But if I don't find anything, you better be ready for a whopping.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Fine. I'll go and see what's up. But if I don't find anything, you better be ready for a whopping."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141",
+            "focus": 2
+        }
     },
     {
-        "text": "I, I\u2014",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "I, I\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "name2": "avg_npc_141"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "name2": "avg_npc_141"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_empty",
-        "name2": "avg_npc_141",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_empty",
+            "name2": "avg_npc_141",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
         "text": "Dark rainclouds shroud the moon outside the window. A storm is brewing."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_141"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_141"
+        }
     },
     {
-        "text": "Dear? Dear?",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Dear? Dear?"
     },
     {
-        "text": "Do you see anything?",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Do you see anything?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "......"
@@ -356,33 +402,35 @@
         "text": "The wife's expression changes immediately and her pupils dilate. Cold sweat drips from her forehead, and just as she is about to run to her neighbor for help, her husband speaks."
     },
     {
-        "text": "Come here.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Come here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_141"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_141"
+        }
     },
     {
-        "text": "Dear, are you okay?",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Dear, are you okay?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "text": "It's all okay now.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "It's all okay now."
     },
     {
         "text": "The wife picks up a candle and inches towards the kitchen before nudging open the slightly-open door. Inside is pitch black; barely anything is visible."
@@ -391,57 +439,65 @@
         "text": "She holds up the candle to find her husband leaning against the wall. She breathes a sigh of relief."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Did you find anything?",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Did you find anything?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "Come here. It's all okay now.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Come here. It's all okay now."
     },
     {
-        "text": "Dear, you already said that. Why say it again?",
-        "tag": "name",
-        "value": "Wife"
+        "command": "name",
+        "value": "Wife",
+        "text": "Dear, you already said that. Why say it again?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_140",
-        "blackstart": 0.2,
-        "blackend": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_npc_140",
+            "blackstart": 0.2,
+            "blackend": 0.7
+        }
     },
     {
-        "text": "Come here. It's all okay now.",
-        "tag": "name",
-        "value": "Husband"
+        "command": "name",
+        "value": "Husband",
+        "text": "Come here. It's all okay now."
     },
     {
         "text": "The dim, yellow candlelight flickers in front of her husband's face. She suddenly notices that he's been completely expressionless ever since she entered the kitchen, repeating the same phrase again and again."
@@ -450,52 +506,62 @@
         "text": "Come here. It's all okay now."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_thunders_amb",
-        "volume": 0.5
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_thunders_amb",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "fadetime": 0.1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "fadetime": 0.1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.3,
+            "block": true
+        }
     },
     {
         "text": "A bolt of lightning strikes outside the window, briefly lighting up the entire room."
@@ -513,901 +579,1055 @@
         "text": "At last, she cannot contain herself anymore and starts screaming."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Aaaaagh\u2014Stop it!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Aaaaagh\u2014Stop it!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_bar_1",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_bar_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "fadetime": 0.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "text": "Aaaahh! Croissant, stop! I-I don't want to listen anymore, *whimpers*.",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Aaaahh! Croissant, stop! I-I don't want to listen anymore, *whimpers*."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Heh, I ain't done yet. Y'all wanna know what happens to the wife, don'tcha?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Heh, I ain't done yet. Y'all wanna know what happens to the wife, don'tcha?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4"
+        }
     },
     {
-        "text": "(Covers her ears) No no no no I don't wanna know!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "(Covers her ears) No no no no I don't wanna know!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Hahaha, then how 'bout you, kiddo? Wanna hear the rest?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Hahaha, then how 'bout you, kiddo? Wanna hear the rest?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Go on. I'm listening.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Go on. I'm listening."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Look at ya tryna stay all calm. Stop pretendin'. I know a scaredy-cat when I see one.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Look at ya tryna stay all calm. Stop pretendin'. I know a scaredy-cat when I see one."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 1
+        }
     },
     {
-        "text": "But... It really wasn't that scary.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "But... It really wasn't that scary."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Heh, drop the tough act. If yer really scared though, I can give ya a big ole hug to calm ya down.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Heh, drop the tough act. If yer really scared though, I can give ya a big ole hug to calm ya down."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Thanks, but I think she needs it more than me.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Thanks, but I think she needs it more than me."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "(Turns around)",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "(Turns around)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4"
+        }
     },
     {
-        "text": "(Sobs)",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "(Sobs)"
     },
     {
-        "text": "That was so scary... *sobs*... Why'd you have to tell us such a scary story? You're such a meanie!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "That was so scary... *sobs*... Why'd you have to tell us such a scary story? You're such a meanie!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Urgh... Sorry. Haha... I was just tryna give the kid a spook. Sure didn't expect to hit a full grown girl in the crossfire.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Urgh... Sorry. Haha... I was just tryna give the kid a spook. Sure didn't expect to hit a full grown girl in the crossfire."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4"
+        }
     },
     {
-        "text": "*Whimpers*... Are you saying I'm more of a scaredy pants than a kid?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "*Whimpers*... Are you saying I'm more of a scaredy pants than a kid?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Naw, that ain't... Eh, my bad. Just stop cryin', alright?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Naw, that ain't... Eh, my bad. Just stop cryin', alright?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Anyhow, kiddo. Ya really weren't scared? Fer real?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Anyhow, kiddo. Ya really weren't scared? Fer real?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd",
+            "focus": 1
+        }
     },
     {
-        "text": "Not a bit.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Not a bit."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Damn, ice cold.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Damn, ice cold."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Don't care how it ends, then?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Don't care how it ends, then?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1",
-        "name2": "char_201_moeshd#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1",
+            "name2": "char_201_moeshd#3",
+            "focus": 1
+        }
     },
     {
-        "text": "The wife-beater got his punishment. That's good enough for me.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "The wife-beater got his punishment. That's good enough for me."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1",
-        "name2": "char_201_moeshd#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1",
+            "name2": "char_201_moeshd#3",
+            "focus": 2
+        }
     },
     {
-        "text": "True 'nuff, bet she's gonna way happier without that asshole.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "True 'nuff, bet she's gonna way happier without that asshole."
     },
     {
-        "text": "Then I guess ya ain't scared of spirits bitin' off yer toes, either! Rawr!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Then I guess ya ain't scared of spirits bitin' off yer toes, either! Rawr!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_201_moeshd#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_201_moeshd#3",
+            "focus": 1
+        }
     },
     {
-        "text": "(But... I'm a spirit too.)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(But... I'm a spirit too.)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_201_moeshd#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_201_moeshd#3",
+            "focus": 1
+        }
     },
     {
-        "text": "Actually, I see this sort of thing happen all the time...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Actually, I see this sort of thing happen all the time..."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#3"
+        }
     },
     {
-        "text": "What?! Don't tell me it's... a true story?!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "What?! Don't tell me it's... a true story?!"
     },
     {
-        "text": "Gee, thanks Croissant, now I'll never get a good night's sleep ever again...",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Gee, thanks Croissant, now I'll never get a good night's sleep ever again..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "Hell naw, I pulled that straight outta my\u2014 Hey, you alright, Sora? Snap out of it. Hey!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Hell naw, I pulled that straight outta my\u2014 Hey, you alright, Sora? Snap out of it. Hey!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "Um...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Um..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "(What do I tell them? Where I'm from, this kind of thing can usually be blamed on people with spatial powers...)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(What do I tell them? Where I'm from, this kind of thing can usually be blamed on people with spatial powers...)"
     },
     {
-        "text": "(I feel like just about everyone at the Hall for Spirits is already used to it, though.)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(I feel like just about everyone at the Hall for Spirits is already used to it, though.)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_105_emper",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_105_emper",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "I asked you two to fetch me Lee's boys, so how come it's been half a day and ya'll are chilling out here? What, you two really so lost without my guidance?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "I asked you two to fetch me Lee's boys, so how come it's been half a day and ya'll are chilling out here? What, you two really so lost without my guidance?"
     },
     {
-        "tag": "character",
-        "name": "char_201_moeshd"
+        "command": "character",
+        "params": {
+            "name": "char_201_moeshd"
+        }
     },
     {
-        "text": "Sorry, Baws. We waited half an hour, and we ain't seen any of Mr. Lee's folks, only this little boy. So we've been havin' ourselves the most boring thirty minutes.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Sorry, Baws. We waited half an hour, and we ain't seen any of Mr. Lee's folks, only this little boy. So we've been havin' ourselves the most boring thirty minutes."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4"
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4"
+        }
     },
     {
-        "text": "The most terrifying thirty minutes...",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "The most terrifying thirty minutes..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1"
+        }
     },
     {
-        "text": "Excuse me, are you Mr. Emperor?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Excuse me, are you Mr. Emperor?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "The one and only.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "The one and only."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1"
+        }
     },
     {
-        "text": "Mr. Lee sent me to take care of the strange sounds in your shop. My name is Xiaohei.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Mr. Lee sent me to take care of the strange sounds in your shop. My name is Xiaohei."
     },
     {
-        "tag": "character",
-        "name": "char_201_moeshd"
+        "command": "character",
+        "params": {
+            "name": "char_201_moeshd"
+        }
     },
     {
-        "text": "Haha... Surprise, Baws!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Haha... Surprise, Baws!"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "I hope those past thirty minutes have been REAL boring, 'cause this is gonna be the least boring-ass weekend you'll ever have.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "I hope those past thirty minutes have been REAL boring, 'cause this is gonna be the least boring-ass weekend you'll ever have."
     },
     {
-        "tag": "character",
-        "name": "char_201_moeshd#4"
+        "command": "character",
+        "params": {
+            "name": "char_201_moeshd#4"
+        }
     },
     {
-        "text": "Really understatin' overtime there, Baws...",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Really understatin' overtime there, Baws..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "(Why didn'tcha say so sooner, kiddo?!)",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "(Why didn'tcha say so sooner, kiddo?!)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "(You never gave me a chance before you jumped into that ghost story.)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(You never gave me a chance before you jumped into that ghost story.)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_201_moeshd#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_201_moeshd#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Uh... Well...",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Uh... Well..."
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Has Old Lee filled you in on the details?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Has Old Lee filled you in on the details?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1"
+        }
     },
     {
-        "text": "Only the gist.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Only the gist."
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Fei-zai, bring the boy up to speed on what you saw.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Fei-zai, bring the boy up to speed on what you saw."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "Starting about three months ago, I've been hearing some weird tapping sounds. Like, 'da-da-da,' on-and-off in the kitchen and the storeroom. It's especially noticeable at night when it's all quiet outside.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Starting about three months ago, I've been hearing some weird tapping sounds. Like, 'da-da-da,' on-and-off in the kitchen and the storeroom. It's especially noticeable at night when it's all quiet outside."
     },
     {
-        "text": "We've also had some smaller food items go missing from both places, so I'm guessing there's some kinda small animal hiding inside the walls. And, most importantly\u2014",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "We've also had some smaller food items go missing from both places, so I'm guessing there's some kinda small animal hiding inside the walls. And, most importantly\u2014"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 20,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 20,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "text": "Most importantly, that damn pest has gone and chewed up my limited edition vinyl! Ain't nobody walking outta my bar alive after hurting my babies.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Most importantly, that damn pest has gone and chewed up my limited edition vinyl! Ain't nobody walking outta my bar alive after hurting my babies."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1",
-        "name2": "char_201_moeshd#1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1",
+            "name2": "char_201_moeshd#1",
+            "focus": 1
+        }
     },
     {
-        "text": "(So this is where you got the story, Croissant?)",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "(So this is where you got the story, Croissant?)"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1",
-        "name2": "char_201_moeshd#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1",
+            "name2": "char_201_moeshd#3",
+            "focus": 2
+        }
     },
     {
-        "text": "(Haha, I've been learnin' from the baws how to draw inspiration from everything...)",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "(Haha, I've been learnin' from the baws how to draw inspiration from everything...)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Why not call a professional exterminator then?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Why not call a professional exterminator then?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "I did, but those morons had the balls to tell me they'd have to tear down the whole damn wall to find whatever it is.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "I did, but those morons had the balls to tell me they'd have to tear down the whole damn wall to find whatever it is."
     },
     {
-        "text": "And there ain't no place in Lungmen with more character than this bar here. Only a philistine would even think of laying a finger on it.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "And there ain't no place in Lungmen with more character than this bar here. Only a philistine would even think of laying a finger on it."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1"
+        }
     },
     {
-        "text": "(The entire place is decked out in gold... Laojun's hideout was prettier.)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(The entire place is decked out in gold... Laojun's hideout was prettier.)"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Lee said you'd have a better idea. Now don't you disappoint me, or you'll have hell to pay.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Lee said you'd have a better idea. Now don't you disappoint me, or you'll have hell to pay."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1"
+        }
     },
     {
-        "text": "Hmph\u2014",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Hmph\u2014"
     },
     {
-        "text": "(I wouldn't have come if I hadn't promised Mr. Lee.)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(I wouldn't have come if I hadn't promised Mr. Lee.)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "I gave Mr. Lee my word, so you can bet your butt I'll get the job done.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I gave Mr. Lee my word, so you can bet your butt I'll get the job done."
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Then show me what you've got, kid.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Then show me what you've got, kid."
     },
     {
-        "text": "(Reaches flipper out to pat Xiaohei's head)",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "(Reaches flipper out to pat Xiaohei's head)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1"
+        }
     },
     {
-        "text": "Don't touch my ears, thank you very much.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Don't touch my ears, thank you very much."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "(Whoa, that's somethin'. Kid's brave enough to lock horns with the baws.)",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "(Whoa, that's somethin'. Kid's brave enough to lock horns with the baws.)"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "(He'll remember him for this... Oh, I'm so worried.)",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "(He'll remember him for this... Oh, I'm so worried.)"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "(What a funny kid. Might be fun to keep him around to tease. I gotta come up with an excuse to nab him from Lee.)",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "(What a funny kid. Might be fun to keep him around to tease. I gotta come up with an excuse to nab him from Lee.)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_pgbase_1",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_pgbase_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "fadetime": 0.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "No one's following...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "No one's following..."
     },
     {
-        "text": "Perfect.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Perfect."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1"
+        }
     },
     {
-        "text": "Where are the air ducts...? Oh, there we go. Up there.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Where are the air ducts...? Oh, there we go. Up there."
     },
     {
-        "text": "Heixiu, I'm counting on you.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Heixiu, I'm counting on you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "text": "(Climbs into the air ducts)",
-        "tag": "name",
-        "value": "Heixiu"
+        "command": "name",
+        "value": "Heixiu",
+        "text": "(Climbs into the air ducts)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1"
+        }
     },
     {
-        "text": "There you are.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "There you are."
     },
     {
-        "text": "You burrowed yourself pretty deep inside.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You burrowed yourself pretty deep inside."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "You don't wanna come out on your own? Guess I'll have to come get you then, huh?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You don't wanna come out on your own? Guess I'll have to come get you then, huh?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
         "text": "In the blink of an eye, the metal ring hidden up Xiaohei's sleeve slides out on its own and makes a few loops in the air before transforming into a number of balls of different sizes."
@@ -1419,644 +1639,749 @@
         "text": "On hearing the rattling 'da-da-da' sound, Xiaohei removes the vent's cover and finds a small animal all curled up and trembling."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_603_1#1$1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_603_1#1$1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_mouse",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_mouse",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Chirp*.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "It's okay now. Come here.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "It's okay now. Come here."
     },
     {
-        "text": "Sorry, I wasn't trying to scare you.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Sorry, I wasn't trying to scare you."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "xpos": -50,
-        "fadetime": 1.5,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "x": -50,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "(Cautiously climbs onto Xiaohei's palm)",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "(Cautiously climbs onto Xiaohei's palm)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "You're even tinier than Biu.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You're even tinier than Biu."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Chirp*...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "You need to find somewhere else to live. The people here don't want you here anymore.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You need to find somewhere else to live. The people here don't want you here anymore."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Chirp*?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "If you stay, you'll be in danger.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "If you stay, you'll be in danger."
     },
     {
-        "text": "That weird penguin said you chewed up his things and he's gonna show you what for.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "That weird penguin said you chewed up his things and he's gonna show you what for."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Chirp*!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't worry, I won't hand you over to him.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Don't worry, I won't hand you over to him."
     },
     {
-        "text": "Off you go now. I'm gonna let you go.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Off you go now. I'm gonna let you go."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_warehouse",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_warehouse",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "This is the bar's backdoor. Get going.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "This is the bar's backdoor. Get going."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_mouse",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_mouse",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "jump",
-        "power": 10,
-        "times": 2,
-        "fadetime": 1,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "jump",
+            "power": 10,
+            "duration": 2,
+            "block": true
+        }
     },
     {
-        "text": "*Chirp*.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#3$1",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#3$1",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "No need to thank me. See ya.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "No need to thank me. See ya."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#3$1",
-        "name2": "avg_npc_603_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#3$1",
+            "name2": "avg_npc_603_1#1$1"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_1",
-        "volume": 0.2
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_1",
+            "volume": 0.2
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "xpos": 200,
-        "fadetime": 2,
-        "block": false
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "x": 200,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#3$1",
-        "name2": "char_empty",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#3$1",
+            "name2": "char_empty",
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "xpos": 0,
-        "fadetime": 0.3,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "x": 0,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_pawfootstep_3",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_pawfootstep_3",
+            "volume": 1
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "xpos": -200,
-        "fadetime": 1,
-        "block": false
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "x": -200,
+            "block": false
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#3$1",
-        "name2": "avg_npc_599_1#1$1",
-        "fadetime": 0.7
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#3$1",
+            "name2": "avg_npc_599_1#1$1",
+            "fadetime": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "What are you doing back here?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "What are you doing back here?"
     },
     {
-        "text": "Is that... something in your mouth?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Is that... something in your mouth?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Whine*...",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "*Whine*..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Spit it out!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Spit it out!"
     },
     {
-        "text": "Open wide! Stop biting! It's going to die.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Open wide! Stop biting! It's going to die."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Spit*.",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "*Spit*."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "character",
-        "name": "avg_npc_603_1#1$1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_603_1#1$1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "text": "*Chirp*...",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": -50,
-        "fadetime": 2,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": -50,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "text": "(Falls onto the ground)",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "(Falls onto the ground)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Is it hurt from the bite?!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Is it hurt from the bite?!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "move",
-        "xpos": 50,
-        "fadetime": 1,
-        "block": false
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "move",
+            "x": 50,
+            "block": false
+        }
     },
     {
-        "text": "(Tries to get up and run)",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Tries to get up and run)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Don't you run! Get back here!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Don't you run! Get back here!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "right",
-        "type": "exit",
-        "direction": "right",
-        "fadetime": 2.5
+        "command": "characteraction",
+        "params": {
+            "name": "right",
+            "type": "exit",
+            "direction": "right"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "(Sprints away)",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Sprints away)"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Careful!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Careful!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$sheildimpact",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$sheildimpact",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
         "text": "Thump\u2014"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_599_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_599_1#1$1"
+        }
     },
     {
-        "text": "Mew...",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "Mew..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$bodyfalldown3",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bodyfalldown3",
+            "volume": 1
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
-        "tag": "characteraction",
-        "name": "middle",
-        "type": "move",
-        "ypos": -50,
-        "fadetime": 2,
-        "block": true
+        "command": "characteraction",
+        "params": {
+            "name": "middle",
+            "type": "move",
+            "y": -50,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0.5
+        "command": "character",
+        "params": {
+            "fadetime": 0.5
+        }
     },
     {
-        "text": "(Falls onto the ground)",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Falls onto the ground)"
     },
     {
         "text": "*Creak*\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1"
+        }
     },
     {
-        "text": "Crap!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Crap!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_doorbreak",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_doorbreak",
+            "volume": 1
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_glass_break",
-        "volume": 1,
-        "delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_glass_break",
+            "volume": 1,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 1,
-        "xstrength": 20,
-        "ystrength": 20,
-        "vibrato": 30,
-        "randomness": 90,
-        "fadeout": true,
-        "block": false
+        "command": "camerashake",
+        "params": {
+            "duration": 1,
+            "xstrength": 20,
+            "ystrength": 20,
+            "vibration": 30,
+            "randomness": 90,
+            "fadeout": true,
+            "block": false
+        }
     },
     {
         "text": "The shelf that the storm cloudbeast slammed into starts to tumble over. With no time to worry about the wares on it, Xiaohei dashes forward to grab the two animals before it falls on them."
@@ -2065,644 +2390,760 @@
         "text": "By the time he regains his footing, the shelf behind him has collapsed with a loud crash."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#3",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#3",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "The heck's goin' on in here?!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "The heck's goin' on in here?!"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#3",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#3",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "Ahh! That's the crate of booze the boss bought just the other day!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Ahh! That's the crate of booze the boss bought just the other day!"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Mind explaining what going on, boy?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Mind explaining what going on, boy?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1"
+        }
     },
     {
-        "text": "I...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I..."
     },
     {
-        "text": "(Lifts the small animal up with his left hand)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Lifts the small animal up with his left hand)"
     },
     {
-        "text": "I found this critter inside the wall!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I found this critter inside the wall!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1"
+        }
     },
     {
-        "text": "As for the shelf...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "As for the shelf..."
     },
     {
-        "text": "(Lifts the storm cloudbeast with his right hand)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Lifts the storm cloudbeast with his right hand)"
     },
     {
-        "text": "This guy knocked it over!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "This guy knocked it over!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_bar_1",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_bar_1",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$path_intro",
-        "key": "$path_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$path_intro",
+            "key": "$path_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Mew...?",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "Mew...?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh, you're finally awake.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Oh, you're finally awake."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "Mew...",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "Mew..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "You're getting me in big trouble. What'd you follow me for?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You're getting me in big trouble. What'd you follow me for?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "(Droops its head)",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Droops its head)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "I told you. I'll help you out, but I'm busy today.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I told you. I'll help you out, but I'm busy today."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "(Lies down)",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Lies down)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "avg_npc_599_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "avg_npc_599_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Whatever... Blaming you's not going to help right now.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Whatever... Blaming you's not going to help right now."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Hey, kiddo? What're ya talkin' to that cloudbeast for? C'mere, I reckon Baws is only 'bout 60% mad. You might still get back in one piece.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Hey, kiddo? What're ya talkin' to that cloudbeast for? C'mere, I reckon Baws is only 'bout 60% mad. You might still get back in one piece."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 1
+        }
     },
     {
-        "text": "Hey, stop scaring him.",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Hey, stop scaring him."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1"
+        }
     },
     {
-        "text": "I'll find a way to pay for the things that got damaged.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I'll find a way to pay for the things that got damaged."
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Hmph, that's the finest vintage rum brewed from Bol\u00edvar's sweetest sugar cane that year.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Hmph, that's the finest vintage rum brewed from Bol\u00edvar's sweetest sugar cane that year."
     },
     {
-        "text": "But my spiritual needs come first. I'll deal with your punk ass later. First, I'mma take a good look at the vermin that chewed up my vinyls.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "But my spiritual needs come first. I'll deal with your punk ass later. First, I'mma take a good look at the vermin that chewed up my vinyls."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "What'd you guys do with it...?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "What'd you guys do with it...?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Fei-zai, bring me the cage!",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Fei-zai, bring me the cage!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033",
-        "name2": "avg_npc_603_1#1$1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033",
+            "name2": "avg_npc_603_1#1$1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 1
+        }
     },
     {
-        "text": "Coming up, Boss.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Coming up, Boss."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033",
-        "name2": "avg_npc_603_1#1$1",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033",
+            "name2": "avg_npc_603_1#1$1",
+            "focus": 2
+        }
     },
     {
-        "text": "*Chirp*!",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "*Chirp*!"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "Ah, so it was a musbeast.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Ah, so it was a musbeast."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "It looks so cute!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "It looks so cute!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "What's a musbeast?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "What's a musbeast?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "They're critters that live in the Sargonian wilderness. Travelin' merchants sometimes bring 'em to nomadic cities to sell as pets. On account of how cute they are.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "They're critters that live in the Sargonian wilderness. Travelin' merchants sometimes bring 'em to nomadic cities to sell as pets. On account of how cute they are."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "But if it's a pet, what's it doing in an air duct?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "But if it's a pet, what's it doing in an air duct?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Well, they're nocturnal. Also pretty skittish and they don't warm up to folks easy. Some like to throw 'em out 'cause they don't like how rowdy the little fellas get at night, or maybe they're just plain sick of takin' care of 'em.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Well, they're nocturnal. Also pretty skittish and they don't warm up to folks easy. Some like to throw 'em out 'cause they don't like how rowdy the little fellas get at night, or maybe they're just plain sick of takin' care of 'em."
     },
     {
-        "text": "Air ducts are hidden and cool, just like the caves they're s'posed to live in. So you sometimes find 'em makin' themselves at home and startin' a litter.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Air ducts are hidden and cool, just like the caves they're s'posed to live in. So you sometimes find 'em makin' themselves at home and startin' a litter."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd",
+            "focus": 1
+        }
     },
     {
-        "text": "Shouldn't the owners be punished for being so irresponsible?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Shouldn't the owners be punished for being so irresponsible?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Hah, Lungmen ain't got no laws like that. Even if we did, enforcing 'em is a whole 'nother story.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Hah, Lungmen ain't got no laws like that. Even if we did, enforcing 'em is a whole 'nother story."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "You're too kind, Sora. You can't even imagine how much damage these musbeasts do to the city's infrastructure.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "You're too kind, Sora. You can't even imagine how much damage these musbeasts do to the city's infrastructure."
     },
     {
-        "text": "Their teeth grow so fast that they've got to wear them down every day, so they chew on anything they come across.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Their teeth grow so fast that they've got to wear them down every day, so they chew on anything they come across."
     },
     {
-        "text": "You know the blackout in District 13 last year? That happened because a pack of musbeasts chewed up an underground power line.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "You know the blackout in District 13 last year? That happened because a pack of musbeasts chewed up an underground power line."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#5",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#5",
+            "focus": 2
+        }
     },
     {
-        "text": "As I 'member it, the city wasted a whole lotta money last year tryna exterminate 'em.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "As I 'member it, the city wasted a whole lotta money last year tryna exterminate 'em."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1"
+        }
     },
     {
-        "text": "(Frowns) But... they came here against their will.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Frowns) But... they came here against their will."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "And we spent all that tax money against our will too. What're you gonna do?",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "And we spent all that tax money against our will too. What're you gonna do?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#5",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#5",
+            "focus": 1
+        }
     },
     {
-        "text": "Can't they catch them and release them back into the wild?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Can't they catch them and release them back into the wild?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#5",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#5",
+            "focus": 2
+        }
     },
     {
-        "text": "(Shakes head) And throw good money after bad? 'Sides, are there even any good habitats near Lungmen's route? Heck, they might end up causin' even more damage to the environment.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "(Shakes head) And throw good money after bad? 'Sides, are there even any good habitats near Lungmen's route? Heck, they might end up causin' even more damage to the environment."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#5",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#5",
+            "focus": 1
+        }
     },
     {
-        "text": "If they're pets, then there's got to be a demand for adopting them, right? How about we put up some notices in front of the shop and look for a new owner?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "If they're pets, then there's got to be a demand for adopting them, right? How about we put up some notices in front of the shop and look for a new owner?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "That might've worked a few years back, but these days you hear nothing but bad news about them. I hear they're even about to put out new regulations against keeping them. Who'd come looking for trouble?",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "That might've worked a few years back, but these days you hear nothing but bad news about them. I hear they're even about to put out new regulations against keeping them. Who'd come looking for trouble?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#5",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#5",
+            "focus": 1
+        }
     },
     {
-        "text": "Hmph, if you're so smart, then let's hear your idea!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Hmph, if you're so smart, then let's hear your idea!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "Eh... Just find a barrel and drown it. That's how I used to deal with pests back home.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Eh... Just find a barrel and drown it. That's how I used to deal with pests back home."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1"
+        }
     },
     {
-        "text": "(Grits teeth) What gives you the right to do that?!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Grits teeth) What gives you the right to do that?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "Hah, I've met plenty of kids like you. You feel bad for them because they're cute. You wouldn't even be complaining if they were ugly.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Hah, I've met plenty of kids like you. You feel bad for them because they're cute. You wouldn't even be complaining if they were ugly."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1"
+        }
     },
     {
-        "text": "That's not true!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "That's not true!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "What're you glaring at me for? We found it in our store, so we get to decide what to do with it.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "What're you glaring at me for? We found it in our store, so we get to decide what to do with it."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1"
+        }
     },
     {
-        "text": "It's not like they wanted to be here. It was you people who brought them here and abandoned them. How is any of this their fault?!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "It's not like they wanted to be here. It was you people who brought them here and abandoned them. How is any of this their fault?!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "What's your point? Survival of the fittest, kid. We humans are on top of the food chain, so of course we get to decide what to do with them!",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "What's your point? Survival of the fittest, kid. We humans are on top of the food chain, so of course we get to decide what to do with them!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#9$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#9$1"
+        }
     },
     {
-        "text": "I've heard enough!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I've heard enough!"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "I could tell you the same, punk! Stay out of this!",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "I could tell you the same, punk! Stay out of this!"
     },
     {
-        "tag": "musicvolume",
-        "volume": 0,
-        "fadetime": 5
+        "command": "musicvolume",
+        "params": {
+            "volume": 0,
+            "fadetime": 5
+        }
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Alright! You bitches are giving me tinnitus!",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Alright! You bitches are giving me tinnitus!"
     },
     {
-        "text": "Shut up, all of you. I've made my decision.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Shut up, all of you. I've made my decision."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$bullet_loading",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$bullet_loading",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
         "text": "Emperor cocks his gun and points it straight at the musbeast inside the cage. Faced with its imminent bloody demise, everyone's breathing quickens."
@@ -2711,1431 +3152,1691 @@
         "text": "But just before he is able to pull the trigger, a small hand grabs the barrel."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "You can't kill it.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You can't kill it."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "You think your punk ass can stop me, kid? Maybe you've got skills, but have you thought about the consequences?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You think your punk ass can stop me, kid? Maybe you've got skills, but have you thought about the consequences?"
     },
     {
-        "text": "You're here as Lee's errand boy. You don't want his street cred to go down the drain 'cause of you, do you?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You're here as Lee's errand boy. You don't want his street cred to go down the drain 'cause of you, do you?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "You\u2014",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#7$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#7$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "I'm just...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I'm just..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Is this really the only way?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Is this really the only way?"
     },
     {
-        "text": "They were forced to leave their homes and roam the streets... Nobody wants that.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "They were forced to leave their homes and roam the streets... Nobody wants that."
     },
     {
-        "text": "Can't we come up with something else?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Can't we come up with something else?"
     },
     {
-        "text": "No one lets them stay anywhere... It's got to be painful...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "No one lets them stay anywhere... It's got to be painful..."
     },
     {
-        "text": "All they want is a place to live!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "All they want is a place to live!"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "You done?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You done?"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_gunload",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_gunload",
+            "volume": 1
+        }
     },
     {
-        "text": "(Raises handgun)",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "(Raises handgun)"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd",
+            "focus": 1
+        }
     },
     {
-        "text": "Boss, I can take care of\u2014",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Boss, I can take care of\u2014"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Shush.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Shush."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "I can bring it back with me! Don't you dare kill it!",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I can bring it back with me! Don't you dare kill it!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#5$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#5$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_lighter",
-        "volume": 0.6
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_lighter",
+            "volume": 0.6
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "musicvolume",
-        "volume": 0.4,
-        "fadetime": 1
+        "command": "musicvolume",
+        "params": {
+            "volume": 0.4,
+            "fadetime": 1
+        }
     },
     {
-        "text": "What're y'all so tense for? I'm just lighting a cigar.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "What're y'all so tense for? I'm just lighting a cigar."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "......"
     },
     {
-        "text": "That's... a lighter?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "That's... a lighter?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "What else would it be? Etched ammo's mad steep. Why'd I waste any here?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "What else would it be? Etched ammo's mad steep. Why'd I waste any here?"
     },
     {
-        "text": "You really meant all that, though? Not bad. Touching, even.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You really meant all that, though? Not bad. Touching, even."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "(Blushes)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Blushes)"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Hmph, punks like you are cuter when you show your feelings. What's so fun about wearing a poker face all day?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Hmph, punks like you are cuter when you show your feelings. What's so fun about wearing a poker face all day?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "So, Boss, about the musbeast...",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "So, Boss, about the musbeast..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Keep it. I'll adopt it.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Keep it. I'll adopt it."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "So... you were never gonna kill it?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "So... you were never gonna kill it?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Nonsense. You think you got what it takes to know the mind of a king?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Nonsense. You think you got what it takes to know the mind of a king?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "......"
     },
     {
-        "text": "(Who the hell would know how you think?!)",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "(Who the hell would know how you think?!)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "But the government is about to\u2014",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "But the government is about to\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Do I look like I'm scared of that biznatch Wei Yenwu?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Do I look like I'm scared of that biznatch Wei Yenwu?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_033"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_033"
+        }
     },
     {
-        "text": "Fine, you're the boss, Boss.",
-        "tag": "name",
-        "value": "Barkeep"
+        "command": "name",
+        "value": "Barkeep",
+        "text": "Fine, you're the boss, Boss."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Hey, kid, stop standing around. Grab that cage and come with me.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Hey, kid, stop standing around. Grab that cage and come with me."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Where? For what?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Where? For what?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Just shut up and follow.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Just shut up and follow."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper"
+        }
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "Heh, that's 'bout what I figured'd happen!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Heh, that's 'bout what I figured'd happen!"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 1
+        }
     },
     {
-        "text": "So you stopped me because you knew he wasn't going to kill it?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "So you stopped me because you knew he wasn't going to kill it?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#3",
+            "focus": 2
+        }
     },
     {
-        "text": "Who do ya think sold him that gun? Er, lighter?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Who do ya think sold him that gun? Er, lighter?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#3",
+            "focus": 1
+        }
     },
     {
-        "text": "So you let me and the boy worry ourselves to death over nothing?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "So you let me and the boy worry ourselves to death over nothing?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#3",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#3",
+            "focus": 2
+        }
     },
     {
-        "text": "C'mon, like you didn't wanna see his poker face crumble too?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "C'mon, like you didn't wanna see his poker face crumble too?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#5",
-        "name2": "char_201_moeshd#3",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#5",
+            "name2": "char_201_moeshd#3",
+            "focus": 1
+        }
     },
     {
-        "text": "You're such a meanie!",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "You're such a meanie!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1.5
+        "command": "delay",
+        "value": 1.5
     },
     {
-        "text": "What happened in the store just now? Why does Fei-zai looks so pissed?",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "What happened in the store just now? Why does Fei-zai looks so pissed?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#2",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#2",
+            "focus": 2
+        }
     },
     {
-        "text": "Haha, he got embarrassed by the baws and a kid.",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Haha, he got embarrassed by the baws and a kid."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Right, we found the critter in the wall. A musbeast.",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Right, we found the critter in the wall. A musbeast."
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1"
+        }
     },
     {
-        "text": "Figures. So how'd the Boss deal with it?",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "Figures. So how'd the Boss deal with it?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#2",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#2",
+            "focus": 1
+        }
     },
     {
-        "text": "Fei-zai said we should get rid of it, but he decided to adopt it as his pet.",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Fei-zai said we should get rid of it, but he decided to adopt it as his pet."
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1#3"
+        }
     },
     {
-        "text": "A musbeast... Not too surprising.",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "A musbeast... Not too surprising."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "Eh, you know somethin'?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Eh, you know somethin'?"
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1#3"
+        }
     },
     {
-        "text": "He used to keep another small critter, too. A couple years ago, maybe...?",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "He used to keep another small critter, too. A couple years ago, maybe...?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "How come we never heard about this?",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "How come we never heard about this?"
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1"
+        }
     },
     {
-        "text": "Because... he's shy?",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "Because... he's shy?"
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd",
+            "focus": 2
+        }
     },
     {
-        "text": "So? What happened?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "So? What happened?"
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1"
+        }
     },
     {
-        "text": "What happened? Musbeasts have an average lifespan of two years. It died.",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "What happened? Musbeasts have an average lifespan of two years. It died."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#1",
-        "name2": "char_201_moeshd#8",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#1",
+            "name2": "char_201_moeshd#8",
+            "focus": 2
+        }
     },
     {
-        "text": "So that's why he's always gettin' hammered and listenin' to blues in his room 'round then?",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "So that's why he's always gettin' hammered and listenin' to blues in his room 'round then?"
     },
     {
-        "tag": "character",
-        "name": "char_102_texas_1#3"
+        "command": "character",
+        "params": {
+            "name": "char_102_texas_1#3"
+        }
     },
     {
-        "text": "Probably.",
-        "tag": "name",
-        "value": "Texas"
+        "command": "name",
+        "value": "Texas",
+        "text": "Probably."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#8",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#8",
+            "focus": 1
+        }
     },
     {
-        "text": "Oh no... I think I'm starting to tear up again.",
-        "tag": "name",
-        "value": "Sora"
+        "command": "name",
+        "value": "Sora",
+        "text": "Oh no... I think I'm starting to tear up again."
     },
     {
-        "tag": "character",
-        "name": "char_101_sora_1#4",
-        "name2": "char_201_moeshd#4",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "char_101_sora_1#4",
+            "name2": "char_201_moeshd#4",
+            "focus": 2
+        }
     },
     {
-        "text": "Hey, stop!",
-        "tag": "name",
-        "value": "Croissant"
+        "command": "name",
+        "value": "Croissant",
+        "text": "Hey, stop!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "background",
-        "image": "bg_lmstreet_2",
-        "screenadapt": "showall"
+        "command": "background",
+        "params": {
+            "image": "bg_lmstreet_2",
+            "screenadapt": "showall"
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$m_dia_street_intro",
-        "key": "$m_dia_street_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$m_dia_street_intro",
+            "key": "$m_dia_street_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_walk_n",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_walk_n",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "fadetime": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "......"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "So, you've been keeping quiet the whole time. Got nothin' to say to me?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "So, you've been keeping quiet the whole time. Got nothin' to say to me?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Thank you, Mr. Emperor.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Thank you, Mr. Emperor."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Like I care about your thanks, punk. That's not what I want from you.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Like I care about your thanks, punk. That's not what I want from you."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Then I've got nothing else to say.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Then I've got nothing else to say."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#2$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#2$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "That's really all that you're bottling up?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "That's really all that you're bottling up?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Uhh...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Uhh..."
     },
     {
-        "text": "Why did you decide to keep it? Does it just... happen to suit to your fancy?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Why did you decide to keep it? Does it just... happen to suit to your fancy?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Why else?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Why else?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "So if you didn't like it, you'd have listened to the other guy? Would you have killed it?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "So if you didn't like it, you'd have listened to the other guy? Would you have killed it?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "If I did, what would you do?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "If I did, what would you do?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "I'd have stopped you.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "I'd have stopped you."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Then good.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Then good."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "...What do you mean?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "...What do you mean?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "If my decision wasn't gonna affect yours, what's the problem?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "If my decision wasn't gonna affect yours, what's the problem?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "But\u2014",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "But\u2014"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "If you've made up your mind, stop yammering and follow through with it. You better think it through first, though. Else you might regret it your whole life.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "If you've made up your mind, stop yammering and follow through with it. You better think it through first, though. Else you might regret it your whole life."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Alright, we're here.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Alright, we're here."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "This place is...",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "This place is..."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "You know it?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You know it?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Yeah, Mr. Lee told me about the slums before. It's where the people with the Stone Disease live.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Yeah, Mr. Lee told me about the slums before. It's where the people with the Stone Disease live."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "What else did he tell you?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "What else did he tell you?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "That I should stay away.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "That I should stay away."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "He's right. This ain't a place for brats like you to be hanging out in.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "He's right. This ain't a place for brats like you to be hanging out in."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 1
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 1
+        }
     },
     {
-        "text": "Then why'd you bring me here...?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Then why'd you bring me here...?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1",
-        "name2": "char_105_emper",
-        "focus": 2
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1",
+            "name2": "char_105_emper",
+            "focus": 2
+        }
     },
     {
-        "text": "Because ain't nobody wants to come here, which makes it a perfect hideout for anyone who doesn't wanna be found.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Because ain't nobody wants to come here, which makes it a perfect hideout for anyone who doesn't wanna be found."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "delay",
-        "time": 0.51
+        "command": "delay",
+        "value": 0.51
     },
     {
-        "tag": "playsound",
-        "key": "$doorknockquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$doorknockquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$dooropenquite",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$dooropenquite",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1",
-        "fadetime": 0.5,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1",
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "Hey, Mr. Emperor. What brings you here today?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "Hey, Mr. Emperor. What brings you here today?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "I've got two critters I need you to take a look at.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "I've got two critters I need you to take a look at."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "What strange animals have you brought me today?",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "What strange animals have you brought me today?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Show him, punk.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Show him, punk."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Here.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Here."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 1
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 1
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "A musbeast? Oh, and a storm cloudbeast too.",
-        "tag": "name",
-        "value": "???"
+        "command": "name",
+        "value": "???",
+        "text": "A musbeast? Oh, and a storm cloudbeast too."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Mr. Emperor, who's this?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Mr. Emperor, who's this?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "A doctor. He's got mad skills. Knows how to treat both people and animals.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "A doctor. He's got mad skills. Knows how to treat both people and animals."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Haha, I can deal with just about anyone or anything. As long as they're not scared to visit me, that is.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Haha, I can deal with just about anyone or anything. As long as they're not scared to visit me, that is."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1"
+        }
     },
     {
-        "text": "If he's so amazing, why hide here?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "If he's so amazing, why hide here?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Ask him, not me.",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Ask him, not me."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Eh, because I'm a criminal.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Eh, because I'm a criminal."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "How could a doctor be a criminal?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "How could a doctor be a criminal?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Because a doctor will always force you to face your pains in the most direct and cruelest way possible. They bring nothing but bad news.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Because a doctor will always force you to face your pains in the most direct and cruelest way possible. They bring nothing but bad news."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "That just makes you honest, not a criminal.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "That just makes you honest, not a criminal."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Haha, the most honest people are also the cruellest.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Haha, the most honest people are also the cruellest."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "So what are you getting at?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "So what are you getting at?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Very good. Stay suspicious. Don't take everything at face value.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Very good. Stay suspicious. Don't take everything at face value."
     },
     {
-        "text": "It's the things you're most sure of that will always betray you in the end.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "It's the things you're most sure of that will always betray you in the end."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#8$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#8$1"
+        }
     },
     {
-        "text": "Have you tried not speaking in riddles?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Have you tried not speaking in riddles?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "You done yet? So what's going on with the musbeast?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "You done yet? So what's going on with the musbeast?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Forget I said all that. Oww...",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Forget I said all that. Oww..."
     },
     {
-        "text": "Here, sweetie, let me take a look... It doesn't look so bad. It's pretty thin, and its fur lacks luster, so it's just malnourished. Looks kind of out of it, though. Did something happen?",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Here, sweetie, let me take a look... It doesn't look so bad. It's pretty thin, and its fur lacks luster, so it's just malnourished. Looks kind of out of it, though. Did something happen?"
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Is it sick?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Is it sick?"
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Maybe it's scared? It was in the storm cloudbeast's mouth not too long ago.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Maybe it's scared? It was in the storm cloudbeast's mouth not too long ago."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_599_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_599_1#1$1"
+        }
     },
     {
-        "text": "(Licks claws) Ao...",
-        "tag": "name",
-        "value": "Storm Cloudbeast"
+        "command": "name",
+        "value": "Storm Cloudbeast",
+        "text": "(Licks claws) Ao..."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "No wonder. Small critters like this happen to be a cloudbeasts' favorite meal.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "No wonder. Small critters like this happen to be a cloudbeasts' favorite meal."
     },
     {
-        "text": "This one really seems familiar, though... It's like I've seen it before...",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "This one really seems familiar, though... It's like I've seen it before..."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "playsound",
-        "key": "$d_avg_cloakmovement",
-        "volume": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$d_avg_cloakmovement",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "(Picks up the storm cloudbeast)",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "(Picks up the storm cloudbeast)"
     },
     {
-        "text": "Good boy, let me take a look. Ah, I knew it. I stitched this leg wound up myself. It's neat, elegant, and just perfect.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Good boy, let me take a look. Ah, I knew it. I stitched this leg wound up myself. It's neat, elegant, and just perfect."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Do you remember its master?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Do you remember its master?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Hm, they brought this little fella to me three years ago. If memory serves, they had Oripathy. By the looks of it, they were on their last legs.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Hm, they brought this little fella to me three years ago. If memory serves, they had Oripathy. By the looks of it, they were on their last legs."
     },
     {
-        "text": "I felt sorry, so I patched the cloudbeast up for free, but then they asked me to keep the little guy too.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "I felt sorry, so I patched the cloudbeast up for free, but then they asked me to keep the little guy too."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#10$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#10$1"
+        }
     },
     {
-        "text": "And you didn't.",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "And you didn't."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Of course not. I'm a doctor, not a philanthropist.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Of course not. I'm a doctor, not a philanthropist."
     },
     {
-        "tag": "character",
-        "name": "char_105_emper"
+        "command": "character",
+        "params": {
+            "name": "char_105_emper"
+        }
     },
     {
-        "text": "Not 'cause your broke ass couldn't afford it?",
-        "tag": "name",
-        "value": "Emperor"
+        "command": "name",
+        "value": "Emperor",
+        "text": "Not 'cause your broke ass couldn't afford it?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "See? What did I just say? The most honest people are also the most cruel.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "See? What did I just say? The most honest people are also the most cruel."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#1$1"
+        }
     },
     {
-        "text": "Uh... I guess?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "Uh... I guess?"
     },
     {
-        "text": "So... Do you know where that person is now?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "So... Do you know where that person is now?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "They was very sick, so probably dead by now? There's an empty lot on the outskirts of the slums, where people sometimes put up whatever an Infected's left behind, to remember them by. You could try checking there.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "They was very sick, so probably dead by now? There's an empty lot on the outskirts of the slums, where people sometimes put up whatever an Infected's left behind, to remember them by. You could try checking there."
     },
     {
-        "text": "Come to think of it, I still remember them turning out their pockets to find every last bit of change, just so I would adopt it. Poor thing.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Come to think of it, I still remember them turning out their pockets to find every last bit of change, just so I would adopt it. Poor thing."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1"
+        }
     },
     {
-        "text": "You still remember after so long?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "You still remember after so long?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Well... I have a good memory. It's strange, isn't it? I even remember how much they managed to scrape together.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Well... I have a good memory. It's strange, isn't it? I even remember how much they managed to scrape together."
     },
     {
-        "tag": "character",
-        "name": "avg_lolxh_4067_1#4$1"
+        "command": "character",
+        "params": {
+            "name": "avg_lolxh_4067_1#4$1"
+        }
     },
     {
-        "text": "How much?",
-        "tag": "name",
-        "value": "Xiaohei"
+        "command": "name",
+        "value": "Xiaohei",
+        "text": "How much?"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_331_1#1$1"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_331_1#1$1"
+        }
     },
     {
-        "text": "Sixty-seven. Sixty-seven LMD exact.",
-        "tag": "name",
-        "value": "Doc"
+        "command": "name",
+        "value": "Doc",
+        "text": "Sixty-seven. Sixty-seven LMD exact."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 3
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 3
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

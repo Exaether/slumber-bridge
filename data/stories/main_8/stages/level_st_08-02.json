@@ -1,60 +1,62 @@
 [
     {
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "stopmusic"
     },
     {
-        "tag": "stopmusic"
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playmusic",
+        "params": {
+            "intro": "$mist_intro",
+            "key": "$mist_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$mist_intro",
-        "key": "$mist_loop",
-        "volume": 0.4
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "background",
+        "params": {
+            "image": "bg_cherunder_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_cherunder_2",
-        "screenadapt": "coverall"
-    },
-    {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
         "text": "Central District"
@@ -63,1301 +65,1481 @@
         "text": "A short while before"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "How are you certain Amiya's group will reach the command tower...",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "How are you certain Amiya's group will reach the command tower...",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "decision",
-        "options": "...without crossing one of Talulah's elite squads?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "...without crossing one of Talulah's elite squads?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_003_kalts_1"
+        "command": "character",
+        "params": {
+            "name": "char_003_kalts_1"
+        }
     },
     {
-        "text": "This is the problem with conspirators.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "This is the problem with conspirators."
     },
     {
-        "text": "Take a warlord, or a tyrant of a devious king. Their strongholds are always easy to defend, hard to attack.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Take a warlord, or a tyrant of a devious king. Their strongholds are always easy to defend, hard to attack."
     },
     {
-        "text": "They know their own deeds will invite furious retribution without fail. They'll use superior strength and advanced armaments to deploy unyielding defense.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "They know their own deeds will invite furious retribution without fail. They'll use superior strength and advanced armaments to deploy unyielding defense."
     },
     {
-        "text": "Yet, seeing as Talulah's despotic behavior is confirmed to be some kind of act, she would not do things this way.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Yet, seeing as Talulah's despotic behavior is confirmed to be some kind of act, she would not do things this way."
     },
     {
-        "tag": "decision",
-        "options": "What makes you so confident?;......;I wanna hear your reasoning.",
-        "values": "1;2;3"
+        "command": "decision",
+        "params": {
+            "options": "What makes you so confident?;......;I wanna hear your reasoning.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Experience, theory, phenomena.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Experience, theory, phenomena."
     },
     {
-        "text": "I have no confidence. I can only derive the facts.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I have no confidence. I can only derive the facts."
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "text": "...Truthfully, I'm hoping to see you ever offer your own opinion.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...Truthfully, I'm hoping to see you ever offer your own opinion."
     },
     {
-        "text": "Or maybe you're already content with silence as a brand of opinion?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Or maybe you're already content with silence as a brand of opinion?"
     },
     {
-        "text": "Then I thank you for your understanding.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Then I thank you for your understanding."
     },
     {
-        "tag": "predicate",
-        "references": 3
+        "command": "predicate",
+        "params": {
+            "references": 3
+        }
     },
     {
-        "text": "If my thought process was one that won your approval...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "If my thought process was one that won your approval..."
     },
     {
-        "text": "Did you think that I would thus feel some kind of happy?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Did you think that I would thus feel some kind of happy?"
     },
     {
-        "text": "Respect is a two-way street. If you value my point of view, and arrive at any useful conclusions, then I in turn will give your point of view serious consideration.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Respect is a two-way street. If you value my point of view, and arrive at any useful conclusions, then I in turn will give your point of view serious consideration."
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "text": "Talulah is maintaining her own image. She needs to have the normal Infected respect her, have the Sarkaz mercenaries obey her, have the guerrillas trust her, have the zealots worship her...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Talulah is maintaining her own image. She needs to have the normal Infected respect her, have the Sarkaz mercenaries obey her, have the guerrillas trust her, have the zealots worship her..."
     },
     {
-        "text": "She needs to have the distance between her and them clearly visible, and have these people able to examine each other.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "She needs to have the distance between her and them clearly visible, and have these people able to examine each other."
     },
     {
-        "text": "According to a series of behavior exhibited by Reunion so far, we can very clearly realize that Reunion's other leaders do not particularly recognize Talulah's conduct at all.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "According to a series of behavior exhibited by Reunion so far, we can very clearly realize that Reunion's other leaders do not particularly recognize Talulah's conduct at all."
     },
     {
-        "text": "Even Patriot, seeing through to her scheme, had no power to reverse the tide in the middle of its change. If he could have killed Talulah, all the same, he still would have been unable to alter Reunion tending towards collapse.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Even Patriot, seeing through to her scheme, had no power to reverse the tide in the middle of its change. If he could have killed Talulah, all the same, he still would have been unable to alter Reunion tending towards collapse."
     },
     {
-        "text": "To say nothing of the plot to exploit the Infected that Talulah has drawn up inside her own head... The time she would need likely far exceed the time Reunion has existed so far.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "To say nothing of the plot to exploit the Infected that Talulah has drawn up inside her own head... The time she would need likely far exceed the time Reunion has existed so far."
     },
     {
-        "text": "I conjecture that all of Reunion's actions up to now have been premised on a plan. Namely...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I conjecture that all of Reunion's actions up to now have been premised on a plan. Namely..."
     },
     {
-        "text": "'Reunion will perish after all this is over.'",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "'Reunion will perish after all this is over.'"
     },
     {
-        "text": "Talulah will scatter keen, hidden forces across every part of her territory. When she needs them, she'll assemble them, and have them make their appearance at the right moment.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Talulah will scatter keen, hidden forces across every part of her territory. When she needs them, she'll assemble them, and have them make their appearance at the right moment."
     },
     {
-        "text": "Doctor, I believe the Empire of Ursus's Third Army would not permit any Infected to act freely whatsoever.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Doctor, I believe the Empire of Ursus's Third Army would not permit any Infected to act freely whatsoever."
     },
     {
-        "text": "However, Reunion's current conduct is all within the bounds of their tolerance. Superficial violence, lacking discipline and organization. The Third Army must be happy to see it.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "However, Reunion's current conduct is all within the bounds of their tolerance. Superficial violence, lacking discipline and organization. The Third Army must be happy to see it."
     },
     {
-        "text": "Think about it carefully. Would they limit themselves to being onlookers? Thus, would they risk truly, willingly letting Talulah control a whole city\u2014even a whole country's state of affairs?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Think about it carefully. Would they limit themselves to being onlookers? Thus, would they risk truly, willingly letting Talulah control a whole city\u2014even a whole country's state of affairs?"
     },
     {
-        "text": "Or perhaps, even this is one of the weights on Talulah's scales, used to swindle the Ursus military out of their power... having them hibernate somewhere, waiting until the situation is just about to move on from her control.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Or perhaps, even this is one of the weights on Talulah's scales, used to swindle the Ursus military out of their power... having them hibernate somewhere, waiting until the situation is just about to move on from her control."
     },
     {
-        "text": "And then, in the truest sense, she'll be able to use... the power she could never even touch. Just as she wishes.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "And then, in the truest sense, she'll be able to use... the power she could never even touch. Just as she wishes."
     },
     {
-        "text": "But that needs time.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "But that needs time."
     },
     {
-        "tag": "decision",
-        "options": "Now that you say all that, how is she not a tyrant?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Now that you say all that, how is she not a tyrant?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "Because while current Reunion wants that in a leader, it doesn't truly need that in a leader.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Because while current Reunion wants that in a leader, it doesn't truly need that in a leader."
     },
     {
-        "text": "A tyrant treasures one's own enablers, even if a tyrant more often than not recklessly destroys them for lack of foresight or composure, and weeps truest, deepest tears for it.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "A tyrant treasures one's own enablers, even if a tyrant more often than not recklessly destroys them for lack of foresight or composure, and weeps truest, deepest tears for it."
     },
     {
-        "text": "A conspirator does not. The tyrant has chess pieces, and the conspirator does too; but the tyrant is with them on the chessboard, while the conspirator sits outside of it.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "A conspirator does not. The tyrant has chess pieces, and the conspirator does too; but the tyrant is with them on the chessboard, while the conspirator sits outside of it."
     },
     {
-        "text": "We can suppose she has humanity, and thus might make mistakes. But if we're talking about a qualified conspirator with a scheme on the tracks, then even if she herself died, her scheme would continue as a matter of course.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "We can suppose she has humanity, and thus might make mistakes. But if we're talking about a qualified conspirator with a scheme on the tracks, then even if she herself died, her scheme would continue as a matter of course."
     },
     {
-        "tag": "decision",
-        "options": "Is our operation useless, then?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Is our operation useless, then?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "If they were, we'd hardly be taking Rhodes Island's operators to hell and back.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "If they were, we'd hardly be taking Rhodes Island's operators to hell and back."
     },
     {
-        "text": "The only thing naturally useless is killing her. So, in every part and every place, we must break down her plot, antagonize her instructions, and lead her scheme to failure.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "The only thing naturally useless is killing her. So, in every part and every place, we must break down her plot, antagonize her instructions, and lead her scheme to failure."
     },
     {
-        "text": "If we cannot halt a landship's forward march, then we will tear it to pieces, and make it arrive at its destination no more than an empty carapace.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "If we cannot halt a landship's forward march, then we will tear it to pieces, and make it arrive at its destination no more than an empty carapace."
     },
     {
-        "text": "...Ah, maybe I shouldn't have put it to you like that. Don't get me wrong, we still need to stop this Chernobog core city.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...Ah, maybe I shouldn't have put it to you like that. Don't get me wrong, we still need to stop this Chernobog core city."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_cherunder_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_cherunder_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_003_kalts_1"
+        "command": "character",
+        "params": {
+            "name": "char_003_kalts_1"
+        }
     },
     {
-        "text": "Doctor, you've worried about whether or not Amiya's group will run into any incidents...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Doctor, you've worried about whether or not Amiya's group will run into any incidents..."
     },
     {
-        "text": "I think what's on show before us is the real incident, here.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I think what's on show before us is the real incident, here."
     },
     {
-        "tag": "character",
-        "name": "avg_npc_091"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_091"
+        }
     },
     {
-        "text": "W, W. Where W? W stronger.",
-        "tag": "name",
-        "value": "Herdified Sarkaz Warrior"
+        "command": "name",
+        "value": "Herdified Sarkaz Warrior",
+        "text": "W, W. Where W? W stronger."
     },
     {
-        "text": "Don't, don't enter...",
-        "tag": "name",
-        "value": "Herdified Sarkaz Warrior"
+        "command": "name",
+        "value": "Herdified Sarkaz Warrior",
+        "text": "Don't, don't enter..."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "decision",
-        "options": "Can you communicate with them?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Can you communicate with them?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_003_kalts_1"
+        "command": "character",
+        "params": {
+            "name": "char_003_kalts_1"
+        }
     },
     {
-        "text": "(A certain Sarkaz tribe's language)",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "(A certain Sarkaz tribe's language)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_091"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_091"
+        }
     },
     {
-        "text": "Underground full of darkness. Darkness create evil. Evil bring pain.",
-        "tag": "name",
-        "value": "Herdified Sarkaz Warrior"
+        "command": "name",
+        "value": "Herdified Sarkaz Warrior",
+        "text": "Underground full of darkness. Darkness create evil. Evil bring pain."
     },
     {
-        "text": "Too much, pain.",
-        "tag": "name",
-        "value": "Herdified Sarkaz Warrior"
+        "command": "name",
+        "value": "Herdified Sarkaz Warrior",
+        "text": "Too much, pain."
     },
     {
-        "tag": "character",
-        "name": "char_003_kalts_1"
+        "command": "character",
+        "params": {
+            "name": "char_003_kalts_1"
+        }
     },
     {
-        "text": "(A certain Sarkaz tribe's language)",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "(A certain Sarkaz tribe's language)"
     },
     {
-        "tag": "character",
-        "name": "avg_npc_091"
+        "command": "character",
+        "params": {
+            "name": "avg_npc_091"
+        }
     },
     {
-        "text": "Will you, share our pain?",
-        "tag": "name",
-        "value": "Herdified Sarkaz Warrior"
+        "command": "name",
+        "value": "Herdified Sarkaz Warrior",
+        "text": "Will you, share our pain?"
     },
     {
-        "tag": "character",
-        "name": "char_003_kalts_1"
+        "command": "character",
+        "params": {
+            "name": "char_003_kalts_1"
+        }
     },
     {
-        "text": "No luck. Even if they weren't born in Kazdel, they should still have some kind of reaction to a hint of their native language. Their ability to actively think has been damaged.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "No luck. Even if they weren't born in Kazdel, they should still have some kind of reaction to a hint of their native language. Their ability to actively think has been damaged."
     },
     {
-        "tag": "decision",
-        "options": "Could those words you were saying have any effect on them?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Could those words you were saying have any effect on them?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "They were meant to in the first place.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "They were meant to in the first place."
     },
     {
-        "text": "No, wait... this wasn't a common-sense idea. Don't get excited.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "No, wait... this wasn't a common-sense idea. Don't get excited."
     },
     {
-        "text": "But if not even this lets me rouse their conscious, then they've already lost all capacity for thought, beyond simply their ability to express.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "But if not even this lets me rouse their conscious, then they've already lost all capacity for thought, beyond simply their ability to express."
     },
     {
-        "text": "It means their brain's activity has been sealed off, or that their nervous system has been perturbed by the infected organs... either way, we don't have enough time left to ascertain the true answer.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "It means their brain's activity has been sealed off, or that their nervous system has been perturbed by the infected organs... either way, we don't have enough time left to ascertain the true answer."
     },
     {
-        "text": "Just based on what facts we have, it's not looking good.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Just based on what facts we have, it's not looking good."
     },
     {
-        "tag": "decision",
-        "options": "They don't seem like they'll attack us.",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "They don't seem like they'll attack us.",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "They're preventing us from entering. Deeply infected Sarkaz mercenaries in this area number around six, and seem to spend most of their time set to an unconscious roam.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "They're preventing us from entering. Deeply infected Sarkaz mercenaries in this area number around six, and seem to spend most of their time set to an unconscious roam."
     },
     {
-        "text": "Their range of movement doesn't extend outside this passage. These severely Infected collected here only after they picked up on our activity.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Their range of movement doesn't extend outside this passage. These severely Infected collected here only after they picked up on our activity."
     },
     {
-        "text": "Moreover, as long as we don't cross some boundary, they don't do anything further.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Moreover, as long as we don't cross some boundary, they don't do anything further."
     },
     {
-        "text": "Reconnaissance operator. Can you detect our straight-line distance to the Sarcophagus? Determine position via the waveform I provided.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Reconnaissance operator. Can you detect our straight-line distance to the Sarcophagus? Determine position via the waveform I provided."
     },
     {
-        "text": "...1.4km. Precise figure?",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...1.4km. Precise figure?"
     },
     {
-        "text": "1453m.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "1453m."
     },
     {
-        "text": "...If my calculations aren't wrong, then the breakout of conflict between Reunion and Sarkaz special Infected happened to be roughly at distance 1.4km from the City Hall too.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...If my calculations aren't wrong, then the breakout of conflict between Reunion and Sarkaz special Infected happened to be roughly at distance 1.4km from the City Hall too."
     },
     {
-        "text": "We initially planned to enter the Sarcophagus holding from the City Hall basement shelter passage, but as things are, that exit's likely been occupied by Sarkaz special Infected of the same kind.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "We initially planned to enter the Sarcophagus holding from the City Hall basement shelter passage, but as things are, that exit's likely been occupied by Sarkaz special Infected of the same kind."
     },
     {
-        "text": "I have an unconfirmed conjecture, Doctor...",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I have an unconfirmed conjecture, Doctor..."
     },
     {
-        "tag": "decision",
-        "options": "What kind of conjecture?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "What kind of conjecture?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "We don't know what their goal is, but these Sarkaz special Infected are likely preventing anyone else from entering the sarcophagus holding, and by happy coincidence, this district they've controlled measures 1.4km out.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "We don't know what their goal is, but these Sarkaz special Infected are likely preventing anyone else from entering the sarcophagus holding, and by happy coincidence, this district they've controlled measures 1.4km out."
     },
     {
-        "tag": "decision",
-        "options": "You might be right, but what about their goal, then?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "You might be right, but what about their goal, then?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "(Shakes her head)",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "(Shakes her head)"
     },
     {
-        "text": "At the very least, it's not the same goal these Sarkaz originally had.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "At the very least, it's not the same goal these Sarkaz originally had."
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "......"
     },
     {
-        "text": "Poor Sarkaz, hailing from Kazdel. No matter where, they still become tools.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Poor Sarkaz, hailing from Kazdel. No matter where, they still become tools."
     },
     {
-        "text": "I believe there are similarities between the Infected and the Sarkaz's current situations. These Sarkaz here with us could only choose to well with hate, or to lose it all.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "I believe there are similarities between the Infected and the Sarkaz's current situations. These Sarkaz here with us could only choose to well with hate, or to lose it all."
     },
     {
-        "text": "...Things were meant to have changed. We have that power.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...Things were meant to have changed. We have that power."
     },
     {
-        "text": "Those Teekaz who lost their homeland\u2014have become Sarkaz, rootless as people.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Those Teekaz who lost their homeland\u2014have become Sarkaz, rootless as people."
     },
     {
-        "text": "And now, the Sarkaz before us can barely even be called people.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "And now, the Sarkaz before us can barely even be called people."
     },
     {
-        "tag": "decision",
-        "options": "How do you want to do things?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "How do you want to do things?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "text": "All operators, inspect your hazmat equipment.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "All operators, inspect your hazmat equipment."
     },
     {
-        "text": "What we're facing may be a Class II Emergency Infective situation.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "What we're facing may be a Class II Emergency Infective situation."
     },
     {
-        "text": "Doctor, in minimizing wear and tear to the utmost, we must halt the special Infected's activity to the utmost.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Doctor, in minimizing wear and tear to the utmost, we must halt the special Infected's activity to the utmost."
     },
     {
-        "text": "...We haven't stepped in to resolve an Emergency Infective state for a while. This outfit looks entirely like Ursus's Infected Patrol Unit.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "...We haven't stepped in to resolve an Emergency Infective state for a while. This outfit looks entirely like Ursus's Infected Patrol Unit."
     },
     {
-        "tag": "decision",
-        "options": "Infected Patrol Unit?",
-        "values": 1
+        "command": "decision",
+        "params": {
+            "options": "Infected Patrol Unit?",
+            "values": "1"
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_8_26",
-        "x": 0,
-        "y": 0,
-        "xScale": 1,
-        "yScale": 1,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "avg_8_26",
+            "x": 0,
+            "y": 0,
+            "xscale": 1,
+            "yscale": 1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1.5,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1,
-        "yScaleFrom": 1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 15,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1,
+            "yscalefrom": 1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 15,
+            "block": false
+        }
     },
     {
-        "text": "There's something I can't deny\u2014the hazmat equipment we've been provided with is emblematic of Ursus's cruel rule over the Infected... it shares the same prototypical design.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "There's something I can't deny\u2014the hazmat equipment we've been provided with is emblematic of Ursus's cruel rule over the Infected... it shares the same prototypical design."
     },
     {
-        "text": "Though our approach is intrinsically distinct from the Infected Patrol Unit, I can only hope we're able to continue preserving that intrinsic difference\u2014that outside forces don't force us to change beyond recognition.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "Though our approach is intrinsically distinct from the Infected Patrol Unit, I can only hope we're able to continue preserving that intrinsic difference\u2014that outside forces don't force us to change beyond recognition."
     },
     {
-        "text": "The same hope we hold for so many things. Just like I told you about some time before. I hope you'll hope so too.",
-        "tag": "name",
-        "value": "Kal'tsit"
+        "command": "name",
+        "value": "Kal'tsit",
+        "text": "The same hope we hold for so many things. Just like I told you about some time before. I hope you'll hope so too."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_chercen_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_chercen_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7",
-        "fadetime": 1,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7",
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 2
+        "command": "delay",
+        "value": 2
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "character",
-        "name": "char_002_amiya_1#7"
+        "command": "character",
+        "params": {
+            "name": "char_002_amiya_1#7"
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 2,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 30,
-        "fadeout": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 2,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 30,
+            "fadeout": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 1,
-        "fadetime": 0.2
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 1,
+            "fadetime": 0.2
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0.5
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 2,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 30,
-        "fadeout": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 2,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 30,
+            "fadeout": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 1,
-        "fadetime": 0.2
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 1,
+            "fadetime": 0.2
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0.5,
-        "block": false
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0.5,
+            "block": false
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$flashback",
-        "volume": 0.2,
-        "Delay": 0.7
+        "command": "playsound",
+        "params": {
+            "key": "$flashback",
+            "volume": 0.2,
+            "delay": 0.7
+        }
     },
     {
-        "tag": "camerashake",
-        "duration": 0.5,
-        "xstrength": 2,
-        "ystrength": 3,
-        "vibrato": 30,
-        "randomness": 30,
-        "fadeout": false
+        "command": "camerashake",
+        "params": {
+            "duration": 0.5,
+            "xstrength": 2,
+            "ystrength": 3,
+            "vibration": 30,
+            "randomness": 30,
+            "fadeout": false
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 1,
-        "fadetime": 0.2
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 1,
+            "fadetime": 0.2
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 0,
-        "fadetime": 0.5
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 0,
+            "fadetime": 0.5
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "text": "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014!",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014!"
     },
     {
-        "text": "\u2014\u2014\u2014\u2014Was\u2014Madame Ch'en here?",
-        "tag": "name",
-        "value": "Amiya"
+        "command": "name",
+        "value": "Amiya",
+        "text": "\u2014\u2014\u2014\u2014Was\u2014Madame Ch'en here?"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "initr": 2,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.5,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "initr": 2,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.5,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 0
+        "command": "character",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 1,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_uptown_2",
-        "screenadapt": "coverall"
+        "command": "background",
+        "params": {
+            "image": "bg_uptown_2",
+            "screenadapt": "coverall"
+        }
     },
     {
-        "tag": "cameraeffect",
-        "effect": "Grayscale",
-        "keep": true,
-        "amount": 1,
-        "fadetime": 0
+        "command": "cameraeffect",
+        "params": {
+            "effect": "Grayscale",
+            "keep": true,
+            "amount": 1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "playmusic",
-        "intro": "$loneliness_intro",
-        "key": "$loneliness_loop",
-        "volume": 0.4
+        "command": "playmusic",
+        "params": {
+            "intro": "$loneliness_intro",
+            "key": "$loneliness_loop",
+            "volume": 0.4
+        }
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "Which way was he headed?",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Which way was he headed?"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "West. Stone's throw from the exclusion zone of Glowing Hoof.",
-        "tag": "name",
-        "value": "Shadow Guard"
+        "command": "name",
+        "value": "Shadow Guard",
+        "text": "West. Stone's throw from the exclusion zone of Glowing Hoof."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "...He plotted all of this. It was to ensure the area where we signed the pact was secure. Leithanien expanded their contended exclusion zone, overlapping our own.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "...He plotted all of this. It was to ensure the area where we signed the pact was secure. Leithanien expanded their contended exclusion zone, overlapping our own."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "We can infiltrate, kill Kashchey and bring back the Miss.",
-        "tag": "name",
-        "value": "Shadow Guard"
+        "command": "name",
+        "value": "Shadow Guard",
+        "text": "We can infiltrate, kill Kashchey and bring back the Miss."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "No. He's already prepared.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "No. He's already prepared."
     },
     {
-        "text": "...In this meeting, the Twin Empresses directly dispatched the Empresses' Voice, and they weren't short of armed forces.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "...In this meeting, the Twin Empresses directly dispatched the Empresses' Voice, and they weren't short of armed forces."
     },
     {
-        "text": "The Empresses are fresh upon the throne. If Kashchey intends to blow our diplomacy apart, all our transgressive conduct may very well be the Empresses' excuse to flaunt their power.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "The Empresses are fresh upon the throne. If Kashchey intends to blow our diplomacy apart, all our transgressive conduct may very well be the Empresses' excuse to flaunt their power."
     },
     {
-        "text": "We can't give Kashchey more opportunities to harm Lungmen, or even Yan.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "We can't give Kashchey more opportunities to harm Lungmen, or even Yan."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Uncle!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Uncle!"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "......"
     },
     {
-        "text": "Hui-chieh...",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Hui-chieh..."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Uncle... it's not Tal's fault!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Uncle... it's not Tal's fault!"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "I'm not blaming her.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "I'm not blaming her."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "...Then you should get mad at me.",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "...Then you should get mad at me."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "You haven't done anything wrong.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "You haven't done anything wrong."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "I told her I was gonna go with her. But then I got scared... I... let go of her hand. I didn't go with her...",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "I told her I was gonna go with her. But then I got scared... I... let go of her hand. I didn't go with her..."
     },
     {
-        "text": "She looked... really scared. I was really scared, and she was too. I... I did something wrong.",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "She looked... really scared. I was really scared, and she was too. I... I did something wrong."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "...Hui-chieh, she made the mistake, not you.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "...Hui-chieh, she made the mistake, not you."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Huh? B-but you said you wouldn't blame her, Uncle!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Huh? B-but you said you wouldn't blame her, Uncle!"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "No, I won't.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "No, I won't."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "But didn't... didn't she do something wrong? If she does something wrong, you're... not gonna get mad at her?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "But didn't... didn't she do something wrong? If she does something wrong, you're... not gonna get mad at her?"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "\u2014\u2014",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "\u2014\u2014"
     },
     {
-        "text": "She doesn't know the truth. It's not a truth anyone should be privy to, so of course she'd make a mistake. If not now, she would in the future.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "She doesn't know the truth. It's not a truth anyone should be privy to, so of course she'd make a mistake. If not now, she would in the future."
     },
     {
-        "text": "...In so many cases, the wrong thing shouldn't be punished. Not only do we make mistakes, we'll make so many of them. If there's some mistake, we will make it. We can't dodge that, nor escape it.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "...In so many cases, the wrong thing shouldn't be punished. Not only do we make mistakes, we'll make so many of them. If there's some mistake, we will make it. We can't dodge that, nor escape it."
     },
     {
-        "text": "Talulah simply made the mistake she was bound to.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Talulah simply made the mistake she was bound to."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Is that still doing something wrong, then?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Is that still doing something wrong, then?"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "Yes, of course it is. This world of ours wouldn't forgive something just because it was bound to happen.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Yes, of course it is. This world of ours wouldn't forgive something just because it was bound to happen."
     },
     {
-        "text": "The world is harsh, the people are harsh, the regimes are harsh. Apart from right and wrong, they don't care a damn. As if it's right and wrong keeping them alive, and not what they breathe and swallow...!",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "The world is harsh, the people are harsh, the regimes are harsh. Apart from right and wrong, they don't care a damn. As if it's right and wrong keeping them alive, and not what they breathe and swallow...!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "......",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "......"
     },
     {
-        "text": "I don't get what you're saying, Uncle.",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "I don't get what you're saying, Uncle."
     },
     {
-        "text": "Does... does it mean Tal can still come back?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Does... does it mean Tal can still come back?"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "\u2014I don't know, Hui-chieh. I don't know.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "\u2014I don't know, Hui-chieh. I don't know."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "...*sob*... Is it because of me... Tal won't come back? It's my fault... it's my fault... Tal...",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "...*sob*... Is it because of me... Tal won't come back? It's my fault... it's my fault... Tal..."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "Hui-chieh!",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Hui-chieh!"
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "*whimper*...!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "*whimper*...!"
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "Wipe your tears away.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Wipe your tears away."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "*sob*... I...",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "*sob*... I..."
     },
     {
-        "tag": "character",
-        "name": "char_2005_weiyw_1#5"
+        "command": "character",
+        "params": {
+            "name": "char_2005_weiyw_1#5"
+        }
     },
     {
-        "text": "Or cry, then. I'll give you five minutes. After you're done crying, if there's not still tears in your eyes, I'll tell you what you should do.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Or cry, then. I'll give you five minutes. After you're done crying, if there's not still tears in your eyes, I'll tell you what you should do."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "text": "Mm...!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Mm...!"
     },
     {
-        "text": "...Waaah...! Tal...!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "...Waaah...! Tal...!"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
         "text": "Wei Yenwu gazes towards the sky. He considers bending down to comfort the tiny girl, but after hesitating, feels as if he isn't suited to the task."
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 1,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "image": "avg_8_38",
-        "x": 0,
-        "y": 0,
-        "xScale": 1,
-        "yScale": 1,
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "image": "avg_8_38",
+            "x": 0,
+            "y": 0,
+            "xscale": 1,
+            "yscale": 1,
+            "fadetime": 0
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 1.5,
-        "block": false
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 1.5,
+            "block": false
+        }
     },
     {
-        "tag": "character"
+        "command": "character"
     },
     {
-        "tag": "imagetween",
-        "xScaleFrom": 1,
-        "yScaleFrom": 1,
-        "xScaleTo": 1,
-        "yScaleTo": 1,
-        "duration": 15,
-        "block": false
+        "command": "imagetween",
+        "params": {
+            "xscalefrom": 1,
+            "yscalefrom": 1,
+            "xscale": 1,
+            "yscale": 1,
+            "duration": 15,
+            "block": false
+        }
     },
     {
-        "text": "You're done crying, then.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "You're done crying, then."
     },
     {
-        "text": "...Mm-hm. I want Tal back. What should I do?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "...Mm-hm. I want Tal back. What should I do?"
     },
     {
-        "text": "I'll teach you a world of things. I'll teach you how to supervise a city, how to fend off villains, how to treat your friends.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "I'll teach you a world of things. I'll teach you how to supervise a city, how to fend off villains, how to treat your friends."
     },
     {
-        "text": "Do as I say, and Talulah will have a chance of coming back.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Do as I say, and Talulah will have a chance of coming back."
     },
     {
-        "text": "Wh-what do I do? Will Tal be able to come back, really? Are you tricking me, Uncle?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Wh-what do I do? Will Tal be able to come back, really? Are you tricking me, Uncle?"
     },
     {
-        "text": "...Mama... Mama said, you only know howta trick people. Can... can I really believe you?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "...Mama... Mama said, you only know howta trick people. Can... can I really believe you?"
     },
     {
-        "text": "Perhaps.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Perhaps."
     },
     {
-        "text": "I've made a massive mistake of my own, and it led to your mother despising me for her whole life. Even on her deathbed, she couldn't have let go. What she told you is understandable.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "I've made a massive mistake of my own, and it led to your mother despising me for her whole life. Even on her deathbed, she couldn't have let go. What she told you is understandable."
     },
     {
-        "text": "But mistakes can be made right.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "But mistakes can be made right."
     },
     {
-        "text": "Hui-chieh, listen carefully. Proper conduct is worth striving your whole life for. Correcting a mistake is worth putting life itself at stake for.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Hui-chieh, listen carefully. Proper conduct is worth striving your whole life for. Correcting a mistake is worth putting life itself at stake for."
     },
     {
-        "text": "Talulah's departure was a mistake. Every consequence it brings, I will bear.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Talulah's departure was a mistake. Every consequence it brings, I will bear."
     },
     {
-        "text": "And you, Hui-chieh. You'd better grow up fast.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "And you, Hui-chieh. You'd better grow up fast."
     },
     {
-        "text": "What'll it be like when I grow up?",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "What'll it be like when I grow up?"
     },
     {
-        "text": "Hmm. When you grow up... you'll be able to change everything.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Hmm. When you grow up... you'll be able to change everything."
     },
     {
-        "text": "Really?!",
-        "tag": "name",
-        "value": "Ch'en Hui-chieh"
+        "command": "name",
+        "value": "Ch'en Hui-chieh",
+        "text": "Really?!"
     },
     {
-        "text": "Perhaps. Or let's put it this way: so long as you believe, it will be real.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "Perhaps. Or let's put it this way: so long as you believe, it will be real."
     },
     {
-        "text": "I'll teach you to wield a sword, Hui-chieh.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "I'll teach you to wield a sword, Hui-chieh."
     },
     {
-        "text": "To wield Chi Xiao.",
-        "tag": "name",
-        "value": "Wei Yenwu"
+        "command": "name",
+        "value": "Wei Yenwu",
+        "text": "To wield Chi Xiao."
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "image",
-        "fadetime": 0
+        "command": "image",
+        "params": {
+            "fadetime": 0
+        }
     },
     {
         "text": "'As move unsheathing blade, cleave now as cleft.'"
     },
     {
-        "tag": "dialog"
+        "command": "dialog"
     },
     {
-        "tag": "blocker",
-        "fadetime": 3,
-        "block": true
+        "command": "blocker",
+        "params": {
+            "fadetime": 3,
+            "block": true
+        }
     },
     {
-        "tag": "image"
+        "command": "image"
     }
 ]

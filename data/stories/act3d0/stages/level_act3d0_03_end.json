@@ -1,335 +1,394 @@
 [
     {
-        "text": "\u7b2c\u4e94\u5173\uff08\u540e\uff09",
-        "tag": "header",
-        "key": "title_test",
-        "is_skippable": true,
-        "fit_mode": "BLACK_MASK"
+        "command": "largebg",
+        "params": {
+            "imagegroup": "bg_beach_1/bg_beach_2",
+            "solidwidth": "920/920",
+            "solidheight": 720,
+            "x": -180,
+            "fadetime": 1
+        }
     },
     {
-        "tag": "largebg",
-        "imagegroup": "bg_beach_1/bg_beach_2",
-        "solidwidth": "920/920",
-        "solidheight": 720,
-        "x": -180,
-        "fadetime": 1
+        "command": "playmusic",
+        "params": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.8,
+            "crossfade": 1.5
+        }
     },
     {
-        "tag": "playmusic",
-        "intro": "$farce_intro",
-        "key": "$farce_loop",
-        "volume": 0.8,
-        "crossfade": 1.5
+        "command": "playsound",
+        "params": {
+            "key": "$beach",
+            "volume": 0.8,
+            "channel": "B",
+            "loop": true
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$beach",
-        "volume": 0.8,
-        "channel": "B",
-        "loop": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "name",
+        "value": "Bodyguard A",
+        "text": "Hoooooooot! I'm burning! I'm burning!"
     },
     {
-        "text": "Hoooooooot! I'm burning! I'm burning!",
-        "tag": "name",
-        "value": "Bodyguard A"
+        "command": "name",
+        "value": "Bodyguard B",
+        "text": "Eeek! My hair!"
     },
     {
-        "text": "Eeek! My hair!",
-        "tag": "name",
-        "value": "Bodyguard B"
+        "command": "name",
+        "value": "Bodyguard A",
+        "text": "Tsk... Fall back, fall back!"
     },
     {
-        "text": "Tsk... Fall back, fall back!",
-        "tag": "name",
-        "value": "Bodyguard A"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "playsound",
+        "params": {
+            "key": "$d_gen_soldiersrun",
+            "volume": 0.5
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$d_gen_soldiersrun",
-        "volume": 0.5
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 0.8,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 0.8,
-        "block": true
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Hahaha! See, nothing's more fun than a good scrap, Doc!"
     },
     {
-        "text": "Hahaha! See, nothing's more fun than a good scrap, Doc!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Oh, that reminds me, Doc. Because I saved you, and didn't go overboard like you asked me to, you'd better not tell Silence about this!"
     },
     {
-        "text": "Oh, that reminds me, Doc. Because I saved you, and didn't go overboard like you asked me to, you'd better not tell Silence about this!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "If she finds out about this, she's going to assign me more homework for sure!"
     },
     {
-        "text": "If she finds out about this, she's going to assign me more homework for sure!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "decision",
+        "params": {
+            "options": "No problem.;Good luck on the homework.",
+            "values": "1;2"
+        }
     },
     {
-        "tag": "decision",
-        "options": "No problem.;Good luck on the homework.",
-        "values": "1;2"
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Hehe, I knew that you're a nice person, Doc!"
     },
     {
-        "text": "Hehe, I knew that you're a nice person, Doc!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "predicate",
+        "params": {
+            "references": 2
+        }
     },
     {
-        "tag": "predicate",
-        "references": 2
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Hmph, you're on your own then!"
     },
     {
-        "text": "Hmph, you're on your own then!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "predicate",
+        "params": {
+            "references": "1;2"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2"
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1",
+            "name2": "char_348_ceylon_4#8",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1",
-        "name2": "char_348_ceylon_4#8",
-        "focus": 2
+        "command": "name",
+        "value": "Ceylon",
+        "text": "An Originium-powered flamethrower, with such power too... You must be a very skilled Caster."
     },
     {
-        "text": "An Originium-powered flamethrower, with such power too... You must be a very skilled Caster.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1",
+            "name2": "char_348_ceylon_4#8",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1",
-        "name2": "char_348_ceylon_4#8",
-        "focus": 1
+        "command": "name",
+        "value": "Ifrit",
+        "text": "You're right on the money, Missy! I'm super powerful!"
     },
     {
-        "text": "You're right on the money, Missy! I'm super powerful!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1",
+            "name2": "char_348_ceylon_4#2",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1",
-        "name2": "char_348_ceylon_4#2",
-        "focus": 2
+        "command": "name",
+        "value": "Ceylon",
+        "text": "My name is Ceylon."
     },
     {
-        "text": "My name is Ceylon.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Thank you for saving us."
     },
     {
-        "text": "Thank you for saving us.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1",
+            "name2": "char_348_ceylon_4#2",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1",
-        "name2": "char_348_ceylon_4#2",
-        "focus": 1
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Oh, um... it's my pleasure. I-I'm just doing the right thing."
     },
     {
-        "text": "Oh, um... it's my pleasure. I-I'm just doing the right thing.",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Hey Doc, this lady is really polite. What should I be doing now?"
     },
     {
-        "text": "Hey Doc, this lady is really polite. What should I be doing now?",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "decision",
+        "params": {
+            "options": "Just smile.;Take a bow.;Bust out some dance moves.",
+            "values": "1;2;3"
+        }
     },
     {
-        "tag": "decision",
-        "options": "Just smile.;Take a bow.;Bust out some dance moves.",
-        "values": "1;2;3"
+        "command": "predicate",
+        "params": {
+            "references": "1;2;3"
+        }
     },
     {
-        "tag": "predicate",
-        "references": "1;2;3"
+        "command": "character",
+        "params": {
+            "name": "char_134_ifrit_summer_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_134_ifrit_summer_1"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Oh, um, I'll try it then..."
     },
     {
-        "text": "Oh, um, I'll try it then...",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Ahh?! I forgot that I left meat on the grill! Gotta get going!"
     },
     {
-        "text": "Ahh?! I forgot that I left meat on the grill! Gotta get going!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "name",
+        "value": "Ifrit",
+        "text": "Doc, Ceylon, come find me afterwards if you want some barbecue!"
     },
     {
-        "text": "Doc, Ceylon, come find me afterwards if you want some barbecue!",
-        "tag": "name",
-        "value": "Ifrit"
+        "command": "playsound",
+        "params": {
+            "key": "$runsand",
+            "volume": 0.7
+        }
     },
     {
-        "tag": "playsound",
-        "key": "$runsand",
-        "volume": 0.7
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "character",
+        "params": {
+            "fadetime": 1,
+            "block": true
+        }
     },
     {
-        "tag": "character",
-        "fadetime": 1,
-        "block": true
+        "command": "delay",
+        "value": 1
     },
     {
-        "tag": "delay",
-        "time": 1
+        "command": "decision",
+        "params": {
+            "options": "There she goes.",
+            "values": "1"
+        }
     },
     {
-        "tag": "decision",
-        "options": "There she goes.",
-        "values": 1
+        "command": "predicate",
+        "params": {
+            "references": 1
+        }
     },
     {
-        "tag": "predicate",
-        "references": 1
+        "command": "character",
+        "params": {
+            "name": "char_348_ceylon_4#2"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_348_ceylon_4#2"
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Doctor, let's also hurry back."
     },
     {
-        "text": "Doctor, let's also hurry back.",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "a": 1,
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "fadetime": 2,
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "a": 1,
-        "r": 0,
-        "g": 0,
-        "b": 0,
-        "fadetime": 2,
-        "block": true
+        "command": "character"
     },
     {
-        "tag": "character"
+        "command": "background",
+        "params": {
+            "image": "bg_hotel"
+        }
     },
     {
-        "tag": "background",
-        "image": "bg_hotel"
+        "command": "stopmusic",
+        "params": {
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopmusic",
-        "fadetime": 1
+        "command": "blocker",
+        "params": {
+            "a": 0,
+            "fadetime": 2,
+            "block": false
+        }
     },
     {
-        "tag": "blocker",
-        "a": 0,
-        "fadetime": 2,
-        "block": false
+        "command": "character",
+        "params": {
+            "name": "char_188_helage_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_188_helage_1"
+        "command": "name",
+        "value": "???",
+        "text": "Doctor, I'm glad you're fine."
     },
     {
-        "text": "Doctor, I'm glad you're fine.",
-        "tag": "name",
-        "value": "???"
+        "command": "character",
+        "params": {
+            "name": "char_188_helage_1",
+            "name2": "char_348_ceylon_4#5",
+            "focus": 2
+        }
     },
     {
-        "tag": "character",
-        "name": "char_188_helage_1",
-        "name2": "char_348_ceylon_4#5",
-        "focus": 2
+        "command": "name",
+        "value": "Ceylon",
+        "text": "Thank you very much, Mister..."
     },
     {
-        "text": "Thank you very much, Mister...",
-        "tag": "name",
-        "value": "Ceylon"
+        "command": "character",
+        "params": {
+            "name": "char_188_helage_1",
+            "name2": "char_348_ceylon_4#5",
+            "focus": 1
+        }
     },
     {
-        "tag": "character",
-        "name": "char_188_helage_1",
-        "name2": "char_348_ceylon_4#5",
-        "focus": 1
+        "command": "name",
+        "value": "Hellagur",
+        "text": "You can call me Hellagur."
     },
     {
-        "text": "You can call me Hellagur.",
-        "tag": "name",
-        "value": "Hellagur"
+        "command": "name",
+        "value": "Hellagur",
+        "text": "Just like the Doctor here, I'm also from Rhodes Island."
     },
     {
-        "text": "Just like the Doctor here, I'm also from Rhodes Island.",
-        "tag": "name",
-        "value": "Hellagur"
+        "command": "character",
+        "params": {
+            "name": "char_188_helage_1"
+        }
     },
     {
-        "tag": "character",
-        "name": "char_188_helage_1"
+        "command": "name",
+        "value": "Hellagur",
+        "text": "Doctor, do you have a minute? I need to have a few words with you, alone."
     },
     {
-        "text": "Doctor, do you have a minute? I need to have a few words with you, alone.",
-        "tag": "name",
-        "value": "Hellagur"
+        "command": "stopsound",
+        "params": {
+            "channel": "B",
+            "fadetime": 1
+        }
     },
     {
-        "tag": "stopsound",
-        "channel": "B",
-        "fadetime": 1
+        "command": "delay",
+        "value": 0.6
     },
     {
-        "tag": "delay",
-        "time": 0.6
+        "command": "dialog"
     },
     {
-        "tag": "dialog"
+        "command": "blocker",
+        "params": {
+            "block": true
+        }
     },
     {
-        "tag": "blocker",
-        "block": true
-    },
-    {
-        "tag": "image"
+        "command": "image"
     }
 ]
